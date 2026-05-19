@@ -63,7 +63,7 @@ export async function generateMetadata({
     title: `${post.title} — ToolAlts Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://tool-alts.vercel.app/blog/${slug}/`,
+      canonical: `https://www.toolalts.dev/blog/${slug}/`,
     },
   };
 }

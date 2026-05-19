@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: {
-      canonical: `https://tool-alts.vercel.app/category/${slug}/`,
+      canonical: `https://www.toolalts.dev/category/${slug}/`,
     },
   };
 }
@@ -59,7 +59,7 @@ export default async function CategoryPage({
       item: {
         "@type": "SoftwareApplication",
         name: tool.name,
-        url: `https://tool-alts.vercel.app/tool/${tool.slug}/`,
+        url: `https://www.toolalts.dev/tool/${tool.slug}/`,
         applicationCategory: tool.category,
         aggregateRating: {
           "@type": "AggregateRating",

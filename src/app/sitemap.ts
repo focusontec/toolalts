@@ -5,7 +5,7 @@ import { getAllReportSlugs } from "@/lib/reports";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://toolalts.dev";
+  const baseUrl = "https://www.toolalts.dev";
 
   const toolSlugs = getAllToolSlugs();
   const categorySlugs = getAllCategorySlugs();

@@ -2,7 +2,7 @@
   "name": "ToolAlts",
   "version": "0.1.0",
   "description": "Best open source and paid alternatives to popular software tools.",
-  "baseUrl": "https://toolalts.dev",
+  "baseUrl": "https://www.toolalts.dev",
   "pages": {
     "tools": 10,
     "categories": 5,

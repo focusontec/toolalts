@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
   alternates: {
-    canonical: "https://tool-alts.vercel.app/blog/",
+    canonical: "https://www.toolalts.dev/blog/",
   },
 };
 

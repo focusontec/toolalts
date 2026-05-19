@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${tool.name} — Reviews, Pricing & Alternatives | ToolAlts`,
     description: `${tool.tagline}. Read reviews, compare pricing, and find the best alternatives to ${tool.name}.`,
     alternates: {
-      canonical: `https://tool-alts.vercel.app/tool/${slug}/`,
+      canonical: `https://www.toolalts.dev/tool/${slug}/`,
     },
   };
 }
@@ -69,8 +69,8 @@ export default async function ToolPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://tool-alts.vercel.app/" },
-      { "@type": "ListItem", position: 2, name: "Tools", item: "https://tool-alts.vercel.app/category/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.toolalts.dev/" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.toolalts.dev/category/" },
       { "@type": "ListItem", position: 3, name: tool.name },
     ],
   };

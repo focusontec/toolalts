@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: {
-      canonical: `https://tool-alts.vercel.app/compare/${slug}/`,
+      canonical: `https://www.toolalts.dev/compare/${slug}/`,
     },
   };
 }
@@ -78,7 +78,7 @@ export default async function ComparePage({
       {
         "@type": "SoftwareApplication",
         name: toolA.name,
-        url: `https://tool-alts.vercel.app/tool/${toolA.slug}/`,
+        url: `https://www.toolalts.dev/tool/${toolA.slug}/`,
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: toolA.rating,
@@ -88,7 +88,7 @@ export default async function ComparePage({
       {
         "@type": "SoftwareApplication",
         name: toolB.name,
-        url: `https://tool-alts.vercel.app/tool/${toolB.slug}/`,
+        url: `https://www.toolalts.dev/tool/${toolB.slug}/`,
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: toolB.rating,
@@ -102,8 +102,8 @@ export default async function ComparePage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://tool-alts.vercel.app/" },
-      { "@type": "ListItem", position: 2, name: "Compare", item: "https://tool-alts.vercel.app/compare/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.toolalts.dev/" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.toolalts.dev/compare/" },
       { "@type": "ListItem", position: 3, name: `${toolA.name} vs ${toolB.name}` },
     ],
   };

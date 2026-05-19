@@ -23,7 +23,7 @@ export async function generateMetadata({
   return {
     title: `Best ${tool.name} Alternatives — Open Source \u0026 Paid | ToolAlts`,
     description: `Discover the best alternatives to ${tool.name}. Compare features, pricing, and ratings side by side to find the right ${tool.category} tool for you.`,
-    alternates: { canonical: `https://toolalts.dev/alternative-to/${slug}/` },
+    alternates: { canonical: `https://www.toolalts.dev/alternative-to/${slug}/` },
   };
 }
 
@@ -38,8 +38,8 @@ export default async function AlternativeToPage({
 
   const alternatives = getAlternativesFor(slug);
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { label: "Home", href: "https://toolalts.dev/" },
-    { label: `Alternative to ${tool.name}`, href: `https://toolalts.dev/alternative-to/${slug}/` },
+    { label: "Home", href: "https://www.toolalts.dev/" },
+    { label: `Alternative to ${tool.name}`, href: `https://www.toolalts.dev/alternative-to/${slug}/` },
   ]);
 
   return (

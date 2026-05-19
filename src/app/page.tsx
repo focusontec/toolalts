@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Discover the best open source and paid alternatives to popular software tools. Compare features, pricing, and ratings side by side.",
   alternates: {
-    canonical: "https://tool-alts.vercel.app/",
+    canonical: "https://www.toolalts.dev/",
   },
 };
 
@@ -34,11 +34,11 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "ToolAlts",
-    url: "https://tool-alts.vercel.app/",
+    url: "https://www.toolalts.dev/",
     description: metadata.description,
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://tool-alts.vercel.app/search?q={search_term_string}",
+      target: "https://www.toolalts.dev/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

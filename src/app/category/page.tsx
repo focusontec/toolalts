@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Categories — ToolAlts",
   description: "Browse software tools by category.",
   alternates: {
-    canonical: "https://tool-alts.vercel.app/category/",
+    canonical: "https://www.toolalts.dev/category/",
   },
 };
 
@@ -25,7 +25,7 @@ export default function CategoriesPage() {
       item: {
         "@type": "Thing",
         label: cat.name,
-        href: `https://tool-alts.vercel.app/category/${cat.slug}/`,
+        href: `https://www.toolalts.dev/category/${cat.slug}/`,
         description: cat.description,
       },
     })),

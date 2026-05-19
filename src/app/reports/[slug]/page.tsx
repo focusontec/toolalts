@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title: `${report.name} — AI Verification Report | ToolAlts`,
     description: `AI cross-verification report for ${report.name}. Decision: ${report.decision} (${report.confidence}/100 confidence).`,
-    alternates: { canonical: `https://toolalts.dev/reports/${slug}/` },
+    alternates: { canonical: `https://www.toolalts.dev/reports/${slug}/` },
   };
 }
 
@@ -122,8 +122,8 @@ export default async function ReportPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://toolalts.dev" },
-      { "@type": "ListItem", position: 2, name: "Reports", item: "https://toolalts.dev/reports" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.toolalts.dev" },
+      { "@type": "ListItem", position: 2, name: "Reports", item: "https://www.toolalts.dev/reports" },
       { "@type": "ListItem", position: 3, name: report.name },
     ],
   };
