@@ -1,0 +1,783 @@
+{
+  "data": [
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "accuracyScore": 75,
+      "fieldChecks": [
+        {
+          "field": "tagline",
+          "storedValue": "All-in-one workspace for notes, docs, and collaboration",
+          "actualValue": "The AI workspace that works for you.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Website tagline now emphasizes AI."
+        },
+        {
+          "field": "description",
+          "storedValue": "Notion is a unified workspace for your notes, tasks, wikis, and databases. It helps teams collaborate and individuals stay organized.",
+          "actualValue": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Description no longer matches; website focuses on AI capabilities."
+        },
+        {
+          "field": "rating",
+          "storedValue": 4.8,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "inference",
+          "note": "Rating is subjective and not directly verifiable from website."
+        },
+        {
+          "field": "reviewsCount",
+          "storedValue": 12500,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "inference",
+          "note": "No source for review count on website."
+        },
+        {
+          "field": "openSource",
+          "storedValue": false,
+          "actualValue": false,
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Notion is proprietary, not open source."
+        },
+        {
+          "field": "githubStars",
+          "storedValue": null,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "github",
+          "note": "No GitHub data available."
+        },
+        {
+          "field": "features",
+          "storedValue": [
+            "Real-time collaboration",
+            "Databases & tables",
+            "Templates gallery",
+            "Kanban boards",
+            "AI writing assistant"
+          ],
+          "actualValue": "AI writing assistant is now part of a broader AI suite; website emphasizes AI agents and automation.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Features list missing new AI capabilities like custom agents and cross-app search."
+        },
+        {
+          "field": "pricing",
+          "storedValue": [
+            {
+              "plan": "Free",
+              "price": "$0",
+              "features": [
+                "Unlimited pages",
+                "Basic blocks",
+                "Up to 10 guests"
+              ]
+            },
+            {
+              "plan": "Plus",
+              "price": "$10/mo",
+              "features": [
+                "Unlimited file uploads",
+                "Version history",
+                "Up to 100 guests"
+              ]
+            },
+            {
+              "plan": "Business",
+              "price": "$15/mo",
+              "features": [
+                "SAML SSO",
+                "Private teamspaces",
+                "Bulk PDF export"
+              ]
+            }
+          ],
+          "actualValue": "Pricing page not directly accessible; known plans have changed (e.g., Plus now $12/mo, Business $18/mo).",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Pricing likely outdated based on known changes; stored values differ from current market rates."
+        },
+        {
+          "field": "category",
+          "storedValue": "productivity",
+          "actualValue": "productivity",
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Notion is widely categorized as a productivity tool."
+        },
+        {
+          "field": "websiteUrl",
+          "storedValue": null,
+          "actualValue": "https://www.notion.so",
+          "verdict": "MISSING",
+          "source": "website",
+          "note": "Website URL is not stored; should be added."
+        }
+      ],
+      "recommendations": [
+        "Update tagline to reflect AI focus.",
+        "Rewrite description to match current website messaging.",
+        "Update features list to include AI agents, cross-app search, and automation.",
+        "Verify and update pricing plans and amounts.",
+        "Add website URL field."
+      ],
+      "concerns": [
+        "No GitHub data available, but tool is not open source so this is expected.",
+        "Pricing may have changed significantly; needs verification from official pricing page."
+      ],
+      "auditedAt": "2026-05-19T16:24:40.969Z"
+    },
+    {
+      "slug": "obsidian",
+      "name": "Obsidian",
+      "accuracyScore": 85,
+      "fieldChecks": [
+        {
+          "field": "tagline",
+          "storedValue": "A powerful knowledge base on top of a local folder of plain text Markdown files",
+          "actualValue": "The free and flexible app for your private thoughts.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Website tagline differs; stored tagline is older but still accurate in spirit."
+        },
+        {
+          "field": "description",
+          "storedValue": "Obsidian is a note-taking app that works on top of a local folder of plain text Markdown files. It's built for speed and privacy.",
+          "actualValue": "The free and flexible app for your private thoughts.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Website meta description is shorter; stored description is more detailed and still accurate."
+        },
+        {
+          "field": "rating",
+          "storedValue": 4.9,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "website",
+          "note": "No rating found on website; likely from app stores but not verifiable."
+        },
+        {
+          "field": "reviewsCount",
+          "storedValue": 8900,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "website",
+          "note": "No review count on website."
+        },
+        {
+          "field": "openSource",
+          "storedValue": false,
+          "actualValue": false,
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Obsidian is not open source; confirmed by website and no GitHub repo."
+        },
+        {
+          "field": "githubStars",
+          "storedValue": null,
+          "actualValue": "unverifiable",
+          "verdict": "ACCURATE",
+          "source": "github",
+          "note": "No GitHub data available, so null is correct."
+        },
+        {
+          "field": "features",
+          "storedValue": [
+            "Local-first storage",
+            "Graph view",
+            "Backlinks",
+            "Community plugins",
+            "Canvas"
+          ],
+          "actualValue": [
+            "Local-first storage",
+            "Graph view",
+            "Backlinks",
+            "Community plugins",
+            "Canvas"
+          ],
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "All listed features are confirmed on the website."
+        },
+        {
+          "field": "pricing",
+          "storedValue": [
+            {
+              "plan": "Personal",
+              "price": "$0",
+              "features": [
+                "Local vault",
+                "Community plugins",
+                "Graph view"
+              ]
+            },
+            {
+              "plan": "Catalyst",
+              "price": "$25 one-time",
+              "features": [
+                "Early access",
+                "Insider builds",
+                "Support devs"
+              ]
+            },
+            {
+              "plan": "Commercial",
+              "price": "$50/yr",
+              "features": [
+                "Commercial use",
+                "Priority support"
+              ]
+            }
+          ],
+          "actualValue": "Pricing not found on website; likely outdated or incorrect.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Website does not display pricing; stored pricing may be outdated as Obsidian changed its pricing model."
+        },
+        {
+          "field": "category",
+          "storedValue": "productivity",
+          "actualValue": "productivity",
+          "verdict": "ACCURATE",
+          "source": "inference",
+          "note": "Obsidian is a note-taking app, fitting productivity category."
+        },
+        {
+          "field": "websiteUrl",
+          "storedValue": null,
+          "actualValue": "https://obsidian.md",
+          "verdict": "MISSING",
+          "source": "website",
+          "note": "Website URL is not stored; should be added."
+        }
+      ],
+      "recommendations": [
+        "Update tagline to match website: 'The free and flexible app for your private thoughts.'",
+        "Update description to reflect current messaging.",
+        "Verify and update pricing information from official sources.",
+        "Add website URL: https://obsidian.md"
+      ],
+      "concerns": [
+        "Pricing information may be outdated; Obsidian has changed its pricing model.",
+        "No GitHub repository exists, so open source status is correct but no community contributions."
+      ],
+      "auditedAt": "2026-05-19T16:24:48.510Z"
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "accuracyScore": 85,
+      "fieldChecks": [
+        {
+          "field": "tagline",
+          "storedValue": "The collaborative interface design tool",
+          "actualValue": "Figma: The Collaborative Interface Design Tool",
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Matches website title."
+        },
+        {
+          "field": "description",
+          "storedValue": "Figma is a web-based design tool that enables real-time collaboration between designers and stakeholders.",
+          "actualValue": "Figma is the leading collaborative design platform for building meaningful products. Design, prototype, and build products faster—while gathering feedback all in one place.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Website meta description is more current and comprehensive."
+        },
+        {
+          "field": "rating",
+          "storedValue": 4.7,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "inference",
+          "note": "Rating is subjective; no official source found."
+        },
+        {
+          "field": "reviewsCount",
+          "storedValue": 15200,
+          "actualValue": "unverifiable",
+          "verdict": "UNVERIFIABLE",
+          "source": "inference",
+          "note": "No source for review count."
+        },
+        {
+          "field": "openSource",
+          "storedValue": false,
+          "actualValue": false,
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Figma is proprietary."
+        },
+        {
+          "field": "githubStars",
+          "storedValue": null,
+          "actualValue": "unverifiable",
+          "verdict": "MISSING",
+          "source": "github",
+          "note": "No GitHub data available."
+        },
+        {
+          "field": "features",
+          "storedValue": [
+            "Real-time collaboration",
+            "Prototyping",
+            "Design systems",
+            "Developer handoff",
+            "Auto layout"
+          ],
+          "actualValue": [
+            "Real-time collaboration",
+            "Prototyping",
+            "Design systems",
+            "Developer handoff",
+            "Auto layout"
+          ],
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "All listed features are confirmed on Figma's website."
+        },
+        {
+          "field": "pricing",
+          "storedValue": [
+            {
+              "plan": "Starter",
+              "price": "$0",
+              "features": [
+                "3 Figma files",
+                "3 FigJam files",
+                "2 editors"
+              ]
+            },
+            {
+              "plan": "Professional",
+              "price": "$12/mo",
+              "features": [
+                "Unlimited files",
+                "Shared projects",
+                "Team libraries"
+              ]
+            },
+            {
+              "plan": "Organization",
+              "price": "$45/mo",
+              "features": [
+                "Design systems",
+                "Analytics",
+                "Centralized administration"
+              ]
+            }
+          ],
+          "actualValue": "Pricing page not reachable; known plans may have changed.",
+          "verdict": "OUTDATED",
+          "source": "website",
+          "note": "Pricing text empty on website; likely outdated as Figma changed pricing in 2024."
+        },
+        {
+          "field": "category",
+          "storedValue": "design",
+          "actualValue": "design",
+          "verdict": "ACCURATE",
+          "source": "website",
+          "note": "Figma is a design tool."
+        },
+        {
+          "field": "websiteUrl",
+          "storedValue": null,
+          "actualValue": "https://www.figma.com",
+          "verdict": "MISSING",
+          "source": "website",
+          "note": "Website URL not stored."
+        }
+      ],
+      "recommendations": [
+        "Update description to match current website meta description.",
+        "Verify and update pricing plans as Figma changed pricing in 2024.",
+        "Add website URL (https://www.figma.com).",
+        "Consider adding GitHub stars if available (none found)."
+      ],
+      "concerns": [
+        "No GitHub data available; tool may not be open source.",
+        "Pricing information may be outdated; verify on official site."
+      ],
+      "auditedAt": "2026-05-19T16:24:56.290Z"
+    }
+  ],
+  "content": [
+    {
+      "slug": "cursor-vs-vscode",
+      "type": "comparison",
+      "qualityScore": 60,
+      "accuracyScore": 90,
+      "seoScore": 50,
+      "issues": [
+        {
+          "severity": "medium",
+          "message": "The article is very brief and lacks depth. It does not provide detailed comparisons of features, pricing, or use cases, which reduces usefulness for readers."
+        },
+        {
+          "severity": "medium",
+          "message": "No mention of pricing or free tiers, which is important for decision-making."
+        },
+        {
+          "severity": "low",
+          "message": "The article does not include any internal or external links, missing SEO opportunities."
+        },
+        {
+          "severity": "low",
+          "message": "No headings for features, pricing, or pros/cons, making the structure less scannable."
+        }
+      ],
+      "strengths": [
+        "Accurate high-level overview of both tools.",
+        "Clear verdict that helps readers choose based on their priorities.",
+        "Correctly identifies Cursor as a fork of VS Code and highlights AI integration."
+      ],
+      "recommendations": [
+        "Expand the article with detailed sections on features, pricing, performance, and ecosystem.",
+        "Add a comparison table for quick reference.",
+        "Include pros and cons for each tool.",
+        "Incorporate relevant internal links to other articles or tool pages.",
+        "Optimize headings with keywords like 'Cursor vs VS Code comparison', 'AI code editor', etc."
+      ],
+      "auditedAt": "2026-05-19T16:25:00.114Z"
+    },
+    {
+      "slug": "figma-vs-penpot",
+      "type": "comparison",
+      "qualityScore": 65,
+      "accuracyScore": 90,
+      "seoScore": 55,
+      "issues": [
+        {
+          "severity": "medium",
+          "message": "Content is too brief; lacks detailed comparison of features, pricing, and use cases."
+        },
+        {
+          "severity": "medium",
+          "message": "No mention of Penpot's pricing (free) or Figma's pricing tiers, which are key differentiators."
+        },
+        {
+          "severity": "low",
+          "message": "Missing internal links to other related articles or tool pages."
+        },
+        {
+          "severity": "low",
+          "message": "No meta description or keyword optimization evident; headings are generic."
+        }
+      ],
+      "strengths": [
+        "Accurate high-level description of both tools.",
+        "Clear verdict guiding users based on priorities."
+      ],
+      "recommendations": [
+        "Expand content with detailed feature comparison table.",
+        "Include pricing information and use case scenarios.",
+        "Add internal links to full tool reviews or related comparisons.",
+        "Optimize headings with target keywords (e.g., 'Figma vs Penpot: Which Design Tool is Right for You?')."
+      ],
+      "auditedAt": "2026-05-19T16:25:03.401Z"
+    },
+    {
+      "slug": "linear-vs-github-issues",
+      "type": "comparison",
+      "qualityScore": 45,
+      "accuracyScore": 70,
+      "seoScore": 30,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "The article is extremely brief and lacks substantive content. It does not provide a detailed comparison of features, pricing, or use cases."
+        },
+        {
+          "severity": "high",
+          "message": "Missing key information such as pricing details, feature lists, and user ratings, which are available in the tool data."
+        },
+        {
+          "severity": "medium",
+          "message": "The article does not include any internal or external links, which is poor for SEO."
+        },
+        {
+          "severity": "medium",
+          "message": "No headings for features, pricing, or pros/cons, making it less scannable and useful for readers."
+        },
+        {
+          "severity": "low",
+          "message": "The verdict section is too simplistic and does not provide nuanced guidance based on team size or workflow."
+        }
+      ],
+      "strengths": [
+        "Clear and concise overview of the main difference between the two tools.",
+        "Accurate tagline and description for both tools based on provided data."
+      ],
+      "recommendations": [
+        "Expand the article to include sections on features, pricing, user experience, and integrations.",
+        "Add a detailed comparison table highlighting key differences.",
+        "Include user ratings and reviews from the tool data to support claims.",
+        "Add internal links to other relevant articles on the directory.",
+        "Optimize headings with keywords like 'Linear vs GitHub Issues: Features, Pricing, and Verdict'.",
+        "Provide more specific use cases and scenarios for choosing each tool."
+      ],
+      "auditedAt": "2026-05-19T16:25:08.093Z"
+    },
+    {
+      "slug": "ai-code-editors-compared",
+      "type": "blog",
+      "qualityScore": 45,
+      "accuracyScore": 80,
+      "seoScore": 30,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "Article is too short and lacks depth; no comparison of features, pricing, or performance."
+        },
+        {
+          "severity": "medium",
+          "message": "No data or evidence to support claims about Cursor's AI capabilities or VS Code's extensibility."
+        },
+        {
+          "severity": "medium",
+          "message": "Missing key sections like pros/cons, use cases, or user reviews."
+        },
+        {
+          "severity": "low",
+          "message": "No internal or external links to relevant resources."
+        },
+        {
+          "severity": "low",
+          "message": "Headings are minimal; no H2 or H3 subheadings for detailed comparison."
+        }
+      ],
+      "strengths": [
+        "Clear and concise introduction to the topic.",
+        "Accurate basic description of Cursor and VS Code."
+      ],
+      "recommendations": [
+        "Expand the article with detailed feature comparison (e.g., AI suggestions, debugging, extensions).",
+        "Include pricing information and target audience for each tool.",
+        "Add user testimonials or case studies to support claims.",
+        "Incorporate relevant internal links to other articles on the site.",
+        "Optimize for SEO by using more specific keywords and meta description."
+      ],
+      "auditedAt": "2026-05-19T16:25:11.740Z"
+    },
+    {
+      "slug": "best-open-source-design-tools",
+      "type": "blog",
+      "qualityScore": 45,
+      "accuracyScore": 70,
+      "seoScore": 30,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "Article is too short and lacks depth; provides minimal useful information for readers."
+        },
+        {
+          "severity": "high",
+          "message": "No specific open-source design tools are evaluated beyond Penpot; Figma is not open-source."
+        },
+        {
+          "severity": "medium",
+          "message": "Missing details on features, pros/cons, or comparisons of tools."
+        },
+        {
+          "severity": "medium",
+          "message": "No internal or external links to support claims or provide further resources."
+        },
+        {
+          "severity": "low",
+          "message": "Headings are generic and not optimized for SEO (e.g., 'Figma Alternatives' is vague)."
+        }
+      ],
+      "strengths": [
+        "Timely topic (open-source design tools in 2025).",
+        "Clear structure with headings."
+      ],
+      "recommendations": [
+        "Expand content to include detailed reviews of multiple open-source tools (e.g., Penpot, Inkscape, GIMP, Krita, etc.).",
+        "Add specific features, pricing (if any), and comparison tables.",
+        "Include screenshots or examples of the tools in action.",
+        "Optimize headings with targeted keywords (e.g., 'Best Open Source Design Tools for UI/UX in 2025').",
+        "Add internal links to related articles on the directory and external links to official tool sites.",
+        "Write a compelling meta description and include a call-to-action for readers."
+      ],
+      "auditedAt": "2026-05-19T16:25:15.560Z"
+    },
+    {
+      "slug": "why-obsidian-beats-notion",
+      "type": "blog",
+      "qualityScore": 65,
+      "accuracyScore": 90,
+      "seoScore": 55,
+      "issues": [
+        {
+          "severity": "medium",
+          "message": "Article is too short and lacks depth; does not provide a comprehensive comparison."
+        },
+        {
+          "severity": "medium",
+          "message": "Missing key features comparison like plugins, collaboration, pricing, or use cases."
+        },
+        {
+          "severity": "low",
+          "message": "No introduction or conclusion; structure is minimal."
+        },
+        {
+          "severity": "low",
+          "message": "No internal or external links for SEO or credibility."
+        },
+        {
+          "severity": "low",
+          "message": "Headings are not optimized for SEO (e.g., missing target keywords in subheadings)."
+        }
+      ],
+      "strengths": [
+        "Highlights key differentiators (privacy, graph view, markdown) accurately.",
+        "Concise and easy to read for users already familiar with both tools."
+      ],
+      "recommendations": [
+        "Expand the article with more detailed comparisons (e.g., plugins, collaboration, pricing).",
+        "Add an introduction explaining the target audience and a conclusion summarizing recommendations.",
+        "Include internal links to other relevant articles on the directory.",
+        "Optimize headings with target keywords like 'Obsidian vs Notion for PKM'.",
+        "Add a table comparing features side by side for better readability."
+      ],
+      "auditedAt": "2026-05-19T16:25:19.682Z"
+    },
+    {
+      "slug": "anki",
+      "type": "report",
+      "qualityScore": 70,
+      "accuracyScore": 60,
+      "seoScore": 75,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "The report refers to 'AnkiAIUtils' and a GitHub repository, but the tool data shows the slug is 'anki' and the website is anki.com, which is the official Anki site, not a GitHub project. This is a factual mismatch."
+        },
+        {
+          "severity": "high",
+          "message": "The report claims the tool is open source and free, but the tool data shows no GitHub URL and the website is anki.com, which is not open source. The report's analysis is based on a different project."
+        },
+        {
+          "severity": "medium",
+          "message": "The report mentions 'last update within 6 months' and 'reasonable number of stars' but provides no specific data. The tool data has null for githubStars and githubUrl, so these claims are unverifiable."
+        },
+        {
+          "severity": "medium",
+          "message": "The report's 'Concerns' section mentions API key costs, but the tool data pricing is 'Free ($0)' with no mention of API keys. This may mislead readers."
+        },
+        {
+          "severity": "low",
+          "message": "The report uses 'AnkiAIUtils' as the tool name, but the tool data name is 'Anki'. The report should align with the provided tool data."
+        },
+        {
+          "severity": "low",
+          "message": "The report's 'Verification Score' and 'Consistency Score' are not explained; they seem arbitrary without supporting data."
+        }
+      ],
+      "strengths": [
+        "Clear structure with decision, scores, metadata, concerns, and full analysis.",
+        "Tagline and features match the tool data exactly.",
+        "Includes a confidence score and decision, which is useful for readers."
+      ],
+      "recommendations": [
+        "Ensure the report content matches the tool data provided. If the tool is Anki (anki.com), do not reference a GitHub project that is not officially associated.",
+        "Verify the tool's open-source status and pricing details. If the tool is not open source, correct that claim.",
+        "Provide specific evidence for claims like 'last update within 6 months' or 'number of stars' or remove them if unverifiable.",
+        "Clarify the 'Concerns' section: if API keys are required, state that explicitly; otherwise, remove the concern.",
+        "Use the tool's official name ('Anki') consistently throughout the report."
+      ],
+      "auditedAt": "2026-05-19T16:25:26.388Z"
+    },
+    {
+      "slug": "antigravity-manager",
+      "type": "report",
+      "qualityScore": 85,
+      "accuracyScore": 60,
+      "seoScore": 75,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "The report states GitHub repository has 29,127 stars and recent updates in May 2026, but tool data shows githubStars: null and githubUrl: null. This is a major factual inaccuracy."
+        },
+        {
+          "severity": "high",
+          "message": "The report mentions 'Antigravity Tools' as a platform, but no such platform is referenced in the tool data. The tool is for Antigravity-Manager itself."
+        },
+        {
+          "severity": "medium",
+          "message": "The report includes a 'Concerns' section about no license file, but the tool data does not provide license info. This speculation may be misleading without evidence."
+        },
+        {
+          "severity": "medium",
+          "message": "The report lacks internal linking or keyword optimization for SEO. No use of related tools or categories."
+        },
+        {
+          "severity": "low",
+          "message": "The report could be more concise; the 'Full Analysis' repeats information from the table."
+        }
+      ],
+      "strengths": [
+        "Clear structure with decision, metrics, and metadata.",
+        "Tagline and features are accurately extracted from tool data.",
+        "Pricing information is correctly stated as Free ($0)."
+      ],
+      "recommendations": [
+        "Correct the factual errors: remove references to GitHub stars and updates if not verified, or include only verified data.",
+        "Avoid speculation about licensing unless license information is available.",
+        "Add internal links to related tools or categories for better SEO.",
+        "Ensure all claims are backed by the provided tool data or external verification."
+      ],
+      "auditedAt": "2026-05-19T16:25:31.510Z"
+    },
+    {
+      "slug": "awesome-claude-skills",
+      "type": "report",
+      "qualityScore": 85,
+      "accuracyScore": 70,
+      "seoScore": 75,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "Claims GitHub stars (60,000) and forks (6,600) but tool data shows githubStars as null and githubUrl as null."
+        },
+        {
+          "severity": "high",
+          "message": "States latest update in May 2026, which is in the future; likely a typo or error."
+        },
+        {
+          "severity": "medium",
+          "message": "Website URL in tool data (https://awesome-claude-skills.com) differs from report stating the GitHub page is the website."
+        },
+        {
+          "severity": "medium",
+          "message": "Report mentions 'active community with high engagement' but reviewsCount is 0, and no evidence of community engagement is provided."
+        },
+        {
+          "severity": "low",
+          "message": "The report lacks a clear introduction or summary for readers unfamiliar with the tool."
+        }
+      ],
+      "strengths": [
+        "Clear structure with decision, metrics, and metadata sections.",
+        "Concise analysis covering key aspects like popularity and maintenance.",
+        "Proposed metadata aligns with tool data (category, tagline, features, pricing)."
+      ],
+      "recommendations": [
+        "Verify GitHub statistics before publishing; if unavailable, state that or use alternative sources.",
+        "Correct the date 'May 2026' to a plausible recent date or remove if uncertain.",
+        "Clarify the website URL discrepancy: confirm whether the official site is the GitHub page or the provided URL.",
+        "Include more specific examples of resources or tools in the analysis to increase usefulness.",
+        "Add a brief summary for readers who may not be familiar with the repository concept."
+      ],
+      "auditedAt": "2026-05-19T16:25:36.459Z"
+    }
+  ]
+}
