@@ -143,6 +143,13 @@ IMPORTANT on URLs:
 - If the URL domain looks like it was generated from the tool name (e.g. "toolname.com" for a tool called "toolname"), it may be fabricated. Verify against the GitHub homepage field instead.
 - The website URL in the evidence is the ORIGINAL discovered URL. If it's valid, include it in your output.
 
+CRITICAL — DO NOT FABRICATE DATA:
+- NEVER invent GitHub stars, forks, or other statistics. Only use numbers from the evidence provided.
+- If githubData is null, do NOT claim the project has stars or forks. Say "GitHub data not available".
+- NEVER invent pricing tiers, feature lists, or capabilities. Only reference what appears in the evidence.
+- If you are unsure about a fact, say "unverifiable" rather than guessing.
+- The fullReport must only contain facts supported by the evidence. Do not embellish or speculate.
+
 Output MUST be valid JSON with NO markdown formatting, NO code blocks, NO extra text.
 
 Required JSON schema:

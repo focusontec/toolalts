@@ -27,7 +27,8 @@ processedAt: "2026-05-19T15:06:10.425Z"
 ## Concerns
 - No license file specified (NOASSERTION), which may indicate unclear licensing.
 - The tool is specifically for Antigravity Tools, which may be a niche or proprietary platform.
+- GitHub stars and activity data could not be independently verified.
 
 ## Full Analysis
 
-The tool Antigravity-Manager has been verified through multiple sources. The GitHub repository shows a high star count (29,127) and recent updates (May 2026), indicating strong community interest and active maintenance. The description on GitHub matches the website title 'Antigravity Tools', and the features described (one-click account switching) are consistent. The use of Tauri v2 and React suggests a modern, performant desktop application. The only concerns are the lack of a clear license and the niche focus on Antigravity Tools, but these do not detract from the tool's quality and activity. Overall, the tool is approved with high confidence.
+The tool Antigravity-Manager has been verified through available sources. The GitHub repository description matches the website claims, and the features described (one-click account switching) are consistent with the tool's purpose. The use of Tauri v2 and React suggests a modern, performant desktop application. The only concerns are the lack of a clear license and the niche focus on Antigravity Tools, but these do not detract from the tool's legitimacy. Overall, the tool is approved with high confidence.

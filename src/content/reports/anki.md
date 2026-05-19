@@ -27,7 +27,8 @@ processedAt: "2026-05-19T15:06:47.099Z"
 ## Concerns
 - Project may require API keys for AI services (potential cost)
 - Limited to users familiar with Anki and its ecosystem
+- GitHub data not available for independent verification
 
 ## Full Analysis
 
-The tool AnkiAIUtils is hosted on GitHub under the repository 'thiswillbeyourgithub/AnkiAIUtils'. The website metadata clearly describes it as 'AI-powered tools to enhance Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning for medical school and beyond'. This description is consistent with the GitHub repository's purpose. The project appears to be actively maintained (last update within 6 months) and has a reasonable number of stars (though not specified, the description suggests it is a real project). The tool is open source and free to use, though it may require API keys for AI services. No red flags such as abandoned repos or placeholder websites were detected. The tool is classified under 'productivity' as it enhances learning efficiency. Overall, the evidence supports approval with high confidence.
+The tool appears to be an AI enhancement layer for the Anki flashcard application. The website describes it as providing AI-powered tools to enhance Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning. The project is open source and free to use, though it may require API keys for AI services. No red flags such as placeholder websites were detected. The tool is classified under 'productivity' as it enhances learning efficiency. Overall, the evidence supports approval with moderate confidence, though GitHub statistics could not be independently verified.
