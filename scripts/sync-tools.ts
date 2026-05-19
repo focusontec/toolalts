@@ -8,14 +8,21 @@ const SCREENSHOT_DIR = path.resolve(__dirname, "../public/images/tools");
 const SLEEP_MS = 1000;
 const MAX_RETRIES = 3;
 
-interface Tool {
+interface ToolEntry {
   slug: string;
   name: string;
-  github?: string;
-  website?: string;
-  stars?: number;
-  lastUpdated?: string;
-  [key: string]: any;
+  tagline: string;
+  description: string;
+  rating: number;
+  reviewsCount: number;
+  openSource: boolean;
+  githubStars: number | null;
+  githubUrl: string | null;
+  websiteUrl: string;
+  pricing: { plan: string; price: string; features: string[] }[];
+  features: string[];
+  category: string;
+  logo: string;
 }
 
 function sleep(ms: number) {
@@ -57,10 +64,21 @@ async function fetchWithRetry(
   throw new Error("Max retries exceeded");
 }
 
-async function scrapePricingPage(tool: Tool, browser: any) {
-  if (!tool.website) return;
-  const url = new URL(tool.website);
-  const pricingUrl = `${url.origin}/pricing`;
+function parseGitHubUrl(url: string): { owner: string; repo: string } | null {
+  const match = url.match(/github\.com\/([^\/]+)\/([^\/]+)/);
+  if (!match) return null;
+  return { owner: match[1], repo: match[2] };
+}
+
+async function scrapePricingPage(tool: ToolEntry, browser: any) {
+  if (!tool.websiteUrl) return;
+  let origin: string;
+  try {
+    origin = new URL(tool.websiteUrl).origin;
+  } catch {
+    return;
+  }
+  const pricingUrl = `${origin}/pricing`;
   const screenshotPath = path.join(SCREENSHOT_DIR, `${tool.slug}-pricing.png`);
 
   try {
@@ -80,20 +98,18 @@ async function main() {
     process.exit(1);
   }
 
-  const raw = fs.readFileSync(DATA_PATH, "utf-8");
-  const data = JSON.parse(raw);
-  const tools: Tool[] = data.tools || [];
+  const tools: ToolEntry[] = JSON.parse(fs.readFileSync(DATA_PATH, "utf-8"));
 
   if (!fs.existsSync(SCREENSHOT_DIR)) {
     fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
   }
 
-  // Try to launch browser; if unavailable (e.g. CI without Playwright browsers), skip screenshots
+  // Try to launch browser; skip screenshots if unavailable
   let browser: any = null;
   try {
     browser = await chromium.launch();
     console.log("✅ Playwright browser launched");
-  } catch (err) {
+  } catch {
     console.warn(
       "⚠️ Playwright browser not available. Skipping screenshots. To install:\n",
       "   npx playwright install --with-deps chromium"
@@ -105,35 +121,33 @@ async function main() {
   for (const tool of tools) {
     console.log(`\nProcessing: ${tool.name} (${tool.slug})`);
 
-    if (tool.github) {
-      const match = tool.github.match(/github\.com\/([^\/]+)\/([^\/]+)/);
-      const parts = tool.github.split("/");
-      const owner = match ? match[1] : parts[parts.length - 2];
-      const repo = match ? match[2] : parts[parts.length - 1];
+    // Sync GitHub stars
+    if (tool.githubUrl) {
+      const parsed = parseGitHubUrl(tool.githubUrl);
+      if (parsed) {
+        try {
+          await sleep(SLEEP_MS);
+          const info = await fetchWithRetry(
+            `https://api.github.com/repos/${parsed.owner}/${parsed.repo}`
+          );
+          const oldStars = tool.githubStars;
 
-      try {
-        await sleep(SLEEP_MS);
-        const info = await fetchWithRetry(
-          `https://api.github.com/repos/${owner}/${repo}`
-        );
-        const oldStars = tool.stars;
-        const oldUpdated = tool.lastUpdated;
+          tool.githubStars = info.stargazers_count;
 
-        tool.stars = info.stargazers_count;
-        tool.lastUpdated = info.updated_at;
-
-        const starDiff =
-          oldStars !== undefined ? ` (${info.stargazers_count - oldStars > 0 ? "+" : ""}${info.stargazers_count - oldStars})` : "";
-        changes.push(
-          `${tool.name}: stars ${oldStars ?? "N/A"} → ${info.stargazers_count}${starDiff}, updated ${oldUpdated ?? "N/A"} → ${info.updated_at}`
-        );
-        console.log(`  ✅ GitHub: stars=${info.stargazers_count}, updated=${info.updated_at}`);
-      } catch (err) {
-        console.error(`  ❌ GitHub fetch failed for ${tool.github}:`, (err as Error).message);
+          const starDiff =
+            oldStars !== null ? ` (${info.stargazers_count - oldStars > 0 ? "+" : ""}${info.stargazers_count - oldStars})` : "";
+          changes.push(
+            `${tool.name}: stars ${oldStars ?? "N/A"} → ${info.stargazers_count}${starDiff}`
+          );
+          console.log(`  ✅ GitHub: stars=${info.stargazers_count}`);
+        } catch (err) {
+          console.error(`  ❌ GitHub fetch failed for ${tool.githubUrl}:`, (err as Error).message);
+        }
       }
     }
 
-    if (browser && tool.website) {
+    // Screenshot pricing page
+    if (browser && tool.websiteUrl) {
       await scrapePricingPage(tool, browser);
       await sleep(SLEEP_MS);
     }
@@ -143,7 +157,7 @@ async function main() {
     await browser.close();
   }
 
-  fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + "\n", "utf-8");
+  fs.writeFileSync(DATA_PATH, JSON.stringify(tools, null, 2) + "\n", "utf-8");
 
   console.log("\n========== SYNC SUMMARY ==========");
   console.log(`Total tools: ${tools.length}`);

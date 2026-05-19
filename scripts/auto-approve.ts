@@ -11,6 +11,7 @@ import path from "path";
 const VERIFIED_PATH = path.resolve(__dirname, "../data/verified-results.json");
 const TOOLS_PATH = path.resolve(__dirname, "../data/tools.json");
 const COMPARISONS_PATH = path.resolve(__dirname, "../data/comparisons.json");
+const CATEGORIES_PATH = path.resolve(__dirname, "../data/categories.json");
 
 interface Tool {
   slug: string;
@@ -57,6 +58,41 @@ function saveTools(tools: Tool[]) {
 
 function saveComparisons(comparisons: Comparison[]) {
   fs.writeFileSync(COMPARISONS_PATH, JSON.stringify(comparisons, null, 2));
+}
+
+function loadValidCategories(): Set<string> {
+  if (!fs.existsSync(CATEGORIES_PATH)) return new Set();
+  const cats = JSON.parse(fs.readFileSync(CATEGORIES_PATH, "utf-8"));
+  return new Set(cats.map((c: any) => c.slug));
+}
+
+function validateTool(tool: Tool, validCategories: Set<string>): string[] {
+  const errors: string[] = [];
+
+  if (!tool.slug || typeof tool.slug !== "string") errors.push("missing or invalid slug");
+  if (!tool.name || typeof tool.name !== "string") errors.push("missing or invalid name");
+  if (!tool.tagline || typeof tool.tagline !== "string") errors.push("missing or invalid tagline");
+  if (!tool.description || typeof tool.description !== "string") errors.push("missing or invalid description");
+  if (typeof tool.rating !== "number" || tool.rating < 0 || tool.rating > 5) errors.push(`invalid rating: ${tool.rating}`);
+  if (typeof tool.reviewsCount !== "number" || tool.reviewsCount < 0) errors.push(`invalid reviewsCount: ${tool.reviewsCount}`);
+  if (!tool.websiteUrl || typeof tool.websiteUrl !== "string") errors.push("missing or invalid websiteUrl");
+
+  if (!tool.category || !validCategories.has(tool.category)) {
+    errors.push(`invalid category "${tool.category}" — must be one of: ${[...validCategories].join(", ")}`);
+  }
+
+  if (!Array.isArray(tool.pricing)) {
+    errors.push("pricing must be an array");
+  } else {
+    tool.pricing.forEach((p, i) => {
+      if (!p.plan) errors.push(`pricing[${i}].plan is missing`);
+      if (!p.price) errors.push(`pricing[${i}].price is missing`);
+    });
+  }
+
+  if (!Array.isArray(tool.features)) errors.push("features must be an array");
+
+  return errors;
 }
 
 function verifiedToTool(v: any): Tool {
@@ -129,6 +165,8 @@ async function main() {
     (v) => v.decision === "APPROVE" && v.confidence >= 70 && !existingSlugs.has(v.slug)
   );
 
+  const validCategories = loadValidCategories();
+
   console.log(`🔧 Auto-Approval Pipeline starting...`);
   console.log(`   Existing tools: ${tools.length}`);
   console.log(`   Verified results: ${verified.length}`);
@@ -140,6 +178,24 @@ async function main() {
   }
 
   const newTools = approved.map(verifiedToTool);
+
+  // Validate all new tools before writing
+  const validationErrors: Map<string, string[]> = new Map();
+  for (const tool of newTools) {
+    const errors = validateTool(tool, validCategories);
+    if (errors.length > 0) {
+      validationErrors.set(tool.slug, errors);
+    }
+  }
+
+  if (validationErrors.size > 0) {
+    console.warn(`\n⚠️ Validation issues found:`);
+    for (const [slug, errors] of validationErrors) {
+      console.warn(`   ${slug}: ${errors.join("; ")}`);
+    }
+    console.warn(`   Tools with errors will still be added but need manual review.`);
+  }
+
   const allTools = [...tools, ...newTools];
 
   // Generate new comparison pairs for affected categories
