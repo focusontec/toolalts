@@ -2,8 +2,8 @@
   {
     "slug": "notion",
     "name": "Notion",
-    "tagline": "All-in-one workspace for notes, docs, and collaboration",
-    "description": "Notion is a unified workspace for your notes, tasks, wikis, and databases. It helps teams collaborate and individuals stay organized.",
+    "tagline": "Your connected workspace for docs, projects, and knowledge — now with AI",
+    "description": "Notion is an all-in-one workspace that combines notes, documents, project management, and AI-powered tools. It helps teams collaborate and individuals organize their work with databases, wikis, and custom workflows.",
     "rating": 4.8,
     "reviewsCount": 12500,
     "openSource": false,
@@ -40,11 +40,13 @@
       }
     ],
     "features": [
-      "Real-time collaboration",
-      "Databases & tables",
+      "Connected docs & wikis",
+      "Databases & views",
+      "AI-powered Q&A and writing",
+      "Project management & sprints",
       "Templates gallery",
-      "Kanban boards",
-      "AI writing assistant"
+      "Real-time collaboration",
+      "Integrations & API"
     ],
     "category": "productivity",
     "logo": "/logos/notion.svg"
@@ -52,8 +54,8 @@
   {
     "slug": "obsidian",
     "name": "Obsidian",
-    "tagline": "A powerful knowledge base on top of a local folder of plain text Markdown files",
-    "description": "Obsidian is a note-taking app that works on top of a local folder of plain text Markdown files. It's built for speed and privacy.",
+    "tagline": "The free and flexible app for your private thoughts",
+    "description": "Obsidian is a powerful knowledge base that works on local plain-text Markdown files. It supports backlinks, graph views, and a rich plugin ecosystem for building your personal knowledge management system.",
     "rating": 4.9,
     "reviewsCount": 8900,
     "openSource": false,
@@ -89,11 +91,13 @@
       }
     ],
     "features": [
-      "Local-first storage",
-      "Graph view",
-      "Backlinks",
-      "Community plugins",
-      "Canvas"
+      "Local-first Markdown storage",
+      "Backlinks & graph view",
+      "Community plugins (1000+)",
+      "Canvas for visual thinking",
+      "Live preview & source mode",
+      "Customizable themes",
+      "End-to-end encryption (Sync)"
     ],
     "category": "productivity",
     "logo": "/logos/obsidian.svg"
@@ -102,7 +106,7 @@
     "slug": "figma",
     "name": "Figma",
     "tagline": "The collaborative interface design tool",
-    "description": "Figma is a web-based design tool that enables real-time collaboration between designers and stakeholders.",
+    "description": "Figma is a web-based design platform for UI/UX design, prototyping, and design systems. It enables real-time collaboration between designers, developers, and stakeholders with powerful vector editing and component libraries.",
     "rating": 4.7,
     "reviewsCount": 15200,
     "openSource": false,
@@ -139,11 +143,13 @@
       }
     ],
     "features": [
-      "Real-time collaboration",
-      "Prototyping",
-      "Design systems",
-      "Developer handoff",
-      "Auto layout"
+      "Real-time multiplayer design",
+      "Prototyping & interactions",
+      "Design systems & components",
+      "Developer handoff (Dev Mode)",
+      "Auto layout & responsive design",
+      "FigJam whiteboarding",
+      "Plugins & widgets ecosystem"
     ],
     "category": "design",
     "logo": "/logos/figma.svg"
