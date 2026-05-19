@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "dyad-",
+    "name": "Dyad,",
+    "source": "hackernews-showhn",
+    "website": "https://www.dyad.sh/",
+    "discoveredAt": "2026-05-19T15:05:19.604Z",
+    "rawData": {
+      "title": "Show HN: Dyad, local, open-source Lovable alternative (Electron desktop app)",
+      "points": 28,
+      "comments": 19
+    }
+  },
+  {
+    "slug": "tasker",
+    "name": "Tasker",
+    "source": "hackernews-showhn",
+    "website": "https://automatewithtasker.com/",
+    "discoveredAt": "2026-05-19T15:05:19.604Z",
+    "rawData": {
+      "title": "Show HN: Tasker – An open-source desktop agent for browser and OS automation",
+      "points": 33,
+      "comments": 29
+    }
+  }
+]

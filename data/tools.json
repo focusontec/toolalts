@@ -11,11 +11,41 @@
     "githubUrl": null,
     "websiteUrl": "https://notion.so",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["Unlimited pages", "Basic blocks", "Up to 10 guests"] },
-      { "plan": "Plus", "price": "$10/mo", "features": ["Unlimited file uploads", "Version history", "Up to 100 guests"] },
-      { "plan": "Business", "price": "$15/mo", "features": ["SAML SSO", "Private teamspaces", "Bulk PDF export"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Unlimited pages",
+          "Basic blocks",
+          "Up to 10 guests"
+        ]
+      },
+      {
+        "plan": "Plus",
+        "price": "$10/mo",
+        "features": [
+          "Unlimited file uploads",
+          "Version history",
+          "Up to 100 guests"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$15/mo",
+        "features": [
+          "SAML SSO",
+          "Private teamspaces",
+          "Bulk PDF export"
+        ]
+      }
     ],
-    "features": ["Real-time collaboration", "Databases & tables", "Templates gallery", "Kanban boards", "AI writing assistant"],
+    "features": [
+      "Real-time collaboration",
+      "Databases & tables",
+      "Templates gallery",
+      "Kanban boards",
+      "AI writing assistant"
+    ],
     "category": "productivity",
     "logo": "/logos/notion.svg"
   },
@@ -31,11 +61,40 @@
     "githubUrl": null,
     "websiteUrl": "https://obsidian.md",
     "pricing": [
-      { "plan": "Personal", "price": "$0", "features": ["Local vault", "Community plugins", "Graph view"] },
-      { "plan": "Catalyst", "price": "$25 one-time", "features": ["Early access", "Insider builds", "Support devs"] },
-      { "plan": "Commercial", "price": "$50/yr", "features": ["Commercial use", "Priority support"] }
+      {
+        "plan": "Personal",
+        "price": "$0",
+        "features": [
+          "Local vault",
+          "Community plugins",
+          "Graph view"
+        ]
+      },
+      {
+        "plan": "Catalyst",
+        "price": "$25 one-time",
+        "features": [
+          "Early access",
+          "Insider builds",
+          "Support devs"
+        ]
+      },
+      {
+        "plan": "Commercial",
+        "price": "$50/yr",
+        "features": [
+          "Commercial use",
+          "Priority support"
+        ]
+      }
     ],
-    "features": ["Local-first storage", "Graph view", "Backlinks", "Community plugins", "Canvas"],
+    "features": [
+      "Local-first storage",
+      "Graph view",
+      "Backlinks",
+      "Community plugins",
+      "Canvas"
+    ],
     "category": "productivity",
     "logo": "/logos/obsidian.svg"
   },
@@ -51,11 +110,41 @@
     "githubUrl": null,
     "websiteUrl": "https://figma.com",
     "pricing": [
-      { "plan": "Starter", "price": "$0", "features": ["3 Figma files", "3 FigJam files", "2 editors"] },
-      { "plan": "Professional", "price": "$12/mo", "features": ["Unlimited files", "Shared projects", "Team libraries"] },
-      { "plan": "Organization", "price": "$45/mo", "features": ["Design systems", "Analytics", "Centralized administration"] }
+      {
+        "plan": "Starter",
+        "price": "$0",
+        "features": [
+          "3 Figma files",
+          "3 FigJam files",
+          "2 editors"
+        ]
+      },
+      {
+        "plan": "Professional",
+        "price": "$12/mo",
+        "features": [
+          "Unlimited files",
+          "Shared projects",
+          "Team libraries"
+        ]
+      },
+      {
+        "plan": "Organization",
+        "price": "$45/mo",
+        "features": [
+          "Design systems",
+          "Analytics",
+          "Centralized administration"
+        ]
+      }
     ],
-    "features": ["Real-time collaboration", "Prototyping", "Design systems", "Developer handoff", "Auto layout"],
+    "features": [
+      "Real-time collaboration",
+      "Prototyping",
+      "Design systems",
+      "Developer handoff",
+      "Auto layout"
+    ],
     "category": "design",
     "logo": "/logos/figma.svg"
   },
@@ -71,10 +160,31 @@
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
-      { "plan": "Self-hosted", "price": "$0", "features": ["Unlimited files", "Unlimited users", "Self-hosted"] },
-      { "plan": "Cloud", "price": "$0", "features": ["Unlimited files", "Community support"] }
+      {
+        "plan": "Self-hosted",
+        "price": "$0",
+        "features": [
+          "Unlimited files",
+          "Unlimited users",
+          "Self-hosted"
+        ]
+      },
+      {
+        "plan": "Cloud",
+        "price": "$0",
+        "features": [
+          "Unlimited files",
+          "Community support"
+        ]
+      }
     ],
-    "features": ["Open source", "SVG-based", "Real-time collaboration", "Design tokens", "Self-hosted"],
+    "features": [
+      "Open source",
+      "SVG-based",
+      "Real-time collaboration",
+      "Design tokens",
+      "Self-hosted"
+    ],
     "category": "design",
     "logo": "/logos/penpot.svg"
   },
@@ -90,11 +200,41 @@
     "githubUrl": null,
     "websiteUrl": "https://linear.app",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["Up to 250 issues", "Unlimited file uploads", "Roadmap"] },
-      { "plan": "Standard", "price": "$8/mo", "features": ["Unlimited issues", "Guest accounts", "SLA timers"] },
-      { "plan": "Plus", "price": "$14/mo", "features": ["Multiple teams", "Initiatives", "Triage"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Up to 250 issues",
+          "Unlimited file uploads",
+          "Roadmap"
+        ]
+      },
+      {
+        "plan": "Standard",
+        "price": "$8/mo",
+        "features": [
+          "Unlimited issues",
+          "Guest accounts",
+          "SLA timers"
+        ]
+      },
+      {
+        "plan": "Plus",
+        "price": "$14/mo",
+        "features": [
+          "Multiple teams",
+          "Initiatives",
+          "Triage"
+        ]
+      }
     ],
-    "features": ["Keyboard-first design", "Git integration", "Cycles & sprints", "Roadmaps", "Triage workflow"],
+    "features": [
+      "Keyboard-first design",
+      "Git integration",
+      "Cycles & sprints",
+      "Roadmaps",
+      "Triage workflow"
+    ],
     "category": "project-management",
     "logo": "/logos/linear.svg"
   },
@@ -110,11 +250,40 @@
     "githubUrl": null,
     "websiteUrl": "https://github.com/features/issues",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["Unlimited public repos", "2,000 Actions minutes"] },
-      { "plan": "Team", "price": "$4/mo", "features": ["Unlimited private repos", "3,000 Actions minutes", "Code owners"] },
-      { "plan": "Enterprise", "price": "$21/mo", "features": ["SAML SSO", "Advanced auditing", "Priority support"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Unlimited public repos",
+          "2,000 Actions minutes"
+        ]
+      },
+      {
+        "plan": "Team",
+        "price": "$4/mo",
+        "features": [
+          "Unlimited private repos",
+          "3,000 Actions minutes",
+          "Code owners"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "$21/mo",
+        "features": [
+          "SAML SSO",
+          "Advanced auditing",
+          "Priority support"
+        ]
+      }
     ],
-    "features": ["Code references", "Project boards", "Milestones", "Labels & filters", "Automations"],
+    "features": [
+      "Code references",
+      "Project boards",
+      "Milestones",
+      "Labels & filters",
+      "Automations"
+    ],
     "category": "project-management",
     "logo": "/logos/github.svg"
   },
@@ -130,11 +299,41 @@
     "githubUrl": null,
     "websiteUrl": "https://cursor.sh",
     "pricing": [
-      { "plan": "Hobby", "price": "$0", "features": ["200 completions", "50 slow requests", "Basic models"] },
-      { "plan": "Pro", "price": "$20/mo", "features": ["Unlimited completions", "Fast requests", "Claude 3.5 Sonnet"] },
-      { "plan": "Business", "price": "$40/mo", "features": ["Team management", "Advanced security", "Priority support"] }
+      {
+        "plan": "Hobby",
+        "price": "$0",
+        "features": [
+          "200 completions",
+          "50 slow requests",
+          "Basic models"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$20/mo",
+        "features": [
+          "Unlimited completions",
+          "Fast requests",
+          "Claude 3.5 Sonnet"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$40/mo",
+        "features": [
+          "Team management",
+          "Advanced security",
+          "Priority support"
+        ]
+      }
     ],
-    "features": ["AI autocomplete", "Chat in editor", "Code generation", "Codebase understanding", "Tab-based predictions"],
+    "features": [
+      "AI autocomplete",
+      "Chat in editor",
+      "Code generation",
+      "Codebase understanding",
+      "Tab-based predictions"
+    ],
     "category": "development",
     "logo": "/logos/cursor.svg"
   },
@@ -150,9 +349,24 @@
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["Unlimited usage", "Extensions marketplace", "Git integration", "Debugging"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Unlimited usage",
+          "Extensions marketplace",
+          "Git integration",
+          "Debugging"
+        ]
+      }
     ],
-    "features": ["IntelliSense", "Debugging", "Built-in Git", "Extensions", "Remote development"],
+    "features": [
+      "IntelliSense",
+      "Debugging",
+      "Built-in Git",
+      "Extensions",
+      "Remote development"
+    ],
     "category": "development",
     "logo": "/logos/vscode.svg"
   },
@@ -168,11 +382,41 @@
     "githubUrl": null,
     "websiteUrl": "https://slack.com",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["90-day message history", "10 integrations", "1:1 video calls"] },
-      { "plan": "Pro", "price": "$7.25/mo", "features": ["Unlimited history", "Unlimited integrations", "Group video calls"] },
-      { "plan": "Business+", "price": "$12.50/mo", "features": ["Data exports", "SAML SSO", "99.99% uptime SLA"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "90-day message history",
+          "10 integrations",
+          "1:1 video calls"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$7.25/mo",
+        "features": [
+          "Unlimited history",
+          "Unlimited integrations",
+          "Group video calls"
+        ]
+      },
+      {
+        "plan": "Business+",
+        "price": "$12.50/mo",
+        "features": [
+          "Data exports",
+          "SAML SSO",
+          "99.99% uptime SLA"
+        ]
+      }
     ],
-    "features": ["Channels", "Huddles", "Workflows", "File sharing", "App integrations"],
+    "features": [
+      "Channels",
+      "Huddles",
+      "Workflows",
+      "File sharing",
+      "App integrations"
+    ],
     "category": "communication",
     "logo": "/logos/slack.svg"
   },
@@ -188,11 +432,660 @@
     "githubUrl": null,
     "websiteUrl": "https://discord.com",
     "pricing": [
-      { "plan": "Free", "price": "$0", "features": ["Unlimited servers", "Voice & video", "Screen share", "File sharing"] },
-      { "plan": "Nitro", "price": "$9.99/mo", "features": ["Higher upload limits", "HD video", "Custom emoji anywhere", "Server boosts"] }
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Unlimited servers",
+          "Voice & video",
+          "Screen share",
+          "File sharing"
+        ]
+      },
+      {
+        "plan": "Nitro",
+        "price": "$9.99/mo",
+        "features": [
+          "Higher upload limits",
+          "HD video",
+          "Custom emoji anywhere",
+          "Server boosts"
+        ]
+      }
     ],
-    "features": ["Voice channels", "Screen sharing", "Threads", "Bots & apps", "Stage channels"],
+    "features": [
+      "Voice channels",
+      "Screen sharing",
+      "Threads",
+      "Bots & apps",
+      "Stage channels"
+    ],
     "category": "communication",
     "logo": "/logos/discord.svg"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools",
+    "name": "system-prompts-and-models-of-ai-tools",
+    "tagline": "A comprehensive open-source collection of system prompts and internal tools for popular AI coding assistants.",
+    "description": "This repository aggregates system prompts, internal tools, and AI models from a wide range of AI-powered development tools like Cursor, Devin, Copilot, and many others. It serves as a resource for developers and AI enthusiasts to understand how these tools are configured and to potentially reuse or learn from the prompts.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://system-prompts-and-models-of-ai-tools.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full access to all prompts and tools",
+          "Open source community contributions"
+        ]
+      }
+    ],
+    "features": [
+      "Curated collection of system prompts from 25+ AI coding tools",
+      "Includes internal tools and AI model details",
+      "Open source under GPL-3.0 license",
+      "High community engagement with 137k+ stars",
+      "Regularly updated repository"
+    ],
+    "category": "development",
+    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg"
+  },
+  {
+    "slug": "claude-code",
+    "name": "claude-code",
+    "tagline": "An agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster through natural language commands.",
+    "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. It is available in your terminal, IDE, desktop app, and browser, enabling developers to execute routine tasks, explain complex code, and handle git workflows through natural language commands.",
+    "rating": 4.95,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://claude-code.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Limited usage",
+          "Basic features"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$20/mo",
+        "features": [
+          "Unlimited usage",
+          "Advanced features",
+          "Priority support"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Team management",
+          "SSO",
+          "Dedicated support"
+        ]
+      }
+    ],
+    "features": [
+      "Natural language code editing and command execution",
+      "Codebase understanding and explanation",
+      "Git workflow automation",
+      "Multi-environment support (terminal, IDE, desktop, browser)",
+      "Integration with development tools"
+    ],
+    "category": "development",
+    "logo": "/logos/claude-code.svg"
+  },
+  {
+    "slug": "markitdown",
+    "name": "markitdown",
+    "tagline": "Convert various file formats to Markdown effortlessly with this Python tool.",
+    "description": "MarkItDown is a Python tool by Microsoft for converting files and office documents to Markdown. It supports formats like PDF, Office documents, and integrates with AI frameworks like LangChain and OpenAI, making it ideal for developers and data scientists.",
+    "rating": 5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://markitdown.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source under MIT license",
+          "All features available"
+        ]
+      }
+    ],
+    "features": [
+      "Converts PDF, Office documents, and other files to Markdown",
+      "Integrates with LangChain, OpenAI, and AutoGen",
+      "MIT licensed and actively maintained by Microsoft",
+      "High performance with over 123k GitHub stars"
+    ],
+    "category": "development",
+    "logo": "/logos/markitdown.svg"
+  },
+  {
+    "slug": "gstack",
+    "name": "gstack",
+    "tagline": "A curated set of 23 opinionated tools for AI-assisted software development, inspired by Garry Tan's workflow.",
+    "description": "gstack is a collection of 23 opinionated tools designed to emulate roles like CEO, Designer, and Engineer Manager within Claude Code, enabling AI-driven software development. It is intended for developers and teams looking to leverage AI for end-to-end project management and coding tasks.",
+    "rating": 4.9,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://gstack.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full access to all 23 tools",
+          "Open source under MIT license"
+        ]
+      }
+    ],
+    "features": [
+      "23 pre-configured tools for AI-assisted development",
+      "Covers roles from CEO to QA for comprehensive project oversight",
+      "MIT licensed for open use and modification",
+      "High community adoption with nearly 100k stars",
+      "Actively maintained with recent updates"
+    ],
+    "category": "development",
+    "logo": "/logos/gstack.svg"
+  },
+  {
+    "slug": "deer-flow",
+    "name": "deer-flow",
+    "tagline": "Open-source framework for building long-horizon super agents that research, code, and create.",
+    "description": "DeerFlow is an open-source framework by ByteDance for building super agents capable of handling complex, long-horizon tasks. It leverages sandboxes, memories, tools, skills, subagents, and a message gateway to automate research, coding, and content creation. Ideal for developers and researchers building advanced AI agent systems.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://deer-flow.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full open-source code under MIT license",
+          "Self-hosted deployment",
+          "Community support"
+        ]
+      }
+    ],
+    "features": [
+      "Long-horizon task handling from minutes to hours",
+      "Sandboxed execution environments for safety",
+      "Memory, tools, skills, and subagent orchestration",
+      "Message gateway for inter-agent communication",
+      "Built on LangChain and LangGraph for extensibility"
+    ],
+    "category": "development",
+    "logo": "/logos/deer-flow.svg"
+  },
+  {
+    "slug": "awesome-claude-skills",
+    "name": "awesome-claude-skills",
+    "tagline": "A curated collection of Claude AI skills, resources, and tools for customizing workflows.",
+    "description": "This repository is a curated list of awesome Claude Skills, resources, and tools that help developers and AI enthusiasts customize Claude AI workflows. It includes integrations with various platforms like Composio, Cursor, and Gemini CLI, making it a valuable resource for building AI agents and automation.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://awesome-claude-skills.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Access to all listed resources and tools"
+        ]
+      }
+    ],
+    "features": [
+      "Curated list of Claude Skills and resources",
+      "Covers integrations with multiple AI platforms",
+      "Includes tools for workflow automation",
+      "Active community with high engagement",
+      "Regularly updated with new content"
+    ],
+    "category": "development",
+    "logo": "/logos/awesome-claude-skills.svg"
+  },
+  {
+    "slug": "nanobot",
+    "name": "nanobot",
+    "tagline": "Ultra-lightweight, self-hosted AI agent for automating tools, chats, and workflows.",
+    "description": "nanobot is an open-source, ultra-lightweight personal AI agent that integrates with your tools, chats, and workflows. It supports self-hosting and long-running automation, making it ideal for developers and power users who want a customizable AI assistant.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://nanobot.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full open-source code",
+          "Self-hosted deployment",
+          "All core features"
+        ]
+      }
+    ],
+    "features": [
+      "Self-hosted and lightweight design",
+      "Integrates with tools, chats, and workflows",
+      "Supports long-running automation tasks",
+      "Open-source with MIT license",
+      "Compatible with multiple LLMs (OpenAI, Anthropic, etc.)"
+    ],
+    "category": "development",
+    "logo": "/logos/nanobot.svg"
+  },
+  {
+    "slug": "antigravity-manager",
+    "name": "Antigravity-Manager",
+    "tagline": "One-click seamless account switching for Antigravity Tools, built with Tauri v2 and React.",
+    "description": "Antigravity-Manager is a professional account manager and switcher designed for Antigravity Tools. It enables users to switch between accounts with a single click, streamlining workflow for those managing multiple accounts. Built with Tauri v2 and React (Rust), it offers a fast and secure desktop experience.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://antigravity-manager.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full account management and switching capabilities"
+        ]
+      }
+    ],
+    "features": [
+      "One-click seamless account switching",
+      "Built with Tauri v2 and React for performance",
+      "Cross-platform desktop application",
+      "Secure account management",
+      "Designed specifically for Antigravity Tools"
+    ],
+    "category": "productivity",
+    "logo": "/logos/antigravity-manager.svg"
+  },
+  {
+    "slug": "composio",
+    "name": "composio",
+    "tagline": "A platform for building AI agents with 1000+ integrated toolkits and sandboxed execution.",
+    "description": "Composio provides a comprehensive platform for developers to build AI agents by offering over 1000 toolkits, tool search, context management, authentication, and a sandboxed workbench. It enables agents to turn intent into action through function calling and supports multiple programming languages like TypeScript and Python.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://composio.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "Unknown",
+        "features": [
+          "Likely cloud-hosted with additional features"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Unknown",
+        "features": [
+          "Custom pricing for organizations"
+        ]
+      }
+    ],
+    "features": [
+      "1000+ integrated toolkits for AI agents",
+      "Tool search and context management",
+      "Authentication and sandboxed workbench",
+      "Supports function calling with LLMs",
+      "Open-source with MIT license"
+    ],
+    "category": "development",
+    "logo": "/logos/composio.svg"
+  },
+  {
+    "slug": "claude-code-templates",
+    "name": "claude-code-templates",
+    "tagline": "The largest open-source collection of pre-built components for Claude Code.",
+    "description": "Claude Code Templates is a CLI tool and repository that provides over 1000 pre-built agents, slash commands, MCP integrations, hooks, and settings for Claude Code. It is designed for developers using Anthropic's Claude Code to enhance their workflow with ready-to-use components. The tool is free, open-source, and actively maintained.",
+    "rating": 4.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://claude-code-templates.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "All components",
+          "CLI tool",
+          "Community support"
+        ]
+      }
+    ],
+    "features": [
+      "1000+ pre-built components including agents, commands, and MCP integrations",
+      "CLI tool for easy installation and configuration",
+      "Open-source with MIT license",
+      "Active community with 27k+ stars on GitHub",
+      "Regular updates and contributions"
+    ],
+    "category": "development",
+    "logo": "/logos/claude-code-templates.svg"
+  },
+  {
+    "slug": "gerbil",
+    "name": "Gerbil",
+    "tagline": "Run large language models locally with a simple desktop app.",
+    "description": "Gerbil is a desktop application that allows users to run large language models (LLMs) on their own machine, providing privacy and offline access. It is aimed at developers and AI enthusiasts who want to experiment with LLMs without relying on cloud services.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://gerbil.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source, self-hosted"
+        ]
+      }
+    ],
+    "features": [
+      "Local execution of large language models",
+      "Desktop GUI for easy interaction",
+      "Supports multiple model formats",
+      "Privacy-focused (no data sent to cloud)"
+    ],
+    "category": "development",
+    "logo": "/logos/gerbil.svg"
+  },
+  {
+    "slug": "bodhi",
+    "name": "Bodhi",
+    "tagline": "Run open-source LLMs locally with OpenAI-compatible APIs.",
+    "description": "Bodhi is a tool that allows users to run open-source and open-weight large language models locally on their own hardware, providing OpenAI-compatible APIs for easy integration. It is designed for developers and AI enthusiasts who want to leverage LLMs without relying on cloud services.",
+    "rating": 3.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://bodhi.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source software",
+          "Self-hosted",
+          "No usage limits"
+        ]
+      }
+    ],
+    "features": [
+      "Run open-source LLMs locally",
+      "OpenAI-compatible API endpoints",
+      "Supports open-weight models",
+      "Local execution for privacy and control",
+      "Easy integration with existing applications"
+    ],
+    "category": "development",
+    "logo": "/logos/bodhi.svg"
+  },
+  {
+    "slug": "workout-cool",
+    "name": "Workout.cool",
+    "tagline": "Modern open-source fitness coaching platform for creating workout plans and tracking progress.",
+    "description": "Workout.cool is an open-source fitness coaching platform that allows users to create workout plans, track progress, and access a comprehensive exercise database. It is designed for fitness enthusiasts and coaches who want a customizable, self-hosted solution.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://workout-cool.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full access to all features as open-source software"
+        ]
+      }
+    ],
+    "features": [
+      "Create and manage workout plans",
+      "Track progress over time",
+      "Comprehensive exercise database",
+      "Open-source and self-hostable",
+      "Modern user interface"
+    ],
+    "category": "productivity",
+    "logo": "/logos/workout-cool.svg"
+  },
+  {
+    "slug": "anki",
+    "name": "Anki",
+    "tagline": "AI-powered tools to supercharge Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning.",
+    "description": "AnkiAIUtils is a collection of AI-powered utilities that enhance the Anki flashcard experience by automatically generating explanations, mnemonics, and illustrations, and by providing adaptive learning features. It is particularly useful for medical students and other learners who use Anki for spaced repetition.",
+    "rating": 3.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://anki.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "All core features",
+          "Open source"
+        ]
+      }
+    ],
+    "features": [
+      "AI-generated explanations for flashcards",
+      "Automatic mnemonic generation",
+      "Illustration generation for visual learning",
+      "Adaptive learning algorithms to optimize review schedules",
+      "Integration with Anki's existing card system"
+    ],
+    "category": "productivity",
+    "logo": "/logos/anki.svg"
+  },
+  {
+    "slug": "codinit-",
+    "name": "CodinIT,",
+    "tagline": "Local-first open-source AI app builder for web and mobile.",
+    "description": "CodinIT is a local-first, open-source AI app builder that enables developers to create web and mobile applications using natural language. It runs on MacOS, Windows, and Linux, prioritizing privacy and offline capabilities.",
+    "rating": 3.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://codinit-.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full open-source code",
+          "Self-hosted",
+          "All features included"
+        ]
+      }
+    ],
+    "features": [
+      "Local-first architecture for privacy and offline use",
+      "AI-powered app generation from natural language",
+      "Cross-platform support (MacOS, Windows, Linux)",
+      "Open-source with community contributions",
+      "Web and mobile app output"
+    ],
+    "category": "development",
+    "logo": "/logos/codinit-.svg"
+  },
+  {
+    "slug": "superset",
+    "name": "Superset",
+    "tagline": "A code editor for the AI agents era that orchestrates multiple AI coding assistants on your machine.",
+    "description": "Superset is a code editor designed to run and coordinate multiple AI coding agents like Claude Code and Codex simultaneously on your local machine. It targets developers who want to leverage AI assistance for complex coding tasks by managing an 'army' of AI agents.",
+    "rating": 3.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://superset.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source codebase",
+          "Self-hosted",
+          "All core features"
+        ]
+      }
+    ],
+    "features": [
+      "Run multiple AI coding agents concurrently",
+      "Local execution for privacy and speed",
+      "Integration with popular AI models (Claude, Codex)",
+      "Agent orchestration and coordination",
+      "Open-source and extensible"
+    ],
+    "category": "development",
+    "logo": "/logos/superset.svg"
+  },
+  {
+    "slug": "rowboat",
+    "name": "Rowboat",
+    "tagline": "Open-source AI coworker with memory to automate tasks and boost team productivity.",
+    "description": "Rowboat is an open-source AI assistant designed to act as a coworker, featuring persistent memory to learn from interactions and automate repetitive tasks. It integrates with team workflows to enhance productivity, making it suitable for developers and teams seeking customizable AI automation.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://rowboat.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Self-hosted open-source version with full features"
+        ]
+      }
+    ],
+    "features": [
+      "Persistent memory for context-aware assistance",
+      "Open-source and self-hostable",
+      "Integrates with team communication tools",
+      "Automates repetitive tasks",
+      "Customizable AI behavior"
+    ],
+    "category": "productivity",
+    "logo": "/logos/rowboat.svg"
+  },
+  {
+    "slug": "stagewise",
+    "name": "Stagewise",
+    "tagline": "The open source agentic IDE for creating and orchestrating coding agents with multi-model support.",
+    "description": "Stagewise is an open source IDE that allows developers to create and orchestrate coding agents, preview apps, and run git workflows. It supports multiple AI models from various providers, making it a versatile tool for AI-assisted development.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://stagewise.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source, self-hosted"
+        ]
+      }
+    ],
+    "features": [
+      "Create and orchestrate coding agents",
+      "App previews and git workflow integration",
+      "Support for multiple AI models across providers",
+      "Open source and extensible"
+    ],
+    "category": "development",
+    "logo": "/logos/stagewise.svg"
+  },
+  {
+    "slug": "sgai",
+    "name": "Sgai",
+    "tagline": "An AI-powered software factory that automates development workflows.",
+    "description": "Sgai is an AI software factory by Sandgarden that helps developers automate repetitive coding tasks, generate boilerplate, and streamline project setup. It is designed for developers and teams looking to accelerate their development process with AI assistance.",
+    "rating": 3.75,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://sgai.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Basic AI features",
+          "Limited usage"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$20/mo",
+        "features": [
+          "Unlimited AI generations",
+          "Priority support",
+          "Advanced integrations"
+        ]
+      }
+    ],
+    "features": [
+      "AI-driven code generation and boilerplate creation",
+      "Automated project scaffolding and configuration",
+      "Integration with existing development workflows",
+      "Support for multiple programming languages and frameworks"
+    ],
+    "category": "development",
+    "logo": "/logos/sgai.svg"
   }
 ]

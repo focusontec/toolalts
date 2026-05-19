@@ -1,7 +1,278 @@
 [
-  { "slug": "notion-vs-obsidian", "toolA": "notion", "toolB": "obsidian", "category": "productivity" },
-  { "slug": "figma-vs-penpot", "toolA": "figma", "toolB": "penpot", "category": "design" },
-  { "slug": "linear-vs-github-issues", "toolA": "linear", "toolB": "github-issues", "category": "project-management" },
-  { "slug": "cursor-vs-vscode", "toolA": "cursor", "toolB": "vscode", "category": "development" },
-  { "slug": "slack-vs-discord", "toolA": "slack", "toolB": "discord", "category": "communication" }
+  {
+    "slug": "notion-vs-obsidian",
+    "toolA": "notion",
+    "toolB": "obsidian",
+    "category": "productivity"
+  },
+  {
+    "slug": "figma-vs-penpot",
+    "toolA": "figma",
+    "toolB": "penpot",
+    "category": "design"
+  },
+  {
+    "slug": "linear-vs-github-issues",
+    "toolA": "linear",
+    "toolB": "github-issues",
+    "category": "project-management"
+  },
+  {
+    "slug": "cursor-vs-vscode",
+    "toolA": "cursor",
+    "toolB": "vscode",
+    "category": "development"
+  },
+  {
+    "slug": "slack-vs-discord",
+    "toolA": "slack",
+    "toolB": "discord",
+    "category": "communication"
+  },
+  {
+    "slug": "cursor-vs-system-prompts-and-models-of-ai-tools",
+    "toolA": "cursor",
+    "toolB": "system-prompts-and-models-of-ai-tools",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-claude-code",
+    "toolA": "cursor",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-markitdown",
+    "toolA": "cursor",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-gstack",
+    "toolA": "cursor",
+    "toolB": "gstack",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-deer-flow",
+    "toolA": "cursor",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-awesome-claude-skills",
+    "toolA": "cursor",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-system-prompts-and-models-of-ai-tools",
+    "toolA": "vscode",
+    "toolB": "system-prompts-and-models-of-ai-tools",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-claude-code",
+    "toolA": "vscode",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-markitdown",
+    "toolA": "vscode",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-gstack",
+    "toolA": "vscode",
+    "toolB": "gstack",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-deer-flow",
+    "toolA": "vscode",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-awesome-claude-skills",
+    "toolA": "vscode",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-claude-code",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-markitdown",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-gstack",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "gstack",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-deer-flow",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-awesome-claude-skills",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-markitdown",
+    "toolA": "claude-code",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-gstack",
+    "toolA": "claude-code",
+    "toolB": "gstack",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-deer-flow",
+    "toolA": "claude-code",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-awesome-claude-skills",
+    "toolA": "claude-code",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-gstack",
+    "toolA": "markitdown",
+    "toolB": "gstack",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-deer-flow",
+    "toolA": "markitdown",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-awesome-claude-skills",
+    "toolA": "markitdown",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "gstack-vs-deer-flow",
+    "toolA": "gstack",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "gstack-vs-awesome-claude-skills",
+    "toolA": "gstack",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "deer-flow-vs-awesome-claude-skills",
+    "toolA": "deer-flow",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "notion-vs-antigravity-manager",
+    "toolA": "notion",
+    "toolB": "antigravity-manager",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-workout-cool",
+    "toolA": "notion",
+    "toolB": "workout-cool",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-anki",
+    "toolA": "notion",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-rowboat",
+    "toolA": "notion",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-antigravity-manager",
+    "toolA": "obsidian",
+    "toolB": "antigravity-manager",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-workout-cool",
+    "toolA": "obsidian",
+    "toolB": "workout-cool",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-anki",
+    "toolA": "obsidian",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-rowboat",
+    "toolA": "obsidian",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "antigravity-manager-vs-workout-cool",
+    "toolA": "antigravity-manager",
+    "toolB": "workout-cool",
+    "category": "productivity"
+  },
+  {
+    "slug": "antigravity-manager-vs-anki",
+    "toolA": "antigravity-manager",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "antigravity-manager-vs-rowboat",
+    "toolA": "antigravity-manager",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "workout-cool-vs-anki",
+    "toolA": "workout-cool",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "workout-cool-vs-rowboat",
+    "toolA": "workout-cool",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "anki-vs-rowboat",
+    "toolA": "anki",
+    "toolB": "rowboat",
+    "category": "productivity"
+  }
 ]
