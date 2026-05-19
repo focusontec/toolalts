@@ -32,6 +32,9 @@ async function fetchWithRetry(
         headers: {
           Accept: "application/vnd.github+json",
           "User-Agent": "tool-alts-sync/1.0",
+          ...(process.env.GITHUB_TOKEN
+            ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+            : {}),
         },
       });
       if (res.status === 403 || res.status === 429) {
@@ -85,7 +88,17 @@ async function main() {
     fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
   }
 
-  const browser = await chromium.launch();
+  // Try to launch browser; if unavailable (e.g. CI without Playwright browsers), skip screenshots
+  let browser: any = null;
+  try {
+    browser = await chromium.launch();
+    console.log("✅ Playwright browser launched");
+  } catch (err) {
+    console.warn(
+      "⚠️ Playwright browser not available. Skipping screenshots. To install:\n",
+      "   npx playwright install --with-deps chromium"
+    );
+  }
 
   const changes: string[] = [];
 
@@ -120,13 +133,15 @@ async function main() {
       }
     }
 
-    if (tool.website) {
+    if (browser && tool.website) {
       await scrapePricingPage(tool, browser);
       await sleep(SLEEP_MS);
     }
   }
 
-  await browser.close();
+  if (browser) {
+    await browser.close();
+  }
 
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + "\n", "utf-8");
 

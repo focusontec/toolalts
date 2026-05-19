@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
       # ── STEP 1: DISCOVER ──────────────────────────────
       - name: 🔍 Discover new tools
         env:
@@ -62,7 +65,7 @@ jobs:
         run: |
           git config user.name "autoclaw[bot]"
           git config user.email "autoclaw[bot]@users.noreply.github.com"
-          git add data/ src/content/reports/ src/content/comparisons/
+          git add data/ src/content/reports/ src/content/comparisons/ public/images/
           if git diff --cached --quiet; then
             echo "📭 No changes to commit."
           else
