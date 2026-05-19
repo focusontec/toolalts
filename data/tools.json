@@ -162,7 +162,7 @@
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
-    "githubStars": 28000,
+    "githubStars": 47912,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -351,7 +351,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 162000,
+    "githubStars": 185098,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -1093,5 +1093,63 @@
     ],
     "category": "development",
     "logo": "/logos/sgai.svg"
+  },
+  {
+    "slug": "dyad-",
+    "name": "Dyad,",
+    "tagline": "Flexible, local, open-source AI app builder with zero lock-in.",
+    "description": "Dyad is an open-source AI app builder that allows users to build AI applications locally using their preferred AI models and tools. It emphasizes flexibility and local execution, avoiding vendor lock-in.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.dyad.sh/",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "features": [
+      "Local AI app building",
+      "Supports multiple AI models",
+      "Open-source",
+      "Zero lock-in"
+    ],
+    "category": "development",
+    "logo": "/logos/dyad-.svg"
+  },
+  {
+    "slug": "tasker",
+    "name": "Tasker",
+    "tagline": "AI-powered browser automation for everyone.",
+    "description": "Tasker is a free, open-source desktop app that automates any website using AI. Users can record workflows or describe them in plain English, and the AI handles the rest. It's available for Windows, Mac, and Linux.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://automatewithtasker.com/",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "All features"
+        ]
+      }
+    ],
+    "features": [
+      "Record workflows or describe in plain English",
+      "AI handles automation",
+      "Cross-platform (Windows, Mac, Linux)",
+      "Free and open-source"
+    ],
+    "category": "productivity",
+    "logo": "/logos/tasker.svg"
   }
 ]

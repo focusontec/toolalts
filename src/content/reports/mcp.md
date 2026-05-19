@@ -1,35 +1,37 @@
 ---
 slug: "mcp"
 name: "MCP"
-decision: "REJECT"
-confidence: 90
+decision: "AMBIGUOUS"
+confidence: 50
 category: "other"
-processedAt: "2026-05-19T15:06:52.594Z"
+processedAt: "2026-05-19T17:56:47.321Z"
 ---
 
 # AI Verification Report: MCP
 
-## Decision: REJECT (90/100 confidence)
+## Decision: AMBIGUOUS (50/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 20/100 |
-| Quality Score | 10/100 |
-| Consistency Score | 30/100 |
+| Verification Score | 40/100 |
+| Quality Score | 0/100 |
+| Consistency Score | 50/100 |
 
 ## Proposed Metadata
 
+- **Website**: https://mcpdefender.com
+- **GitHub**: N/A
 - **Category**: other
-- **Tagline**: Security tool for AI applications with minimal evidence of legitimacy.
-- **Features**: Protects AI applications from security threats, Targets Cursor and similar AI apps
-- **Pricing**: Unknown (Unknown)
+- **Tagline**: Security tool for AI applications like Cursor.
+- **Features**: Protects AI apps like Cursor, Security threat detection, Computer-based protection
+- **Pricing**: Unknown (Unverifiable)
 
 ## Concerns
-- No GitHub repository or source code available
-- Website is minimal with no detailed documentation or user reviews
-- No evidence of active development or community engagement
-- Claim of protecting AI apps is vague and unsubstantiated
+- No GitHub data available
+- No community signals or reviews
+- Unverifiable pricing and features
+- Website is reachable but lacks detailed information
 
 ## Full Analysis
 
-The tool 'MCP Defender' was submitted via Hacker News Show HN. The website (mcpdefender.com) has a title and description indicating it protects AI apps like Cursor from security threats. However, there is no GitHub repository linked or found, and the website itself is sparse with no detailed information, screenshots, or user testimonials. No community signals (stars, forks, discussions) are available. The claim is plausible but lacks any supporting evidence. Given the absence of source code, documentation, and community validation, the tool appears to be either a placeholder or a low-effort project. Therefore, it is rejected due to insufficient evidence and high risk of being non-functional or abandoned.
+The tool MCP Defender was discovered via Hacker News Show HN. The website is reachable and describes a security tool for AI applications like Cursor. However, there is no GitHub repository or any other community presence to verify the project's quality, activity, or authenticity. The description is brief and lacks specific details about features, pricing, or technology. Without additional evidence, it is difficult to assess the tool's consistency, quality, or reliability. The lack of GitHub data and community signals raises concerns about the project's maturity and trustworthiness. Therefore, the verification is ambiguous with low confidence.
