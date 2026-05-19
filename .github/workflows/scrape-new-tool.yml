@@ -1,0 +1,56 @@
+name: Scrape New Tool
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Tool name"
+        required: true
+        type: string
+      website:
+        description: "Tool website URL"
+        required: false
+        type: string
+      github:
+        description: "GitHub repository URL (e.g. owner/repo)"
+        required: false
+        type: string
+      category:
+        description: "Tool category"
+        required: false
+        type: string
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run scrape tool script
+        run: |
+          npx tsx scripts/scrape-tool.ts \
+            --name "${{ github.event.inputs.name }}" \
+            ${{ github.event.inputs.website && format('--website "{0}"', github.event.inputs.website) || '' }} \
+            ${{ github.event.inputs.github && format('--github "{0}"', github.event.inputs.github) || '' }} \
+            ${{ github.event.inputs.category && format('--category "{0}"', github.event.inputs.category) || '' }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tools.json public/images/tools/
+          git diff --cached --quiet || git commit -m "chore: add new tool ${{ github.event.inputs.name }}"
+          git push

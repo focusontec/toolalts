@@ -1,0 +1,72 @@
+name: AutoClaw — Discover, Verify, Approve
+
+on:
+  schedule:
+    # Run every 4 hours (6x per day)
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ── STEP 1: DISCOVER ──────────────────────────────
+      - name: 🔍 Discover new tools
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/discover-tools.ts
+
+      # ── STEP 2: AI VERIFY ──────────────────────────────
+      - name: 🤖 AI Cross-Verification
+        timeout-minutes: 15
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'ollama' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemma4:31b' }}
+          OLLAMA_URL: ${{ vars.OLLAMA_URL || '' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/ai-verify.ts
+
+      # ── STEP 3: AUTO APPROVE ───────────────────────────
+      - name: 🔧 Auto-approve and ingest
+        run: npx tsx scripts/auto-approve.ts
+
+      # ── STEP 4: GENERATE COMPARISONS ───────────────────
+      - name: 📝 Generate comparison articles
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'ollama' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemma4:31b' }}
+        run: npx tsx scripts/generate-comparisons.ts
+
+      # ── STEP 5: SYNC GITHUB DATA ──────────────────────
+      - name: 📊 Sync tool data (stars, updates)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/sync-tools.ts
+
+      # ── STEP 6: COMMIT ─────────────────────────────────
+      - name: 💾 Commit changes
+        run: |
+          git config user.name "autoclaw[bot]"
+          git config user.email "autoclaw[bot]@users.noreply.github.com"
+          git add data/ src/content/reports/ src/content/comparisons/
+          if git diff --cached --quiet; then
+            echo "📭 No changes to commit."
+          else
+            git commit -m "autoclaw: auto-discover + verify + approve $(date -u +%Y-%m-%d-%H:%M)"
+            git push
+            echo "✅ Changes committed and pushed."
+          fi

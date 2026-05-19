@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "tagline": "All-in-one workspace for notes, docs, and collaboration",
+    "description": "Notion is a unified workspace for your notes, tasks, wikis, and databases. It helps teams collaborate and individuals stay organized.",
+    "rating": 4.8,
+    "reviewsCount": 12500,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://notion.so",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["Unlimited pages", "Basic blocks", "Up to 10 guests"] },
+      { "plan": "Plus", "price": "$10/mo", "features": ["Unlimited file uploads", "Version history", "Up to 100 guests"] },
+      { "plan": "Business", "price": "$15/mo", "features": ["SAML SSO", "Private teamspaces", "Bulk PDF export"] }
+    ],
+    "features": ["Real-time collaboration", "Databases & tables", "Templates gallery", "Kanban boards", "AI writing assistant"],
+    "category": "productivity",
+    "logo": "/logos/notion.svg"
+  },
+  {
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "tagline": "A powerful knowledge base on top of a local folder of plain text Markdown files",
+    "description": "Obsidian is a note-taking app that works on top of a local folder of plain text Markdown files. It's built for speed and privacy.",
+    "rating": 4.9,
+    "reviewsCount": 8900,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://obsidian.md",
+    "pricing": [
+      { "plan": "Personal", "price": "$0", "features": ["Local vault", "Community plugins", "Graph view"] },
+      { "plan": "Catalyst", "price": "$25 one-time", "features": ["Early access", "Insider builds", "Support devs"] },
+      { "plan": "Commercial", "price": "$50/yr", "features": ["Commercial use", "Priority support"] }
+    ],
+    "features": ["Local-first storage", "Graph view", "Backlinks", "Community plugins", "Canvas"],
+    "category": "productivity",
+    "logo": "/logos/obsidian.svg"
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "tagline": "The collaborative interface design tool",
+    "description": "Figma is a web-based design tool that enables real-time collaboration between designers and stakeholders.",
+    "rating": 4.7,
+    "reviewsCount": 15200,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://figma.com",
+    "pricing": [
+      { "plan": "Starter", "price": "$0", "features": ["3 Figma files", "3 FigJam files", "2 editors"] },
+      { "plan": "Professional", "price": "$12/mo", "features": ["Unlimited files", "Shared projects", "Team libraries"] },
+      { "plan": "Organization", "price": "$45/mo", "features": ["Design systems", "Analytics", "Centralized administration"] }
+    ],
+    "features": ["Real-time collaboration", "Prototyping", "Design systems", "Developer handoff", "Auto layout"],
+    "category": "design",
+    "logo": "/logos/figma.svg"
+  },
+  {
+    "slug": "penpot",
+    "name": "Penpot",
+    "tagline": "The open-source design and prototyping platform",
+    "description": "Penpot is the first open-source design and prototyping platform for product teams. It works with open web standards.",
+    "rating": 4.5,
+    "reviewsCount": 3200,
+    "openSource": true,
+    "githubStars": 28000,
+    "githubUrl": "https://github.com/penpot/penpot",
+    "websiteUrl": "https://penpot.app",
+    "pricing": [
+      { "plan": "Self-hosted", "price": "$0", "features": ["Unlimited files", "Unlimited users", "Self-hosted"] },
+      { "plan": "Cloud", "price": "$0", "features": ["Unlimited files", "Community support"] }
+    ],
+    "features": ["Open source", "SVG-based", "Real-time collaboration", "Design tokens", "Self-hosted"],
+    "category": "design",
+    "logo": "/logos/penpot.svg"
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "tagline": "The issue tracking tool you'll enjoy using",
+    "description": "Linear is a purpose-built tool for planning and building products. Streamline issues, sprints, and product roadmaps.",
+    "rating": 4.9,
+    "reviewsCount": 7600,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://linear.app",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["Up to 250 issues", "Unlimited file uploads", "Roadmap"] },
+      { "plan": "Standard", "price": "$8/mo", "features": ["Unlimited issues", "Guest accounts", "SLA timers"] },
+      { "plan": "Plus", "price": "$14/mo", "features": ["Multiple teams", "Initiatives", "Triage"] }
+    ],
+    "features": ["Keyboard-first design", "Git integration", "Cycles & sprints", "Roadmaps", "Triage workflow"],
+    "category": "project-management",
+    "logo": "/logos/linear.svg"
+  },
+  {
+    "slug": "github-issues",
+    "name": "GitHub Issues",
+    "tagline": "Plan, track, and discuss work right where the code lives",
+    "description": "GitHub Issues is a flexible tracking system built into GitHub, where developers already spend their time.",
+    "rating": 4.4,
+    "reviewsCount": 21000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://github.com/features/issues",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["Unlimited public repos", "2,000 Actions minutes"] },
+      { "plan": "Team", "price": "$4/mo", "features": ["Unlimited private repos", "3,000 Actions minutes", "Code owners"] },
+      { "plan": "Enterprise", "price": "$21/mo", "features": ["SAML SSO", "Advanced auditing", "Priority support"] }
+    ],
+    "features": ["Code references", "Project boards", "Milestones", "Labels & filters", "Automations"],
+    "category": "project-management",
+    "logo": "/logos/github.svg"
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "tagline": "The AI-first code editor",
+    "description": "Cursor is a code editor built for pair-programming with AI. It's a fork of VS Code with native AI integration.",
+    "rating": 4.7,
+    "reviewsCount": 5400,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://cursor.sh",
+    "pricing": [
+      { "plan": "Hobby", "price": "$0", "features": ["200 completions", "50 slow requests", "Basic models"] },
+      { "plan": "Pro", "price": "$20/mo", "features": ["Unlimited completions", "Fast requests", "Claude 3.5 Sonnet"] },
+      { "plan": "Business", "price": "$40/mo", "features": ["Team management", "Advanced security", "Priority support"] }
+    ],
+    "features": ["AI autocomplete", "Chat in editor", "Code generation", "Codebase understanding", "Tab-based predictions"],
+    "category": "development",
+    "logo": "/logos/cursor.svg"
+  },
+  {
+    "slug": "vscode",
+    "name": "VS Code",
+    "tagline": "Code editing. Redefined.",
+    "description": "Visual Studio Code is a free, lightweight but powerful source code editor with built-in support for JavaScript, TypeScript, and Node.js.",
+    "rating": 4.8,
+    "reviewsCount": 45000,
+    "openSource": true,
+    "githubStars": 162000,
+    "githubUrl": "https://github.com/microsoft/vscode",
+    "websiteUrl": "https://code.visualstudio.com",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["Unlimited usage", "Extensions marketplace", "Git integration", "Debugging"] }
+    ],
+    "features": ["IntelliSense", "Debugging", "Built-in Git", "Extensions", "Remote development"],
+    "category": "development",
+    "logo": "/logos/vscode.svg"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "tagline": "Team communication for the 21st century",
+    "description": "Slack is a messaging app for business that connects people to the information they need.",
+    "rating": 4.5,
+    "reviewsCount": 28000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://slack.com",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["90-day message history", "10 integrations", "1:1 video calls"] },
+      { "plan": "Pro", "price": "$7.25/mo", "features": ["Unlimited history", "Unlimited integrations", "Group video calls"] },
+      { "plan": "Business+", "price": "$12.50/mo", "features": ["Data exports", "SAML SSO", "99.99% uptime SLA"] }
+    ],
+    "features": ["Channels", "Huddles", "Workflows", "File sharing", "App integrations"],
+    "category": "communication",
+    "logo": "/logos/slack.svg"
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "tagline": "Your place to talk and hang out",
+    "description": "Discord is a voice, video, and text communication service used by over a hundred million people.",
+    "rating": 4.6,
+    "reviewsCount": 19000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://discord.com",
+    "pricing": [
+      { "plan": "Free", "price": "$0", "features": ["Unlimited servers", "Voice & video", "Screen share", "File sharing"] },
+      { "plan": "Nitro", "price": "$9.99/mo", "features": ["Higher upload limits", "HD video", "Custom emoji anywhere", "Server boosts"] }
+    ],
+    "features": ["Voice channels", "Screen sharing", "Threads", "Bots & apps", "Stage channels"],
+    "category": "communication",
+    "logo": "/logos/discord.svg"
+  }
+]

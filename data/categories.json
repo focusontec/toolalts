@@ -1,0 +1,7 @@
+[
+  { "slug": "productivity", "name": "Productivity", "description": "Tools to help you stay organized, take notes, and manage your workflow." },
+  { "slug": "design", "name": "Design", "description": "UI/UX design, prototyping, and graphic design tools." },
+  { "slug": "project-management", "name": "Project Management", "description": "Tools for planning, tracking, and delivering projects." },
+  { "slug": "development", "name": "Development", "description": "Code editors, IDEs, and developer tools." },
+  { "slug": "communication", "name": "Communication", "description": "Team chat, video calls, and messaging platforms." }
+]

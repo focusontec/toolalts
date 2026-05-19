@@ -1,0 +1,7 @@
+[
+  { "slug": "notion-vs-obsidian", "toolA": "notion", "toolB": "obsidian", "category": "productivity" },
+  { "slug": "figma-vs-penpot", "toolA": "figma", "toolB": "penpot", "category": "design" },
+  { "slug": "linear-vs-github-issues", "toolA": "linear", "toolB": "github-issues", "category": "project-management" },
+  { "slug": "cursor-vs-vscode", "toolA": "cursor", "toolB": "vscode", "category": "development" },
+  { "slug": "slack-vs-discord", "toolA": "slack", "toolB": "discord", "category": "communication" }
+]
