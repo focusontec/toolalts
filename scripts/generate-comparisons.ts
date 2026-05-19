@@ -85,7 +85,7 @@ Keep it between 500-800 words. Be specific with feature names and pricing number
 
 Write the comparison article now.`;
 
-  const response = await callLlm(systemPrompt, userPrompt);
+  const response = await callLlm(systemPrompt, userPrompt, { jsonMode: false });
   return response.content;
 }
 

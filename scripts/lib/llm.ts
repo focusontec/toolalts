@@ -7,7 +7,7 @@ interface LlmResponse {
   usage?: { prompt_tokens: number; completion_tokens: number };
 }
 
-export async function callLlm(systemPrompt: string, userPrompt: string): Promise<LlmResponse> {
+export async function callLlm(systemPrompt: string, userPrompt: string, options?: { jsonMode?: boolean }): Promise<LlmResponse> {
   const provider = process.env.LLM_PROVIDER || "ollama";
   const apiKey = process.env.LLM_API_KEY;
   const model = process.env.LLM_MODEL || (provider === "deepseek" ? "deepseek-chat" : "gemma4:31b");
@@ -26,7 +26,7 @@ export async function callLlm(systemPrompt: string, userPrompt: string): Promise
           { role: "system", content: systemPrompt },
           { role: "user", content: userPrompt },
         ],
-        response_format: { type: "json_object" },
+        ...(options?.jsonMode !== false ? { response_format: { type: "json_object" } } : {}),
         temperature: 0.3,
       }),
     });
