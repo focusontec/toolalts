@@ -75,7 +75,17 @@ function validateTool(tool: Tool, validCategories: Set<string>): string[] {
   if (!tool.description || typeof tool.description !== "string") errors.push("missing or invalid description");
   if (typeof tool.rating !== "number" || tool.rating < 0 || tool.rating > 5) errors.push(`invalid rating: ${tool.rating}`);
   if (typeof tool.reviewsCount !== "number" || tool.reviewsCount < 0) errors.push(`invalid reviewsCount: ${tool.reviewsCount}`);
-  if (!tool.websiteUrl || typeof tool.websiteUrl !== "string") errors.push("missing or invalid websiteUrl");
+
+  // Website URL validation - reject empty or auto-generated URLs
+  if (!tool.websiteUrl || typeof tool.websiteUrl !== "string") {
+    errors.push("missing websiteUrl — tool must have a real URL");
+  } else {
+    const domain = tool.websiteUrl.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+    const slugAsDomain = tool.slug.replace(/-/g, "") + ".com";
+    if (domain === slugAsDomain || domain === tool.slug + ".com") {
+      errors.push(`websiteUrl "${tool.websiteUrl}" appears auto-generated from slug`);
+    }
+  }
 
   if (!tool.category || !validCategories.has(tool.category)) {
     errors.push(`invalid category "${tool.category}" — must be one of: ${[...validCategories].join(", ")}`);
@@ -100,6 +110,15 @@ function verifiedToTool(v: any): Tool {
     v.category?.includes("open") ||
     (v.sources?.includes("github") && (v.qualityScore || 0) > 30);
 
+  // Use website from ai-verify result (already validated), NO fake URL fallback
+  const websiteUrl = v.website || "";
+
+  // github may be a full URL from ai-verify or a slug like "owner/repo"
+  let githubUrl: string | null = null;
+  if (v.github) {
+    githubUrl = v.github.startsWith("http") ? v.github : `https://github.com/${v.github}`;
+  }
+
   return {
     slug: v.slug,
     name: v.name,
@@ -109,8 +128,8 @@ function verifiedToTool(v: any): Tool {
     reviewsCount: 0,
     openSource: isOpenSource,
     githubStars: v.rawData?.stars || null,
-    githubUrl: v.github ? `https://github.com/${v.github}` : null,
-    websiteUrl: v.website || `https://${v.slug}.com`,
+    githubUrl,
+    websiteUrl,
     pricing: Array.isArray(v.pricing)
       ? v.pricing.map((p: any) => ({
           plan: p.plan || "Unknown",
@@ -193,13 +212,30 @@ async function main() {
     for (const [slug, errors] of validationErrors) {
       console.warn(`   ${slug}: ${errors.join("; ")}`);
     }
-    console.warn(`   Tools with errors will still be added but need manual review.`);
   }
 
-  const allTools = [...tools, ...newTools];
+  // Filter out tools with critical validation errors (missing/fake URLs)
+  const validTools = newTools.filter((tool) => {
+    const errors = validationErrors.get(tool.slug) || [];
+    const hasCriticalError = errors.some(
+      (e) => e.includes("missing websiteUrl") || e.includes("auto-generated")
+    );
+    if (hasCriticalError) {
+      console.warn(`   ❌ SKIPPED ${tool.slug}: has critical URL issues`);
+    }
+    return !hasCriticalError;
+  });
+
+  const skippedCount = newTools.length - validTools.length;
+  if (skippedCount > 0) {
+    console.warn(`\n   Skipped ${skippedCount} tools with missing/fake URLs.`);
+    console.warn(`   Fix their URLs in verified-results.json and re-run auto-approve.`);
+  }
+
+  const allTools = [...tools, ...validTools];
 
   // Generate new comparison pairs for affected categories
-  const affectedCategories = new Set(newTools.map((t) => t.category));
+  const affectedCategories = new Set(validTools.map((t) => t.category));
   let newComparisons: Comparison[] = [];
   for (const cat of affectedCategories) {
     const catNew = generateComparisonsForCategory(allTools, cat, comparisons);
@@ -215,12 +251,13 @@ async function main() {
   fs.writeFileSync(VERIFIED_PATH, "[]");
 
   console.log(`\n✅ Pipeline complete:`);
-  console.log(`   Tools added: ${newTools.length}`);
+  console.log(`   Tools added: ${validTools.length}`);
+  console.log(`   Tools skipped (URL issues): ${skippedCount}`);
   console.log(`   New comparisons: ${newComparisons.length}`);
   console.log(`   Total tools: ${allTools.length}`);
   console.log(`   Total comparisons: ${allComparisons.length}`);
 
-  for (const t of newTools) {
+  for (const t of validTools) {
     console.log(`   + ${t.name} (${t.category}) — ${t.openSource ? "Open Source" : "Proprietary"}`);
   }
 }

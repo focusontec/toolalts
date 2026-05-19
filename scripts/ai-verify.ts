@@ -15,6 +15,8 @@ const REPORTS_DIR = path.resolve(__dirname, "../src/content/reports");
 interface VerificationResult {
   slug: string;
   name: string;
+  website: string;
+  github: string | null;
   decision: "APPROVE" | "REJECT" | "AMBIGUOUS";
   confidence: number; // 0-100
   verificationScore: number; // 0-100
@@ -55,35 +57,62 @@ async function fetchGitHubData(fullName: string): Promise<any> {
   } catch { return null; }
 }
 
-async function fetchWebsiteMeta(websiteUrl: string): Promise<{ title?: string; description?: string }> {
+async function fetchWebsiteMeta(websiteUrl: string): Promise<{ title?: string; description?: string; reachable: boolean }> {
   try {
     const res = await fetch(websiteUrl, { headers: { "User-Agent": "Mozilla/5.0" }, signal: AbortSignal.timeout(8000) });
-    if (!res.ok) return {};
+    if (!res.ok) return { reachable: false };
     const html = await res.text();
-    const titleMatch = html.match(/<title>([^\u003c]+)<\/title>/i);
-    const descMatch = html.match(/<meta[^\u003e]*name=["']description["'][^\u003e]*content=["']([^"']+)["'][^\u003e]*>/i) ||
-                       html.match(/<meta[^\u003e]*content=["']([^"']+)["'][^\u003e]*name=["']description["'][^\u003e]*>/i);
+    const titleMatch = html.match(/<title>([^<]+)<\/title>/i);
+    const descMatch = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']+)["'][^>]*>/i) ||
+                       html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*name=["']description["'][^>]*>/i);
     return {
       title: titleMatch?.[1]?.trim(),
       description: descMatch?.[1]?.trim(),
+      reachable: true,
     };
-  } catch { return {}; }
+  } catch { return { reachable: false }; }
+}
+
+function isUrlSuspicious(url: string, slug: string): string | null {
+  if (!url) return "URL is empty";
+  try {
+    const parsed = new URL(url);
+    const domain = parsed.hostname.replace(/^www\./, "");
+    const slugAsDomain = slug.replace(/-/g, "") + ".com";
+    if (domain === slugAsDomain || domain === slug + ".com") {
+      return `URL "${url}" appears auto-generated from slug "${slug}"`;
+    }
+    return null;
+  } catch {
+    return `URL "${url}" is malformed`;
+  }
 }
 
 async function verifyCandidate(candidate: any): Promise<VerificationResult> {
   console.log(`\n🔬 Verifying: ${candidate.name} (${candidate.source})`);
 
+  // Pre-check: flag suspicious URLs before LLM verification
+  const urlWarning = isUrlSuspicious(candidate.website, candidate.slug);
+  if (urlWarning) {
+    console.warn(`   ⚠️ URL CHECK: ${urlWarning}`);
+  }
+
   // Gather multi-source evidence
   const [ghData, webMeta] = await Promise.all([
     candidate.github ? fetchGitHubData(candidate.github) : Promise.resolve(null),
-    candidate.website ? fetchWebsiteMeta(candidate.website) : Promise.resolve({}),
+    candidate.website ? fetchWebsiteMeta(candidate.website) : Promise.resolve({ reachable: false }),
   ]);
+
+  if (candidate.website && !webMeta.reachable) {
+    console.warn(`   ⚠️ URL CHECK: Website "${candidate.website}" is not reachable`);
+  }
 
   const evidence = {
     name: candidate.name,
     source: candidate.source,
     github: candidate.github,
     website: candidate.website,
+    websiteReachable: webMeta.reachable,
     githubData: ghData ? {
       description: ghData.description,
       stars: ghData.stargazers_count,
@@ -106,7 +135,13 @@ Evaluation Rules:
 2. QUALITY: Is this a real, maintained project? (stars >500 = good, >5000 = excellent, last update <6 months = active)
 3. CLASSIFICATION: Determine the most accurate category and tagline
 4. PRICING: Infer pricing model from description and README context (Free/Open Source/Paid/Freemium)
-5. RED FLAGS: Abandoned repos (>1yr stale), placeholder websites, misleading descriptions
+5. URL VERIFICATION: Check if the website URL is real and reachable. If the URL looks auto-generated (e.g. slug-name.com), fabricated, or is unreachable, flag this as a RED FLAG and include it in concerns.
+6. RED FLAGS: Abandoned repos (>1yr stale), placeholder/unreachable websites, misleading descriptions, auto-generated URLs
+
+IMPORTANT on URLs:
+- If websiteReachable is false, the website URL is likely fake or dead. Add this to concerns.
+- If the URL domain looks like it was generated from the tool name (e.g. "toolname.com" for a tool called "toolname"), it may be fabricated. Verify against the GitHub homepage field instead.
+- The website URL in the evidence is the ORIGINAL discovered URL. If it's valid, include it in your output.
 
 Output MUST be valid JSON with NO markdown formatting, NO code blocks, NO extra text.
 
@@ -122,6 +157,8 @@ Required JSON schema:
   "description": "2-3 sentences describing what it does and who it's for",
   "features": ["3-5 key features"],
   "pricing": [{"plan": "Free|Pro|Enterprise", "price": "$0 or $X/mo", "features": ["what's included"]}],
+  "websiteUrl": "the verified real URL of the tool (from GitHub homepage or official site, NOT a fabricated URL)",
+  "githubUrl": "full GitHub URL if applicable, or null",
   "concerns": ["list any red flags or uncertainties"],
   "fullReport": "Detailed multi-paragraph analysis of the verification process and final verdict"
 }`;
@@ -131,7 +168,7 @@ Required JSON schema:
 ${JSON.stringify(evidence, null, 2)}`;
 
   const llmRes = await callLlm(systemPrompt, userPrompt);
-  let parsed: Partial<VerificationResult>;
+  let parsed: any;
   try {
     const clean = llmRes.content.replace(/```json\s*|```\s*$/g, "").trim();
     parsed = JSON.parse(clean);
@@ -145,9 +182,40 @@ ${JSON.stringify(evidence, null, 2)}`;
     };
   }
 
+  // Determine the best website URL: prefer LLM-verified, fallback to original candidate URL
+  const llmWebsite = parsed.websiteUrl;
+  const originalWebsite = candidate.website;
+  const githubHomepage = ghData?.homepage;
+
+  // Pick the most reliable URL
+  let bestWebsite = "";
+  if (llmWebsite && !isUrlSuspicious(llmWebsite, candidate.slug)) {
+    bestWebsite = llmWebsite;
+  } else if (githubHomepage && !isUrlSuspicious(githubHomepage, candidate.slug)) {
+    bestWebsite = githubHomepage;
+  } else if (originalWebsite && webMeta.reachable) {
+    bestWebsite = originalWebsite;
+  } else if (githubHomepage) {
+    bestWebsite = githubHomepage;
+  } else if (originalWebsite) {
+    bestWebsite = originalWebsite;
+  }
+
+  // Build concerns list, adding URL issues
+  const concerns: string[] = parsed.concerns || [];
+  if (!bestWebsite) {
+    concerns.push("No valid website URL found");
+  } else if (isUrlSuspicious(bestWebsite, candidate.slug)) {
+    concerns.push(`Website URL may be auto-generated: ${bestWebsite}`);
+  }
+
   const result: VerificationResult = {
     slug: candidate.slug,
     name: candidate.name,
+    website: bestWebsite,
+    github: parsed.githubUrl || candidate.github
+      ? `https://github.com/${candidate.github}`
+      : null,
     decision: parsed.decision || "AMBIGUOUS",
     confidence: parsed.confidence || 0,
     verificationScore: parsed.verificationScore || 0,
@@ -158,7 +226,7 @@ ${JSON.stringify(evidence, null, 2)}`;
     description: parsed.description || candidate.rawData?.description || "",
     features: parsed.features || [],
     pricing: parsed.pricing || [{ plan: "Unknown", price: "?", features: [] }],
-    concerns: parsed.concerns || [],
+    concerns,
     sources: ["github", "website", "llm-analysis"].filter(Boolean),
     fullReport: parsed.fullReport || "",
     processedAt: new Date().toISOString(),
@@ -190,6 +258,8 @@ processedAt: "${result.processedAt}"
 
 ## Proposed Metadata
 
+- **Website**: ${result.website || "N/A"}
+- **GitHub**: ${result.github || "N/A"}
 - **Category**: ${result.category}
 - **Tagline**: ${result.tagline}
 - **Features**: ${result.features.join(", ")}
@@ -229,6 +299,7 @@ async function main() {
 
       if (result.decision === "APPROVE" && result.confidence >= 70) {
         console.log(`   ✅ APPROVED — confidence ${result.confidence}, scores V${result.verificationScore}/Q${result.qualityScore}/C${result.consistencyScore}`);
+        console.log(`      website: ${result.website || "MISSING"}`);
       } else if (result.decision === "REJECT") {
         console.log(`   ❌ REJECTED — ${result.concerns.join("; ")}`);
       } else {
