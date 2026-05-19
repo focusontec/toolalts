@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const WORKFLOWS = [
   { id: "discover-tools.yml", label: "Full Pipeline", description: "Discover → Verify → Approve → Compare → Sync" },
+  { id: "ai-audit.yml", label: "AI Audit", description: "DeepSeek data accuracy + content quality audit" },
   { id: "sync-tools.yml", label: "Sync Tools", description: "Update GitHub stars and pricing screenshots" },
   { id: "generate-comparisons.yml", label: "Generate Comparisons", description: "Generate comparison articles via LLM" },
   { id: "scrape-new-tool.yml", label: "Scrape New Tool", description: "Manually add a new tool" },

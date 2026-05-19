@@ -1,0 +1,70 @@
+name: AutoClaw — AI Audit
+
+on:
+  schedule:
+    # Run weekly on Wednesday at 2am UTC
+    - cron: "0 2 * * 3"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Audit mode"
+        required: false
+        default: "all"
+        type: choice
+        options:
+          - all
+          - data
+          - content
+      slug:
+        description: "Audit specific tool/content (leave empty for all)"
+        required: false
+        type: string
+      limit:
+        description: "Max items to audit (0 = unlimited)"
+        required: false
+        default: "0"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run AI Audit
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx tsx scripts/ai-audit.ts \
+            --mode "${{ github.event.inputs.mode || 'all' }}" \
+            ${{ github.event.inputs.slug && format('--slug "{0}"', github.event.inputs.slug) || '' }} \
+            --limit "${{ github.event.inputs.limit || '0' }}"
+
+      - name: Commit results
+        run: |
+          git config user.name "autoclaw[bot]"
+          git config user.email "autoclaw[bot]@users.noreply.github.com"
+          git add data/audit-results.json
+          if git diff --cached --quiet; then
+            echo "📭 No changes to commit."
+          else
+            git commit -m "autoclaw: AI audit results $(date -u +%Y-%m-%d)"
+            git push
+            echo "✅ Audit results committed."
+          fi
