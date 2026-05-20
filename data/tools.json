@@ -248,7 +248,7 @@
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
-    "githubStars": 47955,
+    "githubStars": 47957,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -575,7 +575,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185148,
+    "githubStars": 185155,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -1384,7 +1384,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 99900,
+    "githubStars": 99945,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [
@@ -1767,5 +1767,33 @@
     ],
     "category": "development",
     "logo": "/logos/langfuse.svg"
+  },
+  {
+    "slug": "axilla",
+    "name": "Axilla",
+    "tagline": "The TypeScript framework for AI development.",
+    "description": "Axilla is a TypeScript framework designed for AI development, providing tools and abstractions to build AI-powered applications. It targets developers looking to integrate AI capabilities into their TypeScript projects.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/axilla-io/ax",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source framework"
+        ]
+      }
+    ],
+    "features": [
+      "TypeScript-native AI development framework",
+      "Abstractions for AI model integration",
+      "Developer-friendly APIs"
+    ],
+    "category": "development",
+    "logo": "/logos/axilla.svg"
   }
 ]

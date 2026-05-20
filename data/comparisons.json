@@ -778,5 +778,107 @@
     "toolA": "penpot",
     "toolB": "onlook",
     "category": "design"
+  },
+  {
+    "slug": "cursor-vs-claude-code",
+    "toolA": "cursor",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-awesome-claude-skills",
+    "toolA": "cursor",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-system-prompts-and-models-of-ai-tools",
+    "toolA": "vscode",
+    "toolB": "system-prompts-and-models-of-ai-tools",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-claude-code",
+    "toolA": "vscode",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-markitdown",
+    "toolA": "vscode",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-deer-flow",
+    "toolA": "vscode",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-awesome-claude-skills",
+    "toolA": "vscode",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-nanobot",
+    "toolA": "vscode",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-claude-code",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-markitdown",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-deer-flow",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-awesome-claude-skills",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-nanobot",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-awesome-claude-skills",
+    "toolA": "claude-code",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-deer-flow",
+    "toolA": "markitdown",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-awesome-claude-skills",
+    "toolA": "markitdown",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "deer-flow-vs-awesome-claude-skills",
+    "toolA": "deer-flow",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
   }
 ]
