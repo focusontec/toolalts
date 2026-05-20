@@ -3,8 +3,8 @@ slug: "artistassistapp"
 name: "ArtistAssistApp"
 decision: "APPROVE"
 confidence: 80
-category: "design"
-processedAt: "2026-05-20T18:08:54.212Z"
+category: "other"
+processedAt: "2026-05-20T21:29:30.796Z"
 ---
 
 # AI Verification Report: ArtistAssistApp
@@ -15,23 +15,23 @@ processedAt: "2026-05-20T18:08:54.212Z"
 |--------|-------|
 | Verification Score | 70/100 |
 | Quality Score | 50/100 |
-| Consistency Score | 80/100 |
+| Consistency Score | 100/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://artistassistapp.com/
 - **GitHub**: N/A
-- **Category**: design
-- **Tagline**: AI-powered tool to help artists create better paintings by analyzing reference photos and suggesting color palettes.
-- **Features**: AI-powered color palette extraction from reference photos, Composition analysis and suggestions, Value study tools to simplify tones, Image cropping and perspective guides
-- **Pricing**: Free ($0), Pro ($9.99/mo)
+- **Category**: other
+- **Tagline**: A web-based tool to help artists mix colors and match paint colors from reference images.
+- **Features**: Upload reference images to extract color palettes, Suggest paint color matches from popular brands, Color mixing guidance for achieving desired hues, User-friendly interface for artists
+- **Pricing**: Free ($0)
 
 ## Concerns
-- No GitHub repository found, so community activity and code transparency are unverifiable.
-- Pricing is inferred from typical SaaS models; actual pricing not confirmed from evidence.
-- Limited evidence beyond website reachability; no user reviews or detailed feature descriptions available.
+- No GitHub repository found, so community activity and code quality cannot be verified.
+- Limited evidence beyond the website; no user reviews or third-party mentions available.
+- Pricing model is inferred as free based on website content, but no explicit pricing page was found.
 - Website URL may be auto-generated: https://artistassistapp.com/
 
 ## Full Analysis
 
-The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and appears to be a legitimate web application for artists. However, there is no GitHub data available, so the quality and maintenance of the project cannot be assessed through open-source metrics. The website description suggests it offers AI-powered features for color palette extraction and composition analysis, which are consistent with the tool's name and purpose. The pricing model is inferred based on common SaaS patterns, but no explicit pricing page was verified. Overall, the tool seems plausible and useful for artists, but the lack of GitHub presence and limited evidence reduce confidence. The decision is APPROVE with moderate confidence.
+The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and presents a functional web application for artists to mix and match paint colors. The description is consistent with the tool's purpose. However, there is no GitHub repository or other community signals to verify development activity or popularity. The website appears to be a legitimate, single-purpose tool. Given the lack of GitHub data, the quality score is moderate. The tool is approved with moderate confidence, noting the absence of open-source verification.
