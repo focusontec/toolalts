@@ -95,5 +95,102 @@
     ],
     "fullReport": "The tool EXT was submitted via Hacker News Show HN with a website URL https://ext.store. However, the website is unreachable, and no GitHub repository data was provided. There is no evidence to verify the tool's existence, functionality, or quality. Therefore, the tool is rejected due to lack of verifiable information.",
     "processedAt": "2026-05-19T21:10:42.413Z"
+  },
+  {
+    "slug": "mcp",
+    "name": "MCP",
+    "website": "https://mcpdefender.com",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "MCP Defender protects AI apps like Cursor from security threats.",
+    "description": "MCP Defender is a security tool designed to protect AI applications on your computer from threats. It targets users of AI coding assistants such as Cursor.",
+    "features": [
+      "Protects AI apps from security threats",
+      "Focuses on Cursor and similar tools",
+      "Desktop security solution"
+    ],
+    "pricing": [
+      {
+        "plan": "Unknown",
+        "price": "Unverifiable",
+        "features": [
+          "No pricing information available"
+        ]
+      }
+    ],
+    "concerns": [
+      "No GitHub repository found",
+      "No community signals or stars to assess quality",
+      "Limited information to verify consistency or features",
+      "Website reachable but lacks detailed evidence"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool MCP Defender was discovered via Hacker News Show HN. The website is reachable and describes itself as a security tool for AI apps like Cursor. However, there is no GitHub data available, making it impossible to assess code quality, activity, or community adoption. The description is brief and lacks specifics about features or pricing. Given the lack of verifiable evidence from multiple sources, the tool's legitimacy and quality cannot be confirmed. The decision is AMBIGUOUS with low confidence.",
+    "processedAt": "2026-05-20T02:01:12.951Z"
+  },
+  {
+    "slug": "open",
+    "name": "Open",
+    "website": "https://news.ycombinator.com/item?id=29081054",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "Unverifiable tool with no reachable website or GitHub data.",
+    "description": "The tool 'Open' was discovered via a Hacker News Show HN post, but the provided website URL is unreachable and no GitHub data is available. Without any accessible source, it is impossible to determine its purpose, features, or quality.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website URL is unreachable.",
+      "No GitHub data available.",
+      "Cannot verify existence or functionality of the tool."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Open' was submitted as a Show HN on Hacker News, but the provided URL (https://news.ycombinator.com/item?id=29081054) is the Hacker News thread itself, not a dedicated website. The website is unreachable, and no GitHub repository or other evidence is available. Without any accessible source, the tool cannot be verified. The decision is REJECT due to lack of verifiable information.",
+    "processedAt": "2026-05-20T02:01:16.659Z"
+  },
+  {
+    "slug": "ext",
+    "name": "EXT",
+    "website": "https://ext.store",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "No verifiable information available.",
+    "description": "The tool EXT has no reachable website and no GitHub data, making it impossible to verify its purpose, features, or quality.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website unreachable (https://ext.store)",
+      "No GitHub data available",
+      "No evidence of existence or maintenance"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool EXT was discovered via Hacker News Show HN. The provided website (https://ext.store) is unreachable, and no GitHub repository or other data is available. Without any reachable source or community signals, the tool cannot be verified. It is likely either a placeholder, a dead project, or fabricated. Therefore, the tool is rejected.",
+    "processedAt": "2026-05-20T02:01:19.705Z"
   }
 ]
