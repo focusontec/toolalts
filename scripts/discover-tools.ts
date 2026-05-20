@@ -37,7 +37,7 @@ function savePending(candidates: Candidate[]) {
 }
 
 async function fetchGitHubTrending(query: string): Promise<Candidate[]> {
-  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}+created:>2024-01-01+stars:>500&sort=stars&order=desc&per_page=10`;
+  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}+created:>2024-01-01+stars:>2000&sort=stars&order=desc&per_page=10`;
   const res = await fetch(url, {
     headers: process.env.GITHUB_TOKEN
       ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
@@ -65,8 +65,42 @@ async function fetchGitHubTrending(query: string): Promise<Candidate[]> {
   }));
 }
 
+async function fetchProductHunt(): Promise<Candidate[]> {
+  // Product Hunt doesn't have a simple public API, so we scrape their topics page
+  try {
+    const res = await fetch("https://www.producthunt.com/topics/developer-tools", {
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; tool-alts/1.0)" },
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return [];
+    const html = await res.text();
+
+    // Extract tool names from the page (basic pattern matching)
+    const nameMatches = html.matchAll(/"name"\s*:\s*"([^"]+)"/g);
+    const candidates: Candidate[] = [];
+
+    for (const match of nameMatches) {
+      const name = match[1];
+      if (name.length > 2 && name.length < 50 && !name.includes("Product Hunt")) {
+        candidates.push({
+          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
+          name,
+          source: "producthunt",
+          website: "",
+          discoveredAt: new Date().toISOString(),
+          rawData: { source: "producthunt-developer-tools" },
+        });
+      }
+    }
+
+    return candidates.slice(0, 10);
+  } catch {
+    return [];
+  }
+}
+
 async function fetchHackerNews(): Promise<Candidate[]> {
-  const url = "https://hn.algolia.com/api/v1/search?tags=show_hn&query=open+source+app+tool&numericFilters=points>20&hitsPerPage=15";
+  const url = "https://hn.algolia.com/api/v1/search?tags=show_hn&query=open+source+app+tool&numericFilters=points>100&hitsPerPage=15";
   const res = await fetch(url);
   if (!res.ok) return [];
   const data = await res.json();
@@ -94,7 +128,7 @@ async function main() {
   console.log(`   Pending candidates: ${pending.length}`);
 
   // Parallel discovery from multiple sources
-  const [github, hn] = await Promise.all([
+  const [github, hn, ph] = await Promise.all([
     fetchGitHubTrending("note-taking OR project-management OR design tool").catch((e) => {
       console.warn("GitHub discovery failed:", e.message);
       return [];
@@ -103,14 +137,19 @@ async function main() {
       console.warn("HN discovery failed:", e.message);
       return [];
     }),
+    fetchProductHunt().catch((e) => {
+      console.warn("Product Hunt discovery failed:", e.message);
+      return [];
+    }),
   ]);
 
-  const allNew: Candidate[] = [...github, ...hn];
+  const allNew: Candidate[] = [...github, ...hn, ...ph];
   const trulyNew = allNew.filter((c) => !allSlugs.has(c.slug) && c.name.length > 1);
 
   console.log(`\n🔍 Discovery results:`);
-  console.log(`   GitHub candidates: ${github.length}`);
-  console.log(`   HN candidates: ${hn.length}`);
+  console.log(`   GitHub candidates: ${github.length} (stars > 2000)`);
+  console.log(`   HN candidates: ${hn.length} (points > 100)`);
+  console.log(`   Product Hunt candidates: ${ph.length}`);
   console.log(`   New (not in existing): ${trulyNew.length}`);
 
   if (trulyNew.length > 0) {
