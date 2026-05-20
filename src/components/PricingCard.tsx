@@ -8,22 +8,29 @@ interface PricingCardProps {
 export function PricingCard({ plan, featured }: PricingCardProps) {
   return (
     <div
-      className={`rounded-2xl border p-6 ${
+      className={`rounded-xl border p-5 transition-all ${
         featured
-          ? "border-indigo-200 bg-indigo-50/50 dark:border-indigo-900 dark:bg-indigo-950/30"
-          : "border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900"
+          ? "border-[var(--color-accent)]/30 bg-[var(--color-accent-light)]"
+          : "border-[var(--color-border)] bg-[var(--color-surface)]"
       }`}
     >
-      <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-        {plan.plan}
-      </h4>
-      <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-slate-100">
+      <div className="flex items-baseline justify-between">
+        <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-[var(--color-ink-faint)]">
+          {plan.plan}
+        </h4>
+        {featured && (
+          <span className="rounded-full bg-[var(--color-accent)] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white">
+            Popular
+          </span>
+        )}
+      </div>
+      <p className="mt-2 text-2xl font-bold tracking-tight text-[var(--color-ink)]">
         {plan.price}
       </p>
-      <ul className="mt-4 space-y-2">
+      <ul className="mt-3 space-y-1.5">
         {plan.features.map((f) => (
-          <li key={f} className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
-            <svg className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <li key={f} className="flex items-start gap-2 text-[13px] text-[var(--color-ink-muted)]">
+            <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-success)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
             {f}

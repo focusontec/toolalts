@@ -19,12 +19,12 @@ const tools = toolsData as Tool[];
 const categories = categoriesData as Category[];
 
 const hotAlternatives = [
-  { slug: "notion", label: "Notion Alternatives" },
-  { slug: "figma", label: "Figma Alternatives" },
-  { slug: "linear", label: "Linear Alternatives" },
-  { slug: "cursor", label: "Cursor Alternatives" },
-  { slug: "slack", label: "Slack Alternatives" },
-  { slug: "vscode", label: "VS Code Alternatives" },
+  { slug: "notion", label: "Notion" },
+  { slug: "figma", label: "Figma" },
+  { slug: "linear", label: "Linear" },
+  { slug: "cursor", label: "Cursor" },
+  { slug: "slack", label: "Slack" },
+  { slug: "vscode", label: "VS Code" },
 ];
 
 export default function HomePage() {
@@ -46,26 +46,41 @@ export default function HomePage() {
   return (
     <>
       <SchemaJsonLd schema={schema} />
-      <section className="relative overflow-hidden border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+
+      {/* ─── Hero ─── */}
+      <section className="noise relative overflow-hidden bg-[var(--color-highlight)]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(232,85,61,0.15),transparent)]" />
+        <div className="relative z-10 mx-auto max-w-6xl px-6 pb-20 pt-24 sm:pb-28 sm:pt-32">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Find the Best Alternatives to Your Favorite Tools
+            <div className="animate-fade-in-up">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/60 backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
+                Open source & paid alternatives
+              </span>
+            </div>
+            <h1 className="animate-fade-in-up-delay-1 mt-8 font-display text-4xl leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Find the best alternatives
+              <br />
+              <span className="text-white/40">to your favorite tools</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Open-source and paid alternatives for developers, designers, and
-              productivity hackers.
+            <p className="animate-fade-in-up-delay-2 mt-6 text-lg leading-relaxed text-white/50">
+              Side-by-side comparisons of features, pricing, and ratings.
+              <br className="hidden sm:block" />
+              For developers, designers, and productivity hackers.
             </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <div className="animate-fade-in-up-delay-3 mt-10 flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/category/"
-                className="inline-flex items-center rounded-xl bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-700"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-[var(--color-ink)] transition-all hover:bg-white/90 hover:shadow-lg"
               >
                 Browse Categories
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
               </Link>
               <Link
                 href="/blog/"
-                className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                className="inline-flex items-center rounded-full border border-white/15 px-6 py-2.5 text-sm font-medium text-white/70 transition-all hover:border-white/30 hover:text-white"
               >
                 Read Blog
               </Link>
@@ -74,74 +89,100 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      {/* ─── Popular Alternatives ─── */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10">
-          <h2 className="text-2xl font-bold text-slate-900">
+          <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--color-accent)]">
+            Trending
+          </span>
+          <h2 className="mt-2 font-display text-3xl tracking-tight text-[var(--color-ink)] sm:text-4xl">
             Popular Alternatives
           </h2>
-          <p className="mt-2 text-slate-600">
-            Explore the most-searched tools and their best alternatives.
+          <p className="mt-3 max-w-xl text-[var(--color-ink-faint)]">
+            Explore the most-searched tools and discover what else is out there.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {hotAlternatives.map((alt) => (
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {hotAlternatives.map((alt, i) => (
             <Link
               key={alt.slug}
               href={`/alternative-to/${alt.slug}/`}
-              className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-indigo-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
+              className={`group flex items-center justify-between rounded-xl border border-[var(--color-border)] bg-white px-5 py-4 transition-all hover:border-[var(--color-accent)]/30 hover:shadow-md ${
+                i === 0 ? "sm:col-span-2 lg:col-span-1" : ""
+              }`}
             >
-              <span className="font-semibold text-slate-900 dark:text-slate-100">
-                {alt.label}
-              </span>
-              <svg
-                className="h-5 w-5 text-slate-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
+              <div className="flex items-center gap-3">
+                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-surface-warm)] text-sm font-bold text-[var(--color-ink-muted)] group-hover:bg-[var(--color-accent-light)] group-hover:text-[var(--color-accent)]">
+                  {alt.label.slice(0, 2)}
+                </span>
+                <span className="font-semibold text-[var(--color-ink)]">
+                  {alt.label} Alternatives
+                </span>
+              </div>
+              <svg className="h-4 w-4 text-[var(--color-ink-faint)] transition-transform group-hover:translate-x-0.5 group-hover:text-[var(--color-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-10">
-          <h2 className="text-2xl font-bold text-slate-900">Browse by Category</h2>
-          <p className="mt-2 text-slate-600">
-            Find tools tailored to your workflow.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/category/${cat.slug}/`}
-              className="group rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-indigo-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
-            >
-              <h3 className="text-lg font-semibold text-slate-900 group-hover:text-primary-600 dark:text-slate-100 dark:group-hover:text-indigo-400">
-                {cat.name}
-              </h3>
-              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                {cat.description}
-              </p>
-            </Link>
-          ))}
+      {/* ─── Categories ─── */}
+      <section className="bg-[var(--color-surface-warm)]">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="mb-10">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--color-accent)]">
+              Explore
+            </span>
+            <h2 className="mt-2 font-display text-3xl tracking-tight text-[var(--color-ink)] sm:text-4xl">
+              Browse by Category
+            </h2>
+            <p className="mt-3 max-w-xl text-[var(--color-ink-faint)]">
+              Find tools tailored to your workflow.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/category/${cat.slug}/`}
+                className="group rounded-xl border border-[var(--color-border)] bg-white p-6 transition-all hover:border-[var(--color-accent)]/30 hover:shadow-md"
+              >
+                <h3 className="text-lg font-semibold text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
+                  {cat.name}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-[var(--color-ink-faint)]">
+                  {cat.description}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-10">
-          <h2 className="text-2xl font-bold text-slate-900">Featured Tools</h2>
-          <p className="mt-2 text-slate-600">
-            Hand-picked tools worth checking out today.
-          </p>
+      {/* ─── Featured Tools ─── */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-10 flex items-end justify-between">
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--color-accent)]">
+              Curated
+            </span>
+            <h2 className="mt-2 font-display text-3xl tracking-tight text-[var(--color-ink)] sm:text-4xl">
+              Featured Tools
+            </h2>
+            <p className="mt-3 max-w-xl text-[var(--color-ink-faint)]">
+              Hand-picked tools worth checking out today.
+            </p>
+          </div>
+          <Link
+            href="/category/"
+            className="hidden items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-opacity hover:opacity-70 sm:inline-flex"
+          >
+            View all
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {featuredTools.map((tool) => (

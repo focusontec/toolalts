@@ -82,7 +82,7 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-6 py-12">
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -91,44 +91,69 @@ export default async function BlogPostPage({
         ]}
       />
 
-      <article>
-        <header className="mb-8">
-          <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
-            <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            {post.author && (
-              <>
-                <span>•</span>
-                <span>{post.author}</span>
-              </>
-            )}
-          </div>
-          <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-            {post.title}
-          </h1>
+      <article className="mx-auto max-w-[680px]">
+        {/* Article Header */}
+        <header className="mb-10">
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mb-4 flex flex-wrap gap-1.5">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-400"
+                  className="rounded-md bg-[var(--color-accent-light)] px-2.5 py-0.5 text-[11px] font-semibold text-[var(--color-accent)]"
                 >
                   {tag}
                 </span>
               ))}
             </div>
           )}
+          <h1 className="font-display text-3xl leading-[1.15] tracking-tight text-[var(--color-ink)] sm:text-4xl lg:text-[2.75rem]">
+            {post.title}
+          </h1>
+          <div className="mt-5 flex items-center gap-3">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-highlight)] text-xs font-bold text-white">
+              TA
+            </div>
+            <div>
+              <p className="text-sm font-medium text-[var(--color-ink)]">
+                {post.author}
+              </p>
+              <time
+                dateTime={post.date}
+                className="text-xs text-[var(--color-ink-faint)]"
+              >
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+            </div>
+          </div>
+          <div className="mt-8 border-b border-[var(--color-border)]" />
         </header>
 
-        <div className="prose prose-slate max-w-none dark:prose-invert">
+        {/* Article Body */}
+        <div className="prose">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
           </ReactMarkdown>
+        </div>
+
+        {/* Article Footer */}
+        <div className="mt-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-warm)] p-6">
+          <p className="text-sm font-medium text-[var(--color-ink)]">
+            Enjoyed this article?
+          </p>
+          <p className="mt-1 text-sm text-[var(--color-ink-faint)]">
+            Check out more articles on our{" "}
+            <a href="/blog/" className="font-medium text-[var(--color-accent)] hover:underline">
+              blog
+            </a>{" "}
+            or explore{" "}
+            <a href="/category/" className="font-medium text-[var(--color-accent)] hover:underline">
+              tool categories
+            </a>.
+          </p>
         </div>
       </article>
     </div>

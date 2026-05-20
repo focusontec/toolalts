@@ -46,53 +46,98 @@ async function loadPosts(): Promise<BlogPost[]> {
 
 export default async function BlogPage() {
   const posts = await loadPosts();
+  const [featured, ...rest] = posts;
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mb-10">
-        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+    <div className="mx-auto max-w-6xl px-6 py-16">
+      {/* Header */}
+      <div className="mb-12">
+        <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--color-accent)]">
+          Insights
+        </span>
+        <h1 className="mt-2 font-display text-4xl tracking-tight text-[var(--color-ink)] sm:text-5xl">
           Blog
         </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">
+        <p className="mt-4 max-w-xl text-lg text-[var(--color-ink-faint)]">
           Articles about open-source tools, software comparisons, and
           productivity tips.
         </p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
+      {/* Featured Post */}
+      {featured && (
+        <Link
+          href={`/blog/${featured.slug}/`}
+          className="group mb-12 block rounded-2xl border border-[var(--color-border)] bg-white p-8 transition-all hover:border-[var(--color-accent)]/30 hover:shadow-lg sm:p-10"
+        >
+          <div className="flex items-center gap-2 text-xs text-[var(--color-ink-faint)]">
+            <time dateTime={featured.date}>
+              {new Date(featured.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            {featured.author && (
+              <>
+                <span className="text-[var(--color-border)]">·</span>
+                <span>{featured.author}</span>
+              </>
+            )}
+            <span className="ml-2 rounded-full bg-[var(--color-accent-light)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-accent)]">
+              Featured
+            </span>
+          </div>
+          <h2 className="mt-4 font-display text-2xl tracking-tight text-[var(--color-ink)] group-hover:text-[var(--color-accent)] sm:text-3xl">
+            {featured.title}
+          </h2>
+          <p className="mt-3 max-w-2xl text-[var(--color-ink-faint)]">
+            {featured.excerpt}
+          </p>
+          <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-opacity group-hover:opacity-80">
+            Read article
+            <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </span>
+        </Link>
+      )}
+
+      {/* Post Grid */}
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {rest.map((post) => (
           <Link
             key={post.slug}
             href={`/blog/${post.slug}/`}
-            className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-indigo-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
+            className="group flex flex-col rounded-xl border border-[var(--color-border)] bg-white p-6 transition-all hover:border-[var(--color-accent)]/30 hover:shadow-md"
           >
-            <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-2 text-xs text-[var(--color-ink-faint)]">
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString("en-US", {
                   year: "numeric",
-                  month: "long",
+                  month: "short",
                   day: "numeric",
                 })}
               </time>
               {post.author && (
                 <>
-                  <span>•</span>
+                  <span className="text-[var(--color-border)]">·</span>
                   <span>{post.author}</span>
                 </>
               )}
             </div>
-            <h2 className="mt-3 text-lg font-semibold text-slate-900 group-hover:text-primary-600 dark:text-slate-100 dark:group-hover:text-indigo-400">
+            <h3 className="mt-3 text-lg font-semibold leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
               {post.title}
-            </h2>
-            <p className="mt-2 line-clamp-3 text-sm text-slate-600 dark:text-slate-400">
+            </h3>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--color-ink-faint)]">
               {post.excerpt}
             </p>
             {post.tags && post.tags.length > 0 && (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {post.tags.slice(0, 3).map((tag) => (
                   <span
                     key={tag}
-                    className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-400"
+                    className="rounded-md bg-[var(--color-surface-warm)] px-2 py-0.5 text-[11px] font-medium text-[var(--color-ink-faint)]"
                   >
                     {tag}
                   </span>
