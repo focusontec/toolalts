@@ -27,6 +27,8 @@ npx tsx scripts/generate-comparisons.ts # Generate comparison articles via LLM
 npx tsx scripts/sync-tools.ts           # Batch-update GitHub stars
 npx tsx scripts/scrape-pricing.ts --slug notion --dry-run  # Scrape real pricing from websites
 npx tsx scripts/scrape-pricing.ts --slug linear            # Scrape and update pricing
+npx tsx scripts/ai-review.ts --dry-run                     # Quality guardian: review all tools
+npx tsx scripts/ai-review.ts                               # Generate review report
 npx tsx scripts/scrape-tool.ts --name "Tool" --website "https://..." --github "owner/repo"
 ```
 
