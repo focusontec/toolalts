@@ -15,39 +15,90 @@
         "plan": "Free",
         "price": "$0",
         "features": [
-          "Unlimited pages",
-          "Basic blocks",
-          "Up to 10 guests"
+          "Trial AI capabilities like generating docs, or autofilling databases",
+          "Basic forms",
+          "Basic sites",
+          "Notion Calendar",
+          "Notion Mail (Syncs with Gmail)",
+          "Databases including subtasks, dependencies, custom properties and more"
         ]
       },
       {
         "plan": "Plus",
-        "price": "$10/mo",
+        "price": "$10 per member / month",
         "features": [
+          "Everything in Free",
+          "Trial AI capabilities like generating docs, or autofilling databases",
+          "Custom forms",
+          "Custom sites",
+          "Unlimited charts",
+          "Unlimited collaborative blocks",
           "Unlimited file uploads",
-          "Version history",
-          "Up to 100 guests"
+          "Basic connections"
         ]
       },
       {
         "plan": "Business",
-        "price": "$15/mo",
+        "price": "$20 per member / month",
         "features": [
+          "Everything in Plus",
+          "Notion Agent",
+          "AI Meeting Notes",
+          "Enterprise Search",
           "SAML SSO",
+          "Granular database permissions",
+          "Verify any page",
           "Private teamspaces",
-          "Bulk PDF export"
+          "Domain verification",
+          "Premium connections"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom pricing",
+        "features": [
+          "Everything in Business",
+          "Zero data retention with LLM providers",
+          "User provisioning (SCIM)",
+          "Advanced security & controls",
+          "Audit log",
+          "Customer success manager",
+          "Security & Compliance connections (DLP, SIEM)",
+          "Domain management",
+          "Advanced connections",
+          "Custom Agents",
+          "Workers"
         ]
       }
     ],
     "features": [
-      "AI agents & automation",
-      "Connected docs & wikis",
-      "Databases & views",
-      "Cross-app search",
-      "Project management & sprints",
-      "Templates gallery",
-      "Real-time collaboration",
-      "Integrations & API"
+      "AI capabilities",
+      "Databases",
+      "Forms",
+      "Sites",
+      "Calendar",
+      "Mail",
+      "Charts",
+      "Collaborative blocks",
+      "File uploads",
+      "Connections",
+      "Notion Agent",
+      "AI Meeting Notes",
+      "Enterprise Search",
+      "SAML SSO",
+      "Granular database permissions",
+      "Page verification",
+      "Private teamspaces",
+      "Domain verification",
+      "Zero data retention",
+      "User provisioning",
+      "Advanced security & controls",
+      "Audit log",
+      "Customer success manager",
+      "Security & Compliance connections",
+      "Domain management",
+      "Custom Agents",
+      "Workers"
     ],
     "category": "productivity",
     "logo": "/logos/notion.svg"
@@ -65,40 +116,60 @@
     "websiteUrl": "https://obsidian.md",
     "pricing": [
       {
-        "plan": "Personal",
-        "price": "$0",
+        "plan": "Sync",
+        "price": "$4 USD per user per month, billed annually",
         "features": [
-          "Local vault",
-          "Community plugins",
-          "Graph view"
+          "Sync notes across devices",
+          "End-to-end encryption",
+          "Version history",
+          "Collaborate on shared vaults",
+          "Priority support"
+        ]
+      },
+      {
+        "plan": "Publish",
+        "price": "$8 USD per site per month, billed annually",
+        "features": [
+          "Publish notes to the web",
+          "No technical knowledge required",
+          "Customizable theme",
+          "Graph and full text search",
+          "Priority support"
         ]
       },
       {
         "plan": "Catalyst",
-        "price": "$25 one-time",
+        "price": "$25 USD one-time payment",
         "features": [
-          "Early access",
-          "Insider builds",
-          "Support devs"
+          "Early access to beta versions",
+          "Community badges",
+          "VIP channel"
         ]
       },
       {
         "plan": "Commercial",
-        "price": "$50/yr",
+        "price": "$50 USD per user per year",
         "features": [
-          "Commercial use",
-          "Priority support"
+          "Support development",
+          "Become a featured organization"
         ]
       }
     ],
     "features": [
-      "Local-first Markdown storage",
-      "Backlinks & graph view",
-      "Community plugins (1000+)",
-      "Canvas for visual thinking",
-      "Live preview & source mode",
-      "Customizable themes",
-      "End-to-end encryption (Sync)"
+      "Sync notes across devices",
+      "End-to-end encryption",
+      "Version history",
+      "Collaborate on shared vaults",
+      "Priority support",
+      "Publish notes to the web",
+      "No technical knowledge required",
+      "Customizable theme",
+      "Graph and full text search",
+      "Early access to beta versions",
+      "Community badges",
+      "VIP channel",
+      "Support development",
+      "Become a featured organization"
     ],
     "category": "productivity",
     "logo": "/logos/obsidian.svg"
@@ -117,40 +188,51 @@
     "pricing": [
       {
         "plan": "Starter",
-        "price": "$0",
+        "price": "Free",
         "features": [
-          "3 Figma files",
-          "3 FigJam files",
-          "2 editors"
+          "Unlimited drafts",
+          "UI kits and templates",
+          "150 AI credits/day, up to 500 AI credits/mo"
         ]
       },
       {
         "plan": "Professional",
-        "price": "$12/mo",
+        "price": "$16/mo",
         "features": [
-          "Unlimited files",
-          "Shared projects",
-          "Team libraries"
+          "Unlimited files and projects",
+          "Team-wide design libraries",
+          "Advanced Dev Mode inspection and MCP Server"
         ]
       },
       {
         "plan": "Organization",
-        "price": "$45/mo",
+        "price": "$55/mo",
         "features": [
-          "Design systems",
-          "Analytics",
-          "Centralized administration"
+          "Unlimited teams",
+          "Shared libraries and fonts",
+          "Centralized admin tools"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "$90/mo",
+        "features": [
+          "Custom team workspaces",
+          "Design system theming and APIs",
+          "SCIM seat management"
         ]
       }
     ],
     "features": [
-      "Real-time multiplayer design",
-      "Prototyping & interactions",
-      "Design systems & components",
-      "Developer handoff (Dev Mode)",
-      "Auto layout & responsive design",
-      "FigJam whiteboarding",
-      "Plugins & widgets ecosystem"
+      "Unlimited files and projects",
+      "Team-wide design libraries",
+      "Advanced Dev Mode inspection and MCP Server",
+      "Unlimited teams",
+      "Shared libraries and fonts",
+      "Centralized admin tools",
+      "Custom team workspaces",
+      "Design system theming and APIs",
+      "SCIM seat management"
     ],
     "category": "design",
     "logo": "/logos/figma.svg"
@@ -168,29 +250,119 @@
     "websiteUrl": "https://penpot.app",
     "pricing": [
       {
-        "plan": "Self-hosted",
-        "price": "$0",
+        "plan": "Professional",
+        "price": "$0 / user / month",
         "features": [
-          "Unlimited files",
-          "Unlimited users",
-          "Self-hosted"
+          "No file limits",
+          "Unlimited Teams",
+          "Plugins",
+          "Open Source",
+          "Up to 8 team members, and unlimited viewers",
+          "Up to 10GB of storage",
+          "7 days of autosaved versions",
+          "7 days of deleted file recovery"
         ]
       },
       {
-        "plan": "Cloud",
-        "price": "$0",
+        "plan": "Unlimited",
+        "price": "$7 / user / month",
         "features": [
-          "Unlimited files",
-          "Community support"
+          "No file limits",
+          "Unlimited Teams",
+          "Plugins",
+          "Open Source",
+          "Capped monthly bill: never pay more than $175 per month",
+          "Up to 25GB of storage",
+          "30 days of autosaved versions",
+          "30 days of deleted file recovery",
+          "Exclusive early access to upcoming features",
+          "50% discount on Penpot events"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "$950 / month",
+        "features": [
+          "No file limits",
+          "Unlimited Teams",
+          "Plugins",
+          "Open Source",
+          "Capped monthly bill: never pay more than $950 per month",
+          "Unlimited storage",
+          "90 days of autosaved versions",
+          "90 days of deleted file recovery",
+          "Exclusive early access to upcoming features",
+          "50% discount on Penpot events"
+        ]
+      },
+      {
+        "plan": "Private Server",
+        "price": "$50k / year",
+        "features": [
+          "No file limits",
+          "Unlimited Teams",
+          "Plugins",
+          "Open Source",
+          "Dedicated private infrastructure management",
+          "Certified plugins",
+          "Guaranteed response times",
+          "Exclusive early access to upcoming features",
+          "50% discount on Penpot events",
+          "Single Sign On (SSO)",
+          "Audit logs",
+          "Role assignment via SCIM",
+          "Guest access controls",
+          "Choice of hosting region (EU, US, etc)",
+          "IP whitelisting"
         ]
       }
     ],
     "features": [
-      "Open source",
-      "SVG-based",
-      "Real-time collaboration",
+      "Design",
+      "Auto versioning",
+      "Penpot editor",
+      "Flex Layout",
+      "Grid Layout",
+      "Path Editor",
+      "Multiplatform",
+      "Libraries & templates",
+      "Plugins",
+      "Inspect mode",
+      "Collaboration",
+      "Multiplayer edition",
+      "Comments",
+      "Share presentations",
+      "Team management",
+      "Editors",
+      "Role and permissions",
+      "Administration & Security",
+      "API REST",
+      "Webhooks",
+      "Deleted file recovery",
+      "Sneak Peek in New Ft.",
+      "Design systems",
+      "Components",
+      "Fonts management",
+      "Variants",
       "Design tokens",
-      "Self-hosted"
+      "Styles",
+      "Prototype",
+      "Create prototypes",
+      "Interactions",
+      "Transitions",
+      "Flows",
+      "View mode",
+      "Share prototypes with a link",
+      "Comments on prototypes",
+      "Devtools",
+      "Code inspector",
+      "Properties inspector",
+      "Distances and measurement",
+      "Component annotations",
+      "Export production assets",
+      "Support",
+      "Community forum",
+      "Help center"
     ],
     "category": "design",
     "logo": "/logos/penpot.svg"
@@ -211,27 +383,52 @@
         "plan": "Free",
         "price": "$0",
         "features": [
-          "Up to 250 issues",
-          "Unlimited file uploads",
-          "Roadmap"
+          "Unlimited members",
+          "2 teams",
+          "250 issues",
+          "Agent platform",
+          "Linear Agent (beta)"
         ]
       },
       {
-        "plan": "Standard",
-        "price": "$8/mo",
+        "plan": "Basic",
+        "price": "$10 per user/month",
         "features": [
+          "All Free features",
+          "5 teams",
           "Unlimited issues",
-          "Guest accounts",
-          "SLA timers"
+          "Unlimited file uploads",
+          "Admin roles"
         ]
       },
       {
-        "plan": "Plus",
-        "price": "$14/mo",
+        "plan": "Business",
+        "price": "$16 per user/month",
         "features": [
-          "Multiple teams",
-          "Initiatives",
-          "Triage"
+          "All Basic features",
+          "Unlimited teams",
+          "Private teams and guests",
+          "Triage Intelligence",
+          "Linear Agent automations (beta)",
+          "Code Intelligence (beta)",
+          "Linear Insights",
+          "Linear Asks",
+          "Zendesk and Intercom integrations"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "All Business features",
+          "Invoice/PO billing",
+          "SAML and SCIM",
+          "Granular admin controls",
+          "Enterprise-grade security",
+          "Advanced org modeling",
+          "Migration & onboarding support",
+          "Priority support",
+          "Account management"
         ]
       }
     ],
@@ -259,37 +456,26 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public repos",
-          "2,000 Actions minutes"
-        ]
-      },
-      {
-        "plan": "Team",
-        "price": "$4/mo",
-        "features": [
-          "Unlimited private repos",
-          "3,000 Actions minutes",
-          "Code owners"
-        ]
-      },
-      {
-        "plan": "Enterprise",
-        "price": "$21/mo",
-        "features": [
-          "SAML SSO",
-          "Advanced auditing",
-          "Priority support"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Code references",
-      "Project boards",
-      "Milestones",
-      "Labels & filters",
-      "Automations"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "project-management",
     "logo": "/logos/github.svg"
@@ -308,38 +494,68 @@
     "pricing": [
       {
         "plan": "Hobby",
-        "price": "$0",
+        "price": "Free",
         "features": [
-          "200 completions",
-          "50 slow requests",
-          "Basic models"
+          "No credit card required",
+          "Limited Agent requests",
+          "Limited Tab completions"
         ]
       },
       {
         "plan": "Pro",
-        "price": "$20/mo",
+        "price": "$20 / mo.",
         "features": [
-          "Unlimited completions",
-          "Fast requests",
-          "Claude 3.5 Sonnet"
+          "Extended limits on Agent",
+          "Access to frontier models",
+          "MCPs, skills, and hooks",
+          "Cloud agents",
+          "Bugbot on usage-based billing"
         ]
       },
       {
-        "plan": "Business",
-        "price": "$40/mo",
+        "plan": "Pro+",
+        "price": null,
+        "features": []
+      },
+      {
+        "plan": "Ultra",
+        "price": null,
+        "features": []
+      },
+      {
+        "plan": "Teams",
+        "price": "$40 / user / mo.",
         "features": [
-          "Team management",
-          "Advanced security",
-          "Priority support"
+          "Cloud agents with shared team context",
+          "Team-wide rules, skills, and automations",
+          "Security review agent",
+          "SAML/OIDC SSO + enforced team-level privacy mode",
+          "Team plugin marketplace",
+          "Usage analytics",
+          "Centralized team billing"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Pooled usage",
+          "Invoice/PO billing",
+          "SCIM seat management",
+          "AI code tracking API and audit logs",
+          "Granular admin and model controls",
+          "Priority support and account management",
+          "Bugbot on custom plan"
         ]
       }
     ],
     "features": [
-      "AI autocomplete",
-      "Chat in editor",
-      "Code generation",
-      "Codebase understanding",
-      "Tab-based predictions"
+      "Agent requests",
+      "Tab completions",
+      "Cloud agents",
+      "Bugbot",
+      "SAML/OIDC SSO",
+      "SCIM seat management"
     ],
     "category": "development",
     "logo": "/logos/cursor.svg"
@@ -391,38 +607,64 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD free forever",
         "features": [
-          "90-day message history",
-          "10 integrations",
-          "1:1 video calls"
+          "90 days of message history",
+          "Up to 10 apps",
+          "1:1 meetings",
+          "1:1 external messages",
+          "Basic AI"
         ]
       },
       {
         "plan": "Pro",
-        "price": "$7.25/mo",
+        "price": "$8.75 USD per user / month, when paying monthly; $7.25 USD per user / month, when paying annually",
         "features": [
-          "Unlimited history",
-          "Unlimited integrations",
-          "Group video calls"
+          "Unlimited message history",
+          "Unlimited app integrations",
+          "Group meetings",
+          "Group external messages",
+          "Basic AI"
         ]
       },
       {
         "plan": "Business+",
-        "price": "$12.50/mo",
+        "price": "$18 USD per user / month, when paying monthly; $15 USD per user / month, when paying annually",
         "features": [
-          "Data exports",
-          "SAML SSO",
-          "99.99% uptime SLA"
+          "Unlimited message history",
+          "Unlimited app integrations",
+          "Group meetings",
+          "Group external messages",
+          "Advanced AI"
+        ]
+      },
+      {
+        "plan": "Enterprise+",
+        "price": "Contact sales for pricing",
+        "features": [
+          "Unlimited message history",
+          "Unlimited app integrations",
+          "Group meetings",
+          "Group external messages",
+          "Enterprise-Grade AI"
         ]
       }
     ],
     "features": [
-      "Channels",
-      "Huddles",
-      "Workflows",
-      "File sharing",
-      "App integrations"
+      "Unlimited message history",
+      "Unlimited app integrations",
+      "Group meetings",
+      "Group external messages",
+      "AI conversation summaries",
+      "Slackbot (personal AI agent)",
+      "AI workflow generation",
+      "AI search",
+      "AI daily recaps",
+      "AI file summaries",
+      "SAML-based single sign-on",
+      "SCIM user management",
+      "EMM integration support",
+      "Native data loss prevention"
     ],
     "category": "communication",
     "logo": "/logos/slack.svg"
@@ -515,37 +757,22 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Limited usage",
-          "Basic features"
-        ]
-      },
-      {
-        "plan": "Pro",
-        "price": "$20/mo",
-        "features": [
-          "Unlimited usage",
-          "Advanced features",
-          "Priority support"
-        ]
-      },
-      {
-        "plan": "Enterprise",
-        "price": "Custom",
-        "features": [
-          "Team management",
-          "SSO",
-          "Dedicated support"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Natural language code editing and command execution",
-      "Codebase understanding and explanation",
-      "Git workflow automation",
-      "Multi-environment support (terminal, IDE, desktop, browser)",
-      "Integration with development tools"
+      "Unlimited public/private repositories",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage"
     ],
     "category": "development",
     "logo": "/logos/claude-code.svg"
@@ -564,18 +791,26 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open source under MIT license",
-          "All features available"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Converts PDF, Office documents, and other files to Markdown",
-      "Integrates with LangChain, OpenAI, and AutoGen",
-      "MIT licensed and actively maintained by Microsoft",
-      "High performance file conversion"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces (featured add-on)"
     ],
     "category": "development",
     "logo": "/logos/markitdown.svg"
@@ -715,13 +950,48 @@
     "githubStars": null,
     "githubUrl": null,
     "websiteUrl": "https://composio.dev",
-    "pricing": [],
+    "pricing": [
+      {
+        "plan": "Totally Free",
+        "price": "$0 / month",
+        "features": [
+          "20K Tool Calls/Mo",
+          "Community Support"
+        ]
+      },
+      {
+        "plan": "Ridiculously Cheap",
+        "price": "$29 / month",
+        "features": [
+          "200K Tool Calls/Mo",
+          "Email Support",
+          "$0.299/1K ADDITIONAL CALLS"
+        ]
+      },
+      {
+        "plan": "Serious Business",
+        "price": "$229 / month",
+        "features": [
+          "2M Tool Calls/Mo",
+          "Slack Support (1K+/Month)",
+          "$0.249/1K ADDITIONAL CALLS"
+        ]
+      },
+      {
+        "plan": "For Enterprise",
+        "price": "Contact For Custom Quote",
+        "features": [
+          "Custom User Accounts",
+          "Dedicated SLA & SOC-2",
+          "Custom API Volume",
+          "VPC/On-Prem Option"
+        ]
+      }
+    ],
     "features": [
-      "Just-in-time tool calls",
-      "Secure delegated auth",
-      "Sandboxed environments",
-      "Parallel execution across 1,000+ apps",
-      "Open-source with MIT license"
+      "20K Tool Calls/Mo",
+      "200K Tool Calls/Mo",
+      "2M Tool Calls/Mo"
     ],
     "category": "development",
     "logo": "/logos/composio.svg"
@@ -862,20 +1132,33 @@
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0",
+        "plan": "Desktop",
+        "price": "Free",
         "features": [
-          "All core features",
-          "Open source"
+          "Synchronization",
+          "Media Support",
+          "Customization",
+          "Optimization",
+          "Add-Ons"
         ]
+      },
+      {
+        "plan": "AnkiMobile (iOS)",
+        "price": "Purchase (funds development)",
+        "features": []
+      },
+      {
+        "plan": "AnkiDroid (Android)",
+        "price": "Free",
+        "features": []
       }
     ],
     "features": [
-      "AI-generated explanations for flashcards",
-      "Automatic mnemonic generation",
-      "Illustration generation for visual learning",
-      "Adaptive learning algorithms to optimize review schedules",
-      "Integration with Anki's existing card system"
+      "Synchronization",
+      "Media Support",
+      "Customization",
+      "Optimization",
+      "Add-Ons"
     ],
     "category": "productivity",
     "logo": "/logos/anki.svg"
@@ -993,18 +1276,45 @@
     "websiteUrl": "https://www.dyad.sh/",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0",
+        "plan": "Dyad Free",
+        "price": "Free",
         "features": [
-          "Open-source, self-hosted"
+          "Local, open-source AI App Builder",
+          "Downloadable for macOS & Windows",
+          "No sign-up required",
+          "Bring your own API key",
+          "Community support"
+        ]
+      },
+      {
+        "plan": "Dyad Pro",
+        "price": "$20/month",
+        "features": [
+          "Everything in Dyad Free plus...",
+          "Exclusive Pro modes to work on large codebases",
+          "200 AI credits/month",
+          "Full Dyad Academy access"
+        ]
+      },
+      {
+        "plan": "Dyad Max",
+        "price": "$79/month",
+        "features": [
+          "Everything in Dyad Pro plus...",
+          "900 AI credits/month",
+          "Prioritized access to office hours",
+          "Reload credits at any time (same price)",
+          "Available as upgrade"
         ]
       }
     ],
     "features": [
-      "Local AI app building",
-      "Supports multiple AI models",
-      "Open-source",
-      "Zero lock-in"
+      "Local, open-source AI App Builder",
+      "Exclusive Pro modes to work on large codebases",
+      "200 AI credits/month",
+      "900 AI credits/month",
+      "Full Dyad Academy access",
+      "Prioritized access to office hours"
     ],
     "category": "development",
     "logo": "/logos/dyad-.svg"
@@ -1052,19 +1362,26 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open source under MIT license",
-          "Full access to all tools and setup"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "23 pre-configured opinionated tools for various development roles",
-      "Integrates with Claude Code for AI-assisted development",
-      "Covers roles from CEO to QA for comprehensive project coverage",
-      "MIT licensed open-source project",
-      "High community adoption with nearly 100k stars"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
     "logo": "/logos/gstack.svg"
@@ -1083,17 +1400,22 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open source, self-hosted"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Local-first architecture for privacy",
-      "AI-powered app generation",
-      "Cross-platform support (MacOS, Windows, Linux)",
-      "Open source with community contributions"
+      "Unlimited public/private repositories",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage"
     ],
     "category": "development",
     "logo": "/logos/codinit-.svg"
@@ -1112,16 +1434,26 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open source code editor"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Run multiple AI coding agents (Claude Code, Codex, etc.) concurrently",
-      "Local execution on your machine",
-      "Code editor interface for AI-assisted development"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
     "logo": "/logos/superset.svg"
@@ -1140,20 +1472,26 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open-source software",
-          "Self-hosted",
-          "Full access to codebase"
+          "Unlimited public/private repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support",
+          "GitHub Codespaces Access (featured add-on)"
         ]
       }
     ],
     "features": [
-      "Memory retention for context-aware assistance",
-      "Open-source and self-hostable",
-      "Automates repetitive tasks",
-      "Integrates with existing workflows",
-      "Community-driven development"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access"
     ],
     "category": "productivity",
     "logo": "/logos/rowboat.svg"
