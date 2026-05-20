@@ -20,7 +20,7 @@ system-prompts-and-models-of-ai-tools and markitdown are both popular developmen
 | Converts PDF, Office documents, and other files to Markdown | ❌ | ✅ |
 | Integrates with LangChain, OpenAI, and AutoGen | ❌ | ✅ |
 | MIT licensed and actively maintained by Microsoft | ❌ | ✅ |
-| High performance with over 123k GitHub stars | ❌ | ✅ |
+| High performance with significant community adoption | ❌ | ✅ |
 
 ## Pricing
 

@@ -15,7 +15,7 @@ markitdown and deer-flow are both popular development tools. Convert various fil
 | Converts PDF, Office documents, and other files to Markdown | ✅ | ❌ |
 | Integrates with LangChain, OpenAI, and AutoGen | ✅ | ❌ |
 | MIT licensed and actively maintained by Microsoft | ✅ | ❌ |
-| High performance with over 123k GitHub stars | ✅ | ❌ |
+| High performance with significant community adoption | ✅ | ❌ |
 | Long-horizon task handling from minutes to hours | ❌ | ✅ |
 | Sandboxed execution environments for safety | ❌ | ✅ |
 | Memory, tools, skills, and subagent orchestration | ❌ | ✅ |

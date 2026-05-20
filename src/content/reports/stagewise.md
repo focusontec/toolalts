@@ -26,7 +26,7 @@ processedAt: "2026-05-19T15:07:26.495Z"
 
 ## Concerns
 - No stars or activity data available yet (new project)
-- Website is just the GitHub repo, no dedicated site
+- The tool has a dedicated website at stagewise.com
 
 ## Full Analysis
 

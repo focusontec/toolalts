@@ -11,7 +11,7 @@ VS Code and awesome-claude-skills are both popular development tools. Code editi
 |---------|---------|-----------------------|
 | Rating | 4.8/5 | 4.75/5 |
 | Open Source | Yes | Yes |
-| GitHub Stars | 162,000 | N/A |
+| GitHub Stars | 185,119 | N/A |
 | IntelliSense | ✅ | ❌ |
 | Debugging | ✅ | ❌ |
 | Built-in Git | ✅ | ❌ |

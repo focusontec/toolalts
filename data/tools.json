@@ -2,14 +2,14 @@
   {
     "slug": "notion",
     "name": "Notion",
-    "tagline": "Your connected workspace for docs, projects, and knowledge — now with AI",
-    "description": "Notion is an all-in-one workspace that combines notes, documents, project management, and AI-powered tools. It helps teams collaborate and individuals organize their work with databases, wikis, and custom workflows.",
+    "tagline": "The AI workspace that works for you",
+    "description": "Build custom agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
     "rating": 4.8,
     "reviewsCount": 12500,
     "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://notion.so",
+    "websiteUrl": "https://www.notion.so",
     "pricing": [
       {
         "plan": "Free",
@@ -40,9 +40,10 @@
       }
     ],
     "features": [
+      "AI agents & automation",
       "Connected docs & wikis",
       "Databases & views",
-      "AI-powered Q&A and writing",
+      "Cross-app search",
       "Project management & sprints",
       "Templates gallery",
       "Real-time collaboration",
@@ -112,7 +113,7 @@
     "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://figma.com",
+    "websiteUrl": "https://www.figma.com",
     "pricing": [
       {
         "plan": "Starter",
@@ -157,8 +158,8 @@
   {
     "slug": "penpot",
     "name": "Penpot",
-    "tagline": "The open-source design and prototyping platform",
-    "description": "Penpot is the first open-source design and prototyping platform for product teams. It works with open web standards.",
+    "tagline": "The open-source design platform for teams building digital products at scale",
+    "description": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
@@ -197,8 +198,8 @@
   {
     "slug": "linear",
     "name": "Linear",
-    "tagline": "The issue tracking tool you'll enjoy using",
-    "description": "Linear is a purpose-built tool for planning and building products. Streamline issues, sprints, and product roadmaps.",
+    "tagline": "The system for product development",
+    "description": "Purpose-built for planning and building products with AI agents. Streamline issues, sprints, and product roadmaps.",
     "rating": 4.9,
     "reviewsCount": 7600,
     "openSource": false,
@@ -248,7 +249,7 @@
     "slug": "github-issues",
     "name": "GitHub Issues",
     "tagline": "Plan, track, and discuss work right where the code lives",
-    "description": "GitHub Issues is a flexible tracking system built into GitHub, where developers already spend their time.",
+    "description": "GitHub Issues is a flexible tracking system built into GitHub, where over 150 million people build software.",
     "rating": 4.4,
     "reviewsCount": 21000,
     "openSource": false,
@@ -296,8 +297,8 @@
   {
     "slug": "cursor",
     "name": "Cursor",
-    "tagline": "The AI-first code editor",
-    "description": "Cursor is a code editor built for pair-programming with AI. It's a fork of VS Code with native AI integration.",
+    "tagline": "The best way to code with AI",
+    "description": "Built to make you extraordinarily productive, Cursor is the best way to build software with AI. A code editor with native AI integration for pair-programming.",
     "rating": 4.7,
     "reviewsCount": 5400,
     "openSource": false,
@@ -346,12 +347,12 @@
   {
     "slug": "vscode",
     "name": "VS Code",
-    "tagline": "Code editing. Redefined.",
-    "description": "Visual Studio Code is a free, lightweight but powerful source code editor with built-in support for JavaScript, TypeScript, and Node.js.",
+    "tagline": "AI-powered coding with GitHub Copilot",
+    "description": "Visual Studio Code redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. Free and available on Linux, macOS, and Windows.",
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185124,
+    "githubStars": 185119,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -379,8 +380,8 @@
   {
     "slug": "slack",
     "name": "Slack",
-    "tagline": "Team communication for the 21st century",
-    "description": "Slack is a messaging app for business that connects people to the information they need.",
+    "tagline": "AI work platform for managing projects and automating workflows",
+    "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
     "rating": 4.5,
     "reviewsCount": 28000,
     "openSource": false,
@@ -429,8 +430,8 @@
   {
     "slug": "discord",
     "name": "Discord",
-    "tagline": "Your place to talk and hang out",
-    "description": "Discord is a voice, video, and text communication service used by over a hundred million people.",
+    "tagline": "Your place to play games, chill with friends, and build communities",
+    "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
     "rating": 4.6,
     "reviewsCount": 19000,
     "openSource": false,
@@ -559,7 +560,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://markitdown.com",
+    "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [
       {
         "plan": "Free",
@@ -574,41 +575,10 @@
       "Converts PDF, Office documents, and other files to Markdown",
       "Integrates with LangChain, OpenAI, and AutoGen",
       "MIT licensed and actively maintained by Microsoft",
-      "High performance with over 123k GitHub stars"
+      "High performance file conversion"
     ],
     "category": "development",
     "logo": "/logos/markitdown.svg"
-  },
-  {
-    "slug": "gstack",
-    "name": "gstack",
-    "tagline": "A curated set of 23 opinionated tools for AI-assisted software development, inspired by Garry Tan's workflow.",
-    "description": "gstack is a collection of 23 opinionated tools designed to emulate roles like CEO, Designer, and Engineer Manager within Claude Code, enabling AI-driven software development. It is intended for developers and teams looking to leverage AI for end-to-end project management and coding tasks.",
-    "rating": 4.9,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://gstack.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full access to all 23 tools",
-          "Open source under MIT license"
-        ]
-      }
-    ],
-    "features": [
-      "23 pre-configured tools for AI-assisted development",
-      "Covers roles from CEO to QA for comprehensive project oversight",
-      "MIT licensed for open use and modification",
-      "High community adoption with nearly 100k stars",
-      "Actively maintained with recent updates"
-    ],
-    "category": "development",
-    "logo": "/logos/gstack.svg"
   },
   {
     "slug": "deer-flow",
@@ -737,42 +707,20 @@
   {
     "slug": "composio",
     "name": "composio",
-    "tagline": "A platform for building AI agents with 1000+ integrated toolkits and sandboxed execution.",
-    "description": "Composio provides a comprehensive platform for developers to build AI agents by offering over 1000 toolkits, tool search, context management, authentication, and a sandboxed workbench. It enables agents to turn intent into action through function calling and supports multiple programming languages like TypeScript and Python.",
+    "tagline": "Just-in-time tool calls, secure delegated auth, and sandboxed environments for AI agents",
+    "description": "Just-in-time tool calls, secure delegated auth, sandboxed environments, and parallel execution across 1,000+ apps for AI agents.",
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://composio.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open-source, self-hosted"
-        ]
-      },
-      {
-        "plan": "Pro",
-        "price": "Unknown",
-        "features": [
-          "Likely cloud-hosted with additional features"
-        ]
-      },
-      {
-        "plan": "Enterprise",
-        "price": "Unknown",
-        "features": [
-          "Custom pricing for organizations"
-        ]
-      }
-    ],
+    "websiteUrl": "https://composio.dev",
+    "pricing": [],
     "features": [
-      "1000+ integrated toolkits for AI agents",
-      "Tool search and context management",
-      "Authentication and sandboxed workbench",
-      "Supports function calling with LLMs",
+      "Just-in-time tool calls",
+      "Secure delegated auth",
+      "Sandboxed environments",
+      "Parallel execution across 1,000+ apps",
       "Open-source with MIT license"
     ],
     "category": "development",
@@ -874,8 +822,8 @@
   {
     "slug": "workout-cool",
     "name": "Workout.cool",
-    "tagline": "Modern open-source fitness coaching platform for creating workout plans and tracking progress.",
-    "description": "Workout.cool is an open-source fitness coaching platform that allows users to create workout plans, track progress, and access a comprehensive exercise database. It is designed for fitness enthusiasts and coaches who want a customizable, self-hosted solution.",
+    "tagline": "Open-source fitness coaching platform for personalized workout programs",
+    "description": "Workout.cool is an open-source fitness coaching platform that creates personalized workout programs. While categorized under productivity, it is primarily a fitness and health tool.",
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
@@ -903,9 +851,9 @@
   },
   {
     "slug": "anki",
-    "name": "Anki",
-    "tagline": "AI-powered tools to supercharge Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning.",
-    "description": "AnkiAIUtils is a collection of AI-powered utilities that enhance the Anki flashcard experience by automatically generating explanations, mnemonics, and illustrations, and by providing adaptive learning features. It is particularly useful for medical students and other learners who use Anki for spaced repetition.",
+    "name": "AnkiAIUtils",
+    "tagline": "AI-powered utilities to enhance Anki flashcards with explanations and mnemonics",
+    "description": "AnkiAIUtils provides AI-powered tools to enhance Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning. It is a companion to the Anki app, not the core Anki application itself.",
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
@@ -933,7 +881,7 @@
     "logo": "/logos/anki.svg"
   },
   {
-    "slug": "codinit-",
+    "slug": "codinit",
     "name": "CodinIT,",
     "tagline": "Local-first open-source AI app builder for web and mobile.",
     "description": "CodinIT is a local-first, open-source AI app builder that enables developers to create web and mobile applications using natural language. It runs on MacOS, Windows, and Linux, prioritizing privacy and offline capabilities.",
@@ -963,68 +911,6 @@
     ],
     "category": "development",
     "logo": "/logos/codinit-.svg"
-  },
-  {
-    "slug": "superset",
-    "name": "Superset",
-    "tagline": "A code editor for the AI agents era that orchestrates multiple AI coding assistants on your machine.",
-    "description": "Superset is a code editor designed to run and coordinate multiple AI coding agents like Claude Code and Codex simultaneously on your local machine. It targets developers who want to leverage AI assistance for complex coding tasks by managing an 'army' of AI agents.",
-    "rating": 3.75,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://superset.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open-source codebase",
-          "Self-hosted",
-          "All core features"
-        ]
-      }
-    ],
-    "features": [
-      "Run multiple AI coding agents concurrently",
-      "Local execution for privacy and speed",
-      "Integration with popular AI models (Claude, Codex)",
-      "Agent orchestration and coordination",
-      "Open-source and extensible"
-    ],
-    "category": "development",
-    "logo": "/logos/superset.svg"
-  },
-  {
-    "slug": "rowboat",
-    "name": "Rowboat",
-    "tagline": "Open-source AI coworker with memory to automate tasks and boost team productivity.",
-    "description": "Rowboat is an open-source AI assistant designed to act as a coworker, featuring persistent memory to learn from interactions and automate repetitive tasks. It integrates with team workflows to enhance productivity, making it suitable for developers and teams seeking customizable AI automation.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://rowboat.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Self-hosted open-source version with full features"
-        ]
-      }
-    ],
-    "features": [
-      "Persistent memory for context-aware assistance",
-      "Open-source and self-hostable",
-      "Integrates with team communication tools",
-      "Automates repetitive tasks",
-      "Customizable AI behavior"
-    ],
-    "category": "productivity",
-    "logo": "/logos/rowboat.svg"
   },
   {
     "slug": "stagewise",
@@ -1133,7 +1019,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://automatewithtasker.com/",
+    "websiteUrl": "https://tasker.ai",
     "pricing": [
       {
         "plan": "Free",

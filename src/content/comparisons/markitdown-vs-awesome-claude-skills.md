@@ -15,7 +15,7 @@ markitdown and awesome-claude-skills are both popular development tools. Convert
 | Converts PDF, Office documents, and other files to Markdown | ✅ | ❌ |
 | Integrates with LangChain, OpenAI, and AutoGen | ✅ | ❌ |
 | MIT licensed and actively maintained by Microsoft | ✅ | ❌ |
-| High performance with over 123k GitHub stars | ✅ | ❌ |
+| High performance with significant community adoption | ✅ | ❌ |
 | Curated list of Claude Skills and resources | ❌ | ✅ |
 | Covers integrations with multiple AI platforms | ❌ | ✅ |
 | Includes tools for workflow automation | ❌ | ✅ |

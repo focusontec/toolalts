@@ -11,7 +11,7 @@ VS Code and markitdown are both popular development tools. Code editing. Redefin
 |---------|---------|------------|
 | Rating | 4.8/5 | 5/5 |
 | Open Source | Yes | Yes |
-| GitHub Stars | 162,000 | N/A |
+| GitHub Stars | 185,119 | N/A |
 | IntelliSense | ✅ | ❌ |
 | Debugging | ✅ | ❌ |
 | Built-in Git | ✅ | ❌ |
@@ -20,7 +20,7 @@ VS Code and markitdown are both popular development tools. Code editing. Redefin
 | Converts PDF, Office documents, and other files to Markdown | ❌ | ✅ |
 | Integrates with LangChain, OpenAI, and AutoGen | ❌ | ✅ |
 | MIT licensed and actively maintained by Microsoft | ❌ | ✅ |
-| High performance with over 123k GitHub stars | ❌ | ✅ |
+| High performance with significant community adoption | ❌ | ✅ |
 
 ## Pricing
 
