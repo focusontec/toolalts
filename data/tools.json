@@ -480,7 +480,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://system-prompts-and-models-of-ai-tools.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -511,7 +511,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://claude-code.com",
+    "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
       {
         "plan": "Free",
@@ -622,7 +622,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://awesome-claude-skills.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -649,10 +649,10 @@
     "description": "nanobot is an open-source, ultra-lightweight personal AI agent that integrates with your tools, chats, and workflows. It supports self-hosting and long-running automation, making it ideal for developers and power users who want a customizable AI assistant.",
     "rating": 4.75,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://nanobot.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -681,10 +681,10 @@
     "description": "Antigravity-Manager is a professional account manager and switcher designed for Antigravity Tools. It enables users to switch between accounts with a single click, streamlining workflow for those managing multiple accounts. Built with Tauri v2 and React (Rust), it offers a fast and secure desktop experience.",
     "rating": 4.75,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://antigravity-manager.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -733,10 +733,10 @@
     "description": "Claude Code Templates is a CLI tool and repository that provides over 1000 pre-built agents, slash commands, MCP integrations, hooks, and settings for Claude Code. It is designed for developers using Anthropic's Claude Code to enhance their workflow with ready-to-use components. The tool is free, open-source, and actively maintained.",
     "rating": 4.75,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://claude-code-templates.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -765,10 +765,10 @@
     "description": "Gerbil is a desktop application that allows users to run large language models (LLMs) on their own machine, providing privacy and offline access. It is aimed at developers and AI enthusiasts who want to experiment with LLMs without relying on cloud services.",
     "rating": 3.5,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://gerbil.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -859,7 +859,7 @@
     "openSource": true,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://anki.com",
+    "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
       {
         "plan": "Free",
@@ -887,10 +887,10 @@
     "description": "CodinIT is a local-first, open-source AI app builder that enables developers to create web and mobile applications using natural language. It runs on MacOS, Windows, and Linux, prioritizing privacy and offline capabilities.",
     "rating": 3.75,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://codinit-.com",
+    "websiteUrl": "",
     "pricing": [
       {
         "plan": "Free",
@@ -948,7 +948,7 @@
     "description": "Sgai is an AI software factory by Sandgarden that helps developers automate repetitive coding tasks, generate boilerplate, and streamline project setup. It is designed for developers and teams looking to accelerate their development process with AI assistance.",
     "rating": 3.75,
     "reviewsCount": 0,
-    "openSource": true,
+    "openSource": false,
     "githubStars": null,
     "githubUrl": null,
     "websiteUrl": "https://sgai.com",
@@ -981,7 +981,7 @@
     "logo": "/logos/sgai.svg"
   },
   {
-    "slug": "dyad-",
+    "slug": "dyad",
     "name": "Dyad,",
     "tagline": "Flexible, local, open-source AI app builder with zero lock-in.",
     "description": "Dyad is an open-source AI app builder that allows users to build AI applications locally using their preferred AI models and tools. It emphasizes flexibility and local execution, avoiding vendor lock-in.",
