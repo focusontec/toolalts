@@ -10,7 +10,8 @@ import type { Tool } from "@/lib/types";
 
 export const dynamicParams = false;
 
-const tools = toolsData as Tool[];
+const allTools = toolsData as Tool[];
+const tools = allTools.filter((t) => t.status === "active");
 
 export function generateStaticParams(): { slug: string }[] {
   return tools.map((t) => ({ slug: t.slug }));
@@ -60,7 +61,7 @@ export default async function ToolPage({
     offers: tool.pricing.map((p) => ({
       "@type": "Offer",
       name: p.plan,
-      price: p.price.replace(/[^0-9.]/g, ""),
+      price: (p.price || "0").replace(/[^0-9.]/g, ""),
       priceCurrency: "USD",
     })),
   };

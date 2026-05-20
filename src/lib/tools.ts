@@ -7,16 +7,29 @@ export const allTools: Tool[] = toolsData as Tool[];
 export const allComparisons: Comparison[] = comparisonsData as Comparison[];
 export const allCategories: Category[] = categoriesData as Category[];
 
+/** All tools (including draft/hidden) — for admin pages */
 export function getAllTools(): Tool[] {
   return allTools;
 }
 
+/** Only active tools — for public pages */
+export function getActiveTools(): Tool[] {
+  return allTools.filter((t) => t.status === "active");
+}
+
+/** Get tool by slug regardless of status — for admin */
 export function getToolBySlug(slug: string): Tool | undefined {
   return allTools.find((t) => t.slug === slug);
 }
 
+/** Get tool by slug only if active — for public pages */
+export function getActiveToolBySlug(slug: string): Tool | undefined {
+  return allTools.find((t) => t.slug === slug && t.status === "active");
+}
+
+/** Tools in category (active only) */
 export function getToolsByCategory(category: string): Tool[] {
-  return allTools.filter((t) => t.category === category);
+  return allTools.filter((t) => t.category === category && t.status === "active");
 }
 
 export function getCategories(): Category[] {
@@ -33,14 +46,15 @@ export function getAlternativesFor(slug: string): Tool[] {
   );
   if (!comp) return [];
   const altSlug = comp.toolA === slug ? comp.toolB : comp.toolA;
-  return allTools.filter((t) => t.slug === altSlug);
+  return allTools.filter((t) => t.slug === altSlug && t.status === "active");
 }
 
+/** Comparison pairs where both tools are active */
 export function getComparisonPairs(): { a: Tool; b: Tool }[] {
   return allComparisons
     .map((c) => {
-      const a = getToolBySlug(c.toolA);
-      const b = getToolBySlug(c.toolB);
+      const a = getActiveToolBySlug(c.toolA);
+      const b = getActiveToolBySlug(c.toolB);
       if (!a || !b) return null;
       return { a, b };
     })
@@ -56,14 +70,20 @@ export function getToolsForComparison(
 ): { a: Tool; b: Tool } | null {
   const comp = allComparisons.find((c) => c.slug === slug);
   if (!comp) return null;
-  const a = getToolBySlug(comp.toolA);
-  const b = getToolBySlug(comp.toolB);
+  const a = getActiveToolBySlug(comp.toolA);
+  const b = getActiveToolBySlug(comp.toolB);
   if (!a || !b) return null;
   return { a, b };
 }
 
+/** All tool slugs (for admin static params) */
 export function getAllToolSlugs(): string[] {
   return allTools.map((t) => t.slug);
+}
+
+/** Active tool slugs (for public static params) */
+export function getActiveToolSlugs(): string[] {
+  return allTools.filter((t) => t.status === "active").map((t) => t.slug);
 }
 
 export function getAllCategorySlugs(): string[] {
@@ -72,6 +92,7 @@ export function getAllCategorySlugs(): string[] {
 
 export function getPopularTools(limit = 6): Tool[] {
   return [...allTools]
+    .filter((t) => t.status === "active")
     .sort((a, b) => (b.rating || 0) - (a.rating || 0))
     .slice(0, limit);
 }

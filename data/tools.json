@@ -101,7 +101,8 @@
       "Workers"
     ],
     "category": "productivity",
-    "logo": "/logos/notion.svg"
+    "logo": "/logos/notion.svg",
+    "status": "active"
   },
   {
     "slug": "obsidian",
@@ -172,7 +173,8 @@
       "Become a featured organization"
     ],
     "category": "productivity",
-    "logo": "/logos/obsidian.svg"
+    "logo": "/logos/obsidian.svg",
+    "status": "active"
   },
   {
     "slug": "figma",
@@ -235,7 +237,8 @@
       "SCIM seat management"
     ],
     "category": "design",
-    "logo": "/logos/figma.svg"
+    "logo": "/logos/figma.svg",
+    "status": "active"
   },
   {
     "slug": "penpot",
@@ -365,7 +368,8 @@
       "Help center"
     ],
     "category": "design",
-    "logo": "/logos/penpot.svg"
+    "logo": "/logos/penpot.svg",
+    "status": "active"
   },
   {
     "slug": "linear",
@@ -440,7 +444,8 @@
       "Triage workflow"
     ],
     "category": "project-management",
-    "logo": "/logos/linear.svg"
+    "logo": "/logos/linear.svg",
+    "status": "active"
   },
   {
     "slug": "github-issues",
@@ -478,7 +483,8 @@
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "project-management",
-    "logo": "/logos/github.svg"
+    "logo": "/logos/github.svg",
+    "status": "active"
   },
   {
     "slug": "cursor",
@@ -514,12 +520,12 @@
       },
       {
         "plan": "Pro+",
-        "price": null,
+        "price": "Contact for pricing",
         "features": []
       },
       {
         "plan": "Ultra",
-        "price": null,
+        "price": "Contact for pricing",
         "features": []
       },
       {
@@ -558,7 +564,8 @@
       "SCIM seat management"
     ],
     "category": "development",
-    "logo": "/logos/cursor.svg"
+    "logo": "/logos/cursor.svg",
+    "status": "active"
   },
   {
     "slug": "vscode",
@@ -591,7 +598,8 @@
       "Remote development"
     ],
     "category": "development",
-    "logo": "/logos/vscode.svg"
+    "logo": "/logos/vscode.svg",
+    "status": "active"
   },
   {
     "slug": "slack",
@@ -667,7 +675,8 @@
       "Native data loss prevention"
     ],
     "category": "communication",
-    "logo": "/logos/slack.svg"
+    "logo": "/logos/slack.svg",
+    "status": "active"
   },
   {
     "slug": "discord",
@@ -710,7 +719,8 @@
       "Stage channels"
     ],
     "category": "communication",
-    "logo": "/logos/discord.svg"
+    "logo": "/logos/discord.svg",
+    "status": "active"
   },
   {
     "slug": "system-prompts-and-models-of-ai-tools",
@@ -741,7 +751,8 @@
       "Regularly updated repository"
     ],
     "category": "development",
-    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg"
+    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg",
+    "status": "draft"
   },
   {
     "slug": "claude-code",
@@ -775,7 +786,8 @@
       "500MB of Packages storage"
     ],
     "category": "development",
-    "logo": "/logos/claude-code.svg"
+    "logo": "/logos/claude-code.svg",
+    "status": "draft"
   },
   {
     "slug": "markitdown",
@@ -813,7 +825,8 @@
       "GitHub Codespaces (featured add-on)"
     ],
     "category": "development",
-    "logo": "/logos/markitdown.svg"
+    "logo": "/logos/markitdown.svg",
+    "status": "draft"
   },
   {
     "slug": "deer-flow",
@@ -845,7 +858,8 @@
       "Built on LangChain and LangGraph for extensibility"
     ],
     "category": "development",
-    "logo": "/logos/deer-flow.svg"
+    "logo": "/logos/deer-flow.svg",
+    "status": "draft"
   },
   {
     "slug": "awesome-claude-skills",
@@ -875,7 +889,8 @@
       "Regularly updated with new content"
     ],
     "category": "development",
-    "logo": "/logos/awesome-claude-skills.svg"
+    "logo": "/logos/awesome-claude-skills.svg",
+    "status": "draft"
   },
   {
     "slug": "nanobot",
@@ -907,7 +922,8 @@
       "Compatible with multiple LLMs (OpenAI, Anthropic, etc.)"
     ],
     "category": "development",
-    "logo": "/logos/nanobot.svg"
+    "logo": "/logos/nanobot.svg",
+    "status": "draft"
   },
   {
     "slug": "antigravity-manager",
@@ -937,7 +953,8 @@
       "Designed specifically for Antigravity Tools"
     ],
     "category": "productivity",
-    "logo": "/logos/antigravity-manager.svg"
+    "logo": "/logos/antigravity-manager.svg",
+    "status": "draft"
   },
   {
     "slug": "composio",
@@ -994,7 +1011,8 @@
       "2M Tool Calls/Mo"
     ],
     "category": "development",
-    "logo": "/logos/composio.svg"
+    "logo": "/logos/composio.svg",
+    "status": "draft"
   },
   {
     "slug": "claude-code-templates",
@@ -1026,7 +1044,8 @@
       "Regular updates and contributions"
     ],
     "category": "development",
-    "logo": "/logos/claude-code-templates.svg"
+    "logo": "/logos/claude-code-templates.svg",
+    "status": "draft"
   },
   {
     "slug": "gerbil",
@@ -1055,7 +1074,8 @@
       "Privacy-focused (no data sent to cloud)"
     ],
     "category": "development",
-    "logo": "/logos/gerbil.svg"
+    "logo": "/logos/gerbil.svg",
+    "status": "draft"
   },
   {
     "slug": "bodhi",
@@ -1087,7 +1107,8 @@
       "Easy integration with existing applications"
     ],
     "category": "development",
-    "logo": "/logos/bodhi.svg"
+    "logo": "/logos/bodhi.svg",
+    "status": "draft"
   },
   {
     "slug": "workout-cool",
@@ -1117,7 +1138,8 @@
       "Modern user interface"
     ],
     "category": "productivity",
-    "logo": "/logos/workout-cool.svg"
+    "logo": "/logos/workout-cool.svg",
+    "status": "draft"
   },
   {
     "slug": "anki",
@@ -1161,7 +1183,8 @@
       "Add-Ons"
     ],
     "category": "productivity",
-    "logo": "/logos/anki.svg"
+    "logo": "/logos/anki.svg",
+    "status": "draft"
   },
   {
     "slug": "codinit",
@@ -1193,7 +1216,8 @@
       "Web and mobile app output"
     ],
     "category": "development",
-    "logo": "/logos/codinit-.svg"
+    "logo": "/logos/codinit-.svg",
+    "status": "draft"
   },
   {
     "slug": "stagewise",
@@ -1222,7 +1246,8 @@
       "Open source and extensible"
     ],
     "category": "development",
-    "logo": "/logos/stagewise.svg"
+    "logo": "/logos/stagewise.svg",
+    "status": "draft"
   },
   {
     "slug": "sgai",
@@ -1261,7 +1286,8 @@
       "Support for multiple programming languages and frameworks"
     ],
     "category": "development",
-    "logo": "/logos/sgai.svg"
+    "logo": "/logos/sgai.svg",
+    "status": "draft"
   },
   {
     "slug": "dyad",
@@ -1317,7 +1343,8 @@
       "Prioritized access to office hours"
     ],
     "category": "development",
-    "logo": "/logos/dyad-.svg"
+    "logo": "/logos/dyad-.svg",
+    "status": "draft"
   },
   {
     "slug": "tasker",
@@ -1346,7 +1373,8 @@
       "Free and open-source"
     ],
     "category": "productivity",
-    "logo": "/logos/tasker.svg"
+    "logo": "/logos/tasker.svg",
+    "status": "draft"
   },
   {
     "slug": "gstack",
@@ -1384,7 +1412,8 @@
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
-    "logo": "/logos/gstack.svg"
+    "logo": "/logos/gstack.svg",
+    "status": "draft"
   },
   {
     "slug": "codinit-",
@@ -1418,7 +1447,8 @@
       "500MB of Packages storage"
     ],
     "category": "development",
-    "logo": "/logos/codinit-.svg"
+    "logo": "/logos/codinit-.svg",
+    "status": "draft"
   },
   {
     "slug": "superset",
@@ -1456,7 +1486,8 @@
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
-    "logo": "/logos/superset.svg"
+    "logo": "/logos/superset.svg",
+    "status": "draft"
   },
   {
     "slug": "rowboat",
@@ -1494,6 +1525,7 @@
       "GitHub Codespaces Access"
     ],
     "category": "productivity",
-    "logo": "/logos/rowboat.svg"
+    "logo": "/logos/rowboat.svg",
+    "status": "draft"
   }
 ]

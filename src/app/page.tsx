@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-const tools = toolsData as Tool[];
+const tools = (toolsData as Tool[]).filter((t) => t.status === "active");
 const categories = categoriesData as Category[];
 
 const hotAlternatives = [

@@ -1,3 +1,5 @@
+export type ToolStatus = "active" | "draft" | "hidden" | "removed";
+
 export interface Tool {
   slug: string;
   name: string;
@@ -13,6 +15,7 @@ export interface Tool {
   features: string[];
   category: string;
   logo: string;
+  status: ToolStatus;
 }
 
 export interface PricingPlan {

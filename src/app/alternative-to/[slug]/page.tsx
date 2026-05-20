@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllToolSlugs, getToolBySlug, getAlternativesFor } from "@/lib/tools";
+import { getActiveToolSlugs, getActiveToolBySlug, getAlternativesFor } from "@/lib/tools";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
 import { ToolCard } from "@/components/ToolCard";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -9,7 +9,7 @@ import { ToolJsonLd } from "@/components/ToolJsonLd";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return getAllToolSlugs().map((slug) => ({ slug }));
+  return getActiveToolSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -18,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const tool = getToolBySlug(slug);
+  const tool = getActiveToolBySlug(slug);
   if (!tool) return { title: "Not Found" };
   return {
     title: `Best ${tool.name} Alternatives — Open Source \u0026 Paid | ToolAlts`,
@@ -33,7 +33,7 @@ export default async function AlternativeToPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const tool = getToolBySlug(slug);
+  const tool = getActiveToolBySlug(slug);
   if (!tool) notFound();
 
   const alternatives = getAlternativesFor(slug);
