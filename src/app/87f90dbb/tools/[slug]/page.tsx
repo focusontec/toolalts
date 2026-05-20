@@ -86,7 +86,7 @@ export default function ToolEditPage() {
       if (res.ok) {
         setMessage({ type: "success", text: "Saved! Changes will appear after redeployment." });
         if (isNew) {
-          router.push("/admin/tools/");
+          router.push("/87f90dbb/tools/");
         }
       } else {
         setMessage({ type: "error", text: data.error || "Save failed" });
@@ -113,7 +113,7 @@ export default function ToolEditPage() {
         </div>
         <div className="flex gap-2">
           <button
-            onClick={() => router.push("/admin/tools/")}
+            onClick={() => router.push("/87f90dbb/tools/")}
             className="rounded-lg border border-slate-300 px-4 py-2 text-sm text-slate-700 transition hover:bg-slate-50"
           >
             Cancel

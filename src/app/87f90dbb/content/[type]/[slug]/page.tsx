@@ -63,7 +63,7 @@ export default function ContentEditPage() {
         </div>
         <div className="flex gap-2">
           <button
-            onClick={() => router.push("/admin/content/")}
+            onClick={() => router.push("/87f90dbb/content/")}
             className="rounded-lg border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
           >
             Back

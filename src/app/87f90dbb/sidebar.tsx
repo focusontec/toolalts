@@ -4,13 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { href: "/admin/", label: "Dashboard", icon: "grid" },
-  { href: "/admin/tools/", label: "Tools", icon: "wrench" },
-  { href: "/admin/pipeline/", label: "Pipeline", icon: "play" },
-  { href: "/admin/audit/", label: "Audit", icon: "shield" },
-  { href: "/admin/comparisons/", label: "Comparisons", icon: "columns" },
-  { href: "/admin/categories/", label: "Categories", icon: "folder" },
-  { href: "/admin/content/", label: "Content", icon: "file-text" },
+  { href: "/87f90dbb/", label: "Dashboard", icon: "grid" },
+  { href: "/87f90dbb/tools/", label: "Tools", icon: "wrench" },
+  { href: "/87f90dbb/pipeline/", label: "Pipeline", icon: "play" },
+  { href: "/87f90dbb/audit/", label: "Audit", icon: "shield" },
+  { href: "/87f90dbb/comparisons/", label: "Comparisons", icon: "columns" },
+  { href: "/87f90dbb/categories/", label: "Categories", icon: "folder" },
+  { href: "/87f90dbb/content/", label: "Content", icon: "file-text" },
 ];
 
 function NavIcon({ type }: { type: string }) {
@@ -71,15 +71,15 @@ export function AdminSidebar() {
   return (
     <aside className="fixed inset-y-0 left-0 w-56 border-r border-slate-200 bg-white">
       <div className="flex h-14 items-center border-b border-slate-200 px-4">
-        <Link href="/admin/" className="text-sm font-bold text-slate-900">
+        <Link href="/87f90dbb/" className="text-sm font-bold text-slate-900">
           ToolAlts Admin
         </Link>
       </div>
       <nav className="mt-2 space-y-0.5 px-2">
         {NAV_ITEMS.map((item) => {
           const isActive =
-            item.href === "/admin/"
-              ? pathname === "/admin/"
+            item.href === "/87f90dbb/"
+              ? pathname === "/87f90dbb/"
               : pathname.startsWith(item.href);
           return (
             <Link
@@ -104,7 +104,7 @@ export function AdminSidebar() {
           onSubmit={async (e) => {
             e.preventDefault();
             await fetch("/api/admin/auth/", { method: "DELETE" });
-            window.location.href = "/admin/login/";
+            window.location.href = "/87f90dbb/login/";
           }}
         >
           <button

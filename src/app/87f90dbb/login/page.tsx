@@ -22,7 +22,7 @@ export default function LoginPage() {
       });
 
       if (res.ok) {
-        router.push("/admin/");
+        router.push("/87f90dbb/");
       } else {
         const data = await res.json();
         setError(data.error || "Login failed");
