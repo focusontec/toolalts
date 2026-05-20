@@ -43,12 +43,12 @@ export default function AdminDashboard() {
   });
 
   const stats = [
-    { label: "Tools", value: tools.length, href: "/87f90dbb/tools/", color: "bg-indigo-50 text-indigo-700" },
-    { label: "Categories", value: categories.length, href: "/87f90dbb/categories/", color: "bg-emerald-50 text-emerald-700" },
-    { label: "Comparisons", value: comparisons.length, href: "/87f90dbb/comparisons/", color: "bg-amber-50 text-amber-700" },
-    { label: "Blog Posts", value: blogCount, href: "/87f90dbb/content/", color: "bg-purple-50 text-purple-700" },
-    { label: "Reports", value: reportCount, href: "/87f90dbb/content/", color: "bg-slate-100 text-slate-700" },
-    { label: "Pending Candidates", value: pending.length, href: "/87f90dbb/pipeline/", color: "bg-rose-50 text-rose-700" },
+    { label: "Tools", value: tools.length, href: "/admin/tools/", color: "bg-indigo-50 text-indigo-700" },
+    { label: "Categories", value: categories.length, href: "/admin/categories/", color: "bg-emerald-50 text-emerald-700" },
+    { label: "Comparisons", value: comparisons.length, href: "/admin/comparisons/", color: "bg-amber-50 text-amber-700" },
+    { label: "Blog Posts", value: blogCount, href: "/admin/content/", color: "bg-purple-50 text-purple-700" },
+    { label: "Reports", value: reportCount, href: "/admin/content/", color: "bg-slate-100 text-slate-700" },
+    { label: "Pending Candidates", value: pending.length, href: "/admin/pipeline/", color: "bg-rose-50 text-rose-700" },
   ];
 
   return (
@@ -134,21 +134,21 @@ export default function AdminDashboard() {
           <h2 className="text-sm font-semibold text-slate-900">Quick Actions</h2>
           <div className="mt-3 space-y-2">
             <Link
-              href="/87f90dbb/pipeline/"
+              href="/admin/pipeline/"
               className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-50"
             >
               <span>Run discovery pipeline</span>
               <span className="text-xs text-slate-400">→</span>
             </Link>
             <Link
-              href="/87f90dbb/tools/"
+              href="/admin/tools/"
               className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-50"
             >
               <span>Review tool data</span>
               <span className="text-xs text-slate-400">→</span>
             </Link>
             <Link
-              href="/87f90dbb/content/"
+              href="/admin/content/"
               className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-50"
             >
               <span>Edit content</span>

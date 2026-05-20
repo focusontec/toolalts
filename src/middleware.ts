@@ -4,9 +4,9 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Auth check for admin pages and API routes
-  if (pathname.startsWith("/87f90dbb/") || pathname.startsWith("/api/admin/")) {
+  if (pathname.startsWith("/admin/") || pathname.startsWith("/api/admin/")) {
     // Skip login page and auth API
-    if (pathname === "/87f90dbb/login/" || pathname === "/api/admin/auth/") {
+    if (pathname === "/admin/login/" || pathname === "/api/admin/auth/") {
       return NextResponse.next();
     }
 
@@ -15,7 +15,7 @@ export function middleware(request: NextRequest) {
       if (pathname.startsWith("/api/admin/")) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
       }
-      return NextResponse.redirect(new URL("/87f90dbb/login/", request.url));
+      return NextResponse.redirect(new URL("/admin/login/", request.url));
     }
   }
 
@@ -23,5 +23,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/87f90dbb/:path*", "/api/admin/:path*"],
+  matcher: ["/admin/:path*", "/api/admin/:path*"],
 };
