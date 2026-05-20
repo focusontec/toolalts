@@ -1,0 +1,61 @@
+name: Quality Review
+
+on:
+  schedule:
+    # Run weekly on Monday at 3am UTC
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: "Dry run (preview only)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run quality review
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
+            ARGS="--dry-run"
+          fi
+          npx tsx scripts/ai-review.ts $ARGS
+
+      - name: Commit report
+        if: ${{ github.event.inputs.dryRun != 'true' }}
+        run: |
+          git config user.name "autoclaw[bot]"
+          git config user.email "autoclaw[bot]@users.noreply.github.com"
+          git add data/review-report.md
+          if git diff --cached --quiet; then
+            echo "📭 No changes to commit."
+          else
+            git commit -m "autoclaw: quality review $(date -u +%Y-%m-%d)"
+            git push
+            echo "✅ Review report committed."
+          fi
