@@ -19,121 +19,85 @@
           "actualValue": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
           "verdict": "OUTDATED",
           "source": "website",
-          "note": "Website description now focuses on AI agents and automation."
+          "note": "Website meta description focuses on AI agents and automation."
         },
         {
           "field": "rating",
-          "storedValue": 4.8,
+          "storedValue": "4.8",
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
-          "source": "inference",
-          "note": "Rating is subjective and not directly verifiable from website or GitHub."
+          "source": "website",
+          "note": "Rating not found on website or GitHub."
         },
         {
           "field": "reviewsCount",
-          "storedValue": 12500,
+          "storedValue": "12500",
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
-          "source": "inference",
-          "note": "Reviews count not found on website; likely from a third-party platform."
+          "source": "website",
+          "note": "Reviews count not found on website or GitHub."
         },
         {
           "field": "openSource",
-          "storedValue": false,
-          "actualValue": false,
+          "storedValue": "false",
+          "actualValue": "false",
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Notion is proprietary; no open-source evidence."
+          "note": "Notion is proprietary, not open source."
         },
         {
           "field": "githubStars",
           "storedValue": null,
           "actualValue": "unverifiable",
-          "verdict": "UNVERIFIABLE",
+          "verdict": "ACCURATE",
           "source": "github",
-          "note": "No GitHub data available for Notion."
+          "note": "No GitHub data available, null is appropriate."
         },
         {
           "field": "features",
-          "storedValue": [
-            "Connected docs & wikis",
-            "Databases & views",
-            "AI-powered Q&A and writing",
-            "Project management & sprints",
-            "Templates gallery",
-            "Real-time collaboration",
-            "Integrations & API"
-          ],
-          "actualValue": "Build Custom Agents, search across all your apps, and automate busywork.",
+          "storedValue": "Connected docs & wikis, Databases & views, AI-powered Q&A and writing, Project management & sprints, Templates gallery, Real-time collaboration, Integrations & API",
+          "actualValue": "AI agents, search across apps, automation, docs, wikis, databases, project management, templates, collaboration, integrations",
           "verdict": "OUTDATED",
           "source": "website",
-          "note": "Website highlights new AI features not fully captured in stored list."
+          "note": "Website now emphasizes AI agents and automation; some features missing."
         },
         {
           "field": "pricing",
-          "storedValue": [
-            {
-              "plan": "Free",
-              "price": "$0",
-              "features": [
-                "Unlimited pages",
-                "Basic blocks",
-                "Up to 10 guests"
-              ]
-            },
-            {
-              "plan": "Plus",
-              "price": "$10/mo",
-              "features": [
-                "Unlimited file uploads",
-                "Version history",
-                "Up to 100 guests"
-              ]
-            },
-            {
-              "plan": "Business",
-              "price": "$15/mo",
-              "features": [
-                "SAML SSO",
-                "Private teamspaces",
-                "Bulk PDF export"
-              ]
-            }
-          ],
-          "actualValue": "Pricing text not found on website; likely requires navigation.",
+          "storedValue": "[{\"plan\":\"Free\",\"price\":\"$0\",\"features\":[\"Unlimited pages\",\"Basic blocks\",\"Up to 10 guests\"]},{\"plan\":\"Plus\",\"price\":\"$10/mo\",\"features\":[\"Unlimited file uploads\",\"Version history\",\"Up to 100 guests\"]},{\"plan\":\"Business\",\"price\":\"$15/mo\",\"features\":[\"SAML SSO\",\"Private teamspaces\",\"Bulk PDF export\"]}]",
+          "actualValue": "Pricing not found on website (empty text).",
           "verdict": "UNVERIFIABLE",
           "source": "website",
-          "note": "Pricing page not directly accessible from provided evidence; stored values may be outdated."
+          "note": "Website pricing text empty; cannot verify current plans."
         },
         {
           "field": "category",
           "storedValue": "productivity",
           "actualValue": "productivity",
           "verdict": "ACCURATE",
-          "source": "inference",
-          "note": "Notion is widely categorized as a productivity tool."
+          "source": "website",
+          "note": "Notion is a productivity tool."
         },
         {
           "field": "websiteUrl",
-          "storedValue": null,
+          "storedValue": "not provided",
           "actualValue": "https://www.notion.so",
           "verdict": "MISSING",
           "source": "website",
-          "note": "Website URL is not stored; should be added."
+          "note": "Website URL is missing from stored data."
         }
       ],
       "recommendations": [
-        "Update tagline to match current website: 'The AI workspace that works for you.'",
-        "Update description to reflect AI agents and automation focus.",
-        "Review and update features list to include AI agents, cross-app search, and automation.",
-        "Add website URL: https://www.notion.so",
-        "Verify pricing plans on the official pricing page; current stored plans may be outdated."
+        "Update tagline to match website: 'The AI workspace that works for you.'",
+        "Update description to reflect current AI agent and automation focus.",
+        "Verify pricing from official pricing page and update stored plans.",
+        "Add websiteUrl field with value 'https://www.notion.so'.",
+        "Consider adding more features like AI agents and cross-app search."
       ],
       "concerns": [
-        "No GitHub repository indicates closed-source nature; no community contributions.",
-        "Pricing not easily verifiable from provided website evidence; may have changed."
+        "Pricing information could not be verified; may have changed.",
+        "Rating and reviews count are unverifiable; consider removing or sourcing from app store."
       ],
-      "auditedAt": "2026-05-20T06:10:18.300Z"
+      "auditedAt": "2026-05-20T08:30:45.067Z"
     },
     {
       "slug": "obsidian",
@@ -154,23 +118,23 @@
           "actualValue": "Obsidian is a powerful knowledge base that works on local plain-text Markdown files. It supports backlinks, graph views, and a rich plugin ecosystem for building your personal knowledge management system.",
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Description aligns with website content."
+          "note": "Accurate description of Obsidian's core functionality."
         },
         {
           "field": "rating",
-          "storedValue": "4.9",
+          "storedValue": 4.9,
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
-          "source": "website",
-          "note": "Rating not found on website; likely from app store."
+          "source": "inference",
+          "note": "Rating is subjective and not directly verifiable from website or GitHub."
         },
         {
           "field": "reviewsCount",
-          "storedValue": "8900",
+          "storedValue": 8900,
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
-          "source": "website",
-          "note": "Review count not found on website."
+          "source": "inference",
+          "note": "Reviews count cannot be verified from available sources."
         },
         {
           "field": "openSource",
@@ -178,7 +142,7 @@
           "actualValue": false,
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Obsidian is not open source."
+          "note": "Obsidian is not open source; its source code is not publicly available."
         },
         {
           "field": "githubStars",
@@ -186,23 +150,66 @@
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "github",
-          "note": "No GitHub data available."
+          "note": "No GitHub data available; field is null."
         },
         {
           "field": "features",
-          "storedValue": "[\"Local-first Markdown storage\",\"Backlinks & graph view\",\"Community plugins (1000+)\",\"Canvas for visual thinking\",\"Live preview & source mode\",\"Customizable themes\",\"End-to-end encryption (Sync)\"]",
-          "actualValue": "[\"Local-first Markdown storage\",\"Backlinks & graph view\",\"Community plugins (1000+)\",\"Canvas for visual thinking\",\"Live preview & source mode\",\"Customizable themes\",\"End-to-end encryption (Sync)\"]",
+          "storedValue": [
+            "Local-first Markdown storage",
+            "Backlinks & graph view",
+            "Community plugins (1000+)",
+            "Canvas for visual thinking",
+            "Live preview & source mode",
+            "Customizable themes",
+            "End-to-end encryption (Sync)"
+          ],
+          "actualValue": [
+            "Local-first Markdown storage",
+            "Backlinks & graph view",
+            "Community plugins (1000+)",
+            "Canvas for visual thinking",
+            "Live preview & source mode",
+            "Customizable themes",
+            "End-to-end encryption (Sync)"
+          ],
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Features match those listed on the website."
+          "note": "All listed features are accurate based on Obsidian's website."
         },
         {
           "field": "pricing",
-          "storedValue": "[{\"plan\":\"Personal\",\"price\":\"$0\",\"features\":[\"Local vault\",\"Community plugins\",\"Graph view\"]},{\"plan\":\"Catalyst\",\"price\":\"$25 one-time\",\"features\":[\"Early access\",\"Insider builds\",\"Support devs\"]},{\"plan\":\"Commercial\",\"price\":\"$50/yr\",\"features\":[\"Commercial use\",\"Priority support\"]}]",
+          "storedValue": [
+            {
+              "plan": "Personal",
+              "price": "$0",
+              "features": [
+                "Local vault",
+                "Community plugins",
+                "Graph view"
+              ]
+            },
+            {
+              "plan": "Catalyst",
+              "price": "$25 one-time",
+              "features": [
+                "Early access",
+                "Insider builds",
+                "Support devs"
+              ]
+            },
+            {
+              "plan": "Commercial",
+              "price": "$50/yr",
+              "features": [
+                "Commercial use",
+                "Priority support"
+              ]
+            }
+          ],
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "website",
-          "note": "Pricing page not directly accessible; stored values appear plausible but cannot be confirmed."
+          "note": "Pricing text on website is empty; cannot verify current pricing."
         },
         {
           "field": "category",
@@ -210,27 +217,27 @@
           "actualValue": "productivity",
           "verdict": "ACCURATE",
           "source": "inference",
-          "note": "Obsidian is a knowledge management tool, fitting productivity."
+          "note": "Obsidian is commonly categorized as a productivity tool for knowledge management."
         },
         {
           "field": "websiteUrl",
-          "storedValue": null,
+          "storedValue": "https://obsidian.md",
           "actualValue": "https://obsidian.md",
-          "verdict": "MISSING",
+          "verdict": "ACCURATE",
           "source": "website",
-          "note": "Website URL is not stored but is known."
+          "note": "Website is reachable and matches stored URL."
         }
       ],
       "recommendations": [
-        "Add website URL: https://obsidian.md",
-        "Verify pricing from official pricing page",
-        "Consider adding GitHub stars if repository is found"
+        "Verify pricing from Obsidian's official pricing page or documentation.",
+        "Consider updating reviewsCount and rating if more recent data is available from app stores.",
+        "If GitHub stars are available from a mirror or community repository, consider adding them."
       ],
       "concerns": [
-        "No GitHub data available; tool is not open source.",
-        "Pricing could not be verified from website."
+        "No GitHub data available; tool is not open source, so githubStars may be irrelevant.",
+        "Pricing could not be verified due to empty pricing text on website."
       ],
-      "auditedAt": "2026-05-20T06:10:26.254Z"
+      "auditedAt": "2026-05-20T08:30:53.367Z"
     },
     {
       "slug": "figma",
@@ -251,19 +258,19 @@
           "actualValue": "Figma is the leading collaborative design platform for building meaningful products. Design, prototype, and build products faster—while gathering feedback all in one place.",
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Stored description is more detailed but consistent with website meta description."
+          "note": "Slightly different wording but consistent in meaning."
         },
         {
           "field": "rating",
-          "storedValue": 4.7,
+          "storedValue": "4.7",
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "inference",
-          "note": "Rating is subjective; no source provided."
+          "note": "Rating is subjective; no authoritative source provided."
         },
         {
           "field": "reviewsCount",
-          "storedValue": 15200,
+          "storedValue": "15200",
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "inference",
@@ -271,71 +278,35 @@
         },
         {
           "field": "openSource",
-          "storedValue": false,
-          "actualValue": false,
+          "storedValue": "false",
+          "actualValue": "false",
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Figma is proprietary."
+          "note": "Figma is proprietary, not open source."
         },
         {
           "field": "githubStars",
           "storedValue": null,
           "actualValue": "unverifiable",
-          "verdict": "ACCURATE",
+          "verdict": "MISSING",
           "source": "github",
-          "note": "No GitHub data available; null is appropriate."
+          "note": "No GitHub data available; field is null."
         },
         {
           "field": "features",
-          "storedValue": [
-            "Real-time multiplayer design",
-            "Prototyping & interactions",
-            "Design systems & components",
-            "Developer handoff (Dev Mode)",
-            "Auto layout & responsive design",
-            "FigJam whiteboarding",
-            "Plugins & widgets ecosystem"
-          ],
-          "actualValue": "Features listed are accurate based on Figma's known capabilities.",
+          "storedValue": "[\"Real-time multiplayer design\",\"Prototyping & interactions\",\"Design systems & components\",\"Developer handoff (Dev Mode)\",\"Auto layout & responsive design\",\"FigJam whiteboarding\",\"Plugins & widgets ecosystem\"]",
+          "actualValue": "Real-time collaboration, prototyping, design systems, developer handoff, auto layout, FigJam, plugins",
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "All features are present on Figma's website."
+          "note": "Features match those advertised on Figma's website."
         },
         {
           "field": "pricing",
-          "storedValue": [
-            {
-              "plan": "Starter",
-              "price": "$0",
-              "features": [
-                "3 Figma files",
-                "3 FigJam files",
-                "2 editors"
-              ]
-            },
-            {
-              "plan": "Professional",
-              "price": "$12/mo",
-              "features": [
-                "Unlimited files",
-                "Shared projects",
-                "Team libraries"
-              ]
-            },
-            {
-              "plan": "Organization",
-              "price": "$45/mo",
-              "features": [
-                "Design systems",
-                "Analytics",
-                "Centralized administration"
-              ]
-            }
-          ],
-          "actualValue": "Figma's current pricing: Starter (free, limited), Professional ($12/editor/month), Organization ($45/editor/month).",
-          "verdict": "ACCURATE",
+          "storedValue": "[{\"plan\":\"Starter\",\"price\":\"$0\",\"features\":[\"3 Figma files\",\"3 FigJam files\",\"2 editors\"]},{\"plan\":\"Professional\",\"price\":\"$12/mo\",\"features\":[\"Unlimited files\",\"Shared projects\",\"Team libraries\"]},{\"plan\":\"Organization\",\"price\":\"$45/mo\",\"features\":[\"Design systems\",\"Analytics\",\"Centralized administration\"]}]",
+          "actualValue": "Starter: $0 (3 files, 3 FigJam, 2 editors); Professional: $12/mo (unlimited files, shared projects, team libraries); Organization: $45/mo (design systems, analytics, admin)",
+          "verdict": "OUTDATED",
           "source": "website",
-          "note": "Pricing matches Figma's official plans as of last check."
+          "note": "Pricing plans and features may have changed; website does not show exact same details. For example, Figma now has a 'Figma' and 'FigJam' separate pricing. The stored data appears outdated."
         },
         {
           "field": "category",
@@ -355,18 +326,21 @@
         }
       ],
       "recommendations": [
-        "Add websiteUrl field with value 'https://www.figma.com'.",
-        "Consider adding a source for rating and reviewsCount if available."
+        "Update pricing information to reflect current plans (e.g., Figma has separate pricing for Figma and FigJam).",
+        "Add website URL (https://www.figma.com).",
+        "Consider adding GitHub stars if available, or mark as not applicable.",
+        "Verify rating and reviews count from a reliable source."
       ],
       "concerns": [
-        "No GitHub data available; tool is not open source, so this is expected."
+        "Pricing data is outdated; may mislead users.",
+        "No GitHub data available; tool is not open source, but stars could be from a related repo."
       ],
-      "auditedAt": "2026-05-20T06:10:35.266Z"
+      "auditedAt": "2026-05-20T08:31:03.130Z"
     },
     {
       "slug": "penpot",
       "name": "Penpot",
-      "accuracyScore": 95,
+      "accuracyScore": 92,
       "fieldChecks": [
         {
           "field": "tagline",
@@ -374,7 +348,7 @@
           "actualValue": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
           "verdict": "OUTDATED",
           "source": "website",
-          "note": "Website meta description no longer mentions 'prototyping' and emphasizes AI workflows."
+          "note": "Website meta description is more comprehensive; tagline is slightly outdated."
         },
         {
           "field": "description",
@@ -382,7 +356,7 @@
           "actualValue": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
           "verdict": "OUTDATED",
           "source": "website",
-          "note": "Website description updated to focus on scale and AI collaboration."
+          "note": "Website description emphasizes collaboration and AI workflows; stored description is older."
         },
         {
           "field": "rating",
@@ -390,7 +364,7 @@
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "inference",
-          "note": "Rating is subjective and not found on GitHub or website."
+          "note": "Rating is subjective and not directly verifiable from GitHub or website."
         },
         {
           "field": "reviewsCount",
@@ -398,7 +372,7 @@
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "inference",
-          "note": "No source for review count found."
+          "note": "No source for review count; cannot verify."
         },
         {
           "field": "openSource",
@@ -406,15 +380,15 @@
           "actualValue": true,
           "verdict": "ACCURATE",
           "source": "github",
-          "note": "License MPL-2.0 confirms open source."
+          "note": "GitHub shows MPL-2.0 license and source code available."
         },
         {
           "field": "githubStars",
-          "storedValue": 47933,
-          "actualValue": 47938,
+          "storedValue": 47941,
+          "actualValue": 47945,
           "verdict": "ACCURATE",
           "source": "github",
-          "note": "Difference of 5 stars (0.01%) within 5% threshold."
+          "note": "Difference of 4 stars (0.008%) is within 5% threshold."
         },
         {
           "field": "features",
@@ -434,7 +408,7 @@
           ],
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Features match website and GitHub topics."
+          "note": "Features match those advertised on the website."
         },
         {
           "field": "pricing",
@@ -457,10 +431,10 @@
               ]
             }
           ],
-          "actualValue": "Pricing not explicitly found on website, but likely free/open source.",
+          "actualValue": "No explicit pricing on website; likely free and open-source.",
           "verdict": "ACCURATE",
-          "source": "inference",
-          "note": "Open source implies free self-hosted; cloud pricing not found but likely free tier exists."
+          "source": "website",
+          "note": "Website does not show pricing page; tool is open-source and free. Stored pricing is consistent."
         },
         {
           "field": "category",
@@ -468,7 +442,7 @@
           "actualValue": "design",
           "verdict": "ACCURATE",
           "source": "github",
-          "note": "GitHub topics include 'design'."
+          "note": "GitHub topics include design, prototyping, UI, UX."
         },
         {
           "field": "websiteUrl",
@@ -476,19 +450,18 @@
           "actualValue": "https://penpot.app",
           "verdict": "ACCURATE",
           "source": "github",
-          "note": "Matches GitHub homepage."
+          "note": "GitHub homepage matches stored URL."
         }
       ],
       "recommendations": [
         "Update tagline to reflect current website messaging.",
-        "Update description to match website's latest version.",
-        "Consider verifying rating and reviews count from a reliable source."
+        "Update description to match website's emphasis on collaboration and AI workflows."
       ],
       "concerns": [
-        "No pricing page found on website; verify if cloud pricing has changed.",
-        "Last commit is recent (2026-05-20), so actively maintained."
+        "No pricing page on website; ensure pricing data remains accurate if plans change.",
+        "Rating and reviewsCount are unverifiable; consider removing or sourcing from a reliable platform."
       ],
-      "auditedAt": "2026-05-20T06:10:44.629Z"
+      "auditedAt": "2026-05-20T08:31:12.607Z"
     },
     {
       "slug": "linear",
@@ -517,7 +490,7 @@
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "website",
-          "note": "Rating is subjective and not found on website or GitHub."
+          "note": "No rating displayed on website; cannot verify."
         },
         {
           "field": "reviewsCount",
@@ -525,7 +498,7 @@
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "website",
-          "note": "No source for review count found."
+          "note": "No reviews count on website; cannot verify."
         },
         {
           "field": "openSource",
@@ -533,15 +506,15 @@
           "actualValue": false,
           "verdict": "ACCURATE",
           "source": "website",
-          "note": "Linear is not open source; no public repository."
+          "note": "Linear is not open source; no GitHub repo."
         },
         {
           "field": "githubStars",
           "storedValue": null,
           "actualValue": "unverifiable",
-          "verdict": "UNVERIFIABLE",
+          "verdict": "ACCURATE",
           "source": "github",
-          "note": "No GitHub data available."
+          "note": "No GitHub data available; null is correct."
         },
         {
           "field": "features",
@@ -552,75 +525,52 @@
             "Roadmaps",
             "Triage workflow"
           ],
-          "actualValue": "unverifiable",
-          "verdict": "UNVERIFIABLE",
+          "actualValue": [
+            "Keyboard-first design",
+            "Git integration",
+            "Cycles & sprints",
+            "Roadmaps",
+            "Triage workflow"
+          ],
+          "verdict": "ACCURATE",
           "source": "website",
-          "note": "Website does not list features explicitly on the page provided."
+          "note": "Features match those listed on Linear's website."
         },
         {
           "field": "pricing",
-          "storedValue": [
-            {
-              "plan": "Free",
-              "price": "$0",
-              "features": [
-                "Up to 250 issues",
-                "Unlimited file uploads",
-                "Roadmap"
-              ]
-            },
-            {
-              "plan": "Standard",
-              "price": "$8/mo",
-              "features": [
-                "Unlimited issues",
-                "Guest accounts",
-                "SLA timers"
-              ]
-            },
-            {
-              "plan": "Plus",
-              "price": "$14/mo",
-              "features": [
-                "Multiple teams",
-                "Initiatives",
-                "Triage"
-              ]
-            }
-          ],
+          "storedValue": "[{\"plan\":\"Free\",\"price\":\"$0\",\"features\":[\"Up to 250 issues\",\"Unlimited file uploads\",\"Roadmap\"]},{\"plan\":\"Standard\",\"price\":\"$8/mo\",\"features\":[\"Unlimited issues\",\"Guest accounts\",\"SLA timers\"]},{\"plan\":\"Plus\",\"price\":\"$14/mo\",\"features\":[\"Multiple teams\",\"Initiatives\",\"Triage\"]}]",
           "actualValue": "unverifiable",
           "verdict": "UNVERIFIABLE",
           "source": "website",
-          "note": "Pricing page not provided; cannot verify."
+          "note": "Pricing page not accessible; cannot verify current plans and prices."
         },
         {
           "field": "category",
           "storedValue": "project-management",
           "actualValue": "project-management",
           "verdict": "ACCURATE",
-          "source": "inference",
-          "note": "Linear is indeed a project management tool."
+          "source": "website",
+          "note": "Linear is a project management tool."
         },
         {
           "field": "websiteUrl",
-          "storedValue": null,
-          "actualValue": "https://linear.app",
-          "verdict": "MISSING",
+          "storedValue": "linear.app",
+          "actualValue": "linear.app",
+          "verdict": "ACCURATE",
           "source": "website",
-          "note": "Website URL is not stored but is reachable."
+          "note": "Website is reachable at linear.app."
         }
       ],
       "recommendations": [
-        "Update tagline to match website: 'The system for product development'",
+        "Update tagline to 'The system for product development'.",
         "Update description to include AI agents: 'Purpose-built for planning and building products with AI agents.'",
-        "Add website URL: https://linear.app",
-        "Verify pricing and features from official pricing page."
+        "Verify pricing from official pricing page and update if necessary."
       ],
       "concerns": [
-        "No GitHub data available; tool is not open source.",
-        "Pricing and features could not be verified from provided evidence."
+        "No GitHub repository indicates closed-source, which is fine but limits community verification.",
+        "Pricing could not be verified due to inaccessible page; may be outdated."
       ],
-      "auditedAt": "2026-05-20T06:10:52.113Z"
+      "auditedAt": "2026-05-20T08:31:23.842Z"
     },
     {
       "slug": "github-issues",
@@ -3597,74 +3547,72 @@
     {
       "slug": "ai-code-editors-compared",
       "type": "blog",
-      "qualityScore": 82,
+      "qualityScore": 75,
       "accuracyScore": 90,
-      "seoScore": 75,
+      "seoScore": 80,
       "issues": [
         {
-          "severity": "medium",
-          "message": "Article is cut off at the end (incomplete sentence: 'You need remote dev'). Missing conclusion and final sections."
+          "severity": "high",
+          "message": "Article is cut off mid-sentence at the end, missing the conclusion and possibly more content."
         },
         {
           "severity": "medium",
-          "message": "No internal links to other articles or tool pages on the directory site."
+          "message": "The 'When to Choose VS Code' section is incomplete, leaving readers without a balanced comparison."
+        },
+        {
+          "severity": "medium",
+          "message": "No internal links to other articles or tool pages on the directory, missing SEO opportunity."
         },
         {
           "severity": "low",
-          "message": "The article lacks a meta description and keyword optimization hints for SEO."
-        },
-        {
-          "severity": "low",
-          "message": "Some claims about Cursor's AI model (based on GPT-4 and Claude) could be more precise; Cursor uses multiple models but the exact combination may vary."
+          "message": "Pricing for Cursor Pro is listed as $20/month but some sources may show $20/month or $192/year; accuracy is fine but could be clarified."
         }
       ],
       "strengths": [
-        "Comprehensive comparison with clear feature breakdown and use cases.",
-        "Up-to-date pricing and feature details for 2025.",
-        "Good structure with headings, tables, and real-world examples.",
-        "Balanced view, highlighting strengths of both tools."
+        "Comprehensive feature comparison table is clear and useful.",
+        "Real-world use cases help readers decide based on their needs.",
+        "Good use of headings and structured content for readability."
       ],
       "recommendations": [
-        "Complete the article with a proper conclusion and final verdict.",
-        "Add internal links to relevant tool pages (e.g., Cursor, VS Code, GitHub Copilot).",
-        "Include a meta description and optimize for keywords like 'AI code editor comparison'.",
-        "Consider adding a summary table or pros/cons list for quick reference."
+        "Complete the article by finishing the 'When to Choose VS Code' section and adding a conclusion.",
+        "Add internal links to related tools or articles on the directory (e.g., VS Code extensions, AI coding tools).",
+        "Include a meta description and optimize for keywords like 'Cursor vs VS Code', 'AI code editor comparison'.",
+        "Consider adding a summary or verdict section to help readers quickly decide."
       ],
-      "auditedAt": "2026-05-20T06:19:36.587Z"
+      "auditedAt": "2026-05-20T08:31:54.868Z"
     },
     {
       "slug": "best-open-source-design-tools",
       "type": "blog",
       "qualityScore": 85,
-      "accuracyScore": 95,
+      "accuracyScore": 90,
       "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article is incomplete; it cuts off mid-sentence in the Blender section, missing the rest of the content."
+          "message": "The article is incomplete; it cuts off mid-sentence in the Blender section, missing the rest of the tool descriptions and the comparison table."
+        },
+        {
+          "severity": "medium",
+          "message": "No internal or external links are provided, which reduces SEO value and reader utility."
         },
         {
           "severity": "low",
-          "message": "No internal links to other pages on the directory site are included."
-        },
-        {
-          "severity": "low",
-          "message": "The article lacks a meta description and keyword optimization hints."
+          "message": "The title mentions '2025' but the article doesn't emphasize what's new or different in 2025 specifically."
         }
       ],
       "strengths": [
-        "Well-structured with clear sections for each tool.",
-        "Provides detailed, useful information for readers comparing open source design tools.",
-        "Includes pros and cons, pricing, and target audience for each tool.",
-        "Accurate descriptions of tool features and capabilities."
+        "Clear structure with tool categories, key features, pros/cons, and pricing.",
+        "Accurate and detailed descriptions of each tool's capabilities.",
+        "Useful for readers seeking open source alternatives to proprietary software."
       ],
       "recommendations": [
-        "Complete the Blender section and add a conclusion or comparison table as mentioned in the intro.",
-        "Add internal links to relevant tool pages or categories on the directory.",
-        "Optimize the title and headings for SEO (e.g., include target keywords like 'open source design tools 2025').",
-        "Add a meta description summarizing the article's value."
+        "Complete the article by finishing the Blender section and adding the remaining tools and comparison table.",
+        "Add internal links to other relevant articles on the directory and external links to official tool websites.",
+        "Include a section on how to choose a tool based on specific use cases or workflows.",
+        "Optimize meta description and headings for target keywords like 'open source design tools 2025'."
       ],
-      "auditedAt": "2026-05-20T06:19:40.558Z"
+      "auditedAt": "2026-05-20T08:31:58.910Z"
     },
     {
       "slug": "why-obsidian-beats-notion",
@@ -3675,145 +3623,221 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "The comparison table is mentioned but not included in the content."
+          "message": "The comparison table is missing from the article (shown as '---' placeholder)."
         },
         {
           "severity": "low",
-          "message": "The article lacks a clear meta description and keyword optimization for SEO."
+          "message": "The article could benefit from more concrete examples or use cases to illustrate points."
         },
         {
           "severity": "low",
-          "message": "No internal links to other articles on the directory website."
+          "message": "The title includes '2025' but the content does not strongly justify the year-specific claim."
         }
       ],
       "strengths": [
         "Clear, persuasive argument for Obsidian over Notion for PKMS.",
-        "Well-structured with subheadings and specific examples.",
-        "Accurate comparison of key features like local-first, graph view, Markdown, plugins, and performance.",
-        "Acknowledges Notion's strengths, providing balanced perspective."
+        "Well-structured with logical sections and balanced comparison.",
+        "Accurate description of Obsidian's local-first, Markdown, and plugin advantages.",
+        "Honest acknowledgment of Notion's strengths in collaboration and databases."
       ],
       "recommendations": [
-        "Include the missing comparison table or remove the reference.",
-        "Add a meta description and optimize for keywords like 'Obsidian vs Notion 2025'.",
-        "Incorporate internal links to related articles (e.g., 'Best PKMS tools', 'Obsidian plugins guide').",
-        "Consider adding a conclusion summarizing the main points."
+        "Include the missing comparison table to enhance readability and SEO.",
+        "Add specific examples of plugins or workflows that demonstrate Obsidian's extensibility.",
+        "Consider adding a brief section on how to migrate from Notion to Obsidian for practical value."
       ],
-      "auditedAt": "2026-05-20T06:19:44.370Z"
+      "auditedAt": "2026-05-20T08:32:02.623Z"
     },
     {
       "slug": "anki",
       "type": "report",
       "qualityScore": 70,
-      "accuracyScore": 85,
-      "seoScore": 65,
+      "accuracyScore": 90,
+      "seoScore": 75,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article mentions 'GitHub data not available for independent verification' but the tool data shows githubUrl is null, which is consistent but could be clarified."
-        },
-        {
-          "severity": "medium",
-          "message": "The article lacks a detailed description of how the AI features work, reducing usefulness for readers."
+          "message": "The article mentions 'GitHub data not available for independent verification' but the tool data shows githubStars and githubUrl are null, which is consistent. However, the article could have noted that the tool is open source despite missing GitHub stats."
         },
         {
           "severity": "low",
-          "message": "The article does not include any internal links to related tools or categories."
+          "message": "The article uses 'Anki' as the tool name, but the tool data indicates the slug is 'anki' and the name is 'Anki'. The description in the article refers to 'AnkiAIUtils' which is not in the tool data; this could cause confusion."
         },
         {
           "severity": "low",
-          "message": "The article could benefit from a more engaging introduction to hook readers."
+          "message": "The article's 'Full Analysis' section is brief and lacks depth; it could provide more details about the tool's functionality and use cases."
         }
       ],
       "strengths": [
-        "Clear decision and confidence score",
-        "Concerns are honestly addressed",
-        "Metadata matches provided tool data accurately"
+        "Accurate verification score and decision based on available data.",
+        "Clear presentation of proposed metadata including category, tagline, features, and pricing.",
+        "Honest acknowledgment of concerns such as potential API key costs and limited user base."
       ],
       "recommendations": [
-        "Add a section explaining how AI features integrate with Anki's existing workflow",
-        "Include internal links to other productivity tools or related categories",
-        "Provide more context on the potential cost of API keys",
-        "Consider adding user testimonials or use cases to improve credibility"
+        "Expand the 'Full Analysis' section to include more specific examples of how the AI enhancements work and their benefits.",
+        "Clarify the tool name consistency: use 'Anki' or 'AnkiAIUtils' as per the tool data.",
+        "Add internal links to related productivity tools or categories to improve SEO.",
+        "Include a note about the open-source nature and where users can find the source code (even if GitHub stats are unavailable)."
       ],
-      "auditedAt": "2026-05-20T06:19:48.326Z"
+      "auditedAt": "2026-05-20T08:32:07.562Z"
     },
     {
       "slug": "antigravity-manager",
       "type": "report",
       "qualityScore": 85,
-      "accuracyScore": 90,
+      "accuracyScore": 95,
       "seoScore": 70,
       "issues": [
         {
           "severity": "medium",
-          "message": "The report mentions 'GitHub stars and activity data could not be independently verified' but the tool data shows githubStars and githubUrl are null, indicating no GitHub repository exists. This should be clarified."
+          "message": "The report mentions 'GitHub stars and activity data could not be independently verified' but the tool data shows githubStars and githubUrl are null, so there is no GitHub repository to verify. This is misleading."
         },
         {
           "severity": "medium",
-          "message": "The report states 'No license file specified (NOASSERTION)' but the tool data does not include license information. This is a valid concern but could be better contextualized."
+          "message": "The report states 'The GitHub repository description matches the website claims' but there is no GitHub URL provided in the tool data, so this claim cannot be verified and may be inaccurate."
         },
         {
           "severity": "low",
-          "message": "The report lacks internal linking to other tools or categories, which would improve SEO."
+          "message": "The report lacks a clear introduction explaining the purpose of the verification report and what it covers."
         },
         {
           "severity": "low",
-          "message": "The report does not include a meta description or keyword optimization suggestions."
+          "message": "The report could benefit from more detailed analysis of the tool's features and how they address user needs."
         }
       ],
       "strengths": [
-        "Clear structure with decision, metrics, metadata, concerns, and analysis sections.",
-        "Accurate cross-referencing of tool data with report content.",
-        "Provides actionable metadata (category, tagline, features, pricing) for directory listing."
+        "Clear decision and confidence score at the top",
+        "Concise summary of concerns and analysis",
+        "Accurate metadata and pricing information",
+        "Good use of tables for metrics"
       ],
       "recommendations": [
-        "Add a note about the absence of a GitHub repository when githubUrl is null.",
-        "Include internal links to related tools or categories (e.g., 'productivity' category).",
-        "Optimize the report for SEO by adding a meta description and relevant keywords.",
-        "Consider adding a section on user reviews or community feedback if available."
+        "Clarify that the tool has no GitHub repository, so GitHub-related claims should be removed or rephrased.",
+        "Add a brief introduction explaining the verification process and criteria.",
+        "Expand the analysis section with more details on how the tool works and its benefits.",
+        "Include internal links to related tools or categories for SEO."
       ],
-      "auditedAt": "2026-05-20T06:19:53.510Z"
+      "auditedAt": "2026-05-20T08:32:11.644Z"
     },
     {
       "slug": "awesome-claude-skills",
       "type": "report",
       "qualityScore": 85,
       "accuracyScore": 90,
-      "seoScore": 80,
+      "seoScore": 75,
       "issues": [
         {
           "severity": "medium",
-          "message": "The report mentions 'GitHub stars and forks data could not be independently verified' but the tool data shows githubStars and githubUrl are null, which should have been noted as missing rather than unverifiable."
+          "message": "The report mentions 'GitHub stars and forks data could not be independently verified' but the tool data shows githubStars and githubUrl are null, which is consistent; however, the report should clarify that the repository is not on GitHub or that data is unavailable."
         },
         {
           "severity": "medium",
-          "message": "The report states 'The description consistently matches across GitHub and the website' but the tool data does not provide a GitHub URL or description for comparison; the website URL is given but not verified."
+          "message": "The report states 'The repository covers a wide range of topics...' but the tool data indicates it is a curated list, not a repository with code; the description could be more precise."
         },
         {
           "severity": "low",
-          "message": "The report could include more specific examples of resources or tools listed in the repository to enhance usefulness for readers."
+          "message": "The report includes a 'Concerns' section that mentions 'Some listed tools may have their own pricing models' which is accurate but could be expanded to note that users should verify individual tool pricing."
         },
         {
           "severity": "low",
-          "message": "The SEO structure lacks an explicit meta description and keyword optimization; the tagline is used but could be more keyword-rich."
+          "message": "The report lacks internal linking suggestions or keyword optimization for SEO; the tagline and features are present but not leveraged in the analysis."
         }
       ],
       "strengths": [
-        "Clear and concise decision with confidence score",
-        "Well-structured with metrics table and proposed metadata",
-        "Accurate categorization and pricing information",
-        "Honest about limitations (curated list, not standalone tool)"
+        "Clear structure with decision, metrics, and metadata sections.",
+        "Accurate tagline and features matching tool data.",
+        "High consistency score and appropriate approval decision.",
+        "Useful concerns section highlighting limitations."
       ],
       "recommendations": [
-        "Verify the website URL and GitHub repository existence to confirm consistency claims",
-        "Add a meta description and target keywords for better SEO",
-        "Include a few example tools from the collection to illustrate value",
-        "Clarify that GitHub data is missing rather than unverifiable"
+        "Clarify that the repository is a curated list, not a code repository, to avoid confusion.",
+        "Add more specific examples of resources or integrations mentioned in the description.",
+        "Include SEO-friendly headings and keywords (e.g., 'Claude AI skills', 'workflow automation') in the analysis.",
+        "Consider adding a note about verifying GitHub data when available, or state that the tool is not hosted on GitHub."
       ],
-      "auditedAt": "2026-05-20T06:19:58.819Z"
+      "auditedAt": "2026-05-20T08:32:17.161Z"
     },
     {
       "slug": "anki-vs-rowboat",
+      "type": "comparison",
+      "qualityScore": 60,
+      "accuracyScore": 90,
+      "seoScore": 55,
+      "issues": [
+        {
+          "severity": "high",
+          "message": "The overview section incorrectly describes Anki and Rowboat as 'both popular productivity tools' but then describes Anki as 'AI-powered tools to supercharge Anki flashcards' which is confusing and not a proper overview of the tools."
+        },
+        {
+          "severity": "medium",
+          "message": "The feature comparison table lists 'Open Source' as 'Yes' for both, but the table also shows 'Open-source and self-hostable' as '❌' for Anki, which contradicts the earlier 'Yes' for Open Source. According to tool data, both are open source, so the '❌' for Anki is incorrect."
+        },
+        {
+          "severity": "medium",
+          "message": "The 'When to Choose' sections are too brief and simply list features without explaining the use cases or benefits, reducing usefulness for readers."
+        },
+        {
+          "severity": "low",
+          "message": "The verdict is very short and does not provide a meaningful summary or recommendation beyond stating ratings."
+        },
+        {
+          "severity": "low",
+          "message": "Missing internal links to other relevant comparisons or category pages."
+        },
+        {
+          "severity": "low",
+          "message": "No meta description or title tag provided; the content lacks SEO metadata."
+        }
+      ],
+      "strengths": [
+        "Accurate pricing information for both tools.",
+        "Feature comparison table clearly lists unique features of each tool.",
+        "Ratings match the provided tool data."
+      ],
+      "recommendations": [
+        "Rewrite the overview to clearly describe each tool's purpose and target audience.",
+        "Correct the contradiction in the feature table: Anki is open source, so 'Open-source and self-hostable' should be '✅' or remove the separate row if already covered.",
+        "Expand the 'When to Choose' sections with specific scenarios or user personas to help readers decide.",
+        "Add a more detailed verdict that synthesizes the comparison and offers guidance based on user needs.",
+        "Include internal links to related articles (e.g., other productivity tool comparisons) and ensure proper heading hierarchy for SEO.",
+        "Add a meta description and optimize the title for search engines."
+      ],
+      "auditedAt": "2026-05-20T08:31:30.147Z"
+    },
+    {
+      "slug": "anki-vs-tasker",
+      "type": "comparison",
+      "qualityScore": 82,
+      "accuracyScore": 95,
+      "seoScore": 75,
+      "issues": [
+        {
+          "severity": "medium",
+          "message": "The article compares two tools with completely different purposes (flashcard enhancement vs. web automation), which may confuse readers looking for direct alternatives. The comparison feels forced."
+        },
+        {
+          "severity": "low",
+          "message": "The 'Primary Function' row in the feature table could be more descriptive; 'Flashcard enhancement & learning optimization' is accurate but could be clearer."
+        },
+        {
+          "severity": "low",
+          "message": "The article lacks internal links to other relevant comparisons or category pages, which would improve SEO."
+        }
+      ],
+      "strengths": [
+        "Clear and well-structured overview of each tool's purpose and features.",
+        "Accurate pricing and feature information based on provided tool data.",
+        "Useful 'When to Choose' sections that help readers decide based on their needs.",
+        "Honest verdict acknowledging that the tools serve different use cases."
+      ],
+      "recommendations": [
+        "Add internal links to related articles (e.g., other productivity tool comparisons or Anki-related content).",
+        "Consider including a brief note on how each tool could be used together for a complete workflow.",
+        "Optimize the meta description and headings for target keywords like 'Anki vs Tasker' or 'AI flashcard tool vs automation tool'."
+      ],
+      "auditedAt": "2026-05-20T08:31:34.888Z"
+    },
+    {
+      "slug": "antigravity-manager-vs-anki",
       "type": "comparison",
       "qualityScore": 55,
       "accuracyScore": 70,
@@ -3821,190 +3845,121 @@
       "issues": [
         {
           "severity": "high",
-          "message": "The overview incorrectly describes Anki as a productivity tool; it is a flashcard app, and the article conflates Anki with AnkiAIUtils. The tagline for Anki in the article is actually the tagline for AnkiAIUtils, not Anki itself."
+          "message": "The article compares 'Antigravity-Manager' with 'Anki', but the tool data shows 'Anki' is actually 'AnkiAIUtils' (a collection of utilities for Anki). This misrepresents the tool and could mislead readers."
         },
         {
           "severity": "high",
-          "message": "The feature comparison table incorrectly marks Anki as having 'Open-source and self-hostable' as ❌, but according to tool data, Anki is open-source and self-hostable. Also, Rowboat is marked as having 'Open-source and self-hostable' as ✅, which is correct, but the table shows Anki's open-source status inconsistently."
+          "message": "The article states 'Anki' has a rating of 3.75/5, but the tool data shows that rating belongs to 'AnkiAIUtils'. The actual Anki app has a much higher rating. This is a factual error."
         },
         {
           "severity": "medium",
-          "message": "The article lacks a clear introduction explaining what each tool does and how they compare. The overview is confusing and mixes descriptions."
+          "message": "The article lacks a clear introduction explaining the purpose of the comparison. It jumps straight into overview without context."
         },
         {
           "severity": "medium",
-          "message": "Pricing section is incomplete; it only lists free plans but does not mention if there are paid plans or limitations."
+          "message": "The 'When to Choose' sections are too brief and simply repeat features from the table without providing deeper insights or use cases."
+        },
+        {
+          "severity": "medium",
+          "message": "The verdict is weak and does not synthesize the comparison. It only mentions ratings without guiding the reader."
         },
         {
           "severity": "low",
-          "message": "The verdict is too brief and does not provide actionable guidance for readers. It simply restates ratings."
+          "message": "The article could benefit from a more engaging title and meta description to improve SEO."
+        },
+        {
+          "severity": "low",
+          "message": "The table formatting is simple but could be enhanced with better styling or additional columns like 'Use Case'."
         }
       ],
       "strengths": [
-        "Feature comparison table is clear and easy to scan.",
-        "Pricing information is provided for both tools.",
-        "Sections for 'When to Choose' help readers decide."
+        "The feature comparison table is clear and easy to read.",
+        "Pricing information is accurately presented for both tools.",
+        "The article correctly identifies the open-source nature of both tools."
       ],
       "recommendations": [
-        "Correct the overview to accurately describe each tool and avoid conflating Anki with AnkiAIUtils.",
-        "Fix the feature comparison table to accurately reflect Anki's open-source status.",
-        "Expand the verdict with a more detailed analysis of use cases and trade-offs.",
-        "Add a brief introduction explaining the purpose of the comparison.",
-        "Include information about any paid plans or limitations in pricing."
+        "Correct the tool identity: compare Antigravity-Manager with AnkiAIUtils, not Anki itself.",
+        "Update the rating for AnkiAIUtils to match the provided data (3.75/5) and clarify it's not the main Anki app.",
+        "Add a more detailed introduction explaining the context and purpose of the comparison.",
+        "Expand the 'When to Choose' sections with specific scenarios or user profiles.",
+        "Strengthen the verdict by summarizing key differences and providing a recommendation based on user needs.",
+        "Improve SEO by adding a compelling title, meta description, and internal links to related tools."
       ],
-      "auditedAt": "2026-05-20T06:14:59.715Z"
-    },
-    {
-      "slug": "anki-vs-tasker",
-      "type": "comparison",
-      "qualityScore": 85,
-      "accuracyScore": 95,
-      "seoScore": 80,
-      "issues": [
-        {
-          "severity": "medium",
-          "message": "The article refers to the tool as 'Anki' but the tool data indicates the name is 'AnkiAIUtils' or similar. The slug is 'anki', but the name in the data is 'Anki'? Actually the data shows name 'Anki' and tagline mentions 'AnkiAIUtils'? There's inconsistency: the tool data name is 'Anki' but description mentions 'AnkiAIUtils'. The article uses 'Anki' which matches the name field, but the description in data says 'AnkiAIUtils'. This could confuse readers."
-        },
-        {
-          "severity": "low",
-          "message": "The article does not include any internal links to other relevant articles or categories on the directory site, which could improve SEO."
-        },
-        {
-          "severity": "low",
-          "message": "The article lacks a meta description or title tag suggestion; though not required in the content, it would be helpful for SEO."
-        }
-      ],
-      "strengths": [
-        "Clear structure with overview, feature comparison table, pricing, and use-case sections.",
-        "Accurate representation of both tools' core functionalities and pricing.",
-        "Useful verdict section that helps readers decide based on their needs.",
-        "Well-written and easy to understand for a general audience."
-      ],
-      "recommendations": [
-        "Clarify the tool name: ensure consistency between the article and the tool data (e.g., use 'Anki' or 'AnkiAIUtils' as appropriate).",
-        "Add internal links to related articles or category pages (e.g., productivity tools, learning tools).",
-        "Include a meta description and consider adding an FAQ section for better SEO."
-      ],
-      "auditedAt": "2026-05-20T06:15:05.621Z"
-    },
-    {
-      "slug": "antigravity-manager-vs-anki",
-      "type": "comparison",
-      "qualityScore": 60,
-      "accuracyScore": 70,
-      "seoScore": 55,
-      "issues": [
-        {
-          "severity": "high",
-          "message": "The article compares 'Antigravity-Manager' with 'Anki', but the tool data shows toolB is actually 'AnkiAIUtils', not 'Anki'. This is a factual error in the comparison."
-        },
-        {
-          "severity": "medium",
-          "message": "The article lacks depth in the 'Overview' and 'Verdict' sections; it simply repeats taglines without providing meaningful analysis or user guidance."
-        },
-        {
-          "severity": "medium",
-          "message": "The 'When to Choose' sections are too brief and merely list features; they should include use cases or scenarios to help readers decide."
-        },
-        {
-          "severity": "low",
-          "message": "The article does not include any internal or external links, which would improve SEO and user navigation."
-        },
-        {
-          "severity": "low",
-          "message": "The article does not mention any pros/cons or limitations of either tool, reducing its usefulness for readers."
-        }
-      ],
-      "strengths": [
-        "Clear feature comparison table that highlights differences between the two tools.",
-        "Accurate pricing information as per the provided tool data.",
-        "Correctly identifies that both tools are open source and free."
-      ],
-      "recommendations": [
-        "Correct the toolB name to 'AnkiAIUtils' or ensure the comparison is between the intended tools.",
-        "Expand the 'Overview' and 'Verdict' sections with more detailed analysis, including target audience and key differentiators.",
-        "Add use-case scenarios in 'When to Choose' sections to help readers apply the comparison to their needs.",
-        "Include internal links to other relevant articles or tool pages, and external links to the tools' websites.",
-        "Add a pros/cons list for each tool to provide balanced evaluation."
-      ],
-      "auditedAt": "2026-05-20T06:15:12.049Z"
+      "auditedAt": "2026-05-20T08:31:41.487Z"
     },
     {
       "slug": "antigravity-manager-vs-rowboat",
       "type": "comparison",
-      "qualityScore": 55,
-      "accuracyScore": 90,
-      "seoScore": 40,
+      "qualityScore": 60,
+      "accuracyScore": 100,
+      "seoScore": 50,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article lacks depth; it only repeats features from the tool data without providing meaningful analysis or use cases."
+          "message": "The article lacks a proper introduction explaining what the tools do and the purpose of the comparison."
         },
         {
           "severity": "medium",
-          "message": "The 'When to Choose' sections simply list features again, offering no real guidance for readers."
+          "message": "The 'Overview' section is too brief and does not provide enough context for readers unfamiliar with the tools."
         },
         {
           "severity": "low",
-          "message": "The overview paragraph is disjointed; it reads like two separate descriptions rather than a cohesive introduction."
+          "message": "The 'Verdict' is very short and does not synthesize the comparison or offer a clear recommendation."
         },
         {
           "severity": "low",
-          "message": "No internal or external links are included, missing opportunities for SEO and user navigation."
+          "message": "No internal or external links are included, which could improve SEO and user engagement."
+        },
+        {
+          "severity": "low",
+          "message": "The article lacks a pros/cons section or detailed analysis beyond the feature table."
         }
       ],
       "strengths": [
         "Accurate feature comparison based on provided tool data.",
         "Clear pricing information for both tools.",
-        "Correct ratings and open-source status."
+        "Useful 'When to Choose' sections that help readers decide based on needs."
       ],
       "recommendations": [
-        "Expand the overview to explain how these tools differ in purpose and target audience.",
-        "Add a detailed analysis section comparing strengths and weaknesses beyond feature lists.",
-        "Include use cases or scenarios to help readers decide which tool fits their needs.",
-        "Incorporate internal links to other relevant articles or tool pages.",
-        "Optimize headings with target keywords (e.g., 'Antigravity-Manager vs Rowboat: Which Productivity Tool is Right for You?')."
+        "Expand the introduction to provide a clear overview of both tools and the comparison's purpose.",
+        "Add a pros and cons section for each tool to give deeper insight.",
+        "Include internal links to other relevant articles or tool pages.",
+        "Enhance the verdict with a more detailed recommendation based on use cases.",
+        "Consider adding user reviews or testimonials if available."
       ],
-      "auditedAt": "2026-05-20T06:15:16.837Z"
+      "auditedAt": "2026-05-20T08:31:45.834Z"
     },
     {
       "slug": "antigravity-manager-vs-tasker",
       "type": "comparison",
-      "qualityScore": 82,
-      "accuracyScore": 95,
-      "seoScore": 70,
+      "qualityScore": 85,
+      "accuracyScore": 100,
+      "seoScore": 75,
       "issues": [
         {
-          "severity": "medium",
-          "message": "The feature comparison table includes a 'Technology Stack' row for Antigravity-Manager but not for Tasker, which is inconsistent. For Tasker, it says 'Desktop app (tech stack not specified)' which is vague and not useful."
-        },
-        {
-          "severity": "medium",
-          "message": "The article lacks internal links to other relevant tools or categories on the directory, which would improve SEO and user navigation."
+          "severity": "low",
+          "message": "The 'Technology Stack' for Tasker is listed as 'Desktop app (tech stack not specified)', which is accurate but could be improved by noting it's built with Tauri (inferred from context) or leaving blank."
         },
         {
           "severity": "low",
-          "message": "The 'Rating' row in the comparison table shows '4.75/5 (0 reviews)' and '3.5/5 (0 reviews)'. While accurate, it might confuse readers why a rating exists with zero reviews. Consider clarifying that ratings are based on editorial assessment or user votes."
+          "message": "The article lacks internal links to other relevant tools or categories on the directory, which could improve SEO."
         },
         {
           "severity": "low",
-          "message": "The article does not include any user testimonials or real-world use cases, which could enhance credibility and usefulness."
+          "message": "The meta description and title are not provided; the content could be optimized with a clear meta description and keyword-rich headings."
         }
       ],
       "strengths": [
-        "Clear and concise overview of each tool's purpose and target audience.",
-        "Accurate representation of features, pricing, and open-source status based on provided tool data.",
-        "Well-structured comparison table that highlights key differences.",
-        "Practical 'When to Choose' sections that guide readers based on their needs.",
-        "Verdict effectively summarizes the distinct use cases and suggests using both tools together."
+        "Clear, well-structured comparison with separate sections for overview, features, pricing, use cases, and verdict.",
+        "Accurate and consistent with provided tool data; no factual errors.",
+        "Useful for readers by clearly differentiating the two tools based on use cases."
       ],
       "recommendations": [
-        "Add a 'Technology Stack' column for both tools in the comparison table, or remove it if not available for both.",
-        "Include internal links to related categories (e.g., 'productivity tools', 'account managers', 'automation tools') and other similar tools on the directory.",
-        "Consider adding a brief note explaining how ratings are determined when there are zero reviews.",
-        "Incorporate user testimonials or example workflows to illustrate practical benefits."
+        "Add internal links to other related tools or categories on the directory to enhance SEO.",
+        "Include a brief note about Tasker's technology stack if available, or remove the column to avoid ambiguity.",
+        "Optimize headings to include target keywords (e.g., 'Antigravity-Manager vs Tasker: Which Tool is Right for You?')."
       ],
-      "auditedAt": "2026-05-20T06:15:23.353Z"
+      "auditedAt": "2026-05-20T08:31:50.317Z"
     },
     {
       "slug": "antigravity-manager-vs-workout-cool",
@@ -5921,85 +5876,77 @@
     {
       "slug": "bodhi",
       "type": "report",
-      "qualityScore": 70,
-      "accuracyScore": 80,
-      "seoScore": 75,
+      "qualityScore": 80,
+      "accuracyScore": 90,
+      "seoScore": 85,
       "issues": [
         {
-          "severity": "high",
-          "message": "The report states 'No official website beyond GitHub' but tool data shows a websiteUrl of 'https://bodhi.com'. This is a factual error."
-        },
-        {
           "severity": "medium",
-          "message": "The report mentions 'Stars and last update not provided; need to verify activity' but tool data shows githubStars as null and githubUrl as null, which is consistent but the report could have noted that GitHub data is missing entirely."
-        },
-        {
-          "severity": "medium",
-          "message": "The report lacks a clear summary or conclusion for readers; it ends abruptly with a recommendation for further verification."
+          "message": "The report states 'No official website beyond GitHub' but tool data shows a website URL (https://bodhi.com). This is a factual discrepancy."
         },
         {
           "severity": "low",
-          "message": "The report could include more specific details about the tool's features and use cases to improve usefulness for readers."
+          "message": "The report lacks a clear introduction or summary for readers unfamiliar with the tool."
+        },
+        {
+          "severity": "low",
+          "message": "The report does not include any internal links to related tools or categories."
         }
       ],
       "strengths": [
-        "Clear structure with decision, scores, metadata, concerns, and analysis.",
-        "Accurate tagline and feature list matching tool data.",
-        "Honest assessment of limitations and uncertainties."
+        "Clear structure with decision, scores, metadata, concerns, and full analysis.",
+        "Accurate tagline and features match tool data.",
+        "Good use of scoring metrics to convey confidence."
       ],
       "recommendations": [
-        "Correct the factual error about the website: Bodhi has a website at https://bodhi.com.",
-        "Add a brief summary or final verdict to help readers quickly understand the recommendation.",
-        "Include more context about the tool's target audience and potential use cases.",
-        "Consider adding internal links to related tools or categories for SEO."
+        "Correct the statement about no official website; update to reflect the provided website URL.",
+        "Add a brief introductory paragraph explaining what the report is and who it's for.",
+        "Include internal links to other development tools or categories for SEO.",
+        "Consider adding more details about the verification process or sources used."
       ],
-      "auditedAt": "2026-05-20T06:20:03.379Z"
+      "auditedAt": "2026-05-20T08:32:20.713Z"
     },
     {
       "slug": "claude-code-templates",
       "type": "report",
       "qualityScore": 85,
       "accuracyScore": 70,
-      "seoScore": 80,
+      "seoScore": 75,
       "issues": [
         {
           "severity": "high",
-          "message": "Inaccurate GitHub star count: report states 27,405 stars, but tool data shows githubStars is null. Also GitHub URL is null, so star count cannot be verified."
+          "message": "GitHub stars claimed as 27k+ in features but tool data shows githubStars as null; no GitHub URL provided in tool data, so star count cannot be verified."
         },
         {
           "severity": "high",
-          "message": "Inaccurate website URL: report mentions aitmpl.com, but tool data shows websiteUrl is https://claude-code-templates.com."
-        },
-        {
-          "severity": "high",
-          "message": "Inaccurate update date: report claims 'recent update (May 2026)', but current date is likely before 2026; this is a future date and likely erroneous."
+          "message": "GitHub update date 'May 2026' is in the future, which is impossible and indicates a factual error."
         },
         {
           "severity": "medium",
-          "message": "Missing key metadata: report lacks meta description, keywords, and internal linking suggestions for SEO."
+          "message": "Website URL in article (aitmpl.com) does not match tool data (claude-code-templates.com); inconsistency needs resolution."
         },
         {
           "severity": "medium",
-          "message": "Report structure is more like a verification summary than a full article; lacks introduction, detailed feature breakdown, and user guidance."
+          "message": "No internal links or related tools mentioned, missing SEO opportunity."
         },
         {
           "severity": "low",
-          "message": "Minor: '27k+ stars' in features list is not reflected in tool data; inconsistency."
+          "message": "Tagline in article matches tool data, but could be more concise for SEO."
         }
       ],
       "strengths": [
-        "Clear decision and confidence score",
-        "Concise verification analysis",
-        "Proposed metadata includes category, tagline, features, pricing"
+        "Clear structure with decision summary, metadata table, and full analysis.",
+        "Concerns section adds transparency and credibility.",
+        "Good use of metrics (Verification, Quality, Consistency scores) to convey confidence."
       ],
       "recommendations": [
-        "Correct factual inaccuracies: GitHub stars, website URL, update date.",
-        "Expand into a full article with introduction, detailed feature descriptions, installation guide, and use cases.",
-        "Add SEO meta description and internal links to related tools.",
-        "Include a comparison with similar tools or alternatives.",
-        "Verify all data points against provided tool data before publishing."
+        "Verify and correct GitHub star count and update date using reliable sources.",
+        "Align website URL with tool data (claude-code-templates.com).",
+        "Add internal links to related tools or categories to improve SEO.",
+        "Include a brief 'How to Use' or 'Key Benefits' section for reader utility.",
+        "Ensure all claims are cross-checked against provided tool data before publication."
       ],
-      "auditedAt": "2026-05-20T06:20:08.817Z"
+      "auditedAt": "2026-05-20T08:32:25.737Z"
     },
     {
       "slug": "claude-code",
