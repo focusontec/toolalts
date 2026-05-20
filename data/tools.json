@@ -248,7 +248,7 @@
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
-    "githubStars": 47948,
+    "githubStars": 47954,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -575,7 +575,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185135,
+    "githubStars": 185145,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -1384,7 +1384,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 99774,
+    "githubStars": 99870,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [
@@ -1527,5 +1527,245 @@
     "category": "productivity",
     "logo": "/logos/rowboat.svg",
     "status": "draft"
+  },
+  {
+    "slug": "tooljet",
+    "name": "ToolJet",
+    "tagline": "Open-source low-code platform to build internal tools and AI agents.",
+    "description": "ToolJet is an open-source platform for building internal tools, dashboards, business applications, workflows, and AI agents. It is designed for developers and teams looking to rapidly create custom applications with minimal coding.",
+    "rating": 4.25,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/ToolJet/ToolJet",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source community edition",
+          "Self-hosted"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "Unverifiable",
+        "features": [
+          "Additional features and support"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Unverifiable",
+        "features": [
+          "Custom deployment and support"
+        ]
+      }
+    ],
+    "features": [
+      "Drag-and-drop UI builder",
+      "Pre-built integrations and connectors",
+      "Workflow automation",
+      "AI agent support",
+      "Self-hosted or cloud deployment"
+    ],
+    "category": "development",
+    "logo": "/logos/tooljet.svg"
+  },
+  {
+    "slug": "ephe",
+    "name": "Ephe",
+    "tagline": "A minimal, ephemeral markdown editor for quick note-taking and sharing.",
+    "description": "Ephe is an ephemeral markdown paper tool designed for plain markdown lovers who want a lightweight, no-frills writing experience. It offers handy features for quick note-taking and sharing without permanent storage.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/unvalley/ephe",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Full access to ephemeral markdown editing"
+        ]
+      }
+    ],
+    "features": [
+      "Ephemeral markdown editing",
+      "Minimal and distraction-free interface",
+      "Handy features for plain markdown lovers"
+    ],
+    "category": "productivity",
+    "logo": "/logos/ephe.svg"
+  },
+  {
+    "slug": "skip",
+    "name": "Skip",
+    "tagline": "One Swift codebase, two native platforms: iOS and Android.",
+    "description": "Skip is a development tool that allows developers to write a single app in Swift and SwiftUI and deploy it natively on both iOS and Android. It targets mobile app developers who want to share code across platforms without sacrificing native performance.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://skip.tools/",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source tool"
+        ]
+      }
+    ],
+    "features": [
+      "Write once in Swift and SwiftUI",
+      "Native performance on both iOS and Android",
+      "Shared codebase for mobile apps"
+    ],
+    "category": "development",
+    "logo": "/logos/skip.svg"
+  },
+  {
+    "slug": "colanode-",
+    "name": "Colanode,",
+    "tagline": "Open-source, local-first alternative to Slack and Notion for data control.",
+    "description": "Colanode is an open-source, local-first platform that combines team communication and knowledge management, giving users full control over their data. It serves as an alternative to Slack and Notion, focusing on privacy and self-hosting.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/colanode/colanode",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted version"
+        ]
+      }
+    ],
+    "features": [
+      "Local-first architecture for data ownership",
+      "Team communication (chat) capabilities",
+      "Knowledge management (notes/docs) features",
+      "Open-source and self-hostable",
+      "Privacy-focused design"
+    ],
+    "category": "productivity",
+    "logo": "/logos/colanode-.svg"
+  },
+  {
+    "slug": "onlook",
+    "name": "Onlook",
+    "tagline": "An open-source AI-first design tool for visually building and editing React apps.",
+    "description": "Onlook is an open-source, AI-first design tool that allows designers to visually build, style, and edit React applications. It aims to be the 'Cursor for Designers', leveraging AI to streamline the design-to-code workflow.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/onlook-dev/onlook",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted version"
+        ]
+      }
+    ],
+    "features": [
+      "Visual editing of React components",
+      "AI-powered design suggestions",
+      "Open-source and community-driven",
+      "Integrates with existing React projects"
+    ],
+    "category": "design",
+    "logo": "/logos/onlook.svg"
+  },
+  {
+    "slug": "instantdb",
+    "name": "InstantDB",
+    "tagline": "The best backend for AI-coded apps, providing auth, permissions, storage, presence, and streams.",
+    "description": "InstantDB is a backend platform designed for AI-coded apps, offering essential features like authentication, permissions, storage, presence, and streams. It aims to simplify app development by providing a comprehensive backend solution out of the box.",
+    "rating": 4,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/instantdb/instant",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Basic features, likely limited usage"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "Unverifiable",
+        "features": [
+          "Unverifiable"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Unverifiable",
+        "features": [
+          "Unverifiable"
+        ]
+      }
+    ],
+    "features": [
+      "Authentication",
+      "Permissions",
+      "Storage",
+      "Presence",
+      "Streams"
+    ],
+    "category": "development",
+    "logo": "/logos/instantdb.svg"
+  },
+  {
+    "slug": "langfuse",
+    "name": "Langfuse",
+    "tagline": "Open source LLM engineering platform for observability, evaluation, and prompt management.",
+    "description": "Langfuse is an open source LLM engineering platform that provides observability, metrics, evaluations, prompt management, a playground, and datasets. It integrates with OpenTelemetry, Langchain, OpenAI SDK, LiteLLM, and more, making it suitable for developers building and monitoring LLM applications.",
+    "rating": 4,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/langfuse/langfuse",
+    "pricing": [
+      {
+        "plan": "Open Source",
+        "price": "$0",
+        "features": [
+          "Self-hosted, full features"
+        ]
+      },
+      {
+        "plan": "Cloud",
+        "price": "Freemium",
+        "features": [
+          "Managed cloud with free tier and paid plans"
+        ]
+      }
+    ],
+    "features": [
+      "LLM Observability and metrics",
+      "Evaluations and prompt management",
+      "Playground and datasets",
+      "Integrations with OpenTelemetry, Langchain, OpenAI SDK, LiteLLM"
+    ],
+    "category": "development",
+    "logo": "/logos/langfuse.svg"
   }
 ]
