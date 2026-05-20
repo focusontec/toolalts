@@ -2,14 +2,14 @@
 slug: "open"
 name: "Open"
 decision: "REJECT"
-confidence: 95
+confidence: 90
 category: "other"
-processedAt: "2026-05-20T02:01:16.659Z"
+processedAt: "2026-05-20T07:35:10.395Z"
 ---
 
 # AI Verification Report: Open
 
-## Decision: REJECT (95/100 confidence)
+## Decision: REJECT (90/100 confidence)
 
 | Metric | Score |
 |--------|-------|
@@ -22,15 +22,15 @@ processedAt: "2026-05-20T02:01:16.659Z"
 - **Website**: https://news.ycombinator.com/item?id=29081054
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: Unverifiable tool with no reachable website or GitHub data.
+- **Tagline**: No verifiable tool found.
 - **Features**: 
 - **Pricing**: 
 
 ## Concerns
-- Website URL is unreachable.
+- Website URL is a Hacker News post, not a tool site.
+- Website unreachable.
 - No GitHub data available.
-- Cannot verify existence or functionality of the tool.
 
 ## Full Analysis
 
-The tool 'Open' was submitted as a Show HN on Hacker News, but the provided URL (https://news.ycombinator.com/item?id=29081054) is the Hacker News thread itself, not a dedicated website. The website is unreachable, and no GitHub repository or other evidence is available. Without any accessible source, the tool cannot be verified. The decision is REJECT due to lack of verifiable information.
+The tool 'Open' was submitted via Hacker News Show HN, but the URL provided is the Hacker News submission itself, not a tool website. The website is unreachable, and no GitHub data is available. Therefore, there is no verifiable evidence of a real tool. The submission is likely a discussion or announcement, not a software product. Decision: REJECT.
