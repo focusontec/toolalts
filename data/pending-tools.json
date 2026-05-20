@@ -1,14 +1,1 @@
-[
-  {
-    "slug": "mcp",
-    "name": "MCP",
-    "source": "hackernews-showhn",
-    "website": "https://mcpdefender.com",
-    "discoveredAt": "2026-05-19T17:56:29.181Z",
-    "rawData": {
-      "title": "Show HN: MCP Defender – OSS AI Firewall for Protecting MCP in Cursor/Claude etc",
-      "points": 64,
-      "comments": 40
-    }
-  }
-]
+[]

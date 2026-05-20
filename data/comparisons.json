@@ -358,5 +358,215 @@
     "toolA": "anki",
     "toolB": "tasker",
     "category": "productivity"
+  },
+  {
+    "slug": "cursor-vs-claude-code",
+    "toolA": "cursor",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-awesome-claude-skills",
+    "toolA": "cursor",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-nanobot",
+    "toolA": "cursor",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-system-prompts-and-models-of-ai-tools",
+    "toolA": "vscode",
+    "toolB": "system-prompts-and-models-of-ai-tools",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-claude-code",
+    "toolA": "vscode",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-markitdown",
+    "toolA": "vscode",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-deer-flow",
+    "toolA": "vscode",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-awesome-claude-skills",
+    "toolA": "vscode",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-nanobot",
+    "toolA": "vscode",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-claude-code",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-markitdown",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-deer-flow",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-awesome-claude-skills",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "system-prompts-and-models-of-ai-tools-vs-nanobot",
+    "toolA": "system-prompts-and-models-of-ai-tools",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-awesome-claude-skills",
+    "toolA": "claude-code",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-nanobot",
+    "toolA": "claude-code",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-deer-flow",
+    "toolA": "markitdown",
+    "toolB": "deer-flow",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-awesome-claude-skills",
+    "toolA": "markitdown",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-nanobot",
+    "toolA": "markitdown",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "deer-flow-vs-awesome-claude-skills",
+    "toolA": "deer-flow",
+    "toolB": "awesome-claude-skills",
+    "category": "development"
+  },
+  {
+    "slug": "deer-flow-vs-nanobot",
+    "toolA": "deer-flow",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "awesome-claude-skills-vs-nanobot",
+    "toolA": "awesome-claude-skills",
+    "toolB": "nanobot",
+    "category": "development"
+  },
+  {
+    "slug": "notion-vs-antigravity-manager",
+    "toolA": "notion",
+    "toolB": "antigravity-manager",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-anki",
+    "toolA": "notion",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-rowboat",
+    "toolA": "notion",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-antigravity-manager",
+    "toolA": "obsidian",
+    "toolB": "antigravity-manager",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-anki",
+    "toolA": "obsidian",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-rowboat",
+    "toolA": "obsidian",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "antigravity-manager-vs-anki",
+    "toolA": "antigravity-manager",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "antigravity-manager-vs-rowboat",
+    "toolA": "antigravity-manager",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "workout-cool-vs-anki",
+    "toolA": "workout-cool",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "workout-cool-vs-tasker",
+    "toolA": "workout-cool",
+    "toolB": "tasker",
+    "category": "productivity"
+  },
+  {
+    "slug": "workout-cool-vs-rowboat",
+    "toolA": "workout-cool",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "anki-vs-rowboat",
+    "toolA": "anki",
+    "toolB": "rowboat",
+    "category": "productivity"
+  },
+  {
+    "slug": "tasker-vs-rowboat",
+    "toolA": "tasker",
+    "toolB": "rowboat",
+    "category": "productivity"
   }
 ]

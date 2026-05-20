@@ -4,7 +4,7 @@ name: "EXT"
 decision: "REJECT"
 confidence: 95
 category: "other"
-processedAt: "2026-05-20T07:35:14.466Z"
+processedAt: "2026-05-20T10:41:27.910Z"
 ---
 
 # AI Verification Report: EXT
@@ -27,10 +27,10 @@ processedAt: "2026-05-20T07:35:14.466Z"
 - **Pricing**: 
 
 ## Concerns
-- Website unreachable
-- No GitHub data available
-- No evidence of existence or functionality
+- Website is unreachable, likely dead or fake.
+- No GitHub data available to verify project existence or activity.
+- No description or features can be extracted from evidence.
 
 ## Full Analysis
 
-The tool EXT was submitted via Hacker News Show HN with a website URL https://ext.store. However, the website is unreachable, and no GitHub repository or other data is provided. Without any accessible source of information, it is impossible to verify the tool's purpose, features, or legitimacy. The lack of any verifiable evidence leads to a rejection with high confidence.
+The tool EXT was submitted via Hacker News Show HN with a website URL https://ext.store. However, the website is unreachable, returning no content. Additionally, no GitHub data is provided, so there is no way to verify the tool's existence, features, or quality. The lack of any accessible information makes it impossible to assess consistency, quality, or classification. Therefore, the tool is rejected due to insufficient evidence.

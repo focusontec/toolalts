@@ -163,7 +163,7 @@
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
-    "githubStars": 47941,
+    "githubStars": 47948,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -352,7 +352,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185119,
+    "githubStars": 185135,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -1037,5 +1037,125 @@
     ],
     "category": "productivity",
     "logo": "/logos/tasker.svg"
+  },
+  {
+    "slug": "gstack",
+    "name": "gstack",
+    "tagline": "A curated set of 23 opinionated AI tools for software development, inspired by Garry Tan's workflow.",
+    "description": "gstack is a collection of 23 opinionated tools designed to emulate roles like CEO, Designer, and Engineer within Claude Code. It provides a structured setup for AI-assisted software development, targeting developers who want to leverage Claude Code for end-to-end project management and execution.",
+    "rating": 5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 99774,
+    "githubUrl": "https://github.com/garrytan/gstack",
+    "websiteUrl": "https://github.com/garrytan/gstack",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source under MIT license",
+          "Full access to all tools and setup"
+        ]
+      }
+    ],
+    "features": [
+      "23 pre-configured opinionated tools for various development roles",
+      "Integrates with Claude Code for AI-assisted development",
+      "Covers roles from CEO to QA for comprehensive project coverage",
+      "MIT licensed open-source project",
+      "High community adoption with nearly 100k stars"
+    ],
+    "category": "development",
+    "logo": "/logos/gstack.svg"
+  },
+  {
+    "slug": "codinit-",
+    "name": "CodinIT,",
+    "tagline": "Local-First Open Source web & mobile AI app builder for MacOS, Windows & Linux.",
+    "description": "CodinIT is an open-source, local-first AI app builder that enables developers to create web and mobile applications using AI assistance. It runs on major desktop operating systems and emphasizes privacy by keeping data local.",
+    "rating": 3,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/codinit-dev/codinit-dev",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source, self-hosted"
+        ]
+      }
+    ],
+    "features": [
+      "Local-first architecture for privacy",
+      "AI-powered app generation",
+      "Cross-platform support (MacOS, Windows, Linux)",
+      "Open source with community contributions"
+    ],
+    "category": "development",
+    "logo": "/logos/codinit-.svg"
+  },
+  {
+    "slug": "superset",
+    "name": "Superset",
+    "tagline": "A code editor for the AI agents era that runs multiple AI coding assistants on your machine.",
+    "description": "Superset is a code editor designed to run an army of AI coding agents like Claude Code and Codex locally. It targets developers who want to leverage multiple AI assistants simultaneously for enhanced productivity.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/superset-sh/superset",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source code editor"
+        ]
+      }
+    ],
+    "features": [
+      "Run multiple AI coding agents (Claude Code, Codex, etc.) concurrently",
+      "Local execution on your machine",
+      "Code editor interface for AI-assisted development"
+    ],
+    "category": "development",
+    "logo": "/logos/superset.svg"
+  },
+  {
+    "slug": "rowboat",
+    "name": "Rowboat",
+    "tagline": "Open-source AI coworker with memory to automate tasks and boost productivity.",
+    "description": "Rowboat is an open-source AI coworker that retains memory of past interactions, designed to assist individuals and teams by automating repetitive tasks and providing intelligent support. It is ideal for developers and knowledge workers seeking a customizable, self-hosted AI assistant.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/rowboatlabs/rowboat",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source software",
+          "Self-hosted",
+          "Full access to codebase"
+        ]
+      }
+    ],
+    "features": [
+      "Memory retention for context-aware assistance",
+      "Open-source and self-hostable",
+      "Automates repetitive tasks",
+      "Integrates with existing workflows",
+      "Community-driven development"
+    ],
+    "category": "productivity",
+    "logo": "/logos/rowboat.svg"
   }
 ]
