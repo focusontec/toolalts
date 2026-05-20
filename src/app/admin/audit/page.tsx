@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { ExportButton } from "./export-button";
 
 export const dynamic = "force-dynamic";
 
@@ -152,6 +153,22 @@ export default function AuditPage() {
           <p className="text-xs text-slate-400">need attention</p>
         </div>
       </div>
+
+      {/* Export for Claude Code */}
+      {(data.length > 0 || content.length > 0) && (
+        <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
+          <h2 className="text-sm font-semibold text-slate-900">
+            Export for Claude Code
+          </h2>
+          <p className="mt-1 text-xs text-slate-500">
+            Copy all audit issues as a structured prompt. Paste into Claude Code to auto-fix data
+            accuracy and content quality issues.
+          </p>
+          <div className="mt-3">
+            <ExportButton data={data} content={content} />
+          </div>
+        </div>
+      )}
 
       {data.length === 0 && content.length === 0 ? (
         <div className="mt-10 rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center">
