@@ -1,0 +1,71 @@
+name: Sync Pricing Data
+
+on:
+  schedule:
+    # Run weekly on Tuesday at 4am UTC
+    - cron: "0 4 * * 2"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Sync specific tool (leave empty for all)"
+        required: false
+        type: string
+      dryRun:
+        description: "Dry run (preview only, no changes)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-pricing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Sync pricing data
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            ARGS="$ARGS --slug ${{ github.event.inputs.slug }}"
+          fi
+          if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          npx tsx scripts/scrape-pricing.ts $ARGS
+
+      - name: Commit changes
+        if: ${{ github.event.inputs.dryRun != 'true' }}
+        run: |
+          git config user.name "autoclaw[bot]"
+          git config user.email "autoclaw[bot]@users.noreply.github.com"
+          git add data/tools.json
+          if git diff --cached --quiet; then
+            echo "📭 No pricing changes to commit."
+          else
+            git commit -m "autoclaw: sync pricing data $(date -u +%Y-%m-%d)"
+            git push
+            echo "✅ Pricing changes committed."
+          fi
