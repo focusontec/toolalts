@@ -37,6 +37,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `https://www.toolalts.dev/compare/${slug}/`,
     },
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: `https://www.toolalts.dev/compare/${slug}/`,
+      siteName: "ToolAlts",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 

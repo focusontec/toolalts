@@ -22,10 +22,24 @@ export async function generateMetadata({
   const { slug } = await params;
   const report = getReportBySlug(slug);
   if (!report) return { title: "Report Not Found" };
+  const reportTitle = `${report.name} — AI Verification Report | ToolAlts`;
+  const reportDescription = `AI cross-verification report for ${report.name}. Decision: ${report.decision} (${report.confidence}/100 confidence).`;
   return {
-    title: `${report.name} — AI Verification Report | ToolAlts`,
-    description: `AI cross-verification report for ${report.name}. Decision: ${report.decision} (${report.confidence}/100 confidence).`,
+    title: reportTitle,
+    description: reportDescription,
     alternates: { canonical: `https://www.toolalts.dev/reports/${slug}/` },
+    openGraph: {
+      type: "article",
+      title: reportTitle,
+      description: reportDescription,
+      url: `https://www.toolalts.dev/reports/${slug}/`,
+      siteName: "ToolAlts",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: reportTitle,
+      description: reportDescription,
+    },
   };
 }
 

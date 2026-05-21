@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   title: "Verification Reports — AI-Audited Tool Reviews | ToolAlts",
   description:
     "Browse our AI-powered verification reports. See how we cross-check tool data from GitHub, official websites, and community signals before publishing.",
+  alternates: {
+    canonical: "https://www.toolalts.dev/reports/",
+  },
+  openGraph: {
+    type: "website",
+    title: "Verification Reports — AI-Audited Tool Reviews | ToolAlts",
+    description: "Browse our AI-powered verification reports. See how we cross-check tool data from GitHub, official websites, and community signals before publishing.",
+    url: "https://www.toolalts.dev/reports/",
+    siteName: "ToolAlts",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verification Reports — AI-Audited Tool Reviews | ToolAlts",
+    description: "Browse our AI-powered verification reports. See how we cross-check tool data from GitHub, official websites, and community signals before publishing.",
+  },
 };
 
 function DecisionBadge({ decision }: { decision: string }) {

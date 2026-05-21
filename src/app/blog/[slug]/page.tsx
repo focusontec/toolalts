@@ -59,11 +59,24 @@ export async function generateMetadata({
       description: "This page could not be found.",
     };
   }
+  const postTitle = `${post.title} — ToolAlts Blog`;
   return {
-    title: `${post.title} — ToolAlts Blog`,
+    title: postTitle,
     description: post.excerpt,
     alternates: {
       canonical: `https://www.toolalts.dev/blog/${slug}/`,
+    },
+    openGraph: {
+      type: "article",
+      title: postTitle,
+      description: post.excerpt,
+      url: `https://www.toolalts.dev/blog/${slug}/`,
+      siteName: "ToolAlts",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: postTitle,
+      description: post.excerpt,
     },
   };
 }

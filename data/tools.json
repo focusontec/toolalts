@@ -13,92 +13,80 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 per member / month",
         "features": [
           "Trial AI capabilities like generating docs, or autofilling databases",
-          "Basic forms",
-          "Basic sites",
-          "Notion Calendar",
-          "Notion Mail (Syncs with Gmail)",
-          "Databases including subtasks, dependencies, custom properties and more"
+          "Trial of Notion AI",
+          "Capture, organize, and act on responses right inside Notion. Basic forms",
+          "Publish a Notion page to the web. Basic sites",
+          "Connect multiple Calendars to manage work and time together. Notion Calendar",
+          "Connect your Gmail for an AI-powered, personalized inbox. Notion Mail (Syncs with Gmail)",
+          "Organize hundreds or thousands of items in one place, like projects or tasks. Databases including subtasks, dependencies, custom properties and more"
         ]
       },
       {
         "plan": "Plus",
         "price": "$10 per member / month",
         "features": [
-          "Everything in Free",
+          "Everything in Free, and:",
           "Trial AI capabilities like generating docs, or autofilling databases",
-          "Custom forms",
-          "Custom sites",
-          "Unlimited charts",
-          "Unlimited collaborative blocks",
-          "Unlimited file uploads",
-          "Basic connections"
+          "Trial of Notion AI",
+          "Remove Notion branding from public forms. Custom forms",
+          "Customize your top header, choose a light or dark theme, add a custom favicon, and integrate with Google Analytics. Custom sites",
+          "Visualize data from databases in different ways (e.g. donut, bar, and line charts). Unlimited charts",
+          "Blocks are pieces of content you add to a page (e.g. to-do checkboxes, paragraphs, bullet points, etc.). Unlimited collaborative blocks",
+          "A per file size limit may apply to any file that you upload to a Notion page or database. Unlimited file uploads",
+          "Connect to some tools like Slack & Google Drive. Basic connections"
         ]
       },
       {
         "plan": "Business",
         "price": "$20 per member / month",
         "features": [
-          "Everything in Plus",
-          "Notion Agent",
-          "AI Meeting Notes",
-          "Enterprise Search",
-          "SAML SSO",
-          "Granular database permissions",
-          "Verify any page",
-          "Private teamspaces",
-          "Domain verification",
-          "Premium connections"
+          "Everything in Plus, and:",
+          "Does work for you. Completes complex, multi-step tasks using context from Notion, your connected apps, and the web. Notion Agent",
+          "Automate your meeting notes and follow-ups, no bot needed. AI Meeting Notes",
+          "Search across connected apps like Slack, Github & more. Enterprise Search Beta",
+          "Manage employee access at scale with secure single sign-on. SAML SSO",
+          "Collaborate in Notion databases without giving access to the entire database. Limit access to rows where the collaborator is assigned. Granular database permissions",
+          "Add a verified badge to pages that are up to date. Appears in search results and AI citations. Verify any page",
+          "Create teamspaces that can’t be seen or discovered by anyone except those you add. Great for sensitive information like company planning or performance reviews. Private teamspaces",
+          "Verify ownership of an email domain to access advanced security features including single-sign on. Domain verification",
+          "Connect to GitHub, Asana & more. Premium connections"
         ]
       },
       {
         "plan": "Enterprise",
         "price": "Custom pricing",
         "features": [
-          "Everything in Business",
-          "Zero data retention with LLM providers",
-          "User provisioning (SCIM)",
-          "Advanced security & controls",
-          "Audit log",
-          "Customer success manager",
-          "Security & Compliance connections (DLP, SIEM)",
-          "Domain management",
-          "Advanced connections",
-          "Custom Agents",
-          "Workers"
+          "Everything in Business, and:",
+          "When using Notion AI, our LLM providers utilize zero data retention for Enterprise plan workspaces. Zero data retention with LLM providers",
+          "Access the Notion SCIM API to provision and manage users and groups. User provisioning (SCIM)",
+          "Unlock extra permission controls to prevent certain people from sharing pages externally, disable guests, and set workspace-level rules. Advanced security & controls",
+          "Access a detailed log of security and safety-related activity for your workspace account to identify potential security issues, investigate suspicious behavior, or troubleshoot access. Audit log",
+          "Our team of Customer Success Managers are experts to help you get the most out of Notion. Customer success manager",
+          "Connect to SIEM and DLP tools to automatically centralize audit logs & set policies to detect sensitive content in your workspace and trigger automated actions to remediate. Security & Compliance connections (DLP, SIEM)",
+          "Establish ownership of your company domain and take actions on workspaces that belong to your verified domain (request ownership transfer, delete, claim). Domain management",
+          "Connect to even more tools. Advanced connections",
+          "Custom Agents. AI agents handle repetitive tasks autonomously, so your team doesn’t have to. Free to try, then $10 per 1,000 monthly Notion credits. Workers Beta",
+          "Extend Notion with custom code to build agent tools, sync external data, and trigger Notion workflows from anywhere. Free to try now. Starts using credits on August 11. Learn more→"
         ]
       }
     ],
     "features": [
       "AI capabilities",
-      "Databases",
-      "Forms",
-      "Sites",
-      "Calendar",
-      "Mail",
-      "Charts",
-      "Collaborative blocks",
-      "File uploads",
-      "Connections",
-      "Notion Agent",
-      "AI Meeting Notes",
+      "Databases with subtasks, dependencies, custom properties",
+      "Custom forms and sites",
+      "Unlimited charts and file uploads",
+      "Notion Agent and AI Meeting Notes",
       "Enterprise Search",
-      "SAML SSO",
-      "Granular database permissions",
-      "Page verification",
-      "Private teamspaces",
-      "Domain verification",
-      "Zero data retention",
-      "User provisioning",
-      "Advanced security & controls",
-      "Audit log",
-      "Customer success manager",
-      "Security & Compliance connections",
-      "Domain management",
-      "Custom Agents",
-      "Workers"
+      "SAML SSO and granular permissions",
+      "Private teamspaces and domain verification",
+      "Zero data retention with LLM providers",
+      "User provisioning (SCIM)",
+      "Audit log and customer success manager",
+      "Security & Compliance connections (DLP, SIEM)",
+      "Custom Agents and Workers"
     ],
     "category": "productivity",
     "logo": "/logos/notion.svg",
@@ -203,7 +191,8 @@
         "features": [
           "Unlimited files and projects",
           "Team-wide design libraries",
-          "Advanced Dev Mode inspection and MCP Server"
+          "Advanced prototyping tools",
+          "Easier dev handoff"
         ]
       },
       {
@@ -228,13 +217,7 @@
     "features": [
       "Unlimited files and projects",
       "Team-wide design libraries",
-      "Advanced Dev Mode inspection and MCP Server",
-      "Unlimited teams",
-      "Shared libraries and fonts",
-      "Centralized admin tools",
-      "Custom team workspaces",
-      "Design system theming and APIs",
-      "SCIM seat management"
+      "Advanced Dev Mode inspection and MCP Server"
     ],
     "category": "design",
     "logo": "/logos/figma.svg",
@@ -248,7 +231,7 @@
     "rating": 4.5,
     "reviewsCount": 3200,
     "openSource": true,
-    "githubStars": 48033,
+    "githubStars": 47955,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -437,11 +420,16 @@
       }
     ],
     "features": [
-      "Keyboard-first design",
-      "Git integration",
-      "Cycles & sprints",
-      "Roadmaps",
-      "Triage workflow"
+      "Unlimited members",
+      "Unlimited issues",
+      "Linear Agent (beta)",
+      "Triage Intelligence",
+      "Code Intelligence (beta)",
+      "Linear Insights",
+      "Linear Asks",
+      "SAML and SCIM",
+      "Granular admin controls",
+      "Enterprise-grade security"
     ],
     "category": "project-management",
     "logo": "/logos/linear.svg",
@@ -466,10 +454,11 @@
           "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
           "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
+          "2,000 CI/CD minutes/month",
+          "500MB of Packages storage",
           "Issues & Projects",
-          "Community support"
+          "Community support",
+          "GitHub Codespaces Access"
         ]
       }
     ],
@@ -480,7 +469,7 @@
       "500MB of Packages storage",
       "Issues & Projects",
       "Community support",
-      "GitHub Codespaces Access (featured add-on)"
+      "GitHub Codespaces Access"
     ],
     "category": "project-management",
     "logo": "/logos/github.svg",
@@ -519,16 +508,6 @@
         ]
       },
       {
-        "plan": "Pro+",
-        "price": "Contact for pricing",
-        "features": []
-      },
-      {
-        "plan": "Ultra",
-        "price": "Contact for pricing",
-        "features": []
-      },
-      {
         "plan": "Teams",
         "price": "$40 / user / mo.",
         "features": [
@@ -556,12 +535,9 @@
       }
     ],
     "features": [
-      "Agent requests",
-      "Tab completions",
       "Cloud agents",
       "Bugbot",
-      "SAML/OIDC SSO",
-      "SCIM seat management"
+      "SAML/OIDC SSO"
     ],
     "category": "development",
     "logo": "/logos/cursor.svg",
@@ -575,7 +551,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185177,
+    "githubStars": 185148,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -643,7 +619,11 @@
           "Unlimited app integrations",
           "Group meetings",
           "Group external messages",
-          "Advanced AI"
+          "Advanced AI",
+          "SAML-based single sign-on",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       },
       {
@@ -654,7 +634,11 @@
           "Unlimited app integrations",
           "Group meetings",
           "Group external messages",
-          "Enterprise-Grade AI"
+          "Enterprise-Grade AI",
+          "Multiple SAML configurations",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       }
     ],
@@ -663,16 +647,7 @@
       "Unlimited app integrations",
       "Group meetings",
       "Group external messages",
-      "AI conversation summaries",
-      "Slackbot (personal AI agent)",
-      "AI workflow generation",
-      "AI search",
-      "AI daily recaps",
-      "AI file summaries",
-      "SAML-based single sign-on",
-      "SCIM user management",
-      "EMM integration support",
-      "Native data loss prevention"
+      "AI features"
     ],
     "category": "communication",
     "logo": "/logos/slack.svg",
@@ -723,38 +698,6 @@
     "status": "active"
   },
   {
-    "slug": "system-prompts-and-models-of-ai-tools",
-    "name": "system-prompts-and-models-of-ai-tools",
-    "tagline": "A comprehensive open-source collection of system prompts and internal tools for popular AI coding assistants.",
-    "description": "This repository aggregates system prompts, internal tools, and AI models from a wide range of AI-powered development tools like Cursor, Devin, Copilot, and many others. It serves as a resource for developers and AI enthusiasts to understand how these tools are configured and to potentially reuse or learn from the prompts.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full access to all prompts and tools",
-          "Open source community contributions"
-        ]
-      }
-    ],
-    "features": [
-      "Curated collection of system prompts from 25+ AI coding tools",
-      "Includes internal tools and AI model details",
-      "Open source under GPL-3.0 license",
-      "High community engagement with 137k+ stars",
-      "Regularly updated repository"
-    ],
-    "category": "development",
-    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg",
-    "status": "draft"
-  },
-  {
     "slug": "claude-code",
     "name": "claude-code",
     "tagline": "An agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster through natural language commands.",
@@ -762,8 +705,8 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 35000,
+    "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
       {
@@ -771,42 +714,6 @@
         "price": "$0 USD per user/month",
         "features": [
           "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
-        ]
-      }
-    ],
-    "features": [
-      "Unlimited public/private repositories",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage"
-    ],
-    "category": "development",
-    "logo": "/logos/claude-code.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "markitdown",
-    "name": "markitdown",
-    "tagline": "Convert various file formats to Markdown effortlessly with this Python tool.",
-    "description": "MarkItDown is a Python tool by Microsoft for converting files and office documents to Markdown. It supports formats like PDF, Office documents, and integrates with AI frameworks like LangChain and OpenAI, making it ideal for developers and data scientists.",
-    "rating": 5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://github.com/microsoft/markitdown",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
           "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
           "500MB of Packages storage (Free for public repositories)",
@@ -822,138 +729,50 @@
       "500MB of Packages storage",
       "Issues & Projects",
       "Community support",
-      "GitHub Codespaces (featured add-on)"
+      "GitHub Codespaces Access (add-on)"
+    ],
+    "category": "development",
+    "logo": "/logos/claude-code.svg",
+    "status": "draft"
+  },
+  {
+    "slug": "markitdown",
+    "name": "markitdown",
+    "tagline": "Convert various file formats to Markdown effortlessly with this Python tool.",
+    "description": "MarkItDown is a Python tool by Microsoft for converting files and office documents to Markdown. It supports formats like PDF, Office documents, and integrates with AI frameworks like LangChain and OpenAI, making it ideal for developers and data scientists.",
+    "rating": 5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 45000,
+    "githubUrl": "https://github.com/microsoft/markitdown",
+    "websiteUrl": "https://github.com/microsoft/markitdown",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0 USD per user/month",
+        "features": [
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support",
+          "GitHub Codespaces Access (featured add-on)"
+        ]
+      }
+    ],
+    "features": [
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access"
     ],
     "category": "development",
     "logo": "/logos/markitdown.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "deer-flow",
-    "name": "deer-flow",
-    "tagline": "Open-source framework for building long-horizon super agents that research, code, and create.",
-    "description": "DeerFlow is an open-source framework by ByteDance for building super agents capable of handling complex, long-horizon tasks. It leverages sandboxes, memories, tools, skills, subagents, and a message gateway to automate research, coding, and content creation. Ideal for developers and researchers building advanced AI agent systems.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://deer-flow.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full open-source code under MIT license",
-          "Self-hosted deployment",
-          "Community support"
-        ]
-      }
-    ],
-    "features": [
-      "Long-horizon task handling from minutes to hours",
-      "Sandboxed execution environments for safety",
-      "Memory, tools, skills, and subagent orchestration",
-      "Message gateway for inter-agent communication",
-      "Built on LangChain and LangGraph for extensibility"
-    ],
-    "category": "development",
-    "logo": "/logos/deer-flow.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "awesome-claude-skills",
-    "name": "awesome-claude-skills",
-    "tagline": "A curated collection of Claude AI skills, resources, and tools for customizing workflows.",
-    "description": "This repository is a curated list of awesome Claude Skills, resources, and tools that help developers and AI enthusiasts customize Claude AI workflows. It includes integrations with various platforms like Composio, Cursor, and Gemini CLI, making it a valuable resource for building AI agents and automation.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Access to all listed resources and tools"
-        ]
-      }
-    ],
-    "features": [
-      "Curated list of Claude Skills and resources",
-      "Covers integrations with multiple AI platforms",
-      "Includes tools for workflow automation",
-      "Active community with high engagement",
-      "Regularly updated with new content"
-    ],
-    "category": "development",
-    "logo": "/logos/awesome-claude-skills.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "nanobot",
-    "name": "nanobot",
-    "tagline": "Ultra-lightweight, self-hosted AI agent for automating tools, chats, and workflows.",
-    "description": "nanobot is an open-source, ultra-lightweight personal AI agent that integrates with your tools, chats, and workflows. It supports self-hosting and long-running automation, making it ideal for developers and power users who want a customizable AI assistant.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full open-source code",
-          "Self-hosted deployment",
-          "All core features"
-        ]
-      }
-    ],
-    "features": [
-      "Self-hosted and lightweight design",
-      "Integrates with tools, chats, and workflows",
-      "Supports long-running automation tasks",
-      "Open-source with MIT license",
-      "Compatible with multiple LLMs (OpenAI, Anthropic, etc.)"
-    ],
-    "category": "development",
-    "logo": "/logos/nanobot.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "antigravity-manager",
-    "name": "Antigravity-Manager",
-    "tagline": "One-click seamless account switching for Antigravity Tools, built with Tauri v2 and React.",
-    "description": "Antigravity-Manager is a professional account manager and switcher designed for Antigravity Tools. It enables users to switch between accounts with a single click, streamlining workflow for those managing multiple accounts. Built with Tauri v2 and React (Rust), it offers a fast and secure desktop experience.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full account management and switching capabilities"
-        ]
-      }
-    ],
-    "features": [
-      "One-click seamless account switching",
-      "Built with Tauri v2 and React for performance",
-      "Cross-platform desktop application",
-      "Secure account management",
-      "Designed specifically for Antigravity Tools"
-    ],
-    "category": "productivity",
-    "logo": "/logos/antigravity-manager.svg",
     "status": "draft"
   },
   {
@@ -964,8 +783,8 @@
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 18000,
+    "githubUrl": "https://github.com/ComposioHQ/composio",
     "websiteUrl": "https://composio.dev",
     "pricing": [
       {
@@ -1015,69 +834,6 @@
     "status": "draft"
   },
   {
-    "slug": "claude-code-templates",
-    "name": "claude-code-templates",
-    "tagline": "The largest open-source collection of pre-built components for Claude Code.",
-    "description": "Claude Code Templates is a CLI tool and repository that provides over 1000 pre-built agents, slash commands, MCP integrations, hooks, and settings for Claude Code. It is designed for developers using Anthropic's Claude Code to enhance their workflow with ready-to-use components. The tool is free, open-source, and actively maintained.",
-    "rating": 4.75,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "All components",
-          "CLI tool",
-          "Community support"
-        ]
-      }
-    ],
-    "features": [
-      "1000+ pre-built components including agents, commands, and MCP integrations",
-      "CLI tool for easy installation and configuration",
-      "Open-source with MIT license",
-      "Active community with 27k+ stars on GitHub",
-      "Regular updates and contributions"
-    ],
-    "category": "development",
-    "logo": "/logos/claude-code-templates.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "gerbil",
-    "name": "Gerbil",
-    "tagline": "Run large language models locally with a simple desktop app.",
-    "description": "Gerbil is a desktop application that allows users to run large language models (LLMs) on their own machine, providing privacy and offline access. It is aimed at developers and AI enthusiasts who want to experiment with LLMs without relying on cloud services.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open source, self-hosted"
-        ]
-      }
-    ],
-    "features": [
-      "Local execution of large language models",
-      "Desktop GUI for easy interaction",
-      "Supports multiple model formats",
-      "Privacy-focused (no data sent to cloud)"
-    ],
-    "category": "development",
-    "logo": "/logos/gerbil.svg",
-    "status": "draft"
-  },
-  {
     "slug": "bodhi",
     "name": "Bodhi",
     "tagline": "Run open-source LLMs locally with OpenAI-compatible APIs.",
@@ -1085,8 +841,8 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 500,
+    "githubUrl": "https://github.com/nicholasgriffintn/bodhi",
     "websiteUrl": "https://bodhi.com",
     "pricing": [
       {
@@ -1111,37 +867,6 @@
     "status": "draft"
   },
   {
-    "slug": "workout-cool",
-    "name": "Workout.cool",
-    "tagline": "Open-source fitness coaching platform for personalized workout programs",
-    "description": "Workout.cool is an open-source fitness coaching platform that creates personalized workout programs. While categorized under productivity, it is primarily a fitness and health tool.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://workout-cool.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full access to all features as open-source software"
-        ]
-      }
-    ],
-    "features": [
-      "Create and manage workout plans",
-      "Track progress over time",
-      "Comprehensive exercise database",
-      "Open-source and self-hostable",
-      "Modern user interface"
-    ],
-    "category": "productivity",
-    "logo": "/logos/workout-cool.svg",
-    "status": "draft"
-  },
-  {
     "slug": "anki",
     "name": "AnkiAIUtils",
     "tagline": "AI-powered utilities to enhance Anki flashcards with explanations and mnemonics",
@@ -1149,8 +874,8 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 19000,
+    "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
       {
@@ -1187,39 +912,6 @@
     "status": "draft"
   },
   {
-    "slug": "codinit",
-    "name": "CodinIT,",
-    "tagline": "Local-first open-source AI app builder for web and mobile.",
-    "description": "CodinIT is a local-first, open-source AI app builder that enables developers to create web and mobile applications using natural language. It runs on MacOS, Windows, and Linux, prioritizing privacy and offline capabilities.",
-    "rating": 3.75,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full open-source code",
-          "Self-hosted",
-          "All features included"
-        ]
-      }
-    ],
-    "features": [
-      "Local-first architecture for privacy and offline use",
-      "AI-powered app generation from natural language",
-      "Cross-platform support (MacOS, Windows, Linux)",
-      "Open-source with community contributions",
-      "Web and mobile app output"
-    ],
-    "category": "development",
-    "logo": "/logos/codinit-.svg",
-    "status": "draft"
-  },
-  {
     "slug": "stagewise",
     "name": "Stagewise",
     "tagline": "The open source agentic IDE for creating and orchestrating coding agents with multi-model support.",
@@ -1227,8 +919,8 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 300,
+    "githubUrl": "https://github.com/nicholasgriffintn/stagewise",
     "websiteUrl": "https://stagewise.com",
     "pricing": [
       {
@@ -1250,46 +942,6 @@
     "status": "draft"
   },
   {
-    "slug": "sgai",
-    "name": "Sgai",
-    "tagline": "An AI-powered software factory that automates development workflows.",
-    "description": "Sgai is an AI software factory by Sandgarden that helps developers automate repetitive coding tasks, generate boilerplate, and streamline project setup. It is designed for developers and teams looking to accelerate their development process with AI assistance.",
-    "rating": 3.75,
-    "reviewsCount": 0,
-    "openSource": false,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://sgai.com",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Basic AI features",
-          "Limited usage"
-        ]
-      },
-      {
-        "plan": "Pro",
-        "price": "$20/mo",
-        "features": [
-          "Unlimited AI generations",
-          "Priority support",
-          "Advanced integrations"
-        ]
-      }
-    ],
-    "features": [
-      "AI-driven code generation and boilerplate creation",
-      "Automated project scaffolding and configuration",
-      "Integration with existing development workflows",
-      "Support for multiple programming languages and frameworks"
-    ],
-    "category": "development",
-    "logo": "/logos/sgai.svg",
-    "status": "draft"
-  },
-  {
     "slug": "dyad",
     "name": "Dyad,",
     "tagline": "Flexible, local, open-source AI app builder with zero lock-in.",
@@ -1297,8 +949,8 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 200,
+    "githubUrl": "https://github.com/nicholasgriffintn/dyad",
     "websiteUrl": "https://www.dyad.sh/",
     "pricing": [
       {
@@ -1337,10 +989,7 @@
     "features": [
       "Local, open-source AI App Builder",
       "Exclusive Pro modes to work on large codebases",
-      "200 AI credits/month",
-      "900 AI credits/month",
-      "Full Dyad Academy access",
-      "Prioritized access to office hours"
+      "200 AI credits/month"
     ],
     "category": "development",
     "logo": "/logos/dyad-.svg",
@@ -1354,8 +1003,8 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
+    "githubStars": 150,
+    "githubUrl": "https://github.com/nicholasgriffintn/tasker",
     "websiteUrl": "https://tasker.ai",
     "pricing": [
       {
@@ -1377,16 +1026,54 @@
     "status": "draft"
   },
   {
-    "slug": "gstack",
-    "name": "gstack",
-    "tagline": "A curated set of 23 opinionated AI tools for software development, inspired by Garry Tan's workflow.",
-    "description": "gstack is a collection of 23 opinionated tools designed to emulate roles like CEO, Designer, and Engineer within Claude Code. It provides a structured setup for AI-assisted software development, targeting developers who want to leverage Claude Code for end-to-end project management and execution.",
-    "rating": 5,
+    "slug": "tooljet",
+    "name": "ToolJet",
+    "tagline": "Open-source low-code platform to build internal tools and AI agents.",
+    "description": "ToolJet is an open-source platform for building internal tools, dashboards, business applications, workflows, and AI agents. It is designed for developers and teams looking to rapidly create custom applications with minimal coding.",
+    "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 100336,
-    "githubUrl": "https://github.com/garrytan/gstack",
-    "websiteUrl": "https://github.com/garrytan/gstack",
+    "githubStars": 30000,
+    "githubUrl": "https://github.com/ToolJet/ToolJet",
+    "websiteUrl": "https://github.com/ToolJet/ToolJet",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0 USD per user/month",
+        "features": [
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month",
+          "500MB of Packages storage",
+          "Issues & Projects",
+          "Community support"
+        ]
+      }
+    ],
+    "features": [
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support",
+      "GitHub Codespaces Access (featured add-on)"
+    ],
+    "category": "development",
+    "logo": "/logos/tooljet.svg"
+  },
+  {
+    "slug": "ephe",
+    "name": "Ephe",
+    "tagline": "A minimal, ephemeral markdown editor for quick note-taking and sharing.",
+    "description": "Ephe is an ephemeral markdown paper tool designed for plain markdown lovers who want a lightweight, no-frills writing experience. It offers handy features for quick note-taking and sharing without permanent storage.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 200,
+    "githubUrl": "https://github.com/nicholasgriffintn/ephe",
+    "websiteUrl": "https://github.com/unvalley/ephe",
     "pricing": [
       {
         "plan": "Free",
@@ -1411,21 +1098,55 @@
       "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
-    "category": "development",
-    "logo": "/logos/gstack.svg",
-    "status": "draft"
+    "category": "productivity",
+    "logo": "/logos/ephe.svg"
   },
   {
-    "slug": "codinit-",
-    "name": "CodinIT,",
-    "tagline": "Local-First Open Source web & mobile AI app builder for MacOS, Windows & Linux.",
-    "description": "CodinIT is an open-source, local-first AI app builder that enables developers to create web and mobile applications using AI assistance. It runs on major desktop operating systems and emphasizes privacy by keeping data local.",
-    "rating": 3,
+    "slug": "skip",
+    "name": "Skip",
+    "tagline": "One Swift codebase, two native platforms: iOS and Android.",
+    "description": "Skip is a development tool that allows developers to write a single app in Swift and SwiftUI and deploy it natively on both iOS and Android. It targets mobile app developers who want to share code across platforms without sacrificing native performance.",
+    "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/codinit-dev/codinit-dev",
+    "githubStars": 100,
+    "githubUrl": "https://github.com/nicholasgriffintn/skip",
+    "websiteUrl": "https://skip.tools/",
+    "pricing": [
+      {
+        "plan": "Free and Open Source",
+        "price": "Free",
+        "features": [
+          "No license key",
+          "No trial period",
+          "No revenue threshold",
+          "No per-seat pricing",
+          "Transpiler, build tools, and all core frameworks are open source under permissive licenses"
+        ]
+      }
+    ],
+    "features": [
+      "Free and open source",
+      "No license key required",
+      "No trial period",
+      "No revenue threshold",
+      "No per-seat pricing",
+      "Transpiler, build tools, and all core frameworks open source"
+    ],
+    "category": "development",
+    "logo": "/logos/skip.svg"
+  },
+  {
+    "slug": "colanode-",
+    "name": "Colanode,",
+    "tagline": "Open-source, local-first alternative to Slack and Notion for data control.",
+    "description": "Colanode is an open-source, local-first platform that combines team communication and knowledge management, giving users full control over their data. It serves as an alternative to Slack and Notion, focusing on privacy and self-hosting.",
+    "rating": 3.5,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 500,
+    "githubUrl": "https://github.com/nicholasgriffintn/colanode",
+    "websiteUrl": "https://github.com/colanode/colanode",
     "pricing": [
       {
         "plan": "Free",
@@ -1433,79 +1154,6 @@
         "features": [
           "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
-        ]
-      }
-    ],
-    "features": [
-      "Unlimited public/private repositories",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage"
-    ],
-    "category": "development",
-    "logo": "/logos/codinit-.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "superset",
-    "name": "Superset",
-    "tagline": "A code editor for the AI agents era that runs multiple AI coding assistants on your machine.",
-    "description": "Superset is a code editor designed to run an army of AI coding agents like Claude Code and Codex locally. It targets developers who want to leverage multiple AI assistants simultaneously for enhanced productivity.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/superset-sh/superset",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
-        ]
-      }
-    ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access (featured add-on)"
-    ],
-    "category": "development",
-    "logo": "/logos/superset.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "rowboat",
-    "name": "Rowboat",
-    "tagline": "Open-source AI coworker with memory to automate tasks and boost productivity.",
-    "description": "Rowboat is an open-source AI coworker that retains memory of past interactions, designed to assist individuals and teams by automating repetitive tasks and providing intelligent support. It is ideal for developers and knowledge workers seeking a customizable, self-hosted AI assistant.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/rowboatlabs/rowboat",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Unlimited public/private repositories",
           "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
           "500MB of Packages storage (Free for public repositories)",
@@ -1525,138 +1173,6 @@
       "GitHub Codespaces Access"
     ],
     "category": "productivity",
-    "logo": "/logos/rowboat.svg",
-    "status": "draft"
-  },
-  {
-    "slug": "tooljet",
-    "name": "ToolJet",
-    "tagline": "Open-source low-code platform to build internal tools and AI agents.",
-    "description": "ToolJet is an open-source platform for building internal tools, dashboards, business applications, workflows, and AI agents. It is designed for developers and teams looking to rapidly create custom applications with minimal coding.",
-    "rating": 4.25,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/ToolJet/ToolJet",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open-source community edition",
-          "Self-hosted"
-        ]
-      },
-      {
-        "plan": "Pro",
-        "price": "Unverifiable",
-        "features": [
-          "Additional features and support"
-        ]
-      },
-      {
-        "plan": "Enterprise",
-        "price": "Unverifiable",
-        "features": [
-          "Custom deployment and support"
-        ]
-      }
-    ],
-    "features": [
-      "Drag-and-drop UI builder",
-      "Pre-built integrations and connectors",
-      "Workflow automation",
-      "AI agent support",
-      "Self-hosted or cloud deployment"
-    ],
-    "category": "development",
-    "logo": "/logos/tooljet.svg"
-  },
-  {
-    "slug": "ephe",
-    "name": "Ephe",
-    "tagline": "A minimal, ephemeral markdown editor for quick note-taking and sharing.",
-    "description": "Ephe is an ephemeral markdown paper tool designed for plain markdown lovers who want a lightweight, no-frills writing experience. It offers handy features for quick note-taking and sharing without permanent storage.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/unvalley/ephe",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Full access to ephemeral markdown editing"
-        ]
-      }
-    ],
-    "features": [
-      "Ephemeral markdown editing",
-      "Minimal and distraction-free interface",
-      "Handy features for plain markdown lovers"
-    ],
-    "category": "productivity",
-    "logo": "/logos/ephe.svg"
-  },
-  {
-    "slug": "skip",
-    "name": "Skip",
-    "tagline": "One Swift codebase, two native platforms: iOS and Android.",
-    "description": "Skip is a development tool that allows developers to write a single app in Swift and SwiftUI and deploy it natively on both iOS and Android. It targets mobile app developers who want to share code across platforms without sacrificing native performance.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": null,
-    "websiteUrl": "https://skip.tools/",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open source tool"
-        ]
-      }
-    ],
-    "features": [
-      "Write once in Swift and SwiftUI",
-      "Native performance on both iOS and Android",
-      "Shared codebase for mobile apps"
-    ],
-    "category": "development",
-    "logo": "/logos/skip.svg"
-  },
-  {
-    "slug": "colanode-",
-    "name": "Colanode,",
-    "tagline": "Open-source, local-first alternative to Slack and Notion for data control.",
-    "description": "Colanode is an open-source, local-first platform that combines team communication and knowledge management, giving users full control over their data. It serves as an alternative to Slack and Notion, focusing on privacy and self-hosting.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/colanode/colanode",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open-source, self-hosted version"
-        ]
-      }
-    ],
-    "features": [
-      "Local-first architecture for data ownership",
-      "Team communication (chat) capabilities",
-      "Knowledge management (notes/docs) features",
-      "Open-source and self-hostable",
-      "Privacy-focused design"
-    ],
-    "category": "productivity",
     "logo": "/logos/colanode-.svg"
   },
   {
@@ -1667,23 +1183,30 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
+    "githubStars": 8000,
+    "githubUrl": "https://github.com/nicholasgriffintn/onlook",
     "websiteUrl": "https://github.com/onlook-dev/onlook",
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Open-source, self-hosted version"
+          "Unlimited public/private repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Visual editing of React components",
-      "AI-powered design suggestions",
-      "Open-source and community-driven",
-      "Integrates with existing React projects"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support"
     ],
     "category": "design",
     "logo": "/logos/onlook.svg"
@@ -1696,38 +1219,31 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
+    "githubStars": 3000,
+    "githubUrl": "https://github.com/nicholasgriffintn/instantdb",
     "websiteUrl": "https://github.com/instantdb/instant",
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 USD per user/month",
         "features": [
-          "Basic features, likely limited usage"
-        ]
-      },
-      {
-        "plan": "Pro",
-        "price": "Unverifiable",
-        "features": [
-          "Unverifiable"
-        ]
-      },
-      {
-        "plan": "Enterprise",
-        "price": "Unverifiable",
-        "features": [
-          "Unverifiable"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month",
+          "500MB of Packages storage",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "Authentication",
-      "Permissions",
-      "Storage",
-      "Presence",
-      "Streams"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month",
+      "500MB of Packages storage",
+      "Issues & Projects",
+      "Community support"
     ],
     "category": "development",
     "logo": "/logos/instantdb.svg"
@@ -1740,60 +1256,1857 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
+    "githubStars": 8000,
+    "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://github.com/langfuse/langfuse",
     "pricing": [
       {
-        "plan": "Open Source",
-        "price": "$0",
+        "plan": "Free",
+        "price": "$0 USD per user/month",
         "features": [
-          "Self-hosted, full features"
-        ]
-      },
-      {
-        "plan": "Cloud",
-        "price": "Freemium",
-        "features": [
-          "Managed cloud with free tier and paid plans"
+          "Unlimited public/private repositories",
+          "Host open source projects in public GitHub repositories",
+          "Dependabot security and version updates",
+          "2,000 CI/CD minutes/month (Free for public repositories)",
+          "500MB of Packages storage (Free for public repositories)",
+          "Issues & Projects",
+          "Community support"
         ]
       }
     ],
     "features": [
-      "LLM Observability and metrics",
-      "Evaluations and prompt management",
-      "Playground and datasets",
-      "Integrations with OpenTelemetry, Langchain, OpenAI SDK, LiteLLM"
+      "Unlimited public/private repositories",
+      "Dependabot security and version updates",
+      "2,000 CI/CD minutes/month"
     ],
     "category": "development",
     "logo": "/logos/langfuse.svg"
   },
   {
-    "slug": "axilla",
-    "name": "Axilla",
-    "tagline": "The TypeScript framework for AI development.",
-    "description": "Axilla is a TypeScript framework designed for AI development, providing tools and abstractions to build AI-powered applications. It targets developers looking to integrate AI capabilities into their TypeScript projects.",
-    "rating": 3.5,
-    "reviewsCount": 0,
-    "openSource": true,
+    "slug": "jira",
+    "name": "Jira",
+    "tagline": "Plan, track, and manage your agile and software development projects",
+    "description": "Jira is the project management tool for agile teams. It helps teams plan, track, and release great software.",
+    "rating": 4.3,
+    "reviewsCount": 18000,
+    "openSource": false,
     "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/axilla-io/ax",
+    "githubUrl": null,
+    "websiteUrl": "https://www.atlassian.com/software/jira",
     "pricing": [
       {
-        "plan": "Free",
         "price": "$0",
+        "plan": "Free",
         "features": [
-          "Open source framework"
+          "Up to 10 users",
+          "2GB storage"
+        ]
+      },
+      {
+        "price": "$8.15/user/mo",
+        "plan": "Standard",
+        "features": [
+          "Up to 35",
+          "000 users",
+          "250GB storage"
+        ]
+      },
+      {
+        "price": "$16/user/mo",
+        "plan": "Premium",
+        "features": [
+          "Advanced roadmaps",
+          "sandbox",
+          "unlimited storage"
+        ]
+      },
+      {
+        "price": "Custom",
+        "plan": "Enterprise",
+        "features": [
+          "Unlimited sites",
+          "cross-org insights"
         ]
       }
     ],
     "features": [
-      "TypeScript-native AI development framework",
-      "Abstractions for AI model integration",
-      "Developer-friendly APIs"
+      "Scrum and Kanban boards",
+      "Sprint planning and backlog management",
+      "Advanced roadmaps",
+      "Custom workflows",
+      "Automation rules",
+      "Integration with 3000+ apps",
+      "Real-time reporting and dashboards"
+    ],
+    "category": "project-management",
+    "logo": "/logos/jira.svg",
+    "status": "active"
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "tagline": "Trello brings all your tasks, teammates, and tools together",
+    "description": "Trello is a visual collaboration tool for creating boards, lists, and cards to organize and prioritize projects.",
+    "rating": 4.4,
+    "reviewsCount": 22000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://trello.com",
+    "pricing": [
+      {
+        "plan": "FREE",
+        "price": "$0USD",
+        "features": [
+          "Unlimited cards",
+          "Up to 10 boards per Workspace",
+          "Quickly capture to-dos from email, Slack, and Teams Inbox",
+          "Unlimited Power-Ups per board",
+          "Unlimited storage (10MB/file)",
+          "250 Workspace command runs per month",
+          "Custom backgrounds & stickers",
+          "Unlimited activity log",
+          "Assignee and due dates",
+          "iOS and Android mobile apps",
+          "2-factor authentication"
+        ]
+      },
+      {
+        "plan": "STANDARD",
+        "price": "$5USD per user/month if billed annually ($6 billed monthly)",
+        "features": [
+          "Unlimited boards",
+          "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+          "Planner",
+          "Advanced checklists",
+          "Card mirroring",
+          "Custom Fields",
+          "List colors",
+          "Collapsible lists",
+          "Unlimited storage (250MB/file)",
+          "1,000 Workspace command runs per month",
+          "Single board guests",
+          "Saved searches"
+        ]
+      },
+      {
+        "plan": "PREMIUM",
+        "price": "$10USD per user/month if billed annually ($12.50 billed monthly)",
+        "features": [
+          "AI",
+          "Views: Calendar, Timeline, Table, Dashboard, and Map",
+          "Workspace views: Table and Calendar",
+          "Unlimited Workspace command runs",
+          "Admin and security features",
+          "Workspace-level templates",
+          "Collections",
+          "Observers",
+          "Simple data export"
+        ]
+      },
+      {
+        "plan": "ENTERPRISE",
+        "price": "$17.50USD per user/month - billed annually ($210.00 annual price per user)",
+        "features": [
+          "Unlimited Workspaces",
+          "Organization-wide permissions",
+          "Organization-visible boards",
+          "Public board management",
+          "Multi-board guests",
+          "Attachment permissions",
+          "Power-Up administration",
+          "Free SSO and user provisioning with Atlassian Guard"
+        ]
+      }
+    ],
+    "features": [
+      "Unlimited cards",
+      "Quick capture",
+      "Inbox",
+      "Planner",
+      "AI",
+      "Card mirroring",
+      "Built-in automation",
+      "Assignee and due dates",
+      "iOS and Android mobile apps",
+      "Desktop app",
+      "Unlimited activity logs",
+      "Trello templates",
+      "2-factor authentication",
+      "Mobile device management",
+      "Unlimited Power-Ups",
+      "Unlimited Workspace collaborators",
+      "Unlimited boards",
+      "Advanced checklists",
+      "Custom Fields",
+      "Collapsible lists",
+      "List colors",
+      "Dashboard view",
+      "Map view",
+      "Timeline view",
+      "Table view",
+      "Calendar view",
+      "Workspace table view",
+      "Workspace calendar view",
+      "Workspace-level templates",
+      "Command run administration",
+      "Board collections",
+      "Observers",
+      "Domain-restricted invites",
+      "Deactivate members",
+      "Simple data export",
+      "Unlimited command runs",
+      "SAML SSO via Atlassian Guard",
+      "Unlimited Workspaces",
+      "Power-Up administration",
+      "Attachment restrictions",
+      "Organization wide permissions",
+      "Organization visible boards",
+      "Public board management"
+    ],
+    "category": "project-management",
+    "logo": "/logos/trello.svg",
+    "status": "active"
+  },
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "tagline": "Manage your team's work, projects, & tasks online",
+    "description": "Asana is a work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives.",
+    "rating": 4.4,
+    "reviewsCount": 15000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://asana.com",
+    "pricing": [
+      {
+        "plan": "Personal",
+        "price": "$0",
+        "features": [
+          "Manage tasks and personal to-dos: 2 users",
+          "Unlimited tasks and projects",
+          "List, board, and calendar views",
+          "Unlimited storage, 100MB max per file",
+          "Status updates",
+          "Time tracking with integrations",
+          "100+ free integrations"
+        ]
+      },
+      {
+        "plan": "Starter",
+        "price": "$10.99 per user, per month billed annually",
+        "features": [
+          "Everything in Personal",
+          "AI Studio Basic w/50K credits per billing account per month",
+          "No user seat limits",
+          "Timeline and Gantt views",
+          "Reporting dashboards",
+          "Unlimited automations",
+          "Forms",
+          "Custom templates",
+          "Custom fields",
+          "Unlimited free guests"
+        ]
+      },
+      {
+        "plan": "Advanced",
+        "price": "$24.99 per user, per month billed annually",
+        "features": [
+          "Everything in Starter",
+          "AI Studio Basic w/75K credits per billing account per month",
+          "Unlimited portfolios",
+          "Goals",
+          "Workload",
+          "Approvals and proofing",
+          "Salesforce, Tableau, Power BI support",
+          "Forms branching & customization",
+          "Time tracking",
+          "Scaled security",
+          "Formulas"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Contact sales for pricing",
+        "features": [
+          "Everything in Advanced",
+          "AI Studio Basic w/200K credits per billing account per month",
+          "SAML authentication",
+          "User provisioning (SCIM)",
+          "Universal workload",
+          "Capacity planning",
+          "Service accounts",
+          "View-only licenses",
+          "Guest invite permissions",
+          "Project admin controls",
+          "Admin announcements",
+          "Workflow bundles"
+        ]
+      }
+    ],
+    "features": [
+      "AI Studio",
+      "Unlimited tasks and projects",
+      "Reporting dashboards"
+    ],
+    "category": "project-management",
+    "logo": "/logos/asana.svg",
+    "status": "active"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "tagline": "One app to replace them all",
+    "description": "ClickUp is an all-in-one productivity platform that brings tasks, docs, goals, and chat into one app.",
+    "rating": 4.6,
+    "reviewsCount": 12000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://clickup.com",
+    "pricing": [
+      {
+        "plan": "Free Forever",
+        "price": "Free",
+        "features": [
+          "60MB Storage",
+          "Unlimited Tasks",
+          "Unlimited Free Plan Members",
+          "Two-Factor Authentication",
+          "Collaborative Docs",
+          "Kanban Boards",
+          "Sprint Management",
+          "Calendar View",
+          "Basic Custom Field Manager",
+          "In-App Video Recording",
+          "24/7 Support",
+          "1 Form"
+        ]
+      },
+      {
+        "plan": "Unlimited",
+        "price": "$7 per user/month, billed yearly",
+        "features": [
+          "Unlimited Spaces, Folders, and Forms",
+          "Unlimited Gantt Charts",
+          "Unlimited Integrations",
+          "Unlimited Storage",
+          "Unlimited Custom Fields",
+          "Native Time Tracking",
+          "Goals & Portfolio Management",
+          "Guests With Permission Control",
+          "Resource Management",
+          "ClickUp Chat",
+          "Email in ClickUp",
+          "Integrations like Slack, Hubspot, Google Drive, and more"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$12 per user/month, billed yearly",
+        "features": [
+          "Unlimited Dashboards with Advanced Cards",
+          "Unlimited Message History",
+          "Unlimited Activity Views",
+          "Unlimited Timeline Views",
+          "Webhooks & Automation Integrations",
+          "5K Automations Per Month",
+          "Mind Mapping",
+          "Private Whiteboards",
+          "Custom Exporting",
+          "Sprint Points & Reporting",
+          "Portfolio Workload Management",
+          "Google SSO",
+          "SMS 2-Factor Authentication",
+          "Unlimited Proofing"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Enterprise Permissions and Governance",
+          "Unlimited Custom Roles",
+          "SAML SSO & SCIM Provisioning",
+          "Audit Log",
+          "Session Management",
+          "Enterprise API",
+          "250K Automations Per Month",
+          "Custom Branding",
+          "Default Personal Views",
+          "MSA & HIPAA Available",
+          "Data Residency",
+          "Enterprise-Scale Automations & Integrations",
+          "Enterprise-Scale API Usage",
+          "Live Onboarding Training",
+          "Customer Success Manager",
+          "Access to Managed Services"
+        ]
+      },
+      {
+        "plan": "Free Forever AI",
+        "price": "Free",
+        "features": [
+          "Try AI across chat, tasks and docs",
+          "Trial access to advanced AI features",
+          "Upgrade at any time"
+        ]
+      },
+      {
+        "plan": "Brain AI",
+        "price": "$9 per user/month",
+        "features": [
+          "Unlimited Brain Assistant",
+          "Unlimited @Brain Agent",
+          "Unlimited AI chat",
+          "Claude, ChatGPT, Gemini",
+          "Expanded use of Premium AI Models",
+          "Unlimited AI writing",
+          "Enterprise Search",
+          "Workspace+1,500 AI Super Credits user / mo for Agents, Automations, & more"
+        ]
+      },
+      {
+        "plan": "Everything AI",
+        "price": "$28 per user/month",
+        "features": [
+          "Unlimited Ambient Answers",
+          "Unlimited AI Notetaker",
+          "Unlimited Image Generation",
+          "Unlimited AI Fields",
+          "Unlimited AI Automations & Dashboards",
+          "Unlimited AI Assign & Prioritize",
+          "3X more usage of Super Agents",
+          "Enterprise Search",
+          "Private & Workspace+5,000 AI Super Credits user / mo for Super Agents"
+        ]
+      }
+    ],
+    "features": [
+      "Unlimited Tasks",
+      "Collaborative Docs",
+      "Kanban Boards",
+      "Gantt Charts",
+      "Time Tracking",
+      "Goals",
+      "Dashboards",
+      "Automations",
+      "Whiteboards",
+      "Integrations"
+    ],
+    "category": "project-management",
+    "logo": "/logos/clickup.svg",
+    "status": "active"
+  },
+  {
+    "slug": "gitlab",
+    "name": "GitLab",
+    "tagline": "The most comprehensive AI-powered DevSecOps platform",
+    "description": "GitLab is a complete DevOps platform that delivers a single application for the entire software development lifecycle.",
+    "rating": 4.5,
+    "reviewsCount": 14000,
+    "openSource": true,
+    "githubStars": 25000,
+    "githubUrl": "https://github.com/gitlabhq/gitlabhq",
+    "websiteUrl": "https://gitlab.com",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "5 users",
+          "400 CI/CD minutes/month"
+        ]
+      },
+      {
+        "price": "$29/user/mo",
+        "plan": "Premium",
+        "features": [
+          "Code review",
+          "merge requests",
+          "10",
+          "000 CI/CD minutes"
+        ]
+      },
+      {
+        "price": "$99/user/mo",
+        "plan": "Ultimate",
+        "features": [
+          "Security dashboards",
+          "compliance",
+          "50",
+          "000 CI/CD minutes"
+        ]
+      }
+    ],
+    "features": [
+      "Git repository management",
+      "CI/CD pipelines",
+      "Container registry",
+      "Issue tracking",
+      "Code review and merge requests",
+      "Security scanning (SAST/DAST)",
+      "Package registry"
     ],
     "category": "development",
-    "logo": "/logos/axilla.svg"
+    "logo": "/logos/gitlab.svg",
+    "status": "active"
+  },
+  {
+    "slug": "docker",
+    "name": "Docker",
+    "tagline": "Accelerate how you build, share, and run applications",
+    "description": "Docker helps developers build, share, run, and verify applications anywhere.",
+    "rating": 4.6,
+    "reviewsCount": 16000,
+    "openSource": true,
+    "githubStars": 70000,
+    "githubUrl": "https://github.com/docker/cli",
+    "websiteUrl": "https://www.docker.com",
+    "pricing": [
+      {
+        "plan": "Docker Personal",
+        "price": "$0",
+        "features": [
+          "Docker Desktop",
+          "Docker Engine + Kubernetes",
+          "Docker Hub",
+          "Docker Scout",
+          "Docker Debug",
+          "1 user",
+          "1 Docker Scout-enabled repo",
+          "100 Docker Hub pulls/hr",
+          "1 private Docker Hub repo",
+          "Docker Build Cloud and Testcontainers Cloud free trial"
+        ]
+      },
+      {
+        "plan": "Docker Pro",
+        "price": "$11 $9 per user/month",
+        "features": [
+          "Docker Build Cloud",
+          "Testcontainers Cloud",
+          "Synchronized File Shares",
+          "Visibility into Docker Scout health scores",
+          "5 business day support response",
+          "1 user",
+          "2 Docker Scout-enabled repos",
+          "Unlimited Docker Hub pull rate",
+          "200 Docker Build Cloud build minutes",
+          "100 Testcontainers Cloud runtime minutes"
+        ]
+      },
+      {
+        "plan": "Docker Team",
+        "price": "$16 $15 per user/month",
+        "features": [
+          "Add users in bulk",
+          "Audit logs",
+          "Docker Hub role-based access control",
+          "2 business day support response",
+          "Up to 100 users",
+          "Unlimited Docker Scout-enabled repos",
+          "Unlimited Docker Hub pull rate",
+          "Unlimited private Docker Hub repos",
+          "500 Docker Build Cloud build minutes",
+          "500 Testcontainers Cloud runtime minutes",
+          "10 Organization access tokens",
+          "1 Docker Hub organization"
+        ]
+      },
+      {
+        "plan": "Docker Business",
+        "price": "$24 $24 per user/month",
+        "features": [
+          "Hardened Docker Desktop",
+          "Single Sign-On (SSO)",
+          "SCIM user provisioning",
+          "Image and Registry Access Management",
+          "Desktop Insights Dashboard",
+          "Enhanced container Isolation (ECI)",
+          "Purchase via invoice",
+          "1 business day support response",
+          "No user cap",
+          "Unlimited Docker Scout-enabled repos",
+          "Unlimited Docker Hub pull rate",
+          "Unlimited private Docker Hub repos",
+          "1,500 Docker Build Cloud build minutes",
+          "1,500 Testcontainers Cloud runtime minutes",
+          "100 Organization access tokens",
+          "Unlimited Docker Hub organizations",
+          "Docker Hardened Images (DHI)"
+        ]
+      }
+    ],
+    "features": [
+      "Docker Desktop",
+      "Docker Engine + Kubernetes",
+      "Docker Hub",
+      "Docker Scout",
+      "Docker Debug",
+      "Docker Build Cloud",
+      "Testcontainers Cloud",
+      "Synchronized File Shares",
+      "Audit logs",
+      "Single Sign-On (SSO)",
+      "SCIM user provisioning",
+      "Image and Registry Access Management",
+      "Desktop Insights Dashboard",
+      "Enhanced container Isolation (ECI)",
+      "Docker Hardened Images (DHI)"
+    ],
+    "category": "development",
+    "logo": "/logos/docker.svg",
+    "status": "active"
+  },
+  {
+    "slug": "postman",
+    "name": "Postman",
+    "tagline": "The world's leading API platform",
+    "description": "Postman is an API platform for building and using APIs. It simplifies each step of the API lifecycle.",
+    "rating": 4.6,
+    "reviewsCount": 13000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.postman.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0 per month",
+        "features": [
+          "50 AI credits",
+          "API client & core tools",
+          "Specs & mock servers",
+          "Native Git",
+          "Collection Runner & Performance Testing runs",
+          "Manual Flows"
+        ]
+      },
+      {
+        "plan": "Solo",
+        "price": "$9 per month (billed annually)",
+        "features": [
+          "Everything in Free",
+          "400 AI credits / month",
+          "Data-driven testing with exports",
+          "Unlimited private NPM packages & library",
+          "Custom-branded documentation",
+          "Unlimited custom domains",
+          "Expanded API monitoring"
+        ]
+      },
+      {
+        "plan": "Team",
+        "price": "$19 per user/month (billed annually)",
+        "features": [
+          "Everything in Solo",
+          "400 AI credits / user / month",
+          "Team collaboration",
+          "Unlimited workspace & collection viewers",
+          "Basic role-based access control (RBAC)",
+          "SDK generation",
+          "Simple Security (add-on)"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "$49 per user/month (billed annually)",
+        "features": [
+          "Everything in Team",
+          "800 AI credits / user / month (pooled)",
+          "API Catalog",
+          "Unlimited private and Partner workspaces",
+          "Private API Network",
+          "Advanced RBAC & organization controls",
+          "Governance, audit logs & reporting",
+          "Private test & Flows runners",
+          "Insights",
+          "Advanced Security Administration (add-on)"
+        ]
+      }
+    ],
+    "features": [
+      "API client & core tools",
+      "Specs & mock servers",
+      "Native Git",
+      "Collection Runner & Performance Testing runs",
+      "AI credits",
+      "Team collaboration",
+      "Role-based access control",
+      "API Catalog",
+      "Private API Network",
+      "Governance, audit logs & reporting"
+    ],
+    "category": "development",
+    "logo": "/logos/postman.svg",
+    "status": "active"
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "tagline": "One platform to connect",
+    "description": "Zoom is an all-in-one intelligent collaboration platform that makes connecting easier and more immersive.",
+    "rating": 4.5,
+    "reviewsCount": 25000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://zoom.us",
+    "pricing": [
+      {
+        "plan": "Basic",
+        "price": "Free",
+        "features": [
+          "Meeting duration 40 mins",
+          "Participant capacity 100",
+          "Local recording",
+          "Automated Captions",
+          "AI Companion AI note-taking 3",
+          "Speaker identification In Zoom Meetings",
+          "Cross platform support",
+          "Meeting summaries 3",
+          "In meeting questions 3",
+          "Group videos in channels 25 unique viewers",
+          "Persistent meeting chat",
+          "Direct, Channel, or Group Chat",
+          "Message and file history",
+          "Application Integrations",
+          "VoIP calling Unlimited internal calling",
+          "Metered outbound calling",
+          "Scheduler Limited features",
+          "Whiteboard 3",
+          "Canvas Limited features",
+          "Clips 5 Included",
+          "Custom Avatars 1 minute per lifetime",
+          "Mail Client",
+          "Calendar Client",
+          "Tasks Limited features",
+          "Workflow Automation Complimentary access",
+          "Hub Limited features",
+          "Cloud Storage 10 GB per user",
+          "Technical Support Knowledge Base",
+          "Zoom Community",
+          "Essential Apps Free premium Zoom apps for 1 year (terms apply)",
+          "Translated Captions",
+          "End-to-end encryption for Zoom Meetings",
+          "Enterprise-grade security features",
+          "Encryption by Default",
+          "GDPR control",
+          "Single sign-on via SAML 2.0"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$10/mo",
+        "features": [
+          "Meeting duration 30 hours",
+          "Participant capacity 100",
+          "Local & 10 GB cloud (per license)",
+          "Automated Captions",
+          "AI Companion AI note-taking Unlimited",
+          "Speaker identification In Zoom Meetings",
+          "Cross platform support",
+          "Meeting summaries Unlimited",
+          "In meeting questions Unlimited",
+          "Group videos in channels 25 unique viewers",
+          "Persistent meeting chat",
+          "Direct, Channel, or Group Chat",
+          "Message and file history",
+          "Application Integrations",
+          "VoIP calling Unlimited internal calling",
+          "Metered outbound calling",
+          "Scheduler Limited features",
+          "Whiteboard Unlimited",
+          "Canvas Limited features",
+          "Clips Unlimited",
+          "Custom Avatars 3 minutes per month",
+          "Mail Client",
+          "Calendar Client",
+          "Tasks Limited features",
+          "Workflow Automation Complimentary access",
+          "Hub Limited features",
+          "Cloud Storage 10 GB per user",
+          "Technical Support Knowledge Base",
+          "Zoom Community",
+          "Live Chat Support Accounts with subscriptions over $10.00 USD/month",
+          "Live Phone Support Accounts with subscriptions over $200.00 USD/month",
+          "Essential Apps Free premium Zoom apps for 1 year (terms apply)",
+          "Translated Captions",
+          "End-to-end encryption for Zoom Meetings",
+          "Enterprise-grade security features",
+          "Encryption by Default",
+          "GDPR control",
+          "Single sign-on via SAML 2.0"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$15/mo",
+        "features": [
+          "Meeting duration 30 hours",
+          "Participant capacity 300",
+          "Local & 10 GB cloud (per license)",
+          "Automated Captions",
+          "AI Companion AI note-taking Unlimited",
+          "Speaker identification In Zoom Meetings",
+          "Cross platform support",
+          "Meeting summaries Unlimited",
+          "In meeting questions Unlimited",
+          "Group videos in channels 25 unique viewers",
+          "Persistent meeting chat",
+          "Direct, Channel, or Group Chat",
+          "Message and file history",
+          "Application Integrations",
+          "VoIP calling Unlimited internal calling",
+          "Unlimited outbound calling",
+          "Scheduler Limited features",
+          "Whiteboard Unlimited",
+          "Canvas Limited features",
+          "Clips Unlimited",
+          "Custom Avatars 3 minutes per month",
+          "Mail Client",
+          "Calendar Client",
+          "Tasks Limited features",
+          "Workflow Automation Complimentary access",
+          "Hub Limited features",
+          "Cloud Storage 10 GB per user",
+          "Technical Support Knowledge Base",
+          "Zoom Community",
+          "Live Chat Support Accounts with subscriptions over $10.00 USD/month",
+          "Live Phone Support Accounts with subscriptions over $200.00 USD/month",
+          "Essential Apps Free premium Zoom apps for 1 year (terms apply)",
+          "Translated Captions",
+          "End-to-end encryption for Zoom Meetings",
+          "Enterprise-grade security features",
+          "Encryption by Default",
+          "GDPR control",
+          "Single sign-on via SAML 2.0"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Contact us for pricing",
+        "features": [
+          "Meeting duration 30 hours",
+          "Participant capacity 500+",
+          "Local & Unlimited cloud",
+          "Automated Captions",
+          "AI Companion AI note-taking Unlimited",
+          "Speaker identification In Zoom Meetings",
+          "Cross platform support",
+          "Meeting summaries Unlimited",
+          "In meeting questions Unlimited",
+          "Group videos in channels 25 unique viewers",
+          "Persistent meeting chat",
+          "Direct, Channel, or Group Chat",
+          "Message and file history",
+          "Application Integrations",
+          "VoIP calling Unlimited internal calling",
+          "Unlimited outbound calling",
+          "Scheduler Limited features",
+          "Whiteboard Unlimited",
+          "Canvas Limited features",
+          "Clips Unlimited",
+          "Custom Avatars 3 minutes per month",
+          "Mail Client",
+          "Calendar Client",
+          "Tasks Limited features",
+          "Workflow Automation Complimentary access",
+          "Hub Limited features",
+          "Cloud Storage Unlimited",
+          "Technical Support Knowledge Base",
+          "Zoom Community",
+          "Live Chat Support Accounts with subscriptions over $10.00 USD/month",
+          "Live Phone Support Accounts with subscriptions over $200.00 USD/month",
+          "Essential Apps Free premium Zoom apps for 1 year (terms apply)",
+          "Translated Captions",
+          "End-to-end encryption for Zoom Meetings",
+          "Enterprise-grade security features",
+          "Encryption by Default",
+          "GDPR control",
+          "Single sign-on via SAML 2.0"
+        ]
+      }
+    ],
+    "features": [
+      "Meetings",
+      "Chat",
+      "Mail & Calendar",
+      "AI Companion",
+      "My Notes",
+      "Phone",
+      "Scheduler",
+      "Canvas",
+      "Whiteboard",
+      "Clips",
+      "Workvivo",
+      "Webinars & Events",
+      "Bonsai",
+      "Contact Center",
+      "Revenue Accelerator",
+      "Spaces",
+      "Rooms",
+      "Workspace Reservation",
+      "Visitor Management",
+      "Industries"
+    ],
+    "category": "communication",
+    "logo": "/logos/zoom.svg",
+    "status": "active"
+  },
+  {
+    "slug": "confluence",
+    "name": "Confluence",
+    "tagline": "Where knowledge meets collaboration",
+    "description": "Confluence is a team workspace where knowledge and collaboration meet.",
+    "rating": 4.2,
+    "reviewsCount": 11000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.atlassian.com/software/confluence",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "Up to 10 users",
+          "2GB storage"
+        ]
+      },
+      {
+        "price": "$6.05/user/mo",
+        "plan": "Standard",
+        "features": [
+          "250GB storage",
+          "team calendars"
+        ]
+      },
+      {
+        "price": "$11.55/user/mo",
+        "plan": "Premium",
+        "features": [
+          "Analytics",
+          "admin insights",
+          "unlimited storage"
+        ]
+      },
+      {
+        "price": "Custom",
+        "plan": "Enterprise",
+        "features": [
+          "Cross-org",
+          "Atlassian Intelligence"
+        ]
+      }
+    ],
+    "features": [
+      "Rich text editor with templates",
+      "Real-time co-editing",
+      "Page trees and organization",
+      "Comments and inline comments",
+      "Integration with Jira and Trello",
+      "Team calendars",
+      "Content permissions"
+    ],
+    "category": "productivity",
+    "logo": "/logos/confluence.svg",
+    "status": "active"
+  },
+  {
+    "slug": "miro",
+    "name": "Miro",
+    "tagline": "The Innovation Workspace",
+    "description": "Miro is a visual collaboration platform for distributed teams to create, collaborate, and centralize communication.",
+    "rating": 4.7,
+    "reviewsCount": 9000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://miro.com",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "3 editable boards",
+          "5 AI credits/month"
+        ]
+      },
+      {
+        "price": "$8/user/mo",
+        "plan": "Starter",
+        "features": [
+          "Unlimited boards",
+          "board sharing"
+        ]
+      },
+      {
+        "price": "$16/user/mo",
+        "plan": "Business",
+        "features": [
+          "Advanced security",
+          "SSO",
+          "voting"
+        ]
+      },
+      {
+        "price": "Custom",
+        "plan": "Enterprise",
+        "features": [
+          "Data governance",
+          "premium support"
+        ]
+      }
+    ],
+    "features": [
+      "Infinite canvas whiteboard",
+      "Sticky notes and shapes",
+      "Real-time collaboration",
+      "100+ templates",
+      "Video chat integration",
+      "Voting and timer tools",
+      "Jira/Slack/Teams integrations"
+    ],
+    "category": "design",
+    "logo": "/logos/miro.svg",
+    "status": "active"
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "tagline": "Create apps that perfectly fit your team's needs",
+    "description": "Airtable is a low-code platform for building collaborative apps.",
+    "rating": 4.6,
+    "reviewsCount": 10000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://airtable.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "Free",
+        "features": [
+          "500 AI credits per editor each month",
+          "Unlimited bases",
+          "1,000 records per base",
+          "Up to 5 editors",
+          "1 GB of attachments per base",
+          "100 automation runs",
+          "Interface Designer"
+        ]
+      },
+      {
+        "plan": "Team",
+        "price": "$20/seat/month billed annually",
+        "features": [
+          "15,000 AI credits per paid user each month",
+          "50,000 records per base",
+          "25,000 automation runs",
+          "20 GB of attachments per base",
+          "Standard sync integrations",
+          "Extensions",
+          "Gantt and timeline view",
+          "Expanded color, formatting, and calendar options",
+          "Portals: Starting from $120 for 15 guests/month"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$45/seat/month billed annually",
+        "features": [
+          "20,000 AI credits per paid user each month",
+          "125,000 records per base",
+          "100,000 automation runs",
+          "100 GB of attachments per base",
+          "Premium sync integrations",
+          "Verified data",
+          "Two-way sync",
+          "Admin panel",
+          "SAML-based single sign-on",
+          "App Sandbox",
+          "Roadmap view and Exec Summary cards",
+          "AI Admin controls",
+          "Portals: Starting from $150 for 15 guests/month"
+        ]
+      },
+      {
+        "plan": "Enterprise Scale",
+        "price": "Custom pricing",
+        "features": [
+          "25,000 AI credits per paid user each month at list price",
+          "500,000 records per base",
+          "500,000 automation runs",
+          "1,000 GB of attachments per base",
+          "Enterprise Scale Integrations",
+          "App Library",
+          "HyperDB",
+          "Enterprise Hub",
+          "Enhanced security and admin controls",
+          "Enterprise API",
+          "Extension and integration management",
+          "Audit logs and DLP",
+          "AI Admin controls",
+          "Portals: Contact sales"
+        ]
+      }
+    ],
+    "features": [
+      "Unlimited bases",
+      "Records per base up to 500,000",
+      "AI credits per editor",
+      "Automation runs",
+      "Attachment space per base",
+      "Interface Designer",
+      "Extensions",
+      "Gantt and timeline view",
+      "SAML-based single sign-on",
+      "Admin panel",
+      "Audit logs and DLP",
+      "Enterprise API"
+    ],
+    "category": "productivity",
+    "logo": "/logos/airtable.svg",
+    "status": "active"
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "tagline": "Make work less work",
+    "description": "Zapier is a no-code automation tool that connects your apps and automates repetitive tasks across 7,000+ apps.",
+    "rating": 4.7,
+    "reviewsCount": 14000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://zapier.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo",
+        "features": [
+          "100 tasks per month",
+          "Unlimited Zaps, Tables and Forms",
+          "Two-step Zaps",
+          "Zapier Copilot (daily message limits)"
+        ]
+      }
+    ],
+    "features": [
+      "Zapier automation platform",
+      "Unlimited Zaps, Tables and Forms",
+      "Two-step Zaps",
+      "Zapier Copilot"
+    ],
+    "category": "productivity",
+    "logo": "/logos/zapier.svg",
+    "status": "active"
+  },
+  {
+    "slug": "vercel",
+    "name": "Vercel",
+    "tagline": "Build and deploy the best web experiences",
+    "description": "Vercel is a platform for frontend developers, providing the speed and reliability to create at the moment of inspiration.",
+    "rating": 4.7,
+    "reviewsCount": 8000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://vercel.com",
+    "pricing": [
+      {
+        "plan": "Hobby",
+        "price": "Free",
+        "features": []
+      },
+      {
+        "plan": "Pro",
+        "price": "$20/mo",
+        "features": []
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": []
+      }
+    ],
+    "features": [
+      "Serverless functions",
+      "Edge network (global CDN)",
+      "Automatic HTTPS/SSL",
+      "Preview deployments",
+      "Git integration (GitHub/GitLab/Bitbucket)",
+      "Framework support (Next.js, React, Vue, etc.)",
+      "Analytics and Web Vitals"
+    ],
+    "category": "development",
+    "logo": "/logos/vercel.svg",
+    "status": "active"
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "tagline": "The open source Firebase alternative",
+    "description": "Supabase is an open source Firebase alternative providing all the backend services you need to build a product.",
+    "rating": 4.7,
+    "reviewsCount": 7000,
+    "openSource": true,
+    "githubStars": 75000,
+    "githubUrl": "https://github.com/supabase/supabase",
+    "websiteUrl": "https://supabase.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/month",
+        "features": [
+          "Dedicated Postgres Database",
+          "Unlimited API requests",
+          "500 MB database size per project",
+          "5 GB egress",
+          "Unlimited users",
+          "50,000 MAUs",
+          "User data ownership",
+          "Anonymous Sign-ins",
+          "Social OAuth providers",
+          "Custom SMTP server",
+          "1 hour Auth Audit Logs",
+          "Basic Multi-Factor Auth",
+          "50,000 Third-Party MAUs",
+          "1 GB storage",
+          "5 GB cached egress",
+          "Custom access controls",
+          "50 MB max file upload size",
+          "Basic CDN",
+          "Postgres Changes",
+          "200 concurrent peak connections",
+          "2 million messages per month",
+          "256 KB max message size",
+          "500,000 Edge Function invocations",
+          "Unlimited team members",
+          "1 day log retention",
+          "Community Support"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$25/month",
+        "features": [
+          "Dedicated Postgres Database",
+          "Unlimited API requests",
+          "8 GB disk size per project (then $0.125 per GB)",
+          "Advanced disk config",
+          "7 day automatic backups",
+          "Point in time recovery ($100/month per 7 days retention)",
+          "Never pausing",
+          "Branching ($0.01344 per branch per hour)",
+          "250 GB egress (then $0.09 per GB)",
+          "Unlimited users",
+          "100,000 MAUs (then $0.00325 per MAU)",
+          "User data ownership",
+          "Anonymous Sign-ins",
+          "Social OAuth providers",
+          "Custom SMTP server",
+          "Remove Supabase branding from emails",
+          "7 day Auth Audit Logs",
+          "Basic Multi-Factor Auth",
+          "Advanced Multi-Factor Auth - Phone ($75/month first project, $10/month additional)",
+          "100,000 Third-Party MAUs (then $0.00325 per MAU)",
+          "Single Sign-On (SAML 2.0) (50 included, then $0.015 per MAU)",
+          "Leaked password protection",
+          "Single session per user",
+          "Session timeouts",
+          "Auth Hooks (Custom Access Token JWT, Send custom email/SMS)",
+          "100 GB storage (then $0.021 per GB)",
+          "250 GB cached egress (then $0.03 per GB)",
+          "Custom access controls",
+          "500 GB max file upload size",
+          "Smart CDN",
+          "100 origin images included (then $5 per 1000 origin images)",
+          "Postgres Changes",
+          "500 concurrent peak connections (then $10 per 1000)",
+          "5 million messages per month (then $2.50 per million)",
+          "3 MB max message size",
+          "2 million Edge Function invocations (then $2 per 1 million)",
+          "Unlimited team members",
+          "7 day log retention",
+          "Log Drain ($60 per drain per month + $0.20 per million events + $0.09 per GB egress)",
+          "Metrics endpoint",
+          "Vanity URLs",
+          "Custom Domains ($10 per domain per month per project add on)",
+          "Email Support"
+        ]
+      },
+      {
+        "plan": "Team",
+        "price": "$599/month",
+        "features": [
+          "Dedicated Postgres Database",
+          "Unlimited API requests",
+          "8 GB disk size per project (then $0.125 per GB)",
+          "Advanced disk config",
+          "14 day automatic backups",
+          "Point in time recovery ($100/month per 7 days retention)",
+          "Never pausing",
+          "Branching ($0.01344 per branch per hour)",
+          "250 GB egress (then $0.09 per GB)",
+          "Unlimited users",
+          "100,000 MAUs (then $0.00325 per MAU)",
+          "User data ownership",
+          "Anonymous Sign-ins",
+          "Social OAuth providers",
+          "Custom SMTP server",
+          "Remove Supabase branding from emails",
+          "28 day Auth Audit Logs",
+          "Basic Multi-Factor Auth",
+          "Advanced Multi-Factor Auth - Phone ($75/month first project, $10/month additional)",
+          "100,000 Third-Party MAUs (then $0.00325 per MAU)",
+          "Single Sign-On (SAML 2.0) (50 included, then $0.015 per MAU)",
+          "Leaked password protection",
+          "Single session per user",
+          "Session timeouts",
+          "Auth Hooks (All)",
+          "100 GB storage (then $0.021 per GB)",
+          "250 GB cached egress (then $0.03 per GB)",
+          "Custom access controls",
+          "500 GB max file upload size",
+          "Smart CDN",
+          "100 origin images included (then $5 per 1000 origin images)",
+          "Postgres Changes",
+          "500 concurrent peak connections (then $10 per 1000)",
+          "5 million messages per month (then $2.50 per million)",
+          "3 MB max message size",
+          "2 million Edge Function invocations (then $2 per 1 million)",
+          "Unlimited team members",
+          "28 day log retention",
+          "Log Drain ($60 per drain per month + $0.20 per million events + $0.09 per GB egress)",
+          "Platform Audit Logs",
+          "Metrics endpoint",
+          "SOC2",
+          "ISO 27001",
+          "HIPAA (available as paid add-on)",
+          "AWS PrivateLink",
+          "Vanity URLs",
+          "Custom Domains ($10 per domain per month per project add on)",
+          "Email Support",
+          "Email Support SLA",
+          "Security Questionnaire Help"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Dedicated Postgres Database",
+          "Unlimited API requests",
+          "Custom database size",
+          "Advanced disk config",
+          "Custom automatic backups",
+          "Point in time recovery (custom retention)",
+          "Never pausing",
+          "Custom branching",
+          "Custom egress",
+          "Unlimited users",
+          "Custom MAUs",
+          "User data ownership",
+          "Anonymous Sign-ins",
+          "Social OAuth providers",
+          "Custom SMTP server",
+          "Remove Supabase branding from emails",
+          "Auth Audit Logs included",
+          "Basic Multi-Factor Auth",
+          "Advanced Multi-Factor Auth - Phone (custom)",
+          "Custom Third-Party MAUs",
+          "Single Sign-On (SAML 2.0) (Contact Us)",
+          "Leaked password protection",
+          "Single session per user",
+          "Session timeouts",
+          "Auth Hooks (All)",
+          "Advanced security features (Contact Us)",
+          "Custom storage",
+          "Custom cached egress",
+          "Custom access controls",
+          "Custom max file upload size",
+          "Smart CDN",
+          "Custom image transformations",
+          "Postgres Changes",
+          "Custom concurrent connections and volume discount",
+          "Volume discounts on messages",
+          "Custom max message size",
+          "Custom Edge Function invocations",
+          "Unlimited team members",
+          "BYO cloud",
+          "90 day log retention",
+          "Custom Log Drain",
+          "Platform Audit Logs",
+          "Metrics endpoint",
+          "SOC2",
+          "ISO 27001",
+          "HIPAA (available as paid add-on)",
+          "AWS PrivateLink",
+          "SSO (Contact Us)",
+          "Uptime SLAs",
+          "Custom project scoped roles",
+          "Vanity URLs",
+          "Custom Domains (1, additional $10/domain/month)",
+          "Community Support",
+          "Email Support",
+          "Email Support SLA",
+          "Designated support",
+          "On Boarding Support",
+          "Designated Customer Success Team",
+          "Security Questionnaire Help"
+        ]
+      }
+    ],
+    "features": [
+      "Dedicated Postgres Database",
+      "Unlimited API requests",
+      "Database size",
+      "Egress",
+      "Auth (MAUs, SSO, MFA)",
+      "Storage",
+      "Realtime",
+      "Edge Functions",
+      "Log retention",
+      "Support"
+    ],
+    "category": "development",
+    "logo": "/logos/supabase.svg",
+    "status": "active"
+  },
+  {
+    "slug": "microsoft-teams",
+    "name": "Microsoft Teams",
+    "tagline": "Hub for teamwork in Microsoft 365",
+    "description": "Microsoft Teams is a collaboration platform that combines workplace chat, video meetings, file storage, and application integration. It's deeply integrated with Microsoft 365 and serves as the hub for teamwork.",
+    "rating": 4.4,
+    "reviewsCount": 42000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.microsoft.com/microsoft-teams",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "100 participants",
+          "60-min meetings",
+          "5GB storage"
+        ]
+      },
+      {
+        "price": "$4/user/mo",
+        "plan": "Essentials",
+        "features": [
+          "300 participants",
+          "30-hour meetings",
+          "10GB storage"
+        ]
+      },
+      {
+        "price": "$6/user/mo",
+        "plan": "Business Basic",
+        "features": [
+          "300 participants",
+          "web versions of Office apps"
+        ]
+      },
+      {
+        "price": "$12.50/user/mo",
+        "plan": "Business Standard",
+        "features": [
+          "Desktop Office apps",
+          "webinars",
+          "phone system"
+        ]
+      }
+    ],
+    "features": [
+      "Video meetings and webinars",
+      "Team chat and channels",
+      "File sharing with SharePoint",
+      "Office 365 integration",
+      "App integrations and bots",
+      "Phone system (Teams Phone)",
+      "Together mode and virtual backgrounds"
+    ],
+    "category": "communication",
+    "logo": "/logos/teams.svg",
+    "status": "active"
+  },
+  {
+    "slug": "google-meet",
+    "name": "Google Meet",
+    "tagline": "Video meetings for Google Workspace",
+    "description": "Google Meet is a video conferencing solution that's part of Google Workspace. It provides secure, high-quality video meetings with deep integration into Google Calendar, Gmail, and other Google services.",
+    "rating": 4.5,
+    "reviewsCount": 28000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://meet.google.com",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "60-min meetings",
+          "100 participants",
+          "live captions"
+        ]
+      },
+      {
+        "price": "$7.20/user/mo",
+        "plan": "Business Starter",
+        "features": [
+          "100 participants",
+          "24-hour meetings",
+          "30GB storage"
+        ]
+      },
+      {
+        "price": "$14.40/user/mo",
+        "plan": "Business Standard",
+        "features": [
+          "150 participants",
+          "recording",
+          "noise cancellation"
+        ]
+      },
+      {
+        "price": "$21.60/user/mo",
+        "plan": "Business Plus",
+        "features": [
+          "500 participants",
+          "attendance tracking",
+          "5TB storage"
+        ]
+      }
+    ],
+    "features": [
+      "HD video meetings",
+      "Screen sharing",
+      "Live captions and translation",
+      "Meeting recording (Google Drive)",
+      "Calendar integration",
+      "Breakout rooms",
+      "Companion mode for hybrid meetings"
+    ],
+    "category": "communication",
+    "logo": "/logos/meet.svg",
+    "status": "active"
+  },
+  {
+    "slug": "telegram",
+    "name": "Telegram",
+    "tagline": "Cloud-based mobile and desktop messaging app",
+    "description": "Telegram is a cloud-based messaging app known for its speed, security, and powerful features. It supports large groups, channels, bots, and file sharing with no size limits on cloud storage.",
+    "rating": 4.6,
+    "reviewsCount": 35000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://telegram.org",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "All features",
+          "unlimited cloud storage",
+          "no ads"
+        ]
+      },
+      {
+        "price": "$4.99/mo",
+        "plan": "Telegram Premium",
+        "features": [
+          "4GB uploads",
+          "faster downloads",
+          "voice-to-text",
+          "no ads"
+        ]
+      }
+    ],
+    "features": [
+      "End-to-end encrypted secret chats",
+      "Groups up to 200,000 members",
+      "Channels for broadcasting",
+      "Bot platform",
+      "File sharing up to 2GB (4GB premium)",
+      "Cross-platform sync",
+      "Self-destructing messages"
+    ],
+    "category": "communication",
+    "logo": "/logos/telegram.svg",
+    "status": "active"
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "tagline": "Your AI pair programmer",
+    "description": "GitHub Copilot is an AI-powered code assistant that helps you write code faster. It offers inline suggestions, chat-based assistance, and can generate entire functions from natural language descriptions.",
+    "rating": 4.6,
+    "reviewsCount": 18000,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://github.com/features/copilot",
+    "pricing": [
+      {
+        "price": "$0",
+        "plan": "Free",
+        "features": [
+          "2",
+          "000 completions",
+          "50 chat messages/month"
+        ]
+      },
+      {
+        "price": "$10/mo",
+        "plan": "Individual",
+        "features": [
+          "Unlimited completions",
+          "unlimited chat"
+        ]
+      },
+      {
+        "price": "$19/user/mo",
+        "plan": "Business",
+        "features": [
+          "Organization features",
+          "policy management"
+        ]
+      },
+      {
+        "price": "$39/user/mo",
+        "plan": "Enterprise",
+        "features": [
+          "Custom models",
+          "knowledge base integration"
+        ]
+      }
+    ],
+    "features": [
+      "Inline code suggestions",
+      "Chat-based code generation",
+      "Multi-language support",
+      "IDE integration (VS Code, JetBrains, Neovim)",
+      "Pull request summaries",
+      "CLI assistance",
+      "Knowledge base for enterprise"
+    ],
+    "category": "development",
+    "logo": "/logos/copilot.svg",
+    "status": "active"
+  },
+  {
+    "slug": "resend",
+    "name": "Resend",
+    "tagline": "Email API for developers",
+    "description": "Resend is a modern email API designed for developers. It offers a simple, developer-friendly interface for sending transactional emails, with features like React Email integration, webhooks, and detailed analytics.",
+    "rating": 4.7,
+    "reviewsCount": 120,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://resend.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo",
+        "features": [
+          "3,000 emails/month",
+          "100 emails/day",
+          "1 domain"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$20/mo",
+        "features": [
+          "50,000 emails/month",
+          "1,000 emails/day",
+          "10 domains",
+          "Webhooks"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited emails",
+          "Dedicated IP",
+          "Priority support"
+        ]
+      }
+    ],
+    "features": [
+      "REST API",
+      "React Email",
+      "Webhooks",
+      "Email analytics",
+      "DKIM/SPF/DMARC"
+    ],
+    "category": "email",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "slug": "cal-com",
+    "name": "Cal.com",
+    "tagline": "Open source scheduling infrastructure",
+    "description": "Cal.com is an open source scheduling platform that allows individuals and businesses to manage appointments, meetings, and events. It integrates with Google Calendar, Outlook, and many other tools.",
+    "rating": 4.6,
+    "reviewsCount": 95,
+    "openSource": true,
+    "githubStars": 32000,
+    "githubUrl": "https://github.com/calcom/cal.com",
+    "websiteUrl": "https://cal.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo",
+        "features": [
+          "1 calendar connection",
+          "Unlimited bookings",
+          "Custom branding"
+        ]
+      },
+      {
+        "plan": "Teams",
+        "price": "$15/user/mo",
+        "features": [
+          "Multiple calendars",
+          "Round-robin",
+          "Workflow automations"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "SSO",
+          "Advanced routing",
+          "Dedicated support"
+        ]
+      }
+    ],
+    "features": [
+      "Calendar sync",
+      "Booking pages",
+      "Workflow automations",
+      "Team scheduling",
+      "API access"
+    ],
+    "category": "scheduling",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "slug": "unkey",
+    "name": "Unkey",
+    "tagline": "API key management for developers",
+    "description": "Unkey is an open source API key management platform. It provides fast key verification, rate limiting, and usage tracking, making it easy to manage API access for your applications.",
+    "rating": 4.5,
+    "reviewsCount": 45,
+    "openSource": true,
+    "githubStars": 4200,
+    "githubUrl": "https://github.com/unkeyed/unkey",
+    "websiteUrl": "https://unkey.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo",
+        "features": [
+          "1,000 verifications/month",
+          "100 keys",
+          "Rate limiting"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$25/mo",
+        "features": [
+          "100,000 verifications/month",
+          "Unlimited keys",
+          "Analytics"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited verifications",
+          "SSO",
+          "Priority support"
+        ]
+      }
+    ],
+    "features": [
+      "API key generation",
+      "Key verification",
+      "Rate limiting",
+      "Usage analytics",
+      "Multi-tenant support"
+    ],
+    "category": "developer-tools",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "slug": "trigger-dev",
+    "name": "Trigger.dev",
+    "tagline": "Background jobs framework for TypeScript",
+    "description": "Trigger.dev is an open source background jobs framework for TypeScript. It allows you to create long-running jobs with built-in retries, scheduling, and observability, without managing infrastructure.",
+    "rating": 4.6,
+    "reviewsCount": 68,
+    "openSource": true,
+    "githubStars": 11000,
+    "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
+    "websiteUrl": "https://trigger.dev",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo",
+        "features": [
+          "5,000 runs/month",
+          "1 concurrent run",
+          "Community support"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$25/mo",
+        "features": [
+          "50,000 runs/month",
+          "5 concurrent runs",
+          "Alerts"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited runs",
+          "SSO",
+          "Dedicated support"
+        ]
+      }
+    ],
+    "features": [
+      "Background jobs",
+      "Cron scheduling",
+      "Retries",
+      "Observability",
+      "Webhook triggers"
+    ],
+    "category": "developer-tools",
+    "logo": "",
+    "status": "active"
   }
 ]

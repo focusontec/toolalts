@@ -12,6 +12,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.toolalts.dev/blog/",
   },
+  openGraph: {
+    type: "website",
+    title: "Blog — ToolAlts",
+    description: "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
+    url: "https://www.toolalts.dev/blog/",
+    siteName: "ToolAlts",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — ToolAlts",
+    description: "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
+  },
 };
 
 async function loadPosts(): Promise<BlogPost[]> {

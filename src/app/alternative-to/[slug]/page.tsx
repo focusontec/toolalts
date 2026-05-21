@@ -20,10 +20,24 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = getActiveToolBySlug(slug);
   if (!tool) return { title: "Not Found" };
+  const altTitle = `Best ${tool.name} Alternatives — Open Source \u0026 Paid | ToolAlts`;
+  const altDescription = `Discover the best alternatives to ${tool.name}. Compare features, pricing, and ratings side by side to find the right ${tool.category} tool for you.`;
   return {
-    title: `Best ${tool.name} Alternatives — Open Source \u0026 Paid | ToolAlts`,
-    description: `Discover the best alternatives to ${tool.name}. Compare features, pricing, and ratings side by side to find the right ${tool.category} tool for you.`,
+    title: altTitle,
+    description: altDescription,
     alternates: { canonical: `https://www.toolalts.dev/alternative-to/${slug}/` },
+    openGraph: {
+      type: "website",
+      title: altTitle,
+      description: altDescription,
+      url: `https://www.toolalts.dev/alternative-to/${slug}/`,
+      siteName: "ToolAlts",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: altTitle,
+      description: altDescription,
+    },
   };
 }
 
