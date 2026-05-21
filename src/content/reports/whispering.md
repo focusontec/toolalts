@@ -2,36 +2,36 @@
 slug: "whispering"
 name: "Whispering"
 decision: "REJECT"
-confidence: 90
+confidence: 100
 category: "other"
-processedAt: "2026-05-21T02:00:41.991Z"
+processedAt: "2026-05-21T07:40:51.533Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: REJECT (90/100 confidence)
+## Decision: REJECT (100/100 confidence)
 
 | Metric | Score |
 |--------|-------|
 | Verification Score | 20/100 |
-| Quality Score | 10/100 |
-| Consistency Score | 30/100 |
+| Quality Score | 0/100 |
+| Consistency Score | 50/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: An open-source, local-first app within the Epicenter monorepo.
-- **Features**: Open-source, Local-first, Part of Epicenter monorepo
+- **Tagline**: Whispering is a local-first, open-source app for voice transcription and note-taking, but it is not a standalone tool.
+- **Features**: Local-first voice transcription, Open-source, Part of Epicenter ecosystem
 - **Pricing**: Free ($0)
 
 ## Concerns
 - No standalone GitHub repository; only a subdirectory in a monorepo.
-- No stars, forks, or community signals available.
-- No independent website or documentation.
-- Purpose and features are unclear from available evidence.
+- No independent GitHub stars, forks, or activity data.
+- Website URL is a GitHub tree path, not a dedicated product page.
+- No evidence of active maintenance or community adoption.
 
 ## Full Analysis
 
-Whispering is presented as an app within the Epicenter monorepo on GitHub. The provided URL points to a directory in the monorepo, not a standalone repository. The website is reachable but only shows the monorepo's README, with no specific information about Whispering. No GitHub data (stars, forks) is available because it is not a separate repo. The description 'open-source, local-first apps' is generic. There is no evidence of community adoption, recent updates, or independent verification. The tool appears to be a minor component of a larger project, lacking sufficient standalone identity or documentation. Therefore, it is rejected as a verifiable software tool.
+Whispering is listed as a Hacker News Show HN submission, but the provided website URL points to a subdirectory within the Epicenter monorepo on GitHub. There is no standalone repository, no GitHub stars or forks data, and no dedicated product website. The websiteMeta description confirms it is part of a larger project. Without independent evidence of a maintained, standalone tool, Whispering cannot be verified as a real product. The decision is REJECT with low verification and quality scores.
