@@ -1,13 +1,31 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.toolalts.dev"),
   title: "ToolAlts — Best Open Source & Paid Alternatives to Popular Tools",
   description:
     "Discover the best open source and paid alternatives to popular software tools. Compare features, pricing, and ratings side by side.",
+  icons: { icon: "/favicon.svg" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "ToolAlts",
+    title: "ToolAlts — Best Open Source & Paid Alternatives to Popular Tools",
+    description:
+      "Discover the best open source and paid alternatives to popular software tools. Compare features, pricing, and ratings side by side.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ToolAlts — Best Open Source & Paid Alternatives to Popular Tools",
+    description:
+      "Discover the best open source and paid alternatives to popular software tools. Compare features, pricing, and ratings side by side.",
+  },
+  robots: { index: true, follow: true },
 };
 
 function Nav() {
@@ -25,6 +43,7 @@ function Nav() {
             { href: "/", label: "Home" },
             { href: "/blog/", label: "Blog" },
             { href: "/reports/", label: "Reports" },
+            { href: "/submit/", label: "Submit a Tool" },
           ].map((item) => (
             <Link
               key={item.href}
@@ -58,6 +77,7 @@ function Footer() {
               { href: "/blog/", label: "Blog" },
               { href: "/reports/", label: "Reports" },
               { href: "/category/", label: "Categories" },
+              { href: "/submit/", label: "Submit a Tool" },
             ].map((link) => (
               <Link
                 key={link.href}
@@ -85,6 +105,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PGX7THVY9L"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PGX7THVY9L');
+          `}
+        </Script>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
