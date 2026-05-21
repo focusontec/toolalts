@@ -4,7 +4,7 @@ name: "Hyperdiv"
 decision: "AMBIGUOUS"
 confidence: 60
 category: "development"
-processedAt: "2026-05-21T07:40:44.841Z"
+processedAt: "2026-05-21T10:57:49.283Z"
 ---
 
 # AI Verification Report: Hyperdiv
@@ -15,22 +15,22 @@ processedAt: "2026-05-21T07:40:44.841Z"
 |--------|-------|
 | Verification Score | 50/100 |
 | Quality Score | 30/100 |
-| Consistency Score | 70/100 |
+| Consistency Score | 80/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/hyperdiv/hyperdiv
 - **GitHub**: https://github.com/undefined
 - **Category**: development
-- **Tagline**: Build reactive web UIs in Python.
-- **Features**: Reactive UI components, Python-based development, Web UI framework
+- **Tagline**: Build reactive web UIs in Python with Hyperdiv.
+- **Features**: Reactive UI components, Python-based development, Web framework integration
 - **Pricing**: Free ($0)
 
 ## Concerns
-- GitHub data not available (stars, forks, last update unknown)
-- Website URL is GitHub repository, not a dedicated product site
-- No evidence of community adoption or maintenance activity
+- GitHub data not available; cannot verify stars, forks, or last update.
+- Website URL points to GitHub repository, not a dedicated product site.
+- No evidence of community adoption or maintenance activity.
 
 ## Full Analysis
 
-The tool 'Hyperdiv' was discovered via Hacker News 'Show HN'. The provided website URL points directly to its GitHub repository, which is reachable. However, no GitHub statistics (stars, forks, last update) are available in the evidence, making it impossible to assess project activity or popularity. The GitHub description matches the website meta description, indicating consistency. The tool appears to be an open-source Python framework for building reactive web UIs. Without additional data on maintenance or community engagement, the quality score is low. The decision is AMBIGUOUS due to insufficient evidence to fully verify the tool's status.
+The tool Hyperdiv is described as a Python framework for building reactive web UIs. The evidence comes from a Hacker News 'Show HN' post and the GitHub repository. The website URL provided is the GitHub repo itself, which is reachable but lacks detailed project metadata (stars, forks, last commit) in the evidence. The description from the GitHub page is consistent: 'Build reactive web UIs in Python.' However, without GitHub statistics or a dedicated website, it is difficult to assess quality and community activity. The tool appears to be open source, but there is no information on pricing tiers beyond free. Given the lack of verifiable data, the decision is AMBIGUOUS with moderate confidence.
