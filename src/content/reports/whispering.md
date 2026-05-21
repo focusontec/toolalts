@@ -2,14 +2,14 @@
 slug: "whispering"
 name: "Whispering"
 decision: "REJECT"
-confidence: 95
+confidence: 90
 category: "other"
-processedAt: "2026-05-20T21:29:27.157Z"
+processedAt: "2026-05-21T02:00:41.991Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: REJECT (95/100 confidence)
+## Decision: REJECT (90/100 confidence)
 
 | Metric | Score |
 |--------|-------|
@@ -22,16 +22,16 @@ processedAt: "2026-05-20T21:29:27.157Z"
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: A component within a larger open-source project, not a standalone tool.
-- **Features**: 
-- **Pricing**: 
+- **Tagline**: An open-source, local-first app within the Epicenter monorepo.
+- **Features**: Open-source, Local-first, Part of Epicenter monorepo
+- **Pricing**: Free ($0)
 
 ## Concerns
-- Not a standalone tool; it's a subdirectory in a monorepo.
-- No dedicated website or documentation.
-- No GitHub stars, forks, or activity data available.
-- Cannot verify features, pricing, or community adoption.
+- No standalone GitHub repository; only a subdirectory in a monorepo.
+- No stars, forks, or community signals available.
+- No independent website or documentation.
+- Purpose and features are unclear from available evidence.
 
 ## Full Analysis
 
-The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL is actually a GitHub directory within the Epicenter monorepo. The website meta description indicates it is part of an open-source project called Epicenter. There is no standalone website, no GitHub repository for Whispering itself, and no evidence of it being a distinct product. The website is reachable but only shows the GitHub directory. Without a dedicated repository, stars, or community signals, it is impossible to verify this as a real, maintained tool. Therefore, the decision is REJECT due to lack of standalone identity and verifiable data.
+Whispering is presented as an app within the Epicenter monorepo on GitHub. The provided URL points to a directory in the monorepo, not a standalone repository. The website is reachable but only shows the monorepo's README, with no specific information about Whispering. No GitHub data (stars, forks) is available because it is not a separate repo. The description 'open-source, local-first apps' is generic. There is no evidence of community adoption, recent updates, or independent verification. The tool appears to be a minor component of a larger project, lacking sufficient standalone identity or documentation. Therefore, it is rejected as a verifiable software tool.
