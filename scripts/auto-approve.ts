@@ -124,7 +124,7 @@ function verifiedToTool(v: any): Tool {
     name: v.name,
     tagline: v.tagline || `${v.name} — ${v.category}`,
     description: v.description || v.tagline || "",
-    rating: Math.min(5, Math.max(1, (v.qualityScore || 50) / 20)),
+    rating: 0, // Will be populated by scrape-reviews.ts with real data
     reviewsCount: 0,
     openSource: isOpenSource,
     githubStars: v.rawData?.stars || null,

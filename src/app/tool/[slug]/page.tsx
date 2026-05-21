@@ -24,7 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: "Not Found — ToolAlts", description: "This page could not be found." };
   }
   const title = `${tool.name} — Reviews, Pricing & Alternatives | ToolAlts`;
-  const description = `${tool.tagline}. Read reviews, compare pricing, and find the best alternatives to ${tool.name}. Rating: ${tool.rating}/5 from ${tool.reviewsCount.toLocaleString()} reviews.`;
+  const ratingText = tool.rating > 0 ? ` Rating: ${tool.rating}/5 from ${tool.reviewsCount.toLocaleString()} reviews.` : "";
+  const description = `${tool.tagline}. Read reviews, compare pricing, and find the best alternatives to ${tool.name}.${ratingText}`;
   return {
     title,
     description,
@@ -54,6 +55,7 @@ function getAlternatives(tool: Tool): Tool[] {
 function getPros(tool: Tool): string[] {
   const pros: string[] = [];
   if (tool.rating >= 4.5) pros.push(`Highly rated at ${tool.rating}/5 from ${tool.reviewsCount.toLocaleString()} reviews`);
+  else if (tool.rating === 0) pros.push("New tool — early adopter advantage");
   if (tool.openSource) pros.push("Open source — free to use and self-host");
   if (tool.features.length >= 6) pros.push(`Rich feature set with ${tool.features.length}+ capabilities`);
   if (tool.pricing.some((p) => p.price === "$0" || p.price.toLowerCase().includes("free")))
@@ -66,7 +68,8 @@ function getPros(tool: Tool): string[] {
 
 function getCons(tool: Tool): string[] {
   const cons: string[] = [];
-  if (tool.rating < 4.0) cons.push(`Lower rating at ${tool.rating}/5 compared to competitors`);
+  if (tool.rating > 0 && tool.rating < 4.0) cons.push(`Lower rating at ${tool.rating}/5 compared to competitors`);
+  else if (tool.rating === 0) cons.push("No verified reviews yet — limited community feedback");
   if (!tool.openSource) cons.push("Proprietary — vendor lock-in risk");
   if (tool.features.length < 5) cons.push("Limited feature set compared to alternatives");
   if (!tool.pricing.some((p) => p.price === "$0" || p.price.toLowerCase().includes("free")))
@@ -112,7 +115,9 @@ function getFAQ(tool: Tool): { question: string; answer: string }[] {
   return [
     {
       question: `What is ${tool.name}?`,
-      answer: `${tool.name} is ${tool.tagline.toLowerCase().endsWith(".") ? tool.tagline.slice(0, -1) : tool.tagline}. It has a ${tool.rating}/5 rating from ${tool.reviewsCount.toLocaleString()} reviews.`,
+      answer: tool.rating > 0
+        ? `${tool.name} is ${tool.tagline.toLowerCase().endsWith(".") ? tool.tagline.slice(0, -1) : tool.tagline}. It has a ${tool.rating}/5 rating from ${tool.reviewsCount.toLocaleString()} reviews.`
+        : `${tool.name} is ${tool.tagline.toLowerCase().endsWith(".") ? tool.tagline.slice(0, -1) : tool.tagline}.`,
     },
     {
       question: `Is ${tool.name} free?`,
@@ -144,14 +149,13 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const useCases = getUseCases(tool);
   const faq = getFAQ(tool);
 
-  const schema = {
+  const schema: Record<string, any> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: tool.name,
     description: tool.tagline,
     applicationCategory: tool.category,
     url: tool.websiteUrl,
-    aggregateRating: { "@type": "AggregateRating", ratingValue: tool.rating, reviewCount: tool.reviewsCount },
     offers: tool.pricing.map((p) => ({
       "@type": "Offer",
       name: p.plan,
@@ -159,6 +163,9 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       priceCurrency: "USD",
     })),
   };
+  if (tool.rating > 0) {
+    schema.aggregateRating = { "@type": "AggregateRating", ratingValue: tool.rating, reviewCount: tool.reviewsCount };
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -211,11 +218,19 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
 
           {/* Badges */}
           <div className="mt-6 flex flex-wrap items-center gap-2.5">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-amber-light)] px-3 py-1 text-sm font-semibold text-[var(--color-amber-warm)]">
-              <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-              {tool.rating}
-            </span>
-            <span className="text-sm text-[var(--color-ink-faint)]">{tool.reviewsCount.toLocaleString()} reviews</span>
+            {tool.rating > 0 ? (
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-amber-light)] px-3 py-1 text-sm font-semibold text-[var(--color-amber-warm)]">
+                  <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  {tool.rating}
+                </span>
+                <span className="text-sm text-[var(--color-ink-faint)]">{tool.reviewsCount.toLocaleString()} reviews</span>
+              </>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-border)] px-3 py-1 text-sm font-medium text-[var(--color-ink-faint)]">
+                Not yet rated
+              </span>
+            )}
             {tool.openSource && (
               <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-success-light)] px-3 py-1 text-sm font-semibold text-[var(--color-success)]">
                 <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
@@ -364,12 +379,14 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
               </div>
               <div className="flex justify-between">
                 <dt className="text-[var(--color-ink-faint)]">Rating</dt>
-                <dd className="font-medium text-[var(--color-ink)]">{tool.rating}/5</dd>
+                <dd className="font-medium text-[var(--color-ink)]">{tool.rating > 0 ? `${tool.rating}/5` : "Not yet rated"}</dd>
               </div>
-              <div className="flex justify-between">
-                <dt className="text-[var(--color-ink-faint)]">Reviews</dt>
-                <dd className="font-medium text-[var(--color-ink)]">{tool.reviewsCount.toLocaleString()}</dd>
-              </div>
+              {tool.reviewsCount > 0 && (
+                <div className="flex justify-between">
+                  <dt className="text-[var(--color-ink-faint)]">Reviews</dt>
+                  <dd className="font-medium text-[var(--color-ink)]">{tool.reviewsCount.toLocaleString()}</dd>
+                </div>
+              )}
               <div className="flex justify-between">
                 <dt className="text-[var(--color-ink-faint)]">Open Source</dt>
                 <dd className="font-medium text-[var(--color-ink)]">{tool.openSource ? "Yes" : "No"}</dd>
