@@ -231,7 +231,7 @@
     "rating": 4.4,
     "reviewsCount": 45,
     "openSource": true,
-    "githubStars": 47955,
+    "githubStars": 48122,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -551,7 +551,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185148,
+    "githubStars": 185194,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -705,7 +705,7 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 35000,
+    "githubStars": 125566,
     "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
@@ -743,7 +743,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 45000,
+    "githubStars": 124467,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [
@@ -783,7 +783,7 @@
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 18000,
+    "githubStars": 28386,
     "githubUrl": "https://github.com/ComposioHQ/composio",
     "websiteUrl": "https://composio.dev",
     "pricing": [
@@ -874,7 +874,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 19000,
+    "githubStars": 28113,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1033,7 +1033,7 @@
     "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 30000,
+    "githubStars": 37926,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
     "websiteUrl": "https://github.com/ToolJet/ToolJet",
     "pricing": [
@@ -1256,7 +1256,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 8000,
+    "githubStars": 27669,
     "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://github.com/langfuse/langfuse",
     "pricing": [
@@ -1707,7 +1707,7 @@
     "rating": 4.5,
     "reviewsCount": 1100,
     "openSource": true,
-    "githubStars": 25000,
+    "githubStars": 24342,
     "githubUrl": "https://github.com/gitlabhq/gitlabhq",
     "websiteUrl": "https://gitlab.com",
     "pricing": [
@@ -1761,7 +1761,7 @@
     "rating": 4.6,
     "reviewsCount": 350,
     "openSource": true,
-    "githubStars": 70000,
+    "githubStars": 5876,
     "githubUrl": "https://github.com/docker/cli",
     "websiteUrl": "https://www.docker.com",
     "pricing": [
@@ -2454,7 +2454,7 @@
     "rating": 4.7,
     "reviewsCount": 320,
     "openSource": true,
-    "githubStars": 75000,
+    "githubStars": 102825,
     "githubUrl": "https://github.com/supabase/supabase",
     "websiteUrl": "https://supabase.com",
     "pricing": [
@@ -2964,7 +2964,7 @@
     "rating": 4.7,
     "reviewsCount": 35,
     "openSource": true,
-    "githubStars": 32000,
+    "githubStars": 44033,
     "githubUrl": "https://github.com/calcom/cal.com",
     "websiteUrl": "https://cal.com",
     "pricing": [
@@ -3015,7 +3015,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 4200,
+    "githubStars": 5320,
     "githubUrl": "https://github.com/unkeyed/unkey",
     "websiteUrl": "https://unkey.com",
     "pricing": [
@@ -3066,7 +3066,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 11000,
+    "githubStars": 15023,
     "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
     "websiteUrl": "https://trigger.dev",
     "pricing": [
