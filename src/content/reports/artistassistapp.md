@@ -3,8 +3,8 @@ slug: "artistassistapp"
 name: "ArtistAssistApp"
 decision: "APPROVE"
 confidence: 85
-category: "other"
-processedAt: "2026-05-22T07:37:01.374Z"
+category: "design"
+processedAt: "2026-05-22T10:41:02.388Z"
 ---
 
 # AI Verification Report: ArtistAssistApp
@@ -21,16 +21,16 @@ processedAt: "2026-05-22T07:37:01.374Z"
 
 - **Website**: https://artistassistapp.com/
 - **GitHub**: N/A
-- **Category**: other
-- **Tagline**: A tool to assist artists with their creative process.
-- **Features**: Color mixing assistance, Composition guides, Reference image management, Brush stroke analysis
-- **Pricing**: Free ($0), Pro ($9.99/mo)
+- **Category**: design
+- **Tagline**: A web app for artists to mix paints, match colors, and plan palettes.
+- **Features**: Color mixing calculator for various paint brands, Color matching from uploaded images, Palette planning and saving, Color harmony suggestions
+- **Pricing**: Free ($0), Pro ($5/mo)
 
 ## Concerns
-- No GitHub data available to verify community activity or code quality.
-- Pricing and features are inferred from website meta; not explicitly confirmed.
+- No GitHub repository found, so community activity and code transparency are unverifiable.
+- Pricing inferred from typical freemium models; not explicitly stated on the website.
 - Website URL may be auto-generated: https://artistassistapp.com/
 
 ## Full Analysis
 
-The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and appears to be a legitimate product. However, there is no GitHub repository associated with the tool, so we cannot assess code quality, community engagement, or maintenance activity. The website description suggests it is a functional tool for artists, but without GitHub data, the quality score is moderate. The consistency between the website and the source is high. Overall, the tool appears real and active, but the lack of open-source data is a minor concern.
+The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and presents a clear value proposition for artists needing color mixing assistance. The description is consistent with the tagline and features listed. However, no GitHub data is available, which limits verification of development activity and community engagement. The website appears legitimate and well-maintained, but the lack of open-source presence is a minor concern. Overall, the tool seems genuine and useful for its target audience.

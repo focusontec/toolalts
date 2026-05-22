@@ -514,5 +514,95 @@
     "toolA": "confluence",
     "toolB": "airtable",
     "category": "productivity"
+  },
+  {
+    "slug": "cursor-vs-claude-code",
+    "toolA": "cursor",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-composio",
+    "toolA": "cursor",
+    "toolB": "composio",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-bodhi",
+    "toolA": "cursor",
+    "toolB": "bodhi",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-claude-code",
+    "toolA": "vscode",
+    "toolB": "claude-code",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-markitdown",
+    "toolA": "vscode",
+    "toolB": "markitdown",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-composio",
+    "toolA": "vscode",
+    "toolB": "composio",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-bodhi",
+    "toolA": "vscode",
+    "toolB": "bodhi",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-stagewise",
+    "toolA": "vscode",
+    "toolB": "stagewise",
+    "category": "development"
+  },
+  {
+    "slug": "vscode-vs-dyad",
+    "toolA": "vscode",
+    "toolB": "dyad",
+    "category": "development"
+  },
+  {
+    "slug": "claude-code-vs-bodhi",
+    "toolA": "claude-code",
+    "toolB": "bodhi",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-composio",
+    "toolA": "markitdown",
+    "toolB": "composio",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-bodhi",
+    "toolA": "markitdown",
+    "toolB": "bodhi",
+    "category": "development"
+  },
+  {
+    "slug": "markitdown-vs-dyad",
+    "toolA": "markitdown",
+    "toolB": "dyad",
+    "category": "development"
+  },
+  {
+    "slug": "composio-vs-bodhi",
+    "toolA": "composio",
+    "toolB": "bodhi",
+    "category": "development"
+  },
+  {
+    "slug": "stagewise-vs-dyad",
+    "toolA": "stagewise",
+    "toolB": "dyad",
+    "category": "development"
   }
 ]

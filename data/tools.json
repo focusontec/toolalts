@@ -231,7 +231,7 @@
     "rating": 4.4,
     "reviewsCount": 45,
     "openSource": true,
-    "githubStars": 48145,
+    "githubStars": 48165,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -551,7 +551,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185211,
+    "githubStars": 185218,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -705,7 +705,7 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 125617,
+    "githubStars": 125670,
     "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
@@ -743,7 +743,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 124506,
+    "githubStars": 124537,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [
@@ -874,7 +874,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28117,
+    "githubStars": 28120,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1033,7 +1033,7 @@
     "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 37926,
+    "githubStars": 37928,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
     "websiteUrl": "https://github.com/ToolJet/ToolJet",
     "pricing": [
@@ -1256,7 +1256,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 27684,
+    "githubStars": 27696,
     "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://github.com/langfuse/langfuse",
     "pricing": [
@@ -1707,7 +1707,7 @@
     "rating": 4.5,
     "reviewsCount": 1100,
     "openSource": true,
-    "githubStars": 24342,
+    "githubStars": 24341,
     "githubUrl": "https://github.com/gitlabhq/gitlabhq",
     "websiteUrl": "https://gitlab.com",
     "pricing": [
@@ -2454,7 +2454,7 @@
     "rating": 4.7,
     "reviewsCount": 320,
     "openSource": true,
-    "githubStars": 102835,
+    "githubStars": 102841,
     "githubUrl": "https://github.com/supabase/supabase",
     "websiteUrl": "https://supabase.com",
     "pricing": [
@@ -2964,7 +2964,7 @@
     "rating": 4.7,
     "reviewsCount": 35,
     "openSource": true,
-    "githubStars": 44050,
+    "githubStars": 44172,
     "githubUrl": "https://github.com/calcom/cal.com",
     "websiteUrl": "https://cal.com",
     "pricing": [
@@ -3117,7 +3117,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 138041,
+    "githubStars": 138056,
     "githubUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "websiteUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "pricing": [
@@ -3147,7 +3147,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 100628,
+    "githubStars": 100694,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [
@@ -3178,7 +3178,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 69072,
+    "githubStars": 69094,
     "githubUrl": "https://github.com/bytedance/deer-flow",
     "websiteUrl": "https://deerflow.tech",
     "pricing": [
@@ -3209,7 +3209,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 61181,
+    "githubStars": 61214,
     "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "websiteUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "pricing": [
@@ -3240,7 +3240,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 42973,
+    "githubStars": 42985,
     "githubUrl": "https://github.com/HKUDS/nanobot",
     "websiteUrl": "https://nanobot.wiki",
     "pricing": [
@@ -3270,7 +3270,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 29289,
+    "githubStars": 29293,
     "githubUrl": "https://github.com/lbjlaq/Antigravity-Manager",
     "websiteUrl": "https://lbjlaq.github.io/Antigravity-Manager/",
     "pricing": [
@@ -3299,7 +3299,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 27485,
+    "githubStars": 27487,
     "githubUrl": "https://github.com/davila7/claude-code-templates",
     "websiteUrl": "https://aitmpl.com",
     "pricing": [
@@ -3377,5 +3377,33 @@
     ],
     "category": "productivity",
     "logo": "/logos/rowboat.svg"
+  },
+  {
+    "slug": "axilla",
+    "name": "Axilla",
+    "tagline": "The TypeScript framework for AI development.",
+    "description": "Axilla (axflow) is a TypeScript framework designed to simplify AI development. It provides tools and abstractions for building AI-powered applications, targeting developers working with AI models and services.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/undefined",
+    "websiteUrl": "https://github.com/axilla-io/ax",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source framework"
+        ]
+      }
+    ],
+    "features": [
+      "TypeScript-native AI development framework",
+      "Abstractions for AI model integration",
+      "Simplifies building AI-powered applications"
+    ],
+    "category": "development",
+    "logo": "/logos/axilla.svg"
   }
 ]
