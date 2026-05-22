@@ -1,17 +1,5 @@
 [
   {
-    "slug": "whispering",
-    "name": "Whispering",
-    "source": "hackernews-showhn",
-    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
-    "discoveredAt": "2026-05-22T14:11:21.428Z",
-    "rawData": {
-      "title": "Show HN: Whispering – Open-source, local-first dictation you can trust",
-      "points": 591,
-      "comments": 152
-    }
-  },
-  {
     "slug": "hyperdiv",
     "name": "Hyperdiv",
     "source": "hackernews-showhn",
@@ -21,6 +9,18 @@
       "title": "Show HN: Hyperdiv – Reactive, immediate-mode web UI framework for Python",
       "points": 170,
       "comments": 83
+    }
+  },
+  {
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
+    "source": "hackernews-showhn",
+    "website": "https://artistassistapp.com/",
+    "discoveredAt": "2026-05-22T17:43:54.286Z",
+    "rawData": {
+      "title": "Show HN: ArtistAssistApp – a web app to paint better with ease",
+      "points": 168,
+      "comments": 52
     }
   }
 ]
