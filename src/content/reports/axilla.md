@@ -1,35 +1,37 @@
 ---
 slug: "axilla"
 name: "Axilla"
-decision: "APPROVE"
-confidence: 85
+decision: "AMBIGUOUS"
+confidence: 60
 category: "development"
-processedAt: "2026-05-20T18:08:39.461Z"
+processedAt: "2026-05-22T07:36:55.821Z"
 ---
 
 # AI Verification Report: Axilla
 
-## Decision: APPROVE (85/100 confidence)
+## Decision: AMBIGUOUS (60/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 80/100 |
-| Quality Score | 70/100 |
-| Consistency Score | 90/100 |
+| Verification Score | 50/100 |
+| Quality Score | 30/100 |
+| Consistency Score | 70/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/axilla-io/ax
 - **GitHub**: https://github.com/undefined
 - **Category**: development
-- **Tagline**: The TypeScript framework for AI development.
-- **Features**: TypeScript-native AI development framework, Abstractions for AI model integration, Developer-friendly APIs
+- **Tagline**: A TypeScript framework for AI development.
+- **Features**: TypeScript framework for AI development, Abstractions for AI model integration, Open source on GitHub
 - **Pricing**: Free ($0)
 
 ## Concerns
-- GitHub data not available; stars, forks, and last update cannot be verified.
-- Website URL is the GitHub repository itself, not a separate product page.
+- GitHub data not available; stars, forks, and last update unknown
+- Website URL points to GitHub, not a dedicated product site
+- Name mismatch: evidence shows 'axflow' but tool is named 'Axilla'
+- No evidence of community adoption or maintenance activity
 
 ## Full Analysis
 
-The tool Axilla was discovered via Hacker News Show HN. The provided website URL points to a GitHub repository (axilla-io/ax) which is reachable and describes itself as 'The TypeScript framework for AI development'. The GitHub description matches the website meta description. No separate official website exists, but the GitHub repo serves as the primary source. Since no GitHub statistics (stars, forks, last update) are available, the project's activity and community adoption cannot be assessed. However, the description is consistent and the tool appears to be a legitimate open-source project. The pricing is inferred as free/open source. The main concern is the lack of GitHub data, which lowers confidence but does not indicate a red flag. Overall, the tool is approved with moderate confidence.
+The tool 'Axilla' was discovered via Hacker News Show HN. The provided website URL leads to a GitHub repository (axilla-io/ax), which is reachable. The GitHub page title and description refer to 'axflow' as a TypeScript framework for AI development, suggesting a possible rename or rebranding. No GitHub statistics (stars, forks, last update) are available in the evidence, making it impossible to assess quality or activity. The description is consistent between the GitHub meta and the tool's purpose. However, the lack of a dedicated website, missing GitHub data, and name inconsistency raise concerns. The tool appears to be open source and free, but without further evidence, it is classified as AMBIGUOUS with moderate confidence.
