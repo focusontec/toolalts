@@ -1,1 +1,111 @@
-[]
+[
+  {
+    "slug": "hyperdiv",
+    "name": "Hyperdiv",
+    "website": "https://github.com/hyperdiv/hyperdiv",
+    "github": "https://github.com/undefined",
+    "decision": "AMBIGUOUS",
+    "confidence": 50,
+    "verificationScore": 40,
+    "qualityScore": 30,
+    "consistencyScore": 60,
+    "category": "development",
+    "tagline": "Build reactive web UIs in Python.",
+    "description": "Hyperdiv is a Python framework for building reactive web user interfaces. It targets developers who want to create interactive web apps using Python without writing JavaScript.",
+    "features": [
+      "Reactive UI components",
+      "Python-based development",
+      "Web application framework"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source"
+        ]
+      }
+    ],
+    "concerns": [
+      "No GitHub data available (stars, forks, last update) to assess activity and popularity.",
+      "Website URL is GitHub repository, not a dedicated product site; may indicate early-stage or unverified project.",
+      "Cannot verify pricing or feature completeness beyond description."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool Hyperdiv is described as a Python framework for building reactive web UIs. The evidence comes from a Hacker News 'Show HN' post and the GitHub repository. The website URL points directly to the GitHub repo, which is reachable but lacks detailed metadata such as stars, forks, or last commit date. The description from the GitHub page matches the tagline. However, without GitHub statistics or a dedicated website, it is difficult to assess the project's maturity, community adoption, or maintenance status. The tool appears to be open source, but no pricing details are available. Given the limited evidence, the verification is ambiguous, with concerns about the lack of data and the absence of a standalone website.",
+    "processedAt": "2026-05-23T06:27:56.729Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 10,
+    "category": "other",
+    "tagline": "A component within the Epicenter monorepo, not a standalone tool.",
+    "description": "Whispering is a subdirectory in the Epicenter monorepo on GitHub. It is not a standalone tool with its own identity, website, or community presence. The provided URL points to a GitHub tree view, not a product website.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "The tool is not a standalone project; it is a subdirectory in a monorepo.",
+      "No GitHub repository data available (stars, forks, last update).",
+      "The website URL is a GitHub tree view, not a dedicated product page.",
+      "No evidence of community adoption or independent documentation."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The evidence provided indicates that 'Whispering' is not an independent tool but a component within the Epicenter monorepo. The website URL is a GitHub tree view, and no GitHub repository data (stars, forks, last update) is available. The website meta description refers to the Epicenter project as a whole. There is no standalone website, documentation, or community signals. Therefore, this cannot be verified as a real, maintained software tool. Decision: REJECT.",
+    "processedAt": "2026-05-23T06:28:00.903Z"
+  },
+  {
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
+    "website": "https://artistassistapp.com/",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 10,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "An app to assist artists, but details are unverifiable.",
+    "description": "ArtistAssistApp appears to be a tool for artists, but no specific features or functionality could be verified from the limited evidence. The website is reachable but no content was provided for analysis.",
+    "features": [
+      "Unverifiable features"
+    ],
+    "pricing": [
+      {
+        "plan": "Unknown",
+        "price": "Unknown",
+        "features": [
+          "No pricing information available"
+        ]
+      }
+    ],
+    "concerns": [
+      "No GitHub data available to assess project activity or community.",
+      "Website reachable but no description or feature details provided in evidence.",
+      "Unable to verify consistency between sources due to lack of data.",
+      "Cannot determine if the tool is actively maintained or abandoned.",
+      "Website URL may be auto-generated: https://artistassistapp.com/"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable, but no further content or metadata was provided in the evidence. No GitHub repository data is available, making it impossible to assess code quality, activity, or community engagement. Without a description or feature list, consistency cannot be evaluated. The tool's category and tagline are speculative. Given the lack of substantive evidence, the verification is ambiguous with low confidence. Further investigation is required to determine if this is a real, maintained project.",
+    "processedAt": "2026-05-23T06:28:04.842Z"
+  }
+]
