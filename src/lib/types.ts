@@ -16,6 +16,12 @@ export interface Tool {
   category: string;
   logo: string;
   status: ToolStatus;
+  integrations?: string[];
+  targetAudience?: string;
+  useCases?: { icon: string; title: string; description: string }[];
+  pros?: string[];
+  cons?: string[];
+  faq?: { question: string; answer: string }[];
 }
 
 export interface PricingPlan {

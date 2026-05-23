@@ -14,6 +14,7 @@ npx tsx scripts/auto-approve.ts         # Move approved tools into tools.json
 npx tsx scripts/generate-comparisons.ts # Generate comparison articles via LLM
 npx tsx scripts/sync-tools.ts           # Batch-update GitHub stars
 npx tsx scripts/scrape-reviews.ts --slug <name> --dry-run  # Fetch real ratings
+npx tsx scripts/enrich-tools.ts --slug <name> --dry-run    # Enrich tool data via Ollama
 npx tsx scripts/ai-audit.ts --mode all  # Data accuracy + content quality audit
 npx tsx scripts/scrape-pricing.ts --slug <name> --dry-run  # Scrape pricing
 npx tsx scripts/ai-review.ts --dry-run  # Quality guardian review

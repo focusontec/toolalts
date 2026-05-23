@@ -90,7 +90,67 @@
     ],
     "category": "productivity",
     "logo": "/logos/notion.svg",
-    "status": "active"
+    "status": "active",
+    "integrations": [
+      "Slack",
+      "GitHub",
+      "Google Drive",
+      "Figma",
+      "Trello",
+      "Asana",
+      "Jira",
+      "Dropbox",
+      "Miro",
+      "Zoom"
+    ],
+    "useCases": [
+      {
+        "icon": "📋",
+        "title": "Centralize Product Development",
+        "description": "Qonto uses Notion to centralize product development with a single roadmap, automated progress tracking, and customized Kanban workflows."
+      },
+      {
+        "icon": "📚",
+        "title": "Unify Knowledge and Work",
+        "description": "Qonto maintains a company wiki, teamspaces, and individual pages in Notion as a single source of truth for documentation and task management."
+      },
+      {
+        "icon": "🤝",
+        "title": "Enhance Cross-Functional Collaboration",
+        "description": "Qonto integrates Notion with tools like FigJam and Slack to minimize manual work and maintain company-wide alignment."
+      }
+    ],
+    "pros": [
+      "Multi-purpose tool",
+      "Collaborative",
+      "Incredibly powerful",
+      "Free tier is fantastic",
+      "Highly customizable"
+    ],
+    "cons": [
+      "Lack of offline support",
+      "Requires a web connection",
+      "AI features aren’t always helpful",
+      "Steep learning curve for customization"
+    ],
+    "faq": [
+      {
+        "question": "What plans is Notion AI available on?",
+        "answer": "Notion AI is only available on Business and Enterprise Plans, though Free and Plus Plans get a limited number of complimentary AI responses."
+      },
+      {
+        "question": "What is Notion Agent?",
+        "answer": "Notion Agent is a customizable AI teammate that can take on tasks from start to finish, using context from your workspace and connected apps to create or edit content like pages and databases."
+      },
+      {
+        "question": "How do I use Notion AI to translate a page?",
+        "answer": "Go to the three-dot menu at the top of the page, select Translate, and Notion AI will translate the page into your desired language."
+      },
+      {
+        "question": "What are the limits for AI image generation in Notion?",
+        "answer": "During beta, users have a limit of 10 image generations or edits per 24 hours and 30 per 30 days, with limits resetting on a rolling basis."
+      }
+    ]
   },
   {
     "slug": "obsidian",
@@ -541,7 +601,61 @@
     ],
     "category": "development",
     "logo": "/logos/cursor.svg",
-    "status": "active"
+    "status": "active",
+    "integrations": [
+      "Cursor Marketplace",
+      "cursor.directory",
+      "Figma",
+      "Linear"
+    ],
+    "useCases": [
+      {
+        "icon": "🚀",
+        "title": "Accelerate Product Roadmaps",
+        "description": "Engineering teams use Cursor to accelerate product roadmaps, ship features faster, and handle surges in demand while maintaining quality."
+      },
+      {
+        "icon": "🔧",
+        "title": "Refactor and Debug Code",
+        "description": "Cursor helps engineers refactor legacy systems, debug complex issues, and handle tech debt with increased speed and confidence."
+      },
+      {
+        "icon": "📈",
+        "title": "Boost Engineering Velocity",
+        "description": "Teams see 2–5x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
+      }
+    ],
+    "pros": [
+      "Seamless multi-file editing with Composer 2",
+      "Background agents for autonomous task execution",
+      "BugBot Autofix catches semantic issues missed by linters",
+      "Fast and accurate tab completions via Supermaven",
+      "Familiar VS Code experience with low switching cost"
+    ],
+    "cons": [
+      "Credit-based pricing can lead to unexpected costs",
+      "Struggles with highly domain-specific logic",
+      "Ambiguous agent requests often need human intervention",
+      "Performance issues occasionally reported"
+    ],
+    "faq": [
+      {
+        "question": "What is Cursor?",
+        "answer": "Cursor is an AI-native code editor built as a fork of VS Code by Anysphere, embedding AI directly into the editor with features like inline tab completions, Composer for multi-file edits, and background agents on cloud VMs."
+      },
+      {
+        "question": "Is Cursor free?",
+        "answer": "Yes, Cursor has a free Hobby tier with 2,000 code completions per month and 50 slow premium model requests, but most professional developers upgrade to Pro for unlimited completions and more features."
+      },
+      {
+        "question": "Does Cursor work in JetBrains or Neovim?",
+        "answer": "No, Cursor is only available as a standalone IDE and does not have plugins for JetBrains, Neovim, Visual Studio, or Xcode."
+      },
+      {
+        "question": "Does Cursor send my code to the cloud?",
+        "answer": "Yes, Cursor routes code through its own servers to reach the AI model, but you can enable Privacy Mode to prevent code from being stored or used for training."
+      }
+    ]
   },
   {
     "slug": "vscode",

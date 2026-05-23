@@ -144,10 +144,10 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   if (!tool) notFound();
 
   const alternatives = getAlternatives(tool);
-  const pros = getPros(tool);
-  const cons = getCons(tool);
-  const useCases = getUseCases(tool);
-  const faq = getFAQ(tool);
+  const pros = tool.pros && tool.pros.length > 0 ? tool.pros : getPros(tool);
+  const cons = tool.cons && tool.cons.length > 0 ? tool.cons : getCons(tool);
+  const useCases = tool.useCases && tool.useCases.length > 0 ? tool.useCases : getUseCases(tool);
+  const faq = tool.faq && tool.faq.length > 0 ? tool.faq : getFAQ(tool);
 
   const schema: Record<string, any> = {
     "@context": "https://schema.org",
@@ -306,6 +306,20 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             </ul>
           </section>
 
+          {/* Integrations */}
+          {tool.integrations && tool.integrations.length > 0 && (
+            <section className="mt-10">
+              <h2 className="text-lg font-semibold text-[var(--color-ink)]">Integrations</h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {tool.integrations.map((integration) => (
+                  <span key={integration} className="inline-flex items-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1.5 text-sm text-[var(--color-ink-muted)]">
+                    {integration}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* FAQ */}
           <section className="mt-10">
             <h2 className="text-lg font-semibold text-[var(--color-ink)]">Frequently Asked Questions</h2>
@@ -395,6 +409,12 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 <div className="flex justify-between">
                   <dt className="text-[var(--color-ink-faint)]">GitHub Stars</dt>
                   <dd className="font-medium text-[var(--color-ink)]">{tool.githubStars.toLocaleString()}</dd>
+                </div>
+              )}
+              {tool.targetAudience && (
+                <div className="flex justify-between">
+                  <dt className="text-[var(--color-ink-faint)]">Best For</dt>
+                  <dd className="font-medium text-[var(--color-ink)] text-right max-w-[160px]">{tool.targetAudience}</dd>
                 </div>
               )}
             </dl>
