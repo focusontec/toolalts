@@ -10,5 +10,14 @@
       "points": 170,
       "comments": 83
     }
+  },
+  {
+    "slug": "resend",
+    "name": "Resend",
+    "source": "one-click",
+    "website": "https://resend.com",
+    "github": null,
+    "category": "development",
+    "discoveredAt": "2026-05-21T04:33:59.821Z"
   }
 ]
