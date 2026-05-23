@@ -2,35 +2,35 @@
 slug: "hyperdiv"
 name: "Hyperdiv"
 decision: "AMBIGUOUS"
-confidence: 50
+confidence: 60
 category: "development"
-processedAt: "2026-05-23T06:27:56.729Z"
+processedAt: "2026-05-23T09:31:28.126Z"
 ---
 
 # AI Verification Report: Hyperdiv
 
-## Decision: AMBIGUOUS (50/100 confidence)
+## Decision: AMBIGUOUS (60/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 40/100 |
+| Verification Score | 50/100 |
 | Quality Score | 30/100 |
-| Consistency Score | 60/100 |
+| Consistency Score | 70/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/hyperdiv/hyperdiv
 - **GitHub**: https://github.com/undefined
 - **Category**: development
-- **Tagline**: Build reactive web UIs in Python.
-- **Features**: Reactive UI components, Python-based development, Web application framework
+- **Tagline**: Build reactive web UIs in Python
+- **Features**: Reactive UI components, Python-based development, Web app framework
 - **Pricing**: Free ($0)
 
 ## Concerns
-- No GitHub data available (stars, forks, last update) to assess activity and popularity.
-- Website URL is GitHub repository, not a dedicated product site; may indicate early-stage or unverified project.
-- Cannot verify pricing or feature completeness beyond description.
+- GitHub data not available; cannot verify stars, forks, or recent activity
+- Website URL points to GitHub, not a dedicated product site; may indicate early stage or lack of official web presence
+- No evidence of community adoption or maintenance status
 
 ## Full Analysis
 
-The tool Hyperdiv is described as a Python framework for building reactive web UIs. The evidence comes from a Hacker News 'Show HN' post and the GitHub repository. The website URL points directly to the GitHub repo, which is reachable but lacks detailed metadata such as stars, forks, or last commit date. The description from the GitHub page matches the tagline. However, without GitHub statistics or a dedicated website, it is difficult to assess the project's maturity, community adoption, or maintenance status. The tool appears to be open source, but no pricing details are available. Given the limited evidence, the verification is ambiguous, with concerns about the lack of data and the absence of a standalone website.
+The tool Hyperdiv was discovered via Hacker News Show HN. The provided website URL is a GitHub repository. The GitHub metadata describes it as a framework to build reactive web UIs in Python. However, no GitHub data (stars, forks, last update) is available, making it impossible to assess quality or activity. The consistency between the website title and description is good. The tool appears to be open source, but without further evidence, it is unclear if it is actively maintained or widely used. The lack of a dedicated website and missing GitHub statistics are concerns. Therefore, the verification is ambiguous with moderate confidence.
