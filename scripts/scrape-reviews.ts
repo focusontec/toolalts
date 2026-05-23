@@ -18,7 +18,6 @@
 
 import fs from "fs";
 import path from "path";
-import { chromium } from "playwright";
 import { callLlm } from "./lib/llm";
 
 // Load .env.local for local development
@@ -90,98 +89,32 @@ function randomUA() {
 }
 
 /**
- * Strategy 1: Try to fetch G2 or Capterra page directly via Playwright.
- * These sites may show rating data in the initial HTML.
+ * Search for review data using Ollama web search API.
  */
-async function fetchReviewPage(
-  page: any,
-  toolName: string,
-  slug: string
-): Promise<string> {
-  const urls = [
-    `https://www.g2.com/products/${slug}/reviews`,
-    `https://www.capterra.com/p/${slug}/`,
-  ];
+async function searchOllama(query: string): Promise<string> {
+  const apiKey = process.env.OLLAMA_API_KEY;
+  if (!apiKey) return "";
 
-  for (const url of urls) {
-    try {
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 12000 });
-      await page.waitForTimeout(2000);
-
-      const text = await page.evaluate(() => {
-        // Look for structured data
-        const ldJson = document.querySelector(
-          'script[type="application/ld+json"]'
-        );
-        if (ldJson) return ldJson.textContent || "";
-
-        // Look for rating elements
-        const ratingEl = document.querySelector(
-          '[itemprop="ratingValue"], [data-testid*="rating"], [class*="star-rating"]'
-        );
-        const reviewEl = document.querySelector(
-          '[itemprop="reviewCount"], [data-testid*="review-count"]'
-        );
-        const parts = [];
-        if (ratingEl)
-          parts.push(`Rating: ${ratingEl.getAttribute("content") || ratingEl.textContent}`);
-        if (reviewEl)
-          parts.push(`Reviews: ${reviewEl.getAttribute("content") || reviewEl.textContent}`);
-
-        if (parts.length > 0) return parts.join(", ");
-
-        // Fallback: get body text
-        return document.body?.innerText?.replace(/\s+/g, " ").trim().slice(0, 4000) || "";
-      });
-
-      if (text.length > 200) return `Source: ${url}\n${text}`;
-    } catch {
-      // Page didn't load, try next
-    }
-  }
-  return "";
-}
-
-/**
- * Strategy 2: Search Bing for review data via Playwright.
- */
-async function searchBing(page: any, query: string): Promise<string> {
   try {
-    const encoded = encodeURIComponent(query);
-    await page.goto(`https://www.bing.com/search?q=${encoded}`, {
-      waitUntil: "domcontentloaded",
-      timeout: 12000,
-    });
-    await page.waitForTimeout(2000);
-
-    const text = await page.evaluate(() => {
-      const results: string[] = [];
-      // Bing result containers
-      const items = document.querySelectorAll(
-        ".b_algo, .b_ans, .b_entityFeatured"
-      );
-      for (const item of items) {
-        const title = item.querySelector("h2, h3")?.textContent || "";
-        const snippet = item.querySelector(
-          ".b_caption p, .b_lineclamp2, .b_paractl"
-        )?.textContent || "";
-        if (title || snippet) {
-          results.push(`${title}: ${snippet}`.trim());
-        }
-      }
-      // Knowledge panel
-      const kp = document.querySelector(
-        ".b_entityFeatured, .entity-card, .kcard-sc"
-      );
-      if (kp) {
-        results.push(
-          `Knowledge: ${kp.textContent?.replace(/\s+/g, " ").trim().slice(0, 1500) || ""}`
-        );
-      }
-      return results.join("\n").slice(0, 6000);
+    const res = await fetch("https://ollama.com/api/web_search", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query, max_results: 5 }),
+      signal: AbortSignal.timeout(15000),
     });
 
-    return text;
+    if (!res.ok) return "";
+
+    const data = await res.json() as { results?: { title: string; url: string; content: string }[] };
+    if (!data.results || data.results.length === 0) return "";
+
+    return data.results
+      .map((r) => `${r.title}\n${r.content}`)
+      .join("\n\n")
+      .slice(0, 8000);
   } catch {
     return "";
   }
@@ -278,7 +211,6 @@ async function main() {
   console.log(`LLM: ${process.env.LLM_PROVIDER || "default"}`);
   console.log("=".repeat(50));
 
-  const browser = await chromium.launch({ headless: true });
   const results: {
     slug: string;
     oldRating: number;
@@ -295,9 +227,6 @@ async function main() {
       `  Current: rating=${tool.rating}, reviews=${tool.reviewsCount}`
     );
 
-    const context = await browser.newContext({ userAgent: randomUA() });
-    const page = await context.newPage();
-
     let bestResult: ReviewData = {
       rating: null,
       reviewsCount: null,
@@ -305,49 +234,35 @@ async function main() {
       confidence: "none",
     };
 
-    // Strategy 1: Try G2/Capterra directly
-    const pageText = await fetchReviewPage(page, tool.name, tool.slug);
-    if (pageText.length > 200) {
-      const result = await extractReviewWithLlm(tool.name, pageText);
-      if (result.confidence !== "none" && result.rating !== null) {
+    // Search via Ollama web search API
+    const queries = [
+      `${tool.name} G2 rating reviews 2026`,
+      `${tool.name} Capterra rating reviews`,
+    ];
+
+    for (const query of queries) {
+      if (bestResult.confidence === "high") break;
+
+      const searchResult = await searchOllama(query);
+      if (!searchResult || searchResult.length < 100) {
+        console.log(`  No results for: ${query}`);
+        continue;
+      }
+
+      const result = await extractReviewWithLlm(tool.name, searchResult);
+      if (
+        result.confidence !== "none" &&
+        result.rating !== null &&
+        (bestResult.confidence === "none" || result.confidence === "high")
+      ) {
         bestResult = result;
         console.log(
-          `  [Direct] ${result.rating}/5 (${result.reviewsCount ?? "?"} reviews) from ${result.source}`
+          `  Found: ${result.rating}/5 (${result.reviewsCount ?? "?"} reviews) from ${result.source} [${result.confidence}]`
         );
       }
+
+      await sleep(1000);
     }
-
-    // Strategy 2: Try Bing search if no result yet
-    if (bestResult.confidence !== "high") {
-      const queries = [
-        `${tool.name} G2 rating reviews`,
-        `${tool.name} Capterra rating`,
-      ];
-
-      for (const query of queries) {
-        if (bestResult.confidence === "high") break;
-
-        const searchResult = await searchBing(page, query);
-        if (!searchResult || searchResult.length < 100) continue;
-
-        const result = await extractReviewWithLlm(tool.name, searchResult);
-        if (
-          result.confidence !== "none" &&
-          result.rating !== null &&
-          (bestResult.confidence === "none" || result.confidence === "high")
-        ) {
-          bestResult = result;
-          console.log(
-            `  [Search] ${result.rating}/5 (${result.reviewsCount ?? "?"} reviews) from ${result.source}`
-          );
-        }
-
-        await sleep(1000);
-      }
-    }
-
-    await page.close();
-    await context.close();
 
     // Record result
     results.push({
@@ -381,8 +296,6 @@ async function main() {
 
     await sleep(SLEEP_MS);
   }
-
-  await browser.close();
 
   // Save updated data
   if (!dryRun) {
