@@ -1175,7 +1175,8 @@
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
-    "logo": "/logos/tooljet.svg"
+    "logo": "/logos/tooljet.svg",
+    "status": "active"
   },
   {
     "slug": "ephe",
@@ -1213,7 +1214,8 @@
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "productivity",
-    "logo": "/logos/ephe.svg"
+    "logo": "/logos/ephe.svg",
+    "status": "active"
   },
   {
     "slug": "skip",
@@ -1248,7 +1250,8 @@
       "Transpiler, build tools, and all core frameworks open source"
     ],
     "category": "development",
-    "logo": "/logos/skip.svg"
+    "logo": "/logos/skip.svg",
+    "status": "active"
   },
   {
     "slug": "colanode-",
@@ -1287,7 +1290,8 @@
       "GitHub Codespaces Access"
     ],
     "category": "productivity",
-    "logo": "/logos/colanode-.svg"
+    "logo": "/logos/colanode-.svg",
+    "status": "active"
   },
   {
     "slug": "onlook",
@@ -1323,7 +1327,8 @@
       "Community support"
     ],
     "category": "design",
-    "logo": "/logos/onlook.svg"
+    "logo": "/logos/onlook.svg",
+    "status": "active"
   },
   {
     "slug": "instantdb",
@@ -1360,7 +1365,8 @@
       "Community support"
     ],
     "category": "development",
-    "logo": "/logos/instantdb.svg"
+    "logo": "/logos/instantdb.svg",
+    "status": "active"
   },
   {
     "slug": "langfuse",
@@ -1394,7 +1400,8 @@
       "2,000 CI/CD minutes/month"
     ],
     "category": "development",
-    "logo": "/logos/langfuse.svg"
+    "logo": "/logos/langfuse.svg",
+    "status": "active"
   },
   {
     "slug": "jira",
@@ -3251,7 +3258,8 @@
       "High visibility with over 138k stars"
     ],
     "category": "development",
-    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg"
+    "logo": "/logos/system-prompts-and-models-of-ai-tools.svg",
+    "status": "active"
   },
   {
     "slug": "gstack",
@@ -3282,7 +3290,8 @@
       "Highly popular with over 100k GitHub stars"
     ],
     "category": "development",
-    "logo": "/logos/gstack.svg"
+    "logo": "/logos/gstack.svg",
+    "status": "active"
   },
   {
     "slug": "deer-flow",
@@ -3313,7 +3322,8 @@
       "Multi-agent orchestration for deep research and coding"
     ],
     "category": "development",
-    "logo": "/logos/deer-flow.svg"
+    "logo": "/logos/deer-flow.svg",
+    "status": "active"
   },
   {
     "slug": "awesome-claude-skills",
@@ -3344,7 +3354,8 @@
       "Includes topics like MCP, agent-skills, and workflow-automation"
     ],
     "category": "development",
-    "logo": "/logos/awesome-claude-skills.svg"
+    "logo": "/logos/awesome-claude-skills.svg",
+    "status": "active"
   },
   {
     "slug": "nanobot",
@@ -3374,7 +3385,8 @@
       "Built with Python and supports multiple LLMs"
     ],
     "category": "development",
-    "logo": "/logos/nanobot.svg"
+    "logo": "/logos/nanobot.svg",
+    "status": "active"
   },
   {
     "slug": "antigravity-manager",
@@ -3403,7 +3415,8 @@
       "Cross-platform desktop application"
     ],
     "category": "productivity",
-    "logo": "/logos/antigravity-manager.svg"
+    "logo": "/logos/antigravity-manager.svg",
+    "status": "active"
   },
   {
     "slug": "claude-code-templates",
@@ -3432,7 +3445,8 @@
       "CLI-based tool for easy configuration and monitoring"
     ],
     "category": "development",
-    "logo": "/logos/claude-code-templates.svg"
+    "logo": "/logos/claude-code-templates.svg",
+    "status": "active"
   },
   {
     "slug": "workout-cool",
@@ -3462,7 +3476,8 @@
       "Open-source and self-hostable"
     ],
     "category": "other",
-    "logo": "/logos/workout-cool.svg"
+    "logo": "/logos/workout-cool.svg",
+    "status": "active"
   },
   {
     "slug": "rowboat",
@@ -3490,7 +3505,8 @@
       "Team collaboration integration"
     ],
     "category": "productivity",
-    "logo": "/logos/rowboat.svg"
+    "logo": "/logos/rowboat.svg",
+    "status": "active"
   },
   {
     "slug": "axilla",
@@ -3518,6 +3534,7 @@
       "Simplifies building AI-powered applications"
     ],
     "category": "development",
-    "logo": "/logos/axilla.svg"
+    "logo": "/logos/axilla.svg",
+    "status": "active"
   }
 ]

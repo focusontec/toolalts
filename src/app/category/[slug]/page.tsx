@@ -59,7 +59,7 @@ export default async function CategoryPage({
     notFound();
   }
 
-  const categoryTools = tools.filter((t) => t.category === slug);
+  const categoryTools = tools.filter((t) => t.category === slug && t.status === "active");
 
   const schema = {
     "@context": "https://schema.org",
