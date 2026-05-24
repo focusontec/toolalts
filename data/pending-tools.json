@@ -12,15 +12,15 @@
     }
   },
   {
-    "slug": "whispering",
-    "name": "Whispering",
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
     "source": "hackernews-showhn",
-    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
-    "discoveredAt": "2026-05-23T20:38:24.803Z",
+    "website": "https://artistassistapp.com/",
+    "discoveredAt": "2026-05-24T06:53:18.669Z",
     "rawData": {
-      "title": "Show HN: Whispering – Open-source, local-first dictation you can trust",
-      "points": 591,
-      "comments": 152
+      "title": "Show HN: ArtistAssistApp – a web app to paint better with ease",
+      "points": 168,
+      "comments": 52
     }
   }
 ]
