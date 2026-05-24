@@ -1,36 +1,37 @@
 ---
 slug: "whispering"
 name: "Whispering"
-decision: "REJECT"
-confidence: 95
+decision: "AMBIGUOUS"
+confidence: 50
 category: "other"
-processedAt: "2026-05-24T09:47:10.780Z"
+processedAt: "2026-05-24T12:55:47.365Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: REJECT (95/100 confidence)
+## Decision: AMBIGUOUS (50/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 10/100 |
-| Quality Score | 0/100 |
-| Consistency Score | 0/100 |
+| Verification Score | 40/100 |
+| Quality Score | 30/100 |
+| Consistency Score | 60/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: A component within the Epicenter monorepo, not a standalone tool.
-- **Features**: 
-- **Pricing**: 
+- **Tagline**: A local-first, open-source app for transcription and note-taking, part of the Epicenter suite.
+- **Features**: Local-first transcription using AI models, Privacy-focused, no cloud dependency, Part of the Epicenter open-source ecosystem, Note-taking integration
+- **Pricing**: Free ($0)
 
 ## Concerns
-- No standalone GitHub repository or stars; only a subdirectory in a monorepo.
-- No independent website or documentation; the provided URL is a GitHub tree view.
-- No evidence of active development or community adoption.
+- GitHub data not available, cannot verify stars, forks, or recent activity
+- Website is a GitHub directory, not a dedicated product page
+- No independent community signals or reviews found
+- Project may be in early stage or not widely adopted
 
 ## Full Analysis
 
-The tool 'Whispering' appears only as a subdirectory within the Epicenter monorepo on GitHub. There is no standalone repository, no stars, no independent website, and no evidence of it being a distinct product. The provided 'website' is actually a GitHub tree view, which is not a proper product website. Given the lack of any standalone identity, community signals, or verifiable features, this tool cannot be considered a real, maintained software product. It is likely a component or experiment within a larger project. Therefore, the decision is REJECT.
+Whispering is discovered via Hacker News Show HN. The provided website URL points to a GitHub repository directory within the Epicenter project. The website is reachable and describes the project as open-source and local-first. However, no GitHub data (stars, forks, last update) is available, making it impossible to assess quality or activity. The description is consistent with the project's stated goals, but the lack of independent verification and dedicated website raises concerns. The tool appears to be a niche, early-stage project. Decision is AMBIGUOUS due to insufficient evidence.
