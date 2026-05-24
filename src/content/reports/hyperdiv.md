@@ -4,7 +4,7 @@ name: "Hyperdiv"
 decision: "AMBIGUOUS"
 confidence: 60
 category: "development"
-processedAt: "2026-05-23T20:38:30.039Z"
+processedAt: "2026-05-24T01:59:28.430Z"
 ---
 
 # AI Verification Report: Hyperdiv
@@ -13,9 +13,9 @@ processedAt: "2026-05-23T20:38:30.039Z"
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 50/100 |
+| Verification Score | 40/100 |
 | Quality Score | 30/100 |
-| Consistency Score | 70/100 |
+| Consistency Score | 80/100 |
 
 ## Proposed Metadata
 
@@ -23,14 +23,14 @@ processedAt: "2026-05-23T20:38:30.039Z"
 - **GitHub**: https://github.com/undefined
 - **Category**: development
 - **Tagline**: Build reactive web UIs in Python
-- **Features**: Reactive UI components, Python-only development, Built on web technologies
+- **Features**: Reactive UI components, Python-based development, Web interface generation
 - **Pricing**: Free ($0)
 
 ## Concerns
-- GitHub data not available; cannot verify stars, forks, or recent activity.
-- Website URL points to GitHub, not a dedicated product site; may be early-stage or unmaintained.
-- No evidence of community adoption or updates.
+- GitHub data not available (stars, forks, last update unknown)
+- Website URL is the GitHub repository, not a dedicated product site
+- No independent website or documentation beyond GitHub
 
 ## Full Analysis
 
-Hyperdiv is presented as a Python framework for building reactive web UIs. The only source is a GitHub repository with no metadata (stars, forks, last update) available. The website URL is the GitHub page itself, which is reachable but lacks a dedicated product site. The description is consistent between the source and GitHub meta. However, without GitHub statistics or additional evidence, the project's quality and activity level cannot be assessed. It appears to be an open-source tool, likely free. Given the lack of data, the decision is AMBIGUOUS with moderate confidence.
+Hyperdiv is a Python framework for building reactive web UIs, as described on its GitHub repository. The description is consistent between the page title and meta description. However, the evidence is limited: the provided website URL is the GitHub repo itself, and no GitHub statistics (stars, forks, last update) are available. This makes it difficult to assess project activity and community adoption. The tool appears to be open source, but without additional data, its quality and maintenance status are unverifiable. The decision is AMBIGUOUS due to insufficient evidence.
