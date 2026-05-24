@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "notion-to-obsidian",
+    "fromTool": "Notion",
+    "toTool": "Obsidian",
+    "fromSlug": "notion",
+    "toSlug": "obsidian",
+    "category": "productivity",
+    "difficulty": "medium",
+    "estimatedTime": "1-2 hours",
+    "steps": 6,
+    "title": "Migrate from Notion to Obsidian: Complete Guide",
+    "excerpt": "Step-by-step guide to export your Notion workspace and import it into Obsidian, including tips for fixing broken formatting."
+  },
+  {
+    "slug": "slack-to-rocket-chat",
+    "fromTool": "Slack",
+    "toTool": "Rocket.Chat",
+    "fromSlug": "slack",
+    "toSlug": "rocket-chat",
+    "category": "communication",
+    "difficulty": "hard",
+    "estimatedTime": "2-4 hours",
+    "steps": 8,
+    "title": "Migrate from Slack to Rocket.Chat: Complete Guide",
+    "excerpt": "Move your team chat from Slack to self-hosted Rocket.Chat, including message history, channels, and file migration."
+  },
+  {
+    "slug": "figma-to-penpot",
+    "fromTool": "Figma",
+    "toTool": "Penpot",
+    "fromSlug": "figma",
+    "toSlug": "penpot",
+    "category": "design",
+    "difficulty": "easy",
+    "estimatedTime": "30-60 minutes",
+    "steps": 4,
+    "title": "Migrate from Figma to Penpot: Complete Guide",
+    "excerpt": "Use the official Penpot Exporter Figma plugin to transfer your designs to the open-source design platform."
+  },
+  {
+    "slug": "jira-to-plane",
+    "fromTool": "Jira",
+    "toTool": "Plane",
+    "fromSlug": "jira",
+    "toSlug": "plane",
+    "category": "project-management",
+    "difficulty": "medium",
+    "estimatedTime": "1-2 hours",
+    "steps": 6,
+    "title": "Migrate from Jira to Plane: Complete Guide",
+    "excerpt": "Use Plane's built-in Jira importer to transfer issues, states, and users from Jira Cloud, Server, or Data Center."
+  },
+  {
+    "slug": "github-to-gitea",
+    "fromTool": "GitHub",
+    "toTool": "Gitea",
+    "fromSlug": "github",
+    "toSlug": "gitea",
+    "category": "development",
+    "difficulty": "medium",
+    "estimatedTime": "1-3 hours",
+    "steps": 7,
+    "title": "Migrate from GitHub to Gitea: Complete Guide",
+    "excerpt": "Mirror or migrate your repositories from GitHub to a self-hosted Gitea instance, preserving history, issues, and pull requests."
+  },
+  {
+    "slug": "zoom-to-jitsi",
+    "fromTool": "Zoom",
+    "toTool": "Jitsi Meet",
+    "fromSlug": "zoom",
+    "toSlug": "jitsi",
+    "category": "communication",
+    "difficulty": "easy",
+    "estimatedTime": "15-30 minutes",
+    "steps": 3,
+    "title": "Migrate from Zoom to Jitsi Meet: Complete Guide",
+    "excerpt": "Switch your video meetings from Zoom to self-hosted Jitsi Meet — no account required, fully private, and free."
+  }
+]

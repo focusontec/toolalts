@@ -6,6 +6,7 @@ import { PricingCard } from "@/components/PricingCard";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
+import { RatingWidget } from "@/components/RatingWidget";
 import type { Tool } from "@/lib/types";
 
 export const dynamicParams = false;
@@ -243,6 +244,11 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 {tool.githubStars.toLocaleString()}
               </a>
             )}
+          </div>
+
+          {/* Community Rating */}
+          <div className="mt-6">
+            <RatingWidget slug={tool.slug} toolName={tool.name} />
           </div>
 
           {/* Description */}

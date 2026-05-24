@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllToolSlugs, getAllCategorySlugs, getAllComparisonSlugs, getAllBlogSlugs } from "@/lib/tools";
 import { getAllReportSlugs } from "@/lib/reports";
+import { getAllMigrationGuideSlugs } from "@/lib/migration-guides";
 
 export const dynamic = "force-static";
 
@@ -12,11 +13,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const comparisonSlugs = getAllComparisonSlugs();
   const blogSlugs = getAllBlogSlugs();
   const reportSlugs = getAllReportSlugs();
+  const migrationGuideSlugs = getAllMigrationGuideSlugs();
 
   const urls: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/blog/`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/reports/`, lastModified: new Date(), changeFrequency: "daily", priority: 0.7 },
+    { url: `${baseUrl}/quiz/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/calculator/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/migration-guides/`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/stack-builder/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
   toolSlugs.forEach((slug) => {
@@ -38,6 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   reportSlugs.forEach((slug) => {
     urls.push({ url: `${baseUrl}/reports/${slug}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 });
+  });
+
+  migrationGuideSlugs.forEach((slug) => {
+    urls.push({ url: `${baseUrl}/migration-guides/${slug}/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 });
   });
 
   return urls;

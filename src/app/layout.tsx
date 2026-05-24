@@ -43,6 +43,8 @@ function Nav() {
             { href: "/", label: "Home" },
             { href: "/blog/", label: "Blog" },
             { href: "/reports/", label: "Reports" },
+            { href: "/quiz/", label: "Quiz" },
+            { href: "/calculator/", label: "Calculator" },
             { href: "/submit/", label: "Submit a Tool" },
           ].map((item) => (
             <Link
@@ -77,6 +79,10 @@ function Footer() {
               { href: "/blog/", label: "Blog" },
               { href: "/reports/", label: "Reports" },
               { href: "/category/", label: "Categories" },
+              { href: "/quiz/", label: "Quiz" },
+              { href: "/calculator/", label: "Calculator" },
+              { href: "/migration-guides/", label: "Migration Guides" },
+              { href: "/stack-builder/", label: "Stack Builder" },
               { href: "/submit/", label: "Submit a Tool" },
             ].map((link) => (
               <Link
