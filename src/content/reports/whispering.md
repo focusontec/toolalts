@@ -1,37 +1,37 @@
 ---
 slug: "whispering"
 name: "Whispering"
-decision: "AMBIGUOUS"
-confidence: 40
+decision: "REJECT"
+confidence: 95
 category: "other"
-processedAt: "2026-05-24T16:49:42.988Z"
+processedAt: "2026-05-24T20:42:02.020Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: AMBIGUOUS (40/100 confidence)
+## Decision: REJECT (95/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 30/100 |
-| Quality Score | 20/100 |
-| Consistency Score | 50/100 |
+| Verification Score | 20/100 |
+| Quality Score | 10/100 |
+| Consistency Score | 30/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: A local-first, open-source app within the Epicenter ecosystem, but lacks standalone identity and community traction.
-- **Features**: Part of Epicenter open-source ecosystem, Local-first design, Open-source
+- **Tagline**: A component within the Epicenter monorepo, not a standalone tool.
+- **Features**: Part of Epicenter monorepo, Open-source, Local-first
 - **Pricing**: Free ($0)
 
 ## Concerns
-- No standalone GitHub repository or stars/forks data
-- Website is a subdirectory of a larger project, not a dedicated tool page
-- No description or features specific to Whispering
-- Unclear if this is a separate tool or just a module
+- Not a standalone tool; it's a subdirectory in a monorepo.
+- No dedicated website or documentation for Whispering.
+- No GitHub stars, forks, or community signals specific to Whispering.
+- The tool name is generic and lacks distinct identity.
 
 ## Full Analysis
 
-The tool 'Whispering' was discovered from a Hacker News 'Show HN' post. The provided website URL points to a subdirectory within the Epicenter GitHub repository, which is described as 'Open-source, local-first apps.' The website is reachable but does not provide any specific information about Whispering itself. GitHub data is null, meaning no standalone repository or metrics exist. This raises concerns about whether Whispering is a distinct tool or merely a component of the larger Epicenter project. Without a dedicated description, features, or community signals, it is difficult to verify the tool's purpose or quality. The decision is AMBIGUOUS with low confidence due to lack of evidence.
+The evidence provided indicates that 'Whispering' is not an independent software tool but rather a component within the Epicenter monorepo. The website URL leads to a GitHub tree view of the Epicenter repository, not a dedicated tool page. There is no separate GitHub repository for Whispering, and no stars, forks, or community engagement data are available. The website meta description refers to Epicenter as a whole, not to Whispering. Given the lack of standalone identity, documentation, and community signals, this tool cannot be verified as a real, maintained product. It is likely a minor app or experiment within a larger project. Therefore, the decision is REJECT with high confidence.
