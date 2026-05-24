@@ -10,17 +10,5 @@
       "points": 170,
       "comments": 83
     }
-  },
-  {
-    "slug": "artistassistapp",
-    "name": "ArtistAssistApp",
-    "source": "hackernews-showhn",
-    "website": "https://artistassistapp.com/",
-    "discoveredAt": "2026-05-24T06:53:18.669Z",
-    "rawData": {
-      "title": "Show HN: ArtistAssistApp – a web app to paint better with ease",
-      "points": 168,
-      "comments": 52
-    }
   }
 ]
