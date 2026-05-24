@@ -124,5 +124,29 @@
     "toolA": "penpot",
     "toolB": "onlook",
     "category": "design"
+  },
+  {
+    "slug": "microsoft-teams-vs-slack",
+    "toolA": "microsoft-teams",
+    "toolB": "slack",
+    "category": "communication"
+  },
+  {
+    "slug": "microsoft-teams-vs-zoom",
+    "toolA": "microsoft-teams",
+    "toolB": "zoom",
+    "category": "communication"
+  },
+  {
+    "slug": "microsoft-teams-vs-discord",
+    "toolA": "microsoft-teams",
+    "toolB": "discord",
+    "category": "communication"
+  },
+  {
+    "slug": "microsoft-teams-vs-google-meet",
+    "toolA": "microsoft-teams",
+    "toolB": "google-meet",
+    "category": "communication"
   }
 ]

@@ -41,12 +41,13 @@ export function getCategoryBySlug(slug: string): Category | undefined {
 }
 
 export function getAlternativesFor(slug: string): Tool[] {
-  const comp = allComparisons.find(
-    (c) => c.toolA === slug || c.toolB === slug
-  );
-  if (!comp) return [];
-  const altSlug = comp.toolA === slug ? comp.toolB : comp.toolA;
-  return allTools.filter((t) => t.slug === altSlug && t.status === "active");
+  const altSlugs = allComparisons
+    .filter((c) => c.toolA === slug || c.toolB === slug)
+    .map((c) => (c.toolA === slug ? c.toolB : c.toolA));
+  const uniqueSlugs = [...new Set(altSlugs)];
+  return uniqueSlugs
+    .map((s) => allTools.find((t) => t.slug === s && t.status === "active"))
+    .filter(Boolean) as Tool[];
 }
 
 /** Comparison pairs where both tools are active */
