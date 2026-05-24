@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { getActiveToolSlugs, getActiveToolBySlug, getAlternativesFor } from "@/lib/tools";
 import { ToolCard } from "@/components/ToolCard";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -134,24 +136,7 @@ export default async function AlternativeToPage({
         {content && (
           <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-8">
             <div className="prose prose-slate max-w-none">
-              {content.split("\n").map((line, i) => {
-                if (line.startsWith("# ")) {
-                  return <h2 key={i} className="text-2xl font-bold mt-8 first:mt-0">{line.replace("# ", "")}</h2>;
-                }
-                if (line.startsWith("## ")) {
-                  return <h3 key={i} className="text-xl font-semibold mt-6">{line.replace("## ", "")}</h3>;
-                }
-                if (line.startsWith("### ")) {
-                  return <h4 key={i} className="text-lg font-semibold mt-4">{line.replace("### ", "")}</h4>;
-                }
-                if (line.startsWith("- ")) {
-                  return <li key={i} className="ml-4 list-disc text-slate-700">{line.replace("- ", "")}</li>;
-                }
-                if (line.trim() === "") {
-                  return <div key={i} className="h-2" />;
-                }
-                return <p key={i} className="text-slate-700 leading-relaxed">{line}</p>;
-              })}
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
             </div>
           </div>
         )}

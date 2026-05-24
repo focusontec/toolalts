@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import toolsData from "@/../data/tools.json";
 import comparisonsData from "@/../data/comparisons.json";
 import { ComparisonTable } from "@/components/ComparisonTable";
@@ -151,24 +153,7 @@ export default async function ComparePage({
         </h2>
         {content ? (
           <div className="prose prose-slate mt-4 max-w-none dark:prose-invert">
-            {content.split("\n").map((line, i) => {
-              if (line.startsWith("# ")) {
-                return <h1 key={i} className="text-2xl font-bold">{line.replace("# ", "")}</h1>;
-              }
-              if (line.startsWith("## ")) {
-                return <h2 key={i} className="text-xl font-semibold mt-6">{line.replace("## ", "")}</h2>;
-              }
-              if (line.startsWith("### ")) {
-                return <h3 key={i} className="text-lg font-semibold mt-4">{line.replace("### ", "")}</h3>;
-              }
-              if (line.startsWith("- ")) {
-                return <li key={i} className="ml-4 list-disc">{line.replace("- ", "")}</li>;
-              }
-              if (line.trim() === "") {
-                return <div key={i} className="h-2" />;
-              }
-              return <p key={i} className="text-slate-700 dark:text-slate-300">{line}</p>;
-            })}
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
           </div>
         ) : (
           <div className="mt-4 rounded-xl bg-slate-50 p-6 text-center dark:bg-slate-800">
