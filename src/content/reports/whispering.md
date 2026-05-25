@@ -3,8 +3,8 @@ slug: "whispering"
 name: "Whispering"
 decision: "AMBIGUOUS"
 confidence: 40
-category: "development"
-processedAt: "2026-05-25T14:29:59.807Z"
+category: "other"
+processedAt: "2026-05-25T17:27:50.970Z"
 ---
 
 # AI Verification Report: Whispering
@@ -20,18 +20,17 @@ processedAt: "2026-05-25T14:29:59.807Z"
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
-- **GitHub**: https://github.com/undefined
-- **Category**: development
-- **Tagline**: A local-first, open-source app within the Epicenter ecosystem, but details are unclear.
-- **Features**: Open-source, Local-first, Part of Epicenter ecosystem
+- **GitHub**: N/A
+- **Category**: other
+- **Tagline**: A local-first, open-source app for transcribing and summarizing audio using Whisper.
+- **Features**: Local-first audio transcription, Summarization of transcribed audio, Open-source and privacy-focused
 - **Pricing**: Free ($0)
 
 ## Concerns
-- No dedicated GitHub repository for Whispering; it is a subdirectory in a monorepo.
-- No GitHub stars or activity data available for the specific app.
-- Website URL is a GitHub directory, not a standalone product page.
-- Purpose and features are not clearly documented.
+- No dedicated GitHub repository; part of a monorepo with no separate stars or activity data.
+- Website URL points to a subdirectory of a monorepo, not a standalone tool page.
+- No evidence of community adoption or recent updates specific to Whispering.
 
 ## Full Analysis
 
-Whispering is listed as a show HN submission, but the provided website URL points to a subdirectory in the Epicenter monorepo on GitHub. The website meta description describes the parent repository as 'Open-source, local-first apps' but does not specifically describe Whispering. There is no standalone website or dedicated GitHub repository for Whispering, making it difficult to assess its functionality, quality, or community adoption. The lack of GitHub data (stars, forks, last update) and the absence of a clear product description raise concerns about whether Whispering is a distinct, maintained tool. Given the limited evidence, the tool is classified as AMBIGUOUS with low confidence.
+Whispering is a component of the Epicenter monorepo, described as an open-source, local-first app for audio transcription and summarization using Whisper. The evidence is limited: the website is reachable but is a GitHub directory within a larger project, not a standalone tool page. No GitHub data (stars, forks, last update) is available for Whispering itself. The description is consistent with the monorepo's theme, but the lack of independent metrics and unclear maintenance status raise concerns. The tool appears to be free and open-source, but its maturity and community adoption are unverifiable. Given the insufficient evidence, the decision is AMBIGUOUS with low confidence.
