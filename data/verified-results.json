@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "slug": "hyperdiv",
+    "name": "Hyperdiv",
+    "website": "https://github.com/hyperdiv/hyperdiv",
+    "github": "https://github.com/undefined",
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "development",
+    "tagline": "Build reactive web UIs in Python",
+    "description": "Hyperdiv is a Python framework for building reactive web user interfaces. It targets Python developers who want to create interactive web apps without writing JavaScript.",
+    "features": [
+      "Reactive UI components",
+      "Python-based development",
+      "Web interface generation"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source"
+        ]
+      }
+    ],
+    "concerns": [
+      "GitHub data not available; cannot verify stars, forks, or recent activity",
+      "Website URL points to GitHub, not a dedicated product site; may indicate early-stage or unmaintained project",
+      "No independent website or documentation beyond GitHub README"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "Hyperdiv is a Python framework for building reactive web UIs, discovered via Hacker News Show HN. The provided evidence includes only a GitHub repository with no additional data (stars, forks, last update). The website URL is the GitHub repo itself, which is reachable but lacks a dedicated product site. Without GitHub statistics or a separate website, it's difficult to assess quality, activity, or community adoption. The description is consistent between the title and meta description. However, the lack of verifiable data and absence of a standalone website raise concerns about the project's maturity and maintenance. Therefore, the tool is classified as AMBIGUOUS with low confidence.",
+    "processedAt": "2026-05-25T08:10:25.320Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/undefined",
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A component within the Epicenter open-source platform, likely for voice or whisper-related functionality.",
+    "description": "Whispering appears to be a sub-app or module within the Epicenter open-source monorepo. It is described as part of a collection of local-first apps, but its specific purpose and features are unclear from the available evidence.",
+    "features": [
+      "Part of the Epicenter open-source platform",
+      "Local-first design",
+      "Likely related to voice or whisper functionality"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hostable"
+        ]
+      }
+    ],
+    "concerns": [
+      "No standalone GitHub repository for Whispering; it is a subdirectory in a larger monorepo",
+      "No independent description or documentation found",
+      "GitHub data not available; cannot assess stars, forks, or maintenance activity",
+      "Website URL points to GitHub tree, not a dedicated site; may not be a standalone tool"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL is a GitHub tree view within the Epicenter monorepo. The website is reachable but does not provide a dedicated description of Whispering; it is part of a larger project. No independent GitHub repository exists for Whispering, so GitHub data (stars, forks, last update) is unavailable. The description from the website meta is generic for the Epicenter project. Without specific information about Whispering's functionality, features, or community adoption, it is difficult to verify it as a standalone tool. The evidence suggests it may be a component rather than a full product. Therefore, the verification is ambiguous with low confidence.",
+    "processedAt": "2026-05-25T08:10:30.993Z"
+  },
+  {
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
+    "website": "https://artistassistapp.com/",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 50,
+    "verificationScore": 50,
+    "qualityScore": 0,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A tool for artists to assist with their creative process.",
+    "description": "ArtistAssistApp is a web-based application designed to help artists with various aspects of their work, such as color mixing, composition, or reference management. It targets painters and digital artists seeking to improve their workflow.",
+    "features": [
+      "Unverifiable features from available evidence"
+    ],
+    "pricing": [
+      {
+        "plan": "Unknown",
+        "price": "Unknown",
+        "features": [
+          "No pricing information available"
+        ]
+      }
+    ],
+    "concerns": [
+      "No GitHub data available to assess community engagement or maintenance activity.",
+      "Website reachable but no detailed description or features provided in evidence.",
+      "Cannot verify consistency between website and GitHub as GitHub data is null.",
+      "Website URL may be auto-generated: https://artistassistapp.com/"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable, but no GitHub repository data was provided, making it impossible to assess code quality, activity, or community signals. The website meta indicates it is reachable, but without further content analysis, the tool's features, pricing, and actual purpose remain unverifiable. Given the lack of evidence, the verification is ambiguous. The tool may be legitimate, but insufficient data prevents a confident approval or rejection.",
+    "processedAt": "2026-05-25T08:10:34.714Z"
+  }
+]
