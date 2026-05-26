@@ -2,20 +2,20 @@
 slug: "hyperdiv"
 name: "Hyperdiv"
 decision: "AMBIGUOUS"
-confidence: 60
+confidence: 40
 category: "development"
-processedAt: "2026-05-25T20:56:48.217Z"
+processedAt: "2026-05-26T01:57:24.052Z"
 ---
 
 # AI Verification Report: Hyperdiv
 
-## Decision: AMBIGUOUS (60/100 confidence)
+## Decision: AMBIGUOUS (40/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 40/100 |
-| Quality Score | 30/100 |
-| Consistency Score | 80/100 |
+| Verification Score | 30/100 |
+| Quality Score | 20/100 |
+| Consistency Score | 50/100 |
 
 ## Proposed Metadata
 
@@ -23,14 +23,14 @@ processedAt: "2026-05-25T20:56:48.217Z"
 - **GitHub**: https://github.com/undefined
 - **Category**: development
 - **Tagline**: Build reactive web UIs in Python.
-- **Features**: Reactive UI components, Python-only development, Built on web technologies
+- **Features**: Reactive UI components, Python-based development, Web interface building
 - **Pricing**: Free ($0)
 
 ## Concerns
-- GitHub data not available, so quality indicators like stars and last update cannot be verified.
-- The website URL is the GitHub repository itself, not a dedicated product page, which may indicate early-stage or lack of official site.
-- No pricing or feature details beyond the GitHub description.
+- GitHub data not available; cannot verify stars, forks, or recent activity.
+- Website URL points to GitHub, not a dedicated product page; may indicate early stage or lack of official site.
+- No evidence of community adoption or maintenance status.
 
 ## Full Analysis
 
-Hyperdiv is a Python framework for building reactive web UIs, as described on its GitHub repository. The website is the GitHub page, which is reachable and provides a clear description. However, no GitHub statistics (stars, forks, last update) are available in the evidence, making it impossible to assess project activity or community adoption. The tool appears to be open source, but without further data, its maturity and maintenance status are unverifiable. The consistency between the GitHub description and the website meta is high. Given the lack of GitHub data and absence of a dedicated website, the verification is ambiguous. The tool is classified as a development framework for Python developers.
+Hyperdiv is a Python framework for building reactive web UIs, discovered via Hacker News Show HN. The provided website URL is a GitHub repository, which is reachable but contains no detailed metadata such as stars, forks, or last update. The GitHub description matches the tool's purpose, but without repository statistics or a dedicated website, it is difficult to assess quality, activity, or community support. The tool appears to be open source, likely free, but the lack of verifiable data leads to low confidence. The decision is AMBIGUOUS due to insufficient evidence.
