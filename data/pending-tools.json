@@ -1,14 +1,1 @@
-[
-  {
-    "slug": "hyperdiv",
-    "name": "Hyperdiv",
-    "source": "hackernews-showhn",
-    "website": "https://github.com/hyperdiv/hyperdiv",
-    "discoveredAt": "2026-05-22T14:11:21.428Z",
-    "rawData": {
-      "title": "Show HN: Hyperdiv – Reactive, immediate-mode web UI framework for Python",
-      "points": 170,
-      "comments": 83
-    }
-  }
-]
+[]
