@@ -291,7 +291,7 @@
     "rating": 5,
     "reviewsCount": 16,
     "openSource": true,
-    "githubStars": 48471,
+    "githubStars": 48481,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -665,7 +665,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 185347,
+    "githubStars": 185351,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -819,7 +819,7 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 126726,
+    "githubStars": 126764,
     "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
@@ -857,7 +857,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 125316,
+    "githubStars": 125333,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [
@@ -897,7 +897,7 @@
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28467,
+    "githubStars": 28474,
     "githubUrl": "https://github.com/ComposioHQ/composio",
     "websiteUrl": "https://composio.dev",
     "pricing": [
@@ -988,7 +988,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28210,
+    "githubStars": 28212,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1147,7 +1147,7 @@
     "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 37935,
+    "githubStars": 37936,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
     "websiteUrl": "https://github.com/ToolJet/ToolJet",
     "pricing": [
@@ -1376,7 +1376,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 27996,
+    "githubStars": 28005,
     "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://github.com/langfuse/langfuse",
     "pricing": [
@@ -2575,7 +2575,7 @@
     "rating": 4.9,
     "reviewsCount": 210,
     "openSource": true,
-    "githubStars": 103035,
+    "githubStars": 103043,
     "githubUrl": "https://github.com/supabase/supabase",
     "websiteUrl": "https://supabase.com",
     "pricing": [
@@ -3085,7 +3085,7 @@
     "rating": 4.8,
     "reviewsCount": 8,
     "openSource": true,
-    "githubStars": 44631,
+    "githubStars": 44645,
     "githubUrl": "https://github.com/calcom/cal.com",
     "websiteUrl": "https://cal.com",
     "pricing": [
@@ -3187,7 +3187,7 @@
     "rating": 4.8,
     "reviewsCount": 84,
     "openSource": true,
-    "githubStars": 15110,
+    "githubStars": 15113,
     "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
     "websiteUrl": "https://trigger.dev",
     "pricing": [
@@ -3238,7 +3238,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 138301,
+    "githubStars": 138318,
     "githubUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "websiteUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "pricing": [
@@ -3269,7 +3269,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 103192,
+    "githubStars": 103277,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [
@@ -3301,7 +3301,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 69659,
+    "githubStars": 69680,
     "githubUrl": "https://github.com/bytedance/deer-flow",
     "websiteUrl": "https://deerflow.tech",
     "pricing": [
@@ -3333,7 +3333,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 61950,
+    "githubStars": 61976,
     "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "websiteUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "pricing": [
@@ -3365,7 +3365,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 43199,
+    "githubStars": 43203,
     "githubUrl": "https://github.com/HKUDS/nanobot",
     "websiteUrl": "https://nanobot.wiki",
     "pricing": [
@@ -3396,7 +3396,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 29426,
+    "githubStars": 29429,
     "githubUrl": "https://github.com/lbjlaq/Antigravity-Manager",
     "websiteUrl": "https://lbjlaq.github.io/Antigravity-Manager/",
     "pricing": [
@@ -3426,7 +3426,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 27587,
+    "githubStars": 27592,
     "githubUrl": "https://github.com/davila7/claude-code-templates",
     "websiteUrl": "https://aitmpl.com",
     "pricing": [
@@ -3565,5 +3565,35 @@
     ],
     "category": "development",
     "logo": "/logos/hyperdiv.svg"
+  },
+  {
+    "slug": "codegraph",
+    "name": "codegraph",
+    "tagline": "A local-first code-intelligence tool that turns any codebase into a queryable knowledge graph for AI coding agents.",
+    "description": "Codegraph is a pre-indexed code knowledge graph that integrates with AI coding agents like Claude Code, Codex, Gemini, and Cursor to reduce token usage and tool calls. It runs entirely locally, providing a fast and efficient way to understand and navigate codebases.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 27965,
+    "githubUrl": "https://github.com/colbymchenry/codegraph",
+    "websiteUrl": "https://colbymchenry.github.io/codegraph/",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open source, self-hosted, no paid tiers mentioned"
+        ]
+      }
+    ],
+    "features": [
+      "Pre-indexed code knowledge graph for multiple AI agents",
+      "Reduces token consumption and tool calls",
+      "100% local execution for privacy and speed",
+      "Supports Claude Code, Codex, Gemini, Cursor, and more",
+      "Open source under MIT license"
+    ],
+    "category": "development",
+    "logo": "/logos/codegraph.svg"
   }
 ]
