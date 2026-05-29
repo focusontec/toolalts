@@ -1,5 +1,5 @@
 ---
-slug: "colanode-"
+slug: "colanode"
 name: "Colanode,"
 decision: "APPROVE"
 confidence: 85

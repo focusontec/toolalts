@@ -1,6 +1,6 @@
 ---
 slug: "dyad-"
-name: "Dyad,"
+name: "Dyad"
 decision: "APPROVE"
 confidence: 85
 category: "development"

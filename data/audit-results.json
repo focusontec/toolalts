@@ -3282,7 +3282,7 @@
     },
     {
       "slug": "dyad-",
-      "name": "Dyad,",
+      "name": "Dyad",
       "accuracyScore": 70,
       "fieldChecks": [
         {
@@ -3512,7 +3512,7 @@
     },
     {
       "slug": "dyad",
-      "name": "Dyad,",
+      "name": "Dyad",
       "accuracyScore": 75,
       "fieldChecks": [
         {
@@ -3948,7 +3948,7 @@
       "auditedAt": "2026-05-27T06:26:20.080Z"
     },
     {
-      "slug": "colanode-",
+      "slug": "colanode",
       "name": "Colanode,",
       "accuracyScore": 40,
       "fieldChecks": [
@@ -10887,7 +10887,7 @@
       "auditedAt": "2026-05-27T06:32:22.245Z"
     },
     {
-      "slug": "anki-vs-colanode-",
+      "slug": "anki-vs-colanode",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 60,
@@ -11259,7 +11259,7 @@
       "auditedAt": "2026-05-27T06:33:33.636Z"
     },
     {
-      "slug": "colanode--vs-airtable",
+      "slug": "colanodevs-airtable",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 60,
@@ -11300,7 +11300,7 @@
       "auditedAt": "2026-05-27T06:33:40.211Z"
     },
     {
-      "slug": "colanode--vs-confluence",
+      "slug": "colanodevs-confluence",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 60,
@@ -11695,7 +11695,7 @@
       "auditedAt": "2026-05-27T06:34:58.809Z"
     },
     {
-      "slug": "ephe-vs-colanode-",
+      "slug": "ephe-vs-colanode",
       "type": "comparison",
       "qualityScore": 85,
       "accuracyScore": 90,
@@ -12183,7 +12183,7 @@
       "auditedAt": "2026-05-27T06:36:27.059Z"
     },
     {
-      "slug": "notion-vs-colanode-",
+      "slug": "notion-vs-colanode",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 85,
@@ -12332,7 +12332,7 @@
       "auditedAt": "2026-05-27T06:37:05.612Z"
     },
     {
-      "slug": "obsidian-vs-colanode-",
+      "slug": "obsidian-vs-colanode",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 80,
@@ -12557,7 +12557,7 @@
       "auditedAt": "2026-05-27T06:37:57.074Z"
     },
     {
-      "slug": "tasker-vs-colanode-",
+      "slug": "tasker-vs-colanode",
       "type": "comparison",
       "qualityScore": 75,
       "accuracyScore": 60,
@@ -13168,7 +13168,7 @@
       "auditedAt": "2026-05-27T06:40:02.647Z"
     },
     {
-      "slug": "colanode-",
+      "slug": "colanode",
       "type": "report",
       "qualityScore": 65,
       "accuracyScore": 45,

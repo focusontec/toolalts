@@ -1,1 +1,129 @@
-[]
+[
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/undefined",
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "No verifiable tool found.",
+    "description": "The evidence points to a GitHub repository path that is not a standalone tool and the website is unreachable. No meaningful features or community signals can be verified.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website URL is unreachable.",
+      "GitHub data is null; no stars, forks, or activity available.",
+      "The provided URL is a subdirectory of a larger repository, not a standalone tool.",
+      "No community signals or evidence of a maintained project."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN submission. The provided website URL points to a subdirectory within the 'epicenter-so/epicenter' repository on GitHub, not a standalone tool or project page. The website was unreachable, and no GitHub data (stars, forks, last update) was available. Without any verifiable evidence of a real, maintained project, the tool cannot be approved. The lack of reachable website and missing GitHub metadata are strong red flags. Therefore, the decision is REJECT with high confidence.",
+    "processedAt": "2026-05-29T08:45:44.878Z"
+  },
+  {
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
+    "website": "https://artistassistapp.com/",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "No verifiable information available.",
+    "description": "No verifiable information available.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website is unreachable, likely dead or fake.",
+      "No GitHub data available; cannot verify project existence or quality.",
+      "No community signals or evidence of real usage.",
+      "Website URL may be auto-generated: https://artistassistapp.com/"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'ArtistAssistApp' was discovered from a Hacker News Show HN post. The provided website (https://artistassistapp.com/) is unreachable, indicating it may be dead or fake. No GitHub repository or data was found. Without any reachable website or code repository, there is no evidence to verify the tool's existence, features, or quality. The tool is likely non-functional or abandoned. Therefore, the decision is REJECT with high confidence.",
+    "processedAt": "2026-05-29T08:45:48.481Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 90,
+    "verificationScore": 20,
+    "qualityScore": 10,
+    "consistencyScore": 30,
+    "category": "other",
+    "tagline": "A local-first app within the Epicenter monorepo, but no standalone tool or community presence.",
+    "description": "Whispering appears to be a component or app inside the Epicenter monorepo, described as open-source and local-first. However, there is no standalone repository, website, or community signals to verify it as an independent tool.",
+    "features": [
+      "Open-source",
+      "Local-first",
+      "Part of Epicenter monorepo"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source code"
+        ]
+      }
+    ],
+    "concerns": [
+      "No standalone GitHub repository or stars/forks data",
+      "Website is just a directory in a monorepo, not a dedicated tool page",
+      "No evidence of community adoption or maintenance",
+      "Unclear if this is a real product or just a code folder"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN, but the provided website is a path within the Epicenter monorepo on GitHub. The GitHub data is null, meaning no independent repository exists. The website meta description refers to the Epicenter project, not Whispering specifically. There is no tagline, feature list, or pricing information available. The tool lacks any standalone identity, community signals, or evidence of being a maintained product. Therefore, it is rejected as a verifiable software tool.",
+    "processedAt": "2026-05-29T13:11:20.113Z"
+  },
+  {
+    "slug": "artistassistapp",
+    "name": "ArtistAssistApp",
+    "website": "https://artistassistapp.com/",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "No verifiable information available.",
+    "description": "The tool ArtistAssistApp has no reachable website and no GitHub data, making it impossible to verify its existence or features.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website is unreachable, likely fake or dead.",
+      "No GitHub data available, no community or development activity.",
+      "Website URL may be auto-generated: https://artistassistapp.com/"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool ArtistAssistApp was submitted via Hacker News Show HN. The provided website (https://artistassistapp.com/) is unreachable, indicating it may be a placeholder or non-existent. No GitHub repository or any other evidence was found. Without a reachable website or any code repository, the tool cannot be verified. The lack of any online presence suggests this is either a very early-stage project or a fabricated submission. Therefore, the tool is rejected.",
+    "processedAt": "2026-05-29T13:11:23.782Z"
+  }
+]
