@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { chromium } from "playwright";
 
 const DATA_PATH = path.resolve(__dirname, "../data/tools.json");
 const SCREENSHOT_DIR = path.resolve(__dirname, "../public/images/tools");
 
 const SLEEP_MS = 1000;
 const MAX_RETRIES = 3;
+const SKIP_SCREENSHOTS = process.argv.includes("--skip-screenshots") || process.env.CI === "true";
 
 interface ToolEntry {
   slug: string;
@@ -104,16 +104,21 @@ async function main() {
     fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
   }
 
-  // Try to launch browser; skip screenshots if unavailable
+  // Try to launch browser; skip screenshots if unavailable or --skip-screenshots
   let browser: any = null;
-  try {
-    browser = await chromium.launch();
-    console.log("✅ Playwright browser launched");
-  } catch {
-    console.warn(
-      "⚠️ Playwright browser not available. Skipping screenshots. To install:\n",
-      "   npx playwright install --with-deps chromium"
-    );
+  if (SKIP_SCREENSHOTS) {
+    console.log("⏭️  Skipping screenshots (--skip-screenshots or CI=true)");
+  } else {
+    try {
+      const { chromium } = await import("playwright");
+      browser = await chromium.launch();
+      console.log("✅ Playwright browser launched");
+    } catch {
+      console.warn(
+        "⚠️ Playwright browser not available. Skipping screenshots. To install:\n",
+        "   npx playwright install --with-deps chromium"
+      );
+    }
   }
 
   const changes: string[] = [];

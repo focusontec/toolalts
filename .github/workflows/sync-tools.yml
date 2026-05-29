@@ -25,11 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-
-      - name: Run sync script
-        run: npx tsx scripts/sync-tools.ts
+      - name: Run sync script (stars only, no screenshots)
+        run: npx tsx scripts/sync-tools.ts --skip-screenshots
 
       - name: Commit changes
         run: |

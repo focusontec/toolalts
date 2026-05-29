@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-
       # ── STEP 1: DISCOVER ──────────────────────────────
       - name: 🔍 Discover new tools
         env:
@@ -58,10 +55,10 @@ jobs:
         run: npx tsx scripts/generate-comparisons.ts
 
       # ── STEP 5: SYNC GITHUB DATA ──────────────────────
-      - name: 📊 Sync tool data (stars, updates)
+      - name: 📊 Sync tool data (stars only, no screenshots)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx tsx scripts/sync-tools.ts
+        run: npx tsx scripts/sync-tools.ts --skip-screenshots
 
       # ── STEP 6: COMMIT ─────────────────────────────────
       - name: 💾 Commit changes
