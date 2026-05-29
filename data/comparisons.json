@@ -388,5 +388,143 @@
     "toolA": "stagewise",
     "toolB": "dyad",
     "category": "development"
+  },
+  {
+    "slug": "notion-vs-anki",
+    "toolA": "notion",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-ephe",
+    "toolA": "notion",
+    "toolB": "ephe",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-colanode",
+    "toolA": "notion",
+    "toolB": "colanode",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-confluence",
+    "toolA": "notion",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "notion-vs-airtable",
+    "toolA": "notion",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-anki",
+    "toolA": "obsidian",
+    "toolB": "anki",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-ephe",
+    "toolA": "obsidian",
+    "toolB": "ephe",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-colanode",
+    "toolA": "obsidian",
+    "toolB": "colanode",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-confluence",
+    "toolA": "obsidian",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-airtable",
+    "toolA": "obsidian",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "anki-vs-colanode",
+    "toolA": "anki",
+    "toolB": "colanode",
+    "category": "productivity"
+  },
+  {
+    "slug": "anki-vs-confluence",
+    "toolA": "anki",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "anki-vs-airtable",
+    "toolA": "anki",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "tasker-vs-ephe",
+    "toolA": "tasker",
+    "toolB": "ephe",
+    "category": "productivity"
+  },
+  {
+    "slug": "tasker-vs-colanode",
+    "toolA": "tasker",
+    "toolB": "colanode",
+    "category": "productivity"
+  },
+  {
+    "slug": "tasker-vs-confluence",
+    "toolA": "tasker",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "tasker-vs-airtable",
+    "toolA": "tasker",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "ephe-vs-colanode",
+    "toolA": "ephe",
+    "toolB": "colanode",
+    "category": "productivity"
+  },
+  {
+    "slug": "ephe-vs-confluence",
+    "toolA": "ephe",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "ephe-vs-airtable",
+    "toolA": "ephe",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "colanode-vs-confluence",
+    "toolA": "colanode",
+    "toolB": "confluence",
+    "category": "productivity"
+  },
+  {
+    "slug": "colanode-vs-airtable",
+    "toolA": "colanode",
+    "toolB": "airtable",
+    "category": "productivity"
+  },
+  {
+    "slug": "confluence-vs-airtable",
+    "toolA": "confluence",
+    "toolB": "airtable",
+    "category": "productivity"
   }
 ]
