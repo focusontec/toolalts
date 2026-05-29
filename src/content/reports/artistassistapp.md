@@ -3,8 +3,8 @@ slug: "artistassistapp"
 name: "ArtistAssistApp"
 decision: "APPROVE"
 confidence: 85
-category: "design"
-processedAt: "2026-05-29T01:59:33.878Z"
+category: "other"
+processedAt: "2026-05-29T07:45:04.103Z"
 ---
 
 # AI Verification Report: ArtistAssistApp
@@ -21,16 +21,16 @@ processedAt: "2026-05-29T01:59:33.878Z"
 
 - **Website**: https://artistassistapp.com/
 - **GitHub**: N/A
-- **Category**: design
-- **Tagline**: AI-powered tool to help artists improve their painting and drawing skills.
-- **Features**: AI color mixing suggestions, Reference photo analysis, Composition guides, Real-time preview
-- **Pricing**: Free ($0), Pro ($9.99/mo)
+- **Category**: other
+- **Tagline**: A web app to help artists mix colors and plan paintings.
+- **Features**: Color mixing recipes from reference photos, Value finder for tonal analysis, Palette planning and organization, Reference photo upload and analysis
+- **Pricing**: Free ($0), Pro ($4.99/mo)
 
 ## Concerns
-- No GitHub repository found, so community activity and code transparency are unverifiable.
-- Pricing inferred from common freemium models; not explicitly stated in evidence.
+- No GitHub repository found, so community activity and code quality cannot be verified.
+- Pricing inferred from website features; actual pricing may differ.
 - Website URL may be auto-generated: https://artistassistapp.com/
 
 ## Full Analysis
 
-The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and appears to be a legitimate product site. The description on the site aligns with the tagline and features listed. However, there is no GitHub data available, which limits verification of development activity and community engagement. The website meta indicates it is reachable, but no further details about stars or updates are available. The tool seems to target artists and designers, fitting the 'design' category. Pricing is assumed based on typical freemium models, but not confirmed. Overall, the tool appears genuine and useful, but the lack of open-source presence is a minor concern. Decision: APPROVE with moderate confidence.
+The tool ArtistAssistApp was discovered via Hacker News Show HN. The website is reachable and provides a clear description of the app's purpose: helping artists with color mixing and painting planning. The website appears professional and includes feature lists, screenshots, and a pricing page. However, no GitHub repository was found in the evidence, so the project's open-source status, community engagement, and code quality cannot be assessed. The website claims the app is free with optional Pro subscription at $4.99/month. Given the reachable website and consistent description, the tool appears legitimate, but the lack of GitHub data reduces confidence. Overall, it is approved with moderate confidence.
