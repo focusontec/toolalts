@@ -2,8 +2,8 @@ name: AutoClaw — Discover, Verify, Approve
 
 on:
   schedule:
-    # Run every 4 hours (6x per day)
-    - cron: "0 */4 * * *"
+    # Run every 12 hours (2x per day)
+    - cron: "0 3,15 * * *"
   workflow_dispatch:
 
 permissions:
