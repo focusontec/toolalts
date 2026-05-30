@@ -50,7 +50,7 @@ Moderate. Many high-quality tools are well-maintained, but there is a significan
 - Data quality is poor: pricing and features are copied from GitHub, not Ephe.
 - Website URL points to a different GitHub repo than the tool's own repo.
 
-### Colanode, (`colanode-`) — W:25 D:20
+### Colanode (`colanode`) — W:25 D:20
 - Tool is very niche with only 500 GitHub stars and no reviews
 - Description and features appear to be copied from GitHub's own product, not Colanode
 - Pricing plan is for GitHub, not Colanode

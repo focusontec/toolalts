@@ -3595,35 +3595,5 @@
     ],
     "category": "development",
     "logo": "/logos/codegraph.svg"
-  },
-  {
-    "slug": "colanode-",
-    "name": "Colanode,",
-    "tagline": "Open-source and local-first Slack and Notion alternative that puts you in control of your data.",
-    "description": "Colanode is an open-source platform that combines team communication (like Slack) with collaborative document editing (like Notion), all while keeping your data local-first. It is designed for teams and individuals who prioritize data privacy and control.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/colanode/colanode",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0",
-        "features": [
-          "Open-source software",
-          "Self-hosted"
-        ]
-      }
-    ],
-    "features": [
-      "Local-first architecture for data ownership",
-      "Team communication (chat) functionality",
-      "Collaborative document editing",
-      "Open-source and self-hostable"
-    ],
-    "category": "productivity",
-    "logo": "/logos/colanode-.svg"
   }
 ]
