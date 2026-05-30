@@ -1,41 +1,37 @@
 ---
 slug: "whispering"
 name: "Whispering"
-decision: "APPROVE"
-confidence: 85
+decision: "REJECT"
+confidence: 90
 category: "other"
-processedAt: "2026-05-30T06:14:24.396Z"
+processedAt: "2026-05-30T15:58:46.041Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: APPROVE (85/100 confidence)
+## Decision: REJECT (90/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 85/100 |
-| Quality Score | 80/100 |
-| Consistency Score | 85/100 |
+| Verification Score | 20/100 |
+| Quality Score | 10/100 |
+| Consistency Score | 30/100 |
 
 ## Proposed Metadata
 
-- **Website**: https://whispering.epicenter.so
-- **GitHub**: https://github.com/EpicenterHQ/epicenter
+- **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
+- **GitHub**: N/A
 - **Category**: other
-- **Tagline**: Press shortcut, speak, get text. Open-source speech-to-text app with local-first privacy.
-- **Features**: Speech-to-text transcription, Local-first with transparent data handling, Multiple provider support (Whisper C++, Groq, OpenAI, ElevenLabs), Cross-platform (macOS, Windows, Linux), Keyboard shortcut activation, Auto-copy and paste at cursor, Built with Svelte 5 + Tauri + Rust
-- **Pricing**: Free ($0) — open source, AGPLv3
-- **GitHub Stars**: 4,589 (parent monorepo EpicenterHQ/epicenter)
-- **Open Source**: Yes
+- **Tagline**: A component within a larger open-source project, not a standalone tool.
+- **Features**: 
+- **Pricing**: 
 
-## Notes
-
-Whispering is a sub-application within the Epicenter monorepo (EpicenterHQ/epicenter), not a standalone repository. GitHub stars (4,589) and forks (349) are for the parent project. The app has its own website, releases, and documentation. It was previously scored as AMBIGUOUS/REJECT due to the monorepo structure causing the verification script to miss community signals.
+## Concerns
+- Not a standalone tool; it's a subdirectory in a monorepo.
+- No independent GitHub repository or stars.
+- No official website or product page.
+- No description of what Whispering does.
 
 ## Full Analysis
 
-Whispering is an open-source speech-to-text application discovered via Hacker News. It is part of the Epicenter monorepo, which has 4,589 GitHub stars and 349 forks — indicating strong community adoption. The project is actively maintained with the most recent update on 2026-05-29.
-
-The app is built with Svelte 5, Tauri (Rust), and TypeScript, offering native performance across macOS, Windows, and Linux. Users press a keyboard shortcut, speak, and the transcription is automatically copied and pasted at the cursor position. It supports multiple transcription providers: local options (Whisper C++, Speaches) and cloud providers (Groq, OpenAI, ElevenLabs), giving users full control over their data routing.
-
-The project has a dedicated website (whispering.epicenter.so), an active Discord community, regular releases on GitHub, and comprehensive documentation. The AGPLv3 license ensures it remains open source. Given the strong community signals, active maintenance, clear functionality, and professional documentation, this tool is approved for inclusion.
+The evidence for 'Whispering' is insufficient to verify it as a standalone software tool. The provided URL is a GitHub tree view within the Epicenter monorepo, and there is no separate GitHub repository, website, or product description. The websiteMeta description refers to the Epicenter project, not Whispering specifically. Without any independent identity, features, or community signals, this cannot be classified as a real, maintained tool. Therefore, the decision is REJECT.
