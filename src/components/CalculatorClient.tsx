@@ -120,9 +120,9 @@ export function CalculatorClient() {
               <p className="text-xs text-[var(--color-ink-muted)]">${totalMonthly.toLocaleString()}/month</p>
             </div>
             <div>
-              <p className="text-sm text-[var(--color-ink-muted)]">Self-hosted cost</p>
+              <p className="text-sm text-[var(--color-ink-muted)]">Self-hosted cost (estimate)</p>
               <p className="mt-1 text-3xl font-bold text-[var(--color-ink)]">${hostingCost.toLocaleString()}</p>
-              <p className="text-xs text-[var(--color-ink-muted)]">~$50/month VPS</p>
+              <p className="text-xs text-[var(--color-ink-muted)]">~$50/month VPS + maintenance time</p>
             </div>
             <div>
               <p className="text-sm text-[var(--color-ink-muted)]">Annual savings</p>
@@ -155,6 +155,10 @@ export function CalculatorClient() {
         >
           Read our complete self-hosting guide →
         </Link>
+        <p className="mt-4 text-xs text-[var(--color-ink-muted)]">
+          * Self-hosted cost estimate covers basic VPS hosting only. Actual costs may include maintenance time,
+          backups, monitoring, and scaling. Open source tools are free to use but require technical setup.
+        </p>
       </div>
     </div>
   );

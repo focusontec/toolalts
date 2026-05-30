@@ -3,26 +3,27 @@ import type { Metadata } from "next";
 import { promises as fs } from "fs";
 import { join } from "path";
 import matter from "gray-matter";
+import { SchemaJsonLd } from "@/components/SchemaJsonLd";
 import type { BlogPost } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Blog — ToolAlts",
+  title: "Open Source Tools, Comparisons & Productivity Guides — Blog | ToolAlts",
   description:
-    "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
+    "In-depth articles about open-source tools, SaaS alternatives, software comparisons, self-hosting guides, and productivity tips for developers and teams.",
   alternates: {
     canonical: "https://www.toolalts.dev/blog/",
   },
   openGraph: {
     type: "website",
-    title: "Blog — ToolAlts",
-    description: "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
+    title: "Open Source Tools, Comparisons & Productivity Guides — Blog | ToolAlts",
+    description: "In-depth articles about open-source tools, SaaS alternatives, software comparisons, self-hosting guides, and productivity tips for developers and teams.",
     url: "https://www.toolalts.dev/blog/",
     siteName: "ToolAlts",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog — ToolAlts",
-    description: "Read the latest articles about open-source tools, software comparisons, and productivity tips.",
+    title: "Open Source Tools, Comparisons & Productivity Guides — Blog | ToolAlts",
+    description: "In-depth articles about open-source tools, SaaS alternatives, software comparisons, self-hosting guides, and productivity tips for developers and teams.",
   },
 };
 
@@ -60,15 +61,32 @@ export default async function BlogPage() {
   const posts = await loadPosts();
   const [featured, ...rest] = posts;
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "ToolAlts Blog",
+    description: "In-depth articles about open-source tools, SaaS alternatives, software comparisons, and productivity tips.",
+    url: "https://www.toolalts.dev/blog/",
+    blogPost: posts.slice(0, 10).map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      datePublished: post.date,
+      author: { "@type": "Person", name: post.author || "ToolAlts Team" },
+      url: `https://www.toolalts.dev/blog/${post.slug}/`,
+    })),
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">
+      <SchemaJsonLd schema={blogSchema} />
+
       {/* Header */}
       <div className="mb-12">
         <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--color-accent)]">
           Insights
         </span>
         <h1 className="mt-2 font-display text-4xl tracking-tight text-[var(--color-ink)] sm:text-5xl">
-          Blog
+          Open Source Tools & Software Comparisons
         </h1>
         <p className="mt-4 max-w-xl text-lg text-[var(--color-ink-faint)]">
           Articles about open-source tools, software comparisons, and

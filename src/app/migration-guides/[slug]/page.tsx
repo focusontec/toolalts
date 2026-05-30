@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { SchemaJsonLd } from "@/components/SchemaJsonLd";
 import {
   getAllMigrationGuideSlugs,
   getMigrationGuideBySlug,
@@ -45,8 +46,35 @@ export default async function MigrationGuidePage({ params }: Props) {
     hard: "bg-red-50 text-red-700 border-red-200",
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.toolalts.dev/" },
+      { "@type": "ListItem", position: 2, name: "Migration Guides", item: "https://www.toolalts.dev/migration-guides/" },
+      { "@type": "ListItem", position: 3, name: `${guide.fromTool} → ${guide.toTool}` },
+    ],
+  };
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: guide.title,
+    description: guide.excerpt,
+    totalTime: guide.estimatedTime,
+    step: [
+      { "@type": "HowToStep", name: "Export data", text: `Export your data from ${guide.fromTool}` },
+      { "@type": "HowToStep", name: "Set up new tool", text: `Set up ${guide.toTool}` },
+      { "@type": "HowToStep", name: "Import data", text: `Import your data into ${guide.toTool}` },
+      { "@type": "HowToStep", name: "Verify and configure", text: "Verify the migration and configure your new tool" },
+    ],
+  };
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
+      <SchemaJsonLd schema={breadcrumbSchema} />
+      <SchemaJsonLd schema={howToSchema} />
+
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[var(--color-ink-muted)]">
         <Link href="/" className="hover:text-[var(--color-accent)]">Home</Link>

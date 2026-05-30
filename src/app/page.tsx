@@ -89,6 +89,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Intro (SEO body text) ─── */}
+      <section className="mx-auto max-w-3xl px-6 py-12 text-center">
+        <p className="text-base leading-relaxed text-[var(--color-ink-muted)]">
+          ToolAlts helps you discover the best open source and paid alternatives to popular software.
+          Whether you're looking for a <Link href="/alternative-to/notion/" className="font-medium text-[var(--color-accent)] hover:underline">Notion alternative</Link>,{" "}
+          a <Link href="/alternative-to/figma/" className="font-medium text-[var(--color-accent)] hover:underline">Figma alternative</Link>, or{" "}
+          a <Link href="/alternative-to/slack/" className="font-medium text-[var(--color-accent)] hover:underline">Slack alternative</Link>,
+          we compare features, pricing, and ratings side by side so you can find the right tool for your team.
+          Use our <Link href="/quiz/" className="font-medium text-[var(--color-accent)] hover:underline">tool finder quiz</Link> or{" "}
+          <Link href="/calculator/" className="font-medium text-[var(--color-accent)] hover:underline">cost calculator</Link> to get started.
+        </p>
+      </section>
+
       {/* ─── Popular Alternatives ─── */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10">
