@@ -100,6 +100,9 @@ export default async function CategoryPage({
         <p className="mt-4 max-w-2xl text-lg text-slate-600">
           {category.description}
         </p>
+        <p className="mt-2 text-sm text-slate-500">
+          {categoryTools.length} {categoryTools.length === 1 ? "tool" : "tools"} · Compare features, pricing, and ratings
+        </p>
       </div>
 
       {categoryTools.length > 0 ? (
