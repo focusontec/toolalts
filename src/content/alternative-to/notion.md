@@ -81,3 +81,11 @@ A: Outline is the best team alternative — it supports real-time collaboration 
 
 **Q: Which alternative is truly free?**
 A: All five alternatives offer free tiers. Obsidian, BookStack, AppFlowy, and Anytype are completely free for personal use.
+
+## Related Pages
+
+- [Notion vs Obsidian](/compare/notion-vs-obsidian/) — Detailed comparison of features and pricing
+- [Migrate from Notion to Obsidian](/migration-guides/notion-to-obsidian/) — Step-by-step migration guide
+- [Best Obsidian Alternatives](/alternative-to/obsidian/) — Looking the other direction?
+- [Best Figma Alternatives](/alternative-to/figma/) — Design tool alternatives
+- [Open Source Cost Savings Calculator](/calculator/) — See how much you can save switching to open source

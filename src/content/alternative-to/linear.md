@@ -71,3 +71,11 @@ A: Focalboard or Wekan are better for non-engineering teams — they offer flexi
 
 **Q: Which is truly free for unlimited users?**
 A: GitHub Issues, Focalboard (self-hosted), and Wekan (self-hosted) are free for unlimited users.
+
+## Related Pages
+
+- [Free Project Management Tools](/blog/free-project-management-tools-2026/) — Comprehensive PM tool guide
+- [Jira to Plane Migration](/migration-guides/jira-to-plane/) — Step-by-step migration guide
+- [Self-Hosted SaaS Alternatives](/blog/self-hosted-saas-alternatives-2026/) — Guide to self-hosting
+- [Notion Alternatives](/alternative-to/notion/) — All-in-one workspace alternatives
+- [SaaS Cost Calculator](/calculator/) — Calculate your potential savings

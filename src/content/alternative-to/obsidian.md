@@ -63,3 +63,11 @@ A: Notion is the clear winner for real-time collaboration.
 
 **Q: Which is best for privacy?**
 A: Anytype offers the best privacy with peer-to-peer sync and no central servers. Logseq is also fully local.
+
+## Related Pages
+
+- [Notion Alternatives](/alternative-to/notion/) — Compare all Notion alternatives
+- [Notion vs Obsidian](/compare/notion-vs-obsidian/) — Side-by-side feature comparison
+- [Migrate from Notion to Obsidian](/migration-guides/notion-to-obsidian/) — Step-by-step guide
+- [Why Obsidian Beats Notion](/blog/why-obsidian-beats-notion/) — Detailed analysis
+- [SaaS Cost Calculator](/calculator/) — See how much you can save

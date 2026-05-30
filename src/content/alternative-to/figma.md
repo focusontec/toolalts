@@ -71,3 +71,11 @@ A: Penpot is the best choice for teams — it supports real-time collaboration, 
 
 **Q: Is Penpot as powerful as Figma?**
 A: Penpot covers most core design workflows (layouts, components, prototyping). Figma has more advanced features like variables, advanced prototyping, and a larger plugin ecosystem.
+
+## Related Pages
+
+- [Figma vs Penpot](/compare/figma-vs-penpot/) — Side-by-side feature comparison
+- [Migrate from Figma to Penpot](/migration-guides/figma-to-penpot/) — Step-by-step migration guide
+- [Open Source Design Tools](/blog/best-open-source-design-tools/) — Deep dive into design alternatives
+- [Notion Alternatives](/alternative-to/notion/) — Productivity tool alternatives
+- [SaaS Cost Calculator](/calculator/) — Calculate your potential savings
