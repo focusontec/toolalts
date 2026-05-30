@@ -147,7 +147,26 @@ export default async function BlogPostPage({
 
         {/* Article Body */}
         <div className="prose">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ href, children, ...props }) => {
+                const isExternal = href?.startsWith("http");
+                return (
+                  <a
+                    href={href}
+                    {...(isExternal && {
+                      target: "_blank",
+                      rel: "noopener noreferrer nofollow",
+                    })}
+                    {...props}
+                  >
+                    {children}
+                  </a>
+                );
+              },
+            }}
+          >
             {post.content}
           </ReactMarkdown>
         </div>

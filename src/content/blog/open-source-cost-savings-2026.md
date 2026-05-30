@@ -152,3 +152,4 @@ Browse our database of 50+ tools with pricing, features, and alternatives:
 - [Communication tools](/category/communication/) — Replace Slack, Teams, Zoom
 - [Development tools](/category/development/) — Replace GitHub, GitLab, Vercel
 - [Productivity tools](/category/productivity/) — Replace Notion, Confluence, Airtable
+- [AI Human Space](https://aihumanspace.com/) — 50+ free, browser-based tools (PDF, image, OCR, text, AI chat) with no registration required
