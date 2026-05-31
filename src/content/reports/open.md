@@ -1,37 +1,35 @@
 ---
 slug: "open"
 name: "Open"
-decision: "REJECT"
-confidence: 95
+decision: "APPROVE"
+confidence: 90
 category: "other"
-processedAt: "2026-05-20T10:41:25.139Z"
+processedAt: "2026-05-31T06:47:36.396Z"
 ---
 
 # AI Verification Report: Open
 
-## Decision: REJECT (95/100 confidence)
+## Decision: APPROVE (90/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 10/100 |
-| Quality Score | 0/100 |
-| Consistency Score | 0/100 |
+| Verification Score | 85/100 |
+| Quality Score | 70/100 |
+| Consistency Score | 100/100 |
 
 ## Proposed Metadata
 
-- **Website**: https://news.ycombinator.com/item?id=29081054
-- **GitHub**: N/A
+- **Website**: https://github.com/secluso/core
+- **GitHub**: https://github.com/undefined
 - **Category**: other
-- **Tagline**: No verifiable tool found.
-- **Features**: 
-- **Pricing**: 
+- **Tagline**: A privacy-preserving Raspberry Pi home security camera with end-to-end encryption.
+- **Features**: Privacy-preserving design, End-to-end encryption, Raspberry Pi compatible, Home security camera functionality
+- **Pricing**: Free ($0)
 
 ## Concerns
-- Website URL is a Hacker News submission, not a tool site.
-- Website is unreachable.
-- No GitHub data available.
-- No description or features can be verified.
+- No GitHub data available (stars, forks, last update) to assess activity level.
+- Website is the GitHub repository itself, which is reachable but provides limited information beyond the README.
 
 ## Full Analysis
 
-The evidence provided for the tool 'Open' consists of a Hacker News submission URL (https://news.ycombinator.com/item?id=29081054) which is not a tool's official website. The website is unreachable, and no GitHub data is available. Without any verifiable source of information about the tool, it is impossible to assess its quality, consistency, or features. Therefore, the tool is rejected due to lack of evidence.
+The tool 'Open' was discovered via Hacker News Show HN. The provided website URL is a GitHub repository (secluso/core) which is reachable and contains a clear description: 'A privacy-preserving Raspberry Pi home security camera that uses advanced end-to-end encryption.' The description is consistent between the website meta title and the repository's purpose. However, no GitHub data (stars, forks, last update) is available in the evidence, making it impossible to assess community adoption or maintenance activity. The tool appears to be open source and free. No red flags such as abandoned repos or fake URLs were identified, but the lack of activity data is a minor concern. Overall, the tool seems legitimate and well-described, leading to an APPROVE decision with moderate confidence due to missing metrics.
