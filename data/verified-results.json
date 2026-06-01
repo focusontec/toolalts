@@ -56,5 +56,46 @@
     ],
     "fullReport": "The evidence provided shows that 'Whispering' is not a standalone software tool but rather a subdirectory within the Epicenter monorepo on GitHub. The website URL points to a GitHub tree view, not a dedicated product page. There is no GitHub data (stars, forks, etc.) specific to Whispering, and the website meta description refers to the parent project Epicenter. Without a distinct repository, website, or community signals, Whispering cannot be verified as an independent tool. Therefore, the decision is REJECT with high confidence.",
     "processedAt": "2026-06-01T08:24:19.380Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A component within the Epicenter open-source monorepo, possibly for voice or audio processing.",
+    "description": "Whispering appears to be a sub-application within the Epicenter monorepo, which is described as an open-source, local-first apps collection. The tool's purpose is unclear from the available evidence, but it may relate to voice or audio features given the name. It is not a standalone tool and lacks independent documentation or community.",
+    "features": [
+      "Part of a monorepo",
+      "Open-source",
+      "Local-first"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "concerns": [
+      "No independent GitHub repository or stars/forks data",
+      "Website is a GitHub directory, not a dedicated product page",
+      "Purpose and functionality are ambiguous",
+      "No evidence of active maintenance or community"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN post. The provided website URL points to a subdirectory within the Epicenter monorepo on GitHub. The website is reachable but is a GitHub code directory, not a dedicated product or documentation site. No independent GitHub repository exists for Whispering, so GitHub stars, forks, and activity data are unavailable. The Epicenter project describes itself as 'Open-source, local-first apps,' but the specific role of Whispering within that ecosystem is unclear. The name suggests possible voice or audio functionality, but this is unverifiable from the evidence. Due to the lack of standalone identity, missing quality metrics, and ambiguous purpose, the tool is classified as AMBIGUOUS with low confidence. It may be a minor component rather than a full-fledged product.",
+    "processedAt": "2026-06-01T19:51:52.407Z"
   }
 ]
