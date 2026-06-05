@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/undefined",
+    "decision": "AMBIGUOUS",
+    "confidence": 30,
+    "verificationScore": 20,
+    "qualityScore": 10,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A component within a larger open-source project, lacking standalone identity.",
+    "description": "Whispering appears to be a subdirectory within the Epicenter monorepo on GitHub. It is described as part of an open-source, local-first apps collection, but no standalone documentation or features are provided. The tool's purpose and target audience are unclear.",
+    "features": [
+      "Part of Epicenter open-source project",
+      "Local-first design",
+      "No standalone features listed"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "concerns": [
+      "No standalone GitHub repository for Whispering; it's a subdirectory in a monorepo.",
+      "No GitHub data (stars, forks) available for the tool itself.",
+      "Website URL is a GitHub tree path, not a dedicated website.",
+      "Insufficient evidence to determine functionality, quality, or community adoption."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL points to a GitHub tree path within the Epicenter monorepo. The website is reachable and shows the directory structure, but there is no standalone README or description for Whispering. The GitHub data for the tool is null, indicating no separate repository. The Epicenter project itself is open-source, but without specific information about Whispering's features, usage, or community engagement, it is impossible to verify its quality or consistency. The tool appears to be a minor component rather than a standalone product. Given the lack of evidence, the decision is AMBIGUOUS with low confidence.",
+    "processedAt": "2026-06-05T06:57:40.128Z"
+  }
+]
