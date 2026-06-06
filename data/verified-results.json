@@ -121,5 +121,34 @@
     ],
     "fullReport": "The tool 'Whispering' was discovered via a Hacker News 'Show HN' post, but the provided website URL points to a subdirectory within the Epicenter monorepo on GitHub. The website meta description confirms it is part of a larger open-source project. There is no standalone GitHub repository, no stars, no independent website, and no evidence of a distinct tool. The tool appears to be a minor component, not a standalone product. Therefore, it is rejected as a discoverable software tool.",
     "processedAt": "2026-06-06T06:20:59.986Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 90,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "Unverifiable tool with no accessible website or GitHub repository.",
+    "description": "Whispering appears to be a subdirectory within a larger repository (epicenter-so/epicenter) but no standalone GitHub repository or website is available. The tool cannot be verified.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website URL is a GitHub subdirectory, not a standalone site.",
+      "Website is unreachable.",
+      "No GitHub data available (stars, forks, last update).",
+      "No evidence of tool existence beyond a directory name."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via a Hacker News 'Show HN' post, but the provided website URL points to a subdirectory within the epicenter-so/epicenter GitHub repository. The website is unreachable, and no GitHub data (stars, forks, last update) is available. There is no standalone repository or official website for Whispering. The evidence is insufficient to verify the tool's existence, features, or quality. Therefore, the tool is rejected.",
+    "processedAt": "2026-06-06T16:01:34.679Z"
   }
 ]
