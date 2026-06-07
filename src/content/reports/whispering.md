@@ -4,7 +4,7 @@ name: "Whispering"
 decision: "REJECT"
 confidence: 90
 category: "other"
-processedAt: "2026-06-06T16:01:34.679Z"
+processedAt: "2026-06-07T06:58:03.838Z"
 ---
 
 # AI Verification Report: Whispering
@@ -13,25 +13,25 @@ processedAt: "2026-06-06T16:01:34.679Z"
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 10/100 |
-| Quality Score | 0/100 |
-| Consistency Score | 0/100 |
+| Verification Score | 20/100 |
+| Quality Score | 10/100 |
+| Consistency Score | 30/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
 - **Category**: other
-- **Tagline**: Unverifiable tool with no accessible website or GitHub repository.
-- **Features**: 
-- **Pricing**: 
+- **Tagline**: Whispering is a local-first, open-source app within the Epicenter monorepo, but lacks standalone identity and community traction.
+- **Features**: Local-first architecture, Open-source, Part of Epicenter ecosystem
+- **Pricing**: Free ($0)
 
 ## Concerns
-- Website URL is a GitHub subdirectory, not a standalone site.
-- Website is unreachable.
-- No GitHub data available (stars, forks, last update).
-- No evidence of tool existence beyond a directory name.
+- No dedicated GitHub repository; only a directory in a monorepo.
+- No standalone website or documentation for Whispering itself.
+- No evidence of stars, forks, or community activity.
+- The tool name is not independently discoverable; it is embedded in a larger project.
 
 ## Full Analysis
 
-The tool 'Whispering' was discovered via a Hacker News 'Show HN' post, but the provided website URL points to a subdirectory within the epicenter-so/epicenter GitHub repository. The website is unreachable, and no GitHub data (stars, forks, last update) is available. There is no standalone repository or official website for Whispering. The evidence is insufficient to verify the tool's existence, features, or quality. Therefore, the tool is rejected.
+Whispering was submitted as a Show HN entry, but the provided URL points to a subdirectory within the Epicenter monorepo on GitHub. The website is reachable but is just the GitHub page for the monorepo, not a dedicated site for Whispering. There is no separate GitHub repository for Whispering, so no stars, forks, or activity data are available. The description from the website meta is generic to the Epicenter project. Without a standalone identity, clear feature set, or community signals, Whispering cannot be verified as an independent tool. It may be a small component of a larger project, but as presented, it does not meet the criteria for approval as a distinct software tool.
