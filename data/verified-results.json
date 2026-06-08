@@ -231,5 +231,34 @@
     ],
     "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN submission, but the provided URL points to a subdirectory within the Epicenter monorepo on GitHub. The website is reachable but is simply a GitHub tree view of the repository. There is no dedicated GitHub repository for Whispering, no stars, forks, or community signals. The website meta description describes the parent project Epicenter, not Whispering itself. No independent website or documentation exists. Given the lack of standalone identity, minimal evidence, and inability to verify features or quality, this tool is rejected as a discoverable software product.",
     "processedAt": "2026-06-07T16:05:54.356Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 95,
+    "verificationScore": 10,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "A tool that cannot be verified due to unreachable website and missing GitHub data.",
+    "description": "Whispering appears to be a tool hosted in a GitHub repository, but the provided URL is a directory within a monorepo and the website is unreachable. No GitHub data is available to assess its quality or features.",
+    "features": [],
+    "pricing": [],
+    "concerns": [
+      "Website URL is unreachable.",
+      "GitHub data is null; no stars, forks, or activity information available.",
+      "The provided URL is a subdirectory of a monorepo, not a standalone project page.",
+      "No evidence of a real, maintained project."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered from a Hacker News 'Show HN' post. The provided website URL points to a directory within a GitHub monorepo (epicenter-so/epicenter) and is not a standalone website. Attempts to reach the website failed. No GitHub data (stars, forks, last update) is available, making it impossible to assess the project's quality or activity. Without any verifiable evidence, the tool cannot be approved. It is likely either a very new or abandoned project, or the URL is incorrect. Therefore, the decision is REJECT with low confidence in any positive attributes.",
+    "processedAt": "2026-06-08T07:23:02.152Z"
   }
 ]
