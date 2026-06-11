@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/undefined",
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A local-first, open-source app within the Epicenter ecosystem, but details are unclear.",
+    "description": "Whispering appears to be an open-source, local-first application hosted within the Epicenter monorepo on GitHub. Its specific functionality is not described in the available evidence, making it difficult to determine its purpose or target audience.",
+    "features": [
+      "Open-source",
+      "Local-first",
+      "Part of Epicenter ecosystem"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "concerns": [
+      "No standalone GitHub repository for Whispering; it is part of a monorepo with no stars or forks data.",
+      "No description of what Whispering does; website meta describes the parent project, not the tool itself.",
+      "No evidence of community adoption or maintenance activity."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "Whispering was discovered via Hacker News Show HN. The provided website URL points to a directory within the Epicenter monorepo on GitHub. The website is reachable but the meta description only describes the parent project 'Epicenter' as an open-source, local-first apps collection. There is no standalone GitHub repository for Whispering, so no stars, forks, or commit history can be assessed. The tool's purpose is entirely unclear from the evidence. Given the lack of specific information, the verification score is low, and the decision is ambiguous. The tool is likely open-source and free, but without further details, it cannot be approved or rejected confidently.",
+    "processedAt": "2026-06-11T18:01:42.082Z"
+  }
+]
