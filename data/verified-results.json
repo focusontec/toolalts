@@ -79,5 +79,45 @@
     ],
     "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL points to a directory within the Epicenter monorepo on GitHub. The website is reachable but only shows the repository structure, with no dedicated README or description for Whispering itself. The GitHub data is null, so no stars, forks, or activity metrics are available. The website meta description refers to the overall Epicenter project as 'open-source, local-first apps,' which aligns with the directory context. However, without specific information about Whispering's functionality, it is impossible to verify its purpose, quality, or consistency. The tool appears to be part of a larger ecosystem, but its standalone value is unclear. Given the lack of evidence, the decision is AMBIGUOUS with low confidence.",
     "processedAt": "2026-06-12T07:11:46.398Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 100,
+    "verificationScore": 20,
+    "qualityScore": 0,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A component within a larger open-source project, not a standalone tool.",
+    "description": "Whispering appears to be a subdirectory within the Epicenter monorepo, which is an open-source, local-first apps project. It is not a standalone tool with its own identity or documentation.",
+    "features": [
+      "Part of Epicenter monorepo",
+      "Local-first",
+      "Open-source"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source"
+        ]
+      }
+    ],
+    "concerns": [
+      "Not a standalone tool; no dedicated GitHub repository or stars",
+      "No independent website or description",
+      "No evidence of community adoption or maintenance"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN submission. The provided website URL points to a subdirectory within the Epicenter monorepo on GitHub. The GitHub data is null, indicating no independent repository. The website meta description describes the parent project, not Whispering itself. There is no evidence of a standalone tool, no stars, no forks, and no independent documentation. Therefore, this is not a verifiable software tool and should be rejected.",
+    "processedAt": "2026-06-12T17:30:37.460Z"
   }
 ]
