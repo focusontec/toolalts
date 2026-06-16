@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "source": "hackernews-showhn",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "discoveredAt": "2026-06-16T18:51:15.375Z",
+    "rawData": {
+      "title": "Show HN: Whispering – Open-source, local-first dictation you can trust",
+      "points": 591,
+      "comments": 152
+    }
+  }
+]
