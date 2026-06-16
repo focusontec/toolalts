@@ -13,7 +13,7 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0",
+        "price": "$0 per member / month",
         "features": [
           "Trial AI capabilities like generating docs, or autofilling databases",
           "Basic forms",
@@ -28,8 +28,6 @@
         "price": "$10 per member / month",
         "features": [
           "Everything in Free",
-          "Trial AI capabilities like generating docs, or autofilling databases",
-          "Remove Notion branding from public forms",
           "Custom forms",
           "Custom sites",
           "Unlimited charts",
@@ -45,7 +43,7 @@
           "Everything in Plus",
           "Notion Agent",
           "AI Meeting Notes",
-          "Enterprise Search",
+          "Enterprise Search (Beta)",
           "SAML SSO",
           "Granular database permissions",
           "Verify any page",
@@ -67,24 +65,19 @@
           "Security & Compliance connections (DLP, SIEM)",
           "Domain management",
           "Advanced connections",
-          "Custom Agents",
-          "Workers"
+          "Custom Agents (Workers Beta)"
         ]
       }
     ],
     "features": [
       "AI capabilities",
-      "Databases with subtasks and dependencies",
-      "Custom sites and forms",
+      "Databases",
+      "Custom sites",
       "Notion Agent",
-      "AI Meeting Notes",
       "Enterprise Search",
       "SAML SSO",
-      "Granular database permissions",
-      "Private teamspaces",
       "Audit log",
-      "Custom Agents",
-      "Workers"
+      "Custom Agents"
     ],
     "category": "productivity",
     "logo": "/logos/notion.svg",
@@ -164,7 +157,7 @@
     "pricing": [
       {
         "plan": "Sync",
-        "price": "$4 USD per user per month billed annually",
+        "price": "$4 USD per user per month, billed annually",
         "features": [
           "Sync notes across devices",
           "End-to-end encryption",
@@ -175,7 +168,7 @@
       },
       {
         "plan": "Publish",
-        "price": "$8 USD per site per month billed annually",
+        "price": "$8 USD per site per month, billed annually",
         "features": [
           "Publish notes to the web",
           "No technical knowledge required",
@@ -275,19 +268,13 @@
       "Components",
       "Auto layout",
       "Advanced drawing tools",
-      "Styles",
       "Interactive prototypes",
-      "Video in prototypes",
       "Variables",
       "MCP support",
       "Team libraries",
-      "Design productivity tools (AI)",
       "Shared fonts",
       "Branching and merging",
-      "In-app library analytics",
-      "Organization-wide design systems",
-      "Multi-brand design systems",
-      "Image editing (AI)"
+      "In-app library analytics"
     ],
     "category": "design",
     "logo": "/logos/figma.svg",
@@ -381,12 +368,9 @@
       "Plugins",
       "Open Source",
       "Auto versioning",
-      "Penpot editor",
       "Flex Layout",
       "Grid Layout",
       "Path Editor",
-      "Multiplatform Libraries & templates",
-      "Inspect mode",
       "Multiplayer edition",
       "Comments",
       "Share presentations",
@@ -435,20 +419,20 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "Free",
+        "price": "$0",
         "features": [
           "Unlimited members",
           "2 teams",
           "250 issues",
           "Agent platform",
-          "Linear Agent (beta)"
+          "Linear Agent"
         ]
       },
       {
         "plan": "Basic",
         "price": "$10 per user/month",
         "features": [
-          "All Free features",
+          "All Free features +",
           "5 teams",
           "Unlimited issues",
           "Unlimited file uploads",
@@ -459,7 +443,7 @@
         "plan": "Business",
         "price": "$16 per user/month",
         "features": [
-          "All Basic features",
+          "All Basic features +",
           "Unlimited teams",
           "Private teams and guests",
           "Triage Intelligence",
@@ -474,7 +458,7 @@
         "plan": "Enterprise",
         "price": "Custom",
         "features": [
-          "All Business features",
+          "All Business features +",
           "Invoice/PO billing",
           "SAML and SCIM",
           "Granular admin controls",
@@ -489,15 +473,12 @@
     "features": [
       "Unlimited members",
       "Unlimited issues",
-      "Unlimited teams",
-      "Admin roles",
+      "Linear Agent",
       "Triage Intelligence",
-      "Linear Agent automations",
       "Code Intelligence",
       "Linear Insights",
       "Linear Asks",
-      "SAML and SCIM",
-      "Enterprise-grade security"
+      "SAML and SCIM"
     ],
     "category": "project-management",
     "logo": "/logos/linear.svg",
@@ -603,9 +584,13 @@
       }
     ],
     "features": [
-      "Agent requests",
+      "Agent",
       "Tab completions",
-      "Cloud agents"
+      "Cloud agents",
+      "Bugbot",
+      "Code Review",
+      "SAML/OIDC SSO",
+      "Audit logs"
     ],
     "category": "development",
     "logo": "/logos/cursor.svg",
@@ -719,29 +704,41 @@
           "Up to 10 apps",
           "1:1 meetings",
           "1:1 external messages",
-          "Basic AI"
+          "Basic AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+          "SAML-based single sign-on",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       },
       {
         "plan": "Pro",
-        "price": "$8.75 USD per user / month, when paying monthly (50% off for 3 months: $4.38)",
+        "price": "$8.75 USD per user / month, when paying monthly (50% off for 3 months: $4.38); $7.25 USD per user / month, when paying annually",
         "features": [
           "Unlimited message history",
           "Unlimited app integrations",
           "Group meetings",
           "Group external messages",
-          "Basic AI"
+          "Basic AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+          "SAML-based single sign-on",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       },
       {
         "plan": "Business+",
-        "price": "$18 USD per user / month, when paying monthly (50% off for 3 months: $9)",
+        "price": "$18 USD per user / month, when paying monthly (50% off for 3 months: $9); $15 USD per user / month, when paying annually",
         "features": [
           "Unlimited message history",
           "Unlimited app integrations",
           "Group meetings",
           "Group external messages",
-          "Advanced AI"
+          "Advanced AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+          "SAML-based single sign-on",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       },
       {
@@ -752,7 +749,11 @@
           "Unlimited app integrations",
           "Group meetings",
           "Group external messages",
-          "Enterprise-Grade AI"
+          "Enterprise-Grade AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, Enterprise search, AI daily recaps, AI file summaries",
+          "Multiple SAML configurations",
+          "SCIM user management",
+          "EMM integration support",
+          "Native data loss prevention"
         ]
       }
     ],
@@ -761,12 +762,7 @@
       "Unlimited app integrations",
       "Group meetings",
       "Group external messages",
-      "AI conversation summaries",
-      "Slackbot (personal AI agent)",
-      "AI workflow generation",
-      "AI search",
-      "AI daily recaps",
-      "AI file summaries",
+      "AI features: conversation summaries, Slackbot, workflow generation, search, daily recaps, file summaries",
       "SAML-based single sign-on",
       "SCIM user management",
       "EMM integration support",
@@ -946,9 +942,10 @@
       }
     ],
     "features": [
-      "Connect your AI to 1,000+ apps with secure auth and delegated access",
-      "SDK, tool execution, and agent infrastructure for production workloads",
-      "Governance, SSO, and org-wide controls for teams at scale"
+      "1,000+ app integrations",
+      "Secure auth and delegated access",
+      "SDK, tool execution, and agent infrastructure",
+      "Usage based pricing"
     ],
     "category": "development",
     "logo": "/logos/composio.svg",
@@ -1011,15 +1008,15 @@
         ]
       },
       {
-        "plan": "AnkiMobile",
-        "price": "Paid (iOS)",
+        "plan": "AnkiMobile (iOS)",
+        "price": "Paid",
         "features": [
           "Official iOS app",
           "All purchases help fund Anki's development"
         ]
       },
       {
-        "plan": "AnkiDroid",
+        "plan": "AnkiDroid (Android)",
         "price": "Free",
         "features": [
           "Android app"
@@ -1254,8 +1251,11 @@
     ],
     "features": [
       "Free and open source",
-      "Community-funded",
-      "No venture capital or private equity investment"
+      "No license key required",
+      "No trial period",
+      "No revenue threshold",
+      "No per-seat pricing",
+      "Community-funded via sponsorships"
     ],
     "category": "development",
     "logo": "/logos/skip.svg",
@@ -1548,19 +1548,51 @@
       }
     ],
     "features": [
-      "Unlimited cards",
-      "Quick capture",
-      "Inbox",
-      "Planner",
-      "Built-in automation",
-      "Assignee and due dates",
-      "iOS and Android mobile apps",
-      "Desktop app",
-      "Unlimited activity logs",
-      "Trello templates",
-      "2-factor authentication",
-      "Mobile device management",
-      "Unlimited Power-Ups"
+      "UNLIMITED CARDS",
+      "QUICK CAPTURE",
+      "INBOX",
+      "PLANNER (VIEW-ONLY)",
+      "QUICK CAPTURE POWERED BY AI",
+      "PLANNER (FULL ACCESS)",
+      "CARD MIRRORING",
+      "BUILT-IN AUTOMATION",
+      "ASSIGNEE AND DUE DATES",
+      "IOS AND ANDROID MOBILE APPS",
+      "DESKTOP APP",
+      "UNLIMITED ACTIVITY LOGS",
+      "TRELLO TEMPLATES",
+      "2-FACTOR AUTHENTICATION",
+      "MOBILE DEVICE MANAGEMENT",
+      "UNLIMITED POWER-UPS",
+      "UNLIMITED WORKSPACE COLLABORATORS",
+      "UNLIMITED BOARDS",
+      "ADVANCED CHECKLISTS",
+      "CUSTOM FIELDS",
+      "COLLAPSIBLE LISTS",
+      "LIST COLORS",
+      "AI",
+      "DASHBOARD VIEW",
+      "MAP VIEW",
+      "TIMELINE VIEW",
+      "TABLE VIEW",
+      "CALENDAR VIEW",
+      "WORKSPACE TABLE VIEW",
+      "WORKSPACE CALENDAR VIEW",
+      "WORKSPACE-LEVEL TEMPLATES",
+      "COMMAND RUN ADMINISTRATION",
+      "BOARD COLLECTIONS",
+      "OBSERVERS",
+      "DOMAIN-RESTRICTED INVITES",
+      "DEACTIVATE MEMBERS",
+      "SIMPLE DATA EXPORT",
+      "UNLIMITED COMMAND RUNS",
+      "SAML SSO VIA ATLASSIAN GUARD",
+      "UNLIMITED WORKSPACES",
+      "POWER-UP ADMINISTRATION",
+      "ATTACHMENT RESTRICTIONS",
+      "ORGANIZATION WIDE PERMISSIONS",
+      "ORGANIZATION VISIBLE BOARDS",
+      "PUBLIC BOARD MANAGEMENT"
     ],
     "category": "project-management",
     "logo": "/logos/trello.svg",
@@ -1644,22 +1676,10 @@
       }
     ],
     "features": [
-      "AI Studio Basic with varying credits",
-      "Unlimited tasks and projects",
-      "Reporting dashboards",
-      "Timeline and Gantt views",
-      "Unlimited automations",
-      "Forms",
-      "Custom fields",
-      "Goals",
-      "Workload",
-      "Approvals and proofing",
-      "Time tracking",
-      "Scaled security",
-      "SAML authentication",
-      "User provisioning (SCIM)",
-      "Universal workload",
-      "Capacity planning"
+      "AI Teammates",
+      "Timesheets and Budgets",
+      "Compliance management",
+      "Permissions management"
     ],
     "category": "project-management",
     "logo": "/logos/asana.svg",
@@ -1699,6 +1719,7 @@
         "plan": "Unlimited",
         "price": "$7 per user/month, billed yearly",
         "features": [
+          "Everything in Free Forever",
           "Unlimited Spaces, Folders, and Forms",
           "Unlimited Gantt Charts",
           "Unlimited Integrations",
@@ -1717,6 +1738,7 @@
         "plan": "Business",
         "price": "$12 per user/month, billed yearly",
         "features": [
+          "Everything in Unlimited",
           "Unlimited Dashboards with Advanced Cards",
           "Unlimited Message History",
           "Unlimited Activity Views",
@@ -1735,8 +1757,9 @@
       },
       {
         "plan": "Enterprise",
-        "price": "Custom",
+        "price": "Get a custom demo",
         "features": [
+          "Everything in Business",
           "Enterprise Permissions and Governance",
           "Unlimited Custom Roles",
           "SAML SSO & SCIM Provisioning",
@@ -1757,7 +1780,7 @@
       },
       {
         "plan": "Free Forever AI",
-        "price": "Free",
+        "price": "Free per user/month",
         "features": [
           "Try AI across chat, tasks and docs",
           "Trial access to advanced AI features",
@@ -1796,15 +1819,15 @@
     ],
     "features": [
       "Unlimited Tasks",
-      "Unlimited Storage",
-      "Unlimited Integrations",
+      "Collaborative Docs",
+      "Kanban Boards",
+      "Gantt Charts",
       "Native Time Tracking",
       "Goals & Portfolio Management",
       "Automations",
       "Whiteboards",
       "Dashboards",
-      "Gantt Charts",
-      "Collaborative Docs"
+      "Integrations"
     ],
     "category": "project-management",
     "logo": "/logos/clickup.svg",
@@ -1880,9 +1903,6 @@
         "plan": "Docker Personal",
         "price": "$0",
         "features": [
-          "1 private repo",
-          "100 pulls/hour",
-          "free trial of Cloud Runtime",
           "Docker Desktop",
           "Docker Engine + Kubernetes",
           "Docker Hub",
@@ -1897,11 +1917,8 @@
       },
       {
         "plan": "Docker Pro",
-        "price": "$9 per user/month (billed yearly $11/mo)",
+        "price": "$11 $9 per user/month",
         "features": [
-          "Unlimited private repos",
-          "unlimited pulls",
-          "100 Cloud Runtime minutes/month",
           "Docker Build Cloud",
           "Testcontainers Cloud",
           "Synchronized File Shares",
@@ -1916,11 +1933,8 @@
       },
       {
         "plan": "Docker Team",
-        "price": "$15 per user/month (billed yearly $16/mo)",
+        "price": "$16 $15 per user/month",
         "features": [
-          "Everything in Pro",
-          "500 Cloud Runtime minutes/month",
-          "collaborative team management tools",
           "Add users in bulk",
           "Audit logs",
           "Docker Hub role-based access control",
@@ -1937,12 +1951,8 @@
       },
       {
         "plan": "Docker Business",
-        "price": "$24 per user/month",
+        "price": "$24 $24 per user/month",
         "features": [
-          "1,500 Cloud Runtime minutes/month",
-          "enterprise-grade security",
-          "SSO",
-          "compliance controls",
           "Hardened Docker Desktop",
           "Single Sign-On (SSO)",
           "SCIM user provisioning",
@@ -1965,20 +1975,13 @@
     ],
     "features": [
       "Docker Desktop",
-      "Docker Engine + Kubernetes",
       "Docker Hub",
       "Docker Scout",
-      "Docker Debug",
       "Docker Build Cloud",
       "Testcontainers Cloud",
-      "Synchronized File Shares",
-      "Audit logs",
-      "SSO",
-      "SCIM provisioning",
-      "Image and Registry Access Management",
-      "Desktop Insights Dashboard",
-      "Enhanced container Isolation",
-      "Docker Hardened Images"
+      "Role-based access control",
+      "Single Sign-On",
+      "Audit logs"
     ],
     "category": "development",
     "logo": "/logos/docker.svg",
@@ -2012,7 +2015,6 @@
         "plan": "Solo",
         "price": "$9 per month (billed annually)",
         "features": [
-          "Everything in Free",
           "400 AI credits / month",
           "Data-driven testing with exports",
           "Unlimited private NPM packages & library",
@@ -2025,7 +2027,6 @@
         "plan": "Team",
         "price": "$19 per user/month (billed annually)",
         "features": [
-          "Everything in Solo",
           "400 AI credits / user / month",
           "Team collaboration",
           "Unlimited workspace & collection viewers",
@@ -2038,7 +2039,6 @@
         "plan": "Enterprise",
         "price": "$49 per user/month (billed annually)",
         "features": [
-          "Everything in Team",
           "800 AI credits / user / month (pooled)",
           "API Catalog",
           "Unlimited private and Partner workspaces",
@@ -2061,15 +2061,25 @@
       "Manual Flows",
       "AI credits",
       "Data-driven testing",
-      "Custom domains",
-      "API monitoring",
+      "Unlimited private NPM packages & library",
+      "Custom-branded documentation",
+      "Unlimited custom domains",
+      "Expanded API monitoring",
       "Team collaboration",
-      "RBAC",
-      "SDK generation",
+      "Unlimited workspace & collection viewers",
+      "Basic role-based access control (RBAC)",
+      "SDK generation & distribution",
+      "Simple Security (add-on)",
       "API Catalog",
+      "Unlimited private and Partner workspaces",
       "Private API Network",
-      "Governance & audit logs",
-      "Insights"
+      "SDK auto-distribution",
+      "Advanced RBAC & organization controls",
+      "Governance, audit logs & reporting",
+      "Monitor reports with enterprise approval workflows",
+      "Private test & Flows runners",
+      "Insights",
+      "Advanced Security Administration (add-on)"
     ],
     "category": "development",
     "logo": "/logos/postman.svg",
@@ -2237,47 +2247,26 @@
     "websiteUrl": "https://miro.com",
     "pricing": [
       {
-        "price": "$0",
         "plan": "Free",
+        "price": "Free",
         "features": [
-          "3 editable boards",
-          "5 AI credits/month"
-        ]
-      },
-      {
-        "price": "$8/user/mo",
-        "plan": "Starter",
-        "features": [
-          "Unlimited boards",
-          "board sharing"
-        ]
-      },
-      {
-        "price": "$16/user/mo",
-        "plan": "Business",
-        "features": [
-          "Advanced security",
-          "SSO",
-          "voting"
-        ]
-      },
-      {
-        "price": "Custom",
-        "plan": "Enterprise",
-        "features": [
-          "Data governance",
-          "premium support"
+          "One workspace with 3 editable boards",
+          "Create and share 3 boards, with Docs, Tables, Slides, and Timelines",
+          "5,000+ templates",
+          "160+ apps and integrations",
+          "Layers",
+          "10 Miro AI credits/month per team",
+          "5 Talktracks - interactive video recordings"
         ]
       }
     ],
     "features": [
-      "Infinite canvas whiteboard",
-      "Sticky notes and shapes",
-      "Real-time collaboration",
-      "100+ templates",
-      "Video chat integration",
-      "Voting and timer tools",
-      "Jira/Slack/Teams integrations"
+      "3 editable boards",
+      "5,000+ templates",
+      "160+ apps and integrations",
+      "Layers",
+      "10 Miro AI credits/month",
+      "5 Talktracks"
     ],
     "category": "design",
     "logo": "/logos/miro.svg",
@@ -2310,7 +2299,7 @@
       },
       {
         "plan": "Team",
-        "price": "$20 per seat/month billed annually",
+        "price": "$20/seat/month billed annually",
         "features": [
           "15,000 AI credits per paid user each month",
           "50,000 records per base",
@@ -2325,7 +2314,7 @@
       },
       {
         "plan": "Business",
-        "price": "$45 per seat/month billed annually",
+        "price": "$45/seat/month billed annually",
         "features": [
           "20,000 AI credits per paid user each month",
           "125,000 records per base",
@@ -2365,15 +2354,17 @@
     ],
     "features": [
       "Unlimited bases",
+      "Records per base: 1,000 / 50,000 / 125,000 / 500,000",
+      "Automation runs per month: 100 / 25,000 / 100,000 / 500,000",
+      "Attachment space per base: 1GB / 20GB / 100GB / 1,000GB",
+      "AI credits per editor each month: 500 / 15,000 / 20,000 / 25,000",
       "Interface Designer",
-      "AI credits",
-      "Automation runs",
-      "Sync integrations",
+      "Gantt and timeline view",
       "Extensions",
-      "Admin controls",
+      "Sync integrations",
       "SAML-based single sign-on",
       "App Sandbox",
-      "Enterprise API"
+      "Enterprise Hub"
     ],
     "category": "productivity",
     "logo": "/logos/airtable.svg",
@@ -2393,20 +2384,76 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0/mo",
+        "price": "Free",
         "features": [
-          "100 tasks per month",
-          "Unlimited Zaps, Tables and Forms",
           "Two-step Zaps",
-          "Zapier Copilot (daily message limits)"
+          "15 min polling",
+          "1 seat",
+          "Email support",
+          "100 fields per table",
+          "2,500 records per account",
+          "3 views per table",
+          "10 form pages per account",
+          "5 MB file uploads"
+        ]
+      },
+      {
+        "plan": "Professional",
+        "price": "Not specified",
+        "features": [
+          "Multi-step Zaps",
+          "2 min polling",
+          "1 seat",
+          "Live chat",
+          "100 fields per table",
+          "100,000 records per account",
+          "50 views per table",
+          "50 form pages per account",
+          "10 MB file uploads"
+        ]
+      },
+      {
+        "plan": "Team",
+        "price": "Not specified",
+        "features": [
+          "Multi-step Zaps",
+          "1 min polling",
+          "25 seats",
+          "Priority support",
+          "100 fields per table",
+          "500,000 records per account",
+          "50 views per table",
+          "150 form pages per account",
+          "25 MB file uploads"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Multi-step Zaps",
+          "1 min polling",
+          "Unlimited seats",
+          "Technical Account Manager",
+          "100 fields per table",
+          "Contact Sales for records",
+          "50+ views per table",
+          "Contact Sales for form pages",
+          "25 MB+ file uploads"
         ]
       }
     ],
     "features": [
-      "Zapier automation platform",
-      "Unlimited Zaps, Tables and Forms",
-      "Two-step Zaps",
-      "Zapier Copilot"
+      "Two-factor authentication",
+      "SAML single sign-on",
+      "User provisioning (SCIM)",
+      "Audit log",
+      "Custom data retention",
+      "AI products",
+      "Unlimited Zaps",
+      "Code by Zapier",
+      "Tables",
+      "Forms"
     ],
     "category": "productivity",
     "logo": "/logos/zapier.svg",
@@ -2491,8 +2538,8 @@
           "Anonymous Sign-ins",
           "Social OAuth providers",
           "Custom SMTP server",
-          "1 hour Auth Audit Logs",
           "Basic Multi-Factor Auth",
+          "1 hour Auth Audit Logs",
           "50,000 Third-Party MAUs",
           "1 GB Storage",
           "5 GB Cached Egress",
@@ -2515,15 +2562,16 @@
         "features": [
           "Dedicated Postgres Database",
           "Unlimited API requests",
-          "8 GB disk size per project, then $0.125 per GB",
+          "8 GB disk size per project (then $0.125 per GB)",
           "Advanced disk config",
           "7 days Automatic backups",
-          "Point in time recovery $100 per month per 7 days retention",
+          "Point in time recovery ($100 per month per 7 days retention)",
           "Never Pausing",
-          "Branching $0.01344 per branch per hour",
-          "250 GB egress, then $0.09 per GB",
+          "Branching ($0.01344 per branch per hour)",
+          "250 GB egress (then $0.09 per GB)",
+          "External Replication (ETL) ($39 per pipeline per month)",
           "Unlimited Total Users",
-          "100,000 MAUs, then $0.00325 per MAU",
+          "100,000 MAUs (then $0.00325 per MAU)",
           "User data ownership",
           "Anonymous Sign-ins",
           "Social OAuth providers",
@@ -2531,30 +2579,30 @@
           "Remove Supabase branding from emails",
           "7 days Auth Audit Logs",
           "Basic Multi-Factor Auth",
-          "Advanced Multi-Factor Auth - Phone $75 per month for first project, then $10 per month per additional project",
-          "100,000 Third-Party MAUs, then $0.00325 per MAU",
-          "Single Sign-On (SAML 2.0) 50 included, then $0.015 per MAU",
+          "Advanced Multi-Factor Auth - Phone ($75/month first project, then $10/month per additional project)",
+          "100,000 Third-Party MAUs (then $0.00325 per MAU)",
+          "50 Single Sign-On (SAML 2.0) (then $0.015 per MAU)",
           "Leaked password protection",
           "Single session per user",
           "Session timeouts",
-          "Auth Hooks: Custom Access Token (JWT), Send custom email/SMS",
-          "100 GB Storage, then $0.0213 per GB",
-          "250 GB Cached Egress, then $0.03 per GB",
+          "Auth Hooks (Custom Access Token (JWT), Send custom email/SMS)",
+          "100 GB Storage (then $0.0213 per GB)",
+          "250 GB Cached Egress (then $0.03 per GB)",
           "Custom access controls",
           "500 GB max file upload size",
           "Smart CDN",
-          "Image Transformations: 100 origin images included, then $5 per 1000 origin images",
+          "100 origin images for Image Transformations (then $5 per 1000 origin images)",
           "Postgres Changes",
-          "500 Concurrent Peak Connections, then $10 per 1000",
-          "5 Million Messages Per Month, then $2.50 per Million",
+          "500 Concurrent Peak Connections (then $10 per 1000)",
+          "5 Million Messages Per Month (then $2.50 per Million)",
           "3 MB Max Message Size",
-          "2 Million Edge Function Invocations, then $2 per 1 Million",
+          "2 Million Edge Function Invocations (then $2 per 1 Million)",
           "Unlimited Team members",
           "7 days Log retention",
-          "Log Drain $60 per drain per month + $0.20 per million events + $0.09 per GB egress",
+          "Log Drain ($60 per drain per month + $0.20 per million events + $0.09 per GB egress)",
           "Metrics endpoint",
           "Vanity URLs",
-          "Custom Domains $10 per domain per month per project add on",
+          "Custom Domains ($10 per domain per month per project add on)",
           "Email Support"
         ]
       },
@@ -2564,15 +2612,16 @@
         "features": [
           "Dedicated Postgres Database",
           "Unlimited API requests",
-          "8 GB disk size per project, then $0.125 per GB",
+          "8 GB disk size per project (then $0.125 per GB)",
           "Advanced disk config",
           "14 days Automatic backups",
-          "Point in time recovery $100 per month per 7 days retention",
+          "Point in time recovery ($100 per month per 7 days retention)",
           "Never Pausing",
-          "Branching $0.01344 per branch per hour",
-          "250 GB egress, then $0.09 per GB",
+          "Branching ($0.01344 per branch per hour)",
+          "250 GB egress (then $0.09 per GB)",
+          "External Replication (ETL) ($39 per pipeline per month, $3.00 per GB replicated data, $0.60 per GB backfill data)",
           "Unlimited Total Users",
-          "100,000 MAUs, then $0.00325 per MAU",
+          "100,000 MAUs (then $0.00325 per MAU)",
           "User data ownership",
           "Anonymous Sign-ins",
           "Social OAuth providers",
@@ -2580,40 +2629,36 @@
           "Remove Supabase branding from emails",
           "28 days Auth Audit Logs",
           "Basic Multi-Factor Auth",
-          "Advanced Multi-Factor Auth - Phone $75 per month for first project, then $10 per month per additional project",
-          "100,000 Third-Party MAUs, then $0.00325 per MAU",
-          "Single Sign-On (SAML 2.0) 50 included, then $0.015 per MAU",
+          "Advanced Multi-Factor Auth - Phone ($75/month first project, then $10/month per additional project)",
+          "100,000 Third-Party MAUs (then $0.00325 per MAU)",
+          "50 Single Sign-On (SAML 2.0) (then $0.015 per MAU)",
           "Leaked password protection",
           "Single session per user",
           "Session timeouts",
-          "Auth Hooks: All",
-          "100 GB Storage, then $0.0213 per GB",
-          "250 GB Cached Egress, then $0.03 per GB",
+          "Auth Hooks (All)",
+          "100 GB Storage (then $0.0213 per GB)",
+          "250 GB Cached Egress (then $0.03 per GB)",
           "Custom access controls",
           "500 GB max file upload size",
           "Smart CDN",
-          "Image Transformations: 100 origin images included, then $5 per 1000 origin images",
+          "100 origin images for Image Transformations (then $5 per 1000 origin images)",
           "Postgres Changes",
-          "500 Concurrent Peak Connections, then $10 per 1000",
-          "5 Million Messages Per Month, then $2.50 per Million",
+          "500 Concurrent Peak Connections (then $10 per 1000)",
+          "5 Million Messages Per Month (then $2.50 per Million)",
           "3 MB Max Message Size",
-          "2 Million Edge Function Invocations, then $2 per 1 Million",
+          "2 Million Edge Function Invocations (then $2 per 1 Million)",
           "Unlimited Team members",
           "28 days Log retention",
-          "Log Drain $60 per drain per month + $0.20 per million events + $0.09 per GB egress",
+          "Log Drain ($60 per drain per month + $0.20 per million events + $0.09 per GB egress)",
           "Platform Audit Logs",
           "Metrics endpoint",
           "SOC2",
           "ISO 27001",
-          "HIPAA Available as paid add-on",
           "AWS PrivateLink",
           "Vanity URLs",
-          "Custom Domains $10 per domain per month per project add on",
+          "Custom Domains ($10 per domain per month per project add on)",
           "Email Support",
           "Email Support SLA",
-          "Designated support",
-          "On Boarding Support",
-          "Designated Customer Success Team",
           "Security Questionnaire Help"
         ]
       },
@@ -2626,10 +2671,11 @@
           "Custom Database size",
           "Advanced disk config",
           "Custom Automatic backups",
-          "Point in time recovery $100 per month per 7 days retention, >28 days retention available",
+          "Point in time recovery (>28 days retention available)",
           "Never Pausing",
           "Custom Branching",
           "Custom Egress",
+          "Custom External Replication (ETL)",
           "Unlimited Total Users",
           "Custom MAUs",
           "User data ownership",
@@ -2639,14 +2685,14 @@
           "Remove Supabase branding from emails",
           "Auth Audit Logs included",
           "Basic Multi-Factor Auth",
-          "Custom Advanced Multi-Factor Auth - Phone",
+          "Advanced Multi-Factor Auth - Phone (Custom)",
           "Custom Third-Party MAUs",
-          "Contact Us for Single Sign-On (SAML 2.0)",
+          "Single Sign-On (SAML 2.0) (Contact Us)",
           "Leaked password protection",
           "Single session per user",
           "Session timeouts",
-          "Auth Hooks: All",
-          "Advanced security features Contact Us",
+          "Auth Hooks (All)",
+          "Advanced security features (Contact Us)",
           "Custom Storage",
           "Custom Cached Egress",
           "Custom access controls",
@@ -2666,13 +2712,13 @@
           "Metrics endpoint",
           "SOC2",
           "ISO 27001",
-          "HIPAA Available as paid add-on",
+          "HIPAA (Available as paid add-on)",
           "AWS PrivateLink",
-          "Contact Us for SSO",
+          "SSO (Contact Us)",
           "Uptime SLAs",
-          "Custom project scoped roles",
+          "Custom Access Roles",
           "Vanity URLs",
-          "Custom Domains: 1, additional $10/domain/month",
+          "Custom Domains (1, additional $10/domain/month)",
           "Community Support",
           "Email Support",
           "Email Support SLA",
@@ -2693,6 +2739,7 @@
       "Pausing",
       "Branching",
       "Egress",
+      "External Replication (ETL)",
       "Total Users",
       "MAUs",
       "User data ownership",
@@ -2736,13 +2783,7 @@
       "Access Roles",
       "Vanity URLs",
       "Custom Domains",
-      "Community Support",
-      "Email Support",
-      "Email Support SLA",
-      "Designated support",
-      "On Boarding Support",
-      "Designated Customer Success Team",
-      "Security Questionnaire Help"
+      "Support"
     ],
     "category": "development",
     "logo": "/logos/supabase.svg",
@@ -2965,46 +3006,45 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0 / mo",
+        "price": "$0/mo",
         "features": [
-          "3,000 emails / mo",
+          "3,000 emails/mo",
           "Sending & receiving",
           "Ticket support",
           "10,000 automation runs",
           "30-day data retention",
           "1 domain",
-          "5 AI credits / mo",
+          "5 AI credits/mo",
           "100 emails a day"
         ]
       },
       {
         "plan": "Pro",
-        "price": "$20 / mo",
+        "price": "$20/mo",
         "features": [
-          "50,000 emails / mo",
-          "Extra emails: $0.90 / 1,000",
+          "50,000 emails/mo",
+          "Extra emails: $0.90/1,000",
           "Sending & receiving",
           "Ticket support",
           "10,000 automation runs",
           "30-day data retention",
           "10 domains",
-          "100 AI credits / mo",
-          "No daily limit",
-          "Dedicated IPs"
+          "100 AI credits/mo",
+          "No daily limit"
         ]
       },
       {
         "plan": "Scale",
-        "price": "$90 / mo",
+        "price": "$90/mo",
         "features": [
-          "100,000 emails / mo",
-          "Extra emails: $0.90 / 1,000",
+          "100,000 emails/mo",
+          "Extra emails: $0.90/1,000",
           "Sending & receiving",
           "Slack & ticket support",
           "10,000 automation runs",
           "30-day data retention",
           "1,000 domains",
-          "500 AI credits / mo",
+          "500 AI credits/mo",
           "No daily limit",
           "Dedicated IP with add-on"
         ]
@@ -3157,7 +3197,7 @@
       "Hide organizer's email",
       "Custom reply-to email",
       "Optimized slots",
-      "(Custom) workflows / booking notifications",
+      "Custom workflows / booking notifications",
       "Webhooks",
       "Redirect on booking",
       "Common schedule",
@@ -3176,6 +3216,7 @@
       "Dynamic group links",
       "Recurring events",
       "Unlimited sub-teams",
+      "Set meeting limits",
       "Buffer before & after events",
       "Minimum notice",
       "Time-slot intervals",
@@ -3880,19 +3921,84 @@
     "websiteUrl": "https://www.extend.ai/ui",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0",
+        "plan": "Pay As You Go",
+        "price": "Free",
         "features": [
-          "Open source components",
-          "Community support"
+          "10,000 free credits to get started",
+          "Parse API",
+          "Extract API",
+          "Classify API",
+          "Split API",
+          "Edit API",
+          "Studio and Evals",
+          "Composer & Review Agent",
+          "Agentic OCR",
+          "Workflows"
+        ]
+      },
+      {
+        "plan": "Scale",
+        "price": "$500 / month",
+        "features": [
+          "Everything in Pay As You Go, plus:",
+          "50,000 credits/month included",
+          "Private Slack Channel support",
+          "Volume discounts available",
+          "Higher rate limits",
+          "Custom data retention agreements",
+          "HIPAA Compliance and BAA add-on"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Everything in Scale, plus:",
+          "Self-hosted deployments",
+          "Custom MSA, DPA, & SLAs",
+          "SSO and SAML",
+          "Advanced RBAC",
+          "Multiple workspaces",
+          "Custom models",
+          "Custom rate limits",
+          "Dedicated support"
         ]
       }
     ],
     "features": [
-      "React components for PDF, DOCX, XLSX, and CSV viewers",
-      "Bounding box citations for precise document referencing",
-      "File upload and e-signing capabilities",
-      "Open source and customizable"
+      "Detect tables, checkboxes, images, and handwriting",
+      "Support 25+ file types",
+      "Agentic OCR",
+      "Advanced table parsing",
+      "Signature detection",
+      "Bounding boxes",
+      "Multiple chunking strategies",
+      "Low latency mode",
+      "Schema generation",
+      "Citations",
+      "Advanced array extraction strategies",
+      "Fast mode",
+      "2,000+ page support",
+      "Memory",
+      "Large document splitting",
+      "Instance detection",
+      "Agent form filling",
+      "Template-based filling",
+      "Composer",
+      "Review Agent",
+      "Studio",
+      "Evaluation suite",
+      "Workflows",
+      "Human-in-the-loop",
+      "Volume discounts",
+      "Custom data retention",
+      "Business Associate Agreement",
+      "Self-hosted deployments",
+      "Custom MSA/DPA/SLA",
+      "Deployed engineering",
+      "Rate limits",
+      "Support",
+      "Advanced RBAC, SSO, & SAML"
     ],
     "category": "development",
     "logo": "/logos/extend.svg"
