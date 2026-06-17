@@ -431,5 +431,46 @@
     ],
     "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL is a GitHub directory within the EpicenterHQ/epicenter repository, which is described as 'Open-source, local-first apps'. The specific app 'Whispering' is located in the apps/whispering subdirectory. The website is reachable but provides minimal information about the tool itself; it is essentially a code repository page. No GitHub data (stars, forks, last update) is available for the specific tool, as it is part of a monorepo. The description from the website meta is generic and does not specifically describe Whispering's features. There is no official website or landing page for Whispering, making it difficult to verify its functionality, user base, or maintenance status. The tool appears to be a component of the Epicenter project, which may be in early development. Given the lack of independent evidence and the absence of dedicated documentation, the verification is ambiguous. The tool may be legitimate but is not sufficiently documented or promoted to confirm its quality and purpose.",
     "processedAt": "2026-06-17T08:20:58.595Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A local-first, open-source app for voice transcription and note-taking.",
+    "description": "Whispering is an open-source, local-first application for voice transcription and note-taking, built as part of the Epicenter monorepo. It appears to be a prototype or early-stage tool with limited community adoption.",
+    "features": [
+      "Local-first voice transcription",
+      "Note-taking capabilities",
+      "Open-source codebase"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "concerns": [
+      "No dedicated GitHub repository; part of a monorepo with no standalone stars or forks.",
+      "No official website or landing page; only a GitHub directory.",
+      "Unclear if the tool is actively maintained or just a prototype.",
+      "No evidence of community adoption or usage."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "Whispering is a tool discovered via Hacker News Show HN. The provided URL points to a directory within the Epicenter monorepo on GitHub. The website meta description indicates it is an open-source, local-first app, but there is no standalone repository or dedicated website. No GitHub data (stars, forks, last update) is available for the specific tool. The tool appears to be in early development with no clear community signals. Given the lack of independent verification, the decision is AMBIGUOUS with low confidence.",
+    "processedAt": "2026-06-17T17:44:11.394Z"
   }
 ]
