@@ -47,8 +47,8 @@ function isComparisonValid(comp: ComparisonEntry, tools: ToolEntry[]): boolean {
   const toolA = getToolBySlug(tools, comp.toolA);
   const toolB = getToolBySlug(tools, comp.toolB);
   if (!toolA || !toolB) return false;
-  if (toolA.status && toolA.status !== "active") return false;
-  if (toolB.status && toolB.status !== "active") return false;
+  if (toolA.status !== "active") return false;
+  if (toolB.status !== "active") return false;
   return true;
 }
 
@@ -203,11 +203,12 @@ async function main() {
       content = generateFallbackMarkdown(toolA, toolB);
     }
 
-    // Quality gate: check generated content
+    // Quality gate: skip writing if content fails checks
     const qualityIssues = checkContentQuality(content);
     if (qualityIssues.length > 0) {
-      console.warn(`  ⚠️ Quality issues for ${comp.slug}: ${qualityIssues.join(", ")}`);
+      console.warn(`  ⛔ Skipped ${comp.slug}: ${qualityIssues.join(", ")}`);
       lowQuality++;
+      continue;
     }
 
     fs.writeFileSync(filePath, content, "utf-8");

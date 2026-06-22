@@ -190,18 +190,34 @@ function generateComparisonsForCategory(
 async function main() {
   const verified = loadVerified();
   const tools = loadTools();
-  const comparisons = loadComparisons();
+  let comparisons = loadComparisons();
   const existingSlugs = new Set(tools.map((t) => t.slug));
-
-  const approved = verified.filter(
-    (v) => v.decision === "APPROVE" && v.confidence >= 70 && !existingSlugs.has(v.slug)
-  );
-
-  const validCategories = loadValidCategories();
 
   console.log(`🔧 Auto-Approval Pipeline starting...`);
   console.log(`   Existing tools: ${tools.length}`);
   console.log(`   Verified results: ${verified.length}`);
+
+  // Always run comparison cleanup: dedup + remove entries referencing inactive tools
+  const activeSlugs = new Set(tools.filter((t) => t.status === "active").map((t) => t.slug));
+  const seenPairs = new Set<string>();
+  const beforeCount = comparisons.length;
+  comparisons = comparisons.filter((c) => {
+    if (!activeSlugs.has(c.toolA) || !activeSlugs.has(c.toolB)) return false;
+    const pair = [c.toolA, c.toolB].sort();
+    const key = `${pair[0]}-${pair[1]}`;
+    if (seenPairs.has(key)) return false;
+    seenPairs.add(key);
+    return true;
+  });
+  if (comparisons.length < beforeCount) {
+    console.log(`   Comparison cleanup: ${beforeCount} → ${comparisons.length} (removed ${beforeCount - comparisons.length} inactive/duplicate)`);
+    saveComparisons(comparisons);
+  }
+
+  const approved = verified.filter(
+    (v) => v.decision === "APPROVE" && v.confidence >= 80 && !existingSlugs.has(v.slug)
+  );
+
   console.log(`   New approved to add: ${approved.length}`);
 
   if (approved.length === 0) {
@@ -209,6 +225,7 @@ async function main() {
     return;
   }
 
+  const validCategories = loadValidCategories();
   const newTools = approved.map(verifiedToTool);
 
   // Validate all new tools before writing
@@ -257,20 +274,15 @@ async function main() {
 
   const allComparisonsRaw = [...comparisons, ...newComparisons];
 
-  // Deduplicate comparisons by normalized pair key
-  const seenPairs = new Set<string>();
+  // Deduplicate by normalized pair key, but PRESERVE the first record's original slug
+  const seenPairs2 = new Set<string>();
   const allComparisons: Comparison[] = [];
   for (const c of allComparisonsRaw) {
     const pair = [c.toolA, c.toolB].sort();
     const key = `${pair[0]}-${pair[1]}`;
-    if (!seenPairs.has(key)) {
-      seenPairs.add(key);
-      allComparisons.push({
-        slug: `${pair[0]}-vs-${pair[1]}`,
-        toolA: pair[0],
-        toolB: pair[1],
-        category: c.category,
-      });
+    if (!seenPairs2.has(key)) {
+      seenPairs2.add(key);
+      allComparisons.push(c); // Keep original slug, toolA, toolB
     }
   }
 

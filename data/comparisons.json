@@ -12,9 +12,9 @@
     "category": "design"
   },
   {
-    "slug": "github-issues-vs-linear",
-    "toolA": "github-issues",
-    "toolB": "linear",
+    "slug": "linear-vs-github-issues",
+    "toolA": "linear",
+    "toolB": "github-issues",
     "category": "project-management"
   },
   {
@@ -24,21 +24,21 @@
     "category": "development"
   },
   {
-    "slug": "discord-vs-slack",
-    "toolA": "discord",
-    "toolB": "slack",
+    "slug": "slack-vs-discord",
+    "toolA": "slack",
+    "toolB": "discord",
     "category": "communication"
   },
   {
-    "slug": "ephe-vs-notion",
-    "toolA": "ephe",
-    "toolB": "notion",
+    "slug": "notion-vs-ephe",
+    "toolA": "notion",
+    "toolB": "ephe",
     "category": "productivity"
   },
   {
-    "slug": "ephe-vs-obsidian",
-    "toolA": "ephe",
-    "toolB": "obsidian",
+    "slug": "obsidian-vs-ephe",
+    "toolA": "obsidian",
+    "toolB": "ephe",
     "category": "productivity"
   },
   {
@@ -48,9 +48,9 @@
     "category": "design"
   },
   {
-    "slug": "onlook-vs-penpot",
-    "toolA": "onlook",
-    "toolB": "penpot",
+    "slug": "penpot-vs-onlook",
+    "toolA": "penpot",
+    "toolB": "onlook",
     "category": "design"
   },
   {
@@ -66,69 +66,69 @@
     "category": "communication"
   },
   {
-    "slug": "discord-vs-microsoft-teams",
-    "toolA": "discord",
-    "toolB": "microsoft-teams",
+    "slug": "microsoft-teams-vs-discord",
+    "toolA": "microsoft-teams",
+    "toolB": "discord",
     "category": "communication"
   },
   {
-    "slug": "google-meet-vs-microsoft-teams",
-    "toolA": "google-meet",
-    "toolB": "microsoft-teams",
+    "slug": "microsoft-teams-vs-google-meet",
+    "toolA": "microsoft-teams",
+    "toolB": "google-meet",
     "category": "communication"
   },
   {
-    "slug": "colanode-vs-notion",
-    "toolA": "colanode",
-    "toolB": "notion",
+    "slug": "notion-vs-colanode",
+    "toolA": "notion",
+    "toolB": "colanode",
     "category": "productivity"
   },
   {
-    "slug": "confluence-vs-notion",
-    "toolA": "confluence",
-    "toolB": "notion",
+    "slug": "notion-vs-confluence",
+    "toolA": "notion",
+    "toolB": "confluence",
     "category": "productivity"
   },
   {
-    "slug": "airtable-vs-notion",
-    "toolA": "airtable",
-    "toolB": "notion",
+    "slug": "notion-vs-airtable",
+    "toolA": "notion",
+    "toolB": "airtable",
     "category": "productivity"
   },
   {
-    "slug": "colanode-vs-obsidian",
-    "toolA": "colanode",
-    "toolB": "obsidian",
+    "slug": "obsidian-vs-colanode",
+    "toolA": "obsidian",
+    "toolB": "colanode",
     "category": "productivity"
   },
   {
-    "slug": "confluence-vs-obsidian",
-    "toolA": "confluence",
-    "toolB": "obsidian",
+    "slug": "obsidian-vs-confluence",
+    "toolA": "obsidian",
+    "toolB": "confluence",
     "category": "productivity"
   },
   {
-    "slug": "airtable-vs-obsidian",
-    "toolA": "airtable",
-    "toolB": "obsidian",
+    "slug": "obsidian-vs-airtable",
+    "toolA": "obsidian",
+    "toolB": "airtable",
     "category": "productivity"
   },
   {
-    "slug": "colanode-vs-ephe",
-    "toolA": "colanode",
-    "toolB": "ephe",
+    "slug": "ephe-vs-colanode",
+    "toolA": "ephe",
+    "toolB": "colanode",
     "category": "productivity"
   },
   {
-    "slug": "confluence-vs-ephe",
-    "toolA": "confluence",
-    "toolB": "ephe",
+    "slug": "ephe-vs-confluence",
+    "toolA": "ephe",
+    "toolB": "confluence",
     "category": "productivity"
   },
   {
-    "slug": "airtable-vs-ephe",
-    "toolA": "airtable",
-    "toolB": "ephe",
+    "slug": "ephe-vs-airtable",
+    "toolA": "ephe",
+    "toolB": "airtable",
     "category": "productivity"
   },
   {
@@ -138,15 +138,15 @@
     "category": "productivity"
   },
   {
-    "slug": "airtable-vs-colanode",
-    "toolA": "airtable",
-    "toolB": "colanode",
+    "slug": "colanode-vs-airtable",
+    "toolA": "colanode",
+    "toolB": "airtable",
     "category": "productivity"
   },
   {
-    "slug": "airtable-vs-confluence",
-    "toolA": "airtable",
-    "toolB": "confluence",
+    "slug": "confluence-vs-airtable",
+    "toolA": "confluence",
+    "toolB": "airtable",
     "category": "productivity"
   }
 ]
