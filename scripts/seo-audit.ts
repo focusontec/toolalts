@@ -23,6 +23,8 @@ const BASE_URL = "https://www.toolalts.dev";
 const MIN_ALTERNATIVES_FOR_INDEX = 2;
 const MIN_ALT_CONTENT_WORDS = 500;
 const MIN_COMPARISON_CONTENT_WORDS = 300;
+const MIN_ACTIVE_TOOL_FEATURES = 3;
+const MIN_ACTIVE_TOOL_DESCRIPTION_CHARS = 80;
 const CONTENT_SECTIONS_TO_SCAN = [
   "alternative-to",
   "blog",
@@ -31,12 +33,32 @@ const CONTENT_SECTIONS_TO_SCAN = [
   "migration-guides",
   "reports",
 ];
+const GITHUB_PLACEHOLDER_FEATURES = [
+  "Unlimited public/private repositories",
+  "Dependabot security and version updates",
+  "2,000 CI/CD minutes",
+  "500MB of Packages storage",
+  "GitHub Codespaces Access",
+];
+const LOW_VALUE_CONTENT_PATTERNS = [
+  /both tools are solid choices/i,
+  /both .* are popular .* tools/i,
+  /consider .* if you need/i,
+  /it depends on your needs/i,
+  /ultimately,? the best choice/i,
+];
 
 type Tool = {
   slug: string;
   name: string;
   status?: string;
   category: string;
+  tagline?: string;
+  description?: string;
+  websiteUrl?: string;
+  githubUrl?: string | null;
+  features?: string[];
+  pricing?: { plan?: string; price?: string; features?: string[] }[];
 };
 
 type Comparison = {
@@ -102,6 +124,67 @@ function findInternalRoutes(content: string): string[] {
   return [...routes];
 }
 
+function hasBadGithubUrl(tool: Tool): boolean {
+  return typeof tool.githubUrl === "string" && /github\.com\/undefined\/?$/.test(tool.githubUrl);
+}
+
+function hasRealWebsite(tool: Tool): boolean {
+  if (!tool.websiteUrl) return false;
+  try {
+    const url = new URL(tool.websiteUrl);
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+function getActiveToolQualityIssues(tool: Tool): { errors: string[]; warnings: string[] } {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const features = tool.features ?? [];
+  const pricing = tool.pricing ?? [];
+  const serialized = JSON.stringify({ features, pricing });
+
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(tool.slug)) {
+    errors.push(`Active tool "${tool.slug}" has an invalid slug.`);
+  }
+  if (!hasRealWebsite(tool)) {
+    errors.push(`Active tool "${tool.slug}" is missing a valid websiteUrl.`);
+  }
+  if (hasBadGithubUrl(tool)) {
+    errors.push(`Active tool "${tool.slug}" has invalid githubUrl "${tool.githubUrl}".`);
+  }
+  if ((tool.description ?? "").trim().length < MIN_ACTIVE_TOOL_DESCRIPTION_CHARS) {
+    warnings.push(`Active tool "${tool.slug}" has a short description.`);
+  }
+  if (features.length < MIN_ACTIVE_TOOL_FEATURES) {
+    warnings.push(`Active tool "${tool.slug}" has fewer than ${MIN_ACTIVE_TOOL_FEATURES} features.`);
+  }
+  if (GITHUB_PLACEHOLDER_FEATURES.some((phrase) => serialized.includes(phrase))) {
+    warnings.push(`Active tool "${tool.slug}" may contain GitHub default feature/pricing text.`);
+  }
+  if (pricing.length === 0 || pricing.some((plan) => plan.price === "?" || plan.plan === "Unknown")) {
+    warnings.push(`Active tool "${tool.slug}" has incomplete pricing data.`);
+  }
+
+  return { errors, warnings };
+}
+
+function getContentQualityWarnings(relativePath: string, content: string): string[] {
+  const warnings: string[] = [];
+  if (!relativePath.includes(`${path.sep}comparisons${path.sep}`) && !relativePath.includes(`${path.sep}blog${path.sep}`)) {
+    return warnings;
+  }
+
+  for (const pattern of LOW_VALUE_CONTENT_PATTERNS) {
+    if (pattern.test(content)) {
+      warnings.push(`Low-value AI-style phrasing in ${relativePath}: ${pattern.source}`);
+    }
+  }
+
+  return warnings;
+}
+
 function main() {
   const tools = readJson<Tool[]>(TOOLS_PATH);
   const comparisons = readJson<Comparison[]>(COMPARISONS_PATH);
@@ -117,6 +200,9 @@ function main() {
     if (!categorySlugs.has(tool.category)) {
       errors.push(`Active tool "${tool.slug}" uses unknown category "${tool.category}".`);
     }
+    const qualityIssues = getActiveToolQualityIssues(tool);
+    errors.push(...qualityIssues.errors);
+    warnings.push(...qualityIssues.warnings);
   }
 
   const comparisonSlugCounts = new Map<string, number>();
@@ -239,6 +325,7 @@ function main() {
     for (const filePath of listMarkdownFiles(sectionDir)) {
       const relativePath = path.relative(ROOT, filePath);
       const content = fs.readFileSync(filePath, "utf-8");
+      warnings.push(...getContentQualityWarnings(relativePath, content));
       for (const route of findInternalRoutes(content)) {
         if (!publicRoutes.has(route)) {
           errors.push(`Broken internal link in ${relativePath}: ${route}`);

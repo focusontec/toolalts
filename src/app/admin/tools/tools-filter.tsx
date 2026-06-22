@@ -8,6 +8,7 @@ const STATUS_OPTIONS: { value: ToolStatus | "all"; label: string }[] = [
   { value: "all", label: "All" },
   { value: "active", label: "Active" },
   { value: "draft", label: "Draft" },
+  { value: "review", label: "Review" },
   { value: "hidden", label: "Hidden" },
 ];
 
@@ -15,6 +16,7 @@ function StatusBadge({ status }: { status: ToolStatus }) {
   const styles: Record<ToolStatus, string> = {
     active: "bg-emerald-50 text-emerald-700",
     draft: "bg-amber-50 text-amber-700",
+    review: "bg-sky-50 text-sky-700",
     hidden: "bg-slate-100 text-slate-500",
     removed: "bg-red-50 text-red-600",
   };
@@ -124,6 +126,7 @@ export function ToolsFilter({ tools }: { tools: any[] }) {
                     >
                       <option value="active">active</option>
                       <option value="draft">draft</option>
+                      <option value="review">review</option>
                       <option value="hidden">hidden</option>
                       <option value="removed">removed</option>
                     </select>

@@ -1,0 +1,73 @@
+name: Promote Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Promote one draft tool (leave empty with all=true)"
+        required: false
+        type: string
+      all:
+        description: "Check all draft tools"
+        required: false
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+      apply:
+        description: "Apply eligible promotions and commit"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run promotion gate
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            ARGS="$ARGS --slug ${{ github.event.inputs.slug }}"
+          elif [ "${{ github.event.inputs.all }}" = "true" ]; then
+            ARGS="$ARGS --all"
+          fi
+          if [ "${{ github.event.inputs.apply }}" = "true" ]; then
+            ARGS="$ARGS --apply"
+          fi
+          npx tsx scripts/promote-content.ts $ARGS
+
+      - name: SEO guardrail
+        run: npm run seo:audit
+
+      - name: Commit promotions
+        if: ${{ github.event.inputs.apply == 'true' }}
+        run: |
+          git config user.name "autoclaw[bot]"
+          git config user.email "autoclaw[bot]@users.noreply.github.com"
+          git add data/tools.json
+          if git diff --cached --quiet; then
+            echo "No eligible promotions to commit."
+          else
+            git commit -m "autoclaw: promote reviewed content $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -35,23 +35,23 @@ jobs:
       - name: 🤖 AI Cross-Verification
         timeout-minutes: 15
         env:
-          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'ollama' }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemma4:31b' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
           OLLAMA_URL: ${{ vars.OLLAMA_URL || '' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/ai-verify.ts
 
       # ── STEP 3: AUTO APPROVE ───────────────────────────
-      - name: 🔧 Auto-approve and ingest
+      - name: 🔧 Ingest verified drafts
         run: npx tsx scripts/auto-approve.ts
 
       # ── STEP 4: GENERATE COMPARISONS ───────────────────
       - name: 📝 Generate comparison articles
         env:
-          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'ollama' }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemma4:31b' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
         run: npx tsx scripts/generate-comparisons.ts
 
       # ── STEP 5: SYNC GITHUB DATA ──────────────────────

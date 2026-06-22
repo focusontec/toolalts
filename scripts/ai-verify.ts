@@ -27,6 +27,14 @@ interface VerificationResult {
   description: string;
   features: string[];
   pricing: { plan: string; price: string; features: string[] }[];
+  targetAudience: string;
+  directAlternativeTo: string[];
+  evidenceGaps: string[];
+  publishReadiness: {
+    score: number;
+    recommendation: "draft" | "review" | "active";
+    reasons: string[];
+  };
   concerns: string[];
   sources: string[];
   fullReport: string;
@@ -136,7 +144,8 @@ Evaluation Rules:
 3. CLASSIFICATION: Determine the most accurate category and tagline
 4. PRICING: Infer pricing model from description and README context (Free/Open Source/Paid/Freemium)
 5. URL VERIFICATION: Check if the website URL is real and reachable. If the URL looks auto-generated (e.g. slug-name.com), fabricated, or is unreachable, flag this as a RED FLAG and include it in concerns.
-6. RED FLAGS: Abandoned repos (>1yr stale), placeholder/unreachable websites, misleading descriptions, auto-generated URLs
+6. USER VALUE: Identify who would actually use this, what mainstream tool it can replace, and what decision the page helps a reader make.
+7. RED FLAGS: Abandoned repos (>1yr stale), placeholder/unreachable websites, misleading descriptions, auto-generated URLs
 
 IMPORTANT on URLs:
 - If websiteReachable is false, the website URL is likely fake or dead. Add this to concerns.
@@ -147,6 +156,7 @@ CRITICAL — DO NOT FABRICATE DATA:
 - NEVER invent GitHub stars, forks, or other statistics. Only use numbers from the evidence provided.
 - If githubData is null, do NOT claim the project has stars or forks. Say "GitHub data not available".
 - NEVER invent pricing tiers, feature lists, or capabilities. Only reference what appears in the evidence.
+- NEVER use GitHub plan features such as "Unlimited public/private repositories", "Dependabot", "CI/CD minutes", or "Codespaces" as product features unless the tool itself is GitHub.
 - If you are unsure about a fact, say "unverifiable" rather than guessing.
 - The fullReport must only contain facts supported by the evidence. Do not embellish or speculate.
 
@@ -166,6 +176,14 @@ Required JSON schema:
   "pricing": [{"plan": "Free|Pro|Enterprise", "price": "$0 or $X/mo", "features": ["what's included"]}],
   "websiteUrl": "the verified real URL of the tool (from GitHub homepage or official site, NOT a fabricated URL)",
   "githubUrl": "full GitHub URL if applicable, or null",
+  "targetAudience": "specific user or team type this helps",
+  "directAlternativeTo": ["mainstream tool names this could reasonably replace"],
+  "evidenceGaps": ["facts still missing or unverifiable"],
+  "publishReadiness": {
+    "score": 0-100,
+    "recommendation": "draft|review|active",
+    "reasons": ["why it should or should not be published"]
+  },
   "concerns": ["list any red flags or uncertainties"],
   "fullReport": "Detailed multi-paragraph analysis of the verification process and final verdict"
 }`;
@@ -179,7 +197,7 @@ ${JSON.stringify(evidence, null, 2)}`;
   try {
     const clean = llmRes.content.replace(/```json\s*|```\s*$/g, "").trim();
     parsed = JSON.parse(clean);
-  } catch (e) {
+  } catch {
     console.error("Failed to parse LLM response:", llmRes.content.slice(0, 500));
     parsed = {
       decision: "AMBIGUOUS",
@@ -216,13 +234,18 @@ ${JSON.stringify(evidence, null, 2)}`;
     concerns.push(`Website URL may be auto-generated: ${bestWebsite}`);
   }
 
+  let githubUrl: string | null = null;
+  if (typeof parsed.githubUrl === "string" && parsed.githubUrl.startsWith("https://github.com/")) {
+    githubUrl = parsed.githubUrl;
+  } else if (candidate.github) {
+    githubUrl = candidate.github.startsWith("http") ? candidate.github : `https://github.com/${candidate.github}`;
+  }
+
   const result: VerificationResult = {
     slug: candidate.slug,
     name: candidate.name,
     website: bestWebsite,
-    github: parsed.githubUrl || candidate.github
-      ? `https://github.com/${candidate.github}`
-      : null,
+    github: githubUrl,
     decision: parsed.decision || "AMBIGUOUS",
     confidence: parsed.confidence || 0,
     verificationScore: parsed.verificationScore || 0,
@@ -233,6 +256,14 @@ ${JSON.stringify(evidence, null, 2)}`;
     description: parsed.description || candidate.rawData?.description || "",
     features: parsed.features || [],
     pricing: parsed.pricing || [{ plan: "Unknown", price: "?", features: [] }],
+    targetAudience: parsed.targetAudience || "",
+    directAlternativeTo: Array.isArray(parsed.directAlternativeTo) ? parsed.directAlternativeTo : [],
+    evidenceGaps: Array.isArray(parsed.evidenceGaps) ? parsed.evidenceGaps : [],
+    publishReadiness: {
+      score: parsed.publishReadiness?.score || 0,
+      recommendation: parsed.publishReadiness?.recommendation || "draft",
+      reasons: Array.isArray(parsed.publishReadiness?.reasons) ? parsed.publishReadiness.reasons : [],
+    },
     concerns,
     sources: ["github", "website", "llm-analysis"].filter(Boolean),
     fullReport: parsed.fullReport || "",
@@ -271,6 +302,17 @@ processedAt: "${result.processedAt}"
 - **Tagline**: ${result.tagline}
 - **Features**: ${result.features.join(", ")}
 - **Pricing**: ${result.pricing.map((p) => `${p.plan} (${p.price})`).join(", ")}
+- **Target audience**: ${result.targetAudience || "Unspecified"}
+- **Direct alternatives**: ${result.directAlternativeTo.length > 0 ? result.directAlternativeTo.join(", ") : "Unspecified"}
+
+## Publish Readiness
+
+- **Recommendation**: ${result.publishReadiness.recommendation}
+- **Score**: ${result.publishReadiness.score}/100
+- **Reasons**: ${result.publishReadiness.reasons.length > 0 ? result.publishReadiness.reasons.join("; ") : "Not provided"}
+
+## Evidence Gaps
+${result.evidenceGaps.length > 0 ? result.evidenceGaps.map((gap) => `- ${gap}`).join("\n") : "None identified."}
 
 ## Concerns
 ${result.concerns.length > 0 ? result.concerns.map((c) => `- ${c}`).join("\n") : "None identified."}

@@ -141,7 +141,8 @@ function verifiedToTool(v: any): Tool {
     features: Array.isArray(v.features) ? v.features : [],
     category: v.category || "other",
     logo: `/logos/${v.slug}.svg`,
-    status: "active",
+    // New discoveries need editorial review before they can enter public index.
+    status: "draft",
   };
 }
 
@@ -218,10 +219,10 @@ async function main() {
     (v) => v.decision === "APPROVE" && v.confidence >= 80 && !existingSlugs.has(v.slug)
   );
 
-  console.log(`   New approved to add: ${approved.length}`);
+  console.log(`   New verified drafts to ingest: ${approved.length}`);
 
   if (approved.length === 0) {
-    console.log("📭 No new approved tools to add.");
+    console.log("📭 No new verified tools to ingest.");
     return;
   }
 
@@ -264,7 +265,8 @@ async function main() {
 
   const allTools = [...tools, ...validTools];
 
-  // Generate new comparison pairs for affected categories
+  // Comparison generation only uses active tools. Newly ingested tools stay draft
+  // until reviewed, so they cannot expand the public index automatically.
   const affectedCategories = new Set(validTools.map((t) => t.category));
   let newComparisons: Comparison[] = [];
   for (const cat of affectedCategories) {
@@ -293,14 +295,14 @@ async function main() {
   fs.writeFileSync(VERIFIED_PATH, "[]");
 
   console.log(`\n✅ Pipeline complete:`);
-  console.log(`   Tools added: ${validTools.length}`);
+  console.log(`   Draft tools ingested: ${validTools.length}`);
   console.log(`   Tools skipped (URL issues): ${skippedCount}`);
   console.log(`   New comparisons: ${newComparisons.length}`);
   console.log(`   Total tools: ${allTools.length}`);
   console.log(`   Total comparisons: ${allComparisons.length}`);
 
   for (const t of validTools) {
-    console.log(`   + ${t.name} (${t.category}) — ${t.openSource ? "Open Source" : "Proprietary"}`);
+    console.log(`   + ${t.name} (${t.category}) — draft, ${t.openSource ? "Open Source" : "Proprietary"}`);
   }
 }
 

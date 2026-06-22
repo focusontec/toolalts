@@ -54,28 +54,46 @@ function isComparisonValid(comp: ComparisonEntry, tools: ToolEntry[]): boolean {
 
 function checkContentQuality(content: string): string[] {
   const issues: string[] = [];
-  if (content.length < 500) issues.push(`too short (${content.length} chars, need 500+)`);
+  if (content.length < 1200) issues.push(`too short (${content.length} chars, need 1200+)`);
   const hasOverview = /^##\s+Overview/m.test(content) || /^##\s+Introduction/m.test(content);
   const hasVerdict = /^##\s+Verdict/m.test(content) || /^##\s+Conclusion/m.test(content);
   const hasPricing = /^##\s+Pricing/m.test(content);
+  const lowValuePhrases = [
+    /both tools are solid choices/i,
+    /both .* are popular .* tools/i,
+    /consider .* if you need/i,
+    /it depends on your needs/i,
+    /ultimately,? the best choice/i,
+  ];
   if (!hasOverview) issues.push("missing ## Overview section");
   if (!hasVerdict) issues.push("missing ## Verdict section");
   if (!hasPricing) issues.push("missing ## Pricing section");
+  for (const phrase of lowValuePhrases) {
+    if (phrase.test(content)) issues.push(`generic AI phrasing detected (${phrase.source})`);
+  }
   return issues;
 }
 
 async function generateComparisonContent(toolA: ToolEntry, toolB: ToolEntry): Promise<string> {
-  const systemPrompt = `You are a senior software analyst. Write a detailed, SEO-optimized comparison article between two software tools. The article should be factual, balanced, and helpful for users deciding between the two.
+  const systemPrompt = `You are a senior software analyst writing a practical buyer/user decision memo.
+The article must help a real person decide between two software tools using only the provided data.
 
 Output MUST be raw Markdown (no frontmatter, no code blocks). Use ## for sections. Include:
-- ## Overview — brief intro to both tools
-- ## Feature Comparison — table comparing key features
-- ## Pricing — breakdown of each tool's pricing tiers
-- ## When to Choose ${toolA.name} — scenarios where tool A is better
-- ## When to Choose ${toolB.name} — scenarios where tool B is better
-- ## Verdict — balanced recommendation
+- ## Overview — one direct paragraph explaining the decision context
+- ## Key Differences — 3-5 concrete differences, not marketing claims
+- ## Feature Comparison — table comparing verified capabilities from the data
+- ## Pricing — pricing tiers and any unknowns; say "not verified" where data is missing
+- ## When to Choose ${toolA.name} — specific user/team scenarios
+- ## When to Choose ${toolB.name} — specific user/team scenarios
+- ## Trade-offs and Limits — important downsides, missing data, and migration friction
+- ## Verdict — direct recommendation for different user profiles
 
-Keep it between 500-800 words. Be specific with feature names and pricing numbers from the data provided.`;
+Rules:
+- Do not write generic lines like "both tools are solid choices" or "it depends on your needs".
+- Do not invent prices, usage limits, integrations, rankings, customers, or statistics.
+- Do not turn GitHub-hosting plan features into product features unless the tool is GitHub itself.
+- Prefer short, specific paragraphs over promotional language.
+- Keep it between 700-1000 words.`;
 
   const userPrompt = `Compare these two tools:
 
@@ -107,39 +125,6 @@ Write the comparison article now.`;
   return response.content;
 }
 
-function generateFallbackMarkdown(toolA: ToolEntry, toolB: ToolEntry): string {
-  const allFeatures = Array.from(new Set([...toolA.features, ...toolB.features]));
-
-  return `## Overview
-${toolA.name} and ${toolB.name} are both popular ${toolA.category} tools. ${toolA.tagline} ${toolB.tagline}
-
-## Feature Comparison
-| Feature | ${toolA.name} | ${toolB.name} |
-|---------|${"-".repeat(toolA.name.length + 2)}|${"-".repeat(toolB.name.length + 2)}|
-| Rating | ${toolA.rating}/5 | ${toolB.rating}/5 |
-| Open Source | ${toolA.openSource ? "Yes" : "No"} | ${toolB.openSource ? "Yes" : "No"} |
-| GitHub Stars | ${toolA.githubStars?.toLocaleString() ?? "N/A"} | ${toolB.githubStars?.toLocaleString() ?? "N/A"} |
-${allFeatures.map((f) => `| ${f} | ${toolA.features.includes(f) ? "✅" : "❌"} | ${toolB.features.includes(f) ? "✅" : "❌"} |`).join("\n")}
-
-## Pricing
-
-### ${toolA.name}
-${toolA.pricing.map((p) => `- **${p.plan}**: ${p.price} — ${p.features.join(", ")}`).join("\n")}
-
-### ${toolB.name}
-${toolB.pricing.map((p) => `- **${p.plan}**: ${p.price} — ${p.features.join(", ")}`).join("\n")}
-
-## When to Choose ${toolA.name}
-Consider ${toolA.name} if you need ${toolA.features.slice(0, 3).join(", ")}.
-
-## When to Choose ${toolB.name}
-Consider ${toolB.name} if you need ${toolB.features.slice(0, 3).join(", ")}.
-
-## Verdict
-Both tools are solid choices in the ${toolA.category} space. ${toolA.name} has a ${toolA.rating}/5 rating while ${toolB.name} has a ${toolB.rating}/5 rating.
-`;
-}
-
 async function main() {
   const comparisons = loadComparisons();
   const tools = loadTools();
@@ -165,11 +150,16 @@ async function main() {
 
   console.log(`📝 Generate Comparisons starting...`);
   console.log(`   Comparisons: ${validComparisons.length} (of ${comparisons.length} total)`);
-  console.log(`   LLM: ${useLlm ? `${provider} (real content)` : "disabled (fallback template)"}`);
+  console.log(`   LLM: ${useLlm ? `${provider} (real content)` : "disabled (generation skipped)"}`);
 
   let generated = 0;
   let skipped = 0;
   let lowQuality = 0;
+  let failed = 0;
+
+  if (!useLlm) {
+    console.warn("  ⛔ LLM is not configured. Skipping generation instead of writing fallback content.");
+  }
 
   for (const comp of validComparisons) {
     const filePath = path.join(CONTENT_DIR, `${comp.slug}.md`);
@@ -182,20 +172,20 @@ async function main() {
     const toolA = getToolBySlug(tools, comp.toolA)!;
     const toolB = getToolBySlug(tools, comp.toolB)!;
 
-    let content: string;
+    if (!useLlm) {
+      skipped++;
+      continue;
+    }
 
-    if (useLlm) {
-      try {
-        console.log(`  🤖 Generating: ${comp.slug} via LLM...`);
-        content = await generateComparisonContent(toolA, toolB);
-        console.log(`  ✅ Generated: ${comp.slug} (${content.length} chars)`);
-      } catch (err) {
-        console.warn(`  ⚠️ LLM failed for ${comp.slug}, using fallback:`, (err as Error).message);
-        content = generateFallbackMarkdown(toolA, toolB);
-      }
-    } else {
-      console.log(`  📄 Template: ${comp.slug}`);
-      content = generateFallbackMarkdown(toolA, toolB);
+    let content: string;
+    try {
+      console.log(`  🤖 Generating: ${comp.slug} via LLM...`);
+      content = await generateComparisonContent(toolA, toolB);
+      console.log(`  ✅ Generated: ${comp.slug} (${content.length} chars)`);
+    } catch (err) {
+      console.warn(`  ⛔ Skipped ${comp.slug}: LLM failed:`, (err as Error).message);
+      failed++;
+      continue;
     }
 
     // Quality gate: skip writing if content fails checks
@@ -215,6 +205,7 @@ async function main() {
   console.log(`Generated:         ${generated}`);
   console.log(`Skipped (exists):  ${skipped}`);
   console.log(`Low quality:       ${lowQuality}`);
+  console.log(`Failed:            ${failed}`);
   console.log(`LLM enabled:       ${useLlm}`);
   console.log(`========================================\n`);
 }

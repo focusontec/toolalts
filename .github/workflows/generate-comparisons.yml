@@ -25,6 +25,10 @@ jobs:
         run: npm ci
 
       - name: Run comparison generation script
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'deepseek' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
         run: npx tsx scripts/generate-comparisons.ts
 
       - name: SEO guardrail

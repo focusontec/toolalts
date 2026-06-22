@@ -1,4 +1,4 @@
-export type ToolStatus = "active" | "draft" | "hidden" | "removed";
+export type ToolStatus = "active" | "draft" | "review" | "hidden" | "removed";
 
 export interface Tool {
   slug: string;
