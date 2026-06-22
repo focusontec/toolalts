@@ -1,58 +1,44 @@
-## Overview
+## Short answer
 
-Figma and Penpot are two powerful design tools that cater to UI/UX designers and product teams, but they take fundamentally different approaches. Figma is a cloud-based, proprietary platform known for its real-time collaboration, robust prototyping, and extensive plugin ecosystem. Penpot, on the other hand, is the first open-source design and prototyping platform, built on open web standards like SVG, and offers both free cloud and self-hosted options. Both tools support real-time collaboration, but their philosophies—commercial versus open-source—create distinct advantages for different users.
+Choose **Figma** if your team needs the most mature design collaboration platform, broad hiring familiarity, strong handoff workflows, and a large plugin/community ecosystem. Choose **Penpot** if open standards, self-hosting, code-friendly design handoff, or avoiding vendor lock-in matter more than having the deepest commercial design platform.
 
-## Feature Comparison
+This is not only a feature comparison. It is a governance decision. Figma is the safer default for most product teams. Penpot is the better strategic choice for teams that care about open source, portability, and controlling their design infrastructure.
 
-| Feature | Figma | Penpot |
-|---------|-------|--------|
-| **Real-time collaboration** | Yes, with multiplayer editing | Yes, with multiplayer editing |
-| **Prototyping & interactions** | Advanced, with transitions, overlays, and animations | Basic, with simple interactions and transitions |
-| **Design systems & components** | Robust, with shared libraries and variants | Supported via design tokens and components |
-| **Developer handoff** | Dev Mode with inspect, code snippets, and plugins | Basic inspect mode, CSS export |
-| **Auto layout & responsive design** | Yes, with constraints and auto layout | Yes, with constraints and flex layout |
-| **Whiteboarding** | FigJam integrated | Not available natively |
-| **Plugins & widgets** | Extensive ecosystem (hundreds) | Limited, community-driven |
-| **Open source** | No | Yes (AGPL license) |
-| **Self-hosted** | No | Yes |
-| **File format** | Proprietary (.fig) | SVG-based (open standard) |
-| **Offline mode** | Limited (via desktop app) | Not available |
+## Decision table
 
-## Pricing
+| Question | Pick Figma when... | Pick Penpot when... |
+| --- | --- | --- |
+| Team environment | Designers, PMs, engineers, and stakeholders need a familiar shared tool | Your team can tolerate a smaller ecosystem for more control |
+| Hiring and onboarding | You want the tool most designers already know | You are comfortable training the team on a newer workflow |
+| Ecosystem | Plugins, templates, design systems, and community files are important | You prefer open source foundations and fewer platform dependencies |
+| Infrastructure | SaaS convenience is acceptable | Self-hosting or data control is a requirement |
+| Engineering handoff | You want mature inspect, comments, and design system workflows | You value web-native output and developer-readable design artifacts |
+| Risk to avoid | Overpaying for a platform you use only lightly | Choosing openness while lacking the team time to maintain it |
 
-**Figma** offers three tiers:
-- **Starter ($0)**: 3 projects, unlimited cloud storage, basic prototyping, and collaboration.
-- **Professional ($12/month)**: Unlimited projects, advanced prototyping, version history, and team libraries.
-- **Organization ($45/month)**: Centralized admin, design system analytics, and advanced security.
+## Where Figma is stronger
 
-**Penpot** is completely free:
-- **Self-hosted ($0)**: Full control, no user limits, requires your own server.
-- **Cloud ($0)**: Hosted by Penpot, unlimited projects and users, but may have performance limits during peak usage.
+Figma is stronger as an all-around design operations platform. It has the larger professional ecosystem, more third-party integrations, stronger hiring familiarity, and mature collaboration patterns. For teams that already work with product designers, design systems, prototypes, stakeholder review, and developer handoff, Figma is usually the lowest-friction choice.
 
-## When to Choose Figma
+The biggest advantage is not one feature. It is the surrounding workflow. Designers know it. Engineers have seen its inspect panels. PMs and clients understand how to comment on files. Agencies can share work without explaining the tool. When the goal is to move a cross-functional team quickly, that familiarity has real value.
 
-Choose Figma if you need a mature, industry-standard tool with a rich feature set. It excels in:
-- **Advanced prototyping**: Figma’s interactions, overlays, and animations are more sophisticated than Penpot’s.
-- **Developer handoff**: Dev Mode provides detailed CSS, iOS, and Android code snippets, plus plugins for Zeplin, Storybook, and more.
-- **Plugin ecosystem**: With hundreds of plugins for accessibility, icon libraries, and automation, Figma extends far beyond core design.
-- **Team collaboration at scale**: Figma’s Organization tier offers admin controls, analytics, and SSO, ideal for large enterprises.
-- **Whiteboarding**: FigJam is integrated for brainstorming and workshops, a feature Penpot lacks.
+Figma is also a better fit when the design system is a business-critical asset. Component libraries, variables, branches, comments, prototypes, and shared files have enough depth for serious product teams. If you need a commercial platform that can scale across multiple designers and stakeholders, Figma remains the practical default.
 
-Figma is best for teams that prioritize a polished, all-in-one design workflow and are willing to pay for premium features.
+## Where Penpot is stronger
 
-## When to Choose Penpot
+Penpot is stronger when control and openness are part of the requirement. It is open source and can fit teams that do not want their design process entirely dependent on a closed SaaS platform. That matters for organizations with strict data requirements, public-sector constraints, privacy concerns, or a preference for self-hosted infrastructure.
 
-Choose Penpot if you value open-source principles, cost savings, or data sovereignty. It shines in:
-- **Budget-conscious teams**: Penpot is free forever, with no per-user or per-project limits.
-- **Self-hosting**: Organizations with strict data privacy requirements can run Penpot on their own servers, ensuring full control.
-- **Open standards**: Penpot uses SVG as its native file format, making designs portable and future-proof.
-- **Design tokens**: Built-in support for design tokens aligns with modern design system practices.
-- **Community-driven development**: As an open-source project, Penpot evolves based on user contributions and feedback.
+Penpot also speaks more naturally to developers who think in web concepts. Its positioning around open standards makes it attractive for teams that want design artifacts to feel closer to production interfaces. For smaller teams, indie products, and open source projects, Penpot can be a credible way to avoid a commercial design stack while still keeping collaborative UI design.
 
-Penpot is ideal for startups, educational institutions, or any team that wants a capable design tool without vendor lock-in or recurring costs.
+The tradeoff is ecosystem maturity. You should expect fewer ready-made plugins, fewer designers with deep Penpot experience, and less institutional knowledge compared with Figma. That may be fine if your design workflow is straightforward. It becomes costly if your team depends on advanced workflows or frequently works with external designers.
 
-## Verdict
+## Migration considerations
 
-Both Figma and Penpot are excellent design tools, but they serve different needs. Figma is the more mature, feature-rich platform, offering advanced prototyping, a vast plugin ecosystem, and seamless developer handoff—making it the go-to choice for professional design teams and enterprises. Penpot, meanwhile, is a compelling open-source alternative that provides core design and collaboration features at zero cost, with the added benefits of self-hosting and open standards.
+Moving from Penpot to Figma is usually easier from a people perspective because Figma is widely known, but design files and component systems still need cleanup. Moving from Figma to Penpot should be treated as a small migration project, not a simple export. Audit your component libraries, plugin dependencies, design tokens, and handoff process before switching.
 
-If your team can afford the subscription and relies on advanced prototyping or a large plugin ecosystem, Figma is the clear winner. If you prioritize cost savings, data control, or open-source values, Penpot is a strong and capable choice. For most teams, Figma’s polish and ecosystem edge out Penpot, but Penpot’s rapid development and community support make it a serious contender—especially for those who value freedom over features.
+For teams evaluating Penpot, a pilot is safer than a full migration. Pick one real product surface, rebuild the relevant design system pieces, and run design review plus engineer handoff through Penpot for a sprint. If the team can ship without friction, then expand.
+
+## Practical recommendation
+
+Use Figma when design throughput, collaboration, and ecosystem depth are the main goals. It is the better default for startups, agencies, and product teams that need to hire designers or work with external partners.
+
+Use Penpot when your organization values open source, self-hosting, and long-term control enough to accept a smaller ecosystem. It is especially worth testing for open source products, privacy-sensitive organizations, and engineering-led teams that want design tools closer to the web platform.

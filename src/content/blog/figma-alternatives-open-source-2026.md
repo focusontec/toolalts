@@ -122,5 +122,4 @@ Start with one project. Run Penpot alongside Figma for a month. If it meets your
 
 - [Penpot vs Figma comparison](/compare/figma-vs-penpot/) — Side-by-side feature breakdown
 - [All design tools](/category/design/) — Browse every design alternative
-- [Onlook](/tool/onlook/) — Another open source design tool worth watching
 - [Self-hosted SaaS alternatives guide](/blog/self-hosted-saas-alternatives-2026/) — Replace your entire SaaS stack

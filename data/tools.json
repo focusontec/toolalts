@@ -497,27 +497,23 @@
     "websiteUrl": "https://github.com/features/issues",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
+        "plan": "Included with GitHub",
+        "price": "Included with GitHub plans",
         "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month",
-          "500MB of Packages storage",
-          "Issues & Projects",
-          "Community support"
+          "Create and track issues in GitHub repositories",
+          "Use labels, assignees, milestones, and linked pull requests",
+          "Plan work with GitHub Projects when a board or table view is needed",
+          "Automate issue workflows with GitHub Actions and repository events"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access (featured add-on)"
+      "Repository-native issue tracking",
+      "Labels, milestones, assignees, and saved filters",
+      "Issue templates and markdown task lists",
+      "Pull request and commit linking",
+      "Project boards and table views through GitHub Projects",
+      "Workflow automation through GitHub Actions"
     ],
     "category": "project-management",
     "logo": "/logos/github.svg",
@@ -1186,7 +1182,7 @@
     ],
     "category": "development",
     "logo": "/logos/tooljet.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "ephe",
@@ -1223,7 +1219,7 @@
     ],
     "category": "productivity",
     "logo": "/logos/ephe.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "skip",
@@ -1295,7 +1291,7 @@
     ],
     "category": "productivity",
     "logo": "/logos/colanode.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "onlook",
@@ -1334,7 +1330,7 @@
     ],
     "category": "design",
     "logo": "/logos/onlook.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "instantdb",
@@ -1373,7 +1369,7 @@
     ],
     "category": "development",
     "logo": "/logos/instantdb.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "langfuse",
@@ -1408,7 +1404,7 @@
     ],
     "category": "development",
     "logo": "/logos/langfuse.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "jira",
@@ -2990,7 +2986,7 @@
     ],
     "category": "development",
     "logo": "/logos/copilot.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "resend",
@@ -3377,7 +3373,7 @@
     ],
     "category": "development",
     "logo": "/logos/system-prompts-and-models-of-ai-tools.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "gstack",
@@ -3416,7 +3412,7 @@
     ],
     "category": "development",
     "logo": "/logos/gstack.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "deer-flow",
@@ -3486,7 +3482,7 @@
     ],
     "category": "development",
     "logo": "/logos/awesome-claude-skills.svg",
-    "status": "active"
+    "status": "review"
   },
   {
     "slug": "nanobot",
