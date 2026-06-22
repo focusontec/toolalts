@@ -58,7 +58,7 @@ function saveTools(tools: Tool[]) {
 }
 
 function saveComparisons(comparisons: Comparison[]) {
-  fs.writeFileSync(COMPARISONS_PATH, JSON.stringify(comparisons, null, 2));
+  fs.writeFileSync(COMPARISONS_PATH, JSON.stringify(comparisons, null, 2) + "\n");
 }
 
 function loadValidCategories(): Set<string> {

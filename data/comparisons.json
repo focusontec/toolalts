@@ -30,30 +30,6 @@
     "category": "communication"
   },
   {
-    "slug": "notion-vs-ephe",
-    "toolA": "notion",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-ephe",
-    "toolA": "obsidian",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "figma-vs-onlook",
-    "toolA": "figma",
-    "toolB": "onlook",
-    "category": "design"
-  },
-  {
-    "slug": "penpot-vs-onlook",
-    "toolA": "penpot",
-    "toolB": "onlook",
-    "category": "design"
-  },
-  {
     "slug": "microsoft-teams-vs-slack",
     "toolA": "microsoft-teams",
     "toolB": "slack",
@@ -78,12 +54,6 @@
     "category": "communication"
   },
   {
-    "slug": "notion-vs-colanode",
-    "toolA": "notion",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
     "slug": "notion-vs-confluence",
     "toolA": "notion",
     "toolB": "confluence",
@@ -96,12 +66,6 @@
     "category": "productivity"
   },
   {
-    "slug": "obsidian-vs-colanode",
-    "toolA": "obsidian",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
     "slug": "obsidian-vs-confluence",
     "toolA": "obsidian",
     "toolB": "confluence",
@@ -110,36 +74,6 @@
   {
     "slug": "obsidian-vs-airtable",
     "toolA": "obsidian",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-colanode",
-    "toolA": "ephe",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-confluence",
-    "toolA": "ephe",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-airtable",
-    "toolA": "ephe",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "colanode-vs-confluence",
-    "toolA": "colanode",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "colanode-vs-airtable",
-    "toolA": "colanode",
     "toolB": "airtable",
     "category": "productivity"
   },

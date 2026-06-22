@@ -192,6 +192,7 @@ function main() {
 
   const errors: string[] = [];
   const warnings: string[] = [];
+  const opportunities: string[] = [];
   const activeTools = tools.filter((tool) => tool.status === "active");
   const activeSlugs = new Set(activeTools.map((tool) => tool.slug));
   const categorySlugs = new Set(categories.map((category) => category.slug));
@@ -257,13 +258,17 @@ function main() {
         .filter((slug, index, slugs) => activeSlugs.has(slug) && slugs.indexOf(slug) === index);
 
       const content = readMarkdownContent("alternative-to", tool.slug);
-      const hasSupportingContent = content !== null && wordCount(content) >= MIN_ALT_CONTENT_WORDS;
+      const contentWords = content ? wordCount(content) : 0;
+      const hasSupportingContent = content !== null && contentWords >= MIN_ALT_CONTENT_WORDS;
       const indexable = alternatives.length >= MIN_ALTERNATIVES_FOR_INDEX || hasSupportingContent;
 
       if (!indexable) {
-        warnings.push(
-          `Alternative page "${tool.slug}" is excluded from sitemap (${alternatives.length} active alternatives, ${content ? wordCount(content) : 0} content words).`
-        );
+        const message = `Alternative page "${tool.slug}" is excluded from sitemap (${alternatives.length} active alternatives, ${contentWords} content words).`;
+        if (alternatives.length > 0 || contentWords > 0) {
+          warnings.push(message);
+        } else {
+          opportunities.push(message);
+        }
       }
 
       return indexable;
@@ -340,6 +345,7 @@ function main() {
   console.log(`- indexable comparisons: ${indexableComparisonSlugs.length}/${publicComparisons.length}`);
   console.log(`- modeled sitemap URLs: ${new Set(urls).size}`);
   console.log(`- warnings: ${warnings.length}`);
+  console.log(`- content opportunities: ${opportunities.length}`);
   console.log(`- errors: ${errors.length}`);
 
   if (warnings.length > 0) {
@@ -349,6 +355,16 @@ function main() {
     }
     if (warnings.length > 80) {
       console.log(`- ... ${warnings.length - 80} more warnings`);
+    }
+  }
+
+  if (opportunities.length > 0) {
+    console.log("\nContent Opportunities");
+    for (const opportunity of opportunities.slice(0, 40)) {
+      console.log(`- ${opportunity}`);
+    }
+    if (opportunities.length > 40) {
+      console.log(`- ... ${opportunities.length - 40} more opportunities`);
     }
   }
 
