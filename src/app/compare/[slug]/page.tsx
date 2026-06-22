@@ -2,35 +2,35 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import toolsData from "@/../data/tools.json";
-import comparisonsData from "@/../data/comparisons.json";
+import matter from "gray-matter";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
-import type { Tool, Comparison } from "@/lib/types";
+import {
+  getActiveToolBySlug,
+  getIndexableComparisonSlugs,
+  getPublicComparisonBySlug,
+} from "@/lib/tools";
 import { promises as fs } from "fs";
 import { join } from "path";
 
 export const dynamicParams = false;
 
-const tools = toolsData as Tool[];
-const comparisons = comparisonsData as Comparison[];
-
 export function generateStaticParams(): { slug: string }[] {
-  return comparisons.map((c) => ({ slug: c.slug }));
+  return getIndexableComparisonSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const comp = comparisons.find((c) => c.slug === slug);
+  const comp = getPublicComparisonBySlug(slug);
   if (!comp) {
     return {
       title: "Not Found — ToolAlts",
       description: "This page could not be found.",
     };
   }
-  const toolA = tools.find((t) => t.slug === comp.toolA);
-  const toolB = tools.find((t) => t.slug === comp.toolB);
+  const toolA = getActiveToolBySlug(comp.toolA);
+  const toolB = getActiveToolBySlug(comp.toolB);
   const title = `${toolA?.name ?? comp.toolA} vs ${toolB?.name ?? comp.toolB} — ToolAlts`;
   const description = `Compare ${toolA?.name ?? comp.toolA} and ${toolB?.name ?? comp.toolB} side by side. See features, pricing, ratings, and more.`;
   return {
@@ -57,8 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 async function loadComparisonContent(slug: string): Promise<string | null> {
   try {
     const filePath = join(process.cwd(), "src", "content", "comparisons", `${slug}.md`);
-    const content = await fs.readFile(filePath, "utf-8");
-    return content;
+    const raw = await fs.readFile(filePath, "utf-8");
+    return matter(raw).content;
   } catch {
     return null;
   }
@@ -70,13 +70,13 @@ export default async function ComparePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const comp = comparisons.find((c) => c.slug === slug);
+  const comp = getPublicComparisonBySlug(slug);
   if (!comp) {
     notFound();
   }
 
-  const toolA = tools.find((t) => t.slug === comp.toolA);
-  const toolB = tools.find((t) => t.slug === comp.toolB);
+  const toolA = getActiveToolBySlug(comp.toolA);
+  const toolB = getActiveToolBySlug(comp.toolB);
 
   if (!toolA || !toolB) {
     notFound();
@@ -86,27 +86,36 @@ export default async function ComparePage({
 
   const comparisonSchema = {
     "@context": "https://schema.org",
-    "@type": "ComparisonTable",
+    "@type": "ItemList",
     name: `${toolA.name} vs ${toolB.name}`,
+    numberOfItems: 2,
     itemListElement: [
       {
-        "@type": "SoftwareApplication",
-        name: toolA.name,
-        url: `https://www.toolalts.dev/tool/${toolA.slug}/`,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: toolA.rating,
-          ratingCount: toolA.reviewsCount,
+        "@type": "ListItem",
+        position: 1,
+        item: {
+          "@type": "SoftwareApplication",
+          name: toolA.name,
+          url: `https://www.toolalts.dev/tool/${toolA.slug}/`,
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: toolA.rating,
+            ratingCount: toolA.reviewsCount,
+          },
         },
       },
       {
-        "@type": "SoftwareApplication",
-        name: toolB.name,
-        url: `https://www.toolalts.dev/tool/${toolB.slug}/`,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: toolB.rating,
-          ratingCount: toolB.reviewsCount,
+        "@type": "ListItem",
+        position: 2,
+        item: {
+          "@type": "SoftwareApplication",
+          name: toolB.name,
+          url: `https://www.toolalts.dev/tool/${toolB.slug}/`,
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: toolB.rating,
+            ratingCount: toolB.reviewsCount,
+          },
         },
       },
     ],

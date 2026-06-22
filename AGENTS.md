@@ -1,5 +1,20 @@
 # ToolAlts — AI-Powered SaaS Alternatives Directory
 
+## Current Operating Plan — Read First
+
+Before changing SEO, routing, content generation, automation scripts, or public data, read:
+
+- `docs/SEO_GROWTH_PLAN.md`
+
+Current mission: reposition ToolAlts.dev from a broad auto-generated directory into a decision site for developers, founders, and small teams choosing cheaper, open source, self-hosted, or privacy-friendly SaaS alternatives.
+
+Immediate priority:
+
+1. Keep sitemap clean: no draft/hidden/removed tools, no duplicate URLs, no empty alternatives pages, no non-public comparisons.
+2. Keep generated markdown clean: frontmatter must not render as body content.
+3. Run `npm run seo:audit` after data, sitemap, route, or content-generation changes.
+4. Prefer improving high-intent clusters over adding more shallow pages.
+
 ## Project Overview
 
 ToolAlts is an **automated SEO content site** that discovers, verifies, and publishes software tool alternatives. The entire pipeline runs via GitHub Actions with zero manual intervention.
@@ -192,5 +207,6 @@ cd out && python3 -m http.server 8080
 2. **Scripts are excluded from TypeScript compilation** — `tsconfig.json` excludes `scripts/` directory. Scripts run via `tsx` directly.
 3. **JSON data is source of truth** — `data/tools.json` and `data/comparisons.json` drive all pages. Editing these changes the site without code changes.
 4. **Markdown content is auto-generated** — files in `src/content/` are produced by DeepSeek API. Don't manually edit unless fixing errors.
-5. **Static export only** — `next.config.ts` has `output: "export"`. No SSR, no API routes, no dynamic segments at runtime.
+5. **Deployment shape** — `next.config.ts` currently uses `trailingSlash: true` and does not set `output: "export"`. Public pages are SSG where possible, while admin/API routes exist.
 6. **Sitemap uses data layer** — `src/app/sitemap.ts` imports from `src/lib/tools.ts` and `src/lib/reports.ts`. If new data types are added, update sitemap too.
+7. **SEO guardrail** — run `npm run seo:audit` before committing changes that affect public URLs, generated content, or catalog data.

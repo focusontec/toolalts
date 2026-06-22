@@ -3,5 +3,9 @@
   { "slug": "design", "name": "Design", "description": "UI/UX design, prototyping, and graphic design tools." },
   { "slug": "project-management", "name": "Project Management", "description": "Tools for planning, tracking, and delivering projects." },
   { "slug": "development", "name": "Development", "description": "Code editors, IDEs, and developer tools." },
-  { "slug": "communication", "name": "Communication", "description": "Team chat, video calls, and messaging platforms." }
+  { "slug": "communication", "name": "Communication", "description": "Team chat, video calls, and messaging platforms." },
+  { "slug": "email", "name": "Email", "description": "Transactional email, email APIs, newsletters, and deliverability tools." },
+  { "slug": "scheduling", "name": "Scheduling", "description": "Calendar booking, availability management, and meeting scheduling tools." },
+  { "slug": "developer-tools", "name": "Developer Tools", "description": "API infrastructure, developer platforms, automation, and engineering workflow tools." },
+  { "slug": "other", "name": "Other", "description": "Useful software tools that do not fit a primary ToolAlts category yet." }
 ]

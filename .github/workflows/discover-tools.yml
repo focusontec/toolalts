@@ -60,7 +60,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/sync-tools.ts --skip-screenshots
 
-      # ── STEP 6: COMMIT ─────────────────────────────────
+      # ── STEP 6: SEO GUARDRAIL ──────────────────────────
+      - name: 🔎 SEO guardrail
+        run: npm run seo:audit
+
+      # ── STEP 7: COMMIT ─────────────────────────────────
       - name: 💾 Commit changes
         run: |
           git config user.name "autoclaw[bot]"

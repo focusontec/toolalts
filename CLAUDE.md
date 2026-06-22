@@ -1,11 +1,27 @@
 # CLAUDE.md
 
+## Current Operating Plan — Read First
+
+Before changing SEO, routing, content generation, automation scripts, or public data, read:
+
+- `docs/SEO_GROWTH_PLAN.md`
+
+Current mission: reposition ToolAlts.dev from a broad auto-generated directory into a decision site for developers, founders, and small teams choosing cheaper, open source, self-hosted, or privacy-friendly SaaS alternatives.
+
+Immediate priority:
+
+- Keep sitemap clean: no draft/hidden/removed tools, no duplicate URLs, no empty alternatives pages, no non-public comparisons.
+- Keep generated markdown clean: frontmatter must not render as body content.
+- Run `npm run seo:audit` after data, sitemap, route, or content-generation changes.
+- Prefer improving high-intent clusters over adding more shallow pages.
+
 ## Commands
 
 ```bash
 npm run dev          # Dev server (port 3000)
 npm run build        # Production build
 npm run lint         # ESLint
+npm run seo:audit    # Local SEO guardrail for public index quality
 
 # Automation scripts (run with tsx, not npm)
 npx tsx scripts/discover-tools.ts       # Discover tools from GitHub + HN

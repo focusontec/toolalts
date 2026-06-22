@@ -2,7 +2,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { getActiveToolSlugs, getActiveToolBySlug, getAlternativesFor } from "@/lib/tools";
+import matter from "gray-matter";
+import {
+  getActiveToolSlugs,
+  getActiveToolBySlug,
+  getAlternativesFor,
+  isAlternativeIndexable,
+} from "@/lib/tools";
 import { ToolCard } from "@/components/ToolCard";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
@@ -23,12 +29,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = getActiveToolBySlug(slug);
   if (!tool) return { title: "Not Found" };
+  const indexable = isAlternativeIndexable(slug);
   const altTitle = `Best ${tool.name} Alternatives — Free & Open Source | ToolAlts`;
   const altDescription = `Discover the best free alternatives to ${tool.name}. Compare features, pricing, and ratings side by side to find the right ${tool.category} tool for your team.`;
   return {
     title: altTitle,
     description: altDescription,
     alternates: { canonical: `https://www.toolalts.dev/alternative-to/${slug}/` },
+    robots: indexable ? { index: true, follow: true } : { index: false, follow: true },
     openGraph: {
       type: "website",
       title: altTitle,
@@ -47,7 +55,8 @@ export async function generateMetadata({
 async function loadAltContent(slug: string): Promise<string | null> {
   try {
     const filePath = join(process.cwd(), "src", "content", "alternative-to", `${slug}.md`);
-    return await fs.readFile(filePath, "utf-8");
+    const raw = await fs.readFile(filePath, "utf-8");
+    return matter(raw).content;
   } catch {
     return null;
   }
