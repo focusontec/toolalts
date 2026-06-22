@@ -123,10 +123,7 @@ function buildSuggestedAction(altCount: number, contentWords: number): string {
   if (altCount < MIN_ALTERNATIVES_FOR_INDEX && contentWords < MIN_CONTENT_WORDS) {
     return `Add ${MIN_ALTERNATIVES_FOR_INDEX - altCount} more comparison pair(s) or write ${MIN_CONTENT_WORDS}+ word content`;
   }
-  if (altCount < MIN_ALTERNATIVES_FOR_INDEX) {
-    return `Add ${MIN_ALTERNATIVES_FOR_INDEX - altCount} more comparison pair(s)`;
-  }
-  return `Write ${MIN_CONTENT_WORDS - contentWords}+ more words of content`;
+  return `Add ${MIN_ALTERNATIVES_FOR_INDEX - altCount} more comparison pair(s)`;
 }
 
 function generateMarkdown(opportunities: Opportunity[], totalActive: number, indexableCount: number): string {
@@ -142,15 +139,17 @@ function generateMarkdown(opportunities: Opportunity[], totalActive: number, ind
   lines.push(`- **Content opportunities:** ${opportunities.length}`);
   lines.push("");
 
-  lines.push("## Top 10 Priority Pages");
-  lines.push("");
-  lines.push("| # | Tool | Category | Alt Count | Content Words | Score |");
-  lines.push("|---|------|----------|-----------|---------------|-------|");
-  for (let i = 0; i < Math.min(10, opportunities.length); i++) {
-    const o = opportunities[i];
-    lines.push(`| ${i + 1} | ${o.name} | ${o.category} | ${o.activeAlternativesCount} | ${o.contentWords} | ${o.priorityScore} |`);
+  if (opportunities.length > 0) {
+    lines.push("## Top 10 Priority Pages");
+    lines.push("");
+    lines.push("| # | Tool | Category | Alt Count | Content Words | Score |");
+    lines.push("|---|------|----------|-----------|---------------|-------|");
+    for (let i = 0; i < Math.min(10, opportunities.length); i++) {
+      const o = opportunities[i];
+      lines.push(`| ${i + 1} | ${o.name} | ${o.category} | ${o.activeAlternativesCount} | ${o.contentWords} | ${o.priorityScore} |`);
+    }
+    lines.push("");
   }
-  lines.push("");
 
   lines.push("## All Opportunities");
   lines.push("");
@@ -167,13 +166,15 @@ function generateMarkdown(opportunities: Opportunity[], totalActive: number, ind
     lines.push("");
   }
 
-  lines.push("## Suggested Next 3 Pages");
-  lines.push("");
-  for (let i = 0; i < Math.min(3, opportunities.length); i++) {
-    const o = opportunities[i];
-    lines.push(`${i + 1}. **${o.name}** — ${o.suggestedAction}`);
+  if (opportunities.length > 0) {
+    lines.push("## Suggested Next 3 Pages");
+    lines.push("");
+    for (let i = 0; i < Math.min(3, opportunities.length); i++) {
+      const o = opportunities[i];
+      lines.push(`${i + 1}. **${o.name}** — ${o.suggestedAction}`);
+    }
+    lines.push("");
   }
-  lines.push("");
 
   return lines.join("\n");
 }
@@ -187,10 +188,10 @@ function main() {
   const opportunities: Opportunity[] = [];
 
   for (const tool of activeTools) {
-    const altCount = getActiveAlternatives(tool.slug, comparisons, activeSlugs);
+    const activeAlternatives = getActiveAlternatives(tool.slug, comparisons, activeSlugs);
     const content = readMarkdownContent(tool.slug);
     const contentWords = content ? wordCount(content) : 0;
-    const indexable = altCount.length >= MIN_ALTERNATIVES_FOR_INDEX || contentWords >= MIN_CONTENT_WORDS;
+    const indexable = activeAlternatives.length >= MIN_ALTERNATIVES_FOR_INDEX || contentWords >= MIN_CONTENT_WORDS;
 
     if (indexable) continue;
 
@@ -198,15 +199,15 @@ function main() {
       slug: tool.slug,
       name: tool.name,
       category: tool.category,
-      activeAlternativesCount: altCount.length,
+      activeAlternativesCount: activeAlternatives.length,
       contentWords,
       rating: tool.rating,
       reviewsCount: tool.reviewsCount,
       githubStars: tool.githubStars,
       websiteUrl: tool.websiteUrl,
-      reason: buildReason(altCount.length, contentWords),
-      suggestedAction: buildSuggestedAction(altCount.length, contentWords),
-      priorityScore: calculatePriority(altCount.length, contentWords, tool),
+      reason: buildReason(activeAlternatives.length, contentWords),
+      suggestedAction: buildSuggestedAction(activeAlternatives.length, contentWords),
+      priorityScore: calculatePriority(activeAlternatives.length, contentWords, tool),
     });
   }
 
