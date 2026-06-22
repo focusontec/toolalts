@@ -96,17 +96,17 @@
     ],
     "useCases": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "Centralize Product Development",
         "description": "Qonto uses Notion to centralize product development with a single roadmap, automated progress tracking, and customized Kanban workflows."
       },
       {
-        "icon": "📚",
+        "icon": "\ud83d\udcda",
         "title": "Unify Knowledge and Work",
         "description": "Qonto maintains a company wiki, teamspaces, and individual pages in Notion as a single source of truth for documentation and task management."
       },
       {
-        "icon": "🤝",
+        "icon": "\ud83e\udd1d",
         "title": "Enhance Cross-Functional Collaboration",
         "description": "Qonto integrates Notion with tools like FigJam and Slack to minimize manual work and maintain company-wide alignment."
       }
@@ -121,7 +121,7 @@
     "cons": [
       "Lack of offline support",
       "Requires a web connection",
-      "AI features aren’t always helpful",
+      "AI features aren\u2019t always helpful",
       "Steep learning curve for customization"
     ],
     "faq": [
@@ -599,19 +599,19 @@
     ],
     "useCases": [
       {
-        "icon": "🚀",
+        "icon": "\ud83d\ude80",
         "title": "Accelerate Product Roadmaps",
         "description": "Engineering teams use Cursor to accelerate product roadmaps, ship features faster, and handle surges in demand while maintaining quality."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Refactor and Debug Code",
         "description": "Cursor helps engineers refactor legacy systems, debug complex issues, and handle tech debt with increased speed and confidence."
       },
       {
-        "icon": "📈",
+        "icon": "\ud83d\udcc8",
         "title": "Boost Engineering Velocity",
-        "description": "Teams see 2–5x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
+        "description": "Teams see 2\u20135x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
       }
     ],
     "pros": [
@@ -684,7 +684,7 @@
     "slug": "slack",
     "name": "Slack",
     "tagline": "AI work platform for managing projects and automating workflows",
-    "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
+    "description": "Boost productivity and save time with Slack \u2014 the AI work platform for managing projects, automating workflows, and connecting teams securely.",
     "rating": 4.5,
     "reviewsCount": 28674,
     "openSource": false,
@@ -828,23 +828,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
@@ -867,23 +857,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/markitdown.svg",
     "status": "draft"
@@ -1079,8 +1059,7 @@
           "Local, open-source AI App Builder",
           "Downloadable for macOS & Windows",
           "No sign-up required",
-          "Bring your own API key",
-          "Community support"
+          "Bring your own API key"
         ]
       },
       {
@@ -1160,26 +1139,14 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
           "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support",
           "GitHub Codespaces Access (featured add-on)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/tooljet.svg",
     "status": "review"
@@ -1200,23 +1167,12 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support"
-    ],
+    "features": [],
     "category": "productivity",
     "logo": "/logos/ephe.svg",
     "status": "review"
@@ -1273,22 +1229,14 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
           "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support",
           "GitHub Codespaces Access (featured add-on)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage"
-    ],
+    "features": [],
     "category": "productivity",
     "logo": "/logos/colanode.svg",
     "status": "review"
@@ -1309,23 +1257,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "design",
@@ -1348,23 +1286,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
@@ -1387,21 +1315,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/langfuse.svg",
     "status": "review"
@@ -1500,7 +1420,7 @@
         "price": "$5USD per user/month if billed annually ($6 billed monthly)",
         "features": [
           "Unlimited boards",
-          "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+          "Quickly capture to-dos from email, Slack, and Teams \u2014 powered by AI",
           "Planner",
           "Advanced checklists",
           "Card mirroring",
@@ -2969,21 +2889,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/copilot.svg",
     "status": "review"
@@ -3302,8 +3214,7 @@
         "price": "$0/mo",
         "features": [
           "5,000 runs/month",
-          "1 concurrent run",
-          "Community support"
+          "1 concurrent run"
         ]
       },
       {
@@ -3352,23 +3263,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
@@ -3391,23 +3292,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
@@ -3462,24 +3353,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/awesome-claude-skills.svg",
     "status": "review"
@@ -3591,23 +3471,11 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month",
-          "500MB of Packages storage",
-          "Issues & Projects",
-          "Community support"
+          "Host open source projects in public GitHub repositories"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "other",
@@ -3629,24 +3497,10 @@
       {
         "plan": "Free",
         "price": "$0 USD per user/month",
-        "features": [
-          "Unlimited public/private repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month",
-          "500MB of Packages storage",
-          "Issues & Projects",
-          "Community support"
-        ]
+        "features": []
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support"
-    ],
+    "features": [],
     "category": "productivity",
     "logo": "/logos/rowboat.svg",
     "status": "draft"
@@ -3667,26 +3521,14 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (free for public repositories)",
           "500MB of Packages storage (free for public repositories)",
-          "Issues & Projects",
-          "Community support",
           "GitHub Codespaces Access (featured add-on)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access"
-    ],
+    "features": [],
     "category": "development",
     "logo": "/logos/axilla.svg",
     "status": "draft"
@@ -3707,23 +3549,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "development",
@@ -3777,26 +3609,14 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
           "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support",
           "GitHub Codespaces Access (featured add-on)"
         ]
       }
     ],
-    "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access"
-    ],
+    "features": [],
     "category": "productivity",
     "logo": "/logos/colanode-.svg",
     "status": "draft"
@@ -3817,23 +3637,13 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
           "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
           "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
-          "Community support"
+          "500MB of Packages storage (Free for public repositories)"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "other",
@@ -3856,23 +3666,11 @@
         "plan": "Free",
         "price": "$0 USD per user/month",
         "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month",
-          "500MB of Packages storage",
-          "Issues & Projects",
-          "Community support"
+          "Host open source projects in public GitHub repositories"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month",
-      "500MB of Packages storage",
-      "Issues & Projects",
-      "Community support",
       "GitHub Codespaces Access (featured add-on)"
     ],
     "category": "other",

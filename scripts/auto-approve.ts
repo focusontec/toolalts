@@ -106,6 +106,23 @@ function validateTool(tool: Tool, validCategories: Set<string>): string[] {
   return errors;
 }
 
+// Features that belong to GitHub's free plan, not to individual tools.
+// The LLM sometimes copies these from the GitHub page instead of the tool's own features.
+const GITHUB_PLATFORM_FEATURES = new Set([
+  "Unlimited public/private repositories",
+  "Dependabot security and version updates",
+  "2,000 CI/CD minutes",
+  "2,000 CI/CD minutes/month",
+  "500MB of Packages storage",
+  "GitHub Codespaces Access",
+  "Issues & Projects",
+  "Community support",
+]);
+
+function filterGitHubFeatures(features: string[]): string[] {
+  return features.filter((f) => !GITHUB_PLATFORM_FEATURES.has(f));
+}
+
 function verifiedToTool(v: any): Tool {
   const isOpenSource =
     v.category?.includes("open") ||
@@ -135,10 +152,10 @@ function verifiedToTool(v: any): Tool {
       ? v.pricing.map((p: any) => ({
           plan: p.plan || "Unknown",
           price: p.price || "?",
-          features: Array.isArray(p.features) ? p.features : [],
+          features: Array.isArray(p.features) ? filterGitHubFeatures(p.features) : [],
         }))
-      : [{ plan: "Free", price: "$0", features: ["Basic features"] }],
-    features: Array.isArray(v.features) ? v.features : [],
+      : [{ plan: "Free", price: "$0", features: [] }],
+    features: Array.isArray(v.features) ? filterGitHubFeatures(v.features) : [],
     category: v.category || "other",
     logo: `/logos/${v.slug}.svg`,
     // New discoveries need editorial review before they can enter public index.
