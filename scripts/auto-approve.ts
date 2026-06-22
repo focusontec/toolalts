@@ -28,6 +28,7 @@ interface Tool {
   features: string[];
   category: string;
   logo: string;
+  status?: string;
 }
 
 interface Comparison {
@@ -140,6 +141,7 @@ function verifiedToTool(v: any): Tool {
     features: Array.isArray(v.features) ? v.features : [],
     category: v.category || "other",
     logo: `/logos/${v.slug}.svg`,
+    status: "active",
   };
 }
 
@@ -148,27 +150,38 @@ function generateComparisonsForCategory(
   category: string,
   existing: Comparison[]
 ): Comparison[] {
-  const catTools = tools.filter((t) => t.category === category);
-  const existingPairs = new Set(existing.map((c) => `${c.toolA}-${c.toolB}`));
-  const newComparisons: Comparison[] = [];
+  // Only include active tools — never generate comparisons for draft/hidden/removed
+  const catTools = tools.filter((t) => t.category === category && t.status === "active");
 
-  // Generate top-rated pairs within same category (limit to avoid explosion)
-  const topTools = catTools.filter((t) => t.rating >= 3).slice(0, 8);
+  // Build normalized pair keys from existing comparisons to prevent duplicates
+  const existingPairs = new Set(
+    existing.map((c) => {
+      const pair = [c.toolA, c.toolB].sort();
+      return `${pair[0]}-${pair[1]}`;
+    })
+  );
+
+  const newComparisons: Comparison[] = [];
+  const MAX_COMPARISONS_PER_CATEGORY = 10;
+
+  // Pick top-rated tools, cap to prevent combinatorial explosion
+  const topTools = catTools.filter((t) => t.rating >= 3).slice(0, 6);
   for (let i = 0; i < topTools.length; i++) {
     for (let j = i + 1; j < topTools.length; j++) {
-      const a = topTools[i].slug;
-      const b = topTools[j].slug;
-      const pairKey = a < b ? `${a}-${b}` : `${b}-${a}`;
+      if (newComparisons.length >= MAX_COMPARISONS_PER_CATEGORY) break;
+      const pair = [topTools[i].slug, topTools[j].slug].sort();
+      const pairKey = `${pair[0]}-${pair[1]}`;
       if (!existingPairs.has(pairKey)) {
         newComparisons.push({
-          slug: `${a}-vs-${b}`,
-          toolA: a,
-          toolB: b,
+          slug: `${pair[0]}-vs-${pair[1]}`,
+          toolA: pair[0],
+          toolB: pair[1],
           category,
         });
         existingPairs.add(pairKey);
       }
     }
+    if (newComparisons.length >= MAX_COMPARISONS_PER_CATEGORY) break;
   }
 
   return newComparisons;
@@ -242,7 +255,24 @@ async function main() {
     newComparisons = [...newComparisons, ...catNew];
   }
 
-  const allComparisons = [...comparisons, ...newComparisons];
+  const allComparisonsRaw = [...comparisons, ...newComparisons];
+
+  // Deduplicate comparisons by normalized pair key
+  const seenPairs = new Set<string>();
+  const allComparisons: Comparison[] = [];
+  for (const c of allComparisonsRaw) {
+    const pair = [c.toolA, c.toolB].sort();
+    const key = `${pair[0]}-${pair[1]}`;
+    if (!seenPairs.has(key)) {
+      seenPairs.add(key);
+      allComparisons.push({
+        slug: `${pair[0]}-vs-${pair[1]}`,
+        toolA: pair[0],
+        toolB: pair[1],
+        category: c.category,
+      });
+    }
+  }
 
   saveTools(allTools);
   saveComparisons(allComparisons);

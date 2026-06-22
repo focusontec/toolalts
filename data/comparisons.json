@@ -12,9 +12,9 @@
     "category": "design"
   },
   {
-    "slug": "linear-vs-github-issues",
-    "toolA": "linear",
-    "toolB": "github-issues",
+    "slug": "github-issues-vs-linear",
+    "toolA": "github-issues",
+    "toolB": "linear",
     "category": "project-management"
   },
   {
@@ -24,93 +24,21 @@
     "category": "development"
   },
   {
-    "slug": "slack-vs-discord",
-    "toolA": "slack",
-    "toolB": "discord",
+    "slug": "discord-vs-slack",
+    "toolA": "discord",
+    "toolB": "slack",
     "category": "communication"
   },
   {
-    "slug": "cursor-vs-claude-code",
-    "toolA": "cursor",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-markitdown",
-    "toolA": "cursor",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-claude-code",
-    "toolA": "vscode",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-markitdown",
-    "toolA": "vscode",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-markitdown",
-    "toolA": "claude-code",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "notion-vs-anki",
-    "toolA": "notion",
-    "toolB": "anki",
+    "slug": "ephe-vs-notion",
+    "toolA": "ephe",
+    "toolB": "notion",
     "category": "productivity"
   },
   {
-    "slug": "obsidian-vs-anki",
-    "toolA": "obsidian",
-    "toolB": "anki",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-tasker",
-    "toolA": "notion",
-    "toolB": "tasker",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-tasker",
-    "toolA": "obsidian",
-    "toolB": "tasker",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-tasker",
-    "toolA": "anki",
-    "toolB": "tasker",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-ephe",
-    "toolA": "notion",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-ephe",
-    "toolA": "obsidian",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-ephe",
-    "toolA": "anki",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-ephe",
-    "toolA": "tasker",
-    "toolB": "ephe",
+    "slug": "ephe-vs-obsidian",
+    "toolA": "ephe",
+    "toolB": "obsidian",
     "category": "productivity"
   },
   {
@@ -120,9 +48,9 @@
     "category": "design"
   },
   {
-    "slug": "penpot-vs-onlook",
-    "toolA": "penpot",
-    "toolB": "onlook",
+    "slug": "onlook-vs-penpot",
+    "toolA": "onlook",
+    "toolB": "penpot",
     "category": "design"
   },
   {
@@ -138,375 +66,69 @@
     "category": "communication"
   },
   {
-    "slug": "microsoft-teams-vs-discord",
-    "toolA": "microsoft-teams",
-    "toolB": "discord",
+    "slug": "discord-vs-microsoft-teams",
+    "toolA": "discord",
+    "toolB": "microsoft-teams",
     "category": "communication"
   },
   {
-    "slug": "microsoft-teams-vs-google-meet",
-    "toolA": "microsoft-teams",
-    "toolB": "google-meet",
+    "slug": "google-meet-vs-microsoft-teams",
+    "toolA": "google-meet",
+    "toolB": "microsoft-teams",
     "category": "communication"
   },
   {
-    "slug": "cursor-vs-claude-code",
-    "toolA": "cursor",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-composio",
-    "toolA": "cursor",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-bodhi",
-    "toolA": "cursor",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-stagewise",
-    "toolA": "cursor",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-dyad",
-    "toolA": "cursor",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-claude-code",
-    "toolA": "vscode",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-markitdown",
-    "toolA": "vscode",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-composio",
-    "toolA": "vscode",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-bodhi",
-    "toolA": "vscode",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-stagewise",
-    "toolA": "vscode",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-dyad",
-    "toolA": "vscode",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-composio",
-    "toolA": "claude-code",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-bodhi",
-    "toolA": "claude-code",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-stagewise",
-    "toolA": "claude-code",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-dyad",
-    "toolA": "claude-code",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-composio",
-    "toolA": "markitdown",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-bodhi",
-    "toolA": "markitdown",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-stagewise",
-    "toolA": "markitdown",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-dyad",
-    "toolA": "markitdown",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-bodhi",
-    "toolA": "composio",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-stagewise",
-    "toolA": "composio",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-dyad",
-    "toolA": "composio",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "bodhi-vs-stagewise",
-    "toolA": "bodhi",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "bodhi-vs-dyad",
-    "toolA": "bodhi",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "stagewise-vs-dyad",
-    "toolA": "stagewise",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-claude-code",
-    "toolA": "cursor",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-composio",
-    "toolA": "cursor",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-bodhi",
-    "toolA": "cursor",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-claude-code",
-    "toolA": "vscode",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-markitdown",
-    "toolA": "vscode",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-composio",
-    "toolA": "vscode",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-bodhi",
-    "toolA": "vscode",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-stagewise",
-    "toolA": "vscode",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-dyad",
-    "toolA": "vscode",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-bodhi",
-    "toolA": "claude-code",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-composio",
-    "toolA": "markitdown",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-bodhi",
-    "toolA": "markitdown",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-dyad",
-    "toolA": "markitdown",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-bodhi",
-    "toolA": "composio",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "stagewise-vs-dyad",
-    "toolA": "stagewise",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "notion-vs-anki",
-    "toolA": "notion",
-    "toolB": "anki",
+    "slug": "colanode-vs-notion",
+    "toolA": "colanode",
+    "toolB": "notion",
     "category": "productivity"
   },
   {
-    "slug": "notion-vs-ephe",
-    "toolA": "notion",
+    "slug": "confluence-vs-notion",
+    "toolA": "confluence",
+    "toolB": "notion",
+    "category": "productivity"
+  },
+  {
+    "slug": "airtable-vs-notion",
+    "toolA": "airtable",
+    "toolB": "notion",
+    "category": "productivity"
+  },
+  {
+    "slug": "colanode-vs-obsidian",
+    "toolA": "colanode",
+    "toolB": "obsidian",
+    "category": "productivity"
+  },
+  {
+    "slug": "confluence-vs-obsidian",
+    "toolA": "confluence",
+    "toolB": "obsidian",
+    "category": "productivity"
+  },
+  {
+    "slug": "airtable-vs-obsidian",
+    "toolA": "airtable",
+    "toolB": "obsidian",
+    "category": "productivity"
+  },
+  {
+    "slug": "colanode-vs-ephe",
+    "toolA": "colanode",
     "toolB": "ephe",
     "category": "productivity"
   },
   {
-    "slug": "notion-vs-colanode",
-    "toolA": "notion",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-confluence",
-    "toolA": "notion",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-airtable",
-    "toolA": "notion",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-anki",
-    "toolA": "obsidian",
-    "toolB": "anki",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-ephe",
-    "toolA": "obsidian",
+    "slug": "confluence-vs-ephe",
+    "toolA": "confluence",
     "toolB": "ephe",
     "category": "productivity"
   },
   {
-    "slug": "obsidian-vs-colanode",
-    "toolA": "obsidian",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-confluence",
-    "toolA": "obsidian",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-airtable",
-    "toolA": "obsidian",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-colanode",
-    "toolA": "anki",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-confluence",
-    "toolA": "anki",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-airtable",
-    "toolA": "anki",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-ephe",
-    "toolA": "tasker",
+    "slug": "airtable-vs-ephe",
+    "toolA": "airtable",
     "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-colanode",
-    "toolA": "tasker",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-confluence",
-    "toolA": "tasker",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-airtable",
-    "toolA": "tasker",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-colanode",
-    "toolA": "ephe",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-confluence",
-    "toolA": "ephe",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-airtable",
-    "toolA": "ephe",
-    "toolB": "airtable",
     "category": "productivity"
   },
   {
@@ -516,315 +138,15 @@
     "category": "productivity"
   },
   {
-    "slug": "colanode-vs-airtable",
-    "toolA": "colanode",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "confluence-vs-airtable",
-    "toolA": "confluence",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-anki",
-    "toolA": "notion",
-    "toolB": "anki",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-ephe",
-    "toolA": "notion",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-colanode",
-    "toolA": "notion",
+    "slug": "airtable-vs-colanode",
+    "toolA": "airtable",
     "toolB": "colanode",
     "category": "productivity"
   },
   {
-    "slug": "notion-vs-confluence",
-    "toolA": "notion",
+    "slug": "airtable-vs-confluence",
+    "toolA": "airtable",
     "toolB": "confluence",
     "category": "productivity"
-  },
-  {
-    "slug": "notion-vs-airtable",
-    "toolA": "notion",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-anki",
-    "toolA": "obsidian",
-    "toolB": "anki",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-ephe",
-    "toolA": "obsidian",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-colanode",
-    "toolA": "obsidian",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-confluence",
-    "toolA": "obsidian",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "obsidian-vs-airtable",
-    "toolA": "obsidian",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "anki-vs-airtable",
-    "toolA": "anki",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-ephe",
-    "toolA": "tasker",
-    "toolB": "ephe",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-colanode",
-    "toolA": "tasker",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-confluence",
-    "toolA": "tasker",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "tasker-vs-airtable",
-    "toolA": "tasker",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-colanode",
-    "toolA": "ephe",
-    "toolB": "colanode",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-confluence",
-    "toolA": "ephe",
-    "toolB": "confluence",
-    "category": "productivity"
-  },
-  {
-    "slug": "ephe-vs-airtable",
-    "toolA": "ephe",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "colanode-vs-airtable",
-    "toolA": "colanode",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "confluence-vs-airtable",
-    "toolA": "confluence",
-    "toolB": "airtable",
-    "category": "productivity"
-  },
-  {
-    "slug": "cursor-vs-claude-code",
-    "toolA": "cursor",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-composio",
-    "toolA": "cursor",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-bodhi",
-    "toolA": "cursor",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-claude-code",
-    "toolA": "vscode",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-markitdown",
-    "toolA": "vscode",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-composio",
-    "toolA": "vscode",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-bodhi",
-    "toolA": "vscode",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-stagewise",
-    "toolA": "vscode",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-dyad",
-    "toolA": "vscode",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-bodhi",
-    "toolA": "claude-code",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-composio",
-    "toolA": "markitdown",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-bodhi",
-    "toolA": "markitdown",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-dyad",
-    "toolA": "markitdown",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-bodhi",
-    "toolA": "composio",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "stagewise-vs-dyad",
-    "toolA": "stagewise",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-claude-code",
-    "toolA": "cursor",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-composio",
-    "toolA": "cursor",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "cursor-vs-bodhi",
-    "toolA": "cursor",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-claude-code",
-    "toolA": "vscode",
-    "toolB": "claude-code",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-markitdown",
-    "toolA": "vscode",
-    "toolB": "markitdown",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-composio",
-    "toolA": "vscode",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-bodhi",
-    "toolA": "vscode",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-stagewise",
-    "toolA": "vscode",
-    "toolB": "stagewise",
-    "category": "development"
-  },
-  {
-    "slug": "vscode-vs-dyad",
-    "toolA": "vscode",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "claude-code-vs-bodhi",
-    "toolA": "claude-code",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-composio",
-    "toolA": "markitdown",
-    "toolB": "composio",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-bodhi",
-    "toolA": "markitdown",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "markitdown-vs-dyad",
-    "toolA": "markitdown",
-    "toolB": "dyad",
-    "category": "development"
-  },
-  {
-    "slug": "composio-vs-bodhi",
-    "toolA": "composio",
-    "toolB": "bodhi",
-    "category": "development"
-  },
-  {
-    "slug": "stagewise-vs-dyad",
-    "toolA": "stagewise",
-    "toolB": "dyad",
-    "category": "development"
   }
 ]

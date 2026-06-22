@@ -26,6 +26,7 @@ interface ToolEntry {
   pricing: { plan: string; price: string; features: string[] }[];
   features: string[];
   category: string;
+  status?: string;
 }
 
 function loadComparisons(): ComparisonEntry[] {
@@ -40,6 +41,27 @@ function loadTools(): ToolEntry[] {
 
 function getToolBySlug(tools: ToolEntry[], slug: string): ToolEntry | undefined {
   return tools.find((t) => t.slug === slug);
+}
+
+function isComparisonValid(comp: ComparisonEntry, tools: ToolEntry[]): boolean {
+  const toolA = getToolBySlug(tools, comp.toolA);
+  const toolB = getToolBySlug(tools, comp.toolB);
+  if (!toolA || !toolB) return false;
+  if (toolA.status && toolA.status !== "active") return false;
+  if (toolB.status && toolB.status !== "active") return false;
+  return true;
+}
+
+function checkContentQuality(content: string): string[] {
+  const issues: string[] = [];
+  if (content.length < 500) issues.push(`too short (${content.length} chars, need 500+)`);
+  const hasOverview = /^##\s+Overview/m.test(content) || /^##\s+Introduction/m.test(content);
+  const hasVerdict = /^##\s+Verdict/m.test(content) || /^##\s+Conclusion/m.test(content);
+  const hasPricing = /^##\s+Pricing/m.test(content);
+  if (!hasOverview) issues.push("missing ## Overview section");
+  if (!hasVerdict) issues.push("missing ## Verdict section");
+  if (!hasPricing) issues.push("missing ## Pricing section");
+  return issues;
 }
 
 function formatDate(date: Date): string {
@@ -93,12 +115,7 @@ function generateFallbackMarkdown(toolA: ToolEntry, toolB: ToolEntry): string {
   const today = formatDate(new Date());
   const allFeatures = Array.from(new Set([...toolA.features, ...toolB.features]));
 
-  return `---
-title: "${toolA.name} vs ${toolB.name}: Which is Better in 2025?"
-date: "${today}"
----
-
-## Overview
+  return `## Overview
 ${toolA.name} and ${toolB.name} are both popular ${toolA.category} tools. ${toolA.tagline} ${toolB.tagline}
 
 ## Feature Comparison
@@ -144,14 +161,22 @@ async function main() {
   const useLlm = !!(process.env.LLM_API_KEY || process.env.OLLAMA_URL);
   const provider = process.env.LLM_PROVIDER || "ollama";
 
+  // Filter to only comparisons where both tools are active
+  const validComparisons = comparisons.filter((c) => isComparisonValid(c, tools));
+  const filteredCount = comparisons.length - validComparisons.length;
+  if (filteredCount > 0) {
+    console.log(`  ⚠️ Filtered out ${filteredCount} comparisons with missing/inactive tools`);
+  }
+
   console.log(`📝 Generate Comparisons starting...`);
-  console.log(`   Comparisons: ${comparisons.length}`);
+  console.log(`   Comparisons: ${validComparisons.length} (of ${comparisons.length} total)`);
   console.log(`   LLM: ${useLlm ? `${provider} (real content)` : "disabled (fallback template)"}`);
 
   let generated = 0;
   let skipped = 0;
+  let lowQuality = 0;
 
-  for (const comp of comparisons) {
+  for (const comp of validComparisons) {
     const filePath = path.join(CONTENT_DIR, `${comp.slug}.md`);
 
     if (fs.existsSync(filePath)) {
@@ -159,13 +184,8 @@ async function main() {
       continue;
     }
 
-    const toolA = getToolBySlug(tools, comp.toolA);
-    const toolB = getToolBySlug(tools, comp.toolB);
-
-    if (!toolA || !toolB) {
-      console.warn(`  ⚠️ Skipping ${comp.slug}: missing tool data (${comp.toolA} or ${comp.toolB})`);
-      continue;
-    }
+    const toolA = getToolBySlug(tools, comp.toolA)!;
+    const toolB = getToolBySlug(tools, comp.toolB)!;
 
     let content: string;
 
@@ -183,14 +203,22 @@ async function main() {
       content = generateFallbackMarkdown(toolA, toolB);
     }
 
+    // Quality gate: check generated content
+    const qualityIssues = checkContentQuality(content);
+    if (qualityIssues.length > 0) {
+      console.warn(`  ⚠️ Quality issues for ${comp.slug}: ${qualityIssues.join(", ")}`);
+      lowQuality++;
+    }
+
     fs.writeFileSync(filePath, content, "utf-8");
     generated++;
   }
 
   console.log(`\n========== GENERATION SUMMARY ==========`)
-  console.log(`Total comparisons: ${comparisons.length}`);
+  console.log(`Total comparisons: ${validComparisons.length}`);
   console.log(`Generated:         ${generated}`);
-  console.log(`Skipped:           ${skipped}`);
+  console.log(`Skipped (exists):  ${skipped}`);
+  console.log(`Low quality:       ${lowQuality}`);
   console.log(`LLM enabled:       ${useLlm}`);
   console.log(`========================================\n`);
 }
