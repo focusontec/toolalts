@@ -96,17 +96,17 @@
     ],
     "useCases": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "Centralize Product Development",
         "description": "Qonto uses Notion to centralize product development with a single roadmap, automated progress tracking, and customized Kanban workflows."
       },
       {
-        "icon": "\ud83d\udcda",
+        "icon": "📚",
         "title": "Unify Knowledge and Work",
         "description": "Qonto maintains a company wiki, teamspaces, and individual pages in Notion as a single source of truth for documentation and task management."
       },
       {
-        "icon": "\ud83e\udd1d",
+        "icon": "🤝",
         "title": "Enhance Cross-Functional Collaboration",
         "description": "Qonto integrates Notion with tools like FigJam and Slack to minimize manual work and maintain company-wide alignment."
       }
@@ -121,7 +121,7 @@
     "cons": [
       "Lack of offline support",
       "Requires a web connection",
-      "AI features aren\u2019t always helpful",
+      "AI features aren’t always helpful",
       "Steep learning curve for customization"
     ],
     "faq": [
@@ -288,7 +288,7 @@
     "rating": 5,
     "reviewsCount": 16,
     "openSource": true,
-    "githubStars": 52515,
+    "githubStars": 52626,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -603,19 +603,19 @@
     ],
     "useCases": [
       {
-        "icon": "\ud83d\ude80",
+        "icon": "🚀",
         "title": "Accelerate Product Roadmaps",
         "description": "Engineering teams use Cursor to accelerate product roadmaps, ship features faster, and handle surges in demand while maintaining quality."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Refactor and Debug Code",
         "description": "Cursor helps engineers refactor legacy systems, debug complex issues, and handle tech debt with increased speed and confidence."
       },
       {
-        "icon": "\ud83d\udcc8",
+        "icon": "📈",
         "title": "Boost Engineering Velocity",
-        "description": "Teams see 2\u20135x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
+        "description": "Teams see 2–5x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
       }
     ],
     "pros": [
@@ -658,7 +658,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 186626,
+    "githubStars": 186632,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -688,7 +688,7 @@
     "slug": "slack",
     "name": "Slack",
     "tagline": "AI work platform for managing projects and automating workflows",
-    "description": "Boost productivity and save time with Slack \u2014 the AI work platform for managing projects, automating workflows, and connecting teams securely.",
+    "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
     "rating": 4.5,
     "reviewsCount": 28674,
     "openSource": false,
@@ -824,7 +824,7 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 133694,
+    "githubStars": 133726,
     "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://github.com/anthropics/claude-code",
     "pricing": [
@@ -863,7 +863,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 157418,
+    "githubStars": 157523,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [
@@ -900,7 +900,7 @@
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28892,
+    "githubStars": 28894,
     "githubUrl": "https://github.com/ComposioHQ/composio",
     "websiteUrl": "https://composio.dev",
     "pricing": [
@@ -992,7 +992,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28682,
+    "githubStars": 28689,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1042,7 +1042,7 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 6686,
+    "githubStars": 6687,
     "githubUrl": "https://github.com/stagewise-io/stagewise",
     "websiteUrl": "https://stagewise.com",
     "pricing": [
@@ -1072,7 +1072,7 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 20704,
+    "githubStars": 20703,
     "githubUrl": "https://github.com/dyad-sh/dyad",
     "websiteUrl": "https://www.dyad.sh/",
     "pricing": [
@@ -1156,7 +1156,7 @@
     "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 38050,
+    "githubStars": 38051,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
     "websiteUrl": "https://github.com/ToolJet/ToolJet",
     "pricing": [
@@ -1305,7 +1305,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 26005,
+    "githubStars": 26008,
     "githubUrl": "https://github.com/onlook-dev/onlook",
     "websiteUrl": "https://github.com/onlook-dev/onlook",
     "pricing": [
@@ -1383,7 +1383,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 29504,
+    "githubStars": 29517,
     "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://github.com/langfuse/langfuse",
     "pricing": [
@@ -1504,7 +1504,7 @@
         "price": "$5USD per user/month if billed annually ($6 billed monthly)",
         "features": [
           "Unlimited boards",
-          "Quickly capture to-dos from email, Slack, and Teams \u2014 powered by AI",
+          "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
           "Planner",
           "Advanced checklists",
           "Card mirroring",
@@ -1841,7 +1841,7 @@
     "rating": 4.6,
     "reviewsCount": 119,
     "openSource": true,
-    "githubStars": 24455,
+    "githubStars": 24456,
     "githubUrl": "https://github.com/gitlabhq/gitlabhq",
     "websiteUrl": "https://gitlab.com",
     "pricing": [
@@ -2520,7 +2520,7 @@
     "rating": 4.9,
     "reviewsCount": 210,
     "openSource": true,
-    "githubStars": 104648,
+    "githubStars": 104662,
     "githubUrl": "https://github.com/supabase/supabase",
     "websiteUrl": "https://supabase.com",
     "pricing": [
@@ -3116,7 +3116,7 @@
     "rating": 4.8,
     "reviewsCount": 8,
     "openSource": true,
-    "githubStars": 45735,
+    "githubStars": 45737,
     "githubUrl": "https://github.com/calcom/cal.com",
     "websiteUrl": "https://cal.com",
     "pricing": [
@@ -3260,7 +3260,7 @@
     "rating": 5,
     "reviewsCount": 3,
     "openSource": true,
-    "githubStars": 5344,
+    "githubStars": 5345,
     "githubUrl": "https://github.com/unkeyed/unkey",
     "websiteUrl": "https://unkey.com",
     "pricing": [
@@ -3297,7 +3297,7 @@
     "rating": 4.8,
     "reviewsCount": 84,
     "openSource": true,
-    "githubStars": 15433,
+    "githubStars": 15434,
     "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
     "websiteUrl": "https://trigger.dev",
     "pricing": [
@@ -3348,7 +3348,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 141017,
+    "githubStars": 141025,
     "githubUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "websiteUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "pricing": [
@@ -3387,7 +3387,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 112560,
+    "githubStars": 112674,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [
@@ -3426,7 +3426,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 72878,
+    "githubStars": 72963,
     "githubUrl": "https://github.com/bytedance/deer-flow",
     "websiteUrl": "https://deerflow.tech",
     "pricing": [
@@ -3458,7 +3458,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 65485,
+    "githubStars": 65508,
     "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "websiteUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "pricing": [
@@ -3496,7 +3496,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 44544,
+    "githubStars": 44555,
     "githubUrl": "https://github.com/HKUDS/nanobot",
     "websiteUrl": "https://nanobot.wiki",
     "pricing": [
@@ -3557,7 +3557,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28225,
+    "githubStars": 28228,
     "githubUrl": "https://github.com/davila7/claude-code-templates",
     "websiteUrl": "https://aitmpl.com",
     "pricing": [
@@ -3742,7 +3742,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 52909,
+    "githubStars": 53018,
     "githubUrl": "https://github.com/colbymchenry/codegraph",
     "websiteUrl": "https://colbymchenry.github.io/codegraph/",
     "pricing": [
@@ -3852,7 +3852,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 31517,
+    "githubStars": 31545,
     "githubUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
     "websiteUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
     "pricing": [
@@ -3891,7 +3891,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 39377,
+    "githubStars": 39429,
     "githubUrl": "https://github.com/apple/container",
     "websiteUrl": "https://apple.github.io/container/documentation/",
     "pricing": [
@@ -4018,7 +4018,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 45620,
+    "githubStars": 46083,
     "githubUrl": "https://github.com/chopratejas/headroom",
     "websiteUrl": "https://headroom-docs.vercel.app/docs",
     "pricing": [
