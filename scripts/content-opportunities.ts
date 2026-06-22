@@ -63,6 +63,7 @@ type Opportunity = {
   githubStars: number | null;
   websiteUrl: string;
   reason: string;
+  valueReason: string;
   suggestedAction: string;
   priorityScore: number;
 };
@@ -119,6 +120,29 @@ function buildReason(altCount: number, contentWords: number): string {
   return parts.join("; ");
 }
 
+function buildValueReason(tool: Tool, priorityScore: number): string {
+  const reasons: string[] = [];
+
+  if (HIGH_INTENT_SLUGS.has(tool.slug)) {
+    reasons.push("is a known high-intent target from the current SEO plan");
+  }
+  if (HIGH_VALUE_CATEGORIES.has(tool.category)) {
+    reasons.push(`fits the ${tool.category} category that matters to ToolAlts' developer and small-team audience`);
+  }
+  if (tool.reviewsCount > 0 || tool.rating > 0) {
+    reasons.push("has rating or review signal in the catalog");
+  }
+  if (tool.githubStars != null && tool.githubStars > 5000) {
+    reasons.push("has meaningful GitHub or community signal");
+  }
+
+  if (reasons.length === 0) {
+    return "Lower-priority long-tail opportunity; consider after stronger commercial or developer-intent pages are covered.";
+  }
+
+  return `Worth writing because it ${reasons.join(", ")}. Priority score: ${priorityScore}.`;
+}
+
 function buildSuggestedAction(altCount: number, contentWords: number): string {
   if (altCount < MIN_ALTERNATIVES_FOR_INDEX && contentWords < MIN_CONTENT_WORDS) {
     return `Add ${MIN_ALTERNATIVES_FOR_INDEX - altCount} more comparison pair(s) or write ${MIN_CONTENT_WORDS}+ word content`;
@@ -162,6 +186,7 @@ function generateMarkdown(opportunities: Opportunity[], totalActive: number, ind
     lines.push(`- **Content words:** ${o.contentWords}`);
     if (o.githubStars != null) lines.push(`- **GitHub stars:** ${o.githubStars.toLocaleString()}`);
     lines.push(`- **Why:** ${o.reason}`);
+    lines.push(`- **Worth writing:** ${o.valueReason}`);
     lines.push(`- **Action:** ${o.suggestedAction}`);
     lines.push("");
   }
@@ -195,6 +220,8 @@ function main() {
 
     if (indexable) continue;
 
+    const priorityScore = calculatePriority(activeAlternatives.length, contentWords, tool);
+
     opportunities.push({
       slug: tool.slug,
       name: tool.name,
@@ -206,8 +233,9 @@ function main() {
       githubStars: tool.githubStars,
       websiteUrl: tool.websiteUrl,
       reason: buildReason(activeAlternatives.length, contentWords),
+      valueReason: buildValueReason(tool, priorityScore),
       suggestedAction: buildSuggestedAction(activeAlternatives.length, contentWords),
-      priorityScore: calculatePriority(activeAlternatives.length, contentWords, tool),
+      priorityScore,
     });
   }
 

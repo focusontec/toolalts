@@ -31,6 +31,7 @@
 - **Content words:** 0
 - **GitHub stars:** 5,920
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 55.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Supabase (`supabase`)
@@ -41,6 +42,7 @@
 - **Content words:** 0
 - **GitHub stars:** 104,662
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 55.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Postman (`postman`)
@@ -50,6 +52,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 45.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Vercel (`vercel`)
@@ -59,6 +62,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 45.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Cal.com (`cal-com`)
@@ -69,6 +73,7 @@
 - **Content words:** 0
 - **GitHub stars:** 45,737
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 40.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Unkey (`unkey`)
@@ -79,6 +84,7 @@
 - **Content words:** 0
 - **GitHub stars:** 5,345
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 40.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Trigger.dev (`trigger-dev`)
@@ -89,6 +95,7 @@
 - **Content words:** 0
 - **GitHub stars:** 15,434
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 40.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### GitLab (`gitlab`)
@@ -99,6 +106,7 @@
 - **Content words:** 0
 - **GitHub stars:** 24,456
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog, has meaningful GitHub or community signal. Priority score: 35.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Resend (`resend`)
@@ -108,6 +116,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it is a known high-intent target from the current SEO plan, has rating or review signal in the catalog. Priority score: 30.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Skip (`skip`)
@@ -118,6 +127,7 @@
 - **Content words:** 0
 - **GitHub stars:** 3,098
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the development category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Jira (`jira`)
@@ -127,6 +137,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the project-management category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Trello (`trello`)
@@ -136,6 +147,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the project-management category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Asana (`asana`)
@@ -145,6 +157,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the project-management category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### ClickUp (`clickup`)
@@ -154,6 +167,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the project-management category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Miro (`miro`)
@@ -163,6 +177,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the design category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Telegram (`telegram`)
@@ -172,6 +187,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the communication category that matters to ToolAlts' developer and small-team audience, has rating or review signal in the catalog. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### deer-flow (`deer-flow`)
@@ -182,6 +198,7 @@
 - **Content words:** 0
 - **GitHub stars:** 72,963
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the development category that matters to ToolAlts' developer and small-team audience, has meaningful GitHub or community signal. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### nanobot (`nanobot`)
@@ -192,6 +209,7 @@
 - **Content words:** 0
 - **GitHub stars:** 44,555
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the development category that matters to ToolAlts' developer and small-team audience, has meaningful GitHub or community signal. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### claude-code-templates (`claude-code-templates`)
@@ -202,6 +220,7 @@
 - **Content words:** 0
 - **GitHub stars:** 28,228
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it fits the development category that matters to ToolAlts' developer and small-team audience, has meaningful GitHub or community signal. Priority score: 25.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Zapier (`zapier`)
@@ -211,6 +230,7 @@
 - **Active alternatives:** 0
 - **Content words:** 0
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it has rating or review signal in the catalog. Priority score: 10.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ### Antigravity-Manager (`antigravity-manager`)
@@ -221,6 +241,7 @@
 - **Content words:** 0
 - **GitHub stars:** 29,828
 - **Why:** No active alternatives and no supporting content
+- **Worth writing:** Worth writing because it has meaningful GitHub or community signal. Priority score: 10.
 - **Action:** Add 2 more comparison pair(s) or write 500+ word content
 
 ## Suggested Next 3 Pages
