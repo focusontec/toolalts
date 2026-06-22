@@ -1,0 +1,143 @@
+{
+  "slug": "slack-vs-discord",
+  "category": "communication",
+  "tools": [
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "tagline": "AI work platform for managing projects and automating workflows",
+      "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
+      "rating": 4.5,
+      "reviewsCount": 28674,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://slack.com",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0 USD free forever",
+          "features": [
+            "90 days of message history",
+            "Up to 10 apps",
+            "1:1 meetings",
+            "1:1 external messages",
+            "Basic AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+            "SAML-based single sign-on",
+            "SCIM user management",
+            "EMM integration support",
+            "Native data loss prevention"
+          ]
+        },
+        {
+          "plan": "Pro",
+          "price": "$8.75 USD per user / month, when paying monthly (50% off for 3 months: $4.38); $7.25 USD per user / month, when paying annually",
+          "features": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Basic AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+            "SAML-based single sign-on",
+            "SCIM user management",
+            "EMM integration support",
+            "Native data loss prevention"
+          ]
+        },
+        {
+          "plan": "Business+",
+          "price": "$18 USD per user / month, when paying monthly (50% off for 3 months: $9); $15 USD per user / month, when paying annually",
+          "features": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Advanced AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, AI search, AI daily recaps, AI file summaries",
+            "SAML-based single sign-on",
+            "SCIM user management",
+            "EMM integration support",
+            "Native data loss prevention"
+          ]
+        },
+        {
+          "plan": "Enterprise+",
+          "price": "Contact sales for pricing",
+          "features": [
+            "Unlimited message history",
+            "Unlimited app integrations",
+            "Group meetings",
+            "Group external messages",
+            "Enterprise-Grade AI: AI conversation summaries, Slackbot (personal AI agent), AI workflow generation, Enterprise search, AI daily recaps, AI file summaries",
+            "Multiple SAML configurations",
+            "SCIM user management",
+            "EMM integration support",
+            "Native data loss prevention"
+          ]
+        }
+      ],
+      "features": [
+        "Unlimited message history",
+        "Unlimited app integrations",
+        "Group meetings",
+        "Group external messages",
+        "AI features: conversation summaries, Slackbot, workflow generation, search, daily recaps, file summaries",
+        "SAML-based single sign-on",
+        "SCIM user management",
+        "EMM integration support",
+        "Native data loss prevention"
+      ]
+    },
+    {
+      "slug": "discord",
+      "name": "Discord",
+      "tagline": "Your place to play games, chill with friends, and build communities",
+      "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
+      "rating": 4.7,
+      "reviewsCount": 3400000,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://discord.com",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "Unlimited servers",
+            "Voice & video",
+            "Screen share",
+            "File sharing"
+          ]
+        },
+        {
+          "plan": "Nitro",
+          "price": "$9.99/mo",
+          "features": [
+            "Higher upload limits",
+            "HD video",
+            "Custom emoji anywhere",
+            "Server boosts"
+          ]
+        }
+      ],
+      "features": [
+        "Voice channels",
+        "Screen sharing",
+        "Threads",
+        "Bots & apps",
+        "Stage channels"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

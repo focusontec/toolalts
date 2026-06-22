@@ -1,0 +1,167 @@
+{
+  "slug": "notion-vs-obsidian",
+  "category": "productivity",
+  "tools": [
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "tagline": "The AI workspace that works for you",
+      "description": "Build custom agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+      "rating": 4.7,
+      "reviewsCount": 5470,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.notion.so",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0 per member / month",
+          "features": [
+            "Trial AI capabilities like generating docs, or autofilling databases",
+            "Basic forms",
+            "Basic sites",
+            "Notion Calendar",
+            "Notion Mail (Syncs with Gmail)",
+            "Databases including subtasks, dependencies, custom properties and more"
+          ]
+        },
+        {
+          "plan": "Plus",
+          "price": "$10 per member / month",
+          "features": [
+            "Everything in Free",
+            "Custom forms",
+            "Custom sites",
+            "Unlimited charts",
+            "Unlimited collaborative blocks",
+            "Unlimited file uploads",
+            "Basic connections"
+          ]
+        },
+        {
+          "plan": "Business",
+          "price": "$20 per member / month",
+          "features": [
+            "Everything in Plus",
+            "Notion Agent",
+            "AI Meeting Notes",
+            "Enterprise Search (Beta)",
+            "SAML SSO",
+            "Granular database permissions",
+            "Verify any page",
+            "Private teamspaces",
+            "Domain verification",
+            "Premium connections"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "Custom pricing",
+          "features": [
+            "Everything in Business",
+            "Zero data retention with LLM providers",
+            "User provisioning (SCIM)",
+            "Advanced security & controls",
+            "Audit log",
+            "Customer success manager",
+            "Security & Compliance connections (DLP, SIEM)",
+            "Domain management",
+            "Advanced connections",
+            "Custom Agents (Workers Beta)"
+          ]
+        }
+      ],
+      "features": [
+        "AI capabilities",
+        "Databases",
+        "Custom sites",
+        "Notion Agent",
+        "Enterprise Search",
+        "SAML SSO",
+        "Audit log",
+        "Custom Agents"
+      ]
+    },
+    {
+      "slug": "obsidian",
+      "name": "Obsidian",
+      "tagline": "The free and flexible app for your private thoughts",
+      "description": "Obsidian is a powerful knowledge base that works on local plain-text Markdown files. It supports backlinks, graph views, and a rich plugin ecosystem for building your personal knowledge management system.",
+      "rating": 4.8,
+      "reviewsCount": 931,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://obsidian.md",
+      "pricing": [
+        {
+          "plan": "Sync",
+          "price": "$4 USD per user per month, billed annually",
+          "features": [
+            "Sync notes across devices",
+            "End-to-end encryption",
+            "Version history",
+            "Collaborate on shared vaults",
+            "Priority support"
+          ]
+        },
+        {
+          "plan": "Publish",
+          "price": "$8 USD per site per month, billed annually",
+          "features": [
+            "Publish notes to the web",
+            "No technical knowledge required",
+            "Customizable theme",
+            "Graph and full text search",
+            "Priority support"
+          ]
+        },
+        {
+          "plan": "Catalyst",
+          "price": "$25 USD one-time payment",
+          "features": [
+            "Early access to beta versions",
+            "Community badges",
+            "VIP channel"
+          ]
+        },
+        {
+          "plan": "Commercial",
+          "price": "$50 USD per user per year",
+          "features": [
+            "Support development",
+            "Become a featured organization"
+          ]
+        }
+      ],
+      "features": [
+        "Sync notes across devices",
+        "End-to-end encryption",
+        "Version history",
+        "Collaborate on shared vaults",
+        "Priority support",
+        "Publish notes to the web",
+        "No technical knowledge required",
+        "Customizable theme",
+        "Graph and full text search",
+        "Early access to beta versions",
+        "Community badges",
+        "VIP channel",
+        "Support development",
+        "Become a featured organization"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

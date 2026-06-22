@@ -26,6 +26,20 @@ const GITHUB_PLACEHOLDER_FEATURES = [
   "GitHub Codespaces Access",
 ];
 
+const SOURCE_HOSTS_REQUIRING_REVIEW = new Set([
+  "github.com",
+  "gitlab.com",
+  "bitbucket.org",
+]);
+
+const LOW_VALUE_PRODUCT_PHRASES = [
+  /powerful (tool|platform|solution)/i,
+  /all-in-one/i,
+  /streamline your workflow/i,
+  /boost productivity/i,
+  /seamless integration/i,
+];
+
 type ToolStatus = "active" | "draft" | "review" | "hidden" | "removed";
 
 type Tool = {
@@ -67,6 +81,7 @@ function parseArgs() {
     slug: getArgValue(args, "--slug"),
     all: args.includes("--all"),
     apply: args.includes("--apply"),
+    forceAll: args.includes("--force-all"),
   };
 }
 
@@ -94,7 +109,32 @@ function hasPlaceholderProductText(tool: Tool): boolean {
     features: tool.features,
     pricing: tool.pricing,
   });
-  return GITHUB_PLACEHOLDER_FEATURES.some((phrase) => serialized.includes(phrase));
+  if (GITHUB_PLACEHOLDER_FEATURES.some((phrase) => serialized.includes(phrase))) return true;
+  return serialized.includes("Basic features") || serialized.includes("\"Unknown\"") || serialized.includes("\"?\"");
+}
+
+function getHostname(value: string): string | null {
+  try {
+    return new URL(value).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+}
+
+function usesSourceHostAsWebsite(tool: Tool): boolean {
+  const hostname = getHostname(tool.websiteUrl);
+  if (!hostname) return false;
+  if (!SOURCE_HOSTS_REQUIRING_REVIEW.has(hostname)) return false;
+  return !tool.name.toLowerCase().startsWith("github ");
+}
+
+function hasLowValueProductCopy(tool: Tool): boolean {
+  const text = [
+    tool.tagline,
+    tool.description,
+    ...(Array.isArray(tool.features) ? tool.features : []),
+  ].join(" ");
+  return LOW_VALUE_PRODUCT_PHRASES.some((phrase) => phrase.test(text));
 }
 
 function assessTool(tool: Tool, categorySlugs: Set<string>): Assessment {
@@ -108,6 +148,7 @@ function assessTool(tool: Tool, categorySlugs: Set<string>): Assessment {
   if (!isValidUrl(tool.websiteUrl)) errors.push("missing or invalid websiteUrl");
   if (hasBadGithubUrl(tool)) errors.push("invalid githubUrl");
   if (hasPlaceholderProductText(tool)) errors.push("contains GitHub default feature/pricing text");
+  if (usesSourceHostAsWebsite(tool)) errors.push("websiteUrl is only a source-code host; needs official product page or manual review");
 
   if ((tool.tagline || "").trim().length < MIN_TAGLINE_CHARS) warnings.push("tagline is too short");
   if ((tool.description || "").trim().length < MIN_DESCRIPTION_CHARS) warnings.push("description is too short");
@@ -119,13 +160,14 @@ function assessTool(tool: Tool, categorySlugs: Set<string>): Assessment {
   }
   if (tool.category === "other") warnings.push("category is too broad");
   if (tool.rating === 0 && tool.reviewsCount === 0) warnings.push("no review/rating signal");
+  if (hasLowValueProductCopy(tool)) warnings.push("generic marketing copy detected");
 
   const score = Math.max(0, 100 - errors.length * 35 - warnings.length * 5);
   return { score, errors, warnings };
 }
 
 function main() {
-  const { slug, all, apply } = parseArgs();
+  const { slug, all, apply, forceAll } = parseArgs();
   const tools = readJson<Tool[]>(TOOLS_PATH);
   const categories = readJson<Category[]>(CATEGORIES_PATH);
   const categorySlugs = new Set(categories.map((category) => category.slug));
@@ -133,8 +175,15 @@ function main() {
   if (!slug && !all) {
     console.log("Usage: npx tsx scripts/promote-content.ts --all [--apply]");
     console.log("   or: npx tsx scripts/promote-content.ts --slug <tool-slug> [--apply]");
+    console.log("   bulk apply requires: --all --apply --force-all");
     console.log("\nNo changes made. Pass --apply to write promotions.");
     return;
+  }
+
+  if (apply && all && !forceAll) {
+    console.error("Refusing bulk promotion without --force-all.");
+    console.error("Use --slug <tool-slug> --apply for normal publishing, or --all --apply --force-all after manual review.");
+    process.exit(1);
   }
 
   const candidates = tools.filter((tool) => {

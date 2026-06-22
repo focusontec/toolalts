@@ -1,0 +1,125 @@
+{
+  "slug": "linear-vs-github-issues",
+  "category": "project-management",
+  "tools": [
+    {
+      "slug": "linear",
+      "name": "Linear",
+      "tagline": "The system for product development",
+      "description": "Purpose-built for planning and building products with AI agents. Streamline issues, sprints, and product roadmaps.",
+      "rating": 4.9,
+      "reviewsCount": 396,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://linear.app",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "Unlimited members",
+            "2 teams",
+            "250 issues",
+            "Agent platform",
+            "Linear Agent"
+          ]
+        },
+        {
+          "plan": "Basic",
+          "price": "$10 per user/month",
+          "features": [
+            "All Free features +",
+            "5 teams",
+            "Unlimited issues",
+            "Unlimited file uploads",
+            "Admin roles"
+          ]
+        },
+        {
+          "plan": "Business",
+          "price": "$16 per user/month",
+          "features": [
+            "All Basic features +",
+            "Unlimited teams",
+            "Private teams and guests",
+            "Triage Intelligence",
+            "Linear Agent automations (beta)",
+            "Code Intelligence (beta)",
+            "Linear Insights",
+            "Linear Asks",
+            "Zendesk and Intercom integrations"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "All Business features +",
+            "Invoice/PO billing",
+            "SAML and SCIM",
+            "Granular admin controls",
+            "Enterprise-grade security",
+            "Advanced org modeling",
+            "Migration & onboarding support",
+            "Priority support",
+            "Account management"
+          ]
+        }
+      ],
+      "features": [
+        "Unlimited members",
+        "Unlimited issues",
+        "Linear Agent",
+        "Triage Intelligence",
+        "Code Intelligence",
+        "Linear Insights",
+        "Linear Asks",
+        "SAML and SCIM"
+      ]
+    },
+    {
+      "slug": "github-issues",
+      "name": "GitHub Issues",
+      "tagline": "Plan, track, and discuss work right where the code lives",
+      "description": "GitHub Issues is a flexible tracking system built into GitHub, where over 150 million people build software.",
+      "rating": 4.4,
+      "reviewsCount": 21000,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://github.com/features/issues",
+      "pricing": [
+        {
+          "plan": "Included with GitHub",
+          "price": "Included with GitHub plans",
+          "features": [
+            "Create and track issues in GitHub repositories",
+            "Use labels, assignees, milestones, and linked pull requests",
+            "Plan work with GitHub Projects when a board or table view is needed",
+            "Automate issue workflows with GitHub Actions and repository events"
+          ]
+        }
+      ],
+      "features": [
+        "Repository-native issue tracking",
+        "Labels, milestones, assignees, and saved filters",
+        "Issue templates and markdown task lists",
+        "Pull request and commit linking",
+        "Project boards and table views through GitHub Projects",
+        "Workflow automation through GitHub Actions"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

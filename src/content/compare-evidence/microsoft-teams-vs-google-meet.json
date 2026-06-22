@@ -1,0 +1,134 @@
+{
+  "slug": "microsoft-teams-vs-google-meet",
+  "category": "communication",
+  "tools": [
+    {
+      "slug": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "tagline": "Hub for teamwork in Microsoft 365",
+      "description": "Microsoft Teams is a collaboration platform that combines workplace chat, video meetings, file storage, and application integration. It's deeply integrated with Microsoft 365 and serves as the hub for teamwork.",
+      "rating": 4.4,
+      "reviewsCount": 15200,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.microsoft.com/microsoft-teams",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "100 participants",
+            "60-min meetings",
+            "5GB storage"
+          ]
+        },
+        {
+          "price": "$4/user/mo",
+          "plan": "Essentials",
+          "features": [
+            "300 participants",
+            "30-hour meetings",
+            "10GB storage"
+          ]
+        },
+        {
+          "price": "$6/user/mo",
+          "plan": "Business Basic",
+          "features": [
+            "300 participants",
+            "web versions of Office apps"
+          ]
+        },
+        {
+          "price": "$12.50/user/mo",
+          "plan": "Business Standard",
+          "features": [
+            "Desktop Office apps",
+            "webinars",
+            "phone system"
+          ]
+        }
+      ],
+      "features": [
+        "Video meetings and webinars",
+        "Team chat and channels",
+        "File sharing with SharePoint",
+        "Office 365 integration",
+        "App integrations and bots",
+        "Phone system (Teams Phone)",
+        "Together mode and virtual backgrounds"
+      ]
+    },
+    {
+      "slug": "google-meet",
+      "name": "Google Meet",
+      "tagline": "Video meetings for Google Workspace",
+      "description": "Google Meet is a video conferencing solution that's part of Google Workspace. It provides secure, high-quality video meetings with deep integration into Google Calendar, Gmail, and other Google services.",
+      "rating": 4.8,
+      "reviewsCount": 29,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://meet.google.com",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "60-min meetings",
+            "100 participants",
+            "live captions"
+          ]
+        },
+        {
+          "price": "$7.20/user/mo",
+          "plan": "Business Starter",
+          "features": [
+            "100 participants",
+            "24-hour meetings",
+            "30GB storage"
+          ]
+        },
+        {
+          "price": "$14.40/user/mo",
+          "plan": "Business Standard",
+          "features": [
+            "150 participants",
+            "recording",
+            "noise cancellation"
+          ]
+        },
+        {
+          "price": "$21.60/user/mo",
+          "plan": "Business Plus",
+          "features": [
+            "500 participants",
+            "attendance tracking",
+            "5TB storage"
+          ]
+        }
+      ],
+      "features": [
+        "HD video meetings",
+        "Screen sharing",
+        "Live captions and translation",
+        "Meeting recording (Google Drive)",
+        "Calendar integration",
+        "Breakout rooms",
+        "Companion mode for hybrid meetings"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

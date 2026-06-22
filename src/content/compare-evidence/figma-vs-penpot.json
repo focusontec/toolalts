@@ -1,0 +1,201 @@
+{
+  "slug": "figma-vs-penpot",
+  "category": "design",
+  "tools": [
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "tagline": "The collaborative interface design tool",
+      "description": "Figma is a web-based design platform for UI/UX design, prototyping, and design systems. It enables real-time collaboration between designers, developers, and stakeholders with powerful vector editing and component libraries.",
+      "rating": 4.9,
+      "reviewsCount": 1464,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.figma.com",
+      "pricing": [
+        {
+          "plan": "Starter",
+          "price": "Free",
+          "features": [
+            "Unlimited drafts",
+            "UI kits and templates",
+            "150 AI credits/day, up to 500 AI credits/mo"
+          ]
+        },
+        {
+          "plan": "Professional",
+          "price": "$16/mo",
+          "features": [
+            "Unlimited files and projects",
+            "Team-wide design libraries",
+            "Advanced Dev Mode inspection and MCP Server"
+          ]
+        },
+        {
+          "plan": "Organization",
+          "price": "$55/mo",
+          "features": [
+            "Unlimited teams",
+            "Shared libraries and fonts",
+            "Centralized admin tools"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$90/mo",
+          "features": [
+            "Custom team workspaces",
+            "Design system theming and APIs",
+            "SCIM seat management"
+          ]
+        }
+      ],
+      "features": [
+        "Components",
+        "Auto layout",
+        "Advanced drawing tools",
+        "Interactive prototypes",
+        "Variables",
+        "MCP support",
+        "Team libraries",
+        "Shared fonts",
+        "Branching and merging",
+        "In-app library analytics"
+      ]
+    },
+    {
+      "slug": "penpot",
+      "name": "Penpot",
+      "tagline": "The open-source design platform for teams building digital products at scale",
+      "description": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
+      "rating": 5,
+      "reviewsCount": 16,
+      "openSource": true,
+      "githubStars": 52626,
+      "websiteUrl": "https://penpot.app",
+      "pricing": [
+        {
+          "plan": "Professional",
+          "price": "$0 / user / month",
+          "features": [
+            "No file limits",
+            "Unlimited Teams",
+            "Plugins",
+            "Open Source",
+            "Up to 8 team members, and unlimited viewers",
+            "Up to 10GB of storage",
+            "7 days of autosaved versions",
+            "7 days of deleted file recovery"
+          ]
+        },
+        {
+          "plan": "Unlimited",
+          "price": "$7 / user / month",
+          "features": [
+            "No file limits",
+            "Unlimited Teams",
+            "Plugins",
+            "Open Source",
+            "Capped monthly bill: never pay more than $175 per month",
+            "Up to 25GB of storage",
+            "30 days of autosaved versions",
+            "30 days of deleted file recovery",
+            "Exclusive early access to upcoming features",
+            "50% discount on Penpot events"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$25 / user / month",
+          "features": [
+            "No file limits",
+            "Unlimited Teams",
+            "Plugins",
+            "Open Source",
+            "Centralized admin console",
+            "Create and manage multiple organizations",
+            "Advanced team and user permissions",
+            "Single Sign On (SSO)",
+            "Plugins Allowlist, including Agentic AI",
+            "Audit logs",
+            "Unlimited storage",
+            "180 days of autosaved versions",
+            "180 days of deleted file recovery",
+            "Exclusive early access to upcoming features",
+            "50% discount on Penpot official merch and events",
+            "Starting at $950 / month"
+          ]
+        },
+        {
+          "plan": "Private Server",
+          "price": "$50k / year",
+          "features": [
+            "No file limits",
+            "Unlimited Teams",
+            "Plugins",
+            "Open Source",
+            "Dedicated private infrastructure management",
+            "Guaranteed response times",
+            "Role assignment via SCIM",
+            "Exclusive early access to upcoming features",
+            "Choice of hosting region (EU, US, etc)",
+            "Origin IP whitelisting",
+            "Enterprise plan available as add-on"
+          ]
+        }
+      ],
+      "features": [
+        "No file limits",
+        "Unlimited Teams",
+        "Plugins",
+        "Open Source",
+        "Auto versioning",
+        "Flex Layout",
+        "Grid Layout",
+        "Path Editor",
+        "Multiplayer edition",
+        "Comments",
+        "Share presentations",
+        "Team management",
+        "Roles and permissions",
+        "AI Workflows with any Agent/LLM",
+        "API REST",
+        "Webhooks",
+        "Deleted file recovery",
+        "Design systems",
+        "Components",
+        "Fonts management",
+        "Variants",
+        "Design tokens",
+        "Styles",
+        "Create prototypes",
+        "Interactions",
+        "Transitions",
+        "Flows",
+        "View mode",
+        "Share prototypes with a link",
+        "Comments on prototypes",
+        "Code inspector",
+        "Properties inspector",
+        "Distances and measurement",
+        "Component annotations",
+        "Export production assets",
+        "Community forum",
+        "Help center"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

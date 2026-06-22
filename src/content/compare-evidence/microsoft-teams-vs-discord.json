@@ -1,0 +1,116 @@
+{
+  "slug": "microsoft-teams-vs-discord",
+  "category": "communication",
+  "tools": [
+    {
+      "slug": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "tagline": "Hub for teamwork in Microsoft 365",
+      "description": "Microsoft Teams is a collaboration platform that combines workplace chat, video meetings, file storage, and application integration. It's deeply integrated with Microsoft 365 and serves as the hub for teamwork.",
+      "rating": 4.4,
+      "reviewsCount": 15200,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.microsoft.com/microsoft-teams",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "100 participants",
+            "60-min meetings",
+            "5GB storage"
+          ]
+        },
+        {
+          "price": "$4/user/mo",
+          "plan": "Essentials",
+          "features": [
+            "300 participants",
+            "30-hour meetings",
+            "10GB storage"
+          ]
+        },
+        {
+          "price": "$6/user/mo",
+          "plan": "Business Basic",
+          "features": [
+            "300 participants",
+            "web versions of Office apps"
+          ]
+        },
+        {
+          "price": "$12.50/user/mo",
+          "plan": "Business Standard",
+          "features": [
+            "Desktop Office apps",
+            "webinars",
+            "phone system"
+          ]
+        }
+      ],
+      "features": [
+        "Video meetings and webinars",
+        "Team chat and channels",
+        "File sharing with SharePoint",
+        "Office 365 integration",
+        "App integrations and bots",
+        "Phone system (Teams Phone)",
+        "Together mode and virtual backgrounds"
+      ]
+    },
+    {
+      "slug": "discord",
+      "name": "Discord",
+      "tagline": "Your place to play games, chill with friends, and build communities",
+      "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
+      "rating": 4.7,
+      "reviewsCount": 3400000,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://discord.com",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "Unlimited servers",
+            "Voice & video",
+            "Screen share",
+            "File sharing"
+          ]
+        },
+        {
+          "plan": "Nitro",
+          "price": "$9.99/mo",
+          "features": [
+            "Higher upload limits",
+            "HD video",
+            "Custom emoji anywhere",
+            "Server boosts"
+          ]
+        }
+      ],
+      "features": [
+        "Voice channels",
+        "Screen sharing",
+        "Threads",
+        "Bots & apps",
+        "Stage channels"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "slug": "confluence-vs-airtable",
+  "category": "productivity",
+  "tools": [
+    {
+      "slug": "confluence",
+      "name": "Confluence",
+      "tagline": "Where knowledge meets collaboration",
+      "description": "Confluence is a team workspace where knowledge and collaboration meet.",
+      "rating": 4.7,
+      "reviewsCount": 64,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.atlassian.com/software/confluence",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "Up to 10 users",
+            "2GB storage"
+          ]
+        },
+        {
+          "price": "$6.05/user/mo",
+          "plan": "Standard",
+          "features": [
+            "250GB storage",
+            "team calendars"
+          ]
+        },
+        {
+          "price": "$11.55/user/mo",
+          "plan": "Premium",
+          "features": [
+            "Analytics",
+            "admin insights",
+            "unlimited storage"
+          ]
+        },
+        {
+          "price": "Custom",
+          "plan": "Enterprise",
+          "features": [
+            "Cross-org",
+            "Atlassian Intelligence"
+          ]
+        }
+      ],
+      "features": [
+        "Rich text editor with templates",
+        "Real-time co-editing",
+        "Page trees and organization",
+        "Comments and inline comments",
+        "Integration with Jira and Trello",
+        "Team calendars",
+        "Content permissions"
+      ]
+    },
+    {
+      "slug": "airtable",
+      "name": "Airtable",
+      "tagline": "Create apps that perfectly fit your team's needs",
+      "description": "Airtable is a low-code platform for building collaborative apps.",
+      "rating": 5,
+      "reviewsCount": 11,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://airtable.com",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "Free",
+          "features": [
+            "500 AI credits per editor each month",
+            "Unlimited bases",
+            "1,000 records per base",
+            "Up to 5 editors",
+            "1 GB of attachments per base",
+            "100 automation runs",
+            "Interface Designer"
+          ]
+        },
+        {
+          "plan": "Team",
+          "price": "$20/seat/month billed annually",
+          "features": [
+            "15,000 AI credits per paid user each month",
+            "50,000 records per base",
+            "25,000 automation runs",
+            "20 GB of attachments per base",
+            "Standard sync integrations",
+            "Extensions",
+            "Gantt and timeline view",
+            "Expanded color, formatting, and calendar options",
+            "Portals: Starting from $120 for 15 guests/month"
+          ]
+        },
+        {
+          "plan": "Business",
+          "price": "$45/seat/month billed annually",
+          "features": [
+            "20,000 AI credits per paid user each month",
+            "125,000 records per base",
+            "100,000 automation runs",
+            "100 GB of attachments per base",
+            "Premium sync integrations",
+            "Verified data",
+            "Two-way sync",
+            "Admin panel",
+            "SAML-based single sign-on",
+            "App Sandbox",
+            "Roadmap view and Exec Summary cards",
+            "AI Admin controls",
+            "Portals: Starting from $150 for 15 guests/month"
+          ]
+        },
+        {
+          "plan": "Enterprise Scale",
+          "price": "Custom pricing",
+          "features": [
+            "25,000 AI credits per paid user each month at list price",
+            "500,000 records per base",
+            "500,000 automation runs",
+            "1,000 GB of attachments per base",
+            "Enterprise Scale Integrations",
+            "App Library",
+            "HyperDB",
+            "Enterprise Hub",
+            "Enhanced security and admin controls",
+            "Enterprise API",
+            "Extension and integration management",
+            "Audit logs and DLP",
+            "AI Admin controls",
+            "Portals: Contact sales"
+          ]
+        }
+      ],
+      "features": [
+        "Unlimited bases",
+        "Records per base: 1,000 / 50,000 / 125,000 / 500,000",
+        "Automation runs per month: 100 / 25,000 / 100,000 / 500,000",
+        "Attachment space per base: 1GB / 20GB / 100GB / 1,000GB",
+        "AI credits per editor each month: 500 / 15,000 / 20,000 / 25,000",
+        "Interface Designer",
+        "Gantt and timeline view",
+        "Extensions",
+        "Sync integrations",
+        "SAML-based single sign-on",
+        "App Sandbox",
+        "Enterprise Hub"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

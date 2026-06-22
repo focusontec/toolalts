@@ -5,6 +5,7 @@ import { callLlm } from "./lib/llm";
 const COMPARISONS_PATH = path.resolve(__dirname, "../data/comparisons.json");
 const TOOLS_PATH = path.resolve(__dirname, "../data/tools.json");
 const CONTENT_DIR = path.resolve(__dirname, "../src/content/comparisons");
+const EVIDENCE_DIR = path.resolve(__dirname, "../src/content/compare-evidence");
 
 interface ComparisonEntry {
   slug: string;
@@ -27,6 +28,27 @@ interface ToolEntry {
   features: string[];
   category: string;
   status?: string;
+}
+
+interface ComparisonEvidence {
+  slug: string;
+  category: string;
+  tools: {
+    slug: string;
+    name: string;
+    tagline: string;
+    description: string;
+    rating: number;
+    reviewsCount: number;
+    openSource: boolean;
+    githubStars: number | null;
+    websiteUrl: string;
+    pricing: { plan: string; price: string; features: string[] }[];
+    features: string[];
+  }[];
+  decisionQuestions: string[];
+  evidenceGaps: string[];
+  claimRules: string[];
 }
 
 function loadComparisons(): ComparisonEntry[] {
@@ -74,9 +96,77 @@ function checkContentQuality(content: string): string[] {
   return issues;
 }
 
-async function generateComparisonContent(toolA: ToolEntry, toolB: ToolEntry): Promise<string> {
+function isSourceHostOnly(websiteUrl: string): boolean {
+  try {
+    const hostname = new URL(websiteUrl).hostname.replace(/^www\./, "");
+    return hostname === "github.com" || hostname === "gitlab.com" || hostname === "bitbucket.org";
+  } catch {
+    return true;
+  }
+}
+
+function hasWeakPricing(tool: ToolEntry): boolean {
+  if (!Array.isArray(tool.pricing) || tool.pricing.length === 0) return true;
+  return tool.pricing.some((plan) => {
+    const price = `${plan.plan} ${plan.price}`.toLowerCase();
+    return price.includes("unknown") || price.includes("?") || price.includes("not verified");
+  });
+}
+
+function buildComparisonEvidence(comp: ComparisonEntry, toolA: ToolEntry, toolB: ToolEntry): ComparisonEvidence {
+  const evidenceGaps: string[] = [];
+  for (const tool of [toolA, toolB]) {
+    if (isSourceHostOnly(tool.websiteUrl) && !tool.name.toLowerCase().startsWith("github ")) {
+      evidenceGaps.push(`${tool.name}: official product website is not verified beyond a source-code host`);
+    }
+    if (hasWeakPricing(tool)) evidenceGaps.push(`${tool.name}: pricing is incomplete or not verified`);
+    if (tool.rating === 0 && tool.reviewsCount === 0) evidenceGaps.push(`${tool.name}: no independent rating/review signal in local data`);
+    if (!Array.isArray(tool.features) || tool.features.length < 4) evidenceGaps.push(`${tool.name}: limited product-specific feature data`);
+  }
+
+  return {
+    slug: comp.slug,
+    category: comp.category,
+    tools: [toolA, toolB].map((tool) => ({
+      slug: tool.slug,
+      name: tool.name,
+      tagline: tool.tagline,
+      description: tool.description,
+      rating: tool.rating,
+      reviewsCount: tool.reviewsCount,
+      openSource: tool.openSource,
+      githubStars: tool.githubStars,
+      websiteUrl: tool.websiteUrl,
+      pricing: tool.pricing,
+      features: tool.features,
+    })),
+    decisionQuestions: [
+      "Who is the primary user or team for each tool?",
+      "Which workflow does each tool make easier or harder?",
+      "What would make a team regret switching?",
+      "Which facts are supported by local data, and which must be described as unverified?",
+    ],
+    evidenceGaps: [...new Set(evidenceGaps)],
+    claimRules: [
+      "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+      "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+      "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+      "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims.",
+    ],
+  };
+}
+
+function writeEvidenceBrief(comp: ComparisonEntry, evidence: ComparisonEvidence): void {
+  if (!fs.existsSync(EVIDENCE_DIR)) fs.mkdirSync(EVIDENCE_DIR, { recursive: true });
+  const filePath = path.join(EVIDENCE_DIR, `${comp.slug}.json`);
+  if (fs.existsSync(filePath)) return;
+  fs.writeFileSync(filePath, JSON.stringify(evidence, null, 2) + "\n", "utf-8");
+}
+
+async function generateComparisonContent(evidence: ComparisonEvidence): Promise<string> {
+  const [toolA, toolB] = evidence.tools;
   const systemPrompt = `You are a senior software analyst writing a practical buyer/user decision memo.
-The article must help a real person decide between two software tools using only the provided data.
+The article must help a real person decide between two software tools using only the provided evidence brief.
 
 Output MUST be raw Markdown (no frontmatter, no code blocks). Use ## for sections. Include:
 - ## Overview — one direct paragraph explaining the decision context
@@ -92,32 +182,13 @@ Rules:
 - Do not write generic lines like "both tools are solid choices" or "it depends on your needs".
 - Do not invent prices, usage limits, integrations, rankings, customers, or statistics.
 - Do not turn GitHub-hosting plan features into product features unless the tool is GitHub itself.
+- Explicitly mention important evidence gaps when they affect the buying decision.
 - Prefer short, specific paragraphs over promotional language.
 - Keep it between 700-1000 words.`;
 
-  const userPrompt = `Compare these two tools:
+  const userPrompt = `Compare ${toolA.name} and ${toolB.name} using this evidence brief only:
 
-## ${toolA.name}
-- Tagline: ${toolA.tagline}
-- Description: ${toolA.description}
-- Category: ${toolA.category}
-- Rating: ${toolA.rating}/5 (${toolA.reviewsCount.toLocaleString()} reviews)
-- Open Source: ${toolA.openSource ? "Yes" : "No"}
-- GitHub Stars: ${toolA.githubStars?.toLocaleString() ?? "N/A"}
-- Website: ${toolA.websiteUrl}
-- Features: ${toolA.features.join(", ")}
-- Pricing: ${toolA.pricing.map((p) => `${p.plan} (${p.price})`).join(", ")}
-
-## ${toolB.name}
-- Tagline: ${toolB.tagline}
-- Description: ${toolB.description}
-- Category: ${toolB.category}
-- Rating: ${toolB.rating}/5 (${toolB.reviewsCount.toLocaleString()} reviews)
-- Open Source: ${toolB.openSource ? "Yes" : "No"}
-- GitHub Stars: ${toolB.githubStars?.toLocaleString() ?? "N/A"}
-- Website: ${toolB.websiteUrl}
-- Features: ${toolB.features.join(", ")}
-- Pricing: ${toolB.pricing.map((p) => `${p.plan} (${p.price})`).join(", ")}
+${JSON.stringify(evidence, null, 2)}
 
 Write the comparison article now.`;
 
@@ -136,6 +207,9 @@ async function main() {
 
   if (!fs.existsSync(CONTENT_DIR)) {
     fs.mkdirSync(CONTENT_DIR, { recursive: true });
+  }
+  if (!fs.existsSync(EVIDENCE_DIR)) {
+    fs.mkdirSync(EVIDENCE_DIR, { recursive: true });
   }
 
   const useLlm = !!(process.env.LLM_API_KEY || process.env.OLLAMA_URL);
@@ -163,14 +237,15 @@ async function main() {
 
   for (const comp of validComparisons) {
     const filePath = path.join(CONTENT_DIR, `${comp.slug}.md`);
+    const toolA = getToolBySlug(tools, comp.toolA)!;
+    const toolB = getToolBySlug(tools, comp.toolB)!;
+    const evidence = buildComparisonEvidence(comp, toolA, toolB);
+    writeEvidenceBrief(comp, evidence);
 
     if (fs.existsSync(filePath)) {
       skipped++;
       continue;
     }
-
-    const toolA = getToolBySlug(tools, comp.toolA)!;
-    const toolB = getToolBySlug(tools, comp.toolB)!;
 
     if (!useLlm) {
       skipped++;
@@ -180,7 +255,7 @@ async function main() {
     let content: string;
     try {
       console.log(`  🤖 Generating: ${comp.slug} via LLM...`);
-      content = await generateComparisonContent(toolA, toolB);
+      content = await generateComparisonContent(evidence);
       console.log(`  ✅ Generated: ${comp.slug} (${content.length} chars)`);
     } catch (err) {
       console.warn(`  ⛔ Skipped ${comp.slug}: LLM failed:`, (err as Error).message);

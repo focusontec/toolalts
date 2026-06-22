@@ -1,0 +1,164 @@
+{
+  "slug": "microsoft-teams-vs-zoom",
+  "category": "communication",
+  "tools": [
+    {
+      "slug": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "tagline": "Hub for teamwork in Microsoft 365",
+      "description": "Microsoft Teams is a collaboration platform that combines workplace chat, video meetings, file storage, and application integration. It's deeply integrated with Microsoft 365 and serves as the hub for teamwork.",
+      "rating": 4.4,
+      "reviewsCount": 15200,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.microsoft.com/microsoft-teams",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "100 participants",
+            "60-min meetings",
+            "5GB storage"
+          ]
+        },
+        {
+          "price": "$4/user/mo",
+          "plan": "Essentials",
+          "features": [
+            "300 participants",
+            "30-hour meetings",
+            "10GB storage"
+          ]
+        },
+        {
+          "price": "$6/user/mo",
+          "plan": "Business Basic",
+          "features": [
+            "300 participants",
+            "web versions of Office apps"
+          ]
+        },
+        {
+          "price": "$12.50/user/mo",
+          "plan": "Business Standard",
+          "features": [
+            "Desktop Office apps",
+            "webinars",
+            "phone system"
+          ]
+        }
+      ],
+      "features": [
+        "Video meetings and webinars",
+        "Team chat and channels",
+        "File sharing with SharePoint",
+        "Office 365 integration",
+        "App integrations and bots",
+        "Phone system (Teams Phone)",
+        "Together mode and virtual backgrounds"
+      ]
+    },
+    {
+      "slug": "zoom",
+      "name": "Zoom",
+      "tagline": "One platform to connect",
+      "description": "Zoom is an all-in-one intelligent collaboration platform that makes connecting easier and more immersive.",
+      "rating": 5,
+      "reviewsCount": 32,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://zoom.us",
+      "pricing": [
+        {
+          "plan": "Basic",
+          "price": "Free",
+          "features": [
+            "40 minutes per meeting",
+            "100 participants per meeting",
+            "Limited in-meeting AI use",
+            "Instant messaging",
+            "VoIP calling",
+            "1 personal booking page",
+            "3 editable whiteboards",
+            "5 two-minute clips",
+            "Limited AI Productivity Suite",
+            "Connect Gmail/Outlook in Zoom",
+            "Sync Google/Microsoft calendars",
+            "Surface, manage, and complete tasks",
+            "One place for your Zoom files"
+          ]
+        },
+        {
+          "plan": "Pro",
+          "price": "$14.16/user per month",
+          "features": [
+            "30 hours per meeting",
+            "100 participants per meeting",
+            "Unlimited AI note-taking",
+            "AI note taker for Zoom, third-party, and in-person conversations",
+            "Group videos in channels (25 unique viewers)",
+            "Zoom recordings, Clips, and uploads",
+            "Unlimited AI document creation",
+            "Unlimited clips",
+            "Custom avatars (3 mins per month)",
+            "Zoom Mail",
+            "Zoom Calendar",
+            "10 GB cloud storage per user",
+            "Live Chat Support"
+          ]
+        },
+        {
+          "plan": "Business",
+          "price": "$18.33/user per month",
+          "features": [
+            "300 participants per meeting",
+            "Unlimited booking pages",
+            "Unlimited whiteboards",
+            "SSO, managed domains",
+            "Multi-region storage and media control",
+            "Device management",
+            "Information barriers and other policies",
+            "Archival and data loss prevention APIs"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "Contact us for pricing",
+          "features": [
+            "1000 participants per meeting",
+            "Full-featured PBX",
+            "500 webinar attendees",
+            "Rooms",
+            "Workspace Reservation",
+            "Visitor Management",
+            "Translated captions",
+            "Customer managed key",
+            "Hybrid cloud",
+            "Contact management network"
+          ]
+        }
+      ],
+      "features": [
+        "AI note-taking across Zoom, Microsoft Teams, Google Meet, in-person meetings, and 3rd-party meetings",
+        "Unlimited meeting duration on paid plans",
+        "Cloud recording with storage"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [
+    "Zoom: limited product-specific feature data"
+  ],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "slug": "cursor-vs-vscode",
+  "category": "development",
+  "tools": [
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "tagline": "The best way to code with AI",
+      "description": "Built to make you extraordinarily productive, Cursor is the best way to build software with AI. A code editor with native AI integration for pair-programming.",
+      "rating": 5,
+      "reviewsCount": 850,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://cursor.sh",
+      "pricing": [
+        {
+          "plan": "Hobby",
+          "price": "Free",
+          "features": [
+            "No credit card required",
+            "Limited Agent requests",
+            "Limited Tab completions"
+          ]
+        },
+        {
+          "plan": "Pro",
+          "price": "$20 / mo.",
+          "features": [
+            "Extended limits on Agent",
+            "Access to frontier models",
+            "MCPs, skills, and hooks",
+            "Cloud agents",
+            "Bugbot on usage-based billing"
+          ]
+        },
+        {
+          "plan": "Teams Standard",
+          "price": "$40 / user / mo.",
+          "features": [
+            "Centralized team billing and administration",
+            "Team marketplace for internal rules, skills, and plugins",
+            "Agentic code reviews with Bugbot",
+            "Cloud agents and automations with shared team context",
+            "Usage analytics to understand team behavior",
+            "Team-wide privacy mode",
+            "SAML/OIDC SSO"
+          ]
+        },
+        {
+          "plan": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "Pooled usage",
+            "Invoice/PO billing",
+            "SCIM seat management",
+            "Repository, model, and MCP access controls",
+            "Auto-run, browser, and network controls",
+            "Audit logs and service accounts",
+            "AI code tracking API",
+            "Priority support and account management"
+          ]
+        }
+      ],
+      "features": [
+        "Agent",
+        "Tab completions",
+        "Cloud agents",
+        "Bugbot",
+        "Code Review",
+        "SAML/OIDC SSO",
+        "Audit logs"
+      ]
+    },
+    {
+      "slug": "vscode",
+      "name": "VS Code",
+      "tagline": "AI-powered coding with GitHub Copilot",
+      "description": "Visual Studio Code redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. Free and available on Linux, macOS, and Windows.",
+      "rating": 4.8,
+      "reviewsCount": 45000,
+      "openSource": true,
+      "githubStars": 186632,
+      "websiteUrl": "https://code.visualstudio.com",
+      "pricing": [
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "Unlimited usage",
+            "Extensions marketplace",
+            "Git integration",
+            "Debugging"
+          ]
+        }
+      ],
+      "features": [
+        "IntelliSense",
+        "Debugging",
+        "Built-in Git",
+        "Extensions",
+        "Remote development"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}

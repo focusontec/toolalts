@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "seo:audit": "tsx scripts/seo-audit.ts",
-    "content:promote": "tsx scripts/promote-content.ts"
+    "content:promote": "tsx scripts/promote-content.ts",
+    "content:generate-comparisons": "tsx scripts/generate-comparisons.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4",

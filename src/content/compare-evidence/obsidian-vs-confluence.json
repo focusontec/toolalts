@@ -1,0 +1,142 @@
+{
+  "slug": "obsidian-vs-confluence",
+  "category": "productivity",
+  "tools": [
+    {
+      "slug": "obsidian",
+      "name": "Obsidian",
+      "tagline": "The free and flexible app for your private thoughts",
+      "description": "Obsidian is a powerful knowledge base that works on local plain-text Markdown files. It supports backlinks, graph views, and a rich plugin ecosystem for building your personal knowledge management system.",
+      "rating": 4.8,
+      "reviewsCount": 931,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://obsidian.md",
+      "pricing": [
+        {
+          "plan": "Sync",
+          "price": "$4 USD per user per month, billed annually",
+          "features": [
+            "Sync notes across devices",
+            "End-to-end encryption",
+            "Version history",
+            "Collaborate on shared vaults",
+            "Priority support"
+          ]
+        },
+        {
+          "plan": "Publish",
+          "price": "$8 USD per site per month, billed annually",
+          "features": [
+            "Publish notes to the web",
+            "No technical knowledge required",
+            "Customizable theme",
+            "Graph and full text search",
+            "Priority support"
+          ]
+        },
+        {
+          "plan": "Catalyst",
+          "price": "$25 USD one-time payment",
+          "features": [
+            "Early access to beta versions",
+            "Community badges",
+            "VIP channel"
+          ]
+        },
+        {
+          "plan": "Commercial",
+          "price": "$50 USD per user per year",
+          "features": [
+            "Support development",
+            "Become a featured organization"
+          ]
+        }
+      ],
+      "features": [
+        "Sync notes across devices",
+        "End-to-end encryption",
+        "Version history",
+        "Collaborate on shared vaults",
+        "Priority support",
+        "Publish notes to the web",
+        "No technical knowledge required",
+        "Customizable theme",
+        "Graph and full text search",
+        "Early access to beta versions",
+        "Community badges",
+        "VIP channel",
+        "Support development",
+        "Become a featured organization"
+      ]
+    },
+    {
+      "slug": "confluence",
+      "name": "Confluence",
+      "tagline": "Where knowledge meets collaboration",
+      "description": "Confluence is a team workspace where knowledge and collaboration meet.",
+      "rating": 4.7,
+      "reviewsCount": 64,
+      "openSource": false,
+      "githubStars": null,
+      "websiteUrl": "https://www.atlassian.com/software/confluence",
+      "pricing": [
+        {
+          "price": "$0",
+          "plan": "Free",
+          "features": [
+            "Up to 10 users",
+            "2GB storage"
+          ]
+        },
+        {
+          "price": "$6.05/user/mo",
+          "plan": "Standard",
+          "features": [
+            "250GB storage",
+            "team calendars"
+          ]
+        },
+        {
+          "price": "$11.55/user/mo",
+          "plan": "Premium",
+          "features": [
+            "Analytics",
+            "admin insights",
+            "unlimited storage"
+          ]
+        },
+        {
+          "price": "Custom",
+          "plan": "Enterprise",
+          "features": [
+            "Cross-org",
+            "Atlassian Intelligence"
+          ]
+        }
+      ],
+      "features": [
+        "Rich text editor with templates",
+        "Real-time co-editing",
+        "Page trees and organization",
+        "Comments and inline comments",
+        "Integration with Jira and Trello",
+        "Team calendars",
+        "Content permissions"
+      ]
+    }
+  ],
+  "decisionQuestions": [
+    "Who is the primary user or team for each tool?",
+    "Which workflow does each tool make easier or harder?",
+    "What would make a team regret switching?",
+    "Which facts are supported by local data, and which must be described as unverified?"
+  ],
+  "evidenceGaps": [],
+  "claimRules": [
+    "Do not invent current prices, limits, integrations, customers, rankings, or usage statistics.",
+    "If pricing or a capability is incomplete, label it as not verified instead of guessing.",
+    "Do not use GitHub hosting features as product features unless the product is GitHub itself.",
+    "Prefer user decision criteria, migration friction, and concrete trade-offs over promotional claims."
+  ]
+}
