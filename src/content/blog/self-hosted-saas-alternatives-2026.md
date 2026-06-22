@@ -28,7 +28,7 @@ Before diving into the tools, let's address the elephant in the room: why bother
 
 ### Rocket.Chat
 
-[Rocket.Chat](/tool/rocket-chat/) is the most feature-rich self-hosted communication platform. It combines team chat, customer-facing live chat, WhatsApp, Facebook Messenger, and email into a single inbox.
+Rocket.Chat is one of the most feature-rich self-hosted communication platforms. It combines team chat, customer-facing live chat, WhatsApp, Facebook Messenger, and email into a single inbox.
 
 - **License**: MIT
 - **GitHub Stars**: 41,000+
@@ -37,7 +37,7 @@ Before diving into the tools, let's address the elephant in the room: why bother
 
 ### Mattermost
 
-[Mattermost](/tool/mattermost/) is the closest self-hosted equivalent to Slack. It offers channels, threads, playbooks, and deep DevOps integrations (Jira, GitHub, PagerDuty).
+Mattermost is the closest self-hosted equivalent to Slack. It offers channels, threads, playbooks, and deep DevOps integrations (Jira, GitHub, PagerDuty).
 
 - **License**: MIT (community edition)
 - **GitHub Stars**: 30,000+

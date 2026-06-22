@@ -64,10 +64,6 @@ function checkContentQuality(content: string): string[] {
   return issues;
 }
 
-function formatDate(date: Date): string {
-  return date.toISOString().split("T")[0];
-}
-
 async function generateComparisonContent(toolA: ToolEntry, toolB: ToolEntry): Promise<string> {
   const systemPrompt = `You are a senior software analyst. Write a detailed, SEO-optimized comparison article between two software tools. The article should be factual, balanced, and helpful for users deciding between the two.
 
@@ -112,7 +108,6 @@ Write the comparison article now.`;
 }
 
 function generateFallbackMarkdown(toolA: ToolEntry, toolB: ToolEntry): string {
-  const today = formatDate(new Date());
   const allFeatures = Array.from(new Set([...toolA.features, ...toolB.features]));
 
   return `## Overview

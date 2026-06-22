@@ -3732,7 +3732,7 @@
     ],
     "category": "development",
     "logo": "/logos/hyperdiv.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "codegraph",
@@ -3763,7 +3763,7 @@
     ],
     "category": "development",
     "logo": "/logos/codegraph.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "colanode-",
@@ -3803,7 +3803,7 @@
     ],
     "category": "productivity",
     "logo": "/logos/colanode-.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "open",
@@ -3842,7 +3842,7 @@
     ],
     "category": "other",
     "logo": "/logos/open.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "project-nomad",
@@ -3881,7 +3881,7 @@
     ],
     "category": "other",
     "logo": "/logos/project-nomad.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "container",
@@ -3912,7 +3912,7 @@
     ],
     "category": "development",
     "logo": "/logos/container.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "extend",
@@ -4008,7 +4008,7 @@
     ],
     "category": "development",
     "logo": "/logos/extend.svg",
-    "status": "active"
+    "status": "draft"
   },
   {
     "slug": "headroom",
@@ -4039,6 +4039,6 @@
     ],
     "category": "development",
     "logo": "/logos/headroom.svg",
-    "status": "active"
+    "status": "draft"
   }
 ]

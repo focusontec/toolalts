@@ -91,7 +91,6 @@ For budget-conscious developers, VS Code with free AI extensions (like Codeium) 
 
 ## Related Comparisons
 
-- [Cursor vs Claude Code](/compare/cursor-vs-claude-code/) — Compare Claude Code with Cursor's AI-first editor
 - [Cursor vs VS Code](/compare/cursor-vs-vscode/) — See how Cursor's AI features compare to VS Code
 - [Best VS Code Alternatives](/alternative-to/vscode/) — Explore other code editors
 - [Best Cursor Alternatives](/alternative-to/cursor/) — Find alternatives to AI code editors

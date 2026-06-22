@@ -148,6 +148,6 @@ The tools are not mutually exclusive. The best setup is the one that matches you
 Looking for alternatives to these tools? Check out our detailed comparisons:
 
 - [Cursor vs VS Code](/compare/cursor-vs-vscode/) — AI-native vs traditional editor
-- [Cursor vs Claude Code](/compare/cursor-vs-claude-code/) — IDE vs terminal approach
-- [VS Code vs Claude Code](/compare/vscode-vs-claude-code/) — Extension vs CLI
+- [Cursor Alternatives](/alternative-to/cursor/) — Compare AI coding workflows
+- [VS Code Alternatives](/alternative-to/vscode/) — Extension-based coding workflows
 - [All development tools](/category/development/) — Browse more AI coding tools

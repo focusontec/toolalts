@@ -75,7 +75,7 @@ A: Copilot has improved significantly and is competitive for code completion. Cu
 ## Related Pages
 
 - [Cursor vs VS Code](/compare/cursor-vs-vscode/) — Compare AI features and performance
-- [Cursor vs Claude Code](/compare/cursor-vs-claude-code/) — AI editor vs AI agent
+- [Development Tools](/category/development/) — Browse AI coding and developer tools
 - [VS Code Alternatives](/alternative-to/vscode/) — Explore other code editors
 - [AI Code Editors Compared](/blog/ai-code-editors-compared/) — Comprehensive comparison
 - [SaaS Cost Calculator](/calculator/) — Estimate your AI coding costs

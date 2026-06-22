@@ -168,7 +168,7 @@ Plane is the open source alternative to Linear. It offers a similar clean interf
 
 **Best for**: Teams that want Linear's UX without the subscription. Self-host for unlimited everything.
 
-[Explore Plane alternatives →](/alternative-to/plane/)
+[Browse open-source project management tools →](/category/project-management/)
 
 ## Comparison Table
 

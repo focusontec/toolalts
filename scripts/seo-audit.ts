@@ -4,7 +4,8 @@
  *
  * This does not replace GSC or a full crawler. It catches the issues that hurt
  * ToolAlts most today: sitemap pollution, duplicate public URLs, draft tools in
- * public routes, empty alternatives pages, and markdown frontmatter leaks.
+ * public routes, empty alternatives pages, broken internal links, and markdown
+ * frontmatter leaks.
  */
 
 import fs from "fs";
@@ -22,6 +23,14 @@ const BASE_URL = "https://www.toolalts.dev";
 const MIN_ALTERNATIVES_FOR_INDEX = 2;
 const MIN_ALT_CONTENT_WORDS = 500;
 const MIN_COMPARISON_CONTENT_WORDS = 300;
+const CONTENT_SECTIONS_TO_SCAN = [
+  "alternative-to",
+  "blog",
+  "compare",
+  "comparisons",
+  "migration-guides",
+  "reports",
+];
 
 type Tool = {
   slug: string;
@@ -59,6 +68,38 @@ function wordCount(value: string): number {
 
 function pushUrl(urls: string[], pathName: string) {
   urls.push(`${BASE_URL}${pathName}`);
+}
+
+function listMarkdownFiles(dir: string): string[] {
+  if (!fs.existsSync(dir)) return [];
+
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) return listMarkdownFiles(entryPath);
+    return entry.name.endsWith(".md") ? [entryPath] : [];
+  });
+}
+
+function normalizeInternalRoute(href: string): string | null {
+  if (!href.startsWith("/") || href.startsWith("//")) return null;
+
+  const [pathName] = href.split(/[?#]/);
+  if (!pathName || /\.[a-zA-Z0-9]+$/.test(pathName)) return null;
+
+  return pathName.endsWith("/") ? pathName : `${pathName}/`;
+}
+
+function findInternalRoutes(content: string): string[] {
+  const routes = new Set<string>();
+  const linkPattern = /!?\[[^\]]*\]\((\/[^)\s]+)\)/g;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkPattern.exec(content)) !== null) {
+    const route = normalizeInternalRoute(match[1]);
+    if (route) routes.add(route);
+  }
+
+  return [...routes];
 }
 
 function main() {
@@ -186,6 +227,24 @@ function main() {
 
   if (!fs.existsSync(SEARCH_PAGE_PATH)) {
     errors.push("SearchAction target is missing: src/app/search/page.tsx");
+  }
+
+  const publicRoutes = new Set([
+    ...urls.map((url) => new URL(url).pathname),
+    "/category/",
+    ...activeTools.map((tool) => `/alternative-to/${tool.slug}/`),
+  ]);
+  for (const section of CONTENT_SECTIONS_TO_SCAN) {
+    const sectionDir = path.join(CONTENT_DIR, section);
+    for (const filePath of listMarkdownFiles(sectionDir)) {
+      const relativePath = path.relative(ROOT, filePath);
+      const content = fs.readFileSync(filePath, "utf-8");
+      for (const route of findInternalRoutes(content)) {
+        if (!publicRoutes.has(route)) {
+          errors.push(`Broken internal link in ${relativePath}: ${route}`);
+        }
+      }
+    }
   }
 
   console.log("SEO audit summary");

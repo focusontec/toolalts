@@ -66,7 +66,7 @@ A: Cursor or VS Code with Copilot are the best for web development due to their 
 
 ## Related Pages
 
-- [VS Code vs Claude Code](/compare/vscode-vs-claude-code/) — Editor vs AI agent comparison
+- [Development Tools](/category/development/) — Browse AI coding and developer tools
 - [Cursor vs VS Code](/compare/cursor-vs-vscode/) — AI-first editor vs traditional
 - [Cursor Alternatives](/alternative-to/cursor/) — Find other AI coding tools
 - [AI Coding Tools 2026](/blog/ai-coding-tools-2026/) — Latest AI development tools

@@ -29,7 +29,7 @@ Slack is the most popular Teams alternative, especially in tech and startup envi
 
 Originally built for gamers, Discord has become a serious communication tool for communities and small teams. It offers unlimited message history, voice channels, screen sharing, and video calls — all completely free. Nitro ($9.99/mo) adds larger file uploads and custom emoji.
 
-**Best for:** Small teams, open-source communities, and groups that want always-on voice channels. Compare [Discord vs Slack](/compare/discord-vs-slack/) to see which fits your team.
+**Best for:** Small teams, open-source communities, and groups that want always-on voice channels. Compare [Slack vs Discord](/compare/slack-vs-discord/) to see which fits your team.
 
 ### 3. Zoom — Best for Video Meetings
 
