@@ -8,6 +8,7 @@
 
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 
 const ROOT = path.resolve(__dirname, "..");
 const TOOLS_PATH = path.join(ROOT, "data", "tools.json");
@@ -70,14 +71,21 @@ function readJson<T>(filePath: string): T | null {
   }
 }
 
+function localDate(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
 function today(): string {
-  return new Date().toISOString().split("T")[0];
+  return localDate(new Date());
 }
 
 function plusDays(dateStr: string, days: number): string {
-  const d = new Date(dateStr);
+  const d = new Date(dateStr + "T00:00:00");
   d.setDate(d.getDate() + days);
-  return d.toISOString().split("T")[0];
+  return localDate(d);
 }
 
 function promotionScore(tool: Tool): number {
@@ -207,8 +215,8 @@ function main() {
     // Check for supporting markdown content (500+ words)
     const contentPath = path.join(ROOT, "src", "content", "alternative-to", `${t.slug}.md`);
     if (!fs.existsSync(contentPath)) return false;
-    const content = fs.readFileSync(contentPath, "utf-8");
-    const words = content.trim().split(/\s+/).filter(Boolean).length;
+    const raw = fs.readFileSync(contentPath, "utf-8");
+    const words = matter(raw).content.trim().split(/\s+/).filter(Boolean).length;
     return words >= 500;
   }).length;
   const coverage = activeTools.length > 0 ? Math.round((indexableCount / activeTools.length) * 100) : 0;
