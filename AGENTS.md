@@ -10,6 +10,11 @@ Before any Next.js work, find and read the relevant doc in `node_modules/next/di
 
 ## Current Operating Plan — Read First
 
+Before starting SEO/content/automation work:
+1. Read docs/weekly-workflow.md
+2. Read docs/content-opportunities.md
+3. Read docs/SEO_GROWTH_PLAN.md
+
 Before changing SEO, routing, content generation, automation scripts, or public data, read:
 
 - `docs/SEO_GROWTH_PLAN.md`

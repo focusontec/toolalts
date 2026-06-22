@@ -10,7 +10,8 @@
     "seo:audit": "tsx scripts/seo-audit.ts",
     "content:promote": "tsx scripts/promote-content.ts",
     "content:generate-comparisons": "tsx scripts/generate-comparisons.ts",
-    "content:opportunities": "tsx scripts/content-opportunities.ts"
+    "content:opportunities": "tsx scripts/content-opportunities.ts",
+    "workflow:plan": "tsx scripts/workflow-plan.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4",

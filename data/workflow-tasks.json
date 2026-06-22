@@ -1,0 +1,67 @@
+[
+  {
+    "id": "content-docker-2026-06-22",
+    "title": "Write Docker alternatives page",
+    "type": "content",
+    "slug": "docker",
+    "status": "todo",
+    "priorityScore": 55,
+    "source": "content-opportunities",
+    "reason": "No active alternatives and no supporting content",
+    "action": "Add 2 more comparison pair(s) or write 500+ word content",
+    "createdAt": "2026-06-22",
+    "dueAt": "2026-06-29"
+  },
+  {
+    "id": "content-supabase-2026-06-22",
+    "title": "Write Supabase alternatives page",
+    "type": "content",
+    "slug": "supabase",
+    "status": "todo",
+    "priorityScore": 55,
+    "source": "content-opportunities",
+    "reason": "No active alternatives and no supporting content",
+    "action": "Add 2 more comparison pair(s) or write 500+ word content",
+    "createdAt": "2026-06-22",
+    "dueAt": "2026-06-29"
+  },
+  {
+    "id": "content-postman-2026-06-22",
+    "title": "Write Postman alternatives page",
+    "type": "content",
+    "slug": "postman",
+    "status": "todo",
+    "priorityScore": 45,
+    "source": "content-opportunities",
+    "reason": "No active alternatives and no supporting content",
+    "action": "Add 2 more comparison pair(s) or write 500+ word content",
+    "createdAt": "2026-06-22",
+    "dueAt": "2026-06-29"
+  },
+  {
+    "id": "content-vercel-2026-06-22",
+    "title": "Write Vercel alternatives page",
+    "type": "content",
+    "slug": "vercel",
+    "status": "todo",
+    "priorityScore": 45,
+    "source": "content-opportunities",
+    "reason": "No active alternatives and no supporting content",
+    "action": "Add 2 more comparison pair(s) or write 500+ word content",
+    "createdAt": "2026-06-22",
+    "dueAt": "2026-06-29"
+  },
+  {
+    "id": "content-cal-com-2026-06-22",
+    "title": "Write Cal.com alternatives page",
+    "type": "content",
+    "slug": "cal-com",
+    "status": "todo",
+    "priorityScore": 40,
+    "source": "content-opportunities",
+    "reason": "No active alternatives and no supporting content",
+    "action": "Add 2 more comparison pair(s) or write 500+ word content",
+    "createdAt": "2026-06-22",
+    "dueAt": "2026-06-29"
+  }
+]
