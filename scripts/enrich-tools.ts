@@ -17,22 +17,10 @@
 import fs from "fs";
 import path from "path";
 import { callLlm } from "./lib/llm";
-import { searchOllama, fetchOllama, searchAndFetch } from "./lib/ollama";
+import { loadLocalEnv } from "./lib/env";
+import { searchOllama, searchAndFetch } from "./lib/ollama";
 
-// Load .env.local
-const envPath = path.resolve(__dirname, "../.env.local");
-if (fs.existsSync(envPath)) {
-  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#")) continue;
-    const eqIdx = trimmed.indexOf("=");
-    if (eqIdx > 0) {
-      const key = trimmed.slice(0, eqIdx).trim();
-      const value = trimmed.slice(eqIdx + 1).trim();
-      if (!process.env[key]) process.env[key] = value;
-    }
-  }
-}
+loadLocalEnv();
 
 const DATA_PATH = path.resolve(__dirname, "../data/tools.json");
 const SLEEP_MS = 2000;
@@ -82,7 +70,7 @@ async function extractWithLlm<T>(
   }
 }
 
-async function enrichFeatures(toolName: string, websiteUrl: string): Promise<string[] | null> {
+async function enrichFeatures(toolName: string): Promise<string[] | null> {
   const content = await searchAndFetch(`${toolName} features product capabilities`);
   if (!content) return null;
 
@@ -142,7 +130,7 @@ RULES:
   );
 }
 
-async function enrichFaq(toolName: string, websiteUrl: string): Promise<EnrichedData["faq"] | null> {
+async function enrichFaq(toolName: string): Promise<EnrichedData["faq"] | null> {
   const content = await searchAndFetch(`${toolName} FAQ frequently asked questions`);
   if (!content) return null;
 
@@ -212,7 +200,7 @@ async function main() {
 
     // Features
     if (fieldsToEnrich.includes("features")) {
-      const features = await enrichFeatures(tool.name, tool.websiteUrl);
+      const features = await enrichFeatures(tool.name);
       if (features && features.length > (tool.features?.length || 0)) {
         enriched.features = features;
         enrichedFields.push(`features (${features.length})`);
@@ -267,7 +255,7 @@ async function main() {
 
     // FAQ
     if (fieldsToEnrich.includes("faq")) {
-      const faq = await enrichFaq(tool.name, tool.websiteUrl);
+      const faq = await enrichFaq(tool.name);
       if (faq && faq.length > 0) {
         enriched.faq = faq;
         enrichedFields.push(`faq (${faq.length})`);

@@ -19,21 +19,10 @@
 import fs from "fs";
 import path from "path";
 import { callLlm } from "./lib/llm";
+import { loadLocalEnv } from "./lib/env";
+import { searchOllama } from "./lib/ollama";
 
-// Load .env.local for local development
-const envPath = path.resolve(__dirname, "../.env.local");
-if (fs.existsSync(envPath)) {
-  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#")) continue;
-    const eqIdx = trimmed.indexOf("=");
-    if (eqIdx > 0) {
-      const key = trimmed.slice(0, eqIdx).trim();
-      const value = trimmed.slice(eqIdx + 1).trim();
-      if (!process.env[key]) process.env[key] = value;
-    }
-  }
-}
+loadLocalEnv();
 
 const DATA_PATH = path.resolve(__dirname, "../data/tools.json");
 const SLEEP_MS = 3000;
@@ -78,40 +67,15 @@ function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-const USER_AGENTS = [
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
-];
-
-function randomUA() {
-  return USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
-}
-
 /**
  * Search for review data using Ollama web search API.
  */
-async function searchOllama(query: string): Promise<string> {
-  const apiKey = process.env.OLLAMA_API_KEY;
-  if (!apiKey) return "";
-
+async function searchOllamaText(query: string): Promise<string> {
   try {
-    const res = await fetch("https://ollama.com/api/web_search", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query, max_results: 5 }),
-      signal: AbortSignal.timeout(15000),
-    });
+    const results = await searchOllama(query, 5);
+    if (!results.length) return "";
 
-    if (!res.ok) return "";
-
-    const data = await res.json() as { results?: { title: string; url: string; content: string }[] };
-    if (!data.results || data.results.length === 0) return "";
-
-    return data.results
+    return results
       .map((r) => `${r.title}\n${r.content}`)
       .join("\n\n")
       .slice(0, 8000);
@@ -243,7 +207,7 @@ async function main() {
     for (const query of queries) {
       if (bestResult.confidence === "high") break;
 
-      const searchResult = await searchOllama(query);
+      const searchResult = await searchOllamaText(query);
       if (!searchResult || searchResult.length < 100) {
         console.log(`  No results for: ${query}`);
         continue;

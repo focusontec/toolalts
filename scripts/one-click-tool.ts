@@ -20,21 +20,9 @@
 
 import fs from "fs";
 import path from "path";
+import { loadLocalEnv } from "./lib/env";
 
-// Load .env.local for local development
-const envPath = path.resolve(__dirname, "../.env.local");
-if (fs.existsSync(envPath)) {
-  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#")) continue;
-    const eqIdx = trimmed.indexOf("=");
-    if (eqIdx > 0) {
-      const key = trimmed.slice(0, eqIdx).trim();
-      const value = trimmed.slice(eqIdx + 1).trim();
-      if (!process.env[key]) process.env[key] = value;
-    }
-  }
-}
+loadLocalEnv();
 
 import { scrapeTool } from "./pipeline/scrape-tool";
 import { extractToolData } from "./pipeline/extract-tool-data";
@@ -43,7 +31,6 @@ import { generateToolReport } from "./pipeline/generate-tool-report";
 import { generateToolBlog } from "./pipeline/generate-tool-blog";
 import { analyzeToolScreenshot } from "./lib/llm";
 
-const TOOLS_PATH = path.resolve(__dirname, "../data/tools.json");
 const PENDING_PATH = path.resolve(__dirname, "../data/pending-tools.json");
 const REPORTS_DIR = path.resolve(__dirname, "../src/content/reports");
 const BLOG_DIR = path.resolve(__dirname, "../src/content/blog");
