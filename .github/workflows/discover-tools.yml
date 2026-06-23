@@ -74,6 +74,7 @@ jobs:
             echo "📭 No changes to commit."
           else
             git commit -m "autoclaw: auto-discover + verify + approve $(date -u +%Y-%m-%d-%H:%M)"
-            git push
+            git pull --rebase origin main
+          git push
             echo "✅ Changes committed and pushed."
           fi

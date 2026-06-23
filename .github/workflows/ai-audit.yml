@@ -65,6 +65,7 @@ jobs:
             echo "📭 No changes to commit."
           else
             git commit -m "autoclaw: AI audit results $(date -u +%Y-%m-%d)"
-            git push
+            git pull --rebase origin main
+          git push
             echo "✅ Audit results committed."
           fi

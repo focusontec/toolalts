@@ -69,5 +69,6 @@ jobs:
             echo "No eligible promotions to commit."
           else
             git commit -m "autoclaw: promote reviewed content $(date -u +%Y-%m-%d)"
-            git push
+            git pull --rebase origin main
+          git push
           fi

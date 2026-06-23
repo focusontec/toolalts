@@ -66,6 +66,7 @@ jobs:
             echo "📭 No pricing changes to commit."
           else
             git commit -m "autoclaw: sync pricing data $(date -u +%Y-%m-%d)"
-            git push
+            git pull --rebase origin main
+          git push
             echo "✅ Pricing changes committed."
           fi

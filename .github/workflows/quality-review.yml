@@ -56,6 +56,7 @@ jobs:
             echo "📭 No changes to commit."
           else
             git commit -m "autoclaw: quality review $(date -u +%Y-%m-%d)"
-            git push
+            git pull --rebase origin main
+          git push
             echo "✅ Review report committed."
           fi
