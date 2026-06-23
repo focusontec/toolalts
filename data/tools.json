@@ -96,17 +96,17 @@
     ],
     "useCases": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "Centralize Product Development",
         "description": "Qonto uses Notion to centralize product development with a single roadmap, automated progress tracking, and customized Kanban workflows."
       },
       {
-        "icon": "📚",
+        "icon": "\ud83d\udcda",
         "title": "Unify Knowledge and Work",
         "description": "Qonto maintains a company wiki, teamspaces, and individual pages in Notion as a single source of truth for documentation and task management."
       },
       {
-        "icon": "🤝",
+        "icon": "\ud83e\udd1d",
         "title": "Enhance Cross-Functional Collaboration",
         "description": "Qonto integrates Notion with tools like FigJam and Slack to minimize manual work and maintain company-wide alignment."
       }
@@ -121,7 +121,7 @@
     "cons": [
       "Lack of offline support",
       "Requires a web connection",
-      "AI features aren’t always helpful",
+      "AI features aren\u2019t always helpful",
       "Steep learning curve for customization"
     ],
     "faq": [
@@ -219,7 +219,7 @@
     "slug": "figma",
     "name": "Figma",
     "tagline": "The collaborative interface design tool",
-    "description": "Figma is a web-based design platform for UI/UX design, prototyping, and design systems. It enables real-time collaboration between designers, developers, and stakeholders with powerful vector editing and component libraries.",
+    "description": "Figma is the leading collaborative design platform for building meaningful products. Design, prototype, and build products faster \u2014 while gathering feedback all in one place.",
     "rating": 4.9,
     "reviewsCount": 1464,
     "openSource": false,
@@ -409,7 +409,7 @@
     "slug": "linear",
     "name": "Linear",
     "tagline": "The system for product development",
-    "description": "Purpose-built for planning and building products with AI agents. Streamline issues, sprints, and product roadmaps.",
+    "description": "Purpose-built for planning and building products with AI agents.",
     "rating": 4.9,
     "reviewsCount": 396,
     "openSource": false,
@@ -522,8 +522,8 @@
   {
     "slug": "cursor",
     "name": "Cursor",
-    "tagline": "The best way to code with AI",
-    "description": "Built to make you extraordinarily productive, Cursor is the best way to build software with AI. A code editor with native AI integration for pair-programming.",
+    "tagline": "AI coding agent",
+    "description": "Built to make you extraordinarily productive, Cursor is the best AI coding agent.",
     "rating": 5,
     "reviewsCount": 850,
     "openSource": false,
@@ -599,19 +599,19 @@
     ],
     "useCases": [
       {
-        "icon": "🚀",
+        "icon": "\ud83d\ude80",
         "title": "Accelerate Product Roadmaps",
         "description": "Engineering teams use Cursor to accelerate product roadmaps, ship features faster, and handle surges in demand while maintaining quality."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Refactor and Debug Code",
         "description": "Cursor helps engineers refactor legacy systems, debug complex issues, and handle tech debt with increased speed and confidence."
       },
       {
-        "icon": "📈",
+        "icon": "\ud83d\udcc8",
         "title": "Boost Engineering Velocity",
-        "description": "Teams see 2–5x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
+        "description": "Teams see 2\u20135x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
       }
     ],
     "pros": [
@@ -650,7 +650,7 @@
     "slug": "vscode",
     "name": "VS Code",
     "tagline": "AI-powered coding with GitHub Copilot",
-    "description": "Visual Studio Code redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. Free and available on Linux, macOS, and Windows.",
+    "description": "Visual Studio Code is a free, open source AI code editor. Build with AI agents that plan, code, and debug for you.",
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
@@ -683,8 +683,8 @@
   {
     "slug": "slack",
     "name": "Slack",
-    "tagline": "AI work platform for managing projects and automating workflows",
-    "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
+    "tagline": "AI Work Platform & Productivity Tools",
+    "description": "Boost productivity and save time with Slack \u2014 the AI work platform for managing projects, automating workflows, and connecting teams securely.",
     "rating": 4.5,
     "reviewsCount": 28674,
     "openSource": false,
@@ -771,7 +771,7 @@
   {
     "slug": "discord",
     "name": "Discord",
-    "tagline": "Your place to play games, chill with friends, and build communities",
+    "tagline": "Group Chat That is All Fun & Games",
     "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
     "rating": 4.7,
     "reviewsCount": 3400000,
@@ -816,7 +816,7 @@
     "slug": "claude-code",
     "name": "claude-code",
     "tagline": "An agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster through natural language commands.",
-    "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. It is available in your terminal, IDE, desktop app, and browser, enabling developers to execute routine tasks, explain complex code, and handle git workflows through natural language commands.",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows.",
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
@@ -872,7 +872,7 @@
     "slug": "composio",
     "name": "composio",
     "tagline": "Just-in-time tool calls, secure delegated auth, and sandboxed environments for AI agents",
-    "description": "Just-in-time tool calls, secure delegated auth, sandboxed environments, and parallel execution across 1,000+ apps for AI agents.",
+    "description": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents.",
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
@@ -964,11 +964,11 @@
     "slug": "anki",
     "name": "AnkiAIUtils",
     "tagline": "AI-powered utilities to enhance Anki flashcards with explanations and mnemonics",
-    "description": "AnkiAIUtils provides AI-powered tools to enhance Anki flashcards with explanations, mnemonics, illustrations, and adaptive learning. It is a companion to the Anki app, not the core Anki application itself.",
+    "description": "Anki is a smart spaced repetition flashcard program that helps you remember things using spaced repetition.",
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28694,
+    "githubStars": 28586,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1000,13 +1000,14 @@
       }
     ],
     "features": [
+      "Spaced repetition",
+      "Flashcards",
       "Synchronization",
-      "Media Support",
-      "Customization",
-      "Optimization",
-      "Add-Ons"
+      "Media support",
+      "Add-ons",
+      "Cross-platform"
     ],
-    "category": "productivity",
+    "category": "education",
     "logo": "/logos/anki.svg",
     "status": "draft"
   },
@@ -1329,7 +1330,7 @@
   {
     "slug": "jira",
     "name": "Jira",
-    "tagline": "Plan, track, and manage your agile and software development projects",
+    "tagline": "Jira brings teams together to reach the next level of productivity with AI agents",
     "description": "Jira is the project management tool for agile teams. It helps teams plan, track, and release great software.",
     "rating": 4.8,
     "reviewsCount": 115,
@@ -1389,7 +1390,7 @@
   {
     "slug": "trello",
     "name": "Trello",
-    "tagline": "Trello brings all your tasks, teammates, and tools together",
+    "tagline": "Capture, organize, and tackle your to-dos from anywhere",
     "description": "Trello is a visual collaboration tool for creating boards, lists, and cards to organize and prioritize projects.",
     "rating": 4.6,
     "reviewsCount": 82,
@@ -1420,7 +1421,7 @@
         "price": "$5USD per user/month if billed annually ($6 billed monthly)",
         "features": [
           "Unlimited boards",
-          "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+          "Quickly capture to-dos from email, Slack, and Teams \u2014 powered by AI",
           "Planner",
           "Advanced checklists",
           "Card mirroring",
@@ -1517,7 +1518,7 @@
   {
     "slug": "asana",
     "name": "Asana",
-    "tagline": "Manage your team's work, projects, & tasks online",
+    "tagline": "Work management software for teams and AI agents",
     "description": "Asana is a work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives.",
     "rating": 4.9,
     "reviewsCount": 106,
@@ -1752,8 +1753,8 @@
   {
     "slug": "gitlab",
     "name": "GitLab",
-    "tagline": "The most comprehensive AI-powered DevSecOps platform",
-    "description": "GitLab is a complete DevOps platform that delivers a single application for the entire software development lifecycle.",
+    "tagline": "Finally, AI for the entire software lifecycle.",
+    "description": "Your intelligent orchestration platform for DevSecOps",
     "rating": 4.6,
     "reviewsCount": 119,
     "openSource": true,
@@ -1799,15 +1800,15 @@
       "Security scanning (SAST/DAST)",
       "Package registry"
     ],
-    "category": "development",
+    "category": "devops",
     "logo": "/logos/gitlab.svg",
     "status": "active"
   },
   {
     "slug": "docker",
     "name": "Docker",
-    "tagline": "Accelerate how you build, share, and run applications",
-    "description": "Docker helps developers build, package, share, run, and verify applications across local machines, CI systems, and production environments. It combines container tooling, image distribution, security scanning, and team controls for software teams that need consistent application delivery.",
+    "tagline": "Accelerated Container Application Development",
+    "description": "Docker is a platform designed to help developers build, share, and run container applications.",
     "rating": 4.6,
     "reviewsCount": 339,
     "openSource": true,
@@ -1907,7 +1908,7 @@
     "slug": "postman",
     "name": "Postman",
     "tagline": "The world's leading API platform",
-    "description": "Postman is an API platform for building and using APIs. It simplifies each step of the API lifecycle.",
+    "description": "Accelerate API development with Postman all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results.",
     "rating": 5,
     "reviewsCount": 11,
     "openSource": false,
@@ -2005,7 +2006,7 @@
     "slug": "zoom",
     "name": "Zoom",
     "tagline": "One platform to connect",
-    "description": "Zoom is an all-in-one intelligent collaboration platform that makes connecting easier and more immersive.",
+    "description": "Modernize workflows with Zoom trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
     "rating": 5,
     "reviewsCount": 32,
     "openSource": false,
@@ -2094,8 +2095,8 @@
   {
     "slug": "confluence",
     "name": "Confluence",
-    "tagline": "Where knowledge meets collaboration",
-    "description": "Confluence is Atlassian's team workspace for documentation, project knowledge, meeting notes, and internal collaboration. It is commonly used alongside Jira so software, product, and operations teams can keep decisions, plans, and reference material connected to delivery work.",
+    "tagline": "Your team workspace for creating and sharing knowledge",
+    "description": "Confluence is your team workspace for creating and sharing knowledge. Use AI to draft, summarize, and find answers so projects move faster.",
     "rating": 4.7,
     "reviewsCount": 64,
     "openSource": false,
@@ -2153,7 +2154,7 @@
   {
     "slug": "miro",
     "name": "Miro",
-    "tagline": "The Innovation Workspace",
+    "tagline": "AI Innovation Workspace",
     "description": "Miro is a visual collaboration platform for distributed teams to create, collaborate, and centralize communication.",
     "rating": 4.7,
     "reviewsCount": 155,
@@ -2184,7 +2185,7 @@
       "10 Miro AI credits/month",
       "5 Talktracks"
     ],
-    "category": "design",
+    "category": "collaboration",
     "logo": "/logos/miro.svg",
     "status": "active"
   },
@@ -2192,7 +2193,7 @@
     "slug": "airtable",
     "name": "Airtable",
     "tagline": "Create apps that perfectly fit your team's needs",
-    "description": "Airtable is a low-code platform for building collaborative databases, operational workflows, and lightweight internal apps. Teams use it to manage structured work such as content calendars, product roadmaps, CRM records, inventory, approvals, and cross-functional planning without starting from a traditional spreadsheet.",
+    "description": "500,000+ brands use Airtable to enable real-time collaboration, automate repetitive tasks & manual work, and streamline business processes in minutes.",
     "rating": 5,
     "reviewsCount": 11,
     "openSource": false,
@@ -2378,8 +2379,8 @@
   {
     "slug": "vercel",
     "name": "Vercel",
-    "tagline": "Build and deploy the best web experiences",
-    "description": "Vercel is a platform for frontend developers, providing the speed and reliability to create at the moment of inspiration.",
+    "tagline": "Build and deploy the best web experiences with the AI Cloud",
+    "description": "Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.",
     "rating": 5,
     "reviewsCount": 888,
     "openSource": false,
@@ -2432,7 +2433,7 @@
     "slug": "supabase",
     "name": "Supabase",
     "tagline": "The open source Firebase alternative",
-    "description": "Supabase is an open source Firebase alternative providing all the backend services you need to build a product.",
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
     "rating": 4.9,
     "reviewsCount": 210,
     "openSource": true,
@@ -2877,7 +2878,7 @@
     "slug": "github-copilot",
     "name": "GitHub Copilot",
     "tagline": "Your AI pair programmer",
-    "description": "GitHub Copilot is an AI-powered code assistant that helps you write code faster. It offers inline suggestions, chat-based assistance, and can generate entire functions from natural language descriptions.",
+    "description": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you.",
     "rating": 4.8,
     "reviewsCount": 25,
     "openSource": false,
@@ -2903,8 +2904,8 @@
   {
     "slug": "resend",
     "name": "Resend",
-    "tagline": "Email API for developers",
-    "description": "Resend is a modern email API designed for developers. It offers a simple, developer-friendly interface for sending transactional emails, with features like React Email integration, webhooks, and detailed analytics.",
+    "tagline": "Email for developers",
+    "description": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
     "rating": 5,
     "reviewsCount": 788,
     "openSource": false,
@@ -3019,7 +3020,7 @@
   {
     "slug": "cal-com",
     "name": "Cal.com",
-    "tagline": "Open source scheduling infrastructure",
+    "tagline": "Scheduling infrastructure for absolutely everyone",
     "description": "Cal.com is an open source scheduling platform that allows individuals and businesses to manage appointments, meetings, and events. It integrates with Google Calendar, Outlook, and many other tools.",
     "rating": 4.8,
     "reviewsCount": 8,
@@ -3163,8 +3164,8 @@
   {
     "slug": "unkey",
     "name": "Unkey",
-    "tagline": "API key management for developers",
-    "description": "Unkey is an open source API key management platform. It provides fast key verification, rate limiting, and usage tracking, making it easy to manage API access for your applications.",
+    "tagline": "The Developer Platform for Modern APIs",
+    "description": "Unkey brings API deployment, gateways, and observability into one platform.",
     "rating": 5,
     "reviewsCount": 3,
     "openSource": true,
@@ -3200,8 +3201,8 @@
   {
     "slug": "trigger-dev",
     "name": "Trigger.dev",
-    "tagline": "Background jobs framework for TypeScript",
-    "description": "Trigger.dev is an open source background jobs framework for TypeScript. It allows you to create long-running jobs with built-in retries, scheduling, and observability, without managing infrastructure.",
+    "tagline": "Build and deploy fully-managed AI agents and workflows",
+    "description": "Trigger.dev is the open source platform for building AI workflows in TypeScript. Long-running tasks with retries, queues, observability, and elastic scaling.",
     "rating": 4.8,
     "reviewsCount": 84,
     "openSource": true,
@@ -3251,7 +3252,7 @@
     "slug": "system-prompts-and-models-of-ai-tools",
     "name": "system-prompts-and-models-of-ai-tools",
     "tagline": "A comprehensive open-source collection of system prompts, internal tools, and AI models from popular AI coding assistants.",
-    "description": "This repository aggregates system prompts, internal tools, and AI models from a wide range of AI coding assistants and platforms such as Cursor, Devin, Replit, and many more. It serves as a reference for developers and AI enthusiasts interested in understanding the underlying prompts and architectures of these tools.",
+    "description": "A collection of system prompts, internal tools, and AI models from various AI coding assistants.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -3341,7 +3342,7 @@
     "slug": "awesome-claude-skills",
     "name": "awesome-claude-skills",
     "tagline": "A curated collection of Claude AI skills, resources, and tools for customizing workflows.",
-    "description": "This is a GitHub repository that curates a list of Claude AI skills, resources, and tools. It is intended for developers and AI enthusiasts looking to customize and extend Claude AI workflows.",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
