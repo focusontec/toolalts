@@ -30,40 +30,67 @@ export const metadata: Metadata = {
 };
 
 function Footer() {
+  const footerGroups = [
+    {
+      title: "Explore",
+      links: [
+        { href: "/blog/", label: "Blog" },
+        { href: "/reports/", label: "Reports" },
+        { href: "/category/", label: "Categories" },
+      ],
+    },
+    {
+      title: "Tools",
+      links: [
+        { href: "/quiz/", label: "Quiz" },
+        { href: "/calculator/", label: "Calculator" },
+        { href: "/stack-builder/", label: "Stack Builder" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { href: "/migration-guides/", label: "Migration Guides" },
+        { href: "/submit/", label: "Submit a Tool" },
+      ],
+    },
+  ];
+
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface-warm)]">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <div>
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+          <div className="max-w-sm">
             <span className="font-display text-lg text-[var(--color-ink)]">
               ToolAlts
             </span>
-            <p className="mt-1 text-sm text-[var(--color-ink-faint)]">
+            <p className="mt-1 text-sm leading-6 text-[var(--color-ink-faint)]">
               Find the best alternatives to your favorite tools.
             </p>
           </div>
-          <div className="flex gap-8">
-            {[
-              { href: "/blog/", label: "Blog" },
-              { href: "/reports/", label: "Reports" },
-              { href: "/category/", label: "Categories" },
-              { href: "/quiz/", label: "Quiz" },
-              { href: "/calculator/", label: "Calculator" },
-              { href: "/migration-guides/", label: "Migration Guides" },
-              { href: "/stack-builder/", label: "Stack Builder" },
-              { href: "/submit/", label: "Submit a Tool" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-[var(--color-ink-faint)] transition-colors hover:text-[var(--color-ink)]"
-              >
-                {link.label}
-              </Link>
+          <div className="grid gap-8 sm:grid-cols-3 lg:w-[40rem]">
+            {footerGroups.map((group) => (
+              <nav key={group.title} className="min-w-0">
+                <h2 className="text-xs font-semibold uppercase tracking-wide text-[var(--color-ink)]">
+                  {group.title}
+                </h2>
+                <ul className="mt-3 space-y-2">
+                  {group.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="block text-sm leading-6 text-[var(--color-ink-faint)] transition-colors hover:text-[var(--color-ink)]"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             ))}
           </div>
         </div>
-        <div className="mt-8 border-t border-[var(--color-border-light)] pt-6 text-center text-xs text-[var(--color-ink-faint)]">
+        <div className="mt-8 border-t border-[var(--color-border-light)] pt-6 text-center text-xs leading-5 text-[var(--color-ink-faint)]">
           &copy; {new Date().getFullYear()} ToolAlts. Built with care.
         </div>
       </div>
