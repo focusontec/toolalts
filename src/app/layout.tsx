@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Link from "next/link";
 import "./globals.css";
+import { SiteNav } from "@/components/SiteNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.toolalts.dev"),
@@ -27,39 +28,6 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
 };
-
-function Nav() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-surface)]/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
-        <Link
-          href="/"
-          className="font-display text-xl tracking-tight text-[var(--color-ink)] transition-opacity hover:opacity-70"
-        >
-          ToolAlts
-        </Link>
-        <nav className="flex items-center gap-1">
-          {[
-            { href: "/", label: "Home" },
-            { href: "/blog/", label: "Blog" },
-            { href: "/reports/", label: "Reports" },
-            { href: "/quiz/", label: "Quiz" },
-            { href: "/calculator/", label: "Calculator" },
-            { href: "/submit/", label: "Submit a Tool" },
-          ].map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-lg px-3 py-1.5 text-[13px] font-medium text-[var(--color-ink-faint)] transition-colors hover:bg-[var(--color-surface-warm)] hover:text-[var(--color-ink)]"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 function Footer() {
   return (
@@ -123,7 +91,7 @@ export default function RootLayout({
             gtag('config', 'G-PGX7THVY9L');
           `}
         </Script>
-        <Nav />
+        <SiteNav />
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
