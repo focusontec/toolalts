@@ -1,6 +1,5 @@
 import { cookies } from "next/headers";
-import Link from "next/link";
-import { AdminSidebar } from "./sidebar";
+import { AdminShell } from "./admin-shell";
 
 export default async function AdminLayout({
   children,
@@ -15,11 +14,6 @@ export default async function AdminLayout({
     return <>{children}</>;
   }
 
-  // Logged in → render with sidebar
-  return (
-    <div className="flex min-h-screen bg-slate-50">
-      <AdminSidebar />
-      <main className="ml-56 flex-1 p-8">{children}</main>
-    </div>
-  );
+  // Logged in → render with responsive sidebar
+  return <AdminShell>{children}</AdminShell>;
 }

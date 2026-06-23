@@ -79,13 +79,13 @@ function NavIcon({ type }: { type: string }) {
   }
 }
 
-export function AdminSidebar() {
+export function AdminSidebar({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname();
 
   return (
-    <aside className="fixed inset-y-0 left-0 w-56 border-r border-slate-200 bg-white">
+    <aside className="flex h-full w-56 flex-col border-r border-slate-200 bg-white">
       <div className="flex h-14 items-center border-b border-slate-200 px-4">
-        <Link href="/admin/" className="text-sm font-bold text-slate-900">
+        <Link href="/admin/" onClick={onClose} className="text-sm font-bold text-slate-900">
           ToolAlts Admin
         </Link>
       </div>
@@ -99,6 +99,7 @@ export function AdminSidebar() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={onClose}
               className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition ${
                 isActive
                   ? "bg-indigo-50 font-medium text-indigo-700"
