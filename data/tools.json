@@ -1800,7 +1800,7 @@
       "Security scanning (SAST/DAST)",
       "Package registry"
     ],
-    "category": "devops",
+    "category": "development",
     "logo": "/logos/gitlab.svg",
     "status": "active"
   },
@@ -2185,7 +2185,7 @@
       "10 Miro AI credits/month",
       "5 Talktracks"
     ],
-    "category": "collaboration",
+    "category": "design",
     "logo": "/logos/miro.svg",
     "status": "active"
   },
