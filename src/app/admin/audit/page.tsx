@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { ExportButton } from "./export-button";
+import { PaginatedList, PaginatedTable } from "./paginated-list";
 
 export const dynamic = "force-dynamic";
 
@@ -187,10 +188,11 @@ export default function AuditPage() {
                 Field-by-field verification against GitHub and official websites
               </p>
 
-              <div className="mt-4 space-y-4">
-                {data
-                  .sort((a, b) => a.accuracyScore - b.accuracyScore)
-                  .map((audit) => {
+              <div className="mt-4">
+                <PaginatedList
+                  items={data.sort((a, b) => a.accuracyScore - b.accuracyScore)}
+                  pageSize={10}
+                  renderItem={(audit) => {
                     const issues = audit.fieldChecks.filter(
                       (f) => f.verdict !== "ACCURATE" && f.verdict !== "UNVERIFIABLE"
                     );
@@ -255,7 +257,8 @@ export default function AuditPage() {
                         )}
                       </div>
                     );
-                  })}
+                  }}
+                />
               </div>
             </div>
           )}
@@ -268,74 +271,51 @@ export default function AuditPage() {
                 Quality, accuracy, and SEO evaluation of generated content
               </p>
 
-              <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
-                <table className="min-w-full divide-y divide-slate-200">
-                  <thead className="bg-slate-50">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-xs font-medium text-slate-500">
-                        Content
-                      </th>
-                      <th className="px-4 py-3 text-left text-xs font-medium text-slate-500">
-                        Type
-                      </th>
-                      <th className="px-4 py-3 text-center text-xs font-medium text-slate-500">
-                        Quality
-                      </th>
-                      <th className="px-4 py-3 text-center text-xs font-medium text-slate-500">
-                        Accuracy
-                      </th>
-                      <th className="px-4 py-3 text-center text-xs font-medium text-slate-500">
-                        SEO
-                      </th>
-                      <th className="px-4 py-3 text-left text-xs font-medium text-slate-500">
-                        Issues
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100">
-                    {content
-                      .sort((a, b) => {
-                        const avgA = (a.qualityScore + a.accuracyScore + a.seoScore) / 3;
-                        const avgB = (b.qualityScore + b.accuracyScore + b.seoScore) / 3;
-                        return avgA - avgB;
-                      })
-                      .map((audit) => (
-                        <tr key={`${audit.type}-${audit.slug}`} className="hover:bg-slate-50">
-                          <td className="px-4 py-3 text-sm font-medium text-slate-900">
-                            {audit.slug}
-                          </td>
-                          <td className="px-4 py-3">
-                            <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
-                              {audit.type}
+              <div className="mt-4">
+                <PaginatedTable
+                  items={content.sort((a, b) => {
+                    const avgA = (a.qualityScore + a.accuracyScore + a.seoScore) / 3;
+                    const avgB = (b.qualityScore + b.accuracyScore + b.seoScore) / 3;
+                    return avgA - avgB;
+                  })}
+                  pageSize={15}
+                  columns={["Content", "Type", "Quality", "Accuracy", "SEO", "Issues"]}
+                  renderRow={(audit) => (
+                    <tr key={`${audit.type}-${audit.slug}`} className="hover:bg-slate-50">
+                      <td className="px-4 py-3 text-sm font-medium text-slate-900">
+                        {audit.slug}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
+                          {audit.type}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 text-center">
+                        <ScoreBadge score={audit.qualityScore} />
+                      </td>
+                      <td className="px-4 py-3 text-center">
+                        <ScoreBadge score={audit.accuracyScore} />
+                      </td>
+                      <td className="px-4 py-3 text-center">
+                        <ScoreBadge score={audit.seoScore} />
+                      </td>
+                      <td className="px-4 py-3">
+                        <div className="flex flex-wrap gap-1">
+                          {audit.issues.slice(0, 2).map((issue, i) => (
+                            <span key={i} className="flex items-center gap-1">
+                              <SeverityBadge severity={issue.severity} />
                             </span>
-                          </td>
-                          <td className="px-4 py-3 text-center">
-                            <ScoreBadge score={audit.qualityScore} />
-                          </td>
-                          <td className="px-4 py-3 text-center">
-                            <ScoreBadge score={audit.accuracyScore} />
-                          </td>
-                          <td className="px-4 py-3 text-center">
-                            <ScoreBadge score={audit.seoScore} />
-                          </td>
-                          <td className="px-4 py-3">
-                            <div className="flex flex-wrap gap-1">
-                              {audit.issues.slice(0, 2).map((issue, i) => (
-                                <span key={i} className="flex items-center gap-1">
-                                  <SeverityBadge severity={issue.severity} />
-                                </span>
-                              ))}
-                              {audit.issues.length > 2 && (
-                                <span className="text-[10px] text-slate-400">
-                                  +{audit.issues.length - 2} more
-                                </span>
-                              )}
-                            </div>
-                          </td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
+                          ))}
+                          {audit.issues.length > 2 && (
+                            <span className="text-[10px] text-slate-400">
+                              +{audit.issues.length - 2} more
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                />
               </div>
 
               {/* Detailed Issues */}
