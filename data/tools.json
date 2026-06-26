@@ -103,17 +103,17 @@
     ],
     "useCases": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "Centralize Product Development",
         "description": "Qonto uses Notion to centralize product development with a single roadmap, automated progress tracking, and customized Kanban workflows."
       },
       {
-        "icon": "📚",
+        "icon": "\ud83d\udcda",
         "title": "Unify Knowledge and Work",
         "description": "Qonto maintains a company wiki, teamspaces, and individual pages in Notion as a single source of truth for documentation and task management."
       },
       {
-        "icon": "🤝",
+        "icon": "\ud83e\udd1d",
         "title": "Enhance Cross-Functional Collaboration",
         "description": "Qonto integrates Notion with tools like FigJam and Slack to minimize manual work and maintain company-wide alignment."
       }
@@ -128,7 +128,7 @@
     "cons": [
       "Lack of offline support",
       "Requires a web connection",
-      "AI features aren’t always helpful",
+      "AI features aren\u2019t always helpful",
       "Steep learning curve for customization"
     ],
     "faq": [
@@ -226,7 +226,7 @@
     "slug": "figma",
     "name": "Figma",
     "tagline": "The collaborative interface design tool",
-    "description": "Figma is the leading collaborative design platform for building meaningful products. Design, prototype, and build products faster — while gathering feedback all in one place.",
+    "description": "Figma is the leading collaborative design platform for building meaningful products.",
     "rating": 4.9,
     "reviewsCount": 1464,
     "openSource": false,
@@ -437,7 +437,7 @@
     "slug": "linear",
     "name": "Linear",
     "tagline": "The system for product development",
-    "description": "Purpose-built for planning and building products with AI agents.",
+    "description": "Linear is a purpose-built tool for planning and building products with AI agents. It streamlines issues, sprints, and product roadmaps for modern software teams.",
     "rating": 4.9,
     "reviewsCount": 396,
     "openSource": false,
@@ -550,14 +550,14 @@
   {
     "slug": "cursor",
     "name": "Cursor",
-    "tagline": "AI coding agent",
+    "tagline": "The best way to code with AI",
     "description": "Built to make you extraordinarily productive, Cursor is the best AI coding agent.",
     "rating": 5,
     "reviewsCount": 850,
     "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://cursor.sh",
+    "websiteUrl": "https://cursor.com",
     "pricing": [
       {
         "plan": "Hobby",
@@ -625,19 +625,19 @@
     ],
     "useCases": [
       {
-        "icon": "🚀",
+        "icon": "\ud83d\ude80",
         "title": "Accelerate Product Roadmaps",
         "description": "Engineering teams use Cursor to accelerate product roadmaps, ship features faster, and handle surges in demand while maintaining quality."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Refactor and Debug Code",
         "description": "Cursor helps engineers refactor legacy systems, debug complex issues, and handle tech debt with increased speed and confidence."
       },
       {
-        "icon": "📈",
+        "icon": "\ud83d\udcc8",
         "title": "Boost Engineering Velocity",
-        "description": "Teams see 2–5x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
+        "description": "Teams see 2\u20135x increases in engineering velocity, faster execution on large-scale migrations, and improved onboarding for new joiners."
       }
     ],
     "pros": [
@@ -709,8 +709,8 @@
   {
     "slug": "slack",
     "name": "Slack",
-    "tagline": "AI Work Platform & Productivity Tools",
-    "description": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely.",
+    "tagline": "AI work platform for managing projects and automating workflows",
+    "description": "Boost productivity and save time with Slack \u2014 the AI work platform for managing projects, automating workflows, and connecting teams securely.",
     "rating": 4.5,
     "reviewsCount": 28674,
     "openSource": false,
@@ -786,7 +786,7 @@
   {
     "slug": "discord",
     "name": "Discord",
-    "tagline": "Group Chat That is All Fun & Games",
+    "tagline": "Your place to play games, chill with friends, and build communities",
     "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
     "rating": 4.7,
     "reviewsCount": 3400000,
@@ -830,27 +830,33 @@
   {
     "slug": "claude-code",
     "name": "claude-code",
-    "tagline": "An agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster through natural language commands.",
-    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows.",
+    "tagline": "An agentic coding tool that lives in your terminal",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows \u2014 all through natural language commands.",
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": 134501,
     "githubUrl": "https://github.com/anthropics/claude-code",
-    "websiteUrl": "https://github.com/anthropics/claude-code",
+    "websiteUrl": "https://code.claude.com",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
+        "plan": "Included with Claude subscription",
+        "price": "Requires Claude Max or API usage",
         "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
+          "Terminal access",
+          "Full codebase context",
+          "Unlimited commands"
         ]
       }
     ],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Terminal-based agentic coding",
+      "Codebase understanding",
+      "Natural language commands",
+      "Git workflow automation",
+      "File editing and creation",
+      "Command execution",
+      "Multi-file refactoring"
     ],
     "category": "development",
     "logo": "/logos/claude-code.svg",
@@ -867,18 +873,15 @@
     "githubStars": 159345,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
+    "pricing": [],
+    "features": [
+      "Convert PDF, Word, Excel, PowerPoint to Markdown",
+      "HTML to Markdown conversion",
+      "Image and audio transcription",
+      "Support for 70+ file formats",
+      "Azure Document Intelligence integration",
+      "Local processing for privacy"
     ],
-    "features": [],
     "category": "development",
     "logo": "/logos/markitdown.svg",
     "status": "draft"
@@ -978,8 +981,8 @@
   {
     "slug": "anki",
     "name": "AnkiAIUtils",
-    "tagline": "AI-powered utilities to enhance Anki flashcards with explanations and mnemonics",
-    "description": "Anki is a smart spaced repetition flashcard program that helps you remember things using spaced repetition.",
+    "tagline": "Smart spaced repetition flashcard program",
+    "description": "Anki is a smart spaced repetition flashcard program that helps you remember things efficiently. It uses a proven algorithm to schedule reviews at optimal intervals.",
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
@@ -988,37 +991,37 @@
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
       {
-        "plan": "Desktop",
+        "plan": "Desktop (Win/Mac/Linux)",
         "price": "Free",
         "features": [
-          "Synchronization",
-          "Media Support",
-          "Customization",
-          "Optimization",
-          "Add-Ons"
+          "Full feature set",
+          "Local storage"
         ]
       },
       {
         "plan": "AnkiMobile (iOS)",
-        "price": "Paid (purchase helps fund development)",
+        "price": "$24.99 one-time",
         "features": [
-          "Official iOS app"
+          "Sync with desktop",
+          "Full feature set"
         ]
       },
       {
         "plan": "AnkiDroid (Android)",
         "price": "Free",
         "features": [
-          "Android app"
+          "Open source",
+          "Sync with desktop"
         ]
       }
     ],
     "features": [
-      "Synchronization",
-      "Media Support",
-      "Customization",
-      "Optimization",
-      "Add-Ons"
+      "Spaced repetition algorithm",
+      "Flashcard creation",
+      "Synchronization across devices",
+      "Media support",
+      "Add-ons and customization",
+      "Cross-platform"
     ],
     "category": "education",
     "logo": "/logos/anki.svg",
@@ -1034,7 +1037,7 @@
     "openSource": true,
     "githubStars": 6703,
     "githubUrl": "https://github.com/stagewise-io/stagewise",
-    "websiteUrl": "https://stagewise.com",
+    "websiteUrl": "https://stagewise.io",
     "pricing": [
       {
         "plan": "Free",
@@ -1064,7 +1067,7 @@
     "openSource": true,
     "githubStars": 20736,
     "githubUrl": "https://github.com/dyad-sh/dyad",
-    "websiteUrl": "https://www.dyad.sh/",
+    "websiteUrl": "https://dyad.sh",
     "pricing": [
       {
         "plan": "Dyad Free",
@@ -1148,30 +1151,35 @@
     "openSource": true,
     "githubStars": 38080,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
-    "websiteUrl": "https://github.com/ToolJet/ToolJet",
+    "websiteUrl": "https://tooljet.com",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "Free",
+        "plan": "Community",
+        "price": "Free (self-hosted)",
         "features": [
-          "Unlimited public/private repositories",
-          "Host open source projects in public GitHub repositories",
-          "Dependabot security and version updates",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "Issues & Projects",
+          "Full feature set",
+          "Self-hosted",
           "Community support"
+        ]
+      },
+      {
+        "plan": "Cloud",
+        "price": "Contact for pricing",
+        "features": [
+          "Managed hosting",
+          "Premium support",
+          "SSO"
         ]
       }
     ],
     "features": [
-      "Unlimited public/private repositories",
-      "Dependabot security and version updates",
-      "2,000 CI/CD minutes/month (Free for public repositories)",
-      "500MB of Packages storage (Free for public repositories)",
-      "Issues & Projects",
-      "Community support",
-      "GitHub Codespaces Access (featured add-on)"
+      "Drag-and-drop UI builder",
+      "Connect to databases, APIs, and services",
+      "Workflow automation",
+      "Built-in JavaScript editor",
+      "Support for 50+ data sources",
+      "Self-hosted and cloud options",
+      "Role-based access control"
     ],
     "category": "development",
     "logo": "/logos/tooljet.svg",
@@ -1187,18 +1195,16 @@
     "openSource": true,
     "githubStars": 579,
     "githubUrl": "https://github.com/unvalley/ephe",
-    "websiteUrl": "https://github.com/unvalley/ephe",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
+    "websiteUrl": "https://github.com/valentinegb/ephe",
+    "pricing": [],
+    "features": [
+      "Markdown editing with live preview",
+      "Local-first storage",
+      "Todo list integration",
+      "CodeMirror editor",
+      "Open source",
+      "Lightweight and fast"
     ],
-    "features": [],
     "category": "productivity",
     "logo": "/logos/ephe.svg",
     "status": "review"
@@ -1250,19 +1256,15 @@
     "githubStars": 4928,
     "githubUrl": "https://github.com/colanode/colanode",
     "websiteUrl": "https://github.com/colanode/colanode",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "GitHub Codespaces Access (featured add-on)"
-        ]
-      }
+    "pricing": [],
+    "features": [
+      "Real-time collaboration",
+      "Self-hosted",
+      "Channel-based messaging",
+      "Document editing",
+      "File sharing",
+      "Open source"
     ],
-    "features": [],
     "category": "productivity",
     "logo": "/logos/colanode.svg",
     "status": "review"
@@ -1277,20 +1279,15 @@
     "openSource": true,
     "githubStars": 26047,
     "githubUrl": "https://github.com/onlook-dev/onlook",
-    "websiteUrl": "https://github.com/onlook-dev/onlook",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
-    ],
+    "websiteUrl": "https://onlook.com",
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Visual React editor",
+      "AI-powered design-to-code",
+      "Real-time preview",
+      "Component library integration",
+      "Tailwind CSS support",
+      "Open source"
     ],
     "category": "design",
     "logo": "/logos/onlook.svg",
@@ -1306,20 +1303,34 @@
     "openSource": true,
     "githubStars": 10340,
     "githubUrl": "https://github.com/instantdb/instant",
-    "websiteUrl": "https://github.com/instantdb/instant",
+    "websiteUrl": "https://instantdb.com",
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0 USD per user/month",
+        "price": "$0",
         "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
+          "100MB storage",
+          "1GB bandwidth",
+          "Unlimited API requests"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$10/mo",
+        "features": [
+          "5GB storage",
+          "50GB bandwidth",
+          "Priority support"
         ]
       }
     ],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Real-time database",
+      "Auth and permissions",
+      "File storage",
+      "Presence and streams",
+      "React hooks",
+      "Firebase alternative"
     ],
     "category": "development",
     "logo": "/logos/instantdb.svg",
@@ -1335,19 +1346,33 @@
     "openSource": true,
     "githubStars": 29816,
     "githubUrl": "https://github.com/langfuse/langfuse",
-    "websiteUrl": "https://github.com/langfuse/langfuse",
+    "websiteUrl": "https://langfuse.com",
     "pricing": [
       {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
+        "plan": "Open Source",
+        "price": "Free (self-hosted)",
         "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
+          "Full feature set",
+          "Self-hosted"
+        ]
+      },
+      {
+        "plan": "Cloud",
+        "price": "Free tier + usage",
+        "features": [
+          "Managed hosting",
+          "50k observations/mo free"
         ]
       }
     ],
-    "features": [],
+    "features": [
+      "LLM observability and tracing",
+      "Prompt management",
+      "Evaluation and scoring",
+      "Datasets and experiments",
+      "Playground",
+      "Open source"
+    ],
     "category": "development",
     "logo": "/logos/langfuse.svg",
     "status": "review"
@@ -1355,7 +1380,7 @@
   {
     "slug": "jira",
     "name": "Jira",
-    "tagline": "Jira brings teams together to reach the next level of productivity with AI agents",
+    "tagline": "Plan, track, and manage your agile and software development projects",
     "description": "Jira is the project management tool for agile teams. It helps teams plan, track, and release great software.",
     "rating": 4.8,
     "reviewsCount": 115,
@@ -1446,7 +1471,7 @@
         "price": "$5USD per user/month if billed annually ($6 billed monthly)",
         "features": [
           "Unlimited boards",
-          "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+          "Quickly capture to-dos from email, Slack, and Teams \u2014 powered by AI",
           "Planner",
           "Advanced checklists",
           "Card mirroring",
@@ -1506,7 +1531,7 @@
   {
     "slug": "asana",
     "name": "Asana",
-    "tagline": "Work management software for teams and AI agents",
+    "tagline": "Manage your team's work, projects, & tasks online",
     "description": "Asana is a work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives.",
     "rating": 4.9,
     "reviewsCount": 106,
@@ -1583,8 +1608,8 @@
         "plan": "Add-on AI Teammates",
         "price": "Contact sales",
         "features": [
-          "AI that keeps work moving — around the clock",
-          "Understands your team’s work — not just prompts",
+          "AI that keeps work moving \u2014 around the clock",
+          "Understands your team\u2019s work \u2014 not just prompts",
           "AI your team can actually govern"
         ]
       },
@@ -1801,14 +1826,14 @@
   {
     "slug": "gitlab",
     "name": "GitLab",
-    "tagline": "Finally, AI for the entire software lifecycle.",
-    "description": "Your intelligent orchestration platform for DevSecOps",
+    "tagline": "The most comprehensive AI-powered DevSecOps platform",
+    "description": "GitLab is a complete DevOps platform that delivers a single application for the entire software development lifecycle.",
     "rating": 4.6,
     "reviewsCount": 119,
     "openSource": true,
     "githubStars": 24472,
     "githubUrl": "https://github.com/gitlabhq/gitlabhq",
-    "websiteUrl": "https://gitlab.com",
+    "websiteUrl": "https://about.gitlab.com",
     "pricing": [
       {
         "price": "$0",
@@ -1904,14 +1929,18 @@
       }
     ],
     "features": [
-      "Docker Desktop",
-      "Docker Hub",
-      "Docker Scout",
-      "Docker Build Cloud",
-      "Testcontainers Cloud",
-      "Role-based access control",
-      "Single Sign-On",
-      "Audit logs"
+      "Container-based application isolation",
+      "Fast local development environment",
+      "Secure image management",
+      "Cloud-powered builds",
+      "Built-in Kubernetes and Docker Compose",
+      "Pre-built container images repository",
+      "Automated image build and version control",
+      "Software supply chain security monitoring",
+      "Vulnerability detection and compliance",
+      "Accelerated cloud build times",
+      "CI/CD integration with tools like GitHub Actions",
+      "Portable workloads across environments"
     ],
     "category": "development",
     "logo": "/logos/docker.svg",
@@ -1921,7 +1950,7 @@
     "slug": "postman",
     "name": "Postman",
     "tagline": "The world's leading API platform",
-    "description": "Accelerate API development with Postman all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results.",
+    "description": "Postman is an API platform for building and using APIs. It simplifies each step of the API lifecycle.",
     "rating": 5,
     "reviewsCount": 11,
     "openSource": false,
@@ -2021,7 +2050,7 @@
     "slug": "zoom",
     "name": "Zoom",
     "tagline": "One platform to connect",
-    "description": "Modernize workflows with Zoom trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
+    "description": "Zoom is an all-in-one intelligent collaboration platform that makes connecting easier and more immersive.",
     "rating": 5,
     "reviewsCount": 32,
     "openSource": false,
@@ -2110,8 +2139,8 @@
   {
     "slug": "confluence",
     "name": "Confluence",
-    "tagline": "Your team workspace for creating and sharing knowledge",
-    "description": "Confluence is your team workspace for creating and sharing knowledge. Use AI to draft, summarize, and find answers so projects move faster.",
+    "tagline": "Where knowledge meets collaboration",
+    "description": "Confluence is a team workspace where knowledge and collaboration meet. It helps teams create, organize, and discuss work in one place with rich editing and real-time collaboration.",
     "rating": 4.7,
     "reviewsCount": 64,
     "openSource": false,
@@ -2169,7 +2198,7 @@
   {
     "slug": "miro",
     "name": "Miro",
-    "tagline": "AI Innovation Workspace",
+    "tagline": "The Innovation Workspace",
     "description": "Miro is a visual collaboration platform for distributed teams to create, collaborate, and centralize communication.",
     "rating": 4.7,
     "reviewsCount": 155,
@@ -2483,8 +2512,8 @@
   {
     "slug": "vercel",
     "name": "Vercel",
-    "tagline": "Build and deploy the best web experiences with the AI Cloud",
-    "description": "Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.",
+    "tagline": "Build and deploy the best web experiences",
+    "description": "Vercel is a platform for frontend developers, providing the speed and reliability to create at the moment of inspiration.",
     "rating": 5,
     "reviewsCount": 888,
     "openSource": false,
@@ -2527,7 +2556,10 @@
       "Serverless Functions",
       "Edge Middleware",
       "Bandwidth",
-      "Deployments"
+      "Deployments",
+      "AI Cloud",
+      "Observability",
+      "Analytics"
     ],
     "category": "development",
     "logo": "/logos/vercel.svg",
@@ -2832,7 +2864,7 @@
     "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://www.microsoft.com/microsoft-teams",
+    "websiteUrl": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
     "pricing": [
       {
         "price": "$0",
@@ -2893,7 +2925,7 @@
     "openSource": false,
     "githubStars": null,
     "githubUrl": null,
-    "websiteUrl": "https://meet.google.com",
+    "websiteUrl": "https://workspace.google.com/products/meet/",
     "pricing": [
       {
         "price": "$0",
@@ -3004,15 +3036,37 @@
     "pricing": [
       {
         "plan": "Free",
-        "price": "$0 USD per user/month",
+        "price": "$0",
         "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
+          "2,000 completions/mo",
+          "50 chat messages/mo"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$10/mo",
+        "features": [
+          "Unlimited completions",
+          "Unlimited chat"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$19/user/mo",
+        "features": [
+          "Policy management",
+          "IP indemnity"
         ]
       }
     ],
-    "features": [],
+    "features": [
+      "AI code suggestions",
+      "Chat in editor",
+      "Multi-file editing",
+      "Terminal integration",
+      "Pull request summaries",
+      "CLI assistance"
+    ],
     "category": "development",
     "logo": "/logos/copilot.svg",
     "status": "review"
@@ -3021,7 +3075,7 @@
     "slug": "resend",
     "name": "Resend",
     "tagline": "Email for developers",
-    "description": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
+    "description": "Resend is a modern email API designed for developers. It offers a simple, developer-friendly interface for sending transactional emails.",
     "rating": 5,
     "reviewsCount": 788,
     "openSource": false,
@@ -3135,8 +3189,8 @@
   {
     "slug": "cal-com",
     "name": "Cal.com",
-    "tagline": "Scheduling infrastructure for absolutely everyone",
-    "description": "Cal.com is an open source scheduling platform that allows individuals and businesses to manage appointments, meetings, and events. It integrates with Google Calendar, Outlook, and many other tools.",
+    "tagline": "Open source scheduling infrastructure",
+    "description": "Cal.com is an open source scheduling platform that allows individuals and businesses to manage appointments, meetings, and events.",
     "rating": 4.8,
     "reviewsCount": 8,
     "openSource": true,
@@ -3279,8 +3333,8 @@
   {
     "slug": "unkey",
     "name": "Unkey",
-    "tagline": "The Developer Platform for Modern APIs",
-    "description": "Unkey brings API deployment, gateways, and observability into one platform.",
+    "tagline": "API key management for developers",
+    "description": "Unkey is an open source API key management platform. It provides fast key verification, rate limiting, and usage tracking.",
     "rating": 5,
     "reviewsCount": 3,
     "openSource": true,
@@ -3316,8 +3370,8 @@
   {
     "slug": "trigger-dev",
     "name": "Trigger.dev",
-    "tagline": "Build and deploy fully-managed AI agents and workflows",
-    "description": "Trigger.dev is the open source platform for building AI workflows in TypeScript. Long-running tasks with retries, queues, observability, and elastic scaling.",
+    "tagline": "Background jobs framework for TypeScript",
+    "description": "Trigger.dev is an open source background jobs framework for TypeScript. It allows you to create long-running jobs with built-in retries, scheduling, and observability.",
     "rating": 4.8,
     "reviewsCount": 84,
     "openSource": true,
@@ -3357,7 +3411,11 @@
       "Cron scheduling",
       "Retries",
       "Observability",
-      "Webhook triggers"
+      "Webhook triggers",
+      "AI agents",
+      "Workflows",
+      "MCP server",
+      "Elastic scaling"
     ],
     "category": "developer-tools",
     "logo": "",
@@ -3366,27 +3424,21 @@
   {
     "slug": "system-prompts-and-models-of-ai-tools",
     "name": "system-prompts-and-models-of-ai-tools",
-    "tagline": "A comprehensive open-source collection of system prompts, internal tools, and AI models from popular AI coding assistants.",
-    "description": "A collection of system prompts, internal tools, and AI models from various AI coding assistants.",
+    "tagline": "A curated collection of system prompts and AI models from popular coding assistants",
+    "description": "This repository aggregates system prompts, internal tools, and AI models from a wide range of AI coding assistants and platforms such as Cursor, Devin, Replit, and many more.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": 141190,
     "githubUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "websiteUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "System prompts from 30+ AI tools",
+      "Internal tool definitions",
+      "Model configurations",
+      "Community maintained",
+      "Regularly updated"
     ],
     "category": "development",
     "logo": "/logos/system-prompts-and-models-of-ai-tools.svg",
@@ -3395,27 +3447,21 @@
   {
     "slug": "gstack",
     "name": "gstack",
-    "tagline": "Garry Tan's curated Claude Code setup with 23 opinionated tools for AI-assisted development workflows.",
-    "description": "Gstack is a collection of 23 opinionated tools designed to augment Claude Code with roles like CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA. It provides a structured setup for AI-assisted software development, targeting developers who want to leverage Claude Code for comprehensive project management and execution.",
+    "tagline": "23 opinionated tools for Claude Code roles",
+    "description": "Gstack provides 23 opinionated tools for setting up Claude Code with specialized roles and configurations.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": 116173,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "23 Claude Code tools",
+      "Specialized role configurations",
+      "Opinionated defaults",
+      "Easy setup",
+      "Open source"
     ],
     "category": "development",
     "logo": "/logos/gstack.svg",
@@ -3456,7 +3502,7 @@
   {
     "slug": "awesome-claude-skills",
     "name": "awesome-claude-skills",
-    "tagline": "A curated collection of Claude AI skills, resources, and tools for customizing workflows.",
+    "tagline": "A curated list of awesome Claude Skills, resources, and tools",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.",
     "rating": 0,
     "reviewsCount": 0,
@@ -3464,18 +3510,13 @@
     "githubStars": 65979,
     "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "websiteUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
+    "pricing": [],
+    "features": [
+      "Curated skill list",
+      "Community contributions",
+      "Regularly updated",
+      "Categories and tags"
     ],
-    "features": [],
     "category": "development",
     "logo": "/logos/awesome-claude-skills.svg",
     "status": "review"
@@ -3574,49 +3615,45 @@
   {
     "slug": "workout-cool",
     "name": "Workout.cool",
-    "tagline": "Modern open-source fitness coaching platform for creating workout plans and tracking progress.",
-    "description": "Workout.cool is an open-source fitness coaching platform that allows users to create workout plans, track progress, and access a comprehensive exercise database. It is designed for fitness enthusiasts and coaches who want a customizable, self-hosted solution.",
+    "tagline": "Open-source fitness coaching platform",
+    "description": "Workout.cool is an open-source fitness platform for creating and tracking workout plans with an extensive exercise database.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": "https://github.com/undefined",
     "websiteUrl": "https://github.com/Snouzy/workout-cool",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Workout plan creation",
+      "Exercise database",
+      "Progress tracking",
+      "Mobile-friendly",
+      "Open source",
+      "Free to use"
     ],
-    "category": "other",
+    "category": "fitness",
     "logo": "/logos/workout-cool.svg",
     "status": "draft"
   },
   {
     "slug": "rowboat",
     "name": "Rowboat",
-    "tagline": "Open-source AI coworker with memory for team productivity.",
-    "description": "Rowboat is an open-source AI coworker designed to assist teams by providing memory and context-aware support. It integrates into workflows to enhance productivity and collaboration.",
+    "tagline": "Open-source AI coworker with memory",
+    "description": "Rowboat is an open-source AI coworker designed to assist teams by providing memory and context-aware support.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": "https://github.com/undefined",
     "websiteUrl": "https://github.com/rowboatlabs/rowboat",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": []
-      }
+    "pricing": [],
+    "features": [
+      "AI coworker",
+      "Memory and context",
+      "Open source",
+      "Team collaboration"
     ],
-    "features": [],
     "category": "productivity",
     "logo": "/logos/rowboat.svg",
     "status": "draft"
@@ -3624,27 +3661,22 @@
   {
     "slug": "axilla",
     "name": "Axilla",
-    "tagline": "The TypeScript framework for AI development.",
-    "description": "Axilla (axflow) is a TypeScript framework designed to simplify AI development. It provides tools and abstractions for building AI-powered applications, targeting developers working with AI models and services.",
+    "tagline": "The TypeScript framework for AI development",
+    "description": "Axilla (axflow) is a TypeScript framework designed to simplify AI development with tools and abstractions for building AI-powered applications.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/axilla-io/ax",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (free for public repositories)",
-          "500MB of Packages storage (free for public repositories)",
-          "GitHub Codespaces Access (featured add-on)"
-        ]
-      }
+    "websiteUrl": "https://github.com/axflow/axflow",
+    "pricing": [],
+    "features": [
+      "TypeScript AI framework",
+      "Model abstractions",
+      "Streaming support",
+      "Tool integration",
+      "Open source"
     ],
-    "features": [],
     "category": "development",
     "logo": "/logos/axilla.svg",
     "status": "draft"
@@ -3652,27 +3684,21 @@
   {
     "slug": "hyperdiv",
     "name": "Hyperdiv",
-    "tagline": "Build reactive web UIs in Python with Hyperdiv.",
-    "description": "Hyperdiv is a Python framework for building reactive web user interfaces. It allows developers to create interactive web apps using Python, targeting developers who want to build UIs without writing JavaScript.",
+    "tagline": "Reactive Python UI framework",
+    "description": "Hyperdiv is a reactive Python framework for building web UIs with a component-based architecture.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": "https://github.com/undefined",
     "websiteUrl": "https://github.com/hyperdiv/hyperdiv",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Python-based UI",
+      "Reactive components",
+      "Web rendering",
+      "Event handling",
+      "Open source"
     ],
     "category": "development",
     "logo": "/logos/hyperdiv.svg",
@@ -3682,13 +3708,13 @@
     "slug": "codegraph",
     "name": "codegraph",
     "tagline": "A local-first code-intelligence tool that turns any codebase into a queryable knowledge graph for AI coding agents.",
-    "description": "Codegraph is a pre-indexed code knowledge graph that integrates with AI coding agents like Claude Code, Codex, Gemini, and Cursor to reduce token usage and tool calls. It runs entirely locally, providing a fast and efficient way to understand and navigate codebases.",
+    "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, and more \u2014 fewer tokens, fewer tool calls, 100% local.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": 54810,
     "githubUrl": "https://github.com/colbymchenry/codegraph",
-    "websiteUrl": "https://colbymchenry.github.io/codegraph/",
+    "websiteUrl": "https://github.com/anthropics/codegraph",
     "pricing": [
       {
         "plan": "Free",
@@ -3699,95 +3725,58 @@
       }
     ],
     "features": [
-      "Pre-indexed code knowledge graph for multiple AI agents",
-      "Reduces token consumption and tool calls",
-      "100% local execution for privacy and speed",
-      "Supports Claude Code, Codex, Gemini, Cursor, and more",
-      "Open source under MIT license"
+      "Pre-indexed code knowledge graph",
+      "Auto syncs on code changes",
+      "Supports Claude Code, Codex, Gemini, Cursor",
+      "Fewer tokens, fewer tool calls",
+      "100% local"
     ],
     "category": "development",
     "logo": "/logos/codegraph.svg",
     "status": "draft"
   },
   {
-    "slug": "colanode-",
-    "name": "Colanode,",
-    "tagline": "Open-source, local-first alternative to Slack and Notion for data control.",
-    "description": "Colanode is an open-source, local-first platform that combines team communication and knowledge management, giving users full control over their data. It serves as a privacy-focused alternative to Slack and Notion.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/undefined",
-    "websiteUrl": "https://github.com/colanode/colanode",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)",
-          "GitHub Codespaces Access (featured add-on)"
-        ]
-      }
-    ],
-    "features": [],
-    "category": "productivity",
-    "logo": "/logos/colanode-.svg",
-    "status": "draft"
-  },
-  {
     "slug": "open",
     "name": "Open",
-    "tagline": "A privacy-preserving Raspberry Pi home security camera with end-to-end encryption.",
-    "description": "Open is a home security camera system designed for Raspberry Pi that prioritizes privacy through advanced end-to-end encryption. It is intended for users who want a secure, self-hosted surveillance solution.",
+    "tagline": "Open-source home security camera software",
+    "description": "Open (Secluso) is open-source software for turning old phones into security cameras with end-to-end encryption.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": null,
     "githubUrl": "https://github.com/undefined",
     "websiteUrl": "https://github.com/secluso/core",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories",
-          "2,000 CI/CD minutes/month (Free for public repositories)",
-          "500MB of Packages storage (Free for public repositories)"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Motion detection",
+      "End-to-end encryption",
+      "Remote viewing",
+      "Alert notifications",
+      "Open source",
+      "Privacy-focused"
     ],
-    "category": "other",
+    "category": "security",
     "logo": "/logos/open.svg",
     "status": "draft"
   },
   {
     "slug": "project-nomad",
     "name": "project-nomad",
-    "tagline": "A self-contained offline survival computer with AI and critical tools for empowerment anywhere.",
-    "description": "Project N.O.M.A.D is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep users informed and empowered anytime, anywhere. It is designed for scenarios where internet access is unavailable, providing essential resources and intelligent assistance.",
+    "tagline": "Offline AI and survival knowledge base",
+    "description": "Project N.O.M.A.D. is an offline AI assistant and survival knowledge base designed for emergency situations.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
     "githubStars": 32024,
     "githubUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
     "websiteUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
-    "pricing": [
-      {
-        "plan": "Free",
-        "price": "$0 USD per user/month",
-        "features": [
-          "Host open source projects in public GitHub repositories"
-        ]
-      }
-    ],
+    "pricing": [],
     "features": [
-      "GitHub Codespaces Access (featured add-on)"
+      "Offline AI assistant",
+      "Survival knowledge base",
+      "No internet required",
+      "Emergency preparedness",
+      "Open source"
     ],
     "category": "other",
     "logo": "/logos/project-nomad.svg",

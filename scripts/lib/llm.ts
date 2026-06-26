@@ -1,11 +1,45 @@
 /**
  * Unified LLM client supporting Ollama and DeepSeek API
  * Supports text generation and vision (image understanding)
+ *
+ * DeepSeek calls use Node.js https directly to bypass SOCKS/HTTP proxy
+ * env vars (e.g. from ShadowsocksX-NG). DeepSeek is a China-based API
+ * that should be reached directly; proxy interception causes socket
+ * closures on long LLM requests.
  */
+
+import https from "https";
 
 interface LlmResponse {
   content: string;
   usage?: { prompt_tokens: number; completion_tokens: number };
+}
+
+function httpsPost(url: string, headers: Record<string, string>, body: string, timeoutMs = 120000): Promise<{ status: number; body: string }> {
+  return new Promise((resolve, reject) => {
+    const parsed = new URL(url);
+    const req = https.request(
+      {
+        hostname: parsed.hostname,
+        port: parsed.port || 443,
+        path: parsed.pathname + parsed.search,
+        method: "POST",
+        headers: { ...headers, "Content-Length": Buffer.byteLength(body) },
+        timeout: timeoutMs,
+      },
+      (res) => {
+        const chunks: Buffer[] = [];
+        res.on("data", (chunk: Buffer) => chunks.push(chunk));
+        res.on("end", () => {
+          resolve({ status: res.statusCode || 0, body: Buffer.concat(chunks).toString("utf-8") });
+        });
+      }
+    );
+    req.on("error", reject);
+    req.on("timeout", () => { req.destroy(); reject(new Error("DeepSeek request timed out")); });
+    req.write(body);
+    req.end();
+  });
 }
 
 /**
@@ -18,31 +52,28 @@ export async function callLlm(systemPrompt: string, userPrompt: string, options?
 
   if (provider === "deepseek") {
     if (!apiKey) throw new Error("LLM_API_KEY required for DeepSeek");
-    const res = await fetch("https://api.deepseek.com/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model,
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt },
-        ],
-        ...(options?.jsonMode !== false ? { response_format: { type: "json_object" } } : {}),
-        temperature: 0.3,
-      }),
+    const payload = JSON.stringify({
+      model,
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt },
+      ],
+      ...(options?.jsonMode !== false ? { response_format: { type: "json_object" } } : {}),
+      temperature: 0.3,
     });
-    if (!res.ok) throw new Error(`DeepSeek API error: ${res.status} ${await res.text()}`);
-    const data = await res.json();
+    const res = await httpsPost("https://api.deepseek.com/chat/completions", {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    }, payload);
+    if (res.status !== 200) throw new Error(`DeepSeek API error: ${res.status} ${res.body}`);
+    const data = JSON.parse(res.body);
     return {
       content: data.choices[0].message.content,
       usage: data.usage,
     };
   }
 
-  // Ollama default
+  // Ollama default — local, no proxy issue
   const ollamaUrl = process.env.OLLAMA_URL || "http://localhost:11434";
   const res = await fetch(`${ollamaUrl}/api/generate`, {
     method: "POST",

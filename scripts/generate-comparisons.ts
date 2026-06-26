@@ -197,6 +197,10 @@ Write the comparison article now.`;
 }
 
 async function main() {
+  const slugFilter = process.argv.includes("--slug")
+    ? process.argv[process.argv.indexOf("--slug") + 1]
+    : undefined;
+
   const comparisons = loadComparisons();
   const tools = loadTools();
 
@@ -224,6 +228,7 @@ async function main() {
 
   console.log(`📝 Generate Comparisons starting...`);
   console.log(`   Comparisons: ${validComparisons.length} (of ${comparisons.length} total)`);
+  if (slugFilter) console.log(`   Slug filter: ${slugFilter}`);
   console.log(`   LLM: ${useLlm ? `${provider} (real content)` : "disabled (generation skipped)"}`);
 
   let generated = 0;
@@ -235,7 +240,11 @@ async function main() {
     console.warn("  ⛔ LLM is not configured. Skipping generation instead of writing fallback content.");
   }
 
-  for (const comp of validComparisons) {
+  const targetComparisons = slugFilter
+    ? validComparisons.filter((c) => c.toolA === slugFilter || c.toolB === slugFilter)
+    : validComparisons;
+
+  for (const comp of targetComparisons) {
     const filePath = path.join(CONTENT_DIR, `${comp.slug}.md`);
     const toolA = getToolBySlug(tools, comp.toolA)!;
     const toolB = getToolBySlug(tools, comp.toolB)!;
