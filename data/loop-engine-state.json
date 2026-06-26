@@ -1,0 +1,12 @@
+{
+  "runId": "2026-06-25T12:30:59.400Z",
+  "startedAt": "2026-06-25T12:30:59.401Z",
+  "maxIterations": 1,
+  "currentIteration": 0,
+  "iterations": [],
+  "totalCostCap": 100,
+  "llmCallsUsed": 0,
+  "slugsProcessed": [],
+  "status": "completed",
+  "fixLog": []
+}

@@ -1,0 +1,74 @@
+name: AutoClaw — Loop Engine
+
+on:
+  schedule:
+    # Run weekly on Thursday at 4am UTC (audit runs Wednesday 2am)
+    - cron: "0 4 * * 4"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Fix specific tool (leave empty for all)"
+        required: false
+        type: string
+      max_iterations:
+        description: "Max loop iterations"
+        required: false
+        default: "3"
+        type: string
+      mode:
+        description: "Fix mode"
+        required: false
+        default: "all"
+        type: choice
+        options:
+          - all
+          - data
+          - content
+      dry_run:
+        description: "Dry run (plan only, no fixes)"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  loop-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm install
+
+      - name: Run Loop Engine
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          OLLAMA_API_KEYS: ${{ secrets.OLLAMA_API_KEYS }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.slug }}" ]; then ARGS="$ARGS --slug ${{ inputs.slug }}"; fi
+          if [ -n "${{ inputs.max_iterations }}" ]; then ARGS="$ARGS --max-iterations ${{ inputs.max_iterations }}"; fi
+          if [ -n "${{ inputs.mode }}" ]; then ARGS="$ARGS --mode ${{ inputs.mode }}"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          npx tsx scripts/loop-engine.ts $ARGS
+
+      - name: Run SEO Audit
+        if: ${{ inputs.dry_run != 'true' }}
+        run: npm run seo:audit
+
+      - name: Commit fixes
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "AutoClaw Bot"
+          git config user.email "bot@toolalts.dev"
+          git add data/tools.json data/loop-engine-state.json data/audit-results.json src/content/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: loop engine auto-fix pass $(date -u +%Y-%m-%d)"
+            git push
+          fi
