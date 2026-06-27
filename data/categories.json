@@ -7,5 +7,8 @@
   { "slug": "email", "name": "Email", "description": "Transactional email, email APIs, newsletters, and deliverability tools." },
   { "slug": "scheduling", "name": "Scheduling", "description": "Calendar booking, availability management, and meeting scheduling tools." },
   { "slug": "developer-tools", "name": "Developer Tools", "description": "API infrastructure, developer platforms, automation, and engineering workflow tools." },
+  { "slug": "education", "name": "Education", "description": "Learning platforms, flashcards, courses, and educational tools." },
+  { "slug": "fitness", "name": "Fitness", "description": "Workout trackers, exercise databases, and health coaching tools." },
+  { "slug": "security", "name": "Security", "description": "Security cameras, encryption tools, and privacy-focused software." },
   { "slug": "other", "name": "Other", "description": "Useful software tools that do not fit a primary ToolAlts category yet." }
 ]
