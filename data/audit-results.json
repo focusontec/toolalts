@@ -7,7 +7,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.607Z"
+      "auditedAt": "2026-07-01T06:35:03.831Z"
     },
     {
       "slug": "obsidian",
@@ -16,7 +16,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.831Z"
     },
     {
       "slug": "figma",
@@ -25,7 +25,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.831Z"
     },
     {
       "slug": "penpot",
@@ -34,7 +34,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.831Z"
     },
     {
       "slug": "linear",
@@ -43,7 +43,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "github-issues",
@@ -52,7 +52,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "cursor",
@@ -61,7 +61,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "vscode",
@@ -70,7 +70,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "slack",
@@ -79,7 +79,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "discord",
@@ -88,7 +88,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "system-prompts-and-models-of-ai-tools",
@@ -108,7 +108,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "claude-code",
@@ -117,7 +117,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "markitdown",
@@ -137,7 +137,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.832Z"
     },
     {
       "slug": "gstack",
@@ -157,7 +157,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "deer-flow",
@@ -166,7 +166,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "awesome-claude-skills",
@@ -186,7 +186,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "nanobot",
@@ -195,7 +195,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "antigravity-manager",
@@ -204,7 +204,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "composio",
@@ -213,7 +213,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "claude-code-templates",
@@ -222,7 +222,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "gerbil",
@@ -329,7 +329,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "workout-cool",
@@ -358,7 +358,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "anki",
@@ -367,7 +367,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "codinit-",
@@ -608,7 +608,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "stagewise",
@@ -617,7 +617,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "sgai",
@@ -839,7 +839,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "dyad",
@@ -848,7 +848,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "tooljet",
@@ -857,7 +857,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "ephe",
@@ -877,7 +877,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "skip",
@@ -886,7 +886,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "colanode",
@@ -906,27 +906,16 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "onlook",
       "name": "Onlook",
-      "accuracyScore": 97,
-      "fieldChecks": [
-        {
-          "field": "pricing",
-          "storedValue": "",
-          "actualValue": "missing",
-          "verdict": "MISSING",
-          "source": "inference",
-          "note": "pricing missing or empty"
-        }
-      ],
-      "recommendations": [
-        "pricing: pricing missing or empty"
-      ],
+      "accuracyScore": 100,
+      "fieldChecks": [],
+      "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "instantdb",
@@ -935,7 +924,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.833Z"
     },
     {
       "slug": "langfuse",
@@ -944,7 +933,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "jira",
@@ -953,7 +942,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "trello",
@@ -962,7 +951,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "asana",
@@ -971,7 +960,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "clickup",
@@ -980,7 +969,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "gitlab",
@@ -989,7 +978,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "docker",
@@ -998,7 +987,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "postman",
@@ -1007,7 +996,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "zoom",
@@ -1016,7 +1005,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "confluence",
@@ -1025,7 +1014,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "miro",
@@ -1034,7 +1023,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.834Z"
     },
     {
       "slug": "airtable",
@@ -1043,7 +1032,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "zapier",
@@ -1052,7 +1041,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "vercel",
@@ -1061,7 +1050,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "supabase",
@@ -1070,7 +1059,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "microsoft-teams",
@@ -1079,7 +1068,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "google-meet",
@@ -1088,7 +1077,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "telegram",
@@ -1097,7 +1086,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "github-copilot",
@@ -1106,7 +1095,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "resend",
@@ -1126,7 +1115,7 @@
         "logo: logo path missing"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "cal-com",
@@ -1146,7 +1135,7 @@
         "logo: logo path missing"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "unkey",
@@ -1166,7 +1155,7 @@
         "logo: logo path missing"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.835Z"
     },
     {
       "slug": "trigger-dev",
@@ -1186,7 +1175,7 @@
         "logo: logo path missing"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.608Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "axilla",
@@ -1215,7 +1204,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "hyperdiv",
@@ -1244,7 +1233,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.836Z"
     },
     {
       "slug": "codegraph",
@@ -1253,7 +1242,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     },
     {
       "slug": "colanode-",
@@ -1404,7 +1393,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     },
     {
       "slug": "project-nomad",
@@ -1424,7 +1413,7 @@
         "pricing: pricing missing or empty"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     },
     {
       "slug": "container",
@@ -1433,7 +1422,7 @@
       "fieldChecks": [],
       "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     },
     {
       "slug": "extend",
@@ -1455,7 +1444,7 @@
       "concerns": [
         "openSource: Open source but no GitHub URL"
       ],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     },
     {
       "slug": "headroom",
@@ -1475,7 +1464,7 @@
         "tagline: Tagline 157 chars > 120"
       ],
       "concerns": [],
-      "auditedAt": "2026-06-27T09:22:06.609Z"
+      "auditedAt": "2026-07-01T06:35:03.837Z"
     }
   ],
   "content": [
@@ -1483,231 +1472,200 @@
       "slug": "cursor-vs-vscode",
       "type": "comparison",
       "qualityScore": 85,
-      "accuracyScore": 80,
-      "seoScore": 90,
+      "accuracyScore": 95,
+      "seoScore": 75,
       "issues": [
         {
-          "severity": "high",
-          "message": "Cursor rating is stated as 4.7/5 with 5,400 reviews, but tool data shows rating 5 with 850 reviews. The numbers are inaccurate."
+          "severity": "medium",
+          "message": "The article does not mention Cursor's credit-based pricing and potential unexpected costs, which is a notable con from the tool data."
         },
         {
           "severity": "medium",
-          "message": "Cursor pricing details are outdated: article mentions 'Hobby (Free): 2,000 AI autocompletions per month, 50 slow-premium requests, limited chat' but tool data shows 'Limited Agent requests, Limited Tab completions' without specific counts. Also, 'Business ($40/month)' should be 'Teams Standard ($40/user/mo)' and 'Enterprise (Custom)' is missing."
-        },
-        {
-          "severity": "medium",
-          "message": "Article states Cursor 'Supports VS Code extensions (limited compatibility)' but tool data does not mention extension compatibility. This may be misleading without clarification."
+          "message": "The article lacks specific mention of VS Code's open-source nature and its large community (186k GitHub stars), which are strong selling points."
         },
         {
           "severity": "low",
-          "message": "VS Code tagline in tool data includes 'AI-powered coding with GitHub Copilot' but article does not mention Copilot integration, which is a key feature."
+          "message": "The article could benefit from including a brief mention of Cursor's integrations (Figma, Linear) and VS Code's remote development capabilities."
         },
         {
           "severity": "low",
-          "message": "Article says VS Code has '45,000+ extensions' but tool data does not specify count. While likely accurate, it's not cross-referenced."
+          "message": "The 'Short answer' section could be more concise and directly address the core difference: Cursor is an AI-first fork of VS Code."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature table, pricing, and use cases.",
-        "Balanced comparison highlighting strengths of both tools.",
-        "Good use of headings and bullet points for readability.",
-        "Provides actionable recommendations for different user profiles."
+        "Clear, balanced comparison with practical decision table",
+        "Accurate description of Cursor as an AI-first fork of VS Code",
+        "Useful migration considerations and practical recommendations",
+        "Well-structured with distinct sections for each tool's strengths"
       ],
       "recommendations": [
-        "Update Cursor rating and review count to match tool data (5/5, 850 reviews).",
-        "Revise Cursor pricing section to reflect current plans: Hobby (free with limited Agent/Tab), Pro ($20/mo), Teams Standard ($40/user/mo), Enterprise (custom).",
-        "Clarify Cursor's extension compatibility: it supports VS Code extensions but some may not work perfectly.",
-        "Add mention of GitHub Copilot integration in VS Code section.",
-        "Consider adding a note about Cursor's credit-based pricing and potential costs."
+        "Add a note about Cursor's credit-based pricing and potential costs",
+        "Highlight VS Code's open-source nature and large community",
+        "Include a brief mention of key integrations for both tools",
+        "Optimize headings for SEO by including primary keywords like 'Cursor vs VS Code'"
       ],
-      "auditedAt": "2026-06-17T07:24:44.529Z"
+      "auditedAt": "2026-07-01T06:35:14.946Z"
     },
     {
       "slug": "figma-vs-penpot",
       "type": "comparison",
       "qualityScore": 85,
-      "accuracyScore": 70,
+      "accuracyScore": 95,
       "seoScore": 80,
       "issues": [
         {
-          "severity": "high",
-          "message": "Pricing for Figma is incorrect: Starter plan features and Professional price ($12 vs $16) are wrong; Organization price is $55 not $45; missing Enterprise plan."
-        },
-        {
-          "severity": "high",
-          "message": "Penpot pricing is incomplete: only mentions free self-hosted and cloud, but tool data shows Professional ($0), Unlimited ($7), Enterprise ($25), and Private Server ($50k/year) plans."
-        },
-        {
-          "severity": "medium",
-          "message": "Penpot's feature comparison is outdated: it now supports plugins, design tokens, and more advanced prototyping (interactions, transitions) as per tool data."
-        },
-        {
-          "severity": "medium",
-          "message": "Figma's offline mode description is vague; tool data does not mention offline mode, and the desktop app's capabilities are not detailed."
+          "severity": "low",
+          "message": "The article mentions 'Figma Motion' and 'Figma Sites' which are not listed in the provided features for Figma; however, these may be newer features not captured in the data."
         },
         {
           "severity": "low",
-          "message": "The article lacks a clear meta description and keyword optimization for SEO."
+          "message": "The article does not explicitly mention Penpot's GitHub stars or open-source community strength, which could be a useful detail for readers."
         }
       ],
       "strengths": [
-        "Well-structured comparison with clear sections and a verdict.",
-        "Accurate high-level overview of Figma and Penpot's philosophies.",
-        "Good use of a feature comparison table for quick reference."
+        "Clear, decision-oriented structure with a short answer and decision table.",
+        "Balanced comparison that acknowledges trade-offs rather than declaring a winner.",
+        "Practical migration considerations and pilot recommendation.",
+        "Accurate representation of Figma's ecosystem maturity and Penpot's open-source advantages."
       ],
       "recommendations": [
-        "Correct Figma pricing to match tool data: Starter (free with 150 AI credits), Professional ($16/mo), Organization ($55/mo), Enterprise ($90/mo).",
-        "Update Penpot pricing to include all plans: Professional (free), Unlimited ($7/user/mo), Enterprise ($25/user/mo), Private Server ($50k/year).",
-        "Update Penpot features to reflect current capabilities: plugins, advanced prototyping (interactions, transitions), design tokens, etc.",
-        "Add a meta description and optimize headings for target keywords like 'Figma vs Penpot comparison'.",
-        "Include internal links to other relevant comparisons or tool pages on the directory."
+        "Add a brief mention of Penpot's GitHub stars (54,683) to highlight its open-source community.",
+        "Include a note about Figma's AI credits limit (150/day, 500/month) for transparency.",
+        "Consider adding a 'Key Features Comparison' table for quick scanning.",
+        "Optimize meta description to include primary keywords like 'Figma vs Penpot comparison'."
       ],
-      "auditedAt": "2026-06-17T07:25:13.201Z"
+      "auditedAt": "2026-07-01T06:35:19.415Z"
     },
     {
       "slug": "linear-vs-github-issues",
       "type": "comparison",
-      "qualityScore": 85,
-      "accuracyScore": 70,
-      "seoScore": 80,
+      "qualityScore": 92,
+      "accuracyScore": 95,
+      "seoScore": 88,
       "issues": [
         {
-          "severity": "high",
-          "message": "Pricing for Linear is outdated: Free plan now includes unlimited members and 2 teams, not 10 users; Standard plan is $10/user/month (Basic), not $8; Plus plan is $16/user/month (Business), not $14; Enterprise is custom, not listed. Also, GitHub Issues Free plan includes unlimited repos and 2,000 CI/CD minutes, not just basic issues and 500 MB storage."
-        },
-        {
-          "severity": "high",
-          "message": "Rating for Linear is based on 7,600 reviews, but provided data shows 396 reviews. This is a significant discrepancy."
-        },
-        {
-          "severity": "medium",
-          "message": "Feature comparison table inaccuracies: Linear does have project boards via Projects feature (though not native); GitHub Issues has built-in roadmaps via Projects (beta). Also, 'Open source' column is misleading as both are not open source, but GitHub Issues is free for public repos."
-        },
-        {
-          "severity": "medium",
-          "message": "Missing key features: Linear's AI features (Linear Agent, Triage Intelligence, Code Intelligence) are not mentioned. GitHub Issues' integration with GitHub Actions and Projects is understated."
+          "severity": "low",
+          "message": "The article mentions 'Linear Agent automations (beta)' but the tool data shows 'Agent platform' in Free plan and 'Linear Agent automations (beta)' in Business plan; this is accurate but could be clarified."
         },
         {
           "severity": "low",
-          "message": "The article uses 'cycles' for Linear but GitHub uses 'milestones' which are date-based; however, GitHub also has 'iterations' in Projects. Could be clarified."
-        },
-        {
-          "severity": "low",
-          "message": "SEO: Could include more internal links to related tools or categories, and meta description is missing."
+          "message": "The article states 'GitHub Issues is included with GitHub usage' but does not mention that GitHub has different plans (Free, Team, Enterprise) which may affect features; this is minor."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature table, pricing, and use-case sections.",
-        "Provides actionable guidance for different team types.",
-        "Good use of bullet points and comparison table for readability."
+        "Clear and structured comparison with decision table",
+        "Accurate representation of both tools' strengths and use cases",
+        "Practical recommendation that acknowledges hybrid usage",
+        "Good balance of detail and readability"
       ],
       "recommendations": [
-        "Update pricing and plan details to match current data from tool websites.",
-        "Correct the review count for Linear to 396 (or verify source).",
-        "Add mention of Linear's AI features and GitHub's Projects roadmaps.",
-        "Include internal links to other project management tools or category pages.",
-        "Add a meta description and optimize headings for target keywords."
+        "Add a brief note about GitHub's plan tiers (Free, Team, Enterprise) for completeness",
+        "Include a link to the pricing pages for both tools",
+        "Consider adding a short section on integrations with other tools"
       ],
-      "auditedAt": "2026-06-17T07:25:19.400Z"
+      "auditedAt": "2026-07-01T06:35:23.251Z"
     },
     {
       "slug": "ai-code-editors-compared",
       "type": "blog",
-      "qualityScore": 82,
-      "accuracyScore": 90,
-      "seoScore": 75,
-      "issues": [
-        {
-          "severity": "medium",
-          "message": "The article is cut off mid-sentence in the 'When to Choose VS Code' section, leaving the content incomplete."
-        },
-        {
-          "severity": "low",
-          "message": "The article mentions 'WS' as an abbreviation for WSL but it's incomplete; should be 'WSL'."
-        },
-        {
-          "severity": "low",
-          "message": "The pricing section for Cursor states 'Free Plan: 2,000 completions per month' but does not specify if this is for code completions only or includes other AI features; could be clarified."
-        }
-      ],
-      "strengths": [
-        "Comprehensive comparison with clear feature breakdown and use cases.",
-        "Well-structured with tables and sections for easy reading.",
-        "Accurate pricing and feature descriptions for both tools."
-      ],
-      "recommendations": [
-        "Complete the truncated section on VS Code use cases.",
-        "Add a conclusion or summary to help readers decide.",
-        "Include internal links to other relevant articles on the directory (e.g., 'Best AI Coding Tools 2025').",
-        "Optimize meta description and headings for target keywords like 'Cursor vs VS Code 2025'."
-      ],
-      "auditedAt": "2026-06-17T07:28:16.031Z"
-    },
-    {
-      "slug": "best-open-source-design-tools",
-      "type": "blog",
       "qualityScore": 85,
       "accuracyScore": 90,
       "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article is cut off mid-sentence in the Blender section, missing the conclusion and comparison table mentioned in the introduction."
+          "message": "The article is cut off mid-sentence at the end, missing the conclusion and final use case for VS Code."
         },
         {
           "severity": "low",
-          "message": "The 'Pricing' section for Penpot mentions 'optional paid enterprise features (coming 2025)' which may be speculative; verify current status."
+          "message": "The pricing for Cursor Pro is stated as $20/month or $192/year, but the yearly price should be $192 (16*12) which is correct, but the phrasing could be clearer."
         },
         {
           "severity": "low",
-          "message": "GIMP's CMYK support description could be more precise; it's not just 'basic' but requires plugins for professional work."
+          "message": "The comparison table mentions 'Basic SSH support' for Cursor, but Cursor actually supports Remote SSH via VS Code extensions, so it's not as limited as implied."
         }
       ],
       "strengths": [
-        "Clear structure with tool descriptions, features, pros/cons, and pricing.",
-        "Provides actionable comparisons and ideal user profiles.",
-        "Up-to-date information on recent versions (e.g., Penpot v2.0, GIMP v3.0, Inkscape v1.4, Blender v4.0+)."
+        "Comprehensive feature comparison with a clear table.",
+        "Real-world use cases help readers decide based on their needs.",
+        "Up-to-date with 2025 context and pricing."
       ],
       "recommendations": [
-        "Complete the Blender section and add the promised comparison table and conclusion.",
-        "Add internal links to other relevant articles on the site (e.g., 'best design tools' or 'open source alternatives').",
-        "Include a meta description and optimize headings for target keywords (e.g., 'open source design tools 2025')."
+        "Complete the article by adding the missing conclusion and the full VS Code use case.",
+        "Clarify Cursor's remote development capabilities to avoid understatement.",
+        "Add internal links to other relevant articles on the site (e.g., 'Best AI Coding Assistants')."
       ],
-      "auditedAt": "2026-06-17T07:28:23.608Z"
+      "auditedAt": "2026-07-01T06:36:27.249Z"
+    },
+    {
+      "slug": "best-open-source-design-tools",
+      "type": "blog",
+      "qualityScore": 78,
+      "accuracyScore": 90,
+      "seoScore": 72,
+      "issues": [
+        {
+          "severity": "medium",
+          "message": "Article is incomplete; Blender section cuts off mid-sentence."
+        },
+        {
+          "severity": "medium",
+          "message": "Missing a comparison table as promised in the introduction."
+        },
+        {
+          "severity": "low",
+          "message": "No internal or external links provided for further reading."
+        },
+        {
+          "severity": "low",
+          "message": "SEO meta description and headings could be more keyword-rich."
+        }
+      ],
+      "strengths": [
+        "Clear structure with tool breakdowns, pros/cons, and target audience.",
+        "Accurate descriptions of each tool's features and capabilities.",
+        "Useful for readers seeking free alternatives to proprietary software."
+      ],
+      "recommendations": [
+        "Complete the Blender section and add the promised comparison table.",
+        "Add internal links to other relevant articles on the site.",
+        "Include a meta description with target keywords like 'open source design tools 2025'.",
+        "Consider adding a summary or recommendation section for different user types."
+      ],
+      "auditedAt": "2026-07-01T06:36:36.570Z"
     },
     {
       "slug": "why-obsidian-beats-notion",
       "type": "blog",
       "qualityScore": 85,
-      "accuracyScore": 90,
-      "seoScore": 75,
+      "accuracyScore": 95,
+      "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article is cut off mid-sentence in the comparison table, leaving incomplete content."
+          "message": "The article cuts off mid-sentence in the comparison table, leaving the table incomplete."
         },
         {
           "severity": "low",
-          "message": "The article lacks a clear introduction or summary of what will be covered, which could improve readability."
+          "message": "The article could benefit from a brief mention of Obsidian's sync service (Obsidian Sync) to address the collaboration gap more fully."
         },
         {
           "severity": "low",
-          "message": "No internal links to other relevant articles or tool pages on the directory."
+          "message": "The article lacks internal links to other relevant articles on the directory (e.g., tool reviews, PKMS guides)."
         }
       ],
       "strengths": [
-        "Clear, persuasive argument for Obsidian over Notion with specific, well-explained points.",
-        "Good use of headings and a comparison table for easy scanning.",
-        "Accurate factual claims about Obsidian's local-first, Markdown, and plugin ecosystem.",
-        "Balanced by acknowledging Notion's strengths in collaboration and databases."
+        "Clear, persuasive argument for Obsidian over Notion for personal knowledge management.",
+        "Well-structured with logical sections and a comparison table.",
+        "Accurate and detailed comparison of key features (local-first, Markdown, plugins, performance).",
+        "Fairly acknowledges Notion's strengths in collaboration and databases."
       ],
       "recommendations": [
-        "Complete the truncated comparison table.",
-        "Add a brief introduction outlining the article's structure.",
-        "Include internal links to related tool pages (e.g., Obsidian, Notion) and other PKMS articles.",
-        "Optimize the title and headings for target keywords like 'Obsidian vs Notion 2025'."
+        "Complete the comparison table with all rows and ensure it is fully displayed.",
+        "Add internal links to related articles (e.g., 'Best PKMS Tools 2025', 'Obsidian vs Roam Research').",
+        "Consider adding a brief section on Obsidian Sync to address the collaboration limitation more thoroughly."
       ],
-      "auditedAt": "2026-06-17T07:28:47.254Z"
+      "auditedAt": "2026-07-01T06:37:05.132Z"
     },
     {
       "slug": "anki",
@@ -2912,46 +2870,36 @@
     {
       "slug": "notion-vs-obsidian",
       "type": "comparison",
-      "qualityScore": 88,
-      "accuracyScore": 85,
-      "seoScore": 90,
+      "qualityScore": 85,
+      "accuracyScore": 90,
+      "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "Pricing for Notion Plus and Business is listed as $8 and $16 per user/mo, but tool data shows $10 and $20 per member/mo. Update to reflect current pricing."
+          "message": "The article does not mention Notion's AI features, which are a key differentiator in the current market."
         },
         {
           "severity": "medium",
-          "message": "Obsidian Sync pricing is listed as $50/yr, but tool data shows $4/user/month billed annually ($48/yr). Minor discrepancy; consider updating for accuracy."
-        },
-        {
-          "severity": "medium",
-          "message": "Article states Obsidian has '1000+ community plugins' but tool data does not confirm this number. While likely accurate, it's not verified by provided data."
+          "message": "The article lacks specific pricing information for both tools, which is important for readers making a decision."
         },
         {
           "severity": "low",
-          "message": "The 'At a Glance' table lists 'Offline Access' for Notion as 'Limited', which is accurate based on cons, but could be clarified as 'Limited (no full offline support)'."
-        },
-        {
-          "severity": "low",
-          "message": "Article mentions 'Web clipper' as a Notion strength, but this is not listed in the tool data features. It's a known feature, but not confirmed by provided data."
+          "message": "The article could benefit from a brief mention of Obsidian's plugin ecosystem and its extensibility."
         }
       ],
       "strengths": [
-        "Clear, well-structured comparison with a helpful 'At a Glance' table.",
-        "Accurately captures the core philosophical difference between cloud-first and local-first.",
-        "Provides actionable guidance with 'When to Choose' sections.",
-        "Good use of headings and bullet points for readability.",
-        "Includes a balanced verdict and acknowledges that users may use both tools."
+        "Clear and concise comparison focusing on use cases rather than feature lists.",
+        "Practical decision table helps readers quickly identify which tool fits their needs.",
+        "Honest about trade-offs and migration challenges, adding credibility.",
+        "Well-structured with logical sections and actionable recommendations."
       ],
       "recommendations": [
-        "Update Notion pricing to match current plans ($10 and $20 per member/mo).",
-        "Verify and update Obsidian Sync pricing to $48/yr (or $4/mo billed annually).",
-        "Add internal links to other relevant articles on the directory (e.g., 'best note-taking apps').",
-        "Include a meta description and optimize for keywords like 'Notion vs Obsidian comparison'.",
-        "Consider adding a section on AI features, as Notion's AI is a key differentiator."
+        "Add a section on pricing to help readers evaluate cost.",
+        "Mention Notion's AI capabilities and Obsidian's plugin ecosystem as key differentiators.",
+        "Include a brief note on security and data privacy (e.g., Notion's cloud vs. Obsidian's local-first).",
+        "Optimize headings for SEO by including target keywords like 'Notion vs Obsidian' or 'note-taking tools comparison'."
       ],
-      "auditedAt": "2026-06-17T07:26:35.089Z"
+      "auditedAt": "2026-07-01T06:36:03.935Z"
     },
     {
       "slug": "notion-vs-rowboat",
@@ -3387,34 +3335,35 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "Slack pricing table shows Business+ at $12.50/user/mo (annual) but tool data says $15/user/mo (annual). The article uses the old pricing."
+          "message": "The article does not mention Slack's free plan limitations (90-day message history, 10 apps) or Discord's free plan features (unlimited servers, voice & video). Including pricing and plan details would improve accuracy and usefulness."
         },
         {
           "severity": "medium",
-          "message": "Article mentions Slack's free plan includes 10 integrations, but tool data says 'Up to 10 apps'. This is accurate but could be clearer."
+          "message": "The article lacks specific examples of integrations for Slack (e.g., Google Drive, Jira, Salesforce) and Discord (e.g., bots like MEE6, Dyno). Adding concrete examples would strengthen the comparison."
         },
         {
           "severity": "low",
-          "message": "Discord pricing mentions '8 server boosts' for free plan, but tool data does not specify this. It's a minor detail that may not be universally known."
+          "message": "The article could benefit from a brief mention of Slack's AI features (conversation summaries, Slackbot) as a differentiator, especially since Slack's tagline emphasizes AI."
         },
         {
           "severity": "low",
-          "message": "Article lacks a clear meta description and keyword optimization for SEO. Could include more target keywords like 'Slack vs Discord comparison' in headings."
+          "message": "The article does not include a summary of user ratings or reviews (Slack 4.5/28k reviews, Discord 4.7/3.4M reviews). Including these could add social proof."
         }
       ],
       "strengths": [
-        "Clear structure with at-a-glance table, core differences, and use-case recommendations.",
-        "Accurate portrayal of primary audiences and strengths of each platform.",
-        "Good use of bullet points and subheadings for readability.",
-        "Provides actionable verdict for different user types."
+        "Clear, concise comparison with a decision table that helps readers choose based on use case.",
+        "Well-structured with sections for strengths, migration considerations, and practical recommendations.",
+        "Accurately identifies the core difference: Slack for business/workplace, Discord for community/live presence.",
+        "Practical advice on using both tools for different purposes (employee work vs. public community)."
       ],
       "recommendations": [
-        "Update Slack pricing to reflect current rates (Pro $8.75/mo monthly, $7.25 annual; Business+ $18/mo monthly, $15 annual).",
-        "Add a section on AI features, as Slack now includes AI capabilities.",
-        "Improve SEO by including a meta description and using more targeted keywords in headings (e.g., 'Slack vs Discord: Which is Better for Your Team?').",
-        "Consider adding a pros/cons list for each platform to aid quick decision-making."
+        "Add a brief pricing comparison table or mention key plan differences (e.g., Slack's free vs. paid, Discord's free vs. Nitro).",
+        "Include specific integration examples for both tools to illustrate ecosystem differences.",
+        "Mention Slack's AI features as a modern differentiator for productivity.",
+        "Add a note about user ratings and review counts to provide social proof.",
+        "Consider adding a short section on security/compliance (e.g., Slack's DLP, SSO) vs. Discord's moderation tools."
       ],
-      "auditedAt": "2026-06-17T07:27:24.623Z"
+      "auditedAt": "2026-07-01T06:36:23.173Z"
     },
     {
       "slug": "system-prompts-and-models-of-ai-tools-vs-awesome-claude-skills",
@@ -4548,48 +4497,43 @@
       "issues": [
         {
           "severity": "high",
-          "message": "Tagline in report does not match provided tool data: report says 'All-in-one workspace for notes, docs, and collaboration' but data says 'The AI workspace that works for you'."
+          "message": "The tagline in the report ('All-in-one workspace for notes, docs, and collaboration') does not match the tool data tagline ('The AI workspace that works for you')."
         },
         {
           "severity": "high",
-          "message": "Pricing for Business plan is incorrect: report says $15/mo, but data shows $20 per member / month."
+          "message": "The report states '4.8/5 rating across G2, Capterra, and Product Hunt with 12,500+ reviews', but the tool data shows a rating of 4.7 and 5,470 reviews. The numbers are inconsistent."
+        },
+        {
+          "severity": "high",
+          "message": "The report lists pricing as 'Free ($0), Plus ($10/mo), Business ($15/mo), Enterprise (custom)', but the tool data shows Business is $20/mo, not $15/mo."
         },
         {
           "severity": "medium",
-          "message": "Features list in report is incomplete and outdated: report lists 'Wikis, Databases, Kanban boards, AI writing assistant, Team collaboration' but data includes AI capabilities, Notion Agent, Enterprise Search, etc."
+          "message": "The report mentions 'AI writing assistant' as a feature, but the tool data lists 'AI capabilities' and 'Notion Agent' more specifically. The feature list is incomplete."
         },
         {
           "severity": "medium",
-          "message": "Reviews count mismatch: report says 12,500+ reviews, but data shows 5,470 reviews."
-        },
-        {
-          "severity": "medium",
-          "message": "Report mentions 'active developer API ecosystem' but data does not confirm this; GitHub URL is null and openSource is false."
+          "message": "The report claims 'Notion does not have a public open-source repository' which is correct, but the tool data shows githubStars: null and githubUrl: null, so this is accurate but could be better supported."
         },
         {
           "severity": "low",
-          "message": "Report lacks internal linking to other tools or categories on the directory."
-        },
-        {
-          "severity": "low",
-          "message": "Report does not include a meta description or optimized title tag for SEO."
+          "message": "The report's 'Consistency Score' is 92/100 but no explanation is given for how this is calculated."
         }
       ],
       "strengths": [
-        "Clear structure with decision, scores, and analysis sections.",
-        "Provides a confidence score and verification score.",
+        "Clear structure with decision, scores, and metadata.",
         "Includes cross-verification from multiple sources (GitHub, website, community).",
-        "Mentions alternatives, which adds value for readers."
+        "Mentions alternatives for context."
       ],
       "recommendations": [
         "Correct the tagline to match the tool data: 'The AI workspace that works for you'.",
-        "Fix Business plan pricing to $20 per member / month.",
-        "Update features list to reflect current offerings from data (AI capabilities, Notion Agent, etc.).",
-        "Align reviews count with data (5,470) or clarify source if different.",
-        "Add internal links to related tools or categories (e.g., productivity, note-taking).",
-        "Include a meta description and ensure headings are keyword-rich for SEO."
+        "Update the rating and review count to match the tool data (4.7, 5470 reviews).",
+        "Fix the Business plan price to $20/mo.",
+        "Expand the features list to include more specific features from the tool data (e.g., Notion Agent, Enterprise Search).",
+        "Add a brief explanation for the Consistency Score calculation.",
+        "Include a note about the proprietary nature of Notion and its API ecosystem."
       ],
-      "auditedAt": "2026-06-17T07:30:15.735Z"
+      "auditedAt": "2026-07-01T06:37:11.277Z"
     },
     {
       "slug": "open",
@@ -5548,50 +5492,46 @@
       "issues": [
         {
           "severity": "high",
-          "message": "Confluence rating is 4.7/5 from 64 reviews, not 4.3/5 from 3,800 reviews."
+          "message": "Confluence rating is stated as 4.3/5 from over 3,800 reviews, but provided data shows 4.7/5 from 64 reviews."
         },
         {
           "severity": "high",
-          "message": "Airtable rating is 5/5 from 11 reviews, not 4.6/5 from 2,200 reviews."
+          "message": "Airtable rating is stated as 4.6/5 from 2,200 reviews, but provided data shows 5/5 from 11 reviews."
         },
         {
           "severity": "medium",
-          "message": "Confluence pricing: Free tier includes up to 10 users and 2GB storage, but missing mention of 5 editors limit in Airtable Free plan."
+          "message": "Confluence pricing table omits team calendars in Standard plan and Atlassian Intelligence in Enterprise, which are in provided data."
         },
         {
           "severity": "medium",
-          "message": "Airtable Team plan automation runs: 25,000 per month, not 50,000."
+          "message": "Airtable pricing table incorrectly states 50,000 records per base in Team plan (provided data says 50,000) but also says 50,000 automation runs/month (provided data says 25,000)."
         },
         {
           "severity": "medium",
-          "message": "Airtable Business plan automation runs: 100,000 per month, not 50,000."
-        },
-        {
-          "severity": "medium",
-          "message": "Airtable Enterprise Scale plan records per base: 500,000, not unlimited."
+          "message": "Airtable pricing table for Team plan incorrectly states 50,000 automation runs/month; provided data says 25,000."
         },
         {
           "severity": "low",
-          "message": "Confluence AI features: Atlassian Intelligence is available in Premium and Enterprise, not 'none listed'."
+          "message": "Confluence AI features are listed as 'None listed' but provided data mentions Atlassian Intelligence in Enterprise plan."
         },
         {
           "severity": "low",
-          "message": "Airtable Free plan includes Interface Designer, but article implies it's only in paid plans."
+          "message": "Airtable free plan features: article says '1,000 records per base' and '100 automation runs/month' but provided data says '1,000 records per base' and '100 automation runs' (correct). However, article omits 'up to 5 editors' and '500 AI credits per editor'."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison, pricing, use cases, and verdict.",
-        "Useful comparison table highlighting key differences.",
-        "Practical guidance on when to choose each tool."
+        "Clear structure with overview, feature comparison, pricing, and use-case guidance.",
+        "Good use of tables for feature and pricing comparison.",
+        "Provides actionable verdict and scenarios for choosing each tool."
       ],
       "recommendations": [
-        "Verify all ratings and review counts from provided tool data.",
-        "Correct pricing and feature details for Airtable plans (automation runs, records per base).",
-        "Update Confluence AI features to mention Atlassian Intelligence.",
-        "Clarify that Airtable Free plan includes Interface Designer.",
-        "Add internal links to tool detail pages for better SEO."
+        "Correct the ratings and review counts to match provided data.",
+        "Update Confluence pricing to include team calendars and Atlassian Intelligence.",
+        "Correct Airtable automation run counts and record limits per plan.",
+        "Add missing details like Airtable free plan editor limit and AI credits.",
+        "Consider adding internal links to other relevant comparisons or category pages."
       ],
-      "auditedAt": "2026-06-17T07:24:04.277Z"
+      "auditedAt": "2026-07-01T06:35:10.213Z"
     },
     {
       "slug": "cursor-vs-bodhi",
@@ -6196,39 +6136,38 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "The article states Discord's free plan has 'unlimited messages, voice, video — no limits' but does not mention the 25-participant limit for video calls and 10MB file size limit, which are important constraints."
+          "message": "The feature comparison table lists 'Voice channels: No (call-based)' for Teams, but Teams does have persistent voice channels in the form of 'Channels' with voice calls; the description could be clearer."
         },
         {
           "severity": "medium",
-          "message": "The article claims Discord's free plan has 'no user limits' but does not clarify that voice channels have a limit of 99 users and video calls have a 25-user limit."
+          "message": "The article states Discord's free plan has 'unlimited messages, voice, video — no limits', but video calls are limited to 25 participants (free) and 50 (Go Live), which is mentioned later but contradicts the initial claim."
         },
         {
           "severity": "low",
-          "message": "The article mentions 'Forum channels' as a Discord feature but does not explain what they are, which may confuse readers unfamiliar with the term."
+          "message": "The pricing section for Teams Business Standard includes 'phone system' but the tool data shows 'phone system' as a feature of Business Standard; however, the article lists 'phone system' separately, which is fine."
         },
         {
           "severity": "low",
-          "message": "The article could benefit from a brief mention of Microsoft Teams' 'Together mode' and 'virtual backgrounds' features, which are listed in the tool data but not covered."
+          "message": "The article mentions 'Copilot AI notes' for Teams, which is not in the provided tool data; while likely accurate, it's not cross-referenced."
         },
         {
           "severity": "low",
-          "message": "The article does not include any internal links to other articles on the directory, which could improve SEO."
+          "message": "SEO could be improved by including more target keywords like 'Microsoft Teams vs Discord comparison' in headings and meta description."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison, pricing, use cases, and verdict.",
-        "Accurate pricing information for both tools, matching the provided data.",
-        "Useful 'When to Choose' sections that help readers decide based on use cases.",
-        "Feature comparison table is comprehensive and easy to scan."
+        "Clear structure with overview, feature table, pricing, use cases, and verdict.",
+        "Accurate pricing and feature details for both tools.",
+        "Useful 'When to Choose' sections that help readers decide.",
+        "Good use of comparison table for quick scanning."
       ],
       "recommendations": [
-        "Add a note about Discord's video call participant limit (25 free, 50 with Go Live) and file size limit (10MB free) to avoid overstating the free plan.",
-        "Clarify that Discord's voice channels have a practical limit of 99 users per channel.",
-        "Include a brief explanation of 'Forum channels' and 'Stage channels' for readers unfamiliar with Discord.",
-        "Add internal links to related articles (e.g., 'Best Team Communication Tools' or 'Discord vs Slack').",
-        "Consider adding a section on security and compliance for enterprise readers."
+        "Clarify that Teams does have voice capabilities in channels, though not always-on like Discord.",
+        "Adjust the free plan description for Discord to mention video call limits upfront.",
+        "Add a meta description and optimize headings for SEO (e.g., include 'Microsoft Teams vs Discord').",
+        "Consider adding a pros/cons list for each tool."
       ],
-      "auditedAt": "2026-06-17T07:25:43.184Z"
+      "auditedAt": "2026-07-01T06:35:29.518Z"
     },
     {
       "slug": "microsoft-teams-vs-google-meet",
@@ -6239,94 +6178,90 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "Google Meet free plan: article says 60-min meetings, but tool data shows 60-min meetings (correct). However, article omits that Google Meet free plan has 24-hour meeting limit? Actually tool data shows 60-min for free, so correct. But article says '100 participants, 60-min meetings' for both free plans, which matches tool data."
+          "message": "The article states Google Meet has 'industry-leading' noise cancellation, but the tool data does not confirm this claim. It's subjective and may be misleading."
         },
         {
           "severity": "medium",
-          "message": "Google Meet pricing: article lists Business Starter at $7.20/user/mo with 100 participants, but tool data shows same. However, article says Business Standard includes noise cancellation, but tool data does not explicitly list noise cancellation as a feature for that plan. Noise cancellation is a general feature of Meet, but not necessarily tied to that plan."
+          "message": "The article mentions '100,000 (livestream)' for Google Meet max participants, but the tool data only lists up to 500 participants in Business Plus and 1,000 in Enterprise. The livestream capability is not mentioned in the provided data."
         },
         {
           "severity": "low",
-          "message": "Article mentions 'industry-leading noise cancellation' for Google Meet, which is subjective and not directly supported by tool data."
+          "message": "The article says Google Meet's Gemini AI is 'included in paid plans', but the tool data does not mention Gemini AI features. This may be accurate but is not cross-referenced."
         },
         {
           "severity": "low",
-          "message": "Article states Teams Phone replaces PBX, but tool data does not mention PBX replacement explicitly."
+          "message": "The article states Teams 'Business Standard' includes 'phone system', but the tool data for Business Standard lists 'phone system' as a feature. However, the pricing table in the article lists 'phone' under Business Standard, which is consistent."
+        },
+        {
+          "severity": "low",
+          "message": "The article could benefit from more internal linking opportunities, such as linking to other comparison articles or tool pages."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature table, pricing, use cases, and verdict.",
-        "Accurate pricing and feature comparisons based on tool data.",
-        "Useful guidance for choosing based on ecosystem (Microsoft vs Google).",
-        "Includes specific details like participant limits and AI features."
+        "Clear and structured comparison with a helpful feature table.",
+        "Provides practical guidance on when to choose each tool based on use case.",
+        "Accurate pricing information that matches the provided tool data.",
+        "Good balance of detail and readability."
       ],
       "recommendations": [
-        "Add a note about Google Meet's 24-hour meeting limit for paid plans (tool data shows 24-hour meetings for Business Starter).",
-        "Clarify that noise cancellation is a general feature of Google Meet, not exclusive to Business Standard.",
-        "Include a link to the full tool pages for more details.",
-        "Add a section on security and compliance differences."
+        "Add a section on integration capabilities with third-party apps.",
+        "Include user ratings from the tool data to add credibility.",
+        "Add internal links to the individual tool pages (e.g., /tools/microsoft-teams, /tools/google-meet).",
+        "Verify and cite sources for claims like 'industry-leading noise cancellation' and '100,000 livestream'.",
+        "Consider adding a pros/cons list for quick scanning."
       ],
-      "auditedAt": "2026-06-17T07:25:48.293Z"
+      "auditedAt": "2026-07-01T06:35:35.454Z"
     },
     {
       "slug": "microsoft-teams-vs-slack",
       "type": "comparison",
       "qualityScore": 85,
-      "accuracyScore": 80,
-      "seoScore": 75,
+      "accuracyScore": 90,
+      "seoScore": 80,
       "issues": [
         {
-          "severity": "high",
-          "message": "Slack pricing for Pro is listed as $7.25/user/mo (annual) but tool data shows $8.75/user/mo monthly or $7.25/user/mo annual. The article omits the monthly price and does not mention the 50% off promotion."
-        },
-        {
-          "severity": "high",
-          "message": "Slack Business+ pricing is listed as $15/user/mo (annual) but tool data shows $18/user/mo monthly or $15/user/mo annual. The article omits the monthly price."
+          "severity": "medium",
+          "message": "Slack's free plan includes 90-day message history and 10 integrations, but the article omits that it also includes AI features (conversation summaries, Slackbot, etc.) as per tool data."
         },
         {
           "severity": "medium",
-          "message": "Slack's free plan features are incomplete: the article mentions 90-day message history and 10 integrations but omits 1:1 external messages, basic AI features, SAML SSO, SCIM, EMM, and DLP as per tool data."
+          "message": "Slack's Pro plan price is listed as $7.25/user/mo (annual) but tool data shows $7.25/user/mo when paying annually, and $8.75/user/mo when paying monthly. The article should clarify the monthly price or note it's annual."
         },
         {
           "severity": "medium",
-          "message": "Slack's Enterprise Grid is listed as 'Enterprise Grid' but tool data shows 'Enterprise+' as the plan name. Also, the article says HIPAA compliance is only on Enterprise Grid, but tool data shows HIPAA is available on Business+ and Enterprise+."
-        },
-        {
-          "severity": "medium",
-          "message": "Microsoft Teams free plan storage is listed as 5GB, but tool data shows 5GB storage for free plan. However, the article says '100 participants, 60-min meetings, 5GB storage' which matches. No issue here, but the article omits that free plan includes 100 participants (correct) but tool data also says 100 participants. OK."
+          "message": "Slack's Business+ plan price is listed as $15/user/mo (annual) but tool data shows $15/user/mo when paying annually, and $18/user/mo when paying monthly. The article should clarify the monthly price or note it's annual."
         },
         {
           "severity": "low",
-          "message": "The article states Slack has 20 million+ daily active users, but this is not in the provided tool data. It may be accurate but cannot be verified from given data."
+          "message": "Slack's Enterprise Grid is mentioned but tool data shows the plan is called 'Enterprise+' not 'Enterprise Grid'."
         },
         {
           "severity": "low",
-          "message": "The article says Teams has 320 million+ monthly active users, not in tool data. Could be accurate but unverified."
+          "message": "The article states Slack has 20 million+ daily active users, but this figure is not in the provided tool data. It may be accurate but should be verified."
         },
         {
           "severity": "low",
-          "message": "The article mentions Slack's 'Workflow Builder' as no-code, but tool data does not explicitly mention Workflow Builder; it mentions 'AI workflow generation'. Might be outdated."
+          "message": "The article states Teams has 320 million+ monthly active users, which is not in the provided tool data. It may be accurate but should be verified."
         },
         {
           "severity": "low",
-          "message": "SEO: The article lacks meta description and keyword optimization suggestions. Headings are good but could include more target keywords like 'Microsoft Teams vs Slack comparison'."
+          "message": "SEO could be improved by including more target keywords in headings (e.g., 'Microsoft Teams vs Slack: Feature Comparison')."
         }
       ],
       "strengths": [
         "Clear structure with overview, feature table, pricing, and use-case sections.",
-        "Feature comparison table is easy to read and covers key differences.",
-        "Provides actionable verdict and bottom line for readers.",
-        "Includes specific pricing details and use-case scenarios."
+        "Accurate pricing and feature details for both tools, matching tool data closely.",
+        "Provides actionable recommendations based on user context (Microsoft 365 vs diverse stack).",
+        "Includes a comprehensive feature comparison table that is easy to scan."
       ],
       "recommendations": [
-        "Update Slack pricing to include both monthly and annual rates, and mention promotions.",
-        "Correct Slack plan names: use 'Enterprise+' instead of 'Enterprise Grid'.",
-        "Add missing Slack free plan features (AI, SSO, SCIM, etc.) for accuracy.",
-        "Verify and cite user statistics or remove them if unverifiable.",
-        "Add a meta description and optimize headings for SEO (e.g., include 'Microsoft Teams vs Slack 2025').",
-        "Consider adding a pros/cons list for each tool to improve readability."
+        "Update Slack pricing to include monthly rates for Pro and Business+ plans.",
+        "Mention Slack's AI features in the free plan description.",
+        "Correct the plan name from 'Enterprise Grid' to 'Enterprise+'.",
+        "Add a meta description and optimize headings for SEO (e.g., include 'vs' in H1).",
+        "Consider adding internal links to other comparison articles or tool pages."
       ],
-      "auditedAt": "2026-06-17T07:25:56.413Z"
+      "auditedAt": "2026-07-01T06:35:41.999Z"
     },
     {
       "slug": "microsoft-teams-vs-zoom",
@@ -6341,35 +6276,39 @@
         },
         {
           "severity": "medium",
-          "message": "Zoom's free plan meeting limit is 40 minutes, but the article says 40-min meetings; this is correct but could be clarified as '40-minute limit per meeting'."
+          "message": "Zoom's free plan has 40-min meetings, correctly stated, but the article says '100 participants, 40-min meetings' which is correct. However, the feature comparison table states '100 participants, 40-min meetings' for Zoom free plan, which is accurate. No issue here."
         },
         {
           "severity": "medium",
-          "message": "Zoom's AI Companion is included in paid plans, but the article says 'included in all paid plans' which is accurate, but the pricing table shows 'Limited in-meeting AI use' for Basic, so it's not fully included in free."
+          "message": "Zoom's AI Companion is included in paid plans, but the article says 'included in all paid plans' which is correct. However, the pricing table shows 'Limited in-meeting AI use' for Basic, so AI Companion is not fully included in free plan. The article says 'included in all paid plans' which is accurate."
+        },
+        {
+          "severity": "medium",
+          "message": "The article states Zoom has 1,000+ integrations, but the tool data does not provide integration count. This may be accurate but unverified."
         },
         {
           "severity": "low",
-          "message": "The article mentions 'Zoom Team Chat (newer)' but doesn't elaborate on its maturity compared to Teams chat."
+          "message": "The article mentions 'Teams Phone' and 'Zoom Phone' but does not detail pricing or features beyond mention."
         },
         {
           "severity": "low",
-          "message": "The article states 'Zoom consistently delivers better video and audio quality' which is subjective and not backed by data."
+          "message": "The article could benefit from mentioning that Teams free plan includes 5GB storage (from tool data) but is not mentioned."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison, pricing, and use-case recommendations.",
-        "Good use of tables for feature comparison.",
-        "Actionable verdict and bottom line for readers.",
-        "Covers key differentiators like AI features and breakout rooms."
+        "Clear structure with overview, feature table, pricing, and use-case recommendations.",
+        "Good comparison of key features like breakout rooms, AI, and integrations.",
+        "Actionable verdict with bottom line for different use cases.",
+        "SEO-friendly headings and keyword usage."
       ],
       "recommendations": [
-        "Correct Zoom pricing to match the provided data.",
-        "Add a note that Zoom's AI Companion is included in paid plans but limited in free.",
-        "Include more objective data on video quality (e.g., bandwidth requirements).",
-        "Expand on Zoom Team Chat's capabilities to provide a fairer comparison.",
-        "Add internal links to the tool pages for Teams and Zoom."
+        "Correct Zoom pricing to match official data: Pro $14.16/user/mo, Business $18.33/user/mo.",
+        "Add mention of Teams free plan storage (5GB) and Zoom free plan limitations (e.g., limited AI use).",
+        "Verify integration counts or remove if unconfirmed.",
+        "Include a note about Zoom's 40-min limit on free plan being stricter than Teams' 60-min limit.",
+        "Consider adding a section on security/compliance differences."
       ],
-      "auditedAt": "2026-06-17T07:26:00.849Z"
+      "auditedAt": "2026-07-01T06:35:48.753Z"
     },
     {
       "slug": "notion-vs-airtable",
@@ -6380,47 +6319,37 @@
       "issues": [
         {
           "severity": "high",
-          "message": "Airtable rating is listed as 4.6/5 from 2,200 reviews, but provided data shows rating 5/5 from 11 reviews. This is a significant factual error."
+          "message": "Airtable's rating is incorrectly stated as 4.6/5 from 2,200 reviews; actual data shows 5/5 from 11 reviews."
         },
         {
           "severity": "high",
-          "message": "Notion reviews count is stated as 5,800, but provided data shows 5,470. Minor discrepancy but still inaccurate."
+          "message": "Airtable's pricing details are inaccurate: Free plan includes 500 AI credits, 100 automation runs, and Interface Designer; Team plan has 15,000 AI credits, 25,000 automation runs, 50,000 records; Business plan has 125,000 records, 100,000 automation runs, 100 GB attachments; Enterprise Scale has 500,000 records, 500,000 automation runs, 1,000 GB attachments. The article misstates several limits."
         },
         {
           "severity": "medium",
-          "message": "Pricing details for Airtable Team plan incorrectly states 50,000 records per base and 1,000 automation runs; actual data shows 50,000 records and 25,000 automation runs. Also, Business plan records per base is 125,000, not 500,000."
+          "message": "Notion's pricing description omits that AI features are only available on Business and Enterprise plans, and Free/Plus get limited AI trials."
         },
         {
           "severity": "medium",
-          "message": "Airtable Free plan features: article mentions 1,000 records per base and 1 GB attachment space, but omits AI credits (500) and Interface Designer. Also, automation runs are 100, not mentioned."
-        },
-        {
-          "severity": "medium",
-          "message": "Notion pricing: article says Plus plan includes AI features, but provided data shows AI features are only on Business and Enterprise plans (Free/Plus get limited complimentary AI responses). This is misleading."
+          "message": "Notion's feature list in the table omits key capabilities like custom agents, workers, and enterprise security features (zero data retention, DLP, SIEM) that are mentioned in the tool data."
         },
         {
           "severity": "low",
-          "message": "The article could benefit from mentioning Airtable's AI credits per editor and Notion's AI limits more clearly."
-        },
-        {
-          "severity": "low",
-          "message": "No internal linking to other articles or category pages, which could improve SEO."
+          "message": "The article could benefit from mentioning Airtable's Interface Designer and Extensions more prominently, as they are key differentiators."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison table, pricing, and use-case sections.",
-        "Provides actionable guidance for choosing between tools based on team needs.",
-        "Good use of headings and bullet points for readability.",
-        "Covers key differentiators like AI capabilities and database limits."
+        "Clear structure with overview, feature comparison, pricing, and use-case recommendations.",
+        "Good differentiation of primary use cases for each tool.",
+        "Useful verdict section summarizing when to choose each tool."
       ],
       "recommendations": [
-        "Correct factual inaccuracies: Airtable rating and reviews count, pricing details for both tools.",
-        "Update Notion AI availability: clarify that AI features are primarily on Business/Enterprise plans.",
-        "Include Airtable's AI credits and Interface Designer in feature comparison.",
-        "Add internal links to related articles (e.g., 'best productivity tools') to improve SEO.",
-        "Consider adding a summary table of pros and cons for quick reference."
+        "Correct Airtable's rating and review count to match actual data.",
+        "Update Airtable pricing details to reflect accurate record limits, automation runs, attachment space, and AI credits.",
+        "Clarify Notion AI availability and add missing features like custom agents and workers.",
+        "Consider adding a section on integrations or use cases to enhance reader value."
       ],
-      "auditedAt": "2026-06-17T07:26:06.936Z"
+      "auditedAt": "2026-07-01T06:35:54.374Z"
     },
     {
       "slug": "notion-vs-colanode",
@@ -6484,39 +6413,38 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "Confluence rating is stated as 4.3/5 from 3,800 reviews, but tool data shows 4.7/5 from 64 reviews. This is a significant factual error."
+          "message": "Confluence's rating is listed as 4.3/5 from 3,800 reviews, but tool data shows 4.7/5 from 64 reviews. This is a significant discrepancy."
         },
         {
           "severity": "medium",
-          "message": "Confluence pricing table lists 'AI features (add-on)' under Premium, but tool data indicates AI features are part of Enterprise (Atlassian Intelligence). Also, Standard tier features include 'team calendars' which is correct, but the article omits that Free tier has 2GB storage and up to 10 users."
+          "message": "Confluence pricing table omits the Free plan's user limit (10 users) and storage (2GB) details, which are present in tool data."
         },
         {
           "severity": "low",
-          "message": "Notion pricing: Free tier features mention '5MB limit' for file uploads, but tool data says 'Unlimited file uploads' for Free? Actually tool data shows Free has 'Basic forms', 'Basic sites', etc., but file upload limit is not specified. The article may be inaccurate."
+          "message": "The article mentions 'Notion holds a 4.7/5 rating from 5,800 reviews' but tool data shows 5,470 reviews. Minor rounding difference."
         },
         {
           "severity": "low",
-          "message": "The article states Confluence has 'No native AI features', but tool data for Enterprise includes 'Atlassian Intelligence'. This is a minor omission."
+          "message": "Confluence's Premium tier features are incomplete; tool data includes analytics and admin insights, but article only mentions AI features as add-on and 24/7 support."
         },
         {
           "severity": "low",
-          "message": "SEO: The article lacks an explicit meta description and uses generic headings. Could include more targeted keywords like 'Notion vs Confluence comparison' in headings."
+          "message": "The article states Confluence has 'No native AI features' but tool data shows 'Atlassian Intelligence' available in Enterprise plan. This is partially accurate but could be clarified."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison, pricing, and verdict sections.",
-        "Provides actionable guidance for different use cases (flexible vs structured).",
-        "Accurate representation of Notion's AI capabilities and database features.",
-        "Good use of tables for feature comparison and pricing."
+        "Clear structure with overview, feature comparison, pricing, and use-case sections.",
+        "Provides actionable guidance for readers based on team needs.",
+        "Accurate representation of Notion's features and pricing based on tool data."
       ],
       "recommendations": [
-        "Correct the Confluence rating and review count to match tool data (4.7/5, 64 reviews).",
-        "Update Confluence pricing and AI features to reflect that AI is part of Enterprise plan, not Premium add-on.",
-        "Verify Notion Free tier file upload limit; if not specified, remove '5MB limit' or clarify.",
-        "Add a meta description and include more SEO-friendly headings (e.g., 'Notion vs Confluence: Which is Better?').",
-        "Consider adding a section on integrations or use cases with specific examples."
+        "Correct Confluence's rating and review count to match tool data (4.7/5, 64 reviews).",
+        "Update Confluence pricing table to include Free plan details (10 users, 2GB storage).",
+        "Expand Confluence Premium features to include analytics and admin insights as per tool data.",
+        "Clarify Confluence's AI capabilities: mention Atlassian Intelligence available in Enterprise plan.",
+        "Add internal links to Notion and Confluence product pages for SEO."
       ],
-      "auditedAt": "2026-06-17T07:26:24.415Z"
+      "auditedAt": "2026-07-01T06:35:59.350Z"
     },
     {
       "slug": "notion-vs-ephe",
@@ -6581,46 +6509,37 @@
         },
         {
           "severity": "high",
-          "message": "Incorrect pricing for Airtable Free plan: article says 500,000 records per base, but tool data shows 1,000 records per base."
-        },
-        {
-          "severity": "high",
-          "message": "Incorrect pricing for Airtable Free plan: article says 1,000 automation runs/month, but tool data shows 100 automation runs."
-        },
-        {
-          "severity": "high",
-          "message": "Incorrect pricing for Airtable Free plan: article says 2 GB attachment space, but tool data shows 1 GB per base."
+          "message": "Airtable Free plan features are misstated: article says 500,000 records per base and 1,000 automation runs, but tool data shows 1,000 records per base and 100 automation runs."
         },
         {
           "severity": "medium",
-          "message": "Missing mention of Airtable's AI credits in pricing table."
+          "message": "Obsidian pricing section incorrectly lists Sync as $4/user/month (billed annually) but tool data shows $4 per user per month billed annually; minor wording difference but acceptable."
         },
         {
           "severity": "medium",
-          "message": "Missing mention of Airtable's record limits per base in pricing table."
-        },
-        {
-          "severity": "medium",
-          "message": "Article states Obsidian has 'limited automation (via plugins)' but does not elaborate; could be misleading."
+          "message": "Airtable pricing section incorrectly lists Free plan as 500,000 records per base and 1,000 automation runs; should be 1,000 records and 100 automation runs."
         },
         {
           "severity": "low",
-          "message": "Feature comparison table could include more rows like 'Open Source' or 'GitHub Stars' for completeness."
+          "message": "Obsidian's 'AI Features' row says 'None native' but tool data does not mention AI; acceptable but could be clarified."
+        },
+        {
+          "severity": "low",
+          "message": "Airtable's 'Security' row mentions DLP for Business+ but tool data shows DLP only for Enterprise Scale; minor inaccuracy."
         }
       ],
       "strengths": [
         "Clear structure with overview, feature comparison, pricing, use cases, and verdict.",
-        "Good differentiation between the two tools' purposes.",
+        "Good differentiation between the tools' purposes.",
         "Useful for readers deciding between personal knowledge management and team database."
       ],
       "recommendations": [
-        "Correct the ratings to match tool data: Obsidian 4.8/5, Airtable 5/5.",
-        "Fix Airtable Free plan limits: 1,000 records per base, 100 automation runs, 1 GB attachment space.",
-        "Add Airtable AI credits and record limits to pricing table.",
-        "Consider adding a note about Obsidian's plugin ecosystem for automation.",
-        "Update the feature comparison to include more relevant rows like 'Open Source' or 'API availability'."
+        "Correct the ratings for both tools to match the provided data.",
+        "Fix the Airtable Free plan record and automation run limits.",
+        "Review and correct Airtable security features (DLP availability).",
+        "Consider adding a note about Obsidian's lack of native AI features being accurate but not mentioned in tool data."
       ],
-      "auditedAt": "2026-06-17T07:26:44.894Z"
+      "auditedAt": "2026-07-01T06:36:09.718Z"
     },
     {
       "slug": "obsidian-vs-colanode",
@@ -6681,42 +6600,41 @@
       "issues": [
         {
           "severity": "high",
-          "message": "Obsidian rating is 4.8 (931 reviews) not 4.6 (320 reviews) as stated."
+          "message": "Obsidian rating is 4.8/5 with 931 reviews, not 4.6/5 with 320 reviews as stated."
         },
         {
           "severity": "high",
-          "message": "Confluence rating is 4.7 (64 reviews) not 4.3 (3,800 reviews) as stated."
+          "message": "Confluence rating is 4.7/5 with 64 reviews, not 4.3/5 with 3,800 reviews as stated."
         },
         {
           "severity": "medium",
-          "message": "Obsidian plugin count '1,500+' is not verified; actual count may differ."
+          "message": "Obsidian's 'Commercial' plan is $50/user/year, but the article says $50/user/year; however, it is not clearly described as a business plan with priority support (the tool data shows 'Support development' and 'Become a featured organization')."
         },
         {
           "severity": "medium",
-          "message": "Confluence integrations count '800+' is not verified; actual number may vary."
+          "message": "Confluence pricing: Free plan includes 'Up to 10 users, 2GB storage' but the article says '2 GB storage' which is correct, but the Standard plan features 'team calendars' are missing from the article."
         },
         {
           "severity": "low",
-          "message": "Pricing for Obsidian Catalyst plan is $25 one-time, but article says 'Catalyst: $25 one-time' correctly, but could clarify it's not a subscription."
+          "message": "The article states Obsidian has '1,500+ community plugins' but the tool data does not specify a number; it's acceptable but could be verified."
         },
         {
           "severity": "low",
-          "message": "Obsidian Commercial plan price is $50/user/year, but article says '$50/user/year' correctly, but could mention it's per user per year."
+          "message": "The article mentions '800+ apps' for Confluence integrations, but the tool data does not specify a number; it's plausible but not confirmed."
         }
       ],
       "strengths": [
-        "Clear structure with overview, feature comparison, pricing, and verdict sections.",
-        "Useful comparison table highlighting key differences.",
-        "Practical guidance on when to choose each tool.",
-        "Good balance of detail and readability."
+        "Clear structure with overview, feature comparison table, pricing, and use-case sections.",
+        "Helpful verdict that distinguishes the tools for different audiences.",
+        "Good use of headings and bullet points for readability."
       ],
       "recommendations": [
-        "Correct the rating and review count for both tools using provided data.",
-        "Verify plugin and integration counts or use more conservative estimates.",
-        "Add a note about Obsidian's core app being free and open-source-like (though not open source).",
-        "Include a section on use cases or examples for better reader context."
+        "Correct the ratings and review counts to match the provided data (Obsidian 4.8/5, 931 reviews; Confluence 4.7/5, 64 reviews).",
+        "Verify and update the plugin count and integration numbers if possible.",
+        "Add a brief note about Obsidian's Commercial plan features (priority support) for clarity.",
+        "Include Confluence's team calendars in the feature comparison table."
       ],
-      "auditedAt": "2026-06-17T07:27:02.810Z"
+      "auditedAt": "2026-07-01T06:36:15.915Z"
     },
     {
       "slug": "obsidian-vs-ephe",
@@ -7179,11 +7097,11 @@
       "type": "blog",
       "qualityScore": 85,
       "accuracyScore": 90,
-      "seoScore": 75,
+      "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article lacks a conclusion or final recommendation summary, leaving readers without a clear takeaway."
+          "message": "The article lacks a conclusion or final recommendation section, leaving readers without a clear summary or decision guide."
         },
         {
           "severity": "medium",
@@ -7191,59 +7109,65 @@
         },
         {
           "severity": "low",
-          "message": "The pricing table for Cursor includes 'Ultra' plan at $200/mo which may be outdated or less common; verify accuracy."
+          "message": "The article could benefit from more concrete examples or use cases for each tool to illustrate real-world workflows."
         },
         {
           "severity": "low",
-          "message": "The article does not mention any limitations or downsides of each tool, which could reduce trustworthiness."
+          "message": "The pricing section for Claude Code mentions 'weekly usage cap' but does not specify the cap amount, which could be helpful for comparison."
         }
       ],
       "strengths": [
-        "Clear and structured comparison with a quick comparison table.",
+        "Clear and well-structured comparison table at the beginning.",
         "Detailed breakdown of each tool's features and pricing.",
-        "Useful 'When to Choose' sections that help readers decide based on workflow."
+        "Useful 'When to Choose' sections that help readers decide based on workflow.",
+        "Up-to-date pricing information for 2026."
       ],
       "recommendations": [
-        "Add a conclusion section summarizing key recommendations for different user profiles.",
-        "Include internal links to tool detail pages or related articles on the directory.",
-        "Consider adding a 'Limitations' or 'Cons' section for each tool to provide balanced advice.",
-        "Verify the Cursor Ultra plan pricing and update if necessary."
+        "Add a conclusion or final verdict section summarizing key takeaways.",
+        "Include internal links to other tool reviews or comparison articles on the directory.",
+        "Provide specific examples or scenarios where each tool excels.",
+        "Specify the weekly usage cap for Claude Code Pro plan for better transparency."
       ],
-      "auditedAt": "2026-06-17T07:28:19.981Z"
+      "auditedAt": "2026-07-01T06:36:32.386Z"
     },
     {
       "slug": "figma-alternatives-open-source-2026",
       "type": "blog",
       "qualityScore": 85,
       "accuracyScore": 90,
-      "seoScore": 88,
+      "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article mentions '2026' but the current year is 2025, which may confuse readers or appear outdated."
+          "message": "The article mentions '2026' but the current year is 2025, which may confuse readers or seem outdated if not updated."
+        },
+        {
+          "severity": "medium",
+          "message": "The claim 'Figma dominates the design tool market with 4 million+ paying users' may be outdated or inaccurate; recent data suggests different numbers."
         },
         {
           "severity": "low",
-          "message": "The cost comparison table uses annual Figma cost but Penpot cost is listed as $0, which is accurate for self-hosted but the cloud version may have costs; clarify."
+          "message": "The article lacks a clear meta description and title tag optimization for SEO."
         },
         {
           "severity": "low",
-          "message": "The article states Penpot has 45,000+ GitHub stars; verify current count as it may have changed."
+          "message": "Internal links are present but could be more contextual and varied."
         }
       ],
       "strengths": [
-        "Comprehensive comparison of Figma and Penpot with clear pros and cons.",
-        "Useful cost analysis with a table showing savings for different team sizes.",
+        "Comprehensive comparison between Figma and Penpot with detailed feature tables.",
+        "Clear cost analysis showing potential savings for different team sizes.",
         "Practical guidance on how to try Penpot and when to stick with Figma.",
-        "Good internal linking to related content."
+        "Well-structured with headings and bullet points for readability."
       ],
       "recommendations": [
-        "Update the year reference to 2025 or remove the specific year to avoid dating the article.",
-        "Add a note that Penpot cloud may have limitations or future pricing, though currently free.",
-        "Verify GitHub star count and other statistics for accuracy.",
-        "Consider adding a section on migration challenges or tips for switching from Figma to Penpot."
+        "Update the year to 2025 or remove the specific year to avoid dating the content.",
+        "Verify and update the user count for Figma with the latest available data.",
+        "Add a meta description and optimize title tag for target keywords like 'open source Figma alternative'.",
+        "Include more internal links to related articles or tool pages within the content.",
+        "Consider adding a section on migration challenges or user testimonials for credibility."
       ],
-      "auditedAt": "2026-06-17T07:28:27.497Z"
+      "auditedAt": "2026-07-01T06:36:41.937Z"
     },
     {
       "slug": "free-project-management-tools-2026",
@@ -7254,104 +7178,110 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "The article cuts off at the end ('...and th'), missing the conclusion."
+          "message": "The article cuts off abruptly at the end ('ClickUp — unlimite...'). The conclusion is incomplete."
         },
         {
           "severity": "medium",
-          "message": "No mention of Jira or Monday.com, which are popular free plan options."
+          "message": "The comparison table is missing some columns (e.g., Views, Integrations) that were mentioned in the criteria."
         },
         {
           "severity": "low",
-          "message": "The 'Best for' sections could be more specific about team size or use case."
+          "message": "The article could benefit from a brief summary or final recommendation section."
+        },
+        {
+          "severity": "low",
+          "message": "Some internal links (e.g., '/alternative-to/clickup/') may not exist or be outdated; verify they are functional."
         }
       ],
       "strengths": [
-        "Clear structure with defined criteria and comparison table.",
-        "Useful, actionable advice for readers choosing a free PM tool.",
-        "Includes internal links to alternative pages, good for SEO."
+        "Clear structure with defined criteria and rankings.",
+        "Useful comparison table for quick reference.",
+        "Provides specific limits and best-use cases for each tool.",
+        "Includes internal links to related content for SEO."
       ],
       "recommendations": [
         "Complete the truncated conclusion.",
-        "Add a brief mention of other notable free plans (e.g., Jira, Monday.com) for completeness.",
-        "Consider adding a summary or final verdict section to help readers decide."
+        "Add a summary or final verdict section.",
+        "Expand the comparison table to include all criteria (views, integrations).",
+        "Verify and update internal links to ensure they are valid."
       ],
-      "auditedAt": "2026-06-17T07:28:30.537Z"
+      "auditedAt": "2026-07-01T06:36:45.934Z"
     },
     {
       "slug": "microsoft-teams-alternatives-2026",
       "type": "blog",
       "qualityScore": 82,
-      "accuracyScore": 90,
-      "seoScore": 75,
+      "accuracyScore": 95,
+      "seoScore": 78,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article mentions '2026' as the current year, which may be inaccurate or speculative; should be verified or updated to current year."
+          "message": "The article mentions '2026' as the current year, which may be inaccurate if the content is not updated for that year."
         },
         {
           "severity": "medium",
-          "message": "The article is cut off at the end for the Telegram section; it's incomplete."
+          "message": "The article is incomplete; it cuts off mid-sentence in the Telegram section."
         },
         {
           "severity": "low",
-          "message": "Some claims like '320 million+ users' for Teams could be outdated; should verify current stats."
+          "message": "The article lacks a clear conclusion or summary to help readers decide."
         },
         {
           "severity": "low",
-          "message": "The article lacks a conclusion or summary section to wrap up recommendations."
+          "message": "SEO could be improved by including more internal links to other relevant articles on the site."
         }
       ],
       "strengths": [
         "Clear structure with use-case-based ranking",
-        "Provides specific reasons why each alternative is better than Teams",
-        "Includes limitations for each tool, giving balanced perspective",
-        "Internal links to comparison pages for further reading"
+        "Detailed comparison of features and limitations",
+        "Includes internal links to comparison pages",
+        "Useful for readers seeking free or cheaper alternatives"
       ],
       "recommendations": [
         "Complete the Telegram section and add a conclusion",
-        "Update the year reference to current year or remove it",
-        "Add a comparison table summarizing key features across tools",
-        "Include a call-to-action for readers to explore more comparisons"
+        "Verify the year '2026' is correct or update to current year",
+        "Add more internal links to related tools or guides",
+        "Include a summary table for quick comparison"
       ],
-      "auditedAt": "2026-06-17T07:28:34.419Z"
+      "auditedAt": "2026-07-01T06:36:49.963Z"
     },
     {
       "slug": "open-source-cost-savings-2026",
       "type": "blog",
       "qualityScore": 85,
       "accuracyScore": 90,
-      "seoScore": 75,
+      "seoScore": 80,
       "issues": [
         {
           "severity": "medium",
-          "message": "The article mentions '2026' but the current year is 2025, which may confuse readers."
+          "message": "The article mentions '2026' as the current year, which may be inaccurate if the content is published earlier."
         },
         {
           "severity": "medium",
-          "message": "The article cuts off at the end ('Browse our da...'), indicating incomplete content."
+          "message": "Google Analytics 360 pricing is listed as $50,000+ but actual pricing varies widely and is typically higher for enterprise; this could be misleading."
         },
         {
           "severity": "low",
-          "message": "Some SaaS costs (e.g., Google Analytics 360 at $50,000+) may vary widely; consider noting that prices are estimates."
+          "message": "The article cuts off at 'Browse our da' — incomplete sentence at the end."
         },
         {
           "severity": "low",
-          "message": "The article lacks internal links to other relevant content on the directory."
+          "message": "Some open-source alternatives like Plane and Focalboard may not be as mature as their SaaS counterparts; this is not mentioned."
         }
       ],
       "strengths": [
-        "Clear, well-structured comparison of SaaS vs open source costs.",
-        "Practical advice on when not to self-host and how to start saving.",
-        "Includes hidden costs of self-hosting, providing a balanced view.",
-        "Uses tables for easy comparison of costs."
+        "Clear structure with tables and comparisons",
+        "Practical advice on when not to self-host",
+        "Includes hidden costs of self-hosting, adding credibility",
+        "Actionable steps for migration"
       ],
       "recommendations": [
-        "Fix the incomplete sentence at the end.",
-        "Update the year reference to 2025 or remove it.",
-        "Add internal links to tool pages or related articles.",
-        "Include a note that prices are approximate and may vary."
+        "Update the year to current or remove it to avoid dating the content",
+        "Add a note that Google Analytics 360 pricing is negotiable and typically higher for large enterprises",
+        "Complete the final sentence or add a call-to-action",
+        "Consider adding a disclaimer about feature parity for less mature open-source tools"
       ],
-      "auditedAt": "2026-06-17T07:28:39.121Z"
+      "auditedAt": "2026-07-01T06:36:54.953Z"
     },
     {
       "slug": "self-hosted-saas-alternatives-2026",
@@ -7362,35 +7292,34 @@
       "issues": [
         {
           "severity": "medium",
-          "message": "The article mentions 'Nextcloud Hub 26 (released early 2026)' but as of 2026, this is speculative; Nextcloud releases are versioned differently and Hub 26 may not exist."
+          "message": "The article mentions 'Nextcloud Hub 26 (released early 2026)' but as of 2025, this is speculative. Should be updated or removed."
         },
         {
           "severity": "medium",
-          "message": "The article states 'GitLab CE license is MIT' but GitLab CE is actually licensed under MIT (with some exceptions), but the main GitLab CE is MIT, while the Enterprise Edition is proprietary. This is correct but could be clarified."
+          "message": "The article states 'GitLab CE is licensed under MIT' but GitLab CE is actually licensed under MIT. This is correct, but the license for GitLab CE is MIT, not the full product. However, the article says 'License: MIT' for GitLab CE, which is accurate. No issue here."
         },
         {
           "severity": "low",
-          "message": "The article ends abruptly with 'Focalboard ... works like Notion databases, Trello' and is cut off. The content is incomplete."
+          "message": "The article ends abruptly with 'Focalboard...' and is incomplete. The conclusion or final section is missing."
         },
         {
           "severity": "low",
-          "message": "The article lacks a conclusion or summary to tie everything together."
+          "message": "No internal links to other articles or tool pages on the directory. Could improve SEO with relevant internal links."
         }
       ],
       "strengths": [
-        "Comprehensive coverage of major self-hosted alternatives across multiple categories",
-        "Clear structure with tool descriptions, licenses, and SaaS equivalents",
-        "Useful for readers looking to reduce SaaS costs and gain data control",
-        "Includes specific version numbers and GitHub stars for credibility"
+        "Comprehensive coverage of major software categories with specific tool recommendations.",
+        "Clear structure with headings and tool details (license, GitHub stars, best for, SaaS equivalent).",
+        "Provides strong value proposition for self-hosting with cost savings and data ownership arguments.",
+        "Accurate licensing and GitHub star counts for most tools."
       ],
       "recommendations": [
-        "Complete the truncated section on Focalboard and add a conclusion",
-        "Verify Nextcloud Hub 26 release date or use a more generic reference",
-        "Add internal links to other relevant articles on the directory",
-        "Include a comparison table for quick overview",
-        "Add a section on hosting options (e.g., VPS providers, Docker setup)"
+        "Complete the article by adding a conclusion or final section.",
+        "Add internal links to tool pages or related articles on the directory.",
+        "Update or remove speculative future dates (e.g., Nextcloud Hub 26 release).",
+        "Consider adding a comparison table or summary for quick reference."
       ],
-      "auditedAt": "2026-06-17T07:28:43.685Z"
+      "auditedAt": "2026-07-01T06:37:00.576Z"
     },
     {
       "slug": "artistassistapp",
@@ -7815,90 +7744,86 @@
     {
       "slug": "resend",
       "type": "report",
-      "qualityScore": 80,
-      "accuracyScore": 70,
-      "seoScore": 75,
+      "qualityScore": 70,
+      "accuracyScore": 60,
+      "seoScore": 65,
       "issues": [
         {
           "severity": "high",
-          "message": "Pricing in report is incorrect: Pro plan is $20/mo, not $15/mo; Scale plan is missing."
+          "message": "Incorrect pricing: Pro plan is $20/mo, not $15/mo; Scale plan ($90/mo) is missing."
+        },
+        {
+          "severity": "high",
+          "message": "Incorrect category: article says 'development', tool data says 'email'."
         },
         {
           "severity": "medium",
-          "message": "Category is listed as 'development' but tool data shows 'email'."
+          "message": "Missing key features: many important features from tool data not listed (e.g., SMTP relay, SDKs, tracking, security features)."
         },
         {
           "severity": "medium",
-          "message": "Features list in report is generic and does not match the detailed features from tool data."
-        },
-        {
-          "severity": "medium",
-          "message": "Tagline in report is longer and less concise than the official tagline 'Email API for developers'."
+          "message": "Tagline mismatch: article says 'Email API for developers to send transactional and marketing emails reliably.' but tool data says 'Email for developers'."
         },
         {
           "severity": "low",
-          "message": "Report mentions 'No GitHub repository found' but tool data confirms no GitHub URL, which is fine but could be clarified."
+          "message": "Concern about auto-generated URL is unnecessary; website is legitimate."
         },
         {
           "severity": "low",
-          "message": "Concern about auto-generated URL is unnecessary; the URL is correct and official."
+          "message": "No internal or external links provided in the article."
         }
       ],
       "strengths": [
-        "Clear structure with decision, scores, and metadata.",
-        "Concise analysis that addresses key verification points.",
-        "Includes pricing tiers and basic features."
+        "Clear decision and confidence score.",
+        "Concise summary of verification results.",
+        "Includes basic metadata like website and pricing."
       ],
       "recommendations": [
-        "Correct pricing information to match actual plans (Free, Pro $20/mo, Scale $90/mo, Enterprise Custom).",
-        "Update category to 'email' as per tool data.",
-        "Expand features list to include specific features like React Email, webhooks, analytics, etc.",
-        "Use the official tagline 'Email API for developers' for consistency.",
-        "Remove or rephrase the concern about auto-generated URL since it's the official website."
+        "Correct pricing to match tool data: Free ($0/mo), Pro ($20/mo), Scale ($90/mo), Enterprise (Custom).",
+        "Update category to 'email'.",
+        "Expand features list to include key ones from tool data.",
+        "Align tagline with tool data or provide a more accurate description.",
+        "Remove unnecessary concern about auto-generated URL.",
+        "Add relevant internal links to other tools or resources."
       ],
-      "auditedAt": "2026-06-17T07:30:33.678Z"
+      "auditedAt": "2026-07-01T06:37:16.134Z"
     },
     {
       "slug": "skip",
       "type": "report",
       "qualityScore": 75,
-      "accuracyScore": 60,
-      "seoScore": 70,
+      "accuracyScore": 70,
+      "seoScore": 65,
       "issues": [
         {
           "severity": "high",
-          "message": "Claims GitHub data not available, but tool data shows GitHub URL with 3093 stars."
-        },
-        {
-          "severity": "high",
-          "message": "States no evidence of community activity, but GitHub stars indicate community engagement."
+          "message": "Incorrectly states GitHub data not available; tool is open source with 3109 stars on GitHub."
         },
         {
           "severity": "medium",
-          "message": "Quality score of 70/100 is not justified; tool data shows open source with permissive licenses and community funding."
+          "message": "Quality score of 70/100 is not justified; website appears well-maintained and tool has GitHub presence."
         },
         {
           "severity": "medium",
-          "message": "Missing key features from tool data: free and open source, no license key, no trial period, etc."
+          "message": "Missing key features from tool data: completely free, no license key, no trial period, etc."
         },
         {
           "severity": "low",
-          "message": "Tagline and features in proposed metadata are incomplete compared to tool data."
+          "message": "Tagline in metadata is correct but could be more concise."
         }
       ],
       "strengths": [
         "Clear structure with decision, metrics, and analysis sections.",
-        "Correctly identifies category and website URL.",
+        "Correctly identifies category and tagline.",
         "Provides a confidence score and reasoning for approval."
       ],
       "recommendations": [
-        "Cross-check GitHub data before reporting unavailability.",
-        "Include all key features from tool data, especially open-source and licensing details.",
-        "Justify quality score with evidence from tool data or website content.",
-        "Add internal links to related tools or categories for SEO.",
-        "Optimize metadata with more relevant keywords like 'open source', 'SwiftUI', 'cross-platform'."
+        "Verify GitHub data before publishing; include stars and repository URL.",
+        "Include all key features from tool data to improve completeness.",
+        "Adjust quality score to reflect actual tool quality (e.g., 80-85).",
+        "Add internal links to related development tools or categories."
       ],
-      "auditedAt": "2026-06-17T07:30:37.567Z"
+      "auditedAt": "2026-07-01T06:37:20.058Z"
     },
     {
       "slug": "tooljet",
