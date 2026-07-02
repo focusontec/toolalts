@@ -1,12 +1,354 @@
 {
-  "runId": "2026-06-25T12:30:59.400Z",
-  "startedAt": "2026-06-25T12:30:59.401Z",
-  "maxIterations": 1,
-  "currentIteration": 0,
-  "iterations": [],
+  "runId": "2026-07-02T07:26:14.249Z",
+  "startedAt": "2026-07-02T07:26:14.249Z",
+  "maxIterations": 3,
+  "currentIteration": 1,
+  "iterations": [
+    {
+      "iteration": 0,
+      "startedAt": "2026-07-02T07:26:14.250Z",
+      "completedAt": "2026-07-02T07:32:15.687Z",
+      "fixesApplied": 5,
+      "fixesFailed": 13,
+      "escalated": 0,
+      "reAuditResults": [],
+      "stopCondition": "continue"
+    },
+    {
+      "iteration": 1,
+      "startedAt": "2026-07-02T07:32:15.690Z",
+      "completedAt": "2026-07-02T07:42:25.982Z",
+      "fixesApplied": 0,
+      "fixesFailed": 17,
+      "escalated": 0,
+      "reAuditResults": [],
+      "stopCondition": "continue"
+    }
+  ],
   "totalCostCap": 100,
-  "llmCallsUsed": 0,
+  "llmCallsUsed": 5,
   "slugsProcessed": [],
   "status": "completed",
-  "fixLog": []
+  "fixLog": [
+    {
+      "iteration": 0,
+      "slug": "system-prompts-and-models-of-ai-tools",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "markitdown",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "gstack",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "awesome-claude-skills",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "workout-cool",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "workout-cool",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "newValue": "githubUrl exists",
+      "evidence": "Has GitHub URL but stars is null",
+      "success": true
+    },
+    {
+      "iteration": 0,
+      "slug": "rowboat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "rowboat",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "newValue": "githubUrl exists",
+      "evidence": "Has GitHub URL but stars is null",
+      "success": true
+    },
+    {
+      "iteration": 0,
+      "slug": "ephe",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "colanode",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "axilla",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "axilla",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "newValue": "githubUrl exists",
+      "evidence": "Has GitHub URL but stars is null",
+      "success": true
+    },
+    {
+      "iteration": 0,
+      "slug": "hyperdiv",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "hyperdiv",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "newValue": "githubUrl exists",
+      "evidence": "Has GitHub URL but stars is null",
+      "success": true
+    },
+    {
+      "iteration": 0,
+      "slug": "open",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "open",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "project-nomad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "headroom",
+      "field": "tagline",
+      "strategy": "llm-rewrite",
+      "previousValue": "Context optimization layer for LLM applications: compress tool outputs, logs, files, and RAG chunks to reduce tokens by 60-95% without losing answer quality.",
+      "newValue": "too long",
+      "evidence": "Tagline 157 chars > 120",
+      "success": true
+    },
+    {
+      "iteration": 1,
+      "slug": "system-prompts-and-models-of-ai-tools",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "markitdown",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "gstack",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "awesome-claude-skills",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "workout-cool",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "workout-cool",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "rowboat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "rowboat",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "ephe",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "colanode",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "axilla",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "axilla",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "hyperdiv",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "hyperdiv",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "open",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "open",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "project-nomad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    }
+  ]
 }

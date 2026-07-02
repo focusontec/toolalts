@@ -358,7 +358,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-07-01T06:35:03.836Z"
+      "auditedAt": "2026-07-02T07:32:13.469Z"
     },
     {
       "slug": "anki",
@@ -608,7 +608,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-07-01T06:35:03.836Z"
+      "auditedAt": "2026-07-02T07:32:14.027Z"
     },
     {
       "slug": "stagewise",
@@ -1204,7 +1204,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-07-01T06:35:03.836Z"
+      "auditedAt": "2026-07-02T07:32:14.566Z"
     },
     {
       "slug": "hyperdiv",
@@ -1233,7 +1233,7 @@
         "githubStars: Has GitHub URL but stars is null"
       ],
       "concerns": [],
-      "auditedAt": "2026-07-01T06:35:03.836Z"
+      "auditedAt": "2026-07-02T07:32:15.111Z"
     },
     {
       "slug": "codegraph",
@@ -1449,22 +1449,11 @@
     {
       "slug": "headroom",
       "name": "headroom",
-      "accuracyScore": 97,
-      "fieldChecks": [
-        {
-          "field": "tagline",
-          "storedValue": "Context optimization layer for LLM applications: compress tool outputs, logs, files, and RAG chunks to reduce tokens by 60-95% without losing answer quality.",
-          "actualValue": "too long",
-          "verdict": "OUTDATED",
-          "source": "inference",
-          "note": "Tagline 157 chars > 120"
-        }
-      ],
-      "recommendations": [
-        "tagline: Tagline 157 chars > 120"
-      ],
+      "accuracyScore": 100,
+      "fieldChecks": [],
+      "recommendations": [],
       "concerns": [],
-      "auditedAt": "2026-07-01T06:35:03.837Z"
+      "auditedAt": "2026-07-02T07:32:15.658Z"
     }
   ],
   "content": [
