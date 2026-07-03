@@ -82,5 +82,65 @@
     "toolA": "confluence",
     "toolB": "airtable",
     "category": "productivity"
+  },
+  {
+    "slug": "cursor-vs-skip",
+    "toolA": "cursor",
+    "toolB": "skip",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-gitlab",
+    "toolA": "cursor",
+    "toolB": "gitlab",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-docker",
+    "toolA": "cursor",
+    "toolB": "docker",
+    "category": "development"
+  },
+  {
+    "slug": "cursor-vs-postman",
+    "toolA": "cursor",
+    "toolB": "postman",
+    "category": "development"
+  },
+  {
+    "slug": "skip-vs-vscode",
+    "toolA": "skip",
+    "toolB": "vscode",
+    "category": "development"
+  },
+  {
+    "slug": "gitlab-vs-vscode",
+    "toolA": "gitlab",
+    "toolB": "vscode",
+    "category": "development"
+  },
+  {
+    "slug": "docker-vs-vscode",
+    "toolA": "docker",
+    "toolB": "vscode",
+    "category": "development"
+  },
+  {
+    "slug": "postman-vs-vscode",
+    "toolA": "postman",
+    "toolB": "vscode",
+    "category": "development"
+  },
+  {
+    "slug": "gitlab-vs-skip",
+    "toolA": "gitlab",
+    "toolB": "skip",
+    "category": "development"
+  },
+  {
+    "slug": "docker-vs-skip",
+    "toolA": "docker",
+    "toolB": "skip",
+    "category": "development"
   }
 ]
