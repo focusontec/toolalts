@@ -290,7 +290,7 @@
     "rating": 5,
     "reviewsCount": 16,
     "openSource": true,
-    "githubStars": 55003,
+    "githubStars": 55024,
     "githubUrl": "https://github.com/penpot/penpot",
     "websiteUrl": "https://penpot.app",
     "pricing": [
@@ -666,7 +666,7 @@
     "rating": 4.8,
     "reviewsCount": 45000,
     "openSource": true,
-    "githubStars": 187051,
+    "githubStars": 187064,
     "githubUrl": "https://github.com/microsoft/vscode",
     "websiteUrl": "https://code.visualstudio.com",
     "pricing": [
@@ -832,7 +832,7 @@
     "rating": 4.95,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 136129,
+    "githubStars": 136199,
     "githubUrl": "https://github.com/anthropics/claude-code",
     "websiteUrl": "https://code.claude.com",
     "pricing": [
@@ -877,7 +877,7 @@
     "rating": 5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 163038,
+    "githubStars": 163105,
     "githubUrl": "https://github.com/microsoft/markitdown",
     "websiteUrl": "https://github.com/microsoft/markitdown",
     "pricing": [],
@@ -901,7 +901,7 @@
     "rating": 4.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 29093,
+    "githubStars": 29096,
     "githubUrl": "https://github.com/ComposioHQ/composio",
     "websiteUrl": "https://composio.dev",
     "pricing": [
@@ -959,7 +959,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 133,
+    "githubStars": 134,
     "githubUrl": "https://github.com/BodhiSearch/BodhiApp",
     "websiteUrl": "https://bodhi.com",
     "pricing": [
@@ -992,7 +992,7 @@
     "rating": 3.75,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28957,
+    "githubStars": 28964,
     "githubUrl": "https://github.com/ankitects/anki",
     "websiteUrl": "https://apps.ankiweb.net",
     "pricing": [
@@ -1041,7 +1041,7 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 6716,
+    "githubStars": 6718,
     "githubUrl": "https://github.com/stagewise-io/stagewise",
     "websiteUrl": "https://stagewise.io",
     "pricing": [
@@ -1093,7 +1093,7 @@
     "rating": 3.5,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 20814,
+    "githubStars": 20817,
     "githubUrl": "https://github.com/dyad-sh/dyad",
     "websiteUrl": "https://dyad.sh",
     "pricing": [
@@ -1177,7 +1177,7 @@
     "rating": 4.25,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 38136,
+    "githubStars": 38141,
     "githubUrl": "https://github.com/ToolJet/ToolJet",
     "websiteUrl": "https://tooljet.com",
     "pricing": [
@@ -1358,7 +1358,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 10348,
+    "githubStars": 10349,
     "githubUrl": "https://github.com/instantdb/instant",
     "websiteUrl": "https://instantdb.com",
     "pricing": [
@@ -1431,7 +1431,7 @@
     "rating": 4,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 30437,
+    "githubStars": 30459,
     "githubUrl": "https://github.com/langfuse/langfuse",
     "websiteUrl": "https://langfuse.com",
     "pricing": [
@@ -2700,7 +2700,7 @@
     "rating": 4.9,
     "reviewsCount": 210,
     "openSource": true,
-    "githubStars": 105725,
+    "githubStars": 105751,
     "githubUrl": "https://github.com/supabase/supabase",
     "websiteUrl": "https://supabase.com",
     "pricing": [
@@ -3271,7 +3271,7 @@
     "rating": 4.8,
     "reviewsCount": 8,
     "openSource": true,
-    "githubStars": 46082,
+    "githubStars": 46095,
     "githubUrl": "https://github.com/calcom/cal.com",
     "websiteUrl": "https://cal.com",
     "pricing": [
@@ -3455,7 +3455,7 @@
     "rating": 4.8,
     "reviewsCount": 84,
     "openSource": true,
-    "githubStars": 15566,
+    "githubStars": 15573,
     "githubUrl": "https://github.com/triggerdotdev/trigger.dev",
     "websiteUrl": "https://trigger.dev",
     "pricing": [
@@ -3509,7 +3509,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 141535,
+    "githubStars": 141551,
     "githubUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "websiteUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "pricing": [],
@@ -3532,7 +3532,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 119522,
+    "githubStars": 119606,
     "githubUrl": "https://github.com/garrytan/gstack",
     "websiteUrl": "https://github.com/garrytan/gstack",
     "pricing": [],
@@ -3555,7 +3555,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 76127,
+    "githubStars": 76150,
     "githubUrl": "https://github.com/bytedance/deer-flow",
     "websiteUrl": "https://deerflow.tech",
     "pricing": [
@@ -3587,7 +3587,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 66841,
+    "githubStars": 66875,
     "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "websiteUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
     "pricing": [],
@@ -3609,7 +3609,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 45021,
+    "githubStars": 45033,
     "githubUrl": "https://github.com/HKUDS/nanobot",
     "websiteUrl": "https://nanobot.wiki",
     "pricing": [
@@ -3640,7 +3640,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 29998,
+    "githubStars": 30002,
     "githubUrl": "https://github.com/lbjlaq/Antigravity-Manager",
     "websiteUrl": "https://lbjlaq.github.io/Antigravity-Manager/",
     "pricing": [
@@ -3670,7 +3670,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 28452,
+    "githubStars": 28457,
     "githubUrl": "https://github.com/davila7/claude-code-templates",
     "websiteUrl": "https://aitmpl.com",
     "pricing": [
@@ -3792,7 +3792,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 57610,
+    "githubStars": 57676,
     "githubUrl": "https://github.com/colbymchenry/codegraph",
     "websiteUrl": "https://github.com/anthropics/codegraph",
     "pricing": [
@@ -3847,7 +3847,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 32826,
+    "githubStars": 32861,
     "githubUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
     "websiteUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
     "pricing": [],
@@ -3870,7 +3870,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 46513,
+    "githubStars": 46574,
     "githubUrl": "https://github.com/apple/container",
     "websiteUrl": "https://apple.github.io/container/documentation/",
     "pricing": [
@@ -3976,7 +3976,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 56632,
+    "githubStars": 56720,
     "githubUrl": "https://github.com/chopratejas/headroom",
     "websiteUrl": "https://headroom-docs.vercel.app/docs",
     "pricing": [
@@ -4007,7 +4007,7 @@
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
-    "githubStars": 48089,
+    "githubStars": 48194,
     "githubUrl": "https://github.com/hesreallyhim/awesome-claude-code",
     "websiteUrl": "https://github.com/hesreallyhim/awesome-claude-code",
     "pricing": [
