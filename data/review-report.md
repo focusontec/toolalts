@@ -1,321 +1,321 @@
-# Quality Review Report — 2026-06-29
+# Quality Review Report — 2026-07-06
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Total tools | 64 |
+| Total tools | 65 |
 | Keep (quality) | 46 |
-| Needs review | 17 |
+| Needs review | 18 |
 | Suggest hide | 1 |
 | Suggest remove | 0 |
 
 ## Pipeline Health
 
-Good but has significant gaps in data completeness and discovery quality.
+Moderate. Strong core tools but many low-quality entries and missing GitHub URLs.
 
 ### Strengths
-- High-quality tools (worthiness >80) are well-identified and verified.
-- No missing website URLs, indicating good initial data collection.
-- Most active tools have high data quality scores.
+- High-quality tools (worthiness >90) are well-verified and have high data quality.
+- No missing website URLs, indicating good discovery for that field.
+- Active tools (36) outnumber drafts (19), showing reasonable pipeline progression.
 
 ### Weaknesses
-- 25 out of 64 tools (39%) missing GitHub URL, limiting verification and community assessment.
-- 32 tools (50%) have zero reviews, making it hard to gauge user satisfaction.
-- 6 tools have low worthiness (<40) and low data quality (<60), suggesting poor discovery or verification.
-- Several tools with borderline scores (e.g., Bodhi, Tasker) need clearer criteria for review vs. keep.
+- 25 tools (38%) missing GitHub URL, limiting verification and community assessment.
+- 33 tools (51%) have zero reviews, reducing confidence in worthiness scores.
+- 7 tools with low worthiness (<40) and 7 with low data quality (<60) suggest poor discovery filtering.
+- Several tools (e.g., Antigravity-Manager, Workout.cool) have very low scores and should be hidden or removed.
 
 ### Prompt Improvement Suggestions
 
 | Prompt | Issue | Suggested Fix |
 |--------|-------|---------------|
-| discovery_prompt | Tools with low worthiness and missing GitHub URLs suggest the discovery prompt may not be filtering effectively. | Add a requirement to check for GitHub presence and a minimum star count (e.g., 100) before including in the candidate list. |
-| verification_prompt | Verification prompt may be too lenient on data quality for tools with zero reviews or missing GitHub. | Add a rule: if GitHub URL is missing or reviews are zero, data quality score should be capped at 50 unless other strong signals exist. |
-| review_prompt | Tools like 'codegraph' have high worthiness (75) but low data quality (40), indicating inconsistent scoring. | Explicitly instruct the LLM to cross-check worthiness and data quality: if worthiness >70 and data quality <50, flag for manual review. |
+| discovery_prompt | Too many low-quality tools discovered (worthiness <40). | Add a minimum threshold for GitHub stars or community activity in the discovery prompt, e.g., 'Only include tools with at least 100 GitHub stars or 50 reviews.' |
+| verification_prompt | Some tools with low data quality (e.g., Colanode dataQuality=50) are not flagged for review. | Strengthen the verification prompt to require explicit checks for missing GitHub URL, zero reviews, and low data quality fields, and output a 'rec' of 'hide' if dataQuality < 50. |
+| data_enrichment_prompt | 25 tools missing GitHub URL, likely due to incomplete scraping. | Add a step to search for GitHub URL using the tool name and a fallback to 'Not found' if unavailable, and include a note to manually verify. |
 
 ### Threshold Suggestions
 
 | Parameter | Current | Suggested | Reason |
 |-----------|---------|-----------|--------|
-| Minimum GitHub stars for discovery | Not set (implicitly 0) | 100 | To filter out low-community tools and improve discovery quality. |
-| Minimum reviews for active status | 0 | 5 | To ensure tools have some user feedback before being marked active. |
-| Worthiness threshold for 'keep' | Likely 60 (based on data) | 70 | To reduce borderline tools in active set and improve overall quality. |
+| worthiness minimum for active status | none | 40 | Tools with worthiness <40 (e.g., Antigravity-Manager=15) should not be active; they clutter the pipeline. |
+| data quality minimum for keep recommendation | none | 60 | Tools with dataQuality <60 (e.g., Colanode=50) have insufficient data; they should be reviewed or hidden. |
+| GitHub URL requirement for active status | none | required | Missing GitHub URL (38% of tools) hinders verification; require it for active status or flag for manual enrichment. |
 
 ## Suggest Hide
 
-### Antigravity-Manager (`antigravity-manager`) — W:15 D:40
-- The tool appears to be a very niche utility for a specific set of tools (Antigravity Tools) that are not widely known or may not exist.
-- The GitHub stars count (29938) is suspiciously high for a tool with no reviews and a seemingly obscure purpose, suggesting possible data manipulation or a fake repository.
-- The tool has no user reviews and a rating of 0, indicating very limited or no real-world adoption.
+### Antigravity-Manager (`antigravity-manager`) — W:15 D:30
+- Tool appears to be a niche utility for a specific toolset (Antigravity Tools) that is not widely known
+- GitHub stars (29998) seem inflated for a tool with 0 reviews and no community presence; likely fake or manipulated
+- No evidence of real user base or market presence
 
 ## Needs Review
 
-### Bodhi (`bodhi`) — W:45 D:70
-- Small but real project with 133 GitHub stars and active development
-- Website URL (bodhi.com) appears to be a placeholder or unrelated domain
-- No user reviews despite a rating displayed
+### claude-code (`claude-code`) — W:95 D:70
+- Claude Code is a highly popular tool with 136k GitHub stars and strong backing by Anthropic, making it very worthy.
+- Data quality issues exist: pricing plans have duplicate names (two 'Max' plans), and the rating is 4.95/5 with 0 reviews, which is suspicious.
   Data issues:
-  - Website URL likely incorrect (bodhi.com is not the tool's site)
-  - Rating shown as 3.75/5 with 0 reviews is inconsistent
-  - GitHub URL points to BodhiSearch/BodhiApp but name is just 'Bodhi'
+  - Pricing plans contain two entries with the same name 'Max' but different prices and features.
+  - Rating is 4.95/5 with 0 reviews, which is inconsistent.
   Fixes:
-  → Verify and correct the website URL
-  → Remove or clarify the rating if no reviews exist
-  → Ensure GitHub URL matches the tool's official repository
+  → Rename the second 'Max' plan to something like 'Max Pro' or 'Max+', or merge them into one plan.
+  → Either remove the rating or add a note that it's based on limited reviews, or correct it to reflect actual reviews.
 
-### Tasker (`tasker`) — W:45 D:70
-- Small but legitimate open-source project with 105 GitHub stars and a real website; however, it has no reviews and limited market presence.
+### Bodhi (`bodhi`) — W:45 D:70
+- Tool is legitimate with real GitHub repository and 134 stars, but has very limited community adoption and no user reviews.
+- Website URL (bodhi.com) appears to be a placeholder or unrelated domain, not the actual product site.
+  Data issues:
+  - Website URL (https://bodhi.com) does not seem to be the correct product page; likely should be the GitHub Pages or a different domain.
+  - No user reviews despite a rating of 3.75/5 (0 reviews) - rating may be inaccurate or placeholder.
+  - Tagline and description are plausible but generic; could be more specific.
+  Fixes:
+  → Update website URL to the correct project page (e.g., GitHub Pages or actual product site).
+  → Remove or correct the rating if it's not based on real reviews.
+  → Consider adding more specific features or use cases to differentiate from similar tools.
+
+### Tasker (`tasker`) — W:35 D:70
+- Tool has very few GitHub stars (106) and no reviews, indicating low adoption. However, it is open-source and has a clear description. Needs more validation.
   Data issues:
   - Rating is 3.5/5 but has 0 reviews, which is inconsistent.
-  - Website URL (tasker.ai) does not appear to be the official site for this tool (likely a different product).
+  - Website URL (tasker.ai) may not be the actual product site; the GitHub repo is pitalco/tasker, which suggests the tool might be a different project.
   Fixes:
-  → Remove or correct the rating if no reviews exist.
-  → Verify and update the website URL to the correct one (e.g., GitHub page or actual project site).
+  → Verify the website URL matches the actual product.
+  → Remove rating if no reviews exist.
+  → Consider adding more user feedback or usage data.
 
 ### Ephe (`ephe`) — W:45 D:60
-- Tool has a small but real user base (579 GitHub stars) and is open source, but lacks pricing plans and reviews, indicating limited market presence.
-- Website URL points to a different GitHub repo (valentinegb/ephe) than the GitHub URL (unvalley/ephe), causing confusion.
+- Small but legitimate open-source tool with 580 stars, active development, but very niche and limited market presence.
   Data issues:
-  - Website URL (https://github.com/valentinegb/ephe) does not match GitHub URL (https://github.com/unvalley/ephe).
-  - No pricing plans listed, which may be acceptable for a free tool but should be clarified.
-  - Rating shows 3.5/5 with 0 reviews, which is inconsistent.
+  - Website URL points to a different repository (valentinegb/ephe) than GitHub URL (unvalley/ephe).
+  - Pricing plans are empty but tool is open source, so should be 'Free' or similar.
+  - Rating shows 0 reviews but has a 3.5/5 score, inconsistent.
   Fixes:
-  → Verify the correct website URL and update it.
-  → Either add a pricing plan (e.g., 'Free') or clarify that the tool is free.
-  → Remove the rating or add a note that it's based on user feedback elsewhere.
+  → Verify correct website URL and update if needed.
+  → Add a pricing plan indicating 'Free' or 'Open Source'.
+  → Remove rating or set to 0 if no reviews exist.
 
-### Colanode (`colanode`) — W:55 D:60
-- Open-source project with nearly 5k GitHub stars, indicating community interest
-- Tagline and description are clear and accurate
-- No pricing plans listed, which may be acceptable for open-source but needs clarification
-- Website URL points to GitHub repo, not a dedicated product site, reducing credibility
-- No user reviews available, making it hard to assess real-world usage
+### Colanode (`colanode`) — W:65 D:50
+- Open-source project with 4955 GitHub stars indicates significant community interest and active development.
+- Website URL points to GitHub instead of a dedicated product site, which may reduce perceived legitimacy.
+- No pricing plans listed, which is acceptable for open-source but incomplete for comparison.
+- No user reviews, making it hard to gauge real-world satisfaction.
   Data issues:
-  - Website URL is GitHub repo, not a proper product website
-  - No pricing plans provided
-  - No user reviews
+  - Website URL is GitHub repository, not a proper product website.
+  - Pricing plans are empty; should at least indicate 'Free' or 'Self-hosted'.
+  - No reviews available, but rating is given as 3.5/5 (likely auto-generated).
   Fixes:
-  → Add a proper product website URL if available
-  → Clarify pricing model (e.g., free, self-hosted, paid plans)
-  → Encourage user reviews or add note about early stage
+  → Add a proper product website URL if available.
+  → Include pricing information (e.g., 'Free (self-hosted)').
+  → Remove or clarify the rating if no reviews exist.
 
-### Onlook (`onlook`) — W:75 D:85
-- High GitHub stars (26k) indicate strong community interest and active development
-- Open-source and AI-first positioning is compelling for designers
-- Pricing plans are missing; likely free/open-source but should be clarified
-- No reviews yet, but that's common for newer tools
-  Data issues:
-  - Pricing plans array is empty; should indicate 'Free' or 'Open Source'
-  - Rating is 0/5 with 0 reviews; may need to note it's new
-  Fixes:
-  → Add pricing plan: 'Free (Open Source)' or similar
-  → Consider adding a note about the tool being new if reviews are absent
-
-### system-prompts-and-models-of-ai-tools (`system-prompts-and-models-of-ai-tools`) — W:85 D:70
-- Extremely popular GitHub repository with over 141k stars, indicating significant community interest and value.
-- Tagline and description accurately describe the repository's purpose.
+### system-prompts-and-models-of-ai-tools (`system-prompts-and-models-of-ai-tools`) — W:75 D:60
+- High GitHub stars (141k) indicate significant community interest and usage.
+- Tagline and description are clear and accurate.
 - Category 'development' is appropriate.
-- No pricing plans listed, which is expected for an open-source repository.
-- Features list is generic but plausible.
+- No pricing plans listed, which is acceptable for an open-source repository.
+- Features list is relevant.
   Data issues:
-  - Website URL is same as GitHub URL, which is acceptable for a GitHub repo but might be improved with a dedicated site.
-  - No pricing plans provided, but as an open-source project this is acceptable.
-  - Rating is 0/5 with 0 reviews, which may be due to lack of user reviews on the comparison site, not the tool's quality.
+  - Website URL is same as GitHub URL; should ideally point to a dedicated site or documentation.
+  - Rating is 0/5 with 0 reviews, which may be due to lack of user feedback integration.
+  - Status is 'review' but no specific reason provided in the input.
   Fixes:
-  → Consider adding a note that this is an open-source repository with no pricing.
-  → Encourage users to leave reviews to populate rating.
+  → Consider adding a dedicated website or documentation page if available.
+  → Integrate user reviews or ratings from GitHub or other platforms.
+  → Update status to 'keep' if data quality issues are resolved.
 
-### gstack (`gstack`) — W:35 D:50
-- GitHub stars are implausibly high (117,858) for a niche tool with 0 reviews and no pricing, suggesting data error or inflated metric
-- Tagline and description are vague; '23 opinionated tools' lacks specificity
-- No pricing plans listed, which may be acceptable for open source but incomplete for comparison site
-- Website URL is same as GitHub, which is acceptable but not ideal for a tool listing
+### gstack (`gstack`) — W:35 D:60
+- GitHub stars are extremely high (119k) but the tool is very niche and has no reviews or pricing, suggesting possible data anomaly or inflated stars.
+- Tagline and description are vague; '23 opinionated tools' is not clearly explained.
   Data issues:
-  - GitHub stars count seems unrealistic (117,858) for a tool with no user reviews and minimal description
-  - No pricing information provided
-  - Features list is generic and lacks detail
-  Fixes:
-  → Verify GitHub stars count from actual repository
-  → Add more detailed feature descriptions
-  → Consider adding pricing model (free, open source, etc.)
-
-### awesome-claude-skills (`awesome-claude-skills`) — W:65 D:70
-- High GitHub stars (66k) indicate significant community interest, but it's a curated list, not a standalone tool.
-- No pricing plans and no website beyond GitHub, which may limit its appeal as a tool listing.
-- Category 'development' is appropriate, but the tool is more of a resource list.
-  Data issues:
-  - Missing pricing plans (should be 'Free' or 'N/A').
+  - GitHub stars count seems implausibly high for a niche tool with no reviews.
+  - No pricing plans listed, which is acceptable for open source but should be noted.
   - Website URL is same as GitHub URL, no dedicated site.
-  - Tagline and description are very similar, could be more distinct.
   Fixes:
-  → Add pricing plan as 'Free' since it's open source.
-  → Consider adding a more descriptive tagline.
-  → If possible, include a link to a live demo or additional resources.
+  → Verify GitHub stars count; if accurate, update status to 'keep' with higher worthiness.
+  → Add more detailed description and feature list.
+  → Consider adding a dedicated website or documentation page.
 
-### Workout.cool (`workout-cool`) — W:25 D:60
-- Very niche open-source project with no GitHub stars or reviews, indicating minimal user base and community awareness.
+### awesome-claude-skills (`awesome-claude-skills`) — W:75 D:60
+- High GitHub stars indicate significant community interest, but the tool is a curated list rather than a standalone software tool, which may not fit the comparison site's focus.
+  Data issues:
+  - No pricing plans listed
+  - Website URL points to GitHub repo, not a dedicated product site
+  - Category 'development' may be too broad
+  Fixes:
+  → Add pricing plans or mark as free
+  → Consider if a dedicated website exists
+  → Refine category to something like 'AI Tools' or 'Developer Resources'
+
+### Workout.cool (`workout-cool`) — W:25 D:40
+- Very niche open-source project with no GitHub stars, no reviews, and no pricing info; appears unproven but may be legitimate.
   Data issues:
   - GitHub URL points to undefined
+  - No GitHub stars data
+  - No pricing plans
+  - No user reviews
+  Fixes:
+  → Update GitHub URL to correct repository
+  → Add GitHub stars if available
+  → Consider adding pricing or clarifying free status
+
+### Rowboat (`rowboat`) — W:25 D:40
+- Very niche open-source project with no GitHub stars or reviews, indicating minimal adoption. Website URL leads to a GitHub repo but no clear product presence.
+  Data issues:
+  - GitHub URL is https://github.com/undefined (invalid)
   - No pricing plans listed
-  - No reviews or rating
+  - No reviews or rating data
   - GitHub stars missing
   Fixes:
   → Update GitHub URL to correct repository
-  → Add pricing information or note as free
-  → Verify if project is active and has any users
+  → Add pricing information if available
+  → Verify product existence and gather user feedback
 
-### Rowboat (`rowboat`) — W:25 D:40
-- Very niche, unproven tool with no GitHub stars or reviews; website is a GitHub repo with no clear product presence.
+### Axilla (`axilla`) — W:35 D:40
+- Tool appears to be a real open-source project but has very limited visibility (no GitHub stars, no reviews, no pricing). It is niche and unproven, but may have potential.
   Data issues:
   - GitHub URL points to undefined
+  - No GitHub stars provided
   - No pricing plans
   - No reviews
-  - Website URL is a GitHub repo, not a proper product site
-  Fixes:
-  → Update GitHub URL to correct repo
-  → Add pricing information if available
-  → Improve website to a proper product page
-
-### Axilla (`axilla`) — W:40 D:50
-- Axilla appears to be a legitimate open-source TypeScript framework for AI development, but it has very limited market presence and no user reviews. The GitHub URL is incorrect (points to undefined), and the actual repository is under axflow/axflow. The tool is in draft status with no pricing plans, which suggests it may be early-stage or not fully launched.
-  Data issues:
-  - GitHub URL is https://github.com/undefined (invalid)
-  - No GitHub stars data provided
-  - No user reviews
-  - Pricing plans are empty
-  - Status is draft
-  Fixes:
-  → Update GitHub URL to correct repository (https://github.com/axflow/axflow)
-  → Fetch actual GitHub stars count
-  → Add pricing information if available
-  → Consider promoting to published status if the tool is active
-
-### Hyperdiv (`hyperdiv`) — W:35 D:60
-- Tool appears to be a real open-source project but has very limited community awareness (no GitHub stars, no reviews, no pricing). It is niche and unproven.
-  Data issues:
-  - GitHub URL points to undefined
-  - Pricing plans empty
-  - No reviews or ratings
-  - GitHub stars N/A
   Fixes:
   → Update GitHub URL to correct repository
-  → Add pricing information or mark as free
-  → Consider adding more context about community size or usage
+  → Add GitHub stars count if available
+  → Consider adding pricing information or note as free
+  → Encourage user reviews
 
-### codegraph (`codegraph`) — W:75 D:40
-- Tool has a clear value proposition and targets a real need (code intelligence for AI agents).
-- Open source with a large GitHub star count (55k+) indicates significant interest.
-- However, the GitHub URL and website URL are inconsistent and the website URL appears incorrect (points to anthropics/codegraph which may not be the same project).
-- Pricing data is minimal and features list is short; no reviews yet.
+### Hyperdiv (`hyperdiv`) — W:40 D:60
+- Hyperdiv is a real open-source project but has very limited community awareness and no reviews. It may be too niche for a general audience.
   Data issues:
-  - Website URL (https://github.com/anthropics/codegraph) does not match GitHub URL (https://github.com/colbymchenry/codegraph). Likely wrong.
-  - Pricing plan only has one free tier with no details; may be incomplete.
-  - No user reviews available (rating 0/5).
-  - Description and tagline are well-written but could be more detailed.
+  - GitHub URL points to undefined instead of the actual repo
+  - GitHub stars not provided
+  - No pricing plans listed
+  - Website URL is GitHub repo, not a dedicated site
   Fixes:
-  → Verify correct website URL and update accordingly.
-  → Add more pricing details if available (e.g., any paid tiers or limitations).
-  → Encourage user reviews or add more context about the tool's maturity.
-  → Consider adding more features or use cases to the list.
+  → Update GitHub URL to https://github.com/hyperdiv/hyperdiv
+  → Add GitHub stars count
+  → Consider adding pricing info if applicable
+  → Improve description with more detail on use cases
 
-### Open (`open`) — W:35 D:30
-- Tool appears to be a real open-source project but is very niche with limited community awareness; GitHub URL is invalid and no stars data available.
+### codegraph (`codegraph`) — W:75 D:60
+- High GitHub stars (57k) indicate significant community interest, but the tool is relatively new and niche.
+- Website URL points to a different GitHub repo (anthropics/codegraph) than the GitHub URL (colbymchenry/codegraph), causing confusion.
+- Tagline and description are clear and compelling, but the tool's actual market presence is unverified.
   Data issues:
-  - GitHub URL points to undefined repository
-  - No GitHub stars despite being open source
-  - Pricing plans empty (but open source so free)
-  - Website URL is a GitHub repo, not a dedicated product site
+  - Website URL (https://github.com/anthropics/codegraph) does not match GitHub URL (https://github.com/colbymchenry/codegraph).
+  - No user reviews or rating data available.
+  - Pricing plan is vague ('Free' with no details on limitations or enterprise options).
   Fixes:
-  → Update GitHub URL to correct repository if exists
-  → Add accurate GitHub stars count
-  → Consider adding a proper website URL if available
-  → Add pricing plan 'Free' or 'Open Source'
+  → Verify the correct repository and update the Website URL accordingly.
+  → Add more detailed pricing tiers or note if it's fully open-source with no paid plans.
+  → Consider adding user testimonials or review data if available.
 
-### project-nomad (`project-nomad`) — W:65 D:70
-- Project has a significant GitHub star count (32k) indicating community interest, but the website URL points to GitHub instead of a dedicated site, and there are no pricing plans listed. The tagline and description are clear and appropriate for the category.
+### Open (`open`) — W:25 D:40
+- Very niche project with no GitHub stars, no reviews, and no pricing plans; appears to be a small or early-stage open-source project.
   Data issues:
-  - Website URL is a GitHub repository, not a dedicated product website
-  - No pricing plans provided
+  - GitHub URL points to undefined; no GitHub stars; no pricing plans; website URL is a GitHub repo, not a proper website.
   Fixes:
-  → Add a proper product website URL if available
-  → Include pricing plans or mark as free/open source with no paid plans
+  → Update GitHub URL to correct repository; add pricing plans if available; verify if the project is active and has a proper website.
 
-### Extend (`extend`) — W:45 D:60
-- The tool appears to be a real product with a website and pricing, but the name 'Extend' is generic and the website URL (extend.ai/ui) suggests it might be a UI kit for a larger platform, not a standalone tool.
-- The tagline and description focus on document viewing components, but the features and pricing plans describe an API-based document processing service (Extract, Parse, Classify, etc.), which is inconsistent.
-- No GitHub stars or URL provided despite being open source, which is suspicious.
-- The tool has no reviews and is in draft status, indicating it may not be widely used or fully launched.
+### project-nomad (`project-nomad`) — W:75 D:60
+- High GitHub stars (32k+) indicate significant interest and community validation.
+- Open source and active development, but niche focus on offline AI/survival may limit broad appeal.
+- No pricing plans listed, which is acceptable for open source but data is incomplete.
+- Website URL points to GitHub, not a dedicated product page, which may affect user trust.
   Data issues:
-  - Tagline and description describe a React UI kit, but features and pricing describe an API service.
-  - Open source claim but no GitHub URL or stars provided.
-  - Pricing plans list features that are not related to the described UI kit (e.g., Parse API, Extract API, Agentic OCR).
-  - No reviews and draft status suggest the tool may not be ready for listing.
+  - Website URL is a GitHub repository, not a dedicated product or landing page.
+  - No pricing plans provided (even for open source, a 'Free' plan is typical).
+  - Category 'other' is too generic; a more specific category like 'AI Assistant' or 'Knowledge Base' would be better.
+  Fixes:
+  → Add a dedicated website or landing page for the project.
+  → Include a pricing plan entry (e.g., 'Free' for open source).
+  → Update category to a more specific one (e.g., 'AI', 'Productivity', or 'Education').
+
+### Extend (`extend`) — W:45 D:50
+- The tool appears to be a real product with a website and pricing, but it is not well-known and has no reviews or GitHub stars.
+- The tagline and description mention an open source React UI kit, but the pricing plans and features describe a document processing API service, which is inconsistent.
+- The tool is in draft status and lacks community validation.
+  Data issues:
+  - Tagline and description describe a UI kit, but features and pricing are for an API service.
+  - No GitHub URL or stars provided despite claiming open source.
+  - Rating is 0/5 with no reviews.
+  - Status is draft.
   Fixes:
   → Clarify whether the tool is a UI kit or an API service, and update tagline/description accordingly.
-  → Provide a valid GitHub URL if open source, or remove the open source flag.
-  → Align pricing plans with the actual product offering.
-  → Consider waiting until the tool has more user adoption and reviews before listing.
+  → Provide a valid GitHub URL if it is open source.
+  → Gather user reviews or remove the rating if not applicable.
+  → Publish the tool or update status to reflect actual availability.
 
-### headroom (`headroom`) — W:65 D:70
-- The tool has a very high GitHub star count (53323) which seems unrealistic for a relatively new project, possibly indicating fake stars or a mistake.
-- The concept is valuable and addresses a real need in LLM applications, but the GitHub stars discrepancy raises suspicion.
-- The website URL is a Vercel docs page, which is plausible but not a strong domain.
-- No reviews or ratings on the platform yet, and the tool is in draft status.
+### headroom (`headroom`) — W:85 D:75
+- High GitHub stars (56,898) suggest significant interest, but the repository URL appears to be a personal account with a name that doesn't match the tool name, raising authenticity concerns.
+- Tagline and description are clear and compelling, addressing a real need in LLM context optimization.
+- Pricing and features are well-defined, but the lack of user reviews and draft status indicate the tool may be early-stage.
   Data issues:
-  - GitHub stars (53323) are extremely high for a project with no reviews and a draft status; likely a data error or inflated.
-  - No user reviews or ratings available.
-  - Website URL is a subdomain (headroom-docs.vercel.app) rather than a dedicated domain, which may affect credibility.
+  - GitHub URL points to a personal account (chopratejas) rather than an organization, and the star count seems unusually high for a new tool, potentially inaccurate.
+  - Website URL (headroom-docs.vercel.app) is a documentation site, not a main product page, which may confuse users.
+  - No user reviews or ratings available, making it hard to gauge real-world adoption.
   Fixes:
-  → Verify the GitHub star count and correct if erroneous.
-  → Add more detailed pricing tiers if available.
-  → Encourage user reviews to build credibility.
-  → Consider a more professional website domain.
+  → Verify GitHub repository authenticity and star count; if inflated, correct or note as unverified.
+  → Update website URL to a proper product landing page if available.
+  → Encourage user reviews or provide more evidence of usage (e.g., case studies, testimonials).
+
+### awesome-claude-code (`awesome-claude-code`) — W:85 D:70
+- High GitHub stars (48k+) indicate significant community interest and value
+- Topic is relevant and timely (AI coding tools)
+- Data quality issues: tagline and description refer to Claude Code but the repo name is 'awesome-claude-code' and the GitHub URL points to a user 'hesreallyhim' which may not be the official Anthropic repository; the website URL is the same as GitHub URL, which is acceptable for an awesome-list
+- Pricing is free, which is appropriate for an awesome-list
+  Data issues:
+  - GitHub URL points to a personal account (hesreallyhim) rather than an official organization; authenticity of the list is unclear
+  - No reviews or rating data available (0 reviews) despite high stars
+  - Status is 'draft' which may indicate incomplete curation
+  Fixes:
+  → Verify the repository is the primary/maintained awesome-list for Claude Code
+  → Update status to 'published' if the list is complete and maintained
+  → Consider adding a note about the unofficial nature of the list if applicable
 
 ## Keep
 
 - **Notion** (`notion`) — W:95 D:95
-- **Obsidian** (`obsidian`) — W:95 D:90
-- **Figma** (`figma`) — W:95 D:95
+- **Obsidian** (`obsidian`) — W:95 D:85
+- **Figma** (`figma`) — W:95 D:90
 - **Penpot** (`penpot`) — W:95 D:90
-- **Linear** (`linear`) — W:85 D:95
-- **GitHub Issues** (`github-issues`) — W:95 D:95
+- **Linear** (`linear`) — W:95 D:95
+- **GitHub Issues** (`github-issues`) — W:95 D:90
 - **Cursor** (`cursor`) — W:95 D:90
 - **VS Code** (`vscode`) — W:95 D:95
 - **Slack** (`slack`) — W:95 D:90
 - **Discord** (`discord`) — W:95 D:100
-- **claude-code** (`claude-code`) — W:95 D:85
 - **markitdown** (`markitdown`) — W:85 D:90
 - **composio** (`composio`) — W:85 D:90
 - **AnkiAIUtils** (`anki`) — W:95 D:90
-- **Stagewise** (`stagewise`) — W:65 D:85
+- **Stagewise** (`stagewise`) — W:75 D:85
 - **Dyad** (`dyad`) — W:75 D:85
-- **ToolJet** (`tooljet`) — W:85 D:95
+- **ToolJet** (`tooljet`) — W:85 D:90
 - **Skip** (`skip`) — W:65 D:85
-- **InstantDB** (`instantdb`) — W:85 D:90
+- **Onlook** (`onlook`) — W:82 D:85
+- **InstantDB** (`instantdb`) — W:82 D:85
 - **Langfuse** (`langfuse`) — W:85 D:90
 - **Jira** (`jira`) — W:95 D:90
 - **Trello** (`trello`) — W:95 D:95
 - **Asana** (`asana`) — W:95 D:95
 - **ClickUp** (`clickup`) — W:95 D:90
-- **GitLab** (`gitlab`) — W:95 D:90
-- **Docker** (`docker`) — W:95 D:95
-- **Postman** (`postman`) — W:95 D:95
+- **GitLab** (`gitlab`) — W:95 D:95
+- **Docker** (`docker`) — W:95 D:90
+- **Postman** (`postman`) — W:95 D:90
 - **Zoom** (`zoom`) — W:95 D:90
 - **Confluence** (`confluence`) — W:95 D:95
 - **Miro** (`miro`) — W:95 D:90
-- **Airtable** (`airtable`) — W:95 D:85
-- **Zapier** (`zapier`) — W:95 D:85
-- **Vercel** (`vercel`) — W:95 D:85
+- **Airtable** (`airtable`) — W:95 D:90
+- **Zapier** (`zapier`) — W:95 D:90
+- **Vercel** (`vercel`) — W:95 D:95
 - **Supabase** (`supabase`) — W:95 D:90
 - **Microsoft Teams** (`microsoft-teams`) — W:95 D:95
-- **Google Meet** (`google-meet`) — W:95 D:95
-- **Telegram** (`telegram`) — W:95 D:90
-- **GitHub Copilot** (`github-copilot`) — W:95 D:90
+- **Google Meet** (`google-meet`) — W:95 D:100
+- **Telegram** (`telegram`) — W:95 D:95
+- **GitHub Copilot** (`github-copilot`) — W:95 D:85
 - **Resend** (`resend`) — W:85 D:95
 - **Cal.com** (`cal-com`) — W:95 D:95
-- **Unkey** (`unkey`) — W:75 D:90
+- **Unkey** (`unkey`) — W:75 D:85
 - **Trigger.dev** (`trigger-dev`) — W:85 D:95
-- **deer-flow** (`deer-flow`) — W:85 D:95
-- **nanobot** (`nanobot`) — W:85 D:95
+- **deer-flow** (`deer-flow`) — W:80 D:90
+- **nanobot** (`nanobot`) — W:85 D:90
 - **claude-code-templates** (`claude-code-templates`) — W:75 D:85
-- **container** (`container`) — W:85 D:90
+- **container** (`container`) — W:85 D:95
