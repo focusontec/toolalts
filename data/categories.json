@@ -60,6 +60,56 @@
     "description": "AI tools that convert documents, PDFs, articles, and notes into podcast episodes with natural voices and editable scripts."
   },
   {
+    "slug": "crm",
+    "name": "CRM & Sales",
+    "description": "Customer relationship management, sales pipelines, lead tracking, and revenue tools."
+  },
+  {
+    "slug": "finance",
+    "name": "Finance & Accounting",
+    "description": "Invoicing, bookkeeping, expense tracking, and financial management platforms."
+  },
+  {
+    "slug": "marketing",
+    "name": "Marketing",
+    "description": "Email campaigns, social media management, SEO tools, and customer engagement platforms."
+  },
+  {
+    "slug": "analytics",
+    "name": "Data & Analytics",
+    "description": "Web analytics, product analytics, business intelligence, and data visualization tools."
+  },
+  {
+    "slug": "monitoring",
+    "name": "Monitoring & Observability",
+    "description": "Application monitoring, uptime tracking, log management, and infrastructure observability."
+  },
+  {
+    "slug": "database",
+    "name": "Databases",
+    "description": "Relational, NoSQL, vector, and graph databases for building applications."
+  },
+  {
+    "slug": "cms",
+    "name": "Content Management",
+    "description": "Content management systems, headless CMS, blogging platforms, and publishing tools."
+  },
+  {
+    "slug": "automation",
+    "name": "Automation",
+    "description": "Workflow automation, integration platforms, iPaaS, and business process automation."
+  },
+  {
+    "slug": "cloud",
+    "name": "Cloud Infrastructure",
+    "description": "Cloud hosting, server management, container orchestration, and deployment platforms."
+  },
+  {
+    "slug": "identity",
+    "name": "Identity & Access",
+    "description": "Authentication, SSO, identity management, secrets management, and access control."
+  },
+  {
     "slug": "other",
     "name": "Other",
     "description": "Useful software tools that do not fit a primary ToolAlts category yet."

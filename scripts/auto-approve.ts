@@ -7,8 +7,10 @@
 
 import fs from "fs";
 import path from "path";
+import { callLlm } from "./lib/llm";
 
 const VERIFIED_PATH = path.resolve(__dirname, "../data/verified-results.json");
+const PENDING_PATH = path.resolve(__dirname, "../data/pending-tools.json");
 const TOOLS_PATH = path.resolve(__dirname, "../data/tools.json");
 const COMPARISONS_PATH = path.resolve(__dirname, "../data/comparisons.json");
 const CATEGORIES_PATH = path.resolve(__dirname, "../data/categories.json");
@@ -205,15 +207,325 @@ function generateComparisonsForCategory(
   return newComparisons;
 }
 
+function loadPending(): any[] {
+  if (!fs.existsSync(PENDING_PATH)) return [];
+  return JSON.parse(fs.readFileSync(PENDING_PATH, "utf-8"));
+}
+
+function savePending(pending: any[]) {
+  fs.writeFileSync(PENDING_PATH, JSON.stringify(pending, null, 2) + "\n");
+}
+
+// ── OA Fast Track ────────────────────────────────────────────────────
+// For tools discovered from OpenAlternative, we skip the LLM verification
+// step (ai-verify) and instead use LLM to generate unique content directly.
+// We NEVER copy OA's descriptions — SEO safety.
+
+const OA_CATEGORY_MAP: Record<string, string> = {
+  "AI Development Platforms": "developer-tools",
+  "Machine Learning Infrastructure": "developer-tools",
+  "AI Security & Privacy": "security",
+  "AI Interaction & Interfaces": "productivity",
+  "CRM & Sales": "crm",
+  "ERP & Operations": "other",
+  "Finance & Accounting": "finance",
+  "Human Resources (HR)": "other",
+  "Marketing & Customer Engagement": "marketing",
+  "Customer Support & Success": "communication",
+  "E-commerce Platforms": "other",
+  "Project & Work Management": "project-management",
+  "Collaboration & Communication": "communication",
+  "Scheduling & Event Management": "scheduling",
+  "Document Management & E-Signatures": "productivity",
+  "Forms & Surveys": "productivity",
+  "Compliance & Risk Management": "security",
+  "Legal": "other",
+  "Social Networking": "other",
+  "Community Building Platforms": "communication",
+  "Collaboration & Feedback": "communication",
+  "Content Management Systems (CMS)": "cms",
+  "Community Platforms": "communication",
+  "Documentation & Knowledge Base": "productivity",
+  "Learning Management Systems (LMS)": "education",
+  "Digital Asset Management (DAM)": "design",
+  "Publishing": "cms",
+  "Blogging & Personal Sites": "cms",
+  "Web & Product Analytics": "analytics",
+  "Business Intelligence & Reporting": "analytics",
+  "Data Engineering & Integration": "developer-tools",
+  "Data Warehousing & Processing": "database",
+  "Data Extraction & Web Scraping": "developer-tools",
+  "Website Builders": "design",
+  "IDEs & Code Editors": "development",
+  "Frameworks & Platforms": "development",
+  "API Development & Testing": "developer-tools",
+  "Testing & Quality Assurance": "developer-tools",
+  "Version Control & Collaboration": "development",
+  "Code Analysis & Transformation": "developer-tools",
+  "Build & Deployment": "developer-tools",
+  "Integration Platforms": "automation",
+  "AI Assisted Coding": "development",
+  "Terminals": "development",
+  "Search Engines": "database",
+  "Cloud Infrastructure Management": "cloud",
+  "Server & VM Management": "cloud",
+  "Monitoring & Observability": "monitoring",
+  "Databases": "database",
+  "Networking & Connectivity": "cloud",
+  "Orchestration & Scheduling": "automation",
+  "Messaging & Event Streaming": "developer-tools",
+  "Storage Solutions": "cloud",
+  "Backup & Recovery": "cloud",
+  "Finance & Fintech": "finance",
+  "Design & Prototyping": "design",
+  "Cryptocurrency & Blockchain": "other",
+  "Gaming": "other",
+  "Internet of Things (IoT)": "other",
+  "Logistics & Supply Chain": "other",
+  "Media & Streaming": "other",
+  "Photo & Video Editors": "design",
+  "Note Taking & Knowledge Management": "productivity",
+  "Password & Secret Management": "identity",
+  "Screen Capture & Recording": "productivity",
+  "File Management & Sync": "productivity",
+  "Email & Communication": "email",
+  "Automation": "automation",
+  "Time & Task Management": "productivity",
+  "Personal Finance Management": "finance",
+  "Design & Visualization": "design",
+  "Bookmark & Content Management": "productivity",
+  "Remote Desktop & Access": "developer-tools",
+  "Browsers & Extensions": "other",
+  "Input & Dictation": "productivity",
+  "Office Suites": "productivity",
+  "Identity & Access Management (IAM)": "identity",
+  "Secrets Management": "identity",
+  "Threat Detection & Response": "security",
+  "Network Security": "security",
+  "Data Security & Privacy": "security",
+  "Application Security": "security",
+  "Fraud Prevention": "security",
+};
+
+/**
+ * Resolve the actual website URL from an OpenAlternative tool page.
+ * OA pages contain the real tool URL as a link with utm_source=openalternative.
+ * We extract the first such link and strip the UTM parameters.
+ */
+/**
+ * Find GitHub repo and extract homepage URL + stars.
+ * Returns { githubUrl, websiteUrl, githubStars }.
+ * The homepage field from GitHub API is the tool's real website.
+ */
+async function findGithubInfo(
+  name: string
+): Promise<{ githubUrl: string | null; websiteUrl: string | null; githubStars: number | null }> {
+  try {
+    const query = encodeURIComponent(name.replace(/[^\w\s]/g, ""));
+    const ghHeaders: Record<string, string> = process.env.GITHUB_TOKEN
+      ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+      : {};
+    const res = await fetch(
+      `https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc&per_page=3`,
+      { headers: ghHeaders, signal: AbortSignal.timeout(10000) }
+    );
+    if (res.ok) {
+      const data = await res.json();
+      for (const repo of data.items || []) {
+        const repoName = repo.name.toLowerCase();
+        const toolSlug = name.toLowerCase().replace(/\s+/g, "-");
+        const toolCompact = name.toLowerCase().replace(/\s+/g, "");
+        if (repoName === toolSlug || repoName === toolCompact) {
+          return {
+            githubUrl: `https://github.com/${repo.full_name}`,
+            websiteUrl: repo.homepage || null,
+            githubStars: repo.stargazers_count,
+          };
+        }
+      }
+    }
+  } catch {}
+  return { githubUrl: null, websiteUrl: null, githubStars: null };
+}
+
+/**
+ * Use LLM to generate UNIQUE tagline, description, and features.
+ * We do NOT pass OA's description to the LLM — SEO safety.
+ */
+async function generateOaContent(
+  name: string,
+  websiteUrl: string,
+  oaSubcategory: string,
+  oaStars: string | null
+): Promise<{ tagline: string; description: string; features: string[] }> {
+  const systemPrompt = `You are a software analyst writing for a SaaS alternatives directory website.
+Your job is to write a concise, accurate tagline, description, and feature list for a software tool.
+
+IMPORTANT RULES:
+- Write ORIGINAL content based on the tool's name, website, and category.
+- Do NOT copy or paraphrase any external descriptions.
+- Tagline: one compelling sentence, max 80 characters.
+- Description: 2-3 factual sentences about what the tool does and who it serves.
+- Features: exactly 3-5 short bullet points, each under 60 characters.
+- Be specific and factual. No marketing fluff.
+
+Respond in JSON format:
+{
+  "tagline": "...",
+  "description": "...",
+  "features": ["...", "...", "..."]
+}`;
+
+  const userPrompt = `Tool name: ${name}
+Website: ${websiteUrl}
+Category: ${oaSubcategory}
+GitHub stars: ${oaStars || "unknown"}
+
+Write a tagline, description, and features for this tool.`;
+
+  try {
+    const response = await callLlm(systemPrompt, userPrompt, { jsonMode: true });
+    const data = JSON.parse(response.content);
+    return {
+      tagline: data.tagline || `${name} — ${oaSubcategory}`,
+      description: data.description || `${name} is an open-source tool in the ${oaSubcategory} space.`,
+      features: Array.isArray(data.features) ? data.features.slice(0, 5) : [],
+    };
+  } catch (err) {
+    console.warn(`   ⚠ LLM failed for ${name}, using fallback content`);
+    return {
+      tagline: `${name} — open-source ${oaSubcategory.toLowerCase()} tool`,
+      description: `${name} is an open-source alternative in the ${oaSubcategory} category.`,
+      features: [`Open-source ${oaSubcategory.toLowerCase()} solution`],
+    };
+  }
+}
+
+/**
+ * Try to find the GitHub repo URL from the tool's website or name.
+ */
+async function findGithubUrl(name: string, websiteUrl: string): Promise<string | null> {
+  // Try GitHub search API
+  try {
+    const query = encodeURIComponent(name.replace(/[^\w\s]/g, ""));
+    const res = await fetch(`https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc&per_page=1`, {
+      headers: process.env.GITHUB_TOKEN
+        ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+        : {},
+      signal: AbortSignal.timeout(10000),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.items?.length > 0) {
+        const repo = data.items[0];
+        // Verify the repo name matches closely
+        if (repo.name.toLowerCase() === name.toLowerCase().replace(/\s+/g, "-") ||
+            repo.name.toLowerCase() === name.toLowerCase().replace(/\s+/g, "")) {
+          return `https://github.com/${repo.full_name}`;
+        }
+      }
+    }
+  } catch {}
+  return null;
+}
+
+async function processOaCandidates(
+  pending: any[],
+  tools: Tool[],
+  validCategories: Set<string>
+): Promise<{ newTools: Tool[]; processed: any[]; remaining: any[] }> {
+  const oaCandidates = pending.filter((p) => p.source === "openalternative");
+  const otherCandidates = pending.filter((p) => p.source !== "openalternative");
+
+  if (oaCandidates.length === 0) {
+    return { newTools: [], processed: [], remaining: otherCandidates };
+  }
+
+  console.log(`\n📡 OpenAlternative Fast Track: ${oaCandidates.length} candidates`);
+  const existingSlugs = new Set(tools.map((t) => t.slug));
+  const newTools: Tool[] = [];
+  const processed: any[] = [];
+
+  for (const candidate of oaCandidates) {
+    if (existingSlugs.has(candidate.slug)) {
+      console.log(`   ⏭ ${candidate.name}: already exists, skipping`);
+      processed.push(candidate);
+      continue;
+    }
+
+    const oaSubcategory = candidate.rawData?.oaSubcategory || "Other";
+    const mappedCategory = OA_CATEGORY_MAP[oaSubcategory] || "other";
+
+    if (!validCategories.has(mappedCategory)) {
+      console.warn(`   ⚠ ${candidate.name}: category "${mappedCategory}" not valid, using "other"`);
+    }
+
+    console.log(`   🔄 ${candidate.name}: finding GitHub repo & website...`);
+
+    // Step 1: Find GitHub repo → get homepage URL + stars
+    const ghInfo = await findGithubInfo(candidate.name);
+    const githubUrl = ghInfo.githubUrl;
+    const githubStars = ghInfo.githubStars;
+
+    // Website priority: GitHub homepage > OA fallback
+    const websiteUrl = ghInfo.websiteUrl || `https://openalternative.co/${candidate.slug}`;
+
+    // Step 2: Generate UNIQUE content via LLM (NOT copying OA descriptions)
+    console.log(`   🧠 ${candidate.name}: generating content...`);
+    const content = await generateOaContent(
+      candidate.name,
+      websiteUrl,
+      oaSubcategory,
+      candidate.rawData?.oaStars
+    );
+
+    const tool: Tool = {
+      slug: candidate.slug,
+      name: candidate.name,
+      tagline: content.tagline,
+      description: content.description,
+      rating: 0,
+      reviewsCount: 0,
+      openSource: true,
+      githubStars,
+      githubUrl,
+      websiteUrl,
+      pricing: [],
+      features: content.features,
+      category: validCategories.has(mappedCategory) ? mappedCategory : "other",
+      logo: `/logos/${candidate.slug}.svg`,
+      status: "active",
+    };
+
+    newTools.push(tool);
+    processed.push(candidate);
+    existingSlugs.add(candidate.slug);
+    console.log(`   ✓ ${candidate.name} → ${tool.category} (active)`);
+
+    // Rate limit: small delay between LLM calls
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+
+  const remaining = [...otherCandidates];
+  return { newTools, processed, remaining };
+}
+
 async function main() {
   const verified = loadVerified();
+  const pending = loadPending();
   const tools = loadTools();
   let comparisons = loadComparisons();
-  const existingSlugs = new Set(tools.map((t) => t.slug));
 
   console.log(`🔧 Auto-Approval Pipeline starting...`);
   console.log(`   Existing tools: ${tools.length}`);
   console.log(`   Verified results: ${verified.length}`);
+  console.log(`   Pending candidates: ${pending.length}`);
+
+  // Early exit: nothing to process
+  if (verified.length === 0 && pending.length === 0) {
+    console.log("📭 Nothing to process (no verified results, no pending candidates).");
+    return;
+  }
 
   // Always run comparison cleanup: dedup + remove entries referencing inactive tools
   const activeSlugs = new Set(tools.filter((t) => t.status === "active").map((t) => t.slug));
@@ -229,71 +541,89 @@ async function main() {
   });
   if (comparisons.length < beforeCount) {
     console.log(`   Comparison cleanup: ${beforeCount} → ${comparisons.length} (removed ${beforeCount - comparisons.length} inactive/duplicate)`);
-    saveComparisons(comparisons);
   }
 
+  // ── Part 1: Process verified results (existing pipeline) ────────────
+  const existingSlugs = new Set(tools.map((t) => t.slug));
   const approved = verified.filter(
     (v) => v.decision === "APPROVE" && v.confidence >= 80 && !existingSlugs.has(v.slug)
   );
 
   console.log(`   New verified drafts to ingest: ${approved.length}`);
 
-  if (approved.length === 0) {
-    console.log("📭 No new verified tools to ingest.");
-    return;
-  }
-
   const validCategories = loadValidCategories();
-  const newTools = approved.map(verifiedToTool);
+  let verifiedTools: Tool[] = [];
+  let skippedCount = 0;
 
-  // Validate all new tools before writing
-  const validationErrors: Map<string, string[]> = new Map();
-  for (const tool of newTools) {
-    const errors = validateTool(tool, validCategories);
-    if (errors.length > 0) {
-      validationErrors.set(tool.slug, errors);
+  if (approved.length > 0) {
+    const newTools = approved.map(verifiedToTool);
+
+    // Validate all new tools before writing
+    const validationErrors: Map<string, string[]> = new Map();
+    for (const tool of newTools) {
+      const errors = validateTool(tool, validCategories);
+      if (errors.length > 0) {
+        validationErrors.set(tool.slug, errors);
+      }
     }
+
+    if (validationErrors.size > 0) {
+      console.warn(`\n⚠️ Validation issues found:`);
+      for (const [slug, errors] of validationErrors) {
+        console.warn(`   ${slug}: ${errors.join("; ")}`);
+      }
+    }
+
+    // Filter out tools with critical validation errors (missing/fake URLs)
+    verifiedTools = newTools.filter((tool) => {
+      const errors = validationErrors.get(tool.slug) || [];
+      const hasCriticalError = errors.some(
+        (e) => e.includes("missing websiteUrl") || e.includes("auto-generated")
+      );
+      if (hasCriticalError) {
+        console.warn(`   ❌ SKIPPED ${tool.slug}: has critical URL issues`);
+      }
+      return !hasCriticalError;
+    });
+
+    skippedCount = newTools.length - verifiedTools.length;
+    if (skippedCount > 0) {
+      console.warn(`\n   Skipped ${skippedCount} tools with missing/fake URLs.`);
+    }
+
+    // Clear verified results to avoid re-processing
+    fs.writeFileSync(VERIFIED_PATH, "[]");
   }
 
-  if (validationErrors.size > 0) {
-    console.warn(`\n⚠️ Validation issues found:`);
-    for (const [slug, errors] of validationErrors) {
-      console.warn(`   ${slug}: ${errors.join("; ")}`);
-    }
+  // ── Part 2: OA Fast Track Processing ────────────────────────────────
+  let oaNewTools: Tool[] = [];
+  let oaProcessedCount = 0;
+  let remainingPending: any[] = pending;
+
+  if (pending.length > 0) {
+    const oaResult = await processOaCandidates(pending, [...tools, ...verifiedTools], validCategories);
+    oaNewTools = oaResult.newTools;
+    oaProcessedCount = oaResult.processed.length;
+    remainingPending = oaResult.remaining;
+
+    // Update pending: remove processed OA candidates, keep others
+    savePending(remainingPending);
   }
 
-  // Filter out tools with critical validation errors (missing/fake URLs)
-  const validTools = newTools.filter((tool) => {
-    const errors = validationErrors.get(tool.slug) || [];
-    const hasCriticalError = errors.some(
-      (e) => e.includes("missing websiteUrl") || e.includes("auto-generated")
-    );
-    if (hasCriticalError) {
-      console.warn(`   ❌ SKIPPED ${tool.slug}: has critical URL issues`);
-    }
-    return !hasCriticalError;
-  });
+  // ── Part 3: Merge everything and generate comparisons ───────────────
+  const allTools = [...tools, ...verifiedTools, ...oaNewTools];
 
-  const skippedCount = newTools.length - validTools.length;
-  if (skippedCount > 0) {
-    console.warn(`\n   Skipped ${skippedCount} tools with missing/fake URLs.`);
-    console.warn(`   Fix their URLs in verified-results.json and re-run auto-approve.`);
-  }
-
-  const allTools = [...tools, ...validTools];
-
-  // Comparison generation only uses active tools. Newly ingested tools stay draft
-  // until reviewed, so they cannot expand the public index automatically.
-  const affectedCategories = new Set(validTools.map((t) => t.category));
-  let newComparisons: Comparison[] = [];
+  // Generate comparisons for all new tools (verified + OA)
+  const allNewTools = [...verifiedTools, ...oaNewTools];
+  const affectedCategories = new Set(allNewTools.map((t) => t.category));
+  const newComparisons: Comparison[] = [];
   for (const cat of affectedCategories) {
     const catNew = generateComparisonsForCategory(allTools, cat, comparisons);
-    newComparisons = [...newComparisons, ...catNew];
+    newComparisons.push(...catNew);
   }
 
+  // Merge and deduplicate comparisons
   const allComparisonsRaw = [...comparisons, ...newComparisons];
-
-  // Deduplicate by normalized pair key, but PRESERVE the first record's original slug
   const seenPairs2 = new Set<string>();
   const allComparisons: Comparison[] = [];
   for (const c of allComparisonsRaw) {
@@ -301,25 +631,29 @@ async function main() {
     const key = `${pair[0]}-${pair[1]}`;
     if (!seenPairs2.has(key)) {
       seenPairs2.add(key);
-      allComparisons.push(c); // Keep original slug, toolA, toolB
+      allComparisons.push(c);
     }
   }
 
+  // Save final state
   saveTools(allTools);
   saveComparisons(allComparisons);
 
-  // Clear verified results to avoid re-processing
-  fs.writeFileSync(VERIFIED_PATH, "[]");
-
   console.log(`\n✅ Pipeline complete:`);
-  console.log(`   Draft tools ingested: ${validTools.length}`);
-  console.log(`   Tools skipped (URL issues): ${skippedCount}`);
+  console.log(`   Verified drafts ingested: ${verifiedTools.length}`);
+  console.log(`   Verified skipped (URL issues): ${skippedCount}`);
+  console.log(`   OA tools added (active): ${oaNewTools.length}`);
+  console.log(`   OA pending processed: ${oaProcessedCount}`);
   console.log(`   New comparisons: ${newComparisons.length}`);
   console.log(`   Total tools: ${allTools.length}`);
   console.log(`   Total comparisons: ${allComparisons.length}`);
+  console.log(`   Remaining pending: ${remainingPending.length}`);
 
-  for (const t of validTools) {
+  for (const t of verifiedTools) {
     console.log(`   + ${t.name} (${t.category}) — draft, ${t.openSource ? "Open Source" : "Proprietary"}`);
+  }
+  for (const t of oaNewTools) {
+    console.log(`   + ${t.name} (${t.category}) — active, Open Source`);
   }
 }
 

@@ -1,0 +1,52 @@
+name: Import OpenAlternative Tools
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # Every day at 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      # Step 1: Discover tools from OpenAlternative README → pending-tools.json
+      - name: Import from OpenAlternative
+        run: npx tsx scripts/import-openalternative.ts
+
+      # Step 2: Process pending → tools.json (OA fast track with LLM content generation)
+      - name: Auto-approve OA tools
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/auto-approve.ts
+
+      # Step 3: SEO audit
+      - name: SEO audit
+        run: npm run seo:audit
+
+      # Step 4: Commit and push
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "autoclaw: import openalternative batch $(date -u +%Y-%m-%d)"
+            git push
+          fi

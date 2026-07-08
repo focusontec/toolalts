@@ -178,5 +178,11 @@
     "toolA": "podhoc",
     "toolB": "sparkpod",
     "category": "ai-podcast"
+  },
+  {
+    "slug": "trigger-dev-vs-unkey",
+    "toolA": "trigger-dev",
+    "toolB": "unkey",
+    "category": "developer-tools"
   }
 ]
