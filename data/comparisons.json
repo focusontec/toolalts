@@ -142,5 +142,41 @@
     "toolA": "docker",
     "toolB": "skip",
     "category": "development"
+  },
+  {
+    "slug": "vocalvia-vs-notebooklm",
+    "toolA": "vocalvia",
+    "toolB": "notebooklm",
+    "category": "ai-podcast"
+  },
+  {
+    "slug": "vocalvia-vs-jellypod",
+    "toolA": "vocalvia",
+    "toolB": "jellypod",
+    "category": "ai-podcast"
+  },
+  {
+    "slug": "vocalvia-vs-sparkpod",
+    "toolA": "vocalvia",
+    "toolB": "sparkpod",
+    "category": "ai-podcast"
+  },
+  {
+    "slug": "notebooklm-vs-jellypod",
+    "toolA": "notebooklm",
+    "toolB": "jellypod",
+    "category": "ai-podcast"
+  },
+  {
+    "slug": "jellypod-vs-sparkpod",
+    "toolA": "jellypod",
+    "toolB": "sparkpod",
+    "category": "ai-podcast"
+  },
+  {
+    "slug": "podhoc-vs-sparkpod",
+    "toolA": "podhoc",
+    "toolB": "sparkpod",
+    "category": "ai-podcast"
   }
 ]

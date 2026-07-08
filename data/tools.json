@@ -4341,5 +4341,337 @@
     "category": "development",
     "logo": "/logos/awesome-claude-code.svg",
     "status": "draft"
+  },
+  {
+    "slug": "vocalvia",
+    "name": "VocalVia",
+    "tagline": "Turn any document into an editable podcast episode with AI",
+    "description": "VocalVia is an AI podcast generator that converts PDFs, articles, notes, and reports into structured podcast episodes. It creates an editable script with roles, pacing, and expression tags before generating audio, giving creators full editorial control over the final output.",
+    "rating": 4.3,
+    "reviewsCount": 12,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.vocalvia.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Document upload and script editing",
+          "Starter credits",
+          "Basic voice selection",
+          "Audio export",
+          "Email support"
+        ]
+      },
+      {
+        "plan": "Standard",
+        "price": "$8 per month (billed yearly at $96)",
+        "features": [
+          "360,000 credits per year",
+          "About 7-8 hours of finished audio",
+          "Voice library and custom voices",
+          "Generation history",
+          "Email and chat support"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "$19 per month (billed yearly at $228)",
+        "features": [
+          "1,200,000 credits per year",
+          "About 25 hours of finished audio",
+          "Higher audio generation capacity",
+          "Long-form episodes",
+          "Priority support"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Custom volume and SLAs",
+          "Private cloud options",
+          "Dedicated account manager",
+          "Advanced security review"
+        ]
+      }
+    ],
+    "features": [
+      "Editable script with roles, pacing, and expression tags before audio generation",
+      "Multiple script styles: solo narration, two-host conversation, study tutor, business briefing",
+      "Voice library with preview and voice cloning",
+      "PDF, article, URL, and text input support",
+      "Multi-language podcast generation",
+      "MP3 export ready for distribution",
+      "Podcast tags for directing episodes like a producer"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/vocalvia.svg",
+    "status": "active"
+  },
+  {
+    "slug": "notebooklm",
+    "name": "NotebookLM",
+    "tagline": "Google's AI notebook that turns documents into audio overviews",
+    "description": "NotebookLM is Google's AI-powered research assistant that can generate Audio Overview podcasts from uploaded documents. It synthesizes sources into conversational two-host audio summaries, making it easy to digest research papers, reports, and notes.",
+    "rating": 4.5,
+    "reviewsCount": 8200,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://notebooklm.google.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Upload up to 50 sources per notebook",
+          "Audio Overview generation",
+          "AI-powered summarization and Q&A",
+          "Google Drive integration",
+          "Citation-backed responses"
+        ]
+      },
+      {
+        "plan": "Plus",
+        "price": "$9.99 per month",
+        "features": [
+          "Everything in Free",
+          "Higher usage limits",
+          "Longer Audio Overviews",
+          "Priority access to new features"
+        ]
+      }
+    ],
+    "features": [
+      "Audio Overview: two-host conversational podcast from documents",
+      "Upload PDFs, Google Docs, websites, YouTube videos, and audio files",
+      "AI-powered Q&A with inline citations",
+      "Source-grounded responses that reduce hallucination",
+      "Free tier with generous limits",
+      "Integration with Google Workspace"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/notebooklm.svg",
+    "status": "active"
+  },
+  {
+    "slug": "jellypod",
+    "name": "Jellypod",
+    "tagline": "Create and automate AI podcasts with customizable hosts",
+    "description": "Jellypod is an AI podcast studio that transforms topics and documents into realistic podcasts with customizable hosts. It supports voice cloning, 70+ languages, and automated workflows including newsletter-to-podcast conversion.",
+    "rating": 4.4,
+    "reviewsCount": 320,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://www.jellypod.com",
+    "pricing": [
+      {
+        "plan": "Starter",
+        "price": "$25 per month (billed yearly)",
+        "features": [
+          "60,000 credits per year",
+          "2 voice clones",
+          "100+ AI voices in 29+ languages",
+          "Hosted podcast website",
+          "Podcast video and audiograms",
+          "MCP Connector"
+        ]
+      },
+      {
+        "plan": "Creator",
+        "price": "$50 per month (billed yearly)",
+        "features": [
+          "132,000 credits per year",
+          "Unlimited episode length",
+          "8 voice clones",
+          "2 included seats",
+          "Spotify, YouTube and Apple Podcasts distribution",
+          "API access"
+        ]
+      },
+      {
+        "plan": "Business",
+        "price": "$125 per month (billed yearly)",
+        "features": [
+          "360,000 credits per year",
+          "Custom website domain",
+          "20 voice clones",
+          "5 included seats",
+          "Priority support and dedicated Slack channel"
+        ]
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Unlimited credits",
+          "SSO",
+          "Dedicated support",
+          "Custom terms"
+        ]
+      }
+    ],
+    "features": [
+      "AI podcast studio with customizable hosts and voices",
+      "Voice cloning in 70+ languages",
+      "Automated newsletter-to-podcast conversion",
+      "Podcast video and audiogram generation",
+      "One-click distribution to Spotify, YouTube, and Apple Podcasts",
+      "API access for programmatic podcast creation",
+      "Hosted podcast website with custom domain"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/jellypod.svg",
+    "status": "active"
+  },
+  {
+    "slug": "podhoc",
+    "name": "Podhoc",
+    "tagline": "Turn PDFs and videos into podcasts you control",
+    "description": "Podhoc is an AI podcast generator that converts PDFs, URLs, and videos into podcasts with no subscription required. It uses a pay-as-you-go credit model with credits that never expire, supporting 74 languages and 8 audio styles.",
+    "rating": 4.1,
+    "reviewsCount": 85,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://podhoc.com",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "50 welcome credits for new accounts",
+          "Generate your first short podcast",
+          "Full platform access"
+        ]
+      },
+      {
+        "plan": "Credit Pack (Starter)",
+        "price": "€2.29",
+        "features": [
+          "100 credits",
+          "Credits never expire",
+          "No subscription required"
+        ]
+      },
+      {
+        "plan": "Credit Pack (Best Value)",
+        "price": "€22.99",
+        "features": [
+          "1,000 credits",
+          "About 10 x 30-minute podcasts",
+          "Best rate per podcast"
+        ]
+      }
+    ],
+    "features": [
+      "Pay-as-you-go credit model with no subscription required",
+      "Credits never expire",
+      "74 languages supported",
+      "8 audio styles",
+      "PDF, URL, and video input support",
+      "Browser extensions available",
+      "API access for developers",
+      "Transparent pricing history page"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/podhoc.svg",
+    "status": "active"
+  },
+  {
+    "slug": "sparkpod",
+    "name": "SparkPod",
+    "tagline": "AI podcast generator from any source",
+    "description": "SparkPod generates studio-quality podcast episodes from PDFs, URLs, YouTube videos, and notes. It features natural AI hosts that pause, laugh, and talk over each other like real people, with support for 30+ languages.",
+    "rating": 4.2,
+    "reviewsCount": 150,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://sparkpod.ai",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Limited podcast generation",
+          "Basic AI voices",
+          "MP3 download"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "Available on website",
+        "features": [
+          "Unlimited podcast generation",
+          "Full voice library",
+          "Direct publishing to Spotify and Apple Podcasts",
+          "Priority generation"
+        ]
+      }
+    ],
+    "features": [
+      "Studio-quality audio with natural AI hosts",
+      "Supports PDF, URL, YouTube, and text input",
+      "Script editing with host swapping mid-episode",
+      "30+ languages supported",
+      "Direct publishing to Spotify and Apple Podcasts",
+      "Solo monologue and two-host conversation formats",
+      "MP3 download for offline listening"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/sparkpod.svg",
+    "status": "active"
+  },
+  {
+    "slug": "podcastify",
+    "name": "Podcastify",
+    "tagline": "Generate AI podcasts in seconds from any content",
+    "description": "Podcastify turns any text, document, URL, PDF, or image into a two-host podcast in seconds. It offers full control over script and vocal style with 20+ premium AI voices and 9+ conversation styles.",
+    "rating": 4.0,
+    "reviewsCount": 105,
+    "openSource": false,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://podcastify.io",
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Limited podcast generation",
+          "Basic voices",
+          "MP3 download"
+        ]
+      },
+      {
+        "plan": "Pro",
+        "price": "Available on website",
+        "features": [
+          "Unlimited episodes",
+          "20+ premium AI voices",
+          "9+ conversation styles",
+          "Brand voice customization",
+          "Embed player for websites"
+        ]
+      }
+    ],
+    "features": [
+      "20+ premium AI voices",
+      "9+ conversation styles",
+      "Input via text, PDF, URL, or image",
+      "Full transcript editing control",
+      "Brand voice and tone customization",
+      "Duration control up to 15 minutes",
+      "One-line iframe embed for websites",
+      "Generation in under 3 minutes"
+    ],
+    "category": "ai-podcast",
+    "logo": "/logos/podcastify.svg",
+    "status": "active"
   }
 ]
