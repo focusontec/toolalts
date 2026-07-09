@@ -1,23 +1,23 @@
 {
-  "runId": "2026-07-02T07:26:14.249Z",
-  "startedAt": "2026-07-02T07:26:14.249Z",
+  "runId": "2026-07-09T07:33:15.229Z",
+  "startedAt": "2026-07-09T07:33:15.229Z",
   "maxIterations": 3,
   "currentIteration": 1,
   "iterations": [
     {
       "iteration": 0,
-      "startedAt": "2026-07-02T07:26:14.250Z",
-      "completedAt": "2026-07-02T07:32:15.687Z",
-      "fixesApplied": 5,
-      "fixesFailed": 13,
+      "startedAt": "2026-07-09T07:33:15.230Z",
+      "completedAt": "2026-07-09T07:40:28.320Z",
+      "fixesApplied": 3,
+      "fixesFailed": 14,
       "escalated": 0,
       "reAuditResults": [],
       "stopCondition": "continue"
     },
     {
       "iteration": 1,
-      "startedAt": "2026-07-02T07:32:15.690Z",
-      "completedAt": "2026-07-02T07:42:25.982Z",
+      "startedAt": "2026-07-09T07:40:28.323Z",
+      "completedAt": "2026-07-09T07:50:38.059Z",
       "fixesApplied": 0,
       "fixesFailed": 17,
       "escalated": 0,
@@ -26,7 +26,7 @@
     }
   ],
   "totalCostCap": 100,
-  "llmCallsUsed": 5,
+  "llmCallsUsed": 3,
   "slugsProcessed": [],
   "status": "completed",
   "fixLog": [
@@ -156,9 +156,8 @@
       "field": "githubStars",
       "strategy": "delegate-sync-stars",
       "previousValue": "null",
-      "newValue": "githubUrl exists",
-      "evidence": "Has GitHub URL but stars is null",
-      "success": true
+      "success": false,
+      "error": "No better value found"
     },
     {
       "iteration": 0,
@@ -186,16 +185,6 @@
       "previousValue": "",
       "success": false,
       "error": "No better value found"
-    },
-    {
-      "iteration": 0,
-      "slug": "headroom",
-      "field": "tagline",
-      "strategy": "llm-rewrite",
-      "previousValue": "Context optimization layer for LLM applications: compress tool outputs, logs, files, and RAG chunks to reduce tokens by 60-95% without losing answer quality.",
-      "newValue": "too long",
-      "evidence": "Tagline 157 chars > 120",
-      "success": true
     },
     {
       "iteration": 1,
