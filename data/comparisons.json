@@ -184,5 +184,29 @@
     "toolA": "trigger-dev",
     "toolB": "unkey",
     "category": "developer-tools"
+  },
+  {
+    "slug": "notion-vs-zapier",
+    "toolA": "notion",
+    "toolB": "zapier",
+    "category": "productivity"
+  },
+  {
+    "slug": "obsidian-vs-zapier",
+    "toolA": "obsidian",
+    "toolB": "zapier",
+    "category": "productivity"
+  },
+  {
+    "slug": "confluence-vs-zapier",
+    "toolA": "confluence",
+    "toolB": "zapier",
+    "category": "productivity"
+  },
+  {
+    "slug": "airtable-vs-zapier",
+    "toolA": "airtable",
+    "toolB": "zapier",
+    "category": "productivity"
   }
 ]
