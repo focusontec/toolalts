@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "REJECT",
+    "confidence": 100,
+    "verificationScore": 20,
+    "qualityScore": 0,
+    "consistencyScore": 0,
+    "category": "other",
+    "tagline": "A component within a larger open-source platform, not a standalone tool.",
+    "description": "Whispering appears to be a subdirectory within the Epicenter monorepo, an open-source, local-first apps project. There is no standalone tool or clear documentation for Whispering itself, making it unsuitable as an independent product.",
+    "features": [],
+    "pricing": [],
+    "targetAudience": "unclear",
+    "directAlternativeTo": [],
+    "evidenceGaps": [
+      "No independent GitHub repository or stars",
+      "No website or description specific to Whispering",
+      "No features or pricing information available"
+    ],
+    "publishReadiness": {
+      "score": 0,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence to verify as a standalone tool",
+        "No community signals or adoption metrics"
+      ]
+    },
+    "concerns": [
+      "The tool is not a standalone product; it's a subdirectory in a monorepo",
+      "No clear purpose or functionality described",
+      "Cannot verify any claims about the tool"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The evidence provided points to a GitHub directory within the Epicenter monorepo, not an independent tool. There is no standalone repository, stars, or documentation for Whispering. The website URL leads to a GitHub tree view with no specific description of Whispering's functionality. Without any verifiable data, this cannot be considered a real, maintained software tool. Therefore, the decision is REJECT.",
+    "processedAt": "2026-07-10T16:49:44.352Z"
+  }
+]
