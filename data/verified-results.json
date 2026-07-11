@@ -84,5 +84,49 @@
     ],
     "fullReport": "The tool 'Whispering' was submitted as a Show HN on Hacker News, but the provided URL points to a subdirectory within the Epicenter monorepo on GitHub. The GitHub data is null, meaning there is no standalone repository for Whispering. The website metadata describes the parent project Epicenter, not Whispering itself. There is no description, features, or pricing information available. The tool lacks any independent identity, making it unsuitable for publication as a distinct software product. The decision is REJECT with high confidence due to insufficient evidence.",
     "processedAt": "2026-07-11T05:31:15.793Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/epicenter-so/epicenter",
+    "decision": "REJECT",
+    "confidence": 90,
+    "verificationScore": 20,
+    "qualityScore": 10,
+    "consistencyScore": 30,
+    "category": "other",
+    "tagline": "Whispering is a component within the Epicenter monorepo, but lacks standalone documentation and evidence of independent utility.",
+    "description": "Whispering appears to be a subdirectory in the Epicenter monorepo on GitHub. The provided 'website' is actually a GitHub directory path, not a dedicated product page. There is no standalone description, features, or evidence that it is a distinct tool for end users.",
+    "features": [],
+    "pricing": [],
+    "targetAudience": "unclear",
+    "directAlternativeTo": [],
+    "evidenceGaps": [
+      "No standalone website or documentation for Whispering",
+      "No GitHub stars, forks, or activity data",
+      "No description of what Whispering does",
+      "No pricing or feature list"
+    ],
+    "publishReadiness": {
+      "score": 5,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence to verify Whispering as a distinct tool",
+        "No user-facing information available"
+      ]
+    },
+    "concerns": [
+      "The provided URL is a GitHub directory, not a product website",
+      "No evidence of independent existence or utility",
+      "Cannot determine if it is actively maintained or even a real tool"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The evidence for 'Whispering' is extremely limited. The only source is a GitHub directory within the Epicenter monorepo. There is no standalone website, no description of what Whispering does, no GitHub statistics (stars, forks, last update), and no community signals. The 'website' URL is actually a GitHub path, which is not a typical product website. Without any meaningful information, it is impossible to verify Whispering as a real, usable tool. Therefore, the decision is REJECT with low confidence due to lack of evidence.",
+    "processedAt": "2026-07-11T15:43:37.708Z"
   }
 ]
