@@ -173,5 +173,66 @@
     ],
     "fullReport": "The tool 'Whispering' was submitted via Hacker News Show HN, but the provided URL points to a subdirectory within the Epicenter monorepo on GitHub. The website metadata describes the parent project 'Epicenter' as an open-source, local-first apps platform, but does not provide any specific information about Whispering itself. No standalone GitHub repository, stars, or community signals exist for Whispering. The website is reachable but does not offer a clear description, features, or pricing for Whispering. Given the lack of standalone identity and insufficient evidence, this tool cannot be verified as a distinct product. It may be a component or example app within Epicenter. Therefore, the decision is AMBIGUOUS with low confidence, and it is not recommended for publication without further clarification.",
     "processedAt": "2026-07-12T05:47:01.857Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/epicenter-so/epicenter",
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "A local-first, open-source tool for capturing and organizing thoughts, built as part of the Epicenter ecosystem.",
+    "description": "Whispering is an open-source, local-first application designed for capturing and organizing thoughts. It is part of the Epicenter project, which focuses on creating open-source, local-first apps. The tool appears to be in early development with limited public information.",
+    "features": [
+      "Local-first data storage",
+      "Open-source codebase",
+      "Part of the Epicenter ecosystem"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "targetAudience": "Developers and privacy-conscious users looking for a local-first thought capture tool.",
+    "directAlternativeTo": [
+      "Obsidian",
+      "Notion",
+      "Roam Research"
+    ],
+    "evidenceGaps": [
+      "No GitHub stars or forks available",
+      "No detailed feature list or documentation",
+      "No community signals or user reviews",
+      "Last update date unknown"
+    ],
+    "publishReadiness": {
+      "score": 20,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence to verify tool's functionality and quality",
+        "No independent community validation",
+        "Unclear if tool is actively maintained"
+      ]
+    },
+    "concerns": [
+      "GitHub data not available, cannot assess project activity or popularity",
+      "Website URL points to a GitHub directory, not a dedicated product page",
+      "No clear description of what Whispering does beyond being a local-first app"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "Whispering is a tool discovered via Hacker News Show HN, but the evidence is extremely limited. The provided website URL leads to a GitHub repository directory within the Epicenter project, which describes itself as 'Open-source, local-first apps.' No dedicated website or product page exists. GitHub data is null, so stars, forks, and last update are unknown. The tool's description is vague, and there is no community engagement or user feedback. Given the lack of verifiable information, the tool cannot be confidently assessed. It may be a very early-stage project or a placeholder. The decision is AMBIGUOUS with low confidence, and it is not recommended for publication without further evidence.",
+    "processedAt": "2026-07-12T15:49:05.758Z"
   }
 ]
