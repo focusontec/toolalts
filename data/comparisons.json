@@ -208,5 +208,65 @@
     "toolA": "airtable",
     "toolB": "zapier",
     "category": "productivity"
+  },
+  {
+    "slug": "slack-vs-zoom",
+    "toolA": "slack",
+    "toolB": "zoom",
+    "category": "communication"
+  },
+  {
+    "slug": "google-meet-vs-slack",
+    "toolA": "google-meet",
+    "toolB": "slack",
+    "category": "communication"
+  },
+  {
+    "slug": "slack-vs-telegram",
+    "toolA": "slack",
+    "toolB": "telegram",
+    "category": "communication"
+  },
+  {
+    "slug": "discord-vs-zoom",
+    "toolA": "discord",
+    "toolB": "zoom",
+    "category": "communication"
+  },
+  {
+    "slug": "discord-vs-google-meet",
+    "toolA": "discord",
+    "toolB": "google-meet",
+    "category": "communication"
+  },
+  {
+    "slug": "discord-vs-telegram",
+    "toolA": "discord",
+    "toolB": "telegram",
+    "category": "communication"
+  },
+  {
+    "slug": "google-meet-vs-zoom",
+    "toolA": "google-meet",
+    "toolB": "zoom",
+    "category": "communication"
+  },
+  {
+    "slug": "telegram-vs-zoom",
+    "toolA": "telegram",
+    "toolB": "zoom",
+    "category": "communication"
+  },
+  {
+    "slug": "microsoft-teams-vs-telegram",
+    "toolA": "microsoft-teams",
+    "toolB": "telegram",
+    "category": "communication"
+  },
+  {
+    "slug": "google-meet-vs-telegram",
+    "toolA": "google-meet",
+    "toolB": "telegram",
+    "category": "communication"
   }
 ]

@@ -6447,5 +6447,385 @@
     "category": "marketing",
     "logo": "/logos/contentport.svg",
     "status": "active"
+  },
+  {
+    "slug": "sendportal",
+    "name": "Sendportal",
+    "tagline": "Sendportal — open-source marketing & customer engagement tool",
+    "description": "Sendportal is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 2147,
+    "githubUrl": "https://github.com/mettle/sendportal",
+    "websiteUrl": "https://sendportal.io",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/sendportal.svg",
+    "status": "active"
+  },
+  {
+    "slug": "sendune",
+    "name": "Sendune",
+    "tagline": "Sendune — open-source marketing & customer engagement tool",
+    "description": "Sendune is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://openalternative.co/sendune",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/sendune.svg",
+    "status": "active"
+  },
+  {
+    "slug": "shlink",
+    "name": "Shlink",
+    "tagline": "Shlink — open-source marketing & customer engagement tool",
+    "description": "Shlink is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 5148,
+    "githubUrl": "https://github.com/shlinkio/shlink",
+    "websiteUrl": "https://shlink.io",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/shlink.svg",
+    "status": "active"
+  },
+  {
+    "slug": "sink",
+    "name": "Sink",
+    "tagline": "Sink — open-source marketing & customer engagement tool",
+    "description": "Sink is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 6899,
+    "githubUrl": "https://github.com/miantiao-me/Sink",
+    "websiteUrl": "https://Sink.Cool",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/sink.svg",
+    "status": "active"
+  },
+  {
+    "slug": "slugy",
+    "name": "Slugy",
+    "tagline": "Slugy — open-source marketing & customer engagement tool",
+    "description": "Slugy is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 90,
+    "githubUrl": "https://github.com/slugylink/slugy",
+    "websiteUrl": "https://slugy.co/app",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/slugy.svg",
+    "status": "active"
+  },
+  {
+    "slug": "tiledesk",
+    "name": "Tiledesk",
+    "tagline": "Tiledesk — open-source marketing & customer engagement tool",
+    "description": "Tiledesk is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 309,
+    "githubUrl": "https://github.com/Tiledesk/tiledesk",
+    "websiteUrl": "https://tiledesk.com/",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/tiledesk.svg",
+    "status": "active"
+  },
+  {
+    "slug": "trypost",
+    "name": "TryPost",
+    "tagline": "TryPost — open-source marketing & customer engagement tool",
+    "description": "TryPost is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 383,
+    "githubUrl": "https://github.com/trypostit/trypost",
+    "websiteUrl": "https://trypost.it",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/trypost.svg",
+    "status": "active"
+  },
+  {
+    "slug": "usertour",
+    "name": "Usertour",
+    "tagline": "Usertour — open-source marketing & customer engagement tool",
+    "description": "Usertour is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 2064,
+    "githubUrl": "https://github.com/usertour/usertour",
+    "websiteUrl": "https://www.usertour.io",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/usertour.svg",
+    "status": "active"
+  },
+  {
+    "slug": "usesend",
+    "name": "useSend",
+    "tagline": "useSend — open-source marketing & customer engagement tool",
+    "description": "useSend is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 4446,
+    "githubUrl": "https://github.com/usesend/useSend",
+    "websiteUrl": "https://useSend.com",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/usesend.svg",
+    "status": "active"
+  },
+  {
+    "slug": "wr-do",
+    "name": "WR.DO",
+    "tagline": "WR.DO — open-source marketing & customer engagement tool",
+    "description": "WR.DO is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://openalternative.co/wr-do",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/wr-do.svg",
+    "status": "active"
+  },
+  {
+    "slug": "wraps",
+    "name": "Wraps",
+    "tagline": "Wraps — open-source marketing & customer engagement tool",
+    "description": "Wraps is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://openalternative.co/wraps",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/wraps.svg",
+    "status": "active"
+  },
+  {
+    "slug": "zammad",
+    "name": "Zammad",
+    "tagline": "Zammad — open-source marketing & customer engagement tool",
+    "description": "Zammad is an open-source alternative in the Marketing & Customer Engagement category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 5751,
+    "githubUrl": "https://github.com/zammad/zammad",
+    "websiteUrl": "https://zammad.org",
+    "pricing": [],
+    "features": [
+      "Open-source marketing & customer engagement solution"
+    ],
+    "category": "marketing",
+    "logo": "/logos/zammad.svg",
+    "status": "active"
+  },
+  {
+    "slug": "clearflask",
+    "name": "ClearFlask",
+    "tagline": "ClearFlask — open-source customer support & success tool",
+    "description": "ClearFlask is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 443,
+    "githubUrl": "https://github.com/clearflask/clearflask",
+    "websiteUrl": "https://clearflask.com",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/clearflask.svg",
+    "status": "active"
+  },
+  {
+    "slug": "cossistant",
+    "name": "Cossistant",
+    "tagline": "Cossistant — open-source customer support & success tool",
+    "description": "Cossistant is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 690,
+    "githubUrl": "https://github.com/cossistantcom/cossistant",
+    "websiteUrl": "https://cossistant.com",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/cossistant.svg",
+    "status": "active"
+  },
+  {
+    "slug": "fider",
+    "name": "Fider",
+    "tagline": "Fider — open-source customer support & success tool",
+    "description": "Fider is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 4411,
+    "githubUrl": "https://github.com/getfider/fider",
+    "websiteUrl": "https://fider.io",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/fider.svg",
+    "status": "active"
+  },
+  {
+    "slug": "formbricks",
+    "name": "Formbricks",
+    "tagline": "Formbricks — open-source customer support & success tool",
+    "description": "Formbricks is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 12525,
+    "githubUrl": "https://github.com/formbricks/formbricks",
+    "websiteUrl": "https://formbricks.com",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/formbricks.svg",
+    "status": "active"
+  },
+  {
+    "slug": "frappe-helpdesk",
+    "name": "Frappe Helpdesk",
+    "tagline": "Frappe Helpdesk — open-source customer support & success tool",
+    "description": "Frappe Helpdesk is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": null,
+    "websiteUrl": "https://openalternative.co/frappe-helpdesk",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/frappe-helpdesk.svg",
+    "status": "active"
+  },
+  {
+    "slug": "freescout",
+    "name": "Freescout",
+    "tagline": "Freescout — open-source customer support & success tool",
+    "description": "Freescout is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 4414,
+    "githubUrl": "https://github.com/freescout-help-desk/freescout",
+    "websiteUrl": "https://freescout.net",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/freescout.svg",
+    "status": "active"
+  },
+  {
+    "slug": "logchimp",
+    "name": "LogChimp",
+    "tagline": "LogChimp — open-source customer support & success tool",
+    "description": "LogChimp is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 1109,
+    "githubUrl": "https://github.com/logchimp/logchimp",
+    "websiteUrl": "https://logchimp.app",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/logchimp.svg",
+    "status": "active"
+  },
+  {
+    "slug": "reflet",
+    "name": "Reflet",
+    "tagline": "Reflet — open-source customer support & success tool",
+    "description": "Reflet is an open-source alternative in the Customer Support & Success category.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 76,
+    "githubUrl": "https://github.com/zalky/reflet",
+    "websiteUrl": "https://openalternative.co/reflet",
+    "pricing": [],
+    "features": [
+      "Open-source customer support & success solution"
+    ],
+    "category": "communication",
+    "logo": "/logos/reflet.svg",
+    "status": "active"
   }
 ]
