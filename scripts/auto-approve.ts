@@ -314,28 +314,56 @@ const OA_CATEGORY_MAP: Record<string, string> = {
  */
 /**
  * Find GitHub repo and extract homepage URL + stars.
- * Returns { githubUrl, websiteUrl, githubStars }.
- * The homepage field from GitHub API is the tool's real website.
+ * Uses fuzzy matching since tool names often differ from repo names.
  */
 async function findGithubInfo(
   name: string
 ): Promise<{ githubUrl: string | null; websiteUrl: string | null; githubStars: number | null; githubDescription: string | null; githubTopics: string[] | null }> {
   try {
-    const query = encodeURIComponent(name.replace(/[^\w\s]/g, ""));
+    // Clean the name for searching: remove special chars, handle multi-word names
+    const searchName = name.replace(/[^\w\s]/g, "").trim();
+    const query = encodeURIComponent(searchName);
     const ghHeaders: Record<string, string> = process.env.GITHUB_TOKEN
       ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
       : {};
     const res = await fetch(
-      `https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc&per_page=3`,
+      `https://api.github.com/search/repositories?q=${query}+in:name&sort=stars&order=desc&per_page=5`,
       { headers: ghHeaders, signal: AbortSignal.timeout(10000) }
     );
     if (res.ok) {
       const data = await res.json();
+      const toolSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      const toolCompact = name.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const toolWords = name.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+
       for (const repo of data.items || []) {
         const repoName = repo.name.toLowerCase();
-        const toolSlug = name.toLowerCase().replace(/\s+/g, "-");
-        const toolCompact = name.toLowerCase().replace(/\s+/g, "");
+        const fullName = repo.full_name.toLowerCase();
+        
+        // Exact match
         if (repoName === toolSlug || repoName === toolCompact) {
+          return {
+            githubUrl: `https://github.com/${repo.full_name}`,
+            websiteUrl: repo.homepage || null,
+            githubStars: repo.stargazers_count,
+            githubDescription: repo.description || null,
+            githubTopics: repo.topics || [],
+          };
+        }
+        
+        // Repo name contains tool slug or vice versa
+        if (repoName.includes(toolSlug) || toolSlug.includes(repoName)) {
+          return {
+            githubUrl: `https://github.com/${repo.full_name}`,
+            websiteUrl: repo.homepage || null,
+            githubStars: repo.stargazers_count,
+            githubDescription: repo.description || null,
+            githubTopics: repo.topics || [],
+          };
+        }
+
+        // All significant words from tool name appear in repo full name
+        if (toolWords.length >= 2 && toolWords.every(w => fullName.includes(w))) {
           return {
             githubUrl: `https://github.com/${repo.full_name}`,
             websiteUrl: repo.homepage || null,

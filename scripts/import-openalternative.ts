@@ -7,7 +7,9 @@
  * Does NOT copy descriptions or content from OA (SEO safety).
  *
  * Output: data/pending-tools.json (candidates for auto-approve pipeline)
- * State:  data/import-state.json (tracks batch progress)
+ * State:  data/import-state.json (tracks imported slugs, NOT offsets)
+ *
+ * Uses slug-based tracking: when OA README changes order, we don't miss tools.
  */
 
 import fs from "fs";
@@ -145,9 +147,8 @@ interface Candidate {
 
 interface ImportState {
   openalternative: {
-    lastOffset: number;
+    importedSlugs: string[];
     lastRun: string | null;
-    totalImported: number;
   };
 }
 
@@ -179,9 +180,14 @@ function loadPendingSlugs(): Set<string> {
 
 function loadState(): ImportState {
   if (fs.existsSync(STATE_PATH)) {
-    return JSON.parse(fs.readFileSync(STATE_PATH, "utf-8"));
+    const raw = JSON.parse(fs.readFileSync(STATE_PATH, "utf-8"));
+    // Migrate old offset-based format
+    if (raw.openalternative && typeof raw.openalternative.lastOffset === "number") {
+      raw.openalternative.importedSlugs = raw.openalternative.importedSlugs || [];
+    }
+    return raw;
   }
-  return { openalternative: { lastOffset: 0, lastRun: null, totalImported: 0 } };
+  return { openalternative: { importedSlugs: [], lastRun: null } };
 }
 
 function saveState(state: ImportState) {
@@ -212,10 +218,7 @@ function parseReadme(readme: string): ParsedEntry[] {
   let currentCategory = "";
   let currentSubcategory = "";
 
-  // Pattern: - [Name](url) - Description `License` `⭐ Stars`
-  // or:     - **[Name](url)** - Description `License` `⭐ Stars`
-  const toolPattern =
-    /^- (?:\*\*)?\[([^\]]+)\]\(([^)]+)\)(?:\*\*)? - (.+)$/;
+  const toolPattern = /^- (?:\*\*)?\[([^\]]+)\]\(([^)]+)\)(?:\*\*)? - (.+)$/;
 
   for (const line of readme.split("\n")) {
     if (line.startsWith("## ") && !line.startsWith("### ")) {
@@ -227,8 +230,6 @@ function parseReadme(readme: string): ParsedEntry[] {
     const match = line.trim().match(toolPattern);
     if (match && currentSubcategory) {
       const [, name, url, descRaw] = match;
-
-      // Extract license and stars from the raw description (for category mapping only)
       const licenseMatch = descRaw.match(/`([A-Z]+[-\d.]*(?:\s[A-Z]+)*)`/);
       const starsMatch = descRaw.match(/⭐\s*([\d.]+[KMB]?)/);
 
@@ -249,12 +250,10 @@ function parseReadme(readme: string): ParsedEntry[] {
 // ── Main ─────────────────────────────────────────────────────────────
 async function main() {
   const state = loadState();
-  const offset = state.openalternative.lastOffset;
+  const importedSlugs = new Set(state.openalternative.importedSlugs || []);
   const existingSlugs = loadExistingSlugs();
   const pendingSlugs = loadPendingSlugs();
-  const allKnownSlugs = new Set([...existingSlugs, ...pendingSlugs]);
 
-  // Load valid ToolAlts categories
   const validCategories = new Set<string>();
   if (fs.existsSync(CATEGORIES_PATH)) {
     const cats = JSON.parse(fs.readFileSync(CATEGORIES_PATH, "utf-8"));
@@ -273,39 +272,35 @@ async function main() {
   const allEntries = parseReadme(readme);
   console.log(`Found ${allEntries.length} total tools in OA`);
 
-  // Deduplicate against existing
+  // Slug-based dedup: track by what we've already processed, NOT offset
+  const allKnownSlugs = new Set([...existingSlugs, ...pendingSlugs, ...importedSlugs]);
   const newEntries = allEntries.filter((e) => !allKnownSlugs.has(slugify(e.name)));
   console.log(`${newEntries.length} new tools (after dedup)`);
+  console.log(`  In tools.json: ${existingSlugs.size}`);
+  console.log(`  Already imported from OA: ${importedSlugs.size}`);
+  console.log(`  Pending: ${pendingSlugs.size}`);
 
-  // Apply batch offset
-  const batch = newEntries.slice(offset, offset + BATCH_SIZE);
+  const batch = newEntries.slice(0, BATCH_SIZE);
   if (batch.length === 0) {
-    console.log("No more tools to import. Resetting offset to 0.");
-    state.openalternative.lastOffset = 0;
+    console.log("No more tools to import. All OA tools have been processed.");
     state.openalternative.lastRun = new Date().toISOString();
     saveState(state);
     return;
   }
 
-  console.log(`Processing batch: ${offset + 1} to ${offset + batch.length}`);
+  console.log(`Processing batch: ${batch.length} tools`);
 
   const candidates: Candidate[] = [];
-  let skipped = 0;
-
   for (const entry of batch) {
     const slug = slugify(entry.name);
     const mappedCategory = CATEGORY_MAP[entry.oaSubcategory] || "other";
 
-    // Validate category exists
     if (!validCategories.has(mappedCategory)) {
       console.warn(
-        `  ⚠ ${entry.name}: mapped category "${mappedCategory}" not in categories.json, using "other"`
+        `  ⚠ ${entry.name}: category "${mappedCategory}" not valid, using "other"`
       );
     }
 
-    // Build website URL:
-    // OA links go to openalternative.co/{slug}, which redirects to the tool's actual site.
-    // We store the OA page URL as a reference; auto-approve will resolve the real website.
     const website = entry.url.startsWith("http")
       ? entry.url
       : `https://openalternative.co/${slug}`;
@@ -324,23 +319,21 @@ async function main() {
       },
     });
 
+    importedSlugs.add(slug);
     console.log(
       `  ✓ ${entry.name} → ${mappedCategory} (${entry.oaSubcategory})`
     );
   }
 
-  // Save candidates
   appendPending(candidates);
 
-  // Update state
-  state.openalternative.lastOffset = offset + batch.length;
+  state.openalternative.importedSlugs = Array.from(importedSlugs);
   state.openalternative.lastRun = new Date().toISOString();
-  state.openalternative.totalImported += candidates.length;
   saveState(state);
 
-  console.log(`\nDone! Added ${candidates.length} candidates to pending-tools.json`);
-  console.log(`Next batch starts at offset ${state.openalternative.lastOffset}`);
-  console.log(`Total imported so far: ${state.openalternative.totalImported}`);
+  console.log(`\nDone! Added ${candidates.length} candidates`);
+  console.log(`Total OA slugs tracked: ${importedSlugs.size}`);
+  console.log(`Remaining: ${newEntries.length - batch.length}`);
 }
 
 main().catch((err) => {
