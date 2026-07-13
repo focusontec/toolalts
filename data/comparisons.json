@@ -268,5 +268,65 @@
     "toolA": "google-meet",
     "toolB": "telegram",
     "category": "communication"
+  },
+  {
+    "slug": "jira-vs-linear",
+    "toolA": "jira",
+    "toolB": "linear",
+    "category": "project-management"
+  },
+  {
+    "slug": "linear-vs-trello",
+    "toolA": "linear",
+    "toolB": "trello",
+    "category": "project-management"
+  },
+  {
+    "slug": "asana-vs-linear",
+    "toolA": "asana",
+    "toolB": "linear",
+    "category": "project-management"
+  },
+  {
+    "slug": "clickup-vs-linear",
+    "toolA": "clickup",
+    "toolB": "linear",
+    "category": "project-management"
+  },
+  {
+    "slug": "github-issues-vs-jira",
+    "toolA": "github-issues",
+    "toolB": "jira",
+    "category": "project-management"
+  },
+  {
+    "slug": "github-issues-vs-trello",
+    "toolA": "github-issues",
+    "toolB": "trello",
+    "category": "project-management"
+  },
+  {
+    "slug": "asana-vs-github-issues",
+    "toolA": "asana",
+    "toolB": "github-issues",
+    "category": "project-management"
+  },
+  {
+    "slug": "clickup-vs-github-issues",
+    "toolA": "clickup",
+    "toolB": "github-issues",
+    "category": "project-management"
+  },
+  {
+    "slug": "jira-vs-trello",
+    "toolA": "jira",
+    "toolB": "trello",
+    "category": "project-management"
+  },
+  {
+    "slug": "asana-vs-jira",
+    "toolA": "asana",
+    "toolB": "jira",
+    "category": "project-management"
   }
 ]
