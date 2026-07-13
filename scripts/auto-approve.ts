@@ -502,8 +502,8 @@ async function processOaCandidates(
     existingSlugs.add(candidate.slug);
     console.log(`   ✓ ${candidate.name} → ${tool.category} (active)`);
 
-    // Rate limit: small delay between LLM calls
-    await new Promise((r) => setTimeout(r, 1000));
+    // Rate limit: delay between LLM calls to avoid API throttling
+    await new Promise((r) => setTimeout(r, 3000));
   }
 
   const remaining = [...otherCandidates];
