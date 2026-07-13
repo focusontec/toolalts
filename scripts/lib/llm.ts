@@ -101,7 +101,7 @@ export async function callVisionLlm(
   options?: { maxTokens?: number }
 ): Promise<LlmResponse> {
   const apiKey = process.env.VISION_API_KEY || process.env.LLM_API_KEY;
-  const baseUrl = process.env.VISION_BASE_URL || "https://token-plan-sgp.xiaomimimo.com";
+  const baseUrl = process.env.VISION_BASE_URL || "https://token-plan-cn.xiaomimimo.com";
   const model = process.env.VISION_MODEL || "mimo-v2.5";
 
   if (!apiKey) throw new Error("VISION_API_KEY or LLM_API_KEY required for vision calls");
