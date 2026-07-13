@@ -238,8 +238,8 @@
   {
     "slug": "figma",
     "name": "Figma",
-    "tagline": "The collaborative interface design tool",
-    "description": "Figma is the leading collaborative design platform for building meaningful products.",
+    "tagline": "Collaborative design platform for the entire product development lifecycle.",
+    "description": "Figma is a cloud-based design tool that enables teams to create, prototype, and hand off designs in real-time. It serves designers, developers, and product managers, streamlining collaboration from ideation to production.",
     "rating": 4.9,
     "reviewsCount": 1464,
     "openSource": false,
@@ -288,9 +288,11 @@
       }
     ],
     "features": [
-      "Unlimited files and projects",
-      "Team-wide design libraries",
-      "Advanced Dev Mode inspection and MCP Server"
+      "Real-time multiplayer editing",
+      "Vector networks and auto layout",
+      "Interactive prototyping with transitions",
+      "Developer handoff with inspect mode",
+      "Version history and design systems"
     ],
     "category": "design",
     "logo": "/logos/figma.svg",
@@ -538,8 +540,8 @@
   {
     "slug": "cursor",
     "name": "Cursor",
-    "tagline": "The best way to code with AI",
-    "description": "Built to make you extraordinarily productive, Cursor is the best AI coding agent.",
+    "tagline": "AI-first code editor for supercharged development.",
+    "description": "Cursor is an AI-powered code editor that integrates advanced AI models directly into the coding workflow, enabling developers to write, edit, and debug code faster. It offers features like AI-driven code generation, smart autocomplete, and natural language commands, making it ideal for developers seeking to boost productivity.",
     "rating": 5,
     "reviewsCount": 850,
     "openSource": false,
@@ -596,13 +598,11 @@
       }
     ],
     "features": [
-      "Agent requests",
-      "Tab completions",
-      "Cloud agents",
-      "Bugbot",
-      "Team billing and administration",
-      "SAML/OIDC SSO",
-      "Audit logs"
+      "AI-powered code generation and editing",
+      "Smart autocomplete with context awareness",
+      "Natural language commands for coding tasks",
+      "Integrated chat and debugging assistance",
+      "Multi-model AI support (GPT-4, Claude, etc.)"
     ],
     "category": "development",
     "logo": "/logos/cursor.svg",
@@ -2000,8 +2000,8 @@
   {
     "slug": "docker",
     "name": "Docker",
-    "tagline": "Accelerated Container Application Development",
-    "description": "Docker is a platform designed to help developers build, share, and run container applications.",
+    "tagline": "Containerize apps for seamless deployment anywhere.",
+    "description": "Docker simplifies application development by packaging code and dependencies into lightweight containers. Developers can build, share, and run containers consistently across any environment, from laptops to servers.",
     "rating": 4.6,
     "reviewsCount": 339,
     "openSource": true,
@@ -2051,11 +2051,11 @@
       }
     ],
     "features": [
-      "Essential tools to build and deploy containers",
-      "More advanced features and additional resources",
-      "Collaborative tools for teams",
-      "Robust security, control, and compliance",
-      "Secure, minimal container images"
+      "Lightweight container packaging",
+      "Consistent environment across systems",
+      "Easy sharing via Docker Hub",
+      "Command-line interface for automation",
+      "Supports multi-stage builds"
     ],
     "category": "development",
     "logo": "/logos/docker.svg",
@@ -4743,7 +4743,7 @@
   {
     "slug": "agentos",
     "name": "AgentOS",
-    "tagline": "Build and deploy AI agents with ease.",
+    "tagline": "TypeScript framework for autonomous AI agent development.",
     "description": "AgentOS is an open-source SDK for developing, testing, and deploying AI agents. It provides a modular framework and pre-built components to accelerate agent creation for developers.",
     "rating": 0,
     "reviewsCount": 0,
@@ -4831,7 +4831,7 @@
   {
     "slug": "bifrost",
     "name": "Bifrost",
-    "tagline": "Build and deploy AI agents with ease.",
+    "tagline": "Ultra-fast AI gateway with enterprise-grade reliability.",
     "description": "Bifrost is an open-source platform for building, testing, and deploying AI agents. It provides a visual workflow editor and integrates with popular LLMs, making it ideal for developers and teams.",
     "rating": 0,
     "reviewsCount": 0,
@@ -5987,7 +5987,7 @@
   {
     "slug": "relaticle",
     "name": "Relaticle",
-    "tagline": "Open-source CRM for modern sales teams.",
+    "tagline": "Open-source CRM built for relationship-driven sales.",
     "description": "Relaticle is an open-source CRM platform designed to streamline sales processes and team collaboration. It offers customizable pipelines, contact management, and analytics to help businesses track leads and close deals efficiently.",
     "rating": 0,
     "reviewsCount": 0,
@@ -6451,8 +6451,8 @@
   {
     "slug": "sendportal",
     "name": "Sendportal",
-    "tagline": "Sendportal — open-source marketing & customer engagement tool",
-    "description": "Sendportal is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Self-hosted email marketing, no per-subscriber fees.",
+    "description": "Sendportal is a self-hosted email marketing platform that lets you manage newsletters and campaigns without recurring costs. It's designed for businesses and creators who want full control over their email data and budget.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6461,7 +6461,11 @@
     "websiteUrl": "https://sendportal.io",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Manage unlimited subscribers",
+      "Drag-and-drop email builder",
+      "Automated campaign scheduling",
+      "Open and click tracking",
+      "Import/export subscriber lists"
     ],
     "category": "marketing",
     "logo": "/logos/sendportal.svg",
@@ -6470,8 +6474,8 @@
   {
     "slug": "sendune",
     "name": "Sendune",
-    "tagline": "Sendune — open-source marketing & customer engagement tool",
-    "description": "Sendune is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Email marketing made simple and effective",
+    "description": "Sendune is an email marketing platform that helps businesses create, send, and track email campaigns with ease. It offers a user-friendly interface and powerful analytics to optimize engagement.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6480,7 +6484,11 @@
     "websiteUrl": "https://openalternative.co/sendune",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Drag-and-drop email builder",
+      "Automated campaign workflows",
+      "Real-time performance analytics",
+      "Segmentation and personalization",
+      "A/B testing for subject lines"
     ],
     "category": "marketing",
     "logo": "/logos/sendune.svg",
@@ -6489,8 +6497,8 @@
   {
     "slug": "shlink",
     "name": "Shlink",
-    "tagline": "Shlink — open-source marketing & customer engagement tool",
-    "description": "Shlink is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Self-hosted URL shortener with analytics",
+    "description": "Shlink is a self-hosted URL shortener that gives you full control over your links and tracking data. It provides detailed analytics, custom slugs, and REST API access, making it ideal for developers and privacy-conscious users.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6499,7 +6507,11 @@
     "websiteUrl": "https://shlink.io",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Self-hosted for full data control",
+      "Detailed visit analytics",
+      "Custom short codes and tags",
+      "REST API for integration",
+      "Multi-user support"
     ],
     "category": "marketing",
     "logo": "/logos/shlink.svg",
@@ -6508,8 +6520,8 @@
   {
     "slug": "sink",
     "name": "Sink",
-    "tagline": "Sink — open-source marketing & customer engagement tool",
-    "description": "Sink is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Fast link shortener with analytics on Cloudflare",
+    "description": "Sink is a simple, speedy, and secure URL shortener that runs entirely on Cloudflare. It offers built-in analytics and is a great open-source alternative to Bitly.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6518,7 +6530,11 @@
     "websiteUrl": "https://Sink.Cool",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "100% run on Cloudflare",
+      "Built-in click analytics",
+      "Fast and secure redirects",
+      "Open-source and self-hostable",
+      "Simple, clean interface"
     ],
     "category": "marketing",
     "logo": "/logos/sink.svg",
@@ -6527,8 +6543,8 @@
   {
     "slug": "slugy",
     "name": "Slugy",
-    "tagline": "Slugy — open-source marketing & customer engagement tool",
-    "description": "Slugy is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Beautiful, trackable short links with team features",
+    "description": "Slugy is an open-source URL shortener that transforms long URLs into elegant, trackable short links. It offers advanced analytics, link-in-bio pages, custom domains, and team collaboration, making it ideal for marketers and teams.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6537,7 +6553,11 @@
     "websiteUrl": "https://slugy.co/app",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Advanced click analytics",
+      "Custom domains support",
+      "Link-in-bio pages",
+      "Team collaboration tools",
+      "Open-source and self-hostable"
     ],
     "category": "marketing",
     "logo": "/logos/slugy.svg",
@@ -6546,8 +6566,8 @@
   {
     "slug": "tiledesk",
     "name": "Tiledesk",
-    "tagline": "Tiledesk — open-source marketing & customer engagement tool",
-    "description": "Tiledesk is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Open-source AI chatbots with human handoff.",
+    "description": "Tiledesk is an open-source, no-code platform for building AI chatbots and connecting live agents. It enables you to create sophisticated LLM-powered chatbots that seamlessly escalate to human support when needed, perfect for customer service and marketing teams.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6556,7 +6576,11 @@
     "websiteUrl": "https://tiledesk.com/",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "No-code chatbot builder",
+      "LLM-powered conversational AI",
+      "Seamless handoff to live agents",
+      "Self-hosted via Docker or Kubernetes",
+      "Multi-channel live chat support"
     ],
     "category": "marketing",
     "logo": "/logos/tiledesk.svg",
@@ -6565,8 +6589,8 @@
   {
     "slug": "trypost",
     "name": "TryPost",
-    "tagline": "TryPost — open-source marketing & customer engagement tool",
-    "description": "TryPost is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Self-hosted social media scheduler for creators.",
+    "description": "TryPost is an open-source social media scheduling tool that lets you manage and schedule posts across multiple platforms like Instagram, Twitter, LinkedIn, and more. Designed for creators and marketers, it offers full control over your content calendar with self-hosting capabilities.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6575,7 +6599,11 @@
     "websiteUrl": "https://trypost.it",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Schedule posts to multiple social networks",
+      "Self-hosted for data privacy",
+      "Supports Instagram, Twitter, LinkedIn, TikTok, YouTube",
+      "Built with Laravel and Vue.js",
+      "Content calendar view for planning"
     ],
     "category": "marketing",
     "logo": "/logos/trypost.svg",
@@ -6584,8 +6612,8 @@
   {
     "slug": "usertour",
     "name": "Usertour",
-    "tagline": "Usertour — open-source marketing & customer engagement tool",
-    "description": "Usertour is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Open-source user onboarding with full control.",
+    "description": "Usertour is an open-source platform for creating in-app product tours, checklists, and surveys. It offers a customizable alternative to proprietary tools like Userflow and Appcues, enabling teams to boost feature adoption and user retention.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6594,7 +6622,11 @@
     "websiteUrl": "https://www.usertour.io",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "In-app product tours and walkthroughs",
+      "Customizable checklists and surveys",
+      "Self-hosted for data privacy",
+      "No-code editor for easy setup",
+      "Integrates with popular analytics tools"
     ],
     "category": "marketing",
     "logo": "/logos/usertour.svg",
@@ -6603,8 +6635,8 @@
   {
     "slug": "usesend",
     "name": "useSend",
-    "tagline": "useSend — open-source marketing & customer engagement tool",
-    "description": "useSend is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Pay-per-send email API with SES dashboard",
+    "description": "useSend is an open-source email delivery platform that lets you send transactional emails via Amazon SES without monthly fees. It provides a dashboard for monitoring sends, bounces, and complaints, making it a cost-effective alternative to SendGrid or Postmark.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6613,7 +6645,11 @@
     "websiteUrl": "https://useSend.com",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Pay only for emails sent, not contacts",
+      "Built-in SES dashboard and monitoring",
+      "Open source and self-hostable",
+      "Supports multiple sending domains",
+      "Transactional email API with webhooks"
     ],
     "category": "marketing",
     "logo": "/logos/usesend.svg",
@@ -6622,8 +6658,8 @@
   {
     "slug": "wr-do",
     "name": "WR.DO",
-    "tagline": "WR.DO — open-source marketing & customer engagement tool",
-    "description": "WR.DO is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Smart URL shortener with deep analytics",
+    "description": "WR.DO is a URL shortening service that offers detailed click analytics, custom domains, and QR code generation. It helps marketers and businesses track and optimize their link performance.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6632,7 +6668,11 @@
     "websiteUrl": "https://openalternative.co/wr-do",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Custom branded short links",
+      "Real-time click analytics",
+      "QR code generation",
+      "Link expiration and targeting",
+      "API for automation"
     ],
     "category": "marketing",
     "logo": "/logos/wr-do.svg",
@@ -6641,8 +6681,8 @@
   {
     "slug": "wraps",
     "name": "Wraps",
-    "tagline": "Wraps — open-source marketing & customer engagement tool",
-    "description": "Wraps is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Turn any content into shareable, branded wraps.",
+    "description": "Wraps is a tool that lets you create visually appealing, branded summaries or 'wraps' from any content—articles, videos, or documents. It's designed for marketers and content creators to repurpose and share content in a fresh, engaging format.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6651,7 +6691,11 @@
     "websiteUrl": "https://openalternative.co/wraps",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Create branded wraps from any URL",
+      "Customize colors, fonts, and logos",
+      "Share wraps as images or links",
+      "Track engagement with built-in analytics",
+      "Collaborate with team templates"
     ],
     "category": "marketing",
     "logo": "/logos/wraps.svg",
@@ -6660,8 +6704,8 @@
   {
     "slug": "zammad",
     "name": "Zammad",
-    "tagline": "Zammad — open-source marketing & customer engagement tool",
-    "description": "Zammad is an open-source alternative in the Marketing & Customer Engagement category.",
+    "tagline": "Open source helpdesk for modern customer support.",
+    "description": "Zammad is a web-based, open source helpdesk and customer support system. It offers a streamlined ticketing system with multi-channel support, enabling teams to manage inquiries from email, chat, and social media in one place.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6670,7 +6714,11 @@
     "websiteUrl": "https://zammad.org",
     "pricing": [],
     "features": [
-      "Open-source marketing & customer engagement solution"
+      "Multi-channel ticket management",
+      "Real-time chat and email integration",
+      "Knowledge base for self-service",
+      "Automated workflows and triggers",
+      "REST API and GraphQL support"
     ],
     "category": "marketing",
     "logo": "/logos/zammad.svg",
@@ -6679,8 +6727,8 @@
   {
     "slug": "clearflask",
     "name": "ClearFlask",
-    "tagline": "ClearFlask — open-source customer support & success tool",
-    "description": "ClearFlask is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "User feedback integrated into your product roadmap.",
+    "description": "ClearFlask helps product teams collect, prioritize, and act on user feedback directly within their development workflow. It bridges the gap between customer insights and product planning, enabling data-driven decisions.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6689,7 +6737,11 @@
     "websiteUrl": "https://clearflask.com",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Collect feedback via widgets and portals",
+      "Prioritize with voting and categorization",
+      "Sync feedback to your roadmap",
+      "Automate updates with integrations",
+      "Analyze trends with built-in analytics"
     ],
     "category": "communication",
     "logo": "/logos/clearflask.svg",
@@ -6698,8 +6750,8 @@
   {
     "slug": "cossistant",
     "name": "Cossistant",
-    "tagline": "Cossistant — open-source customer support & success tool",
-    "description": "Cossistant is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Code-first AI support for React & Next.js apps",
+    "description": "Cossistant is an open-source customer support platform that lets developers embed fully customizable AI agents into React and Next.js applications. It combines programmable actions, custom UI, and human handoff for a code-first support workflow.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6708,7 +6760,11 @@
     "websiteUrl": "https://cossistant.com",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Customizable AI support agents",
+      "Programmable actions & workflows",
+      "Built for React & Next.js apps",
+      "Human handoff integration",
+      "Open-source & developer-friendly"
     ],
     "category": "communication",
     "logo": "/logos/cossistant.svg",
@@ -6717,8 +6773,8 @@
   {
     "slug": "fider",
     "name": "Fider",
-    "tagline": "Fider — open-source customer support & success tool",
-    "description": "Fider is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Collect and prioritize user feedback openly.",
+    "description": "Fider is an open-source platform that helps you collect, organize, and prioritize customer feedback and feature requests. It provides a transparent way for users to submit ideas and vote on them, enabling data-driven product decisions.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6727,7 +6783,11 @@
     "websiteUrl": "https://fider.io",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Submit and vote on feature ideas",
+      "Public or private feedback boards",
+      "Customizable statuses for ideas",
+      "Integrate with Slack, GitHub, etc.",
+      "Self-hosted or cloud option"
     ],
     "category": "communication",
     "logo": "/logos/fider.svg",
@@ -6736,8 +6796,8 @@
   {
     "slug": "formbricks",
     "name": "Formbricks",
-    "tagline": "Formbricks — open-source customer support & success tool",
-    "description": "Formbricks is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Open-source experience management for product teams",
+    "description": "Formbricks is an open-source survey and experience management platform that lets you build in-app surveys, forms, and feedback widgets. It's a privacy-first alternative to Qualtrics and Typeform, designed for product teams who want to own their data.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6746,7 +6806,11 @@
     "websiteUrl": "https://formbricks.com",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "In-app micro-surveys and popups",
+      "Customizable forms with drag-and-drop",
+      "Self-hosted or cloud deployment",
+      "Real-time survey analytics",
+      "API and webhook integrations"
     ],
     "category": "communication",
     "logo": "/logos/formbricks.svg",
@@ -6755,8 +6819,8 @@
   {
     "slug": "frappe-helpdesk",
     "name": "Frappe Helpdesk",
-    "tagline": "Frappe Helpdesk — open-source customer support & success tool",
-    "description": "Frappe Helpdesk is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Simple, open-source customer support for growing teams.",
+    "description": "Frappe Helpdesk is a lightweight, open-source ticketing system designed for small to medium teams. It integrates seamlessly with Frappe Framework and offers a clean interface for managing customer queries.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6765,7 +6829,11 @@
     "websiteUrl": "https://openalternative.co/frappe-helpdesk",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Ticket management with status tracking",
+      "Email integration for automatic ticket creation",
+      "Knowledge base for self-service support",
+      "Team collaboration with internal notes",
+      "Customizable workflows and SLA policies"
     ],
     "category": "communication",
     "logo": "/logos/frappe-helpdesk.svg",
@@ -6774,8 +6842,8 @@
   {
     "slug": "freescout",
     "name": "Freescout",
-    "tagline": "Freescout — open-source customer support & success tool",
-    "description": "Freescout is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Self-hosted help desk & shared mailbox",
+    "description": "FreeScout is a free, self-hosted help desk and shared mailbox that serves as a lightweight alternative to Zendesk or Help Scout. It is built with Laravel and PHP, offering a clean interface for managing customer support tickets and emails.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6784,7 +6852,11 @@
     "websiteUrl": "https://freescout.net",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Shared mailbox for team collaboration",
+      "Ticket management with status tracking",
+      "Email piping and fetching",
+      "Custom fields and filters",
+      "Mobile-responsive design"
     ],
     "category": "communication",
     "logo": "/logos/freescout.svg",
@@ -6793,8 +6865,8 @@
   {
     "slug": "logchimp",
     "name": "LogChimp",
-    "tagline": "LogChimp — open-source customer support & success tool",
-    "description": "LogChimp is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Customer feedback hub for product teams",
+    "description": "LogChimp helps product teams collect, organize, and act on user feedback. It's an open-source alternative to Canny and ProductBoard, enabling you to build a public roadmap and prioritize features based on customer input.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6803,7 +6875,11 @@
     "websiteUrl": "https://logchimp.app",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Collect feedback via widgets and boards",
+      "Public roadmap to share with users",
+      "Prioritize features with voting",
+      "Integrate with Slack, GitHub, and more",
+      "Self-hosted or cloud deployment"
     ],
     "category": "communication",
     "logo": "/logos/logchimp.svg",
@@ -6812,8 +6888,8 @@
   {
     "slug": "reflet",
     "name": "Reflet",
-    "tagline": "Reflet — open-source customer support & success tool",
-    "description": "Reflet is an open-source alternative in the Customer Support & Success category.",
+    "tagline": "Build reactive web apps with graph data models",
+    "description": "Reflet provides tools for building Re-frame + React based web applications that leverage graph and non-graph data models. It integrates finite state machines and ClojureScript to manage complex state and UI interactions.",
     "rating": 0,
     "reviewsCount": 0,
     "openSource": true,
@@ -6822,7 +6898,10 @@
     "websiteUrl": "https://openalternative.co/reflet",
     "pricing": [],
     "features": [
-      "Open-source customer support & success solution"
+      "Graph and non-graph data modeling",
+      "Finite state machine integration",
+      "Re-frame and React compatibility",
+      "ClojureScript based development"
     ],
     "category": "communication",
     "logo": "/logos/reflet.svg",

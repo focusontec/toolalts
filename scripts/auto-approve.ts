@@ -319,7 +319,7 @@ const OA_CATEGORY_MAP: Record<string, string> = {
  */
 async function findGithubInfo(
   name: string
-): Promise<{ githubUrl: string | null; websiteUrl: string | null; githubStars: number | null }> {
+): Promise<{ githubUrl: string | null; websiteUrl: string | null; githubStars: number | null; githubDescription: string | null; githubTopics: string[] | null }> {
   try {
     const query = encodeURIComponent(name.replace(/[^\w\s]/g, ""));
     const ghHeaders: Record<string, string> = process.env.GITHUB_TOKEN
@@ -340,48 +340,92 @@ async function findGithubInfo(
             githubUrl: `https://github.com/${repo.full_name}`,
             websiteUrl: repo.homepage || null,
             githubStars: repo.stargazers_count,
+            githubDescription: repo.description || null,
+            githubTopics: repo.topics || [],
           };
         }
       }
     }
   } catch {}
-  return { githubUrl: null, websiteUrl: null, githubStars: null };
+  return { githubUrl: null, websiteUrl: null, githubStars: null, githubDescription: null, githubTopics: null };
+}
+
+/**
+ * Fetch website meta description for extra context.
+ */
+async function fetchWebsiteMeta(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(10000),
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; toolalts/1.0)" },
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    // Extract <meta name="description" content="...">
+    const match = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i);
+    if (match) return match[1];
+    // Fallback: og:description
+    const ogMatch = html.match(/<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i);
+    return ogMatch ? ogMatch[1] : null;
+  } catch {}
+  return null;
 }
 
 /**
  * Use LLM to generate UNIQUE tagline, description, and features.
- * We do NOT pass OA's description to the LLM — SEO safety.
+ * We feed GitHub description + topics + website meta as context,
+ * but instruct the LLM to write ORIGINAL content (not paraphrase).
  */
 async function generateOaContent(
   name: string,
   websiteUrl: string,
   oaSubcategory: string,
-  oaStars: string | null
+  oaStars: string | null,
+  githubDescription: string | null,
+  githubTopics: string[] | null,
+  websiteMeta: string | null,
+  existingTaglines: string[]
 ): Promise<{ tagline: string; description: string; features: string[] }> {
-  const systemPrompt = `You are a software analyst writing for a SaaS alternatives directory website.
-Your job is to write a concise, accurate tagline, description, and feature list for a software tool.
+  const systemPrompt = `You are a software analyst writing for a SaaS alternatives directory called ToolAlts.
+Your job is to write a concise, accurate, and ORIGINAL tagline, description, and feature list for a software tool.
 
-IMPORTANT RULES:
-- Write ORIGINAL content based on the tool's name, website, and category.
-- Do NOT copy or paraphrase any external descriptions.
-- Tagline: one compelling sentence, max 80 characters.
-- Description: 2-3 factual sentences about what the tool does and who it serves.
-- Features: exactly 3-5 short bullet points, each under 60 characters.
-- Be specific and factual. No marketing fluff.
+CRITICAL RULES FOR ORIGINALITY:
+- Write completely original content. Do NOT copy or closely paraphrase any source material.
+- Use the provided context (GitHub description, topics, website meta) only as FACTUAL reference to understand what the tool does.
+- Your output must be distinct from any input text. Use your own words and sentence structure.
+- Avoid generic phrases like "open-source platform that", "is an open-source alternative", "build and deploy AI agents with ease".
+- Each tagline must be unique — avoid common templates other tools might use.
+
+FORMAT REQUIREMENTS:
+- Tagline: one compelling sentence, max 80 characters. Must highlight the tool's SPECIFIC differentiator.
+- Description: 2-3 factual sentences about what the tool does, its key capabilities, and who it serves. 150-300 characters.
+- Features: exactly 4-5 short bullet points, each 30-60 characters. Be specific to this tool, not generic.
 
 Respond in JSON format:
 {
   "tagline": "...",
   "description": "...",
-  "features": ["...", "...", "..."]
+  "features": ["...", "...", "...", "..."]
 }`;
 
-  const userPrompt = `Tool name: ${name}
-Website: ${websiteUrl}
-Category: ${oaSubcategory}
-GitHub stars: ${oaStars || "unknown"}
+  // Build context section
+  const contextParts: string[] = [`Tool name: ${name}`, `Category: ${oaSubcategory}`];
+  if (websiteUrl && !websiteUrl.includes("openalternative.co")) {
+    contextParts.push(`Website: ${websiteUrl}`);
+  }
+  if (oaStars) contextParts.push(`GitHub stars: ${oaStars}`);
+  if (githubDescription) contextParts.push(`GitHub repo description: ${githubDescription}`);
+  if (githubTopics && githubTopics.length > 0) {
+    contextParts.push(`GitHub topics: ${githubTopics.join(", ")}`);
+  }
+  if (websiteMeta) contextParts.push(`Website meta description: ${websiteMeta}`);
+  if (existingTaglines.length > 0) {
+    contextParts.push(`\nAvoid these taglines (already used by other tools):\n${existingTaglines.slice(0, 10).map((t, i) => `${i + 1}. "${t}"`).join("\n")}`);
+  }
 
-Write a tagline, description, and features for this tool.`;
+  const userPrompt = `${contextParts.join("\n")}
+
+Write an original tagline, description, and features for this tool. Remember: use your own words, do not paraphrase the context above.`;
 
   try {
     const response = await callLlm(systemPrompt, userPrompt, { jsonMode: true });
@@ -445,6 +489,11 @@ async function processOaCandidates(
   const existingSlugs = new Set(tools.map((t) => t.slug));
   const newTools: Tool[] = [];
   const processed: any[] = [];
+  // Collect existing taglines for dedup
+  const existingTaglines = tools
+    .filter((t) => t.status === "active")
+    .map((t) => t.tagline)
+    .filter(Boolean);
 
   for (const candidate of oaCandidates) {
     if (existingSlugs.has(candidate.slug)) {
@@ -462,7 +511,7 @@ async function processOaCandidates(
 
     console.log(`   🔄 ${candidate.name}: finding GitHub repo & website...`);
 
-    // Step 1: Find GitHub repo → get homepage URL + stars
+    // Step 1: Find GitHub repo → get homepage URL + stars + description + topics
     const ghInfo = await findGithubInfo(candidate.name);
     const githubUrl = ghInfo.githubUrl;
     const githubStars = ghInfo.githubStars;
@@ -470,14 +519,27 @@ async function processOaCandidates(
     // Website priority: GitHub homepage > OA fallback
     const websiteUrl = ghInfo.websiteUrl || `https://openalternative.co/${candidate.slug}`;
 
-    // Step 2: Generate UNIQUE content via LLM (NOT copying OA descriptions)
+    // Step 1.5: Fetch website meta description for extra context
+    let websiteMeta: string | null = null;
+    if (websiteUrl && !websiteUrl.includes("openalternative.co")) {
+      websiteMeta = await fetchWebsiteMeta(websiteUrl);
+    }
+
+    // Step 2: Generate UNIQUE content via LLM with rich context
     console.log(`   🧠 ${candidate.name}: generating content...`);
     const content = await generateOaContent(
       candidate.name,
       websiteUrl,
       oaSubcategory,
-      candidate.rawData?.oaStars
+      candidate.rawData?.oaStars,
+      ghInfo.githubDescription,
+      ghInfo.githubTopics,
+      websiteMeta,
+      existingTaglines
     );
+
+    // Add new tagline to existing list for dedup in next iteration
+    existingTaglines.push(content.tagline);
 
     const tool: Tool = {
       slug: candidate.slug,
