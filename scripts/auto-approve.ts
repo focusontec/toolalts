@@ -327,7 +327,7 @@ async function findGithubInfo(
       ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
       : {};
     const res = await fetch(
-      `https://api.github.com/search/repositories?q=${query}+in:name&sort=stars&order=desc&per_page=5`,
+      `https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc&per_page=10`,
       { headers: ghHeaders, signal: AbortSignal.timeout(10000) }
     );
     if (res.ok) {

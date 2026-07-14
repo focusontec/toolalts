@@ -4573,50 +4573,6 @@
     "status": "active"
   },
   {
-    "slug": "aci-dev",
-    "name": "ACI.dev",
-    "tagline": "Open-source AI development platform for teams.",
-    "description": "ACI.dev is an open-source platform that streamlines AI development with collaborative tools and version control. It serves developers and teams building AI applications, offering a unified environment for managing datasets, models, and experiments.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": null,
-    "githubUrl": "https://github.com/aci-dev/aci",
-    "websiteUrl": "https://aci.dev",
-    "pricing": [],
-    "features": [
-      "Collaborative AI development",
-      "Version control for models",
-      "Dataset management tools",
-      "Experiment tracking"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/aci-dev.svg",
-    "status": "active"
-  },
-  {
-    "slug": "agenta",
-    "name": "Agenta",
-    "tagline": "Open-source platform for LLM app development.",
-    "description": "Agenta is an open-source platform that simplifies building, evaluating, and deploying LLM applications. It provides tools for prompt management, versioning, and A/B testing, enabling teams to iterate faster and deliver reliable AI solutions.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 4288,
-    "githubUrl": "https://github.com/Agenta-AI/agenta",
-    "websiteUrl": "http://www.agenta.ai",
-    "pricing": [],
-    "features": [
-      "Prompt versioning and management",
-      "A/B testing for LLM outputs",
-      "Collaborative evaluation workflows",
-      "Deploy with one-click API"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/agenta.svg",
-    "status": "active"
-  },
-  {
     "slug": "agentos",
     "name": "AgentOS",
     "tagline": "TypeScript framework for autonomous AI agent development.",
@@ -4838,29 +4794,6 @@
     "status": "active"
   },
   {
-    "slug": "dify",
-    "name": "Dify",
-    "tagline": "Open-source platform for building AI apps.",
-    "description": "Dify is an open-source platform that simplifies the creation of AI applications using large language models. It offers a visual workflow builder, RAG engine, and agent capabilities, enabling developers to build, deploy, and manage AI apps efficiently.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 148742,
-    "githubUrl": "https://github.com/langgenius/dify",
-    "websiteUrl": "https://dify.ai",
-    "pricing": [],
-    "features": [
-      "Visual workflow builder",
-      "Built-in RAG engine",
-      "Multi-model support",
-      "Agent capabilities",
-      "Easy deployment & monitoring"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/dify.svg",
-    "status": "active"
-  },
-  {
     "slug": "e2b",
     "name": "E2B",
     "tagline": "Open-source runtime for AI agents.",
@@ -4903,29 +4836,6 @@
     ],
     "category": "developer-tools",
     "logo": "/logos/envoy-ai-gateway.svg",
-    "status": "active"
-  },
-  {
-    "slug": "fastgpt",
-    "name": "FastGPT",
-    "tagline": "Open-source AI platform for building custom GPTs.",
-    "description": "FastGPT is an open-source platform that enables developers to create, deploy, and manage custom GPT models. It provides a visual workflow builder and integrates with various data sources, making AI development accessible for teams.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 28941,
-    "githubUrl": "https://github.com/labring/FastGPT",
-    "websiteUrl": "https://fastgpt.io",
-    "pricing": [],
-    "features": [
-      "Visual workflow builder",
-      "Custom GPT model creation",
-      "Multi-data source integration",
-      "API and webhook support",
-      "Self-hosted deployment"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/fastgpt.svg",
     "status": "active"
   },
   {
@@ -5209,28 +5119,6 @@
     ],
     "category": "developer-tools",
     "logo": "/logos/mem0.svg",
-    "status": "active"
-  },
-  {
-    "slug": "mlop",
-    "name": "mlop",
-    "tagline": "Open-source ML infrastructure for teams.",
-    "description": "Mlop is an open-source platform that simplifies machine learning infrastructure management. It helps teams deploy, monitor, and scale ML models efficiently.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 14953,
-    "githubUrl": "https://github.com/DataTalksClub/mlops-zoomcamp",
-    "websiteUrl": "https://mlop.ai",
-    "pricing": [],
-    "features": [
-      "Model deployment automation",
-      "Real-time monitoring dashboards",
-      "Scalable resource management",
-      "Collaborative experiment tracking"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/mlop.svg",
     "status": "active"
   },
   {
@@ -5726,29 +5614,6 @@
     "status": "active"
   },
   {
-    "slug": "ever-gauzy",
-    "name": "Ever Gauzy",
-    "tagline": "Open-source CRM for sales and project management.",
-    "description": "Ever Gauzy is an open-source platform that combines CRM, sales pipeline management, and project tracking. It serves small to medium businesses looking for a customizable, self-hosted solution to manage customer relationships and team workflows.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 3775,
-    "githubUrl": "https://github.com/ever-co/ever-gauzy",
-    "websiteUrl": "https://gauzy.co",
-    "pricing": [],
-    "features": [
-      "Sales pipeline management",
-      "Project and task tracking",
-      "Time and expense tracking",
-      "Customizable dashboards",
-      "Self-hosted or cloud deployment"
-    ],
-    "category": "crm",
-    "logo": "/logos/ever-gauzy.svg",
-    "status": "active"
-  },
-  {
     "slug": "frappe-crm",
     "name": "Frappe CRM",
     "tagline": "Open-source CRM for sales teams",
@@ -6169,27 +6034,6 @@
     ],
     "category": "marketing",
     "logo": "/logos/dub-partners.svg",
-    "status": "active"
-  },
-  {
-    "slug": "novu",
-    "name": "Novu",
-    "tagline": "Open-source notification infrastructure for developers.",
-    "description": "Novu is an open-source platform that provides a unified API for managing multi-channel notifications (email, SMS, push, in-app). It helps engineering teams build and scale notification systems without vendor lock-in.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 39305,
-    "githubUrl": "https://github.com/novuhq/novu",
-    "websiteUrl": "https://go.novu.co/github",
-    "pricing": [],
-    "features": [
-      "Unified API for all channels",
-      "In-app notification center",
-      "Digest & scheduling workflows"
-    ],
-    "category": "marketing",
-    "logo": "/logos/novu.svg",
     "status": "active"
   },
   {
@@ -6647,29 +6491,6 @@
     "status": "active"
   },
   {
-    "slug": "fider",
-    "name": "Fider",
-    "tagline": "Collect and prioritize user feedback openly.",
-    "description": "Fider is an open-source platform that helps you collect, organize, and prioritize customer feedback and feature requests. It provides a transparent way for users to submit ideas and vote on them, enabling data-driven product decisions.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 4413,
-    "githubUrl": "https://github.com/getfider/fider",
-    "websiteUrl": "https://fider.io",
-    "pricing": [],
-    "features": [
-      "Submit and vote on feature ideas",
-      "Public or private feedback boards",
-      "Customizable statuses for ideas",
-      "Integrate with Slack, GitHub, etc.",
-      "Self-hosted or cloud option"
-    ],
-    "category": "communication",
-    "logo": "/logos/fider.svg",
-    "status": "active"
-  },
-  {
     "slug": "formbricks",
     "name": "Formbricks",
     "tagline": "Open-source experience management for product teams",
@@ -7007,29 +6828,6 @@
     ],
     "category": "developer-tools",
     "logo": "/logos/openllmetry.svg",
-    "status": "active"
-  },
-  {
-    "slug": "pipeshub",
-    "name": "Pipeshub",
-    "tagline": "Extensible AI workplace for enterprise search and automation",
-    "description": "PipesHub is an open-source platform that combines enterprise search with workflow automation, powered by AI agents and knowledge graphs. It integrates with tools like Gmail, Slack, and Notion to provide explainable, context-aware assistance for teams.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 3023,
-    "githubUrl": "https://github.com/pipeshub-ai/pipeshub-ai",
-    "websiteUrl": "https://pipeshub.com",
-    "pricing": [],
-    "features": [
-      "Enterprise search across multiple apps",
-      "AI agents for workflow automation",
-      "Knowledge graph for context-aware answers",
-      "Explainable AI decisions",
-      "Integrates with Gmail, Slack, Notion"
-    ],
-    "category": "developer-tools",
-    "logo": "/logos/pipeshub.svg",
     "status": "active"
   },
   {
@@ -7554,29 +7352,6 @@
     "status": "active"
   },
   {
-    "slug": "baserow",
-    "name": "Baserow",
-    "tagline": "Open-source no-code database and app builder",
-    "description": "Baserow is an open-source platform that lets you create databases, applications, and automations without coding. It offers a user-friendly spreadsheet-like interface with powerful database features, REST API, and self-hosting options. Ideal for teams needing a flexible, compliant alternative to Airtable.",
-    "rating": 0,
-    "reviewsCount": 0,
-    "openSource": true,
-    "githubStars": 5327,
-    "githubUrl": "https://github.com/baserow/baserow",
-    "websiteUrl": "https://baserow.io",
-    "pricing": [],
-    "features": [
-      "Spreadsheet-like database interface",
-      "Build custom apps with no code",
-      "Automate workflows and processes",
-      "Self-host or use cloud version",
-      "REST API for integrations"
-    ],
-    "category": "communication",
-    "logo": "/logos/baserow.svg",
-    "status": "active"
-  },
-  {
     "slug": "affine",
     "name": "Affine",
     "tagline": "Docs, whiteboards, and databases in one local-first workspace.",
@@ -7663,6 +7438,231 @@
     ],
     "category": "communication",
     "logo": "/logos/cryptpad.svg",
+    "status": "active"
+  },
+  {
+    "slug": "aci-dev",
+    "name": "ACI.dev",
+    "tagline": "Open-source AI development platform for teams.",
+    "description": "ACI.dev is an open-source platform that streamlines AI development with collaborative tools and version control. It serves developers and teams building AI applications, offering a unified environment for managing datasets, models, and experiments.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": null,
+    "githubUrl": "https://github.com/aci-dev/aci",
+    "websiteUrl": "https://aci.dev",
+    "pricing": [],
+    "features": [
+      "Collaborative AI development",
+      "Version control for models",
+      "Dataset management tools",
+      "Experiment tracking"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/aci-dev.svg",
+    "status": "active"
+  },
+  {
+    "slug": "agenta",
+    "name": "Agenta",
+    "tagline": "Open-source platform for LLM app development.",
+    "description": "Agenta is an open-source platform that simplifies building, evaluating, and deploying LLM applications. It provides tools for prompt management, versioning, and A/B testing, enabling teams to iterate faster and deliver reliable AI solutions.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 4288,
+    "githubUrl": "https://github.com/Agenta-AI/agenta",
+    "websiteUrl": "http://www.agenta.ai",
+    "pricing": [],
+    "features": [
+      "Prompt versioning and management",
+      "A/B testing for LLM outputs",
+      "Collaborative evaluation workflows",
+      "Deploy with one-click API"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/agenta.svg",
+    "status": "active"
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "tagline": "Open-source platform for building AI apps.",
+    "description": "Dify is an open-source platform that simplifies the creation of AI applications using large language models. It offers a visual workflow builder, RAG engine, and agent capabilities, enabling developers to build, deploy, and manage AI apps efficiently.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 148742,
+    "githubUrl": "https://github.com/langgenius/dify",
+    "websiteUrl": "https://dify.ai",
+    "pricing": [],
+    "features": [
+      "Visual workflow builder",
+      "Built-in RAG engine",
+      "Multi-model support",
+      "Agent capabilities",
+      "Easy deployment & monitoring"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/dify.svg",
+    "status": "active"
+  },
+  {
+    "slug": "fastgpt",
+    "name": "FastGPT",
+    "tagline": "Open-source AI platform for building custom GPTs.",
+    "description": "FastGPT is an open-source platform that enables developers to create, deploy, and manage custom GPT models. It provides a visual workflow builder and integrates with various data sources, making AI development accessible for teams.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 28941,
+    "githubUrl": "https://github.com/labring/FastGPT",
+    "websiteUrl": "https://fastgpt.io",
+    "pricing": [],
+    "features": [
+      "Visual workflow builder",
+      "Custom GPT model creation",
+      "Multi-data source integration",
+      "API and webhook support",
+      "Self-hosted deployment"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/fastgpt.svg",
+    "status": "active"
+  },
+  {
+    "slug": "mlop",
+    "name": "mlop",
+    "tagline": "Open-source ML infrastructure for teams.",
+    "description": "Mlop is an open-source platform that simplifies machine learning infrastructure management. It helps teams deploy, monitor, and scale ML models efficiently.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 14953,
+    "githubUrl": "https://github.com/DataTalksClub/mlops-zoomcamp",
+    "websiteUrl": "https://mlop.ai",
+    "pricing": [],
+    "features": [
+      "Model deployment automation",
+      "Real-time monitoring dashboards",
+      "Scalable resource management",
+      "Collaborative experiment tracking"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/mlop.svg",
+    "status": "active"
+  },
+  {
+    "slug": "ever-gauzy",
+    "name": "Ever Gauzy",
+    "tagline": "Open-source CRM for sales and project management.",
+    "description": "Ever Gauzy is an open-source platform that combines CRM, sales pipeline management, and project tracking. It serves small to medium businesses looking for a customizable, self-hosted solution to manage customer relationships and team workflows.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 3775,
+    "githubUrl": "https://github.com/ever-co/ever-gauzy",
+    "websiteUrl": "https://gauzy.co",
+    "pricing": [],
+    "features": [
+      "Sales pipeline management",
+      "Project and task tracking",
+      "Time and expense tracking",
+      "Customizable dashboards",
+      "Self-hosted or cloud deployment"
+    ],
+    "category": "crm",
+    "logo": "/logos/ever-gauzy.svg",
+    "status": "active"
+  },
+  {
+    "slug": "novu",
+    "name": "Novu",
+    "tagline": "Open-source notification infrastructure for developers.",
+    "description": "Novu is an open-source platform that provides a unified API for managing multi-channel notifications (email, SMS, push, in-app). It helps engineering teams build and scale notification systems without vendor lock-in.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 39305,
+    "githubUrl": "https://github.com/novuhq/novu",
+    "websiteUrl": "https://go.novu.co/github",
+    "pricing": [],
+    "features": [
+      "Unified API for all channels",
+      "In-app notification center",
+      "Digest & scheduling workflows"
+    ],
+    "category": "marketing",
+    "logo": "/logos/novu.svg",
+    "status": "active"
+  },
+  {
+    "slug": "fider",
+    "name": "Fider",
+    "tagline": "Collect and prioritize user feedback openly.",
+    "description": "Fider is an open-source platform that helps you collect, organize, and prioritize customer feedback and feature requests. It provides a transparent way for users to submit ideas and vote on them, enabling data-driven product decisions.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 4413,
+    "githubUrl": "https://github.com/getfider/fider",
+    "websiteUrl": "https://fider.io",
+    "pricing": [],
+    "features": [
+      "Submit and vote on feature ideas",
+      "Public or private feedback boards",
+      "Customizable statuses for ideas",
+      "Integrate with Slack, GitHub, etc.",
+      "Self-hosted or cloud option"
+    ],
+    "category": "communication",
+    "logo": "/logos/fider.svg",
+    "status": "active"
+  },
+  {
+    "slug": "pipeshub",
+    "name": "Pipeshub",
+    "tagline": "Extensible AI workplace for enterprise search and automation",
+    "description": "PipesHub is an open-source platform that combines enterprise search with workflow automation, powered by AI agents and knowledge graphs. It integrates with tools like Gmail, Slack, and Notion to provide explainable, context-aware assistance for teams.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 3023,
+    "githubUrl": "https://github.com/pipeshub-ai/pipeshub-ai",
+    "websiteUrl": "https://pipeshub.com",
+    "pricing": [],
+    "features": [
+      "Enterprise search across multiple apps",
+      "AI agents for workflow automation",
+      "Knowledge graph for context-aware answers",
+      "Explainable AI decisions",
+      "Integrates with Gmail, Slack, Notion"
+    ],
+    "category": "developer-tools",
+    "logo": "/logos/pipeshub.svg",
+    "status": "active"
+  },
+  {
+    "slug": "baserow",
+    "name": "Baserow",
+    "tagline": "Open-source no-code database and app builder",
+    "description": "Baserow is an open-source platform that lets you create databases, applications, and automations without coding. It offers a user-friendly spreadsheet-like interface with powerful database features, REST API, and self-hosting options. Ideal for teams needing a flexible, compliant alternative to Airtable.",
+    "rating": 0,
+    "reviewsCount": 0,
+    "openSource": true,
+    "githubStars": 5327,
+    "githubUrl": "https://github.com/baserow/baserow",
+    "websiteUrl": "https://baserow.io",
+    "pricing": [],
+    "features": [
+      "Spreadsheet-like database interface",
+      "Build custom apps with no code",
+      "Automate workflows and processes",
+      "Self-host or use cloud version",
+      "REST API for integrations"
+    ],
+    "category": "communication",
+    "logo": "/logos/baserow.svg",
     "status": "active"
   }
 ]
