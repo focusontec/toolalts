@@ -1,32 +1,32 @@
 {
-  "runId": "2026-07-09T07:33:15.229Z",
-  "startedAt": "2026-07-09T07:33:15.229Z",
+  "runId": "2026-07-16T06:13:05.728Z",
+  "startedAt": "2026-07-16T06:13:05.728Z",
   "maxIterations": 3,
   "currentIteration": 1,
   "iterations": [
     {
       "iteration": 0,
-      "startedAt": "2026-07-09T07:33:15.230Z",
-      "completedAt": "2026-07-09T07:40:28.320Z",
-      "fixesApplied": 3,
-      "fixesFailed": 14,
+      "startedAt": "2026-07-16T06:13:05.728Z",
+      "completedAt": "2026-07-16T06:30:30.132Z",
+      "fixesApplied": 0,
+      "fixesFailed": 103,
       "escalated": 0,
       "reAuditResults": [],
       "stopCondition": "continue"
     },
     {
       "iteration": 1,
-      "startedAt": "2026-07-09T07:40:28.323Z",
-      "completedAt": "2026-07-09T07:50:38.059Z",
+      "startedAt": "2026-07-16T06:30:30.137Z",
+      "completedAt": "2026-07-16T06:47:54.483Z",
       "fixesApplied": 0,
-      "fixesFailed": 17,
+      "fixesFailed": 103,
       "escalated": 0,
       "reAuditResults": [],
       "stopCondition": "continue"
     }
   ],
   "totalCostCap": 100,
-  "llmCallsUsed": 3,
+  "llmCallsUsed": 0,
   "slugsProcessed": [],
   "status": "completed",
   "fixLog": [
@@ -81,9 +81,8 @@
       "field": "githubStars",
       "strategy": "delegate-sync-stars",
       "previousValue": "null",
-      "newValue": "githubUrl exists",
-      "evidence": "Has GitHub URL but stars is null",
-      "success": true
+      "success": false,
+      "error": "No better value found"
     },
     {
       "iteration": 0,
@@ -100,9 +99,8 @@
       "field": "githubStars",
       "strategy": "delegate-sync-stars",
       "previousValue": "null",
-      "newValue": "githubUrl exists",
-      "evidence": "Has GitHub URL but stars is null",
-      "success": true
+      "success": false,
+      "error": "No better value found"
     },
     {
       "iteration": 0,
@@ -137,9 +135,8 @@
       "field": "githubStars",
       "strategy": "delegate-sync-stars",
       "previousValue": "null",
-      "newValue": "githubUrl exists",
-      "evidence": "Has GitHub URL but stars is null",
-      "success": true
+      "success": false,
+      "error": "No better value found"
     },
     {
       "iteration": 0,
@@ -180,6 +177,780 @@
     {
       "iteration": 0,
       "slug": "project-nomad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "parlant",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "agentos",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "agno",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "arize-phoenix",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "beam",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "copilotkit",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "envoy-ai-gateway",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "trieve",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "laminar",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "letta",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "openlit",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "litellm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "anythingllm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "browser-operator",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "swirl-search",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "vt-chat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "zero",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "zola",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "atomic-crm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "erxes",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "espocrm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "krayin",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "odoo",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "open-mercato",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "lago",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "midday",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "openmeter",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "billion-mail",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "chaskiq",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "sendportal",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "sendune",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "0",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "shlink",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "sink",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "tiledesk",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "wraps",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "zammad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "cossistant",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "freescout",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "reflet",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "langflow",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "latitude",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "librechat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "llm-gateway",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "lobechat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "milvus",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "multica",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "openllmetry",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "cherry-studio",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "fullmoon",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "jan",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "manage",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "operately",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "orgnise",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "shelve",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "shipshipship",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "taiga",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "wekan",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "windshift",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "windshift",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "0",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "campfire",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "cinny",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "cryptpad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "aci-dev",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "aci-dev",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "fastgpt",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "novu",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "jarvis",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "khoj",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "leon",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "lightpanda",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "maxkb",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "meetily",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "minutes",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "morphic",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "onyx",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "open-webui",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "openclaw",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "openwispr",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "orama",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "pearl",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "prismical",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "scira",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "screenpipe",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "twenty",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "erpnext",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 0,
+      "slug": "fleetbase",
       "field": "pricing",
       "strategy": "delegate-scrape-pricing",
       "previousValue": "",
@@ -333,6 +1104,780 @@
     {
       "iteration": 1,
       "slug": "project-nomad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "parlant",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "agentos",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "agno",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "arize-phoenix",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "beam",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "copilotkit",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "envoy-ai-gateway",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "trieve",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "laminar",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "letta",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "openlit",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "litellm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "anythingllm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "browser-operator",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "swirl-search",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "vt-chat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "zero",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "zola",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "atomic-crm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "erxes",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "espocrm",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "krayin",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "odoo",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "open-mercato",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "lago",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "midday",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "openmeter",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "billion-mail",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "chaskiq",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "sendportal",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "sendune",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "0",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "shlink",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "sink",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "tiledesk",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "wraps",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "zammad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "cossistant",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "freescout",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "reflet",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "langflow",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "latitude",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "librechat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "llm-gateway",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "lobechat",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "milvus",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "multica",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "openllmetry",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "cherry-studio",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "fullmoon",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "jan",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "manage",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "operately",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "orgnise",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "shelve",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "shipshipship",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "taiga",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "wekan",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "windshift",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "windshift",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "0",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "campfire",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "cinny",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "cryptpad",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "aci-dev",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "aci-dev",
+      "field": "githubStars",
+      "strategy": "delegate-sync-stars",
+      "previousValue": "null",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "fastgpt",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "novu",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "jarvis",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "khoj",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "leon",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "lightpanda",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "maxkb",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "meetily",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "minutes",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "morphic",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "onyx",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "open-webui",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "openclaw",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "openwispr",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "orama",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "pearl",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "prismical",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "scira",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "screenpipe",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "twenty",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "erpnext",
+      "field": "pricing",
+      "strategy": "delegate-scrape-pricing",
+      "previousValue": "",
+      "success": false,
+      "error": "No better value found"
+    },
+    {
+      "iteration": 1,
+      "slug": "fleetbase",
       "field": "pricing",
       "strategy": "delegate-scrape-pricing",
       "previousValue": "",
