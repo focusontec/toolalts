@@ -1,49 +1,49 @@
 ---
 slug: "whispering"
 name: "Whispering"
-decision: "REJECT"
-confidence: 95
-category: "other"
-processedAt: "2026-07-16T16:09:06.714Z"
+decision: "AMBIGUOUS"
+confidence: 40
+category: "productivity"
+processedAt: "2026-07-17T05:32:05.275Z"
 ---
 
 # AI Verification Report: Whispering
 
-## Decision: REJECT (95/100 confidence)
+## Decision: AMBIGUOUS (40/100 confidence)
 
 | Metric | Score |
 |--------|-------|
-| Verification Score | 20/100 |
-| Quality Score | 10/100 |
-| Consistency Score | 30/100 |
+| Verification Score | 30/100 |
+| Quality Score | 20/100 |
+| Consistency Score | 50/100 |
 
 ## Proposed Metadata
 
 - **Website**: https://github.com/epicenter-so/epicenter/tree/main/apps/whispering
 - **GitHub**: N/A
-- **Category**: other
-- **Tagline**: A subdirectory within a larger monorepo, not a standalone tool.
-- **Features**: 
-- **Pricing**: 
-- **Target audience**: unverifiable
-- **Direct alternatives**: Unspecified
+- **Category**: productivity
+- **Tagline**: Open-source, local-first app for voice transcription and AI-powered features.
+- **Features**: Voice transcription, Local-first (privacy-focused), Open-source, Part of Epicenter ecosystem
+- **Pricing**: Free ($0)
+- **Target audience**: Developers and privacy-conscious users needing voice transcription.
+- **Direct alternatives**: Otter.ai, Rev.com
 
 ## Publish Readiness
 
 - **Recommendation**: draft
-- **Score**: 10/100
-- **Reasons**: Insufficient evidence to verify the tool's existence as a standalone product.; No clear value proposition or user base identified.
+- **Score**: 30/100
+- **Reasons**: Insufficient evidence to verify quality and activity; No independent community signals
 
 ## Evidence Gaps
-- No GitHub stars, forks, or activity data.
-- No standalone website or description for Whispering.
-- Functionality and features are unknown.
+- No GitHub stars or forks available
+- No official website beyond GitHub
+- No detailed feature list or documentation
 
 ## Concerns
-- The tool is just a subdirectory in a monorepo, not a standalone project.
-- No evidence of active development or community.
-- Cannot confirm if it is a real, usable tool.
+- GitHub data not available; cannot assess project activity or popularity
+- Website is a GitHub directory, not a dedicated product page
+- No clear tagline or description of the tool's purpose
 
 ## Full Analysis
 
-The tool 'Whispering' was submitted as a Hacker News Show HN, but the provided website is a GitHub directory page within the Epicenter monorepo. The GitHub data is null, meaning no stars, forks, or recent activity can be assessed. The website meta description is generic and does not describe Whispering specifically. There is no standalone website or documentation. Therefore, this cannot be verified as a real, maintained software tool. The decision is REJECT with high confidence due to lack of evidence.
+The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL points to a GitHub directory within the Epicenter monorepo. The GitHub metadata indicates it is an open-source, local-first app, but no specific GitHub statistics (stars, forks, last update) are available. The website meta description is generic and does not provide detailed information about Whispering itself. Due to the lack of independent verification sources, community signals, and a dedicated website, the tool's quality and activity cannot be reliably assessed. The tool may be a real project, but there is insufficient evidence to approve it for publication. It is classified as AMBIGUOUS with low confidence.

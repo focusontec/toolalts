@@ -619,5 +619,64 @@
     ],
     "fullReport": "The tool 'Whispering' was submitted as a Hacker News Show HN, but the provided website is a GitHub directory page within the Epicenter monorepo. The GitHub data is null, meaning no stars, forks, or recent activity can be assessed. The website meta description is generic and does not describe Whispering specifically. There is no standalone website or documentation. Therefore, this cannot be verified as a real, maintained software tool. The decision is REJECT with high confidence due to lack of evidence.",
     "processedAt": "2026-07-16T16:09:06.714Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 40,
+    "verificationScore": 30,
+    "qualityScore": 20,
+    "consistencyScore": 50,
+    "category": "productivity",
+    "tagline": "Open-source, local-first app for voice transcription and AI-powered features.",
+    "description": "Whispering is an open-source, local-first application that provides voice transcription and AI-powered features. It is part of the Epicenter monorepo and appears to be a tool for developers or users who want privacy-focused voice processing.",
+    "features": [
+      "Voice transcription",
+      "Local-first (privacy-focused)",
+      "Open-source",
+      "Part of Epicenter ecosystem"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "targetAudience": "Developers and privacy-conscious users needing voice transcription.",
+    "directAlternativeTo": [
+      "Otter.ai",
+      "Rev.com"
+    ],
+    "evidenceGaps": [
+      "No GitHub stars or forks available",
+      "No official website beyond GitHub",
+      "No detailed feature list or documentation"
+    ],
+    "publishReadiness": {
+      "score": 30,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence to verify quality and activity",
+        "No independent community signals"
+      ]
+    },
+    "concerns": [
+      "GitHub data not available; cannot assess project activity or popularity",
+      "Website is a GitHub directory, not a dedicated product page",
+      "No clear tagline or description of the tool's purpose"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via Hacker News Show HN. The provided website URL points to a GitHub directory within the Epicenter monorepo. The GitHub metadata indicates it is an open-source, local-first app, but no specific GitHub statistics (stars, forks, last update) are available. The website meta description is generic and does not provide detailed information about Whispering itself. Due to the lack of independent verification sources, community signals, and a dedicated website, the tool's quality and activity cannot be reliably assessed. The tool may be a real project, but there is insufficient evidence to approve it for publication. It is classified as AMBIGUOUS with low confidence.",
+    "processedAt": "2026-07-17T05:32:05.275Z"
   }
 ]
