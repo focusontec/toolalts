@@ -780,5 +780,63 @@
     ],
     "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN post, but the provided evidence points to a subdirectory within the Epicenter monorepo on GitHub. The website URL is a GitHub tree path, not a dedicated website. The GitHub metadata describes the parent repository as 'Open-source, local-first apps', but no specific information about Whispering itself is available. There are no GitHub stars, forks, or release data because it is not a standalone repository. The tool's functionality, target audience, and pricing cannot be determined from the evidence. Therefore, this tool cannot be verified as a distinct product and is not suitable for publication without further information.",
     "processedAt": "2026-07-18T05:15:04.357Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "decision": "REJECT",
+    "confidence": 90,
+    "verificationScore": 20,
+    "qualityScore": 10,
+    "consistencyScore": 30,
+    "category": "other",
+    "tagline": "An open-source, local-first app for voice transcription and AI chat, part of the Epicenter monorepo.",
+    "description": "Whispering is an open-source, local-first application for voice transcription and AI chat, built as part of the Epicenter monorepo. It allows users to transcribe speech and interact with AI models locally. The project appears to be a sub-app within a larger ecosystem, but lacks standalone documentation and community traction.",
+    "features": [
+      "Local-first voice transcription",
+      "AI chat integration",
+      "Open-source",
+      "Part of Epicenter monorepo"
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Open-source, self-hosted"
+        ]
+      }
+    ],
+    "targetAudience": "Developers interested in local-first voice AI tools",
+    "directAlternativeTo": [],
+    "evidenceGaps": [
+      "No GitHub stars or forks available",
+      "No standalone website or documentation",
+      "No evidence of active maintenance or community"
+    ],
+    "publishReadiness": {
+      "score": 10,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence of a standalone tool",
+        "No community traction or independent identity",
+        "Not suitable for publication as a distinct product"
+      ]
+    },
+    "concerns": [
+      "The tool is a sub-directory in a monorepo, not a standalone project",
+      "No GitHub data (stars, forks, last update) available",
+      "No independent website or marketing presence",
+      "Unclear if this is actively maintained or just a component"
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "Whispering is presented as an open-source, local-first app for voice transcription and AI chat, but it is only a sub-directory within the Epicenter monorepo. The provided URL points to a GitHub tree view, not a standalone repository or website. No GitHub statistics (stars, forks, last update) are available, making it impossible to assess quality or activity. The website meta description is generic and does not specifically describe Whispering. There is no evidence of community adoption, independent documentation, or clear value proposition. Given the lack of standalone identity and verifiable data, this tool is not suitable for publication. The decision is REJECT with high confidence.",
+    "processedAt": "2026-07-18T15:43:56.366Z"
   }
 ]
