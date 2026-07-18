@@ -737,5 +737,48 @@
     ],
     "fullReport": "Whispering is an open-source, local-first voice transcription and AI assistant app found within the Epicenter monorepo on GitHub. The evidence is limited: the website is a GitHub directory, no GitHub stars or forks are available, and there is no dedicated documentation or standalone repository. The description from the GitHub page suggests it is a local-first app, but specific features and maintenance status are unclear. The tool appears to target developers and privacy-conscious users, potentially replacing cloud-based services like Otter.ai. However, due to the lack of verifiable metrics and standalone presence, the tool is considered ambiguous and not ready for publication without further investigation.",
     "processedAt": "2026-07-17T16:07:27.580Z"
+  },
+  {
+    "slug": "whispering",
+    "name": "Whispering",
+    "website": "https://github.com/epicenter-so/epicenter/tree/main/apps/whispering",
+    "github": null,
+    "decision": "AMBIGUOUS",
+    "confidence": 30,
+    "verificationScore": 20,
+    "qualityScore": 10,
+    "consistencyScore": 50,
+    "category": "other",
+    "tagline": "An open-source, local-first app within the Epicenter monorepo.",
+    "description": "Whispering is a component of the Epicenter open-source monorepo, described as an open-source, local-first app. Its specific functionality is unclear from the available evidence, and it appears to be a subdirectory rather than a standalone tool.",
+    "features": [],
+    "pricing": [],
+    "targetAudience": "Developers interested in local-first applications within the Epicenter ecosystem.",
+    "directAlternativeTo": [],
+    "evidenceGaps": [
+      "No standalone GitHub repository or stars/forks data.",
+      "Specific functionality of Whispering is unverifiable.",
+      "No pricing or feature information available."
+    ],
+    "publishReadiness": {
+      "score": 10,
+      "recommendation": "draft",
+      "reasons": [
+        "Insufficient evidence to determine tool's purpose and quality.",
+        "Not a standalone project; part of a monorepo."
+      ]
+    },
+    "concerns": [
+      "No independent GitHub data; tool is a subdirectory in a monorepo.",
+      "Website URL is a GitHub directory, not a dedicated site.",
+      "Cannot verify if tool is actively maintained or has any users."
+    ],
+    "sources": [
+      "github",
+      "website",
+      "llm-analysis"
+    ],
+    "fullReport": "The tool 'Whispering' was discovered via a Hacker News Show HN post, but the provided evidence points to a subdirectory within the Epicenter monorepo on GitHub. The website URL is a GitHub tree path, not a dedicated website. The GitHub metadata describes the parent repository as 'Open-source, local-first apps', but no specific information about Whispering itself is available. There are no GitHub stars, forks, or release data because it is not a standalone repository. The tool's functionality, target audience, and pricing cannot be determined from the evidence. Therefore, this tool cannot be verified as a distinct product and is not suitable for publication without further information.",
+    "processedAt": "2026-07-18T05:15:04.357Z"
   }
 ]
