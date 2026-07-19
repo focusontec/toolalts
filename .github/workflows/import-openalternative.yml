@@ -1,8 +1,6 @@
 name: Import OpenAlternative Tools
 
 on:
-  schedule:
-    - cron: "0 8 * * *" # Every day at 08:00 UTC
   workflow_dispatch:
 
 permissions:

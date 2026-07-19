@@ -1,9 +1,6 @@
 name: AutoClaw — AI Audit
 
 on:
-  schedule:
-    # Run weekly on Wednesday at 2am UTC
-    - cron: "0 2 * * 3"
   workflow_dispatch:
     inputs:
       mode:

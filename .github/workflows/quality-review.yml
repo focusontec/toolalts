@@ -1,9 +1,6 @@
 name: Quality Review
 
 on:
-  schedule:
-    # Run weekly on Monday at 3am UTC
-    - cron: "0 3 * * 1"
   workflow_dispatch:
     inputs:
       dryRun:

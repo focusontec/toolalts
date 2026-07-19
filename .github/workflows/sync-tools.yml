@@ -1,9 +1,6 @@
 name: Sync Tools Data
 
 on:
-  schedule:
-    # Run once daily at 6am UTC
-    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:

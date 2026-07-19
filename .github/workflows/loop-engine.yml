@@ -1,9 +1,6 @@
 name: AutoClaw — Loop Engine
 
 on:
-  schedule:
-    # Run weekly on Thursday at 4am UTC (audit runs Wednesday 2am)
-    - cron: "0 4 * * 4"
   workflow_dispatch:
     inputs:
       slug:
